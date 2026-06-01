@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Builders Daily</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" data-collapsed="false">
+        <div class="sidebar-top">
+          <button class="collapse-button" id="collapseSidebar" type="button" aria-label="Collapse calendar">
+            <span class="collapse-icon">&lt;</span>
+          </button>
+          <div class="sidebar-copy">
+            <p class="eyebrow">Daily Archive</p>
+            <h1>AI Builders</h1>
+          </div>
+        </div>
+
+        <section class="calendar-panel">
+          <div class="month-bar">
+            <button class="month-button" id="prevMonth" type="button" aria-label="Previous month">&lt;</button>
+            <div>
+              <p class="month-label" id="monthLabel">Loading</p>
+              <p class="month-subtitle" id="monthSubtitle">Choose a day</p>
+            </div>
+            <button class="month-button" id="nextMonth" type="button" aria-label="Next month">&gt;</button>
+          </div>
+          <div class="weekday-row" id="weekdayRow"></div>
+          <div class="calendar-grid" id="calendarGrid"></div>
+        </section>
+
+        <section class="date-list-panel">
+          <div class="section-title-row">
+            <p class="section-title">Available Days</p>
+            <p class="section-meta" id="archiveCount">0</p>
+          </div>
+          <div class="date-list" id="dateList"></div>
+        </section>
+      </aside>
+
+      <main class="content-shell">
+        <header class="content-header">
+          <div>
+            <p class="eyebrow">Card Archive</p>
+            <h2 id="pageTitle">AI Builders Daily</h2>
+            <p class="page-summary" id="pageSummary">Loading digest...</p>
+          </div>
+          <div class="header-meta">
+            <span class="meta-chip" id="selectedDateChip">--</span>
+            <span class="meta-chip subtle" id="selectedCountChip">0 cards</span>
+          </div>
+        </header>
+
+        <section class="cards-grid" id="cardsGrid"></section>
+      </main>
+    </div>
+
+    <template id="cardTemplate">
+      <article class="digest-card">
+        <div class="card-top">
+          <div class="avatar" data-avatar></div>
+          <div class="profile-block">
+            <a class="profile-name" data-profile-link target="_blank" rel="noreferrer"></a>
+            <p class="profile-identity" data-profile-identity></p>
+            <p class="profile-meta" data-profile-meta></p>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title" data-card-title></h3>
+          <div class="summary-block" data-summary-block hidden>
+            <div class="summary-label">Summary / 摘要</div>
+            <div class="summary-text" data-card-body></div>
+          </div>
+          <div class="card-copy" data-card-body-fallback></div>
+          <div class="card-links" data-card-links></div>
+        </div>
+      </article>
+    </template>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

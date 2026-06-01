@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>com.yongzhenzhuang.follow-builders-sidecar-codex</string>
+
+    <key>WorkingDirectory</key>
+    <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Users/yongzhenzhuang/.nvm/versions/node/v20.20.0/bin/node</string>
+      <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex/scripts/run-local-codex-sidecar.js</string>
+    </array>
+
+    <key>StartCalendarInterval</key>
+    <dict>
+      <key>Hour</key>
+      <integer>6</integer>
+      <key>Minute</key>
+      <integer>5</integer>
+    </dict>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+      <key>HOME</key>
+      <string>/Users/yongzhenzhuang</string>
+      <key>PATH</key>
+      <string>/Users/yongzhenzhuang/.nvm/versions/node/v20.20.0/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+    </dict>
+
+    <key>StandardOutPath</key>
+    <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex/.runtime/local-runner/stdout.log</string>
+
+    <key>StandardErrorPath</key>
+    <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex/.runtime/local-runner/stderr.log</string>
+
+    <key>RunAtLoad</key>
+    <false/>
+  </dict>
+</plist>

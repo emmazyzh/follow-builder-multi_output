@@ -1,0 +1,11 @@
+scripts/node_modules/
+.runtime/
+.env
+*.log
+.DS_Store
+*.local.json
+config/*.local.json
+config/*.private.json
+config/credentials.json
+config/credentials.local.json
+config/sidecar.config.local.json

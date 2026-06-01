@@ -1,0 +1,320 @@
+{
+  "payload": {
+    "date": "2026-05-31",
+    "title": "AI Builders Daily · 2026-05-31",
+    "summary": "English: Today’s snapshot covers **Claude Managed Agents** adding dreaming, outcomes, orchestration, and webhooks; **Gemini** co-lead Oriol Vinyals on world models, multimodal learning, RL, memory, and robotics; plus builder posts on **Codex**, **GPT-5.5**, **Vercel AI Gateway**, **Cursor** auto-review, AI education, enterprise AI investment, and California politics.\n\n中文：今天的快照包括 **Claude Managed Agents** 新增 dreaming、outcomes、多智能体编排和 webhooks；**Gemini** 联合负责人 Oriol Vinyals 谈世界模型、多模态学习、RL、记忆和机器人；以及关于 **Codex**、**GPT-5.5**、**Vercel AI Gateway**、**Cursor** auto-review、AI 教育、企业 AI 投入和加州政治的 builder 动态。",
+    "items": [
+      {
+        "person_name": "Unsupervised Learning",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=NQczevdpxq0",
+        "source_label": "Podcast",
+        "posted_at": "2026-05-22T12:50:04.000Z",
+        "sections": [
+          {
+            "headline": "**Gemini** co-lead on world models, memory, RL, and robotics · **Gemini** 联合负责人谈世界模型、记忆、RL 和机器人",
+            "body": "The episode features Oriol Vinyals, co-lead of **Gemini**, discussing the research behind recent **Google I/O** launches. The conversation centers on world models, multimodal training, video and image understanding, memory, scaffolding, reinforcement learning, and how simulation could connect to robotics and self-driving use cases.\n\n这期节目请到 **Gemini** 联合负责人 Oriol Vinyals，聊 **Google I/O** 后一系列发布背后的研究脉络。重点包括世界模型、多模态训练、视频和图像理解、记忆、脚手架、强化学习，以及模拟能力如何连接到机器人和自动驾驶场景。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=NQczevdpxq0"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "source_label": "Blog",
+        "posted_at": "May 06, 2026",
+        "sections": [
+          {
+            "headline": "**Claude Managed Agents** adds dreaming, outcomes, orchestration, and webhooks · **Claude Managed Agents** 新增 dreaming、outcomes、编排和 webhooks",
+            "body": "**Claude Managed Agents** is adding dreaming as a research preview, along with outcomes, multiagent orchestration, and webhooks. Dreaming reviews past sessions and memory stores to extract patterns, curate memory, and help agents improve over time. Outcomes lets developers define success rubrics that a separate grader checks against, while multiagent orchestration lets a lead agent delegate work to specialist agents running in parallel.\n\n**Claude Managed Agents** 新增了 research preview 版 dreaming，同时开放 outcomes、多智能体编排和 webhooks。Dreaming 会回看过往会话和记忆库，提炼模式、整理记忆，让 agent 随时间变得更好。Outcomes 让开发者定义成功标准，由独立 grader 检查结果；多智能体编排则让主 agent 把任务拆给并行工作的专家 agent。",
+            "source_links": [
+              "https://claude.com/blog/new-in-claude-managed-agents"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-05-31T05:59:10.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** celebrates five million users by resetting limits · **Codex** 为五百万用户重置额度庆祝",
+            "body": "Five million users would agree. Resetting the limits tomorrow morning to celebrate.\n\nTime to go /fast https://t.co/MdRBfp8Od0\n\n五百万用户都会同意。明天早上重置额度来庆祝。\n\n该开 /fast 了 https://t.co/MdRBfp8Od0",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2060964284117782996"
+            ]
+          },
+          {
+            "headline": "**Codex** asks what still feels annoying · **Codex** 征集还没修好的烦点",
+            "body": "What’s something we haven’t fixed in codex for a while and that’s plain annoying?\n\n有什么 **codex** 里我们一直没修、而且真的很烦的问题？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2060960564676034726"
+            ]
+          },
+          {
+            "headline": "**GPT-5.5** is framed as stronger and more token-efficient · **GPT-5.5** 被描述为更强也更省 token",
+            "body": "When we go from GPT-5.0 -&gt; GPT-5.1 -&gt; ... -&gt; GPT-5.5, the number incrementing goes with improvements in capabilities and token efficiency (which translates to speed gains). With GPT-5.5 our best model yet.\n\nA simple strategy that we would like to continue.\n\n当我们从 **GPT-5.0** -&gt; **GPT-5.1** -&gt; ... -&gt; **GPT-5.5** 推进时，数字增长对应的是能力和 token 效率的提升，也就是速度收益。**GPT-5.5** 是我们目前最好的模型。\n\n这是一个简单的策略，我们希望继续下去。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2060627747760984429"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "Roblox Product",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-05-31T03:45:19.000Z",
+        "sections": [
+          {
+            "headline": "Education could feel like **Final Fantasy** plus math and CS · 教育应用可以像 **Final Fantasy** 加数学和 CS",
+            "body": "Basically the ultimate education app is you're playing Final Fantasy or something and you're learning math and CS at the same time\n\n说白了，终极教育应用就是你在玩 **Final Fantasy** 之类的东西，同时还在学数学和 CS。",
+            "source_links": [
+              "https://x.com/petergyang/status/2060930599565811774"
+            ]
+          },
+          {
+            "headline": "**OpenAI Codex** memes, **Anthropic** essays · **OpenAI Codex** 玩梗，**Anthropic** 写长文",
+            "body": "My guess is:\n- OpenAI Codex dank memes\n- Anthropic essays https://t.co/tSoVhzeBLA\n\n我的猜测是：\n- **OpenAI Codex** 的抽象梗图\n- **Anthropic** 的长文 https://t.co/tSoVhzeBLA",
+            "source_links": [
+              "https://x.com/petergyang/status/2060930334620053998"
+            ]
+          },
+          {
+            "headline": "Learning CS 101 with **Brilliant** becomes a challenge loop · 用 **Brilliant** 学 CS 101 变成闯关循环",
+            "body": "Just spent an hour with daughter learning CS 101 from @brilliantorg \n\nShe doesn’t want to give up until she beats Joyce B 🔥 https://t.co/Eq3kNxXsGn\n\n刚和女儿花了一小时在 @brilliantorg 学 CS 101。\n\n她不打败 Joyce B 就不想停 🔥 https://t.co/Eq3kNxXsGn",
+            "source_links": [
+              "https://x.com/petergyang/status/2060928818383355907"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-05-30T19:20:12.000Z",
+        "sections": [
+          {
+            "headline": "The product matters more than the AI mix · 产品好坏比用了多少 AI 更重要",
+            "body": "Ship the best product. Use lots of AI, some AI, maybe no AI. Just be the best.\n\n做出最好的产品。可以用很多 AI，用一点 AI，也可以不用 AI。重点是做到最好。",
+            "source_links": [
+              "https://x.com/rauchg/status/2060803480823193840"
+            ]
+          },
+          {
+            "headline": "**Vercel AI Gateway** adds per-key spend caps · **Vercel AI Gateway** 支持按 API Key 设置花费上限",
+            "body": "Per-API Key spend caps on AI Gateway https://t.co/CsS7jWilg2\n\n**AI Gateway** 支持按 API Key 设置花费上限 https://t.co/CsS7jWilg2",
+            "source_links": [
+              "https://x.com/rauchg/status/2060787704166776927"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-05-31T03:17:51.000Z",
+        "sections": [
+          {
+            "headline": "Enterprise AI savings may be reinvested into growth · 企业 AI 省下的钱可能会重新投向增长",
+            "body": "Again, maybe counterintuitive, but in the majority of conversations I have with CIOs, CTOs, and CEOs in large enterprises, they are either growing due to AI (in new job functions like FDEs, engineering, etc.) or at a minimum reinvesting efficiency savings back into the business in new areas (sales, marketing, etc.).\n\nDavid Solomon, CEO of Goldman Sachs, articulated this perfectly in a NYTimes OpEd last week. The AI boom is both creating all new jobs in the build out of AI systems and the implementation across sectors, but also freeing up dollars to invest in areas that have been underfunded or have more demand now because of AI. \n\nMost businesses have been constrained by how much software they can produce at a given cost, how many sales reps they can hire, how many marketing campaigns they can run, how they can do outbound customer success motions with enough tailoring, how they can find more risk in their business and prevent it, and 100s of other things. \n\nWhen AI makes it possible to do more of this, investment goes back into the business. The companies that better serve their customers win over the long run, and those that just try and find savings end up doing worse.\n\n再说一次，这可能有点反直觉，但我和大型企业里的 CIO、CTO、CEO 聊下来，大多数公司要么因为 AI 在增长，比如新增 FDE、工程等岗位；要么至少会把效率提升省下来的钱重新投到业务的新领域里，比如销售、营销等。\n\n**Goldman Sachs** CEO David Solomon 上周在 **NYTimes** 的 OpEd 里讲得很准确。AI 热潮一方面在 AI 系统建设和跨行业落地过程中创造全新的岗位，另一方面也释放出资金，让企业投向过去投入不足、或因为 AI 出现更多需求的领域。\n\n大多数企业一直受限于很多事：在固定成本下能生产多少软件，能招多少销售，能跑多少营销活动，能不能做足够定制化的 outbound customer success，能不能发现并阻止更多业务风险，以及其他上百件事。\n\n当 AI 让企业能做更多这类事时，投资会回到业务里。长期看，更好服务客户的公司会赢；只想着省钱的公司会做得更差。",
+            "source_links": [
+              "https://x.com/levie/status/2060923684295221390"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X",
+        "posted_at": "2026-05-30T16:53:56.000Z",
+        "sections": [
+          {
+            "headline": "**Cursor** auto-review teaches command risk as users code · **Cursor** auto-review 在写代码时解释命令和风险",
+            "body": "what i love about auto-review: Cursor explains the command and risk, makes it much easier for new coders to learn and just do things https://t.co/3d2gt9uRKq\n\n我喜欢 auto-review 的一点是：**Cursor** 会解释命令和风险，让新手程序员更容易边学边做事 https://t.co/3d2gt9uRKq",
+            "source_links": [
+              "https://x.com/ryolu_/status/2060766674203353190"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-05-31T04:58:27.000Z",
+        "sections": [
+          {
+            "headline": "San Francisco still lacks the building boom · 旧金山还没迎来建设热潮",
+            "body": "Unfortunately the building boom has not hit San Francisco yet and that's not a good thing https://t.co/5XDHdlbTQQ\n\n可惜建设热潮还没有到旧金山，这不是好事 https://t.co/5XDHdlbTQQ",
+            "source_links": [
+              "https://x.com/garrytan/status/2060949003790176667"
+            ]
+          },
+          {
+            "headline": "California voters are reminded to vote by June 2 · 提醒加州选民 6 月 2 日前投票",
+            "body": "Don’t forget to vote by June 2. \n\nUse my guide to see how we can fix California \n\ngarrysguide dot org  https://t.co/wOdYdOtco8\n\n别忘了在 6 月 2 日前投票。\n\n可以看我的指南，了解我们怎么修好加州。\n\ngarrysguide dot org  https://t.co/wOdYdOtco8",
+            "source_links": [
+              "https://x.com/garrytan/status/2060850157978325119"
+            ]
+          },
+          {
+            "headline": "Patrick Wolff gets an endorsement for insurance commissioner · Patrick Wolff 获支持竞选保险 commissioner",
+            "body": "This is the Wolff we need on our side\n\nVote Patrick Wolff for insurance commissioner https://t.co/niE1W4sNpa\n\n这就是我们需要站在我们这边的 Wolff。\n\n投 Patrick Wolff 当 insurance commissioner https://t.co/niE1W4sNpa",
+            "source_links": [
+              "https://x.com/garrytan/status/2060759463997636947"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-05-31T05:50:44.000Z",
+        "sections": [
+          {
+            "headline": "**Opus 4.8** changes its writing punctuation habits · **Opus 4.8** 改了写作标点习惯",
+            "body": "One thing I noticed about Opus 4.8 is that it stopped using em dashes in writing\n\n我注意到 **Opus 4.8** 的一个变化：它写作时不再用 em dash 了。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2060962160872919043"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-05-31T04:57:07.000Z",
+        "sections": [
+          {
+            "headline": "Old discourse returns again · 老话题又回来了",
+            "body": "Time is a flat circle. A reminder since it’s in the discourse again 🙏 https://t.co/qKYCFktX6s\n\n时间是个平面圆。既然这个话题又回到讨论里了，提醒一下 🙏 https://t.co/qKYCFktX6s",
+            "source_links": [
+              "https://x.com/nikunj/status/2060948669164347448"
+            ]
+          },
+          {
+            "headline": "**Grok** makes a football compliment feel good · **Grok** 的足球夸奖让人很开心",
+            "body": "This might be just Grok’s way of gassing me up - but it makes me unreasonably happy ⚽️ https://t.co/An35dnHkdS https://t.co/nFfVpg3Qy5\n\n这可能只是 **Grok** 在哄我开心，但它让我高兴得有点不讲道理 ⚽️ https://t.co/An35dnHkdS https://t.co/nFfVpg3Qy5",
+            "source_links": [
+              "https://x.com/nikunj/status/2060823433819439292"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenAI Engineer",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-05-30T11:55:26.000Z",
+        "sections": [
+          {
+            "headline": "Autoreview and crabbox links are shared · 分享 autoreview 和 crabbox 链接",
+            "body": "Autoreview: https://t.co/zbUjIS2e1i\n\ncrabbox: https://t.co/SEj2XRpaD1\n\nAutoreview： https://t.co/zbUjIS2e1i\n\ncrabbox： https://t.co/SEj2XRpaD1",
+            "source_links": [
+              "https://x.com/steipete/status/2060691552486175041"
+            ]
+          },
+          {
+            "headline": "**GPT 5.5**, /goal, autoreview, and crabbox extend agent task length · **GPT 5.5**、/goal、autoreview 和 crabbox 拉长 agent 任务时长",
+            "body": "With GPT 5.5, /goal, autoreview and crabbox my prompts moved from ~30-60min to often 4-10h tasks and my confidence that it’s ready is much much higher.\n\nYielding agents is a skill.\n\n有了 **GPT 5.5**、/goal、autoreview 和 crabbox，我的 prompts 从大约 30-60 分钟，变成经常跑 4-10 小时的任务；我对它已经准备好的信心也高很多。\n\n让 agents 产出结果是一项技能。",
+            "source_links": [
+              "https://x.com/steipete/status/2060678430031597696"
+            ]
+          },
+          {
+            "headline": "Prompting **Codex** with a bug can make it search harder · 告诉 **Codex** 有 bug 会让它查得更狠",
+            "body": "I do this with codex all the time. Ask it to review code for bugs and it will tell you all good, tell it there is a bug and it will LOOP AND LOOP and will find issues. https://t.co/SOAa7Z1H4I\n\n我一直这么用 **codex**。让它 review 代码找 bug，它会说一切都好；告诉它这里有 bug，它就会一轮又一轮地查，最后真的找出问题。 https://t.co/SOAa7Z1H4I",
+            "source_links": [
+              "https://x.com/steipete/status/2060672154727825718"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-05-30T23:11:25.000Z",
+        "sections": [
+          {
+            "headline": "**Business Insider** comparison spans 2013 to 2026 · **Business Insider** 对比 2013 和 2026",
+            "body": "business insider 2013 vs. 2026 https://t.co/DVCelvXlgK\n\n**Business Insider** 2013 vs. 2026 https://t.co/DVCelvXlgK",
+            "source_links": [
+              "https://x.com/danshipper/status/2060861670184870225"
+            ]
+          },
+          {
+            "headline": "**Codex** usage hits 38b tokens and a 56h longest task · **Codex** 用量达到 380 亿 token，最长任务 56 小时",
+            "body": "38b tokens and a 56h longest task\n\n41 day current streak\n\nlfg codex https://t.co/FpIkhoyJTP\n\n380 亿 tokens，最长任务 56 小时。\n\n当前连续 41 天。\n\n冲吧 **codex** https://t.co/FpIkhoyJTP",
+            "source_links": [
+              "https://x.com/danshipper/status/2060771279280513362"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "SPC GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-05-30T08:48:40.000Z",
+        "sections": [
+          {
+            "headline": "Urban nuclear families make raising multiple children hard · 城市核心家庭让多孩养育变得很难",
+            "body": "Most people I talk to in India have 1 child. Some have 2.\n\nWhen I tell them I have three, their first reaction is total surprise followed by \"well, accidents happen\".\n\nThe main reason for one? Raising kids is just really hard, especially for nuclear families in cities.\n\n我在印度聊到的大多数人都有 1 个孩子，有些有 2 个。\n\n当我告诉他们我有 3 个时，他们的第一反应是非常惊讶，接着就是“嗯，意外总会发生”。\n\n为什么大多只要一个？养孩子真的很难，尤其是城市里的核心家庭。",
+            "source_links": [
+              "https://x.com/adityaag/status/2060644549408739621"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-05-31",
+    "updatedAt": "2026-06-01T07:39:03.905Z",
+    "commit": {
+      "sha": "bf4c588b74daf5a49159a955fbc2af98d57a9d5e",
+      "committedAt": "2026-05-31T07:35:06Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-01T06:16:36.745Z",
+    "feedGeneratedAt": "2026-05-31T07:34:55.496Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

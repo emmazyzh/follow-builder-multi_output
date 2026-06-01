@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "source": {
+    "owner": "zarazhangrui",
+    "repo": "follow-builders",
+    "branch": "main"
+  },
+  "language": "bilingual",
+  "timezone": "Asia/Shanghai",
+  "frequency": "daily",
+  "weeklyDay": "monday",
+  "model": "openai-codex/gpt-5.4",
+  "generation": {
+    "mode": "agent_native"
+  },
+  "delivery": {
+    "targets": ["feishu", "web"],
+    "driver": "feishu_webhook_card",
+    "openclaw": {
+      "channel": null,
+      "to": null,
+      "accountId": null
+    },
+    "feishu": {
+      "mode": "openclaw_account",
+      "accountId": null,
+      "chatId": null,
+      "domain": "feishu"
+    },
+    "larkCli": {
+      "chatId": "oc_xxx",
+      "as": "user"
+    },
+    "webhook": {
+      "url": "https://open.feishu.cn/open-apis/bot/v2/hook/your-webhook-id"
+    },
+    "web": {
+      "outputDir": "/path/to/follow-builders-sidecar-codex/web",
+      "siteUrl": "https://your-pages-domain.pages.dev"
+    },
+    "avatarFallbackAccountId": null,
+    "avatarUpload": {
+      "strategy": "dedicated_credentials",
+      "accountId": null,
+      "domain": "feishu"
+    }
+  },
+  "importedFrom": {
+    "originalConfigPath": "~/.follow-builders/config.json",
+    "importedAt": null
+  }
+}

@@ -1,0 +1,1160 @@
+#!/usr/bin/env node
+
+import { execFile } from 'child_process';
+import { createHash } from 'crypto';
+import { homedir } from 'os';
+import { dirname, join } from 'path';
+import { promisify } from 'util';
+import { fileURLToPath } from 'url';
+import {
+  ensureDir,
+  makeDir,
+  pathExists,
+  readJsonFile,
+  readTextFile,
+  removePath,
+  statPath,
+  writeJsonFile
+} from './sidecar-fs.js';
+
+const execFileAsync = promisify(execFile);
+
+const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
+const REPO_DIR = join(SCRIPT_DIR, '..');
+const SIDECAR_HOME = join(homedir(), '.follow-builders-sidecar');
+const SIDECAR_CONFIG_PATH = join(SIDECAR_HOME, 'config.json');
+const SIDECAR_CREDENTIALS_PATH = join(SIDECAR_HOME, 'credentials.json');
+const SIDECAR_STATE_PATH = join(SIDECAR_HOME, 'state.json');
+const SIDECAR_RUNTIME_DIR = join(REPO_DIR, '.runtime');
+const SIDECAR_SHADOW_STATE_PATH = join(SIDECAR_RUNTIME_DIR, 'state.json');
+const ORIGINAL_CONFIG_PATH = join(homedir(), '.follow-builders', 'config.json');
+
+const DEFAULT_MODEL = 'openai-codex/gpt-5.4';
+const DEFAULT_CRON_EXPR = '0 * * * *';
+const DEFAULT_TIMEZONE = 'Asia/Shanghai';
+const DEFAULT_LANGUAGE = 'zh';
+const DEFAULT_FREQUENCY = 'daily';
+const DEFAULT_WEEKLY_DAY = 'monday';
+const DEFAULT_FEISHU_MODE = 'openclaw_account';
+const DEFAULT_LARK_CLI_AS = 'user';
+const DEFAULT_FEISHU_WEBHOOK_URL = null;
+const DEFAULT_DELIVERY_TARGETS = ['feishu'];
+const DEFAULT_WEB_OUTPUT_DIR = join(REPO_DIR, 'web');
+const SIDECAR_JOB_NAME = 'Follow Builders Sidecar';
+const LEGACY_FEED_FILES = ['feed-x.json', 'feed-podcasts.json', 'feed-blogs.json'];
+const FEED_FILE_PATTERN = /^feed-([a-z0-9-]+)\.json$/i;
+const SUPPORTED_FEED_ADAPTERS = {
+  x: {
+    feedId: 'x',
+    file: 'feed-x.json',
+    outputKey: 'feedX'
+  },
+  podcasts: {
+    feedId: 'podcasts',
+    file: 'feed-podcasts.json',
+    outputKey: 'feedPodcasts'
+  },
+  blogs: {
+    feedId: 'blogs',
+    file: 'feed-blogs.json',
+    outputKey: 'feedBlogs'
+  }
+};
+const PROMPT_FILES = [
+  'summarize-podcast.md',
+  'summarize-tweets.md',
+  'summarize-blogs.md',
+  'digest-intro.md',
+  'translate.md'
+];
+const UPSTREAM_DEFAULTS = {
+  owner: 'zarazhangrui',
+  repo: 'follow-builders',
+  branch: 'main'
+};
+
+function log(level, message, context = {}) {
+  const payload = { level, message };
+  if (Object.keys(context).length > 0) {
+    payload.context = context;
+  }
+  console.error(JSON.stringify(payload));
+}
+
+function collapseWhitespace(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function nowIso() {
+  return new Date().toISOString();
+}
+
+function safeParseJson(raw) {
+  try {
+    return JSON.parse(raw);
+  } catch {
+    const match = raw.match(/(\{[\s\S]*\}|\[[\s\S]*\])\s*$/);
+    if (!match) {
+      throw new Error('Could not parse JSON output');
+    }
+    return JSON.parse(match[1]);
+  }
+}
+
+async function runCommand(command, args, options = {}) {
+  const { stdout } = await execFileAsync(command, args, {
+    cwd: options.cwd || REPO_DIR,
+    maxBuffer: 16 * 1024 * 1024
+  });
+  return stdout.trim();
+}
+
+async function runOpenClaw(args) {
+  return runCommand('openclaw', args);
+}
+
+async function runOpenClawJson(args) {
+  const stdout = await runOpenClaw(args);
+  return safeParseJson(stdout);
+}
+
+function normalizeWeeklyDay(value) {
+  const raw = collapseWhitespace(value).toLowerCase();
+  const aliases = {
+    mon: 'monday',
+    tue: 'tuesday',
+    tues: 'tuesday',
+    wed: 'wednesday',
+    thu: 'thursday',
+    thur: 'thursday',
+    thurs: 'thursday',
+    fri: 'friday',
+    sat: 'saturday',
+    sun: 'sunday'
+  };
+  if (!raw) return DEFAULT_WEEKLY_DAY;
+  if (aliases[raw]) return aliases[raw];
+  return [
+    'monday',
+    'tuesday',
+    'wednesday',
+    'thursday',
+    'friday',
+    'saturday',
+    'sunday'
+  ].includes(raw) ? raw : DEFAULT_WEEKLY_DAY;
+}
+
+function normalizeFeishuDeliveryMode(value) {
+  return value === 'direct_credentials' ? 'direct_credentials' : DEFAULT_FEISHU_MODE;
+}
+
+function normalizeDeliveryTargets(value) {
+  const rawTargets = Array.isArray(value)
+    ? value
+    : typeof value === 'string'
+      ? value.split(',')
+      : [];
+  const normalized = rawTargets
+    .map((entry) => collapseWhitespace(entry).toLowerCase())
+    .filter((entry) => entry === 'feishu' || entry === 'web');
+  return normalized.length > 0 ? Array.from(new Set(normalized)) : [...DEFAULT_DELIVERY_TARGETS];
+}
+
+function buildDefaultConfig(overrides = {}) {
+  const base = {
+    version: 1,
+    source: {
+      ...UPSTREAM_DEFAULTS
+    },
+    language: DEFAULT_LANGUAGE,
+    timezone: DEFAULT_TIMEZONE,
+    frequency: DEFAULT_FREQUENCY,
+    weeklyDay: DEFAULT_WEEKLY_DAY,
+    model: DEFAULT_MODEL,
+    generation: {
+      mode: 'script_model'
+    },
+    delivery: {
+      targets: [...DEFAULT_DELIVERY_TARGETS],
+      driver: 'openclaw_announce',
+      openclaw: {
+        channel: null,
+        to: null,
+        accountId: null
+      },
+      feishu: {
+        mode: DEFAULT_FEISHU_MODE,
+        accountId: null,
+        chatId: null,
+        domain: 'feishu'
+      },
+      larkCli: {
+        chatId: null,
+        as: DEFAULT_LARK_CLI_AS
+      },
+      webhook: {
+        url: DEFAULT_FEISHU_WEBHOOK_URL
+      },
+      web: {
+        outputDir: DEFAULT_WEB_OUTPUT_DIR,
+        siteUrl: null
+      },
+      avatarFallbackAccountId: null,
+      avatarUpload: {
+        strategy: 'dedicated_credentials',
+        accountId: null,
+        domain: 'feishu'
+      }
+    },
+    importedFrom: {
+      originalConfigPath: ORIGINAL_CONFIG_PATH,
+      importedAt: null
+    }
+  };
+
+  const merged = {
+    ...base,
+    ...overrides,
+    source: {
+      ...base.source,
+      ...(overrides.source || {})
+    },
+    generation: {
+      ...base.generation,
+      ...(overrides.generation || {})
+    },
+    delivery: {
+      ...base.delivery,
+      ...(overrides.delivery || {}),
+      targets: normalizeDeliveryTargets(overrides.delivery?.targets || base.delivery.targets),
+      openclaw: normalizeOpenClawDelivery(overrides.delivery?.openclaw || base.delivery.openclaw),
+      feishu: {
+        mode: normalizeFeishuDeliveryMode(overrides.delivery?.feishu?.mode || base.delivery.feishu.mode),
+        accountId: overrides.delivery?.feishu?.accountId || base.delivery.feishu.accountId,
+        chatId: overrides.delivery?.feishu?.chatId || base.delivery.feishu.chatId,
+        domain: overrides.delivery?.feishu?.domain || base.delivery.feishu.domain
+      },
+      larkCli: {
+        chatId: overrides.delivery?.larkCli?.chatId || base.delivery.larkCli.chatId,
+        as: overrides.delivery?.larkCli?.as || base.delivery.larkCli.as
+      },
+      webhook: {
+        url: overrides.delivery?.webhook?.url || base.delivery.webhook.url
+      },
+      web: {
+        outputDir: overrides.delivery?.web?.outputDir || base.delivery.web.outputDir,
+        siteUrl: overrides.delivery?.web?.siteUrl || base.delivery.web.siteUrl
+      },
+      avatarUpload: {
+        strategy: overrides.delivery?.avatarUpload?.strategy || base.delivery.avatarUpload.strategy,
+        accountId: overrides.delivery?.avatarUpload?.accountId || base.delivery.avatarUpload.accountId,
+        domain: overrides.delivery?.avatarUpload?.domain || base.delivery.avatarUpload.domain
+      }
+    },
+    importedFrom: {
+      ...base.importedFrom,
+      ...(overrides.importedFrom || {})
+    }
+  };
+
+  merged.frequency = merged.frequency === 'weekly' ? 'weekly' : 'daily';
+  merged.generation = {
+    mode: merged.generation?.mode === 'agent_native' ? 'agent_native' : 'script_model'
+  };
+  merged.weeklyDay = normalizeWeeklyDay(merged.weeklyDay);
+  merged.language = ['en', 'zh', 'bilingual'].includes(merged.language)
+    ? merged.language
+    : DEFAULT_LANGUAGE;
+  merged.delivery.driver = ['feishu_card', 'lark_cli_feishu_card', 'feishu_webhook_card'].includes(merged.delivery.driver)
+    ? merged.delivery.driver
+    : 'openclaw_announce';
+  merged.delivery.targets = normalizeDeliveryTargets(merged.delivery.targets);
+  merged.delivery.openclaw = normalizeOpenClawDelivery(merged.delivery.openclaw);
+  merged.delivery.feishu = {
+    mode: normalizeFeishuDeliveryMode(merged.delivery.feishu?.mode),
+    accountId: merged.delivery.feishu?.accountId || null,
+    chatId: merged.delivery.feishu?.chatId || null,
+    domain: merged.delivery.feishu?.domain || 'feishu'
+  };
+  merged.delivery.avatarUpload = {
+    strategy: merged.delivery.avatarUpload?.strategy || 'dedicated_credentials',
+    accountId: merged.delivery.avatarUpload?.accountId || null,
+    domain: merged.delivery.avatarUpload?.domain || merged.delivery.feishu?.domain || 'feishu'
+  };
+  merged.delivery.larkCli = {
+    chatId: merged.delivery.larkCli?.chatId || null,
+    as: ['user', 'bot'].includes(merged.delivery.larkCli?.as)
+      ? merged.delivery.larkCli.as
+      : DEFAULT_LARK_CLI_AS
+  };
+  merged.delivery.webhook = {
+    url: merged.delivery.webhook?.url || null
+  };
+  merged.delivery.web = {
+    outputDir: collapseWhitespace(merged.delivery.web?.outputDir || DEFAULT_WEB_OUTPUT_DIR) || DEFAULT_WEB_OUTPUT_DIR,
+    siteUrl: collapseWhitespace(merged.delivery.web?.siteUrl || '') || null
+  };
+  return merged;
+}
+
+function buildDefaultState(overrides = {}) {
+  return {
+    version: 1,
+    originalJobId: null,
+    sidecarJobId: null,
+    lastDeliveredKey: null,
+    lastDeliveredCommitSha: null,
+    lastSuccessAt: null,
+    lastCheckedAt: null,
+    lastOriginalCronFingerprint: null,
+    lastObservedCommit: null,
+    lastEvaluatedKey: null,
+    lastEvaluatedCommitSha: null,
+    lastEvaluatedOutcome: null,
+    lastFeedCompatibility: null,
+    lastCompatibilityWarnings: [],
+    lastFeedFingerprint: null,
+    ...overrides
+  };
+}
+
+async function loadSidecarConfig() {
+  return buildDefaultConfig(await readJsonFile(SIDECAR_CONFIG_PATH, {}));
+}
+
+async function saveSidecarConfig(config) {
+  await writeJsonFile(SIDECAR_CONFIG_PATH, buildDefaultConfig(config));
+}
+
+async function loadSidecarState() {
+  const primaryState = await readJsonFile(SIDECAR_STATE_PATH, {});
+  const shadowState = await readJsonFile(SIDECAR_SHADOW_STATE_PATH, {});
+  return buildDefaultState({
+    ...primaryState,
+    ...shadowState
+  });
+}
+
+async function saveSidecarState(state) {
+  const nextState = buildDefaultState(state);
+  try {
+    await writeJsonFile(SIDECAR_STATE_PATH, nextState);
+    if (pathExists(SIDECAR_SHADOW_STATE_PATH)) {
+      await removePath(SIDECAR_SHADOW_STATE_PATH, { force: true });
+    }
+  } catch (error) {
+    if (!isPermissionError(error)) {
+      throw error;
+    }
+    await writeJsonFile(SIDECAR_SHADOW_STATE_PATH, nextState);
+  }
+}
+
+async function ensureSidecarHome() {
+  await ensureDir(SIDECAR_HOME);
+}
+
+async function loadOriginalConfig() {
+  return readJsonFile(ORIGINAL_CONFIG_PATH, null);
+}
+
+function buildGitHubApiHeaders() {
+  return {
+    'User-Agent': 'follow-builders-sidecar/1.0',
+    'Accept': 'application/vnd.github+json'
+  };
+}
+
+async function getOpenClawConfigValue(path, { json = false, fallback = null } = {}) {
+  try {
+    if (json) {
+      return await runOpenClawJson(['config', 'get', path, '--json']);
+    }
+    const stdout = await runOpenClaw(['config', 'get', path]);
+    return collapseWhitespace(stdout) || fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+async function loadOpenClawFeishuConfig() {
+  const accounts = await getOpenClawConfigValue('channels.feishu.accounts', {
+    json: true,
+    fallback: null
+  });
+  const defaultAccount = await getOpenClawConfigValue('channels.feishu.defaultAccount', {
+    fallback: null
+  });
+  const domain = await getOpenClawConfigValue('channels.feishu.domain', {
+    fallback: 'feishu'
+  });
+
+  return {
+    accounts: accounts && typeof accounts === 'object' ? accounts : {},
+    defaultAccount,
+    domain: domain || 'feishu'
+  };
+}
+
+function extractLocalDateParts(value, timeZone) {
+  const formatter = new Intl.DateTimeFormat('en-CA', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    weekday: 'long'
+  });
+  const parts = formatter.formatToParts(value instanceof Date ? value : new Date(value));
+  const lookup = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return {
+    year: Number(lookup.year),
+    month: Number(lookup.month),
+    day: Number(lookup.day),
+    weekday: String(lookup.weekday || '').toLowerCase()
+  };
+}
+
+function dateKeyInTimeZone(value, timeZone) {
+  const parts = extractLocalDateParts(value, timeZone);
+  return `${String(parts.year).padStart(4, '0')}-${String(parts.month).padStart(2, '0')}-${String(parts.day).padStart(2, '0')}`;
+}
+
+function weekdayInTimeZone(value, timeZone) {
+  return extractLocalDateParts(value, timeZone).weekday;
+}
+
+function weekKeyInTimeZone(value, timeZone) {
+  const parts = extractLocalDateParts(value, timeZone);
+  const date = new Date(Date.UTC(parts.year, parts.month - 1, parts.day));
+  const day = date.getUTCDay() || 7;
+  date.setUTCDate(date.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  const weekNumber = Math.ceil((((date - yearStart) / 86400000) + 1) / 7);
+  return `${date.getUTCFullYear()}-W${String(weekNumber).padStart(2, '0')}`;
+}
+
+function resolveScheduleWindow(config, at = new Date()) {
+  const timeZone = config.timezone || DEFAULT_TIMEZONE;
+  const today = dateKeyInTimeZone(at, timeZone);
+  const weekday = weekdayInTimeZone(at, timeZone);
+
+  if (config.frequency === 'weekly') {
+    const weeklyDay = normalizeWeeklyDay(config.weeklyDay);
+    return {
+      allowed: weekday === weeklyDay,
+      frequency: 'weekly',
+      weeklyDay,
+      today,
+      weekday,
+      key: `weekly:${weekKeyInTimeZone(at, timeZone)}`
+    };
+  }
+
+  return {
+    allowed: true,
+    frequency: 'daily',
+    today,
+    weekday,
+    key: `daily:${today}`
+  };
+}
+
+async function listCronJobs() {
+  try {
+    const payload = await runOpenClawJson(['cron', 'list', '--json']);
+    return Array.isArray(payload?.jobs) ? payload.jobs : [];
+  } catch (error) {
+    if (error?.code === 'ENOENT' || /ENOENT|not found/i.test(String(error?.message || ''))) {
+      return [];
+    }
+    throw error;
+  }
+}
+
+function extractCronMessage(job) {
+  return collapseWhitespace(job?.payload?.message || job?.payload?.systemEvent || '');
+}
+
+function isOriginalFollowBuildersJob(job) {
+  const message = extractCronMessage(job);
+  const name = collapseWhitespace(job?.name).toLowerCase();
+  return Boolean(
+    message.includes('follow-builders/scripts/run-scheduled-feishu-card-digest.js')
+    || message.includes('follow-builders/scripts/prepare-digest.js')
+    || name === 'ai builders digest'
+  );
+}
+
+function isSidecarJob(job) {
+  const message = extractCronMessage(job);
+  const name = collapseWhitespace(job?.name).toLowerCase();
+  return Boolean(
+    message.includes('follow-builders-sidecar/scripts/run-sidecar.js')
+    || message.includes('/scripts/run-sidecar.js')
+    || name === SIDECAR_JOB_NAME.toLowerCase()
+  );
+}
+
+function findOriginalCronJob(jobs, preferredId = null) {
+  if (preferredId) {
+    const exact = jobs.find((job) => job.id === preferredId);
+    if (exact) return exact;
+  }
+  return jobs.find((job) => isOriginalFollowBuildersJob(job)) || null;
+}
+
+function findSidecarCronJob(jobs, preferredId = null) {
+  if (preferredId) {
+    const exact = jobs.find((job) => job.id === preferredId);
+    if (exact) return exact;
+  }
+  return jobs.find((job) => isSidecarJob(job)) || null;
+}
+
+function buildCronFingerprint(job) {
+  if (!job) return null;
+  return JSON.stringify({
+    id: job.id || null,
+    enabled: Boolean(job.enabled),
+    name: job.name || null,
+    schedule: job.schedule || null,
+    delivery: job.delivery || null,
+    updatedAtMs: job.updatedAtMs || null
+  });
+}
+
+async function disableCronJob(jobId) {
+  await runOpenClaw(['cron', 'disable', jobId]);
+}
+
+async function enableCronJob(jobId) {
+  await runOpenClaw(['cron', 'enable', jobId]);
+}
+
+function buildScriptModelCronMessage(scriptPath) {
+  return [
+    'Run exactly this command and do not generate the digest yourself:',
+    `\`node ${scriptPath}\``,
+    '',
+    'If the command returns JSON with `status` equal to `ok` or `skipped`, reply with exactly `NO_REPLY`.',
+    'If the command fails, inspect the error, fix the issue if possible, rerun once, and then reply with exactly `NO_REPLY`.'
+  ].join('\n');
+}
+
+function buildAgentNativeCronMessage({ scriptPath, sendScriptPath = join(SCRIPT_DIR, 'send-agent-payload.js') }) {
+  const inputPath = '/tmp/follow-builders-sidecar-raw.json';
+  const payloadPath = '/tmp/follow-builders-sidecar-payload.json';
+  return [
+    'Run the Follow Builders sidecar in agent-native mode. In this mode, YOU generate the digest payload with your current cron model; scripts only prepare feeds and send the card/message.',
+    '',
+    'Step 1: prepare the feed snapshot. Run exactly:',
+    `\`node ${scriptPath} --prepare-only --input-json-out ${inputPath} --payload-out ${payloadPath}\``,
+    '',
+    'If the command returns JSON with `status` equal to `skipped`, reply with exactly `NO_REPLY`.',
+    'If it returns `status: "needs_payload"`, read the JSON file at the returned `inputJsonPath`.',
+    '',
+    'Step 2: create the payload JSON yourself from grounded feed content only. Do not call `openclaw infer model run`, do not use a separate model from inside the script, and do not browse the web. Write pure JSON to the returned `payloadPath` with this root shape:',
+    '{ "date": "YYYY-MM-DD", "title": "AI Builders Daily · YYYY-MM-DD", "summary": "one concise top-level takeaway", "items": [ { "person_name": "...", "person_handle": "...", "person_identity": "...", "profile_url": "...", "source_label": "X / Twitter, Blog, or Podcast", "posted_at": "YYYY-MM-DD", "sections": [ { "headline": "short headline", "body": "one grounded paragraph", "source_links": [ { "label": "short label", "url": "https://..." } ] } ] } ] }',
+    '',
+    'Rules: follow the language in the feed config; include the strongest relevant X/blog/podcast sources available after reading the feed; preserve every original URL used; no speculation; no markdown fences in the payload file.',
+    '',
+    'Step 3: send and mark state. Run exactly:',
+    `\`node ${sendScriptPath} --input-json ${inputPath} --payload ${payloadPath}\``,
+    '',
+    'If anything fails, inspect the error, fix once if possible, rerun once, then reply with exactly `NO_REPLY`. On success, reply with exactly `NO_REPLY`.'
+  ].join('\n');
+}
+
+function buildSidecarCronMessage(scriptPath, options = {}) {
+  const generationMode = options.generationMode === 'agent_native' ? 'agent_native' : 'script_model';
+  if (generationMode === 'agent_native') {
+    return buildAgentNativeCronMessage({ scriptPath, sendScriptPath: options.sendScriptPath });
+  }
+  return buildScriptModelCronMessage(scriptPath);
+}
+
+function extractJobId(payload) {
+  return (
+    payload?.job?.id
+    || payload?.id
+    || payload?.data?.id
+    || payload?.result?.id
+    || null
+  );
+}
+
+async function createSidecarCronJob({ timeZone, scriptPath = join(SCRIPT_DIR, 'run-sidecar.js'), generationMode = 'script_model', model = null }) {
+  const payload = await runOpenClawJson([
+    'cron',
+    'add',
+    '--name',
+    SIDECAR_JOB_NAME,
+    '--cron',
+    DEFAULT_CRON_EXPR,
+    '--tz',
+    timeZone || DEFAULT_TIMEZONE,
+    '--session',
+    'isolated',
+    '--message',
+    buildSidecarCronMessage(scriptPath, { generationMode }),
+    ...(model ? ['--model', model] : []),
+    '--no-deliver',
+    '--exact',
+    '--timeout-seconds',
+    '900',
+    '--json'
+  ]);
+
+  return {
+    id: extractJobId(payload),
+    raw: payload
+  };
+}
+
+
+async function getGitHubToken() {
+  const envToken = collapseWhitespace(process.env.GITHUB_TOKEN || process.env.GH_TOKEN || '');
+  if (envToken) return envToken;
+  try {
+    const credentials = await readJsonFile(SIDECAR_CREDENTIALS_PATH, {});
+    return collapseWhitespace(credentials?.github?.token || '');
+  } catch {
+    return '';
+  }
+}
+
+async function withGitHubAuthHeaders(url, init = {}) {
+  if (!String(url || '').startsWith('https://api.github.com/')) {
+    return init;
+  }
+  const token = await getGitHubToken();
+  if (!token) return init;
+  return {
+    ...init,
+    headers: {
+      ...(init.headers || {}),
+      Authorization: `Bearer ${token}`,
+      Accept: init.headers?.Accept || 'application/vnd.github+json',
+      'X-GitHub-Api-Version': init.headers?.['X-GitHub-Api-Version'] || '2022-11-28'
+    }
+  };
+}
+
+async function fetchWithCurl(url, init = {}) {
+  const args = ['-fL'];
+  const headers = init.headers || {};
+
+  for (const [key, value] of Object.entries(headers)) {
+    if (typeof value === 'undefined' || value === null || value === '') continue;
+    args.push('-H', `${key}: ${value}`);
+  }
+
+  args.push(url);
+
+  const { stdout } = await execFileAsync('curl', args, {
+    cwd: REPO_DIR,
+    maxBuffer: 16 * 1024 * 1024,
+    timeout: 30000
+  });
+
+  return stdout;
+}
+
+function withDefaultFetchTimeout(init = {}, timeoutMs = 30000) {
+  if (init.signal) return init;
+  return {
+    ...init,
+    signal: AbortSignal.timeout(timeoutMs)
+  };
+}
+
+async function fetchJson(url, init = {}) {
+  const authedInit = await withGitHubAuthHeaders(url, init);
+  try {
+    const response = await fetch(url, withDefaultFetchTimeout(authedInit));
+    if (!response.ok) {
+      const body = await response.text();
+      throw new Error(`Request failed for ${url}: HTTP ${response.status} ${body.slice(0, 200)}`);
+    }
+    return response.json();
+  } catch (error) {
+    const raw = await fetchWithCurl(url, authedInit);
+    return JSON.parse(raw);
+  }
+}
+
+async function fetchText(url, init = {}) {
+  const authedInit = await withGitHubAuthHeaders(url, init);
+  try {
+    const response = await fetch(url, withDefaultFetchTimeout(authedInit));
+    if (!response.ok) {
+      const body = await response.text();
+      throw new Error(`Request failed for ${url}: HTTP ${response.status} ${body.slice(0, 200)}`);
+    }
+    return response.text();
+  } catch (error) {
+    return fetchWithCurl(url, authedInit);
+  }
+}
+
+async function fetchGitHubRepoFileJson(source, ref, file) {
+  const url = `https://api.github.com/repos/${encodeURIComponent(source.owner)}/${encodeURIComponent(source.repo)}/contents/${encodeURIComponent(file)}?ref=${encodeURIComponent(ref)}`;
+  const payload = await fetchJson(url, {
+    headers: buildGitHubApiHeaders()
+  });
+
+  if (!payload?.content) {
+    throw new Error(`GitHub contents API returned no content for ${file}@${ref}`);
+  }
+
+  const encoding = String(payload.encoding || '').toLowerCase();
+  if (encoding !== 'base64') {
+    throw new Error(`Unsupported GitHub contents encoding for ${file}@${ref}: ${payload.encoding || 'unknown'}`);
+  }
+
+  const raw = Buffer.from(String(payload.content).replace(/\n/g, ''), 'base64').toString('utf8');
+  return JSON.parse(raw);
+}
+
+function describeFeedFile(file) {
+  const normalized = collapseWhitespace(file);
+  const match = normalized.match(FEED_FILE_PATTERN);
+  if (!match) {
+    return null;
+  }
+
+  const feedId = match[1].toLowerCase();
+  const adapter = SUPPORTED_FEED_ADAPTERS[feedId] || null;
+
+  return {
+    file: normalized,
+    feedId,
+    supported: Boolean(adapter),
+    outputKey: adapter?.outputKey || null,
+    reason: adapter ? null : 'no_adapter'
+  };
+}
+
+function buildFeedCompatibilityReport(feedFiles, warnings = []) {
+  const all = [...new Set(feedFiles)]
+    .map((file) => describeFeedFile(file))
+    .filter(Boolean)
+    .sort((left, right) => left.file.localeCompare(right.file));
+  const supported = all.filter((entry) => entry.supported);
+  const unsupported = all.filter((entry) => !entry.supported);
+
+  return {
+    all,
+    supported,
+    unsupported,
+    supportedFiles: supported.map((entry) => entry.file),
+    unsupportedFiles: unsupported.map((entry) => entry.file),
+    warnings
+  };
+}
+
+function summarizeFeedCompatibility(report) {
+  return {
+    discovered: report.all.map((entry) => ({
+      feedId: entry.feedId,
+      file: entry.file,
+      supported: entry.supported
+    })),
+    supported: report.supported.map((entry) => ({
+      feedId: entry.feedId,
+      file: entry.file
+    })),
+    unsupported: report.unsupported.map((entry) => ({
+      feedId: entry.feedId,
+      file: entry.file,
+      reason: entry.reason || 'no_adapter'
+    })),
+    warnings: [...(report.warnings || [])]
+  };
+}
+
+async function discoverUpstreamFeedFiles(source = UPSTREAM_DEFAULTS) {
+  try {
+    const url = `https://api.github.com/repos/${encodeURIComponent(source.owner)}/${encodeURIComponent(source.repo)}/contents?ref=${encodeURIComponent(source.branch)}`;
+    const payload = await fetchJson(url, {
+      headers: buildGitHubApiHeaders()
+    });
+    const feedFiles = (Array.isArray(payload) ? payload : [])
+      .map((entry) => entry?.name)
+      .filter((name) => FEED_FILE_PATTERN.test(name));
+
+    if (feedFiles.length > 0) {
+      return buildFeedCompatibilityReport(feedFiles);
+    }
+  } catch (error) {
+    return buildFeedCompatibilityReport(LEGACY_FEED_FILES, [
+      `Dynamic upstream feed discovery failed: ${error.message}`,
+      'Falling back to legacy feed list.'
+    ]);
+  }
+
+  return buildFeedCompatibilityReport(LEGACY_FEED_FILES, [
+    'No upstream feed files were discovered dynamically.',
+    'Falling back to legacy feed list.'
+  ]);
+}
+
+async function fetchLatestRelevantCommit(source = UPSTREAM_DEFAULTS, feedFiles = LEGACY_FEED_FILES) {
+  const targetFiles = [...new Set(
+    (Array.isArray(feedFiles) ? feedFiles : LEGACY_FEED_FILES)
+      .map((entry) => (typeof entry === 'string' ? entry : entry?.file))
+      .filter(Boolean)
+  )];
+
+  if (targetFiles.length === 0) {
+    throw new Error('No feed files were provided for commit discovery');
+  }
+
+  const candidates = [];
+  const errors = [];
+
+  for (const file of targetFiles) {
+    try {
+      const url = `https://api.github.com/repos/${encodeURIComponent(source.owner)}/${encodeURIComponent(source.repo)}/commits?sha=${encodeURIComponent(source.branch)}&path=${encodeURIComponent(file)}&per_page=1`;
+      const commits = await fetchJson(url, {
+        headers: buildGitHubApiHeaders()
+      });
+      const commit = Array.isArray(commits) ? commits[0] : null;
+      if (!commit?.sha || !commit?.commit?.committer?.date) {
+        continue;
+      }
+      candidates.push({
+        sha: commit.sha,
+        committedAt: commit.commit.committer.date,
+        subject: String(commit.commit.message || '').split('\n')[0].trim(),
+        file
+      });
+    } catch (error) {
+      errors.push(`${file}: ${error.message}`);
+    }
+  }
+
+  if (candidates.length === 0) {
+    throw new Error(`Could not resolve latest upstream feed commit (${errors.join(' | ') || 'no commit metadata available'})`);
+  }
+
+  candidates.sort((a, b) => new Date(b.committedAt) - new Date(a.committedAt));
+  return candidates[0];
+}
+
+async function fetchCommitMetaBySha(sha, source = UPSTREAM_DEFAULTS) {
+  const url = `https://api.github.com/repos/${encodeURIComponent(source.owner)}/${encodeURIComponent(source.repo)}/commits/${encodeURIComponent(sha)}`;
+  const payload = await fetchJson(url, {
+    headers: buildGitHubApiHeaders()
+  });
+  return {
+    sha: payload.sha,
+    committedAt: payload?.commit?.committer?.date,
+    subject: String(payload?.commit?.message || '').split('\n')[0].trim()
+  };
+}
+
+function buildRawFeedUrl(source, ref, file) {
+  return `https://raw.githubusercontent.com/${source.owner}/${source.repo}/${ref}/${file}`;
+}
+
+async function loadFeedsForCommit(sha, source = UPSTREAM_DEFAULTS, feedCompatibility = null) {
+  const compatibility = feedCompatibility || await discoverUpstreamFeedFiles(source);
+  const loadedFeeds = {};
+  const loadMeta = {
+    mode: 'commit',
+    allRemote: true,
+    byFile: {},
+    remoteFailures: []
+  };
+
+  await Promise.all(
+    compatibility.supported.map(async (entry) => {
+      try {
+        loadedFeeds[entry.outputKey] = await fetchGitHubRepoFileJson(source, sha, entry.file);
+        loadMeta.byFile[entry.file] = { transport: 'github_contents_api' };
+        return;
+      } catch (apiError) {
+        log('warning', 'GitHub contents API feed load failed, trying raw URL', {
+          file: entry.file,
+          error: apiError.message
+        });
+      }
+
+      try {
+        loadedFeeds[entry.outputKey] = await fetchJson(buildRawFeedUrl(source, sha, entry.file));
+        loadMeta.byFile[entry.file] = { transport: 'raw_github' };
+      } catch (rawError) {
+        log('warning', 'Remote feed load failed, falling back to local bundled feed', {
+          file: entry.file,
+          error: rawError.message
+        });
+        loadMeta.allRemote = false;
+        loadMeta.byFile[entry.file] = {
+          transport: 'local_fallback',
+          error: rawError.message
+        };
+        loadMeta.remoteFailures.push(`${entry.file}: ${rawError.message}`);
+        loadedFeeds[entry.outputKey] = await readJsonFile(join(REPO_DIR, entry.file));
+      }
+    })
+  );
+
+  return {
+    feedX: loadedFeeds.feedX || null,
+    feedPodcasts: loadedFeeds.feedPodcasts || null,
+    feedBlogs: loadedFeeds.feedBlogs || null,
+    loadedFeeds,
+    feedCompatibility: compatibility,
+    loadMeta
+  };
+}
+
+async function loadCurrentFeeds(source = UPSTREAM_DEFAULTS, feedCompatibility = null) {
+  const compatibility = feedCompatibility || await discoverUpstreamFeedFiles(source);
+  const loadedFeeds = {};
+  const loadMeta = {
+    mode: 'current',
+    allRemote: true,
+    byFile: {},
+    remoteFailures: []
+  };
+
+  await Promise.all(
+    compatibility.supported.map(async (entry) => {
+      try {
+        loadedFeeds[entry.outputKey] = await fetchGitHubRepoFileJson(source, source.branch, entry.file);
+        loadMeta.byFile[entry.file] = { transport: 'github_contents_api' };
+        return;
+      } catch (apiError) {
+        log('warning', 'GitHub contents API feed load failed, trying raw URL', {
+          file: entry.file,
+          error: apiError.message
+        });
+      }
+
+      try {
+        loadedFeeds[entry.outputKey] = await fetchJson(buildRawFeedUrl(source, source.branch, entry.file));
+        loadMeta.byFile[entry.file] = { transport: 'raw_github' };
+      } catch (rawError) {
+        log('warning', 'Remote feed load failed, falling back to local bundled feed', {
+          file: entry.file,
+          error: rawError.message
+        });
+        loadMeta.allRemote = false;
+        loadMeta.byFile[entry.file] = {
+          transport: 'local_fallback',
+          error: rawError.message
+        };
+        loadMeta.remoteFailures.push(`${entry.file}: ${rawError.message}`);
+        loadedFeeds[entry.outputKey] = await readJsonFile(join(REPO_DIR, entry.file));
+      }
+    })
+  );
+
+  return {
+    feedX: loadedFeeds.feedX || null,
+    feedPodcasts: loadedFeeds.feedPodcasts || null,
+    feedBlogs: loadedFeeds.feedBlogs || null,
+    loadedFeeds,
+    feedCompatibility: compatibility,
+    loadMeta
+  };
+}
+
+function buildFeedFingerprint(feeds) {
+  return createHash('sha256').update(JSON.stringify({
+    feedX: feeds.feedX || null,
+    feedPodcasts: feeds.feedPodcasts || null,
+    feedBlogs: feeds.feedBlogs || null
+  })).digest('hex');
+}
+
+async function loadSidecarPrompts() {
+  const prompts = {};
+  const userPromptsDir = join(SIDECAR_HOME, 'prompts');
+  const localPromptsDir = join(REPO_DIR, 'prompts');
+
+  for (const filename of PROMPT_FILES) {
+    const key = filename.replace('.md', '').replace(/-/g, '_');
+    const userPath = join(userPromptsDir, filename);
+    const localPath = join(localPromptsDir, filename);
+    if (pathExists(userPath)) {
+      prompts[key] = await readTextFile(userPath);
+      continue;
+    }
+    if (pathExists(localPath)) {
+      prompts[key] = await readTextFile(localPath);
+    }
+  }
+
+  return prompts;
+}
+
+function normalizeOpenClawDelivery(value = {}) {
+  return {
+    channel: value.channel || null,
+    to: value.to || null,
+    accountId: value.accountId || value.account || null
+  };
+}
+
+function inferOpenClawDeliveryFromJob(job) {
+  if (!job) {
+    return normalizeOpenClawDelivery();
+  }
+  return normalizeOpenClawDelivery({
+    channel: job?.delivery?.channel,
+    to: job?.delivery?.to,
+    accountId: job?.delivery?.accountId || job?.accountId
+  });
+}
+
+function sleep(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function isPermissionError(error) {
+  return ['EACCES', 'EPERM', 'EROFS'].includes(error?.code);
+}
+
+async function isStaleLock(lockPath, staleMs) {
+  try {
+    const details = await statPath(lockPath);
+    return Date.now() - details.mtimeMs > staleMs;
+  } catch {
+    return false;
+  }
+}
+
+async function readLockOwner(lockPath) {
+  try {
+    return await readJsonFile(join(lockPath, 'owner.json'), null);
+  } catch {
+    return null;
+  }
+}
+
+async function isProcessAlive(pid) {
+  if (!pid || typeof pid !== 'number') return false;
+  try {
+    process.kill(pid, 0);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function acquireLock(lockPath) {
+  const staleMs = 15 * 60 * 1000;
+
+  for (let attempt = 0; attempt < 20; attempt += 1) {
+    try {
+      await makeDir(lockPath);
+      await writeJsonFile(join(lockPath, 'owner.json'), {
+        pid: process.pid,
+        createdAt: nowIso()
+      });
+      return async () => {
+        await removePath(lockPath, { recursive: true, force: true });
+      };
+    } catch (error) {
+      if (error?.code !== 'EEXIST') {
+        throw error;
+      }
+
+      const owner = await readLockOwner(lockPath);
+      const ownerAlive = await isProcessAlive(owner?.pid);
+      if (!ownerAlive || await isStaleLock(lockPath, staleMs)) {
+        await removePath(lockPath, { recursive: true, force: true });
+        continue;
+      }
+      await sleep(250 * (attempt + 1));
+    }
+  }
+
+  throw new Error(`Could not acquire sidecar lock: ${lockPath}`);
+}
+
+async function withStateLock(callback, statePath = SIDECAR_STATE_PATH) {
+  let release;
+  try {
+    await ensureDir(dirname(statePath));
+    release = await acquireLock(`${statePath}.lock`);
+  } catch (error) {
+    if (!isPermissionError(error)) {
+      throw error;
+    }
+    await ensureDir(dirname(SIDECAR_SHADOW_STATE_PATH));
+    release = await acquireLock(`${SIDECAR_SHADOW_STATE_PATH}.lock`);
+  }
+  try {
+    return await callback();
+  } finally {
+    await release();
+  }
+}
+
+export {
+  DEFAULT_MODEL,
+  DEFAULT_TIMEZONE,
+  FEED_FILE_PATTERN,
+  LEGACY_FEED_FILES,
+  ORIGINAL_CONFIG_PATH,
+  REPO_DIR,
+  SCRIPT_DIR,
+  SIDECAR_CONFIG_PATH,
+  SIDECAR_CREDENTIALS_PATH,
+  SIDECAR_HOME,
+  SIDECAR_JOB_NAME,
+  SIDECAR_STATE_PATH,
+  UPSTREAM_DEFAULTS,
+  buildCronFingerprint,
+  buildDefaultConfig,
+  buildDefaultState,
+  normalizeDeliveryTargets,
+  buildAgentNativeCronMessage,
+  buildScriptModelCronMessage,
+  buildSidecarCronMessage,
+  collapseWhitespace,
+  createSidecarCronJob,
+  describeFeedFile,
+  dateKeyInTimeZone,
+  disableCronJob,
+  discoverUpstreamFeedFiles,
+  enableCronJob,
+  ensureSidecarHome,
+  fetchCommitMetaBySha,
+  fetchJson,
+  fetchLatestRelevantCommit,
+  fetchText,
+  findOriginalCronJob,
+  findSidecarCronJob,
+  inferOpenClawDeliveryFromJob,
+  listCronJobs,
+  buildFeedFingerprint,
+  loadCurrentFeeds,
+  loadFeedsForCommit,
+  loadOpenClawFeishuConfig,
+  loadOriginalConfig,
+  loadSidecarConfig,
+  loadSidecarPrompts,
+  loadSidecarState,
+  log,
+  normalizeOpenClawDelivery,
+  normalizeWeeklyDay,
+  normalizeFeishuDeliveryMode,
+  nowIso,
+  resolveScheduleWindow,
+  getOpenClawConfigValue,
+  runCommand,
+  runOpenClaw,
+  runOpenClawJson,
+  saveSidecarConfig,
+  saveSidecarState,
+  safeParseJson,
+  summarizeFeedCompatibility,
+  weekdayInTimeZone,
+  withStateLock
+};
