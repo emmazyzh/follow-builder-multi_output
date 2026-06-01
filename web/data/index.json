@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-01T07:39:03.906Z",
+  "updatedAt": "2026-06-01T16:27:23.316Z",
   "latestDate": "2026-05-31",
   "dates": [
     {
@@ -7,8 +7,8 @@
       "title": "AI Builders Daily · 2026-05-31",
       "summary": "English: Today’s snapshot covers **Claude Managed Agents** adding dreaming, outcomes, orchestration, and webhooks; **Gemini** co-lead Oriol Vinyals on world models, multimodal learning, RL, memory, and robotics; plus builder posts on **Codex**, **GPT-5.5**, **Vercel AI Gateway**, **Cursor** auto-review, AI education, enterprise AI investment, and California politics.\n\n中文：今天的快照包括 **Claude Managed Agents** 新增 dreaming、outcomes、多智能体编排和 webhooks；**Gemini** 联合负责人 Oriol Vinyals 谈世界模型、多模态学习、RL、记忆和机器人；以及关于 **Codex**、**GPT-5.5**、**Vercel AI Gateway**、**Cursor** auto-review、AI 教育、企业 AI 投入和加州政治的 builder 动态。",
       "itemCount": 13,
-      "siteUrl": null,
-      "updatedAt": "2026-06-01T07:39:03.906Z",
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-01T16:27:23.316Z",
       "commit": {
         "sha": "bf4c588b74daf5a49159a955fbc2af98d57a9d5e",
         "committedAt": "2026-05-31T07:35:06Z",
