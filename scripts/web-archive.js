@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
+import { execFile } from 'child_process';
 import { basename, join } from 'path';
+import { promisify } from 'util';
 
 import {
   DEFAULT_TIMEZONE,
+  REPO_DIR,
   dateKeyInTimeZone
 } from './sidecar-common.js';
 import {
@@ -12,6 +15,8 @@ import {
   writeJsonFile,
   writeTextFile
 } from './sidecar-fs.js';
+
+const execFileAsync = promisify(execFile);
 
 function resolveSourceDate(prepared, payload, config) {
   const timezone = config.timezone || DEFAULT_TIMEZONE;
@@ -118,7 +123,46 @@ async function updateWebArchive(prepared, payload, config) {
   };
 }
 
+async function runGit(args) {
+  const { stdout } = await execFileAsync('git', args, {
+    cwd: REPO_DIR,
+    maxBuffer: 16 * 1024 * 1024,
+    timeout: 180000
+  });
+  return stdout.trim();
+}
+
+async function publishWebArchiveToGit(payload, outputDir) {
+  const relativeOutputDir = outputDir.startsWith(`${REPO_DIR}/`)
+    ? outputDir.slice(REPO_DIR.length + 1)
+    : basename(outputDir);
+  const trackedPaths = [
+    join(relativeOutputDir, 'data'),
+    join(relativeOutputDir, '.nojekyll')
+  ];
+
+  const status = await runGit(['status', '--short', '--', ...trackedPaths]);
+  if (!status.trim()) {
+    return {
+      status: 'skipped',
+      reason: 'no_changes'
+    };
+  }
+
+  await runGit(['add', '--', ...trackedPaths]);
+  await runGit(['commit', '-m', `Update web archive for ${payload.date}`]);
+  await runGit(['push', 'origin', 'main']);
+
+  const commitSha = await runGit(['rev-parse', 'HEAD']);
+  return {
+    status: 'ok',
+    branch: 'main',
+    commitSha
+  };
+}
+
 export {
   normalizePayloadForOutputs,
+  publishWebArchiveToGit,
   updateWebArchive
 };

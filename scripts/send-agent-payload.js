@@ -21,7 +21,11 @@ import {
   withStateLock
 } from './sidecar-common.js';
 import { sendDigestPayloadThroughOpenClaw } from './send-openclaw-message.js';
-import { normalizePayloadForOutputs, updateWebArchive } from './web-archive.js';
+import {
+  normalizePayloadForOutputs,
+  publishWebArchiveToGit,
+  updateWebArchive
+} from './web-archive.js';
 
 const execFileAsync = promisify(execFile);
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
@@ -167,6 +171,7 @@ async function deliverPayload(payloadPath, payload, prepared, config) {
 
   if (targets.includes('web')) {
     results.web = await updateWebArchive(prepared, payload, config);
+    results.web.git = await publishWebArchiveToGit(payload, config.delivery?.web?.outputDir);
   }
   if (targets.includes('feishu')) {
     results.feishu = await deliverFeishuPayload(payloadPath, payload, config);
