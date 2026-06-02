@@ -34,6 +34,18 @@
             "body": "@xai @imagine see more about flipbook from @zan2434 and @eddiejiao_obj !\n\nhttps://t.co/WHwtYQ3WWF\n\n@xai @imagine 可以看 @zan2434 和 @eddiejiao_obj 关于 flipbook 的更多内容！\n\nhttps://t.co/WHwtYQ3WWF",
             "source_links": [
               "https://x.com/swyx/status/2061694815130243344"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/eddiejiao_obj/status/2046975783324004732?s=20",
+                "resolvedUrl": "https://x.com/eddiejiao_obj/status/2046975783324004732",
+                "authorName": "𝖊𝖉𝖉𝖎𝖊 𝖏𝖎𝖆𝖔",
+                "authorHandle": "eddiejiao_obj",
+                "authorUrl": "https://x.com/eddiejiao_obj",
+                "text": "What if your whole computer were just pixels streamed to you from a model? I’ve been working with @zan2434 and @drewocarr to imagine a version of generative computing that’s much more flexible and visually rich than the GUIs we have today.\n(Video is sped up and edited) pic.twitter.com/OfSTXYAEu4",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -41,6 +53,18 @@
             "body": "title undersells it - this @workos talk is doing v well and is the first to seriously challenge @mattpocockuk in weeks. team is ab testing https://t.co/puwZ8bKPH3 https://t.co/rRWOfwqjjq\n\n标题低估它了 - 这个 @workos 演讲表现很好，是几周来第一个真正挑战 @mattpocockuk 的。团队正在做 AB 测试 https://t.co/puwZ8bKPH3 https://t.co/rRWOfwqjjq",
             "source_links": [
               "https://x.com/swyx/status/2061658241877397917"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nicknisi/status/2061509762420813993",
+                "resolvedUrl": "https://x.com/nicknisi/status/2061509762420813993",
+                "authorName": "Nick Nisi",
+                "authorHandle": "nicknisi",
+                "authorUrl": "https://x.com/nicknisi",
+                "text": "My talk from AIE Europe is up! Come learn the lessons I learned while shipping real production AI systems. https://t.co/mlPo12QduW",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -48,6 +72,18 @@
             "body": "@Microsoft @nvidia roundup of links: https://t.co/52cazFXk1f\n\n@Microsoft @nvidia 链接汇总：https://t.co/52cazFXk1f",
             "source_links": [
               "https://x.com/swyx/status/2061654021958762620"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
+                "resolvedUrl": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
+                "siteName": "latent.space",
+                "title": "[AINews] NVIDIA Cosmos 3, Nemotron 3 Ultra, and RTX Spark",
+                "description": "Jensen scores a huge win.",
+                "image": "https://substackcdn.com/image/fetch/$s_!5bzA!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6685277-4569-4135-92cb-e7a645246125_4096x2732.jpeg",
+                "mediaKind": "image"
+              }
             ]
           }
         ]
@@ -65,6 +101,18 @@
             "body": "You can just codex ... a farm\nhttps://t.co/pwmS7IvqbH\n\n你可以直接用 **Codex**……管一个农场\nhttps://t.co/pwmS7IvqbH",
             "source_links": [
               "https://x.com/thsottiaux/status/2061657264508006738"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://chatgptpro.substack.com/p/hiroki-tomiyasu",
+                "resolvedUrl": "https://chatgptpro.substack.com/p/hiroki-tomiyasu",
+                "siteName": "chatgptpro.substack.com",
+                "title": "A broccoli farmer in northern Japan shares his chats",
+                "description": "Hiroki Tomiyasu uses ChatGPT and Codex to troubleshoot problems on his farm and automate parts of his work",
+                "image": "https://substackcdn.com/image/fetch/$s_!hiEA!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7aa15e49-cb6e-4791-a171-d7b5c23342e5_1254x1254.png",
+                "mediaKind": "image"
+              }
             ]
           },
           {
@@ -72,6 +120,18 @@
             "body": "Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D\n\n听说 **AWS** 是酷孩子待的地方。你好。我们有 **GPT-5.5**。https://t.co/TixKoaIS0D",
             "source_links": [
               "https://x.com/thsottiaux/status/2061644307111796984"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/OpenAI/status/2061564502160892138",
+                "resolvedUrl": "https://x.com/OpenAI/status/2061564502160892138",
+                "authorName": "OpenAI",
+                "authorHandle": "OpenAI",
+                "authorUrl": "https://x.com/OpenAI",
+                "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\nThis is also the beginning of a broader expansion of OpenAI…",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -103,6 +163,18 @@
             "body": "You can get a sneek peek into Josh's full skills library here: https://t.co/d7n2UXsw6E\n\n你可以在这里提前看一下 **Josh** 完整的 skills 库：https://t.co/d7n2UXsw6E",
             "source_links": [
               "https://x.com/petergyang/status/2061452081572282805"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://initialcommit.co/library/skills/",
+                "resolvedUrl": "https://initialcommit.co/library/skills/",
+                "siteName": "Initial Commit",
+                "title": "Skills — Initial Commit",
+                "description": "Portable markdown playbooks for AI agents — reusable skills you drop into Claude Code or any agent that reads SKILL.md. Previews public; full text for Club members.",
+                "image": null,
+                "mediaKind": null
+              }
             ]
           },
           {
@@ -110,6 +182,18 @@
             "body": "My top 6 takeaways from @Shpigford on how to build multiple products solo with AI agents:\n\n1. Keep shipping even if the fear of embarrassment never goes away.\n\nAfter 25 years as a solo builder, Josh still thinks \"It's terrifying launching something. Every single time it's just like, what if zero people care?\" But he ships early anyway: \"The idea of spending months working on something before you put it out for other people to use, I think that's a real bad idea.\"\n\n2. Charge from day one, and kill products that can’t pay for themselves.\n\nFor any product with built-in costs (e.g., hosting, LLM), Josh ships a paid version from day one. If the product can't cover its own costs, he doesn't hesitate to shut it down and refund recent payments.\n\n3. Build features in parallel with separate git worktrees\n\nEach worktree is a separate working copy of your codebase on its own branch, so features won't interact with each other. Worktrees stop context rot, isolate mistakes, and force you to test every chunk before moving on. Josh uses @conductor_build to manage them all.\n\n4. Have GPT review Claude's work and vice versa\n\nJosh builds with one model and then runs a review pass with another “GPT invariably finds three to five bugs that Opus overlooked.” Different models spot different mistakes. In Conductor, he sets a default review model so it runs on every PR.\n\n5. Build a skill to make AI better over time.\n\nJosh built a /learnings skill that runs at the end of each phase so that every \"no, that didn't work\" moment can be distilled into new rules to help the agent avoid repeating the same mistakes.\n\n6. AI lets anyone ship, but real experience still matters.\n\nJosh credits 25 years of building before AI for how fast he ships now with agents. \"I know the general shape of how I want things to work, so I can very quickly get to that point.\" His advice for newer builders is to \"just fail a lot, because the only way that you'll ever figure out what not to do is by doing the thing incorrectly.\"\n\nJosh walked through his entire development workflow in our episode and shared more skills.\n\n📌 Watch the full episode here: https://t.co/9brwr7daw8\n\n我从 @Shpigford 关于如何单人用 AI agents 做多个产品里，最想带走的 6 点：\n\n1. 哪怕怕丢脸的感觉一直都在，也要继续发布。\n\n做了 25 年 solo builder 之后，**Josh** 仍然觉得“发布东西很吓人。每一次都会想，要是没人关心怎么办？”但他还是会早早发布：“花几个月做东西，然后才拿给别人用，我觉得这是个很糟糕的主意。”\n\n2. 第一天就收费，养不活自己的产品就关掉。\n\n对任何有内置成本的产品，比如托管、LLM，**Josh** 从第一天就发布付费版本。如果产品不能覆盖自己的成本，他会直接关掉，并退还最近的付款。\n\n3. 用独立 git worktrees 并行做功能。\n\n每个 worktree 都是代码库在独立分支上的一个独立工作副本，所以功能之间不会互相干扰。Worktrees 能减少上下文腐烂、隔离错误，并迫使你在继续之前测试每一块。**Josh** 用 @conductor_build 管理这些 worktrees。\n\n4. 让 **GPT** 审 **Claude** 的工作，反过来也一样。\n\n**Josh** 用一个模型构建，再用另一个模型做 review，“**GPT** 总能找到 **Opus** 漏掉的三到五个 bug。”不同模型会发现不同问题。在 **Conductor** 里，他设置了默认 review 模型，让它在每个 PR 上运行。\n\n5. 做一个 skill，让 AI 越用越好。\n\n**Josh** 做了一个 /learnings skill，在每个阶段结束时运行，把每一次“不是，这样不行”的时刻提炼成新规则，帮助 agent 避免重复同样的错误。\n\n6. AI 让任何人都能发货，但真实经验仍然重要。\n\n**Josh** 认为，他能现在用 agents 快速发货，离不开 AI 出现前 25 年的构建经验。“我知道大概要让东西怎么运行，所以可以很快到达那个点。”他给新 builder 的建议是：“多失败，因为你只有把事情做错，才会知道什么不该做。”\n\n**Josh** 在我们的节目里完整演示了他的开发流程，并分享了更多 skills。\n\n📌 看完整节目：https://t.co/9brwr7daw8",
             "source_links": [
               "https://x.com/petergyang/status/2061452068792287622"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://youtu.be/GdxLaeyu33c",
+                "resolvedUrl": "https://www.youtube.com/watch?v=GdxLaeyu33c&feature=youtu.be",
+                "siteName": "YouTube",
+                "title": "The Exact AI Skills This Solo Founder Uses to Build 5 Apps at Once | Josh Pigford",
+                "description": "Josh sold his last startup for $4M and is now building 5 products solo with agents. He showed me his exact AI skills stack, including a 4-step /build skill, ...",
+                "image": "https://i.ytimg.com/vi/GdxLaeyu33c/maxresdefault.jpg",
+                "mediaKind": "image"
+              }
             ]
           }
         ]
@@ -134,6 +218,18 @@
             "body": "gist for the full prompt here: https://t.co/L0ffBeU1ua\n\n完整提示词的 gist 在这里：https://t.co/L0ffBeU1ua",
             "source_links": [
               "https://x.com/trq212/status/2061545635141361687"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b",
+                "resolvedUrl": "https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b",
+                "siteName": "Gist",
+                "title": "Learn Quiz",
+                "description": "Learn Quiz. GitHub Gist: instantly share code, notes, and snippets.",
+                "image": "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png",
+                "mediaKind": "image"
+              }
             ]
           },
           {
@@ -158,6 +254,18 @@
             "body": "vibecon https://t.co/zAqrtrfd1k\n\n**vibecon** https://t.co/zAqrtrfd1k",
             "source_links": [
               "https://x.com/amasad/status/2061673231309058241"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/tigrisli/status/2061539771353067612",
+                "resolvedUrl": "https://x.com/tigrisli/status/2061539771353067612",
+                "authorName": "tigris",
+                "authorHandle": "tigrisli",
+                "authorUrl": "https://x.com/tigrisli",
+                "text": "omg pic.twitter.com/OsNzKONpAN",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -165,6 +273,18 @@
             "body": "Prompt to business:\n- website\n- mobile app\n- monetization\n- Delaware corp\n\nStart for free: https://t.co/r3LEz2slaT\n\n提示词到业务：\n- 网站\n- 移动应用\n- 变现\n- 特拉华公司\n\n免费开始：https://t.co/r3LEz2slaT",
             "source_links": [
               "https://x.com/amasad/status/2061575503434408106"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/replit/status/2061537387726119165",
+                "resolvedUrl": "https://x.com/Replit/status/2061537387726119165",
+                "authorName": "Replit ⠕",
+                "authorHandle": "Replit",
+                "authorUrl": "https://x.com/Replit",
+                "text": "Can you build a real business for free with a single prompt?\nStarting today on Replit, the answer is yes.\nFrom a single prompt, get a website, mobile app, slide deck, and launch video.\nPlus unlock perks from @stripe @atlas , @QuickBooks , @mercury & @doolaHQ pic.twitter.com/9fp0zY4uwH",
+                "provider": "X"
+              }
             ]
           }
         ]
@@ -182,6 +302,28 @@
             "body": "MiniMax M3 is now the leading open model on the Next.js agent evaluations (https://t.co/SnZ54XoRWV).\n\nRight behind Opus &amp; GPT5, but 10× cheaper (And 20× cheaper right now on ▲ AI Gateway!) https://t.co/z9ts1NZDyu\n\n**MiniMax M3** 现在是 **Next.js** agent 评测里的领先开放模型（https://t.co/SnZ54XoRWV）。\n\n紧跟在 **Opus** 和 **GPT5** 后面，但便宜 10 倍（现在在 ▲ **AI Gateway** 上便宜 20 倍！）https://t.co/z9ts1NZDyu",
             "source_links": [
               "https://x.com/rauchg/status/2061593874498531707"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://nextjs.org/evals",
+                "resolvedUrl": "https://nextjs.org/evals",
+                "siteName": "nextjs.org",
+                "title": "AI Agent Evaluations | Next.js by Vercel - The React Framework",
+                "description": "Next.js by Vercel is the full-stack React framework for the web.",
+                "image": "https://h8dxkfmaphn8o0p3.public.blob.vercel-storage.com/nextjs/twitter-card.png",
+                "mediaKind": "image"
+              },
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2061590462822224374",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2061590462822224374",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "MiniMax M3 is available on AI Gateway.\nMiniMax's first long-context model, with support for multimodal inputs.\n50% off for the next week.\n𝚖𝚘𝚍𝚎𝚕: '𝚖𝚒𝚗𝚒𝚖𝚊𝚡/𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚖𝟹' https://t.co/Be8lceGhaU",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -189,6 +331,18 @@
             "body": "Git is all you need. Always has been https://t.co/PEt3D4Pt70\n\n**Git** 就够了。一直如此 https://t.co/PEt3D4Pt70",
             "source_links": [
               "https://x.com/rauchg/status/2061533151676293430"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/shadcn/status/2061477029111792125",
+                "resolvedUrl": "https://x.com/shadcn/status/2061477029111792125",
+                "authorName": "shadcn",
+                "authorHandle": "shadcn",
+                "authorUrl": "https://x.com/shadcn",
+                "text": "You can now turn any GitHub repo into a registry.\nDrop in a registry.json. Define your items. Install with the CLI.\nDistribute components, utilities, config, docs, rules, design systems, workflows, agents, skills and more. pic.twitter.com/5Axczq6RGC",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -196,6 +350,18 @@
             "body": "Beautiful example of a full-stack agent on @vercel. Great learning material! https://t.co/jz1E7g4aSM\n\n这是一个在 @vercel 上做全栈 agent 的漂亮例子。很适合学习！https://t.co/jz1E7g4aSM",
             "source_links": [
               "https://x.com/rauchg/status/2061415178298937365"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/pontusab/status/2061410279922282556",
+                "resolvedUrl": "https://x.com/pontusab/status/2061410279922282556",
+                "authorName": "Pontus Abrahamsson — oss/acc",
+                "authorHandle": "pontusab",
+                "authorUrl": "https://x.com/pontusab",
+                "text": "Introducing Caltext, open-source calorie tracking in iMessage.\nBuilt with:\n• Bun + Turborepo\n• Hono on Nitro (Vercel)\n• Chat SDK + Sendblue\n• AI SDK + GPT-4.1 vision\n• Upstash Redis\n• Vercel Workflows\n• USDA FoodData Central\nLink ⬇️🧵 pic.twitter.com/RclPtX6YMO",
+                "provider": "X"
+              }
             ]
           }
         ]
@@ -220,6 +386,18 @@
             "body": "AWS has massive enterprise traction, with large committed contracts from enterprises. So this partnership opens up both increased distribution for OpenAI’s models, but also likely drives an increase in token consumption overall across model providers. https://t.co/I9XJyDAq9F\n\n**AWS** 在企业市场有很强的牵引力，也有大量企业承诺合同。所以这次合作既会扩大 **OpenAI** 模型的分发，也很可能推动各模型供应商整体 token 消耗上升。https://t.co/I9XJyDAq9F",
             "source_links": [
               "https://x.com/levie/status/2061612625574944804"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/openai/status/2061564502160892138",
+                "resolvedUrl": "https://x.com/OpenAI/status/2061564502160892138",
+                "authorName": "OpenAI",
+                "authorHandle": "OpenAI",
+                "authorUrl": "https://x.com/OpenAI",
+                "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\nThis is also the beginning of a broader expansion of OpenAI…",
+                "provider": "X"
+              }
             ]
           }
         ]
@@ -237,6 +415,18 @@
             "body": "Want to try GStack /office-hours for your product idea as quickly as possible? It's one click here: \n\nhttps://t.co/8g3LJkrV6i https://t.co/YEGSvd445K\n\n想尽快为你的产品想法试试 **GStack** /office-hours？这里一键开始：\n\nhttps://t.co/8g3LJkrV6i https://t.co/YEGSvd445K",
             "source_links": [
               "https://x.com/garrytan/status/2061568169354129640"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://app.lightsprint.ai/office-hours",
+                "resolvedUrl": "https://app.lightsprint.ai/office-hours",
+                "siteName": "app.lightsprint.ai",
+                "title": "Office Hours with Gstack — the partner interview before you build | Lightsprint",
+                "description": "Describe your idea and get the partner interview experience powered by Garry Tan",
+                "image": null,
+                "mediaKind": null
+              }
             ]
           },
           {
@@ -244,6 +434,18 @@
             "body": "\"Leadership is presence, not absence.\" —@bchesky https://t.co/hMnmq6yqxH\n\n“领导力是在场，不是缺席。”——@bchesky https://t.co/hMnmq6yqxH",
             "source_links": [
               "https://x.com/garrytan/status/2061495739637960927"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/dessaigne/status/2061477863682122079",
+                "resolvedUrl": "https://x.com/dessaigne/status/2061477863682122079",
+                "authorName": "Nicolas Dessaigne",
+                "authorHandle": "dessaigne",
+                "authorUrl": "https://x.com/dessaigne",
+                "text": "Everyone says: hire people better than you, then get out of the way.\nOne of my biggest mistakes at Algolia was taking that literally.\nYes, hire people better than you. But don’t confuse seniority with earned trust.\nStay close at first. Inspect the work. Pressure-test the…",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -309,6 +511,18 @@
             "body": "I told codex to use https://t.co/oHS8ombQcW whenever I'm distracted and it needs my help to be unblocked, and ever once it a while I hear it talking to me, and it's the coolest thing ever. (e.g. for releases, that needs npm and is 1Password-gated)\n\n我告诉 **Codex**，当我分心、而它需要我帮忙解除阻塞时，就用 https://t.co/oHS8ombQcW。于是偶尔我会听到它跟我说话，这太酷了。（比如发布时，需要 npm，而且被 **1Password** 卡着）",
             "source_links": [
               "https://x.com/steipete/status/2061574752574283858"
+            ],
+            "previews": [
+              {
+                "type": "link",
+                "url": "https://sag.sh/",
+                "resolvedUrl": "https://github.com/steipete/sag/",
+                "siteName": "GitHub",
+                "title": "GitHub - steipete/sag: Like the macOS say command, but with a modern voice.",
+                "description": "Like the macOS say command, but with a modern voice. - steipete/sag",
+                "image": "https://opengraph.githubassets.com/310a015b7a5744bce19109d4e8b4673a662e22d461e21416c050376bab138d08/steipete/sag",
+                "mediaKind": "image"
+              }
             ]
           }
         ]
@@ -326,6 +540,18 @@
             "body": "it happened! https://t.co/7wi1xkA3co https://t.co/D3PDOwsOJ8\n\n它发生了！https://t.co/7wi1xkA3co https://t.co/D3PDOwsOJ8",
             "source_links": [
               "https://x.com/danshipper/status/2061550920635191666"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/danshipper/status/2036498182436225513",
+                "resolvedUrl": "https://x.com/danshipper/status/2036498182436225513",
+                "authorName": "Dan Shipper 📧",
+                "authorHandle": "danshipper",
+                "authorUrl": "https://x.com/danshipper",
+                "text": "it's so funny to see investors bearish on SaaS stocks\nSaaS stocks will be back in a year when people realize AI actually 10x's their user base\nusers are agents, not just humans. act accordingly! https://t.co/lM7QsrS1xR",
+                "provider": "X"
+              }
             ]
           },
           {
@@ -350,6 +576,18 @@
             "body": "Schrep and the Gigascale team are building something special.\n\nThey have been incredible partners to @southpkcommons portfolio companies.\n\n@schrep is someone who I have looked up to for a long time and I am very excited to continue to collaborate with him. https://t.co/Jo3bZ5So5A\n\n**Schrep** 和 **Gigascale** 团队正在做一些特别的东西。\n\n他们一直是 @southpkcommons 投资组合公司的出色伙伴。\n\n@schrep 是我长期敬佩的人，我很期待继续和他合作。https://t.co/Jo3bZ5So5A",
             "source_links": [
               "https://x.com/adityaag/status/2061664255007469881"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/schrep/status/2061474431118229932",
+                "resolvedUrl": "https://x.com/schrep/status/2061474431118229932",
+                "authorName": "Mike Schroepfer",
+                "authorHandle": "schrep",
+                "authorUrl": "https://x.com/schrep",
+                "text": "1/ Today we're announcing Gigascale Capital's $250M first institutional fund to back early-stage founders rebuilding the physical economy. pic.twitter.com/NT9MHZw1qV",
+                "provider": "X"
+              }
             ]
           }
         ]
@@ -367,6 +605,18 @@
             "body": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here! https://t.co/i0pkmF9Lmv\n\n**OpenAI Foundation** 正在做很多很好的事情。\n\n帮助社会变得能承受 AI 带来的冲击，会非常重要。这里还会有更多进展！https://t.co/i0pkmF9Lmv",
             "source_links": [
               "https://x.com/sama/status/2061562575322492937"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/FoundationOAI/status/2061463726407155795",
+                "resolvedUrl": "https://x.com/FoundationOAI/status/2061463726407155795",
+                "authorName": "The OpenAI Foundation",
+                "authorHandle": "FoundationOAI",
+                "authorUrl": "https://x.com/FoundationOAI",
+                "text": "AI is advancing quickly. Society’s ability to manage its risks must advance just as fast.\nToday we’re sharing our vision for AI Resilience, with more than $130M in initial grants underway across bio-resilience, cyber-resilience, AI model safety, and AI’s impact on young people:… pic.twitter.com/XsS7LIdviO",
+                "provider": "X"
+              }
             ]
           }
         ]
@@ -375,7 +625,7 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-02T13:08:48.136Z",
+    "updatedAt": "2026-06-02T13:59:29.353Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
