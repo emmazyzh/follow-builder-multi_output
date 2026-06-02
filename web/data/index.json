@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-01T16:27:23.316Z",
-  "latestDate": "2026-05-31",
+  "updatedAt": "2026-06-02T13:08:48.143Z",
+  "latestDate": "2026-06-02",
   "dates": [
+    {
+      "date": "2026-06-02",
+      "title": "AI Builders Daily · 2026-06-02",
+      "summary": "English: Today’s snapshot covers 14 X/Twitter builders and one podcast episode. The X posts center on **Codex**, AI agent workflows, enterprise AI strategy, model distribution, **Vercel** agent evaluations, and founder operating tactics. The podcast item summarizes **Unsupervised Learning**’s discussion with **Sebastian Mallaby** about **Demis Hassabis**, **DeepMind**, AI race dynamics, and government-led safety coordination.\n\n中文：今天的快照包含 14 位 X/Twitter builder 和 1 期播客。X 内容集中在 **Codex**、AI agent 工作流、企业 AI 策略、模型分发、**Vercel** agent 评测，以及创始人的实操方法。播客部分总结了 **Unsupervised Learning** 与 **Sebastian Mallaby** 关于 **Demis Hassabis**、**DeepMind**、AI 竞赛格局和政府主导安全协调的讨论。",
+      "itemCount": 15,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-02T13:08:48.141Z",
+      "commit": {
+        "sha": "09b2c68353367c217890dd87529b67684050f81a",
+        "committedAt": "2026-06-02T07:59:05Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-05-31",
       "title": "AI Builders Daily · 2026-05-31",
