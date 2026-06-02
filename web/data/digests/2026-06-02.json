@@ -46,6 +46,13 @@
                 "text": "What if your whole computer were just pixels streamed to you from a model? I’ve been working with @zan2434 and @drewocarr to imagine a version of generative computing that’s much more flexible and visually rich than the GUIs we have today.\n(Video is sped up and edited) pic.twitter.com/OfSTXYAEu4",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/WHwtYQ3WWF",
+                "resolvedUrl": "https://x.com/eddiejiao_obj/status/2046975783324004732?s=20"
+              }
             ]
           },
           {
@@ -65,6 +72,18 @@
                 "text": "My talk from AIE Europe is up! Come learn the lessons I learned while shipping real production AI systems. https://t.co/mlPo12QduW",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/puwZ8bKPH3",
+                "resolvedUrl": "https://twitter.com/swyx/status/2061658241877397917/photo/1"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/rRWOfwqjjq",
+                "resolvedUrl": "https://twitter.com/nicknisi/status/2061509762420813993"
+              }
             ]
           },
           {
@@ -83,6 +102,13 @@
                 "description": "Jensen scores a huge win.",
                 "image": "https://substackcdn.com/image/fetch/$s_!5bzA!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6685277-4569-4135-92cb-e7a645246125_4096x2732.jpeg",
                 "mediaKind": "image"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/52cazFXk1f",
+                "resolvedUrl": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3"
               }
             ]
           }
@@ -113,6 +139,13 @@
                 "image": "https://substackcdn.com/image/fetch/$s_!hiEA!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7aa15e49-cb6e-4791-a171-d7b5c23342e5_1254x1254.png",
                 "mediaKind": "image"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/pwmS7IvqbH",
+                "resolvedUrl": "https://chatgptpro.substack.com/p/hiroki-tomiyasu"
+              }
             ]
           },
           {
@@ -131,6 +164,13 @@
                 "authorUrl": "https://x.com/OpenAI",
                 "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\nThis is also the beginning of a broader expansion of OpenAI…",
                 "provider": "X"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/TixKoaIS0D",
+                "resolvedUrl": "https://twitter.com/OpenAI/status/2061564502160892138"
               }
             ]
           },
@@ -156,6 +196,13 @@
             "body": "my #1 most used skill lol https://t.co/7nAW7T3vDE\n\n我最常用的第 1 个 skill，笑死 https://t.co/7nAW7T3vDE",
             "source_links": [
               "https://x.com/petergyang/status/2061586272305795355"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/7nAW7T3vDE",
+                "resolvedUrl": "https://twitter.com/petergyang/status/2061586272305795355/photo/1"
+              }
             ]
           },
           {
@@ -175,6 +222,13 @@
                 "image": null,
                 "mediaKind": null
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/d7n2UXsw6E",
+                "resolvedUrl": "https://initialcommit.co/library/skills/"
+              }
             ]
           },
           {
@@ -193,6 +247,13 @@
                 "description": "Josh sold his last startup for $4M and is now building 5 products solo with agents. He showed me his exact AI skills stack, including a 4-step /build skill, ...",
                 "image": "https://i.ytimg.com/vi/GdxLaeyu33c/maxresdefault.jpg",
                 "mediaKind": "image"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9brwr7daw8",
+                "resolvedUrl": "https://youtu.be/GdxLaeyu33c"
               }
             ]
           }
@@ -230,6 +291,13 @@
                 "image": "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png",
                 "mediaKind": "image"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/L0ffBeU1ua",
+                "resolvedUrl": "https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b"
+              }
             ]
           },
           {
@@ -237,6 +305,13 @@
             "body": "been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done\n\nthis is one of my favorites from Suzanne: https://t.co/nqIMcGXiKI\n\n一直在问 **Anthropic** 的同事，他们是怎么跟上 **Claude** 的进展、并完整理解正在做的工作的。\n\n这是我最喜欢的一个，来自 **Suzanne**：https://t.co/nqIMcGXiKI",
             "source_links": [
               "https://x.com/trq212/status/2061545633560010826"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/nqIMcGXiKI",
+                "resolvedUrl": "https://twitter.com/trq212/status/2061545633560010826/photo/1"
+              }
             ]
           }
         ]
@@ -266,6 +341,13 @@
                 "text": "omg pic.twitter.com/OsNzKONpAN",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/zAqrtrfd1k",
+                "resolvedUrl": "https://twitter.com/tigrisli/status/2061539771353067612"
+              }
             ]
           },
           {
@@ -284,6 +366,13 @@
                 "authorUrl": "https://x.com/Replit",
                 "text": "Can you build a real business for free with a single prompt?\nStarting today on Replit, the answer is yes.\nFrom a single prompt, get a website, mobile app, slide deck, and launch video.\nPlus unlock perks from @stripe @atlas , @QuickBooks , @mercury & @doolaHQ pic.twitter.com/9fp0zY4uwH",
                 "provider": "X"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/r3LEz2slaT",
+                "resolvedUrl": "https://twitter.com/replit/status/2061537387726119165"
               }
             ]
           }
@@ -305,16 +394,6 @@
             ],
             "previews": [
               {
-                "type": "link",
-                "url": "https://nextjs.org/evals",
-                "resolvedUrl": "https://nextjs.org/evals",
-                "siteName": "nextjs.org",
-                "title": "AI Agent Evaluations | Next.js by Vercel - The React Framework",
-                "description": "Next.js by Vercel is the full-stack React framework for the web.",
-                "image": "https://h8dxkfmaphn8o0p3.public.blob.vercel-storage.com/nextjs/twitter-card.png",
-                "mediaKind": "image"
-              },
-              {
                 "type": "tweet",
                 "url": "https://twitter.com/vercel_dev/status/2061590462822224374",
                 "resolvedUrl": "https://x.com/vercel_dev/status/2061590462822224374",
@@ -323,6 +402,23 @@
                 "authorUrl": "https://x.com/vercel_dev",
                 "text": "MiniMax M3 is available on AI Gateway.\nMiniMax's first long-context model, with support for multimodal inputs.\n50% off for the next week.\n𝚖𝚘𝚍𝚎𝚕: '𝚖𝚒𝚗𝚒𝚖𝚊𝚡/𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚖𝟹' https://t.co/Be8lceGhaU",
                 "provider": "X"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/SnZ54XoRWV",
+                "resolvedUrl": "https://nextjs.org/evals"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/z9ts1NZDyu",
+                "resolvedUrl": "https://twitter.com/vercel_dev/status/2061590462822224374"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/SnZ54XoRWV%EF%BC%89%E3%80%82",
+                "resolvedUrl": "https://t.co/SnZ54XoRWV%EF%BC%89%E3%80%82"
               }
             ]
           },
@@ -343,6 +439,13 @@
                 "text": "You can now turn any GitHub repo into a registry.\nDrop in a registry.json. Define your items. Install with the CLI.\nDistribute components, utilities, config, docs, rules, design systems, workflows, agents, skills and more. pic.twitter.com/5Axczq6RGC",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/PEt3D4Pt70",
+                "resolvedUrl": "https://twitter.com/shadcn/status/2061477029111792125"
+              }
             ]
           },
           {
@@ -361,6 +464,13 @@
                 "authorUrl": "https://x.com/pontusab",
                 "text": "Introducing Caltext, open-source calorie tracking in iMessage.\nBuilt with:\n• Bun + Turborepo\n• Hono on Nitro (Vercel)\n• Chat SDK + Sendblue\n• AI SDK + GPT-4.1 vision\n• Upstash Redis\n• Vercel Workflows\n• USDA FoodData Central\nLink ⬇️🧵 pic.twitter.com/RclPtX6YMO",
                 "provider": "X"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/jz1E7g4aSM",
+                "resolvedUrl": "https://twitter.com/pontusab/status/2061410279922282556"
               }
             ]
           }
@@ -398,6 +508,13 @@
                 "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\nThis is also the beginning of a broader expansion of OpenAI…",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/I9XJyDAq9F",
+                "resolvedUrl": "https://twitter.com/openai/status/2061564502160892138"
+              }
             ]
           }
         ]
@@ -427,6 +544,18 @@
                 "image": null,
                 "mediaKind": null
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/8g3LJkrV6i",
+                "resolvedUrl": "https://app.lightsprint.ai/office-hours"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/YEGSvd445K",
+                "resolvedUrl": "https://twitter.com/garrytan/status/2061568169354129640/photo/1"
+              }
             ]
           },
           {
@@ -446,6 +575,13 @@
                 "text": "Everyone says: hire people better than you, then get out of the way.\nOne of my biggest mistakes at Algolia was taking that literally.\nYes, hire people better than you. But don’t confuse seniority with earned trust.\nStay close at first. Inspect the work. Pressure-test the…",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/hMnmq6yqxH",
+                "resolvedUrl": "https://twitter.com/dessaigne/status/2061477863682122079"
+              }
             ]
           },
           {
@@ -453,6 +589,13 @@
             "body": "Or the new way? https://t.co/aEXYsQ8VdH\n\n或者用新方式？https://t.co/aEXYsQ8VdH",
             "source_links": [
               "https://x.com/garrytan/status/2061456821488169223"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/aEXYsQ8VdH",
+                "resolvedUrl": "https://twitter.com/garrytan/status/2061456821488169223/photo/1"
+              }
             ]
           }
         ]
@@ -470,6 +613,13 @@
             "body": "CEO: “we have tens of thousands of AI agents running in production at massive scale right now”\n\nCTO: https://t.co/eulDCgxkNQ\n\nCEO：“我们现在有数万个 AI agents 正在大规模生产环境中运行”\n\nCTO：https://t.co/eulDCgxkNQ",
             "source_links": [
               "https://x.com/mattturck/status/2061533386296963464"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/eulDCgxkNQ",
+                "resolvedUrl": "https://x.com/alifarhat79/status/2061494705188184371/video/1"
+              }
             ]
           }
         ]
@@ -487,6 +637,13 @@
             "body": "walk in the park part II (feat. @taiuti).. coming soon 👀 https://t.co/57WdrRvICw\n\nwalk in the park 第二部（feat. @taiuti）……很快就来 👀 https://t.co/57WdrRvICw",
             "source_links": [
               "https://x.com/nikunj/status/2061662916039074267"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/57WdrRvICw",
+                "resolvedUrl": "https://twitter.com/nikunj/status/2061662916039074267/video/1"
+              }
             ]
           },
           {
@@ -494,6 +651,13 @@
             "body": "All you had to do to make life changing wealth was to invest in ~every public company along the 237 https://t.co/SDEx6JE3P7\n\n想赚到改变人生的财富，你要做的只是投资 **237** 沿线几乎每一家上市公司 https://t.co/SDEx6JE3P7",
             "source_links": [
               "https://x.com/nikunj/status/2061492724856234030"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/SDEx6JE3P7",
+                "resolvedUrl": "https://twitter.com/nikunj/status/2061492724856234030/photo/1"
+              }
             ]
           }
         ]
@@ -523,6 +687,18 @@
                 "image": "https://opengraph.githubassets.com/310a015b7a5744bce19109d4e8b4673a662e22d461e21416c050376bab138d08/steipete/sag",
                 "mediaKind": "image"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/oHS8ombQcW",
+                "resolvedUrl": "https://sag.sh/"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/oHS8ombQcW%E3%80%82%E4%BA%8E%E6%98%AF%E5%81%B6%E5%B0%94%E6%88%91%E4%BC%9A%E5%90%AC%E5%88%B0%E5%AE%83%E8%B7%9F%E6%88%91%E8%AF%B4%E8%AF%9D%EF%BC%8C%E8%BF%99%E5%A4%AA%E9%85%B7%E4%BA%86%E3%80%82%EF%BC%88%E6%AF%94%E5%A6%82%E5%8F%91%E5%B8%83%E6%97%B6%EF%BC%8C%E9%9C%80%E8%A6%81",
+                "resolvedUrl": "https://t.co/oHS8ombQcW%E3%80%82%E4%BA%8E%E6%98%AF%E5%81%B6%E5%B0%94%E6%88%91%E4%BC%9A%E5%90%AC%E5%88%B0%E5%AE%83%E8%B7%9F%E6%88%91%E8%AF%B4%E8%AF%9D%EF%BC%8C%E8%BF%99%E5%A4%AA%E9%85%B7%E4%BA%86%E3%80%82%EF%BC%88%E6%AF%94%E5%A6%82%E5%8F%91%E5%B8%83%E6%97%B6%EF%BC%8C%E9%9C%80%E8%A6%81"
+              }
             ]
           }
         ]
@@ -551,6 +727,18 @@
                 "authorUrl": "https://x.com/danshipper",
                 "text": "it's so funny to see investors bearish on SaaS stocks\nSaaS stocks will be back in a year when people realize AI actually 10x's their user base\nusers are agents, not just humans. act accordingly! https://t.co/lM7QsrS1xR",
                 "provider": "X"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/7wi1xkA3co",
+                "resolvedUrl": "https://twitter.com/danshipper/status/2061550920635191666/photo/1"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/D3PDOwsOJ8",
+                "resolvedUrl": "https://twitter.com/danshipper/status/2036498182436225513"
               }
             ]
           },
@@ -588,6 +776,13 @@
                 "text": "1/ Today we're announcing Gigascale Capital's $250M first institutional fund to back early-stage founders rebuilding the physical economy. pic.twitter.com/NT9MHZw1qV",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Jo3bZ5So5A",
+                "resolvedUrl": "https://twitter.com/schrep/status/2061474431118229932"
+              }
             ]
           }
         ]
@@ -617,6 +812,13 @@
                 "text": "AI is advancing quickly. Society’s ability to manage its risks must advance just as fast.\nToday we’re sharing our vision for AI Resilience, with more than $130M in initial grants underway across bio-resilience, cyber-resilience, AI model safety, and AI’s impact on young people:… pic.twitter.com/XsS7LIdviO",
                 "provider": "X"
               }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/i0pkmF9Lmv",
+                "resolvedUrl": "https://twitter.com/FoundationOAI/status/2061463726407155795"
+              }
             ]
           }
         ]
@@ -625,7 +827,7 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-02T13:59:29.353Z",
+    "updatedAt": "2026-06-02T14:34:15.009Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
