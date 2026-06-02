@@ -344,11 +344,31 @@ function avatarUrlForItem(item) {
   if (item.person_handle) {
     return `https://unavatar.io/x/${String(item.person_handle).replace(/^@/, '')}`;
   }
+
+  const url = String(item.profile_url || '');
+  if (url) {
+    if (url.includes('youtube.com') || url.includes('youtu.be')) {
+      const match = url.match(/(?:@|channel\/|c\/|user\/)([a-zA-Z0-9_-]+)/);
+      if (match && match[1]) {
+        return `https://unavatar.io/youtube/${match[1]}`;
+      }
+    }
+
+    try {
+      const hostname = new URL(url).hostname;
+      if (hostname) {
+        return `https://unavatar.io/${hostname}`;
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+
   if (normalizeSourceKind(item) === 'blog') {
-    return 'https://www.anthropic.com/images/icons/apple-touch-icon.png';
+    return 'https://unavatar.io/anthropic.com';
   }
   if (normalizeSourceKind(item) === 'podcast') {
-    return 'https://www.youtube.com/s/desktop/fe7d0c88/img/favicon_144x144.png';
+    return 'https://unavatar.io/youtube.com';
   }
   return '';
 }
