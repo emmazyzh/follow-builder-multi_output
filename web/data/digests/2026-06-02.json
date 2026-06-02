@@ -49,9 +49,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/WHwtYQ3WWF",
-                "resolvedUrl": "https://x.com/eddiejiao_obj/status/2046975783324004732?s=20"
+                "resolvedUrl": "https://x.com/eddiejiao_obj/status/2046975783324004732"
               }
             ]
           },
@@ -827,7 +827,7 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-02T14:34:15.009Z",
+    "updatedAt": "2026-06-02T14:35:48.561Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
