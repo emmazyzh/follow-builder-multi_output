@@ -43,8 +43,8 @@
                 "authorName": "𝖊𝖉𝖉𝖎𝖊 𝖏𝖎𝖆𝖔",
                 "authorHandle": "eddiejiao_obj",
                 "authorUrl": "https://x.com/eddiejiao_obj",
-                "text": "What if your whole computer were just pixels streamed to you from a model? I’ve been working with @zan2434 and @drewocarr to imagine a version of generative computing that’s much more flexible and visually rich than the GUIs we have today.\n(Video is sped up and edited) pic.twitter.com/OfSTXYAEu4",
-                "displayDate": "Apr 21",
+                "text": "What if your whole computer were just pixels streamed to you from a model? I’ve been working with @zan2434 and @drewocarr to imagine a version of generative computing that’s much more flexible and visually rich than the GUIs we have today.\n\n(Video is sped up and edited)",
+                "displayDate": "Apr 22",
                 "provider": "X"
               }
             ],
@@ -70,8 +70,8 @@
                 "authorName": "Nick Nisi",
                 "authorHandle": "nicknisi",
                 "authorUrl": "https://x.com/nicknisi",
-                "text": "My talk from AIE Europe is up! Come learn the lessons I learned while shipping real production AI systems. https://t.co/mlPo12QduW",
-                "displayDate": "May 31",
+                "text": "My talk from AIE Europe is up! Come learn the lessons I learned while shipping real production AI systems.\nhttps://www.youtube.com/watch?v=vy7o1g2iHY8",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -173,8 +173,8 @@
                 "authorName": "OpenAI",
                 "authorHandle": "OpenAI",
                 "authorUrl": "https://x.com/OpenAI",
-                "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\nThis is also the beginning of a broader expansion of OpenAI…",
-                "displayDate": "May 31",
+                "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\n\nThis is also the beginning of a broader expansion of OpenAI",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -375,9 +375,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "quote",
+                "kind": "external",
                 "shortUrl": "https://t.co/zAqrtrfd1k",
-                "resolvedUrl": "https://x.com/tigrisli/status/2061539771353067612"
+                "resolvedUrl": "https://t.co/zAqrtrfd1k"
               }
             ]
           },
@@ -395,8 +395,8 @@
                 "authorName": "Replit ⠕",
                 "authorHandle": "Replit",
                 "authorUrl": "https://x.com/Replit",
-                "text": "Can you build a real business for free with a single prompt?\nStarting today on Replit, the answer is yes.\nFrom a single prompt, get a website, mobile app, slide deck, and launch video.\nPlus unlock perks from @stripe @atlas , @QuickBooks , @mercury & @doolaHQ pic.twitter.com/9fp0zY4uwH",
-                "displayDate": "May 31",
+                "text": "Can you build a real business for free with a single prompt?\n\nStarting today on Replit, the answer is yes.\n\nFrom a single prompt, get a website, mobile app, slide deck, and launch video.\n\nPlus unlock perks from @stripe @atlas, @QuickBooks, @mercury &amp; @doolaHQ",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -432,8 +432,8 @@
                 "authorName": "Vercel Developers",
                 "authorHandle": "vercel_dev",
                 "authorUrl": "https://x.com/vercel_dev",
-                "text": "MiniMax M3 is available on AI Gateway.\nMiniMax's first long-context model, with support for multimodal inputs.\n50% off for the next week.\n𝚖𝚘𝚍𝚎𝚕: '𝚖𝚒𝚗𝚒𝚖𝚊𝚡/𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚖𝟹' https://t.co/Be8lceGhaU",
-                "displayDate": "May 31",
+                "text": "MiniMax M3 is available on AI Gateway.\n\nMiniMax's first long-context model, with support for multimodal inputs.\n\n50% off for the next week.\n\n𝚖𝚘𝚍𝚎𝚕: '𝚖𝚒𝚗𝚒𝚖𝚊𝚡/𝚖𝚒𝚗𝚒𝚖𝚊𝚡-𝚖𝟹'\n\nhttps://vercel.com/changelog/minimax-m3-on-ai-gateway",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -469,15 +469,16 @@
                 "authorName": "shadcn",
                 "authorHandle": "shadcn",
                 "authorUrl": "https://x.com/shadcn",
-                "text": "You can now turn any GitHub repo into a registry.\nDrop in a registry.json. Define your items. Install with the CLI.\nDistribute components, utilities, config, docs, rules, design systems, workflows, agents, skills and more. pic.twitter.com/5Axczq6RGC",
+                "text": "You can now turn any GitHub repo into a registry.\n\nDrop in a registry.json. Define your items. Install with the CLI.\n\nDistribute components, utilities, config, docs, rules, design systems, workflows, agents, skills and more.",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/PEt3D4Pt70",
-                "resolvedUrl": "https://twitter.com/shadcn/status/2061477029111792125"
+                "resolvedUrl": "https://x.com/shadcn/status/2061477029111792125"
               }
             ]
           },
@@ -495,8 +496,8 @@
                 "authorName": "Pontus Abrahamsson — oss/acc",
                 "authorHandle": "pontusab",
                 "authorUrl": "https://x.com/pontusab",
-                "text": "Introducing Caltext, open-source calorie tracking in iMessage.\nBuilt with:\n• Bun + Turborepo\n• Hono on Nitro (Vercel)\n• Chat SDK + Sendblue\n• AI SDK + GPT-4.1 vision\n• Upstash Redis\n• Vercel Workflows\n• USDA FoodData Central\nLink ⬇️🧵 pic.twitter.com/RclPtX6YMO",
-                "displayDate": "May 31",
+                "text": "Introducing Caltext, open-source calorie tracking in iMessage.\n\nBuilt with:\n\n• Bun + Turborepo\n• Hono on Nitro (Vercel)\n• Chat SDK + Sendblue\n• AI SDK + GPT-4.1 vision\n• Upstash Redis\n• Vercel Workflows\n• USDA FoodData Central\n\nLink ⬇️🧵",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -539,8 +540,8 @@
                 "authorName": "OpenAI",
                 "authorHandle": "OpenAI",
                 "authorUrl": "https://x.com/OpenAI",
-                "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\nThis is also the beginning of a broader expansion of OpenAI…",
-                "displayDate": "May 31",
+                "text": "OpenAI frontier models and Codex are now generally available on AWS, giving enterprises a new way to build on Amazon Bedrock with OpenAI through the security, compliance, and governance workflows they already use.\n\nThis is also the beginning of a broader expansion of OpenAI",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -616,8 +617,8 @@
                 "authorName": "Nicolas Dessaigne",
                 "authorHandle": "dessaigne",
                 "authorUrl": "https://x.com/dessaigne",
-                "text": "Everyone says: hire people better than you, then get out of the way.\nOne of my biggest mistakes at Algolia was taking that literally.\nYes, hire people better than you. But don’t confuse seniority with earned trust.\nStay close at first. Inspect the work. Pressure-test the…",
-                "displayDate": "May 31",
+                "text": "Everyone says: hire people better than you, then get out of the way.\n\nOne of my biggest mistakes at Algolia was taking that literally.\n\nYes, hire people better than you. But don’t confuse seniority with earned trust.\n\nStay close at first. Inspect the work. Pressure-test the",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -806,8 +807,8 @@
                 "authorName": "Dan Shipper 📧",
                 "authorHandle": "danshipper",
                 "authorUrl": "https://x.com/danshipper",
-                "text": "it's so funny to see investors bearish on SaaS stocks\nSaaS stocks will be back in a year when people realize AI actually 10x's their user base\nusers are agents, not just humans. act accordingly! https://t.co/lM7QsrS1xR",
-                "displayDate": "Mar 23",
+                "text": "it's so funny to see investors bearish on SaaS stocks\n\nSaaS stocks will be back in a year when people realize AI actually 10x's their user base\n\nusers are agents, not just humans. act accordingly!",
+                "displayDate": "Mar 24",
                 "provider": "X"
               }
             ],
@@ -864,8 +865,8 @@
                 "authorName": "Mike Schroepfer",
                 "authorHandle": "schrep",
                 "authorUrl": "https://x.com/schrep",
-                "text": "1/ Today we're announcing Gigascale Capital's $250M first institutional fund to back early-stage founders rebuilding the physical economy. pic.twitter.com/NT9MHZw1qV",
-                "displayDate": "May 31",
+                "text": "1/ Today we're announcing Gigascale Capital's $250M first institutional fund to back early-stage founders rebuilding the physical economy.",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -901,8 +902,8 @@
                 "authorName": "The OpenAI Foundation",
                 "authorHandle": "FoundationOAI",
                 "authorUrl": "https://x.com/FoundationOAI",
-                "text": "AI is advancing quickly. Society’s ability to manage its risks must advance just as fast.\nToday we’re sharing our vision for AI Resilience, with more than $130M in initial grants underway across bio-resilience, cyber-resilience, AI model safety, and AI’s impact on young people:… pic.twitter.com/XsS7LIdviO",
-                "displayDate": "May 31",
+                "text": "AI is advancing quickly. Society’s ability to manage its risks must advance just as fast.\n\nToday we’re sharing our vision for AI Resilience, with more than $130M in initial grants underway across bio-resilience, cyber-resilience, AI model safety, and AI’s impact on young people:",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
@@ -920,7 +921,7 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-02T14:49:47.550Z",
+    "updatedAt": "2026-06-02T14:55:52.482Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
