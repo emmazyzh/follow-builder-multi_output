@@ -81,9 +81,9 @@
                 "mediaUrl": "https://pbs.twimg.com/media/HJx7PoKbAAAy4pT.jpg"
               },
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/rRWOfwqjjq",
-                "resolvedUrl": "https://twitter.com/nicknisi/status/2061509762420813993"
+                "resolvedUrl": "https://x.com/nicknisi/status/2061509762420813993"
               }
             ],
             "media": [
@@ -177,9 +177,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/TixKoaIS0D",
-                "resolvedUrl": "https://twitter.com/OpenAI/status/2061564502160892138"
+                "resolvedUrl": "https://x.com/OpenAI/status/2061564502160892138"
               }
             ]
           },
@@ -371,9 +371,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/zAqrtrfd1k",
-                "resolvedUrl": "https://twitter.com/tigrisli/status/2061539771353067612"
+                "resolvedUrl": "https://x.com/tigrisli/status/2061539771353067612"
               }
             ]
           },
@@ -438,9 +438,9 @@
                 "resolvedUrl": "https://nextjs.org/evals"
               },
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/z9ts1NZDyu",
-                "resolvedUrl": "https://twitter.com/vercel_dev/status/2061590462822224374"
+                "resolvedUrl": "https://x.com/vercel_dev/status/2061590462822224374"
               },
               {
                 "kind": "external",
@@ -469,9 +469,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/PEt3D4Pt70",
-                "resolvedUrl": "https://twitter.com/shadcn/status/2061477029111792125"
+                "resolvedUrl": "https://x.com/shadcn/status/2061477029111792125"
               }
             ]
           },
@@ -495,9 +495,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/jz1E7g4aSM",
-                "resolvedUrl": "https://twitter.com/pontusab/status/2061410279922282556"
+                "resolvedUrl": "https://x.com/pontusab/status/2061410279922282556"
               }
             ]
           }
@@ -614,9 +614,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/hMnmq6yqxH",
-                "resolvedUrl": "https://twitter.com/dessaigne/status/2061477863682122079"
+                "resolvedUrl": "https://x.com/dessaigne/status/2061477863682122079"
               }
             ]
           },
@@ -809,9 +809,9 @@
                 "mediaUrl": "https://pbs.twimg.com/media/HJwZgj8WoAAySQZ.jpg"
               },
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/D3PDOwsOJ8",
-                "resolvedUrl": "https://twitter.com/danshipper/status/2036498182436225513"
+                "resolvedUrl": "https://x.com/danshipper/status/2036498182436225513"
               }
             ],
             "media": [
@@ -860,9 +860,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/Jo3bZ5So5A",
-                "resolvedUrl": "https://twitter.com/schrep/status/2061474431118229932"
+                "resolvedUrl": "https://x.com/schrep/status/2061474431118229932"
               }
             ]
           }
@@ -896,9 +896,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/i0pkmF9Lmv",
-                "resolvedUrl": "https://twitter.com/FoundationOAI/status/2061463726407155795"
+                "resolvedUrl": "https://x.com/FoundationOAI/status/2061463726407155795"
               }
             ]
           }
@@ -908,7 +908,7 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-02T14:39:12.262Z",
+    "updatedAt": "2026-06-02T14:40:54.138Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
