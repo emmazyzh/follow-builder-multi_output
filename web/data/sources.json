@@ -1,0 +1,170 @@
+{
+  "updatedAt": "2026-06-02T08:25:11.239Z",
+  "thanksTo": {
+    "label": "zarazhangrui/follow-builders",
+    "url": "https://github.com/zarazhangrui/follow-builders"
+  },
+  "blogs": [
+    {
+      "name": "Anthropic Engineering",
+      "url": "https://www.anthropic.com/engineering"
+    },
+    {
+      "name": "Claude Blog",
+      "url": "https://claude.com/blog"
+    }
+  ],
+  "podcasts": [
+    {
+      "name": "Latent Space",
+      "url": "https://www.youtube.com/@LatentSpacePod"
+    },
+    {
+      "name": "Training Data",
+      "url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
+    },
+    {
+      "name": "No Priors",
+      "url": "https://www.youtube.com/@NoPriorsPodcast"
+    },
+    {
+      "name": "Unsupervised Learning",
+      "url": "https://www.youtube.com/@RedpointAI"
+    },
+    {
+      "name": "The MAD Podcast with Matt Turck",
+      "url": "https://www.youtube.com/@DataDrivenNYC/videos"
+    },
+    {
+      "name": "AI & I by Every",
+      "url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+    }
+  ],
+  "x": [
+    {
+      "name": "Andrej Karpathy",
+      "handle": "karpathy",
+      "url": "https://x.com/karpathy"
+    },
+    {
+      "name": "Swyx",
+      "handle": "swyx",
+      "url": "https://x.com/swyx"
+    },
+    {
+      "name": "Josh Woodward",
+      "handle": "joshwoodward",
+      "url": "https://x.com/joshwoodward"
+    },
+    {
+      "name": "Kevin Weil",
+      "handle": "kevinweil",
+      "url": "https://x.com/kevinweil"
+    },
+    {
+      "name": "Peter Yang",
+      "handle": "petergyang",
+      "url": "https://x.com/petergyang"
+    },
+    {
+      "name": "Nan Yu",
+      "handle": "thenanyu",
+      "url": "https://x.com/thenanyu"
+    },
+    {
+      "name": "Madhu Guru",
+      "handle": "realmadhuguru",
+      "url": "https://x.com/realmadhuguru"
+    },
+    {
+      "name": "Amanda Askell",
+      "handle": "AmandaAskell",
+      "url": "https://x.com/AmandaAskell"
+    },
+    {
+      "name": "Cat Wu",
+      "handle": "_catwu",
+      "url": "https://x.com/_catwu"
+    },
+    {
+      "name": "Thariq",
+      "handle": "trq212",
+      "url": "https://x.com/trq212"
+    },
+    {
+      "name": "Google Labs",
+      "handle": "GoogleLabs",
+      "url": "https://x.com/GoogleLabs"
+    },
+    {
+      "name": "Amjad Masad",
+      "handle": "amasad",
+      "url": "https://x.com/amasad"
+    },
+    {
+      "name": "Guillermo Rauch",
+      "handle": "rauchg",
+      "url": "https://x.com/rauchg"
+    },
+    {
+      "name": "Alex Albert",
+      "handle": "alexalbert__",
+      "url": "https://x.com/alexalbert__"
+    },
+    {
+      "name": "Aaron Levie",
+      "handle": "levie",
+      "url": "https://x.com/levie"
+    },
+    {
+      "name": "Ryo Lu",
+      "handle": "ryolu_",
+      "url": "https://x.com/ryolu_"
+    },
+    {
+      "name": "Garry Tan",
+      "handle": "garrytan",
+      "url": "https://x.com/garrytan"
+    },
+    {
+      "name": "Matt Turck",
+      "handle": "mattturck",
+      "url": "https://x.com/mattturck"
+    },
+    {
+      "name": "Zara Zhang",
+      "handle": "zarazhangrui",
+      "url": "https://x.com/zarazhangrui"
+    },
+    {
+      "name": "Nikunj Kothari",
+      "handle": "nikunj",
+      "url": "https://x.com/nikunj"
+    },
+    {
+      "name": "Peter Steinberger",
+      "handle": "steipete",
+      "url": "https://x.com/steipete"
+    },
+    {
+      "name": "Dan Shipper",
+      "handle": "danshipper",
+      "url": "https://x.com/danshipper"
+    },
+    {
+      "name": "Aditya Agarwal",
+      "handle": "adityaag",
+      "url": "https://x.com/adityaag"
+    },
+    {
+      "name": "Sam Altman",
+      "handle": "sama",
+      "url": "https://x.com/sama"
+    },
+    {
+      "name": "Claude",
+      "handle": "claudeai",
+      "url": "https://x.com/claudeai"
+    }
+  ]
+}

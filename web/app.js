@@ -10,20 +10,38 @@ const weekdayRow = document.getElementById('weekdayRow');
 const calendarGrid = document.getElementById('calendarGrid');
 const monthLabel = document.getElementById('monthLabel');
 const monthSubtitle = document.getElementById('monthSubtitle');
-const dateList = document.getElementById('dateList');
-const archiveCount = document.getElementById('archiveCount');
 const pageTitle = document.getElementById('pageTitle');
-const pageSummary = document.getElementById('pageSummary');
+const calendarDropdown = document.getElementById('calendarDropdown');
+const calendarPopover = document.getElementById('calendarPopover');
+const contentHeaderDateButton = document.getElementById('contentHeaderDateButton');
+const contentHeaderDate = document.getElementById('contentHeaderDate');
 const selectedDateChip = document.getElementById('selectedDateChip');
 const selectedCountChip = document.getElementById('selectedCountChip');
 const cardsGrid = document.getElementById('cardsGrid');
-const collapseSidebar = document.getElementById('collapseSidebar');
-const sidebar = document.querySelector('.sidebar');
+const railTitle = document.getElementById('railTitle');
+const railSummaryCard = document.getElementById('railSummaryCard');
+const railSummaryZh = document.getElementById('railSummaryZh');
+const railSummaryEn = document.getElementById('railSummaryEn');
+const overviewZhButton = document.getElementById('overviewZhButton');
+const overviewEnButton = document.getElementById('overviewEnButton');
+const sourceBlogCount = document.getElementById('sourceBlogCount');
+const sourcePodcastCount = document.getElementById('sourcePodcastCount');
+const sourceXCount = document.getElementById('sourceXCount');
+const sourceBlogList = document.getElementById('sourceBlogList');
+const sourcePodcastList = document.getElementById('sourcePodcastList');
+const sourceXList = document.getElementById('sourceXList');
+const sourceXToggle = document.getElementById('sourceXToggle');
 const prevMonth = document.getElementById('prevMonth');
 const nextMonth = document.getElementById('nextMonth');
 const cardTemplate = document.getElementById('cardTemplate');
 
 const WEEKDAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+const DEFAULT_VISIBLE_X_SOURCES = 8;
+
+function setCalendarOpen(isOpen) {
+  calendarPopover.hidden = !isOpen;
+  contentHeaderDateButton.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+}
 
 function buildDateFromKey(key) {
   return new Date(`${key}T00:00:00`);
@@ -44,6 +62,22 @@ function formatMonthLabel(date) {
   }).format(date);
 }
 
+function formatPostedAt(value) {
+  const raw = String(value || '').trim();
+  if (!raw) return '';
+  const date = new Date(raw);
+  if (Number.isNaN(date.getTime())) {
+    return raw.slice(0, 10);
+  }
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const seconds = String(date.getSeconds()).padStart(2, '0');
+  return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+}
+
 function initialsForName(name) {
   const parts = String(name || '')
     .split(/\s+/)
@@ -59,6 +93,106 @@ function renderMarkdownLite(text) {
     .replace(/>/g, '&gt;')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
     .replace(/\n/g, '<br />');
+}
+
+function stripSummaryPrefix(text) {
+  return String(text || '')
+    .replace(/^English:\s*/i, '')
+    .replace(/^中文：\s*/i, '')
+    .trim();
+}
+
+function splitBilingualSummary(text) {
+  const value = String(text || '').trim();
+  if (!value) return [];
+  return value
+    .split(/\n{2,}/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+}
+
+function splitSummaryLanguage(summary) {
+  const parts = splitBilingualSummary(summary);
+  return {
+    english: parts[0] ? stripSummaryPrefix(parts[0]) : '',
+    chinese: parts[1] ? stripSummaryPrefix(parts[1]) : ''
+  };
+}
+
+function buildBulletList(text, isChinese = false) {
+  const list = document.createElement('ul');
+  list.className = `detail-bullets${isChinese ? ' detail-bullets-cn' : ''}`;
+  const segments = isChinese
+    ? text.split(/[；;]\s*/)
+    : text.split(/;\s+/);
+  segments
+    .map((part) => part.trim().replace(isChinese ? /。$/ : /\.$/, ''))
+    .filter(Boolean)
+    .forEach((part) => {
+      const item = document.createElement('li');
+      item.className = 'detail-bullet';
+      item.innerHTML = renderMarkdownLite(part);
+      list.appendChild(item);
+    });
+  return list;
+}
+
+function renderRailSummary(summary) {
+  const { english, chinese } = splitSummaryLanguage(summary);
+  const nodes = [];
+
+  if (english) {
+    nodes.push(buildBulletList(english, false));
+  }
+
+  if (english && chinese) {
+    const divider = document.createElement('div');
+    divider.className = 'detail-summary-divider';
+    nodes.push(divider);
+  }
+
+  if (chinese) {
+    nodes.push(buildBulletList(chinese, true));
+  }
+
+  if (nodes.length === 0) {
+    const paragraph = document.createElement('p');
+    paragraph.className = 'detail-summary-line';
+    paragraph.textContent = 'No digest found for this date.';
+    return [paragraph];
+  }
+
+  return nodes;
+}
+
+function renderSingleLanguageSummary(summary, language) {
+  const { english, chinese } = splitSummaryLanguage(summary);
+  const text = language === 'zh' ? chinese : english;
+  if (!text) {
+    const paragraph = document.createElement('p');
+    paragraph.className = 'detail-summary-line';
+    paragraph.textContent = 'No digest found for this date.';
+    return [paragraph];
+  }
+  return [buildBulletList(text, language === 'zh')];
+}
+
+function normalizeMediaEntries(section) {
+  const candidates = Array.isArray(section?.media) ? section.media : [];
+  return candidates
+    .map((entry) => {
+      if (typeof entry === 'string') {
+        return { url: entry, alt: '' };
+      }
+      if (entry?.url) {
+        return {
+          url: entry.url,
+          alt: entry.alt || ''
+        };
+      }
+      return null;
+    })
+    .filter(Boolean);
 }
 
 function normalizeSourceKind(item) {
@@ -92,7 +226,48 @@ function flattenCards(payload) {
   return items.flatMap((item) => {
     const sections = Array.isArray(item.sections) ? item.sections : [];
     return sections.map((section) => ({ item, section }));
+  }).sort((left, right) => {
+    const leftTime = Date.parse(left.item?.posted_at || '') || 0;
+    const rightTime = Date.parse(right.item?.posted_at || '') || 0;
+    return rightTime - leftTime;
   });
+}
+
+function splitXBody(text) {
+  const paragraphs = String(text || '')
+    .split(/\n\s*\n/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const chinese = [];
+  const original = [];
+  for (const paragraph of paragraphs) {
+    if (/[\u3400-\u9fff]/.test(paragraph)) {
+      chinese.push(paragraph);
+    } else {
+      original.push(paragraph);
+    }
+  }
+  return {
+    original: original.join('\n\n'),
+    chinese: chinese.join('\n\n')
+  };
+}
+
+function normalizeComparableText(text) {
+  return String(text || '')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+function renderXChineseBody(splitBody) {
+  const original = splitBody.original || '';
+  const chinese = splitBody.chinese || splitBody.original || '';
+  if (!chinese) return '';
+  if (original && normalizeComparableText(chinese) === normalizeComparableText(original)) {
+    return '';
+  }
+  return `<div class="translation-copy">${renderMarkdownLite(chinese)}</div>`;
 }
 
 async function fetchJson(path) {
@@ -103,6 +278,56 @@ async function fetchJson(path) {
   return response.json();
 }
 
+function setOverviewLanguage(language) {
+  state.overviewLanguage = language;
+  railSummaryCard.classList.toggle('is-zh', language === 'zh');
+  railSummaryCard.classList.toggle('is-en', language === 'en');
+  overviewZhButton.classList.toggle('is-active', language === 'zh');
+  overviewEnButton.classList.toggle('is-active', language === 'en');
+}
+
+function renderSourceList(container, entries, formatter) {
+  const items = entries.map((entry) => {
+    const anchor = document.createElement('a');
+    anchor.className = 'source-inline-link';
+    anchor.target = '_blank';
+    anchor.rel = 'noreferrer';
+    anchor.href = entry.url || '#';
+    anchor.textContent = formatter(entry);
+    return anchor;
+  });
+
+  const nodes = [];
+  items.forEach((anchor, index) => {
+    nodes.push(anchor);
+    if (index < items.length - 1) {
+      const separator = document.createElement('span');
+      separator.className = 'source-inline-separator';
+      separator.textContent = ' | ';
+      nodes.push(separator);
+    }
+  });
+
+  container.replaceChildren(...nodes);
+}
+
+function renderSources() {
+  const sources = state.sources || { blogs: [], podcasts: [], x: [] };
+  const visibleXSources = state.sourceXExpanded ? (sources.x || []) : (sources.x || []).slice(0, DEFAULT_VISIBLE_X_SOURCES);
+  sourceBlogCount.textContent = String(sources.blogs.length || 0);
+  sourcePodcastCount.textContent = String(sources.podcasts.length || 0);
+  sourceXCount.textContent = String(sources.x.length || 0);
+  renderSourceList(sourceBlogList, sources.blogs || [], (entry) => entry.name);
+  renderSourceList(sourcePodcastList, sources.podcasts || [], (entry) => entry.name);
+  renderSourceList(sourceXList, visibleXSources, (entry) => entry.handle ? `${entry.name} (@${entry.handle})` : entry.name);
+  if ((sources.x || []).length > DEFAULT_VISIBLE_X_SOURCES) {
+    sourceXToggle.hidden = false;
+    sourceXToggle.textContent = state.sourceXExpanded ? 'Show less' : `Show ${sources.x.length - DEFAULT_VISIBLE_X_SOURCES} more`;
+  } else {
+    sourceXToggle.hidden = true;
+  }
+}
+
 function renderWeekdays() {
   weekdayRow.replaceChildren(
     ...WEEKDAYS.map((day) => {
@@ -110,21 +335,6 @@ function renderWeekdays() {
       div.className = 'weekday';
       div.textContent = day;
       return div;
-    })
-  );
-}
-
-function renderDateList() {
-  const dates = state.index?.dates || [];
-  archiveCount.textContent = `${dates.length}d`;
-  dateList.replaceChildren(
-    ...dates.map((entry) => {
-      const button = document.createElement('button');
-      button.className = `date-pill${entry.date === state.selectedDate ? ' active' : ''}`;
-      button.type = 'button';
-      button.innerHTML = `<span class="pill-date">${entry.date}</span><span class="pill-count">${entry.itemCount} cards</span>`;
-      button.addEventListener('click', () => selectDate(entry.date));
-      return button;
     })
   );
 }
@@ -151,12 +361,19 @@ function renderCalendar() {
     const button = document.createElement('button');
     button.type = 'button';
     button.className = 'day-button';
-    if (monthKey(current) !== state.visibleMonth) button.classList.add('outside');
-    if (availableDates.has(key)) button.classList.add('has-entry');
+    const isInMonth = monthKey(current) === state.visibleMonth;
+    const hasEntry = availableDates.has(key);
+    if (!isInMonth) {
+      button.classList.add('outside');
+    } else if (hasEntry) {
+      button.classList.add('has-entry');
+    } else {
+      button.classList.add('no-entry');
+    }
     if (key === state.selectedDate) button.classList.add('selected');
     button.textContent = String(current.getDate());
-    button.disabled = !availableDates.has(key);
-    if (availableDates.has(key)) {
+    button.disabled = !hasEntry;
+    if (hasEntry) {
       button.addEventListener('click', () => selectDate(key));
     }
     cells.push(button);
@@ -167,10 +384,13 @@ function renderCalendar() {
 function renderCards() {
   const payload = state.digest?.payload;
   const cards = payload ? flattenCards(payload) : [];
-  pageTitle.textContent = payload?.title || 'AI Builders Daily';
-  pageSummary.textContent = payload?.summary || 'No digest found for this date.';
+  pageTitle.textContent = 'Follow Builders';
+  contentHeaderDate.textContent = payload?.date || '--';
   selectedDateChip.textContent = payload?.date || '--';
   selectedCountChip.textContent = `${cards.length} cards`;
+  railTitle.textContent = 'Overview';
+  railSummaryZh.replaceChildren(...renderSingleLanguageSummary(payload?.summary, 'zh'));
+  railSummaryEn.replaceChildren(...renderSingleLanguageSummary(payload?.summary, 'en'));
 
   if (cards.length === 0) {
     const empty = document.createElement('div');
@@ -188,9 +408,11 @@ function renderCards() {
     const profileIdentity = fragment.querySelector('[data-profile-identity]');
     const profileMeta = fragment.querySelector('[data-profile-meta]');
     const title = fragment.querySelector('[data-card-title]');
+    const xOriginal = fragment.querySelector('[data-x-original]');
     const summaryBlock = fragment.querySelector('[data-summary-block]');
     const summaryBody = fragment.querySelector('[data-card-body]');
     const fallbackBody = fragment.querySelector('[data-card-body-fallback]');
+    const media = fragment.querySelector('[data-card-media]');
     const links = fragment.querySelector('[data-card-links]');
 
     const avatarUrl = avatarUrlForItem(item);
@@ -204,17 +426,42 @@ function renderCards() {
     profileLink.textContent = item.person_name || 'Unknown';
     profileLink.href = item.profile_url || '#';
     profileIdentity.textContent = item.person_identity || item.source_label || '';
-    profileMeta.textContent = `${item.source_label || ''} · ${String(item.posted_at || '').slice(0, 10)}`.replace(/^ · | · $/g, '');
+    profileMeta.textContent = `${item.source_label || ''} · ${formatPostedAt(item.posted_at)}`.replace(/^ · | · $/g, '');
     title.innerHTML = renderMarkdownLite(section.headline || '');
 
     const body = section.body || '';
     if (isSummaryCard(item)) {
       summaryBlock.hidden = false;
       summaryBody.innerHTML = renderMarkdownLite(body);
+      xOriginal.remove();
       fallbackBody.remove();
     } else {
-      fallbackBody.innerHTML = renderMarkdownLite(body);
+      const splitBody = splitXBody(body);
+      fallbackBody.innerHTML = renderXChineseBody(splitBody);
+      if (splitBody.original) {
+        xOriginal.hidden = false;
+        xOriginal.innerHTML = renderMarkdownLite(splitBody.original);
+      } else {
+        xOriginal.remove();
+      }
       summaryBlock.remove();
+    }
+
+    const mediaEntries = normalizeMediaEntries(section);
+    if (mediaEntries.length > 0) {
+      media.hidden = false;
+      media.replaceChildren(
+        ...mediaEntries.map((entry) => {
+          const image = document.createElement('img');
+          image.className = 'card-image';
+          image.src = entry.url;
+          image.alt = entry.alt || title.textContent || item.person_name || 'Post image';
+          image.loading = 'lazy';
+          return image;
+        })
+      );
+    } else {
+      media.remove();
     }
 
     const sourceLinks = Array.isArray(section.source_links) ? section.source_links : [];
@@ -245,14 +492,9 @@ async function selectDate(dateKey) {
   state.selectedDate = dateKey;
   state.visibleMonth = monthKey(buildDateFromKey(dateKey));
   state.digest = await fetchJson(`./data/digests/${dateKey}.json`);
-  renderDateList();
   renderCalendar();
   renderCards();
-}
-
-function toggleSidebar() {
-  state.collapsed = !state.collapsed;
-  sidebar.dataset.collapsed = String(state.collapsed);
+  setCalendarOpen(false);
 }
 
 function shiftMonth(offset) {
@@ -266,18 +508,41 @@ function shiftMonth(offset) {
 async function init() {
   renderWeekdays();
   state.index = await fetchJson('./data/index.json');
+  state.sources = await fetchJson('./data/sources.json').catch(() => ({ blogs: [], podcasts: [], x: [] }));
+  state.sourceXExpanded = false;
+  renderSources();
+  setOverviewLanguage('zh');
   const latestDate = state.index.latestDate || state.index.dates?.[0]?.date;
   if (!latestDate) {
     renderCards();
     return;
   }
-  collapseSidebar.addEventListener('click', toggleSidebar);
+  overviewZhButton.addEventListener('click', () => setOverviewLanguage('zh'));
+  overviewEnButton.addEventListener('click', () => setOverviewLanguage('en'));
+  sourceXToggle.addEventListener('click', () => {
+    state.sourceXExpanded = !state.sourceXExpanded;
+    renderSources();
+  });
+  contentHeaderDateButton.addEventListener('click', () => {
+    const isOpen = contentHeaderDateButton.getAttribute('aria-expanded') === 'true';
+    setCalendarOpen(!isOpen);
+  });
+  document.addEventListener('click', (event) => {
+    if (!calendarDropdown.contains(event.target)) {
+      setCalendarOpen(false);
+    }
+  });
   prevMonth.addEventListener('click', () => shiftMonth(-1));
   nextMonth.addEventListener('click', () => shiftMonth(1));
   await selectDate(latestDate);
 }
 
 init().catch((error) => {
-  pageSummary.textContent = error.message;
+  if (railSummaryZh) {
+    railSummaryZh.replaceChildren(Object.assign(document.createElement('p'), {
+      className: 'detail-summary-line',
+      textContent: error.message
+    }));
+  }
   cardsGrid.innerHTML = `<div class="empty-state">${error.message}</div>`;
 });
