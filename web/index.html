@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Builders Daily</title>
-    <link rel="stylesheet" href="./styles.css?v=20260602w" />
+    <link rel="stylesheet" href="./styles.css?v=20260602af" />
   </head>
   <body>
     <div class="app-shell">
@@ -60,7 +60,17 @@
               <span class="meta-chip subtle" id="selectedCountChip">0 cards</span>
             </div>
           </div>
+        </div>
 
+        <button class="sources-toggle-btn" id="sourcesToggleBtn" type="button">
+          <svg class="sources-toggle-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+          <span>Sources</span>
+        </button>
+
+        <div class="sources-popover" id="sourcesPopover">
           <div class="detail-panel detail-panel-secondary">
             <p class="detail-kicker">Sources</p>
             <div class="source-group">
@@ -112,12 +122,13 @@
             <div class="summary-text" data-card-body></div>
           </div>
           <div class="card-copy" data-card-body-fallback></div>
+          <div class="card-previews" data-card-previews hidden></div>
           <div class="card-media" data-card-media hidden></div>
           <div class="card-links" data-card-links></div>
         </div>
       </article>
     </template>
 
-    <script type="module" src="./app.js?v=20260602w"></script>
+    <script type="module" src="./app.js?v=20260602af"></script>
   </body>
 </html>

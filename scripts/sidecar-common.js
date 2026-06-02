@@ -460,6 +460,14 @@ function resolveScheduleWindow(config, at = new Date()) {
   };
 }
 
+function resolveDeliveryKey(config, schedule, contentDate = null) {
+  if (schedule?.frequency === 'weekly') {
+    return schedule.key;
+  }
+  const date = collapseWhitespace(contentDate) || schedule?.today;
+  return `daily:${date}`;
+}
+
 async function listCronJobs() {
   try {
     const payload = await runOpenClawJson(['cron', 'list', '--json']);
@@ -1147,6 +1155,7 @@ export {
   normalizeFeishuDeliveryMode,
   nowIso,
   resolveScheduleWindow,
+  resolveDeliveryKey,
   getOpenClawConfigValue,
   runCommand,
   runOpenClaw,

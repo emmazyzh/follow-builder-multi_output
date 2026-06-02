@@ -30,6 +30,7 @@ import {
   loadSidecarState,
   log,
   nowIso,
+  resolveDeliveryKey,
   resolveScheduleWindow,
   saveSidecarState,
   summarizeFeedCompatibility,
@@ -348,6 +349,8 @@ async function execute(args) {
   const latestUnsupportedCommitDate = ctx.latestUnsupportedCommit?.committedAt
     ? dateKeyInTimeZone(ctx.latestUnsupportedCommit.committedAt, config.timezone)
     : null;
+  const contentDate = ctx.feedDate || ctx.commitDate || ctx.schedule.today;
+  const deliveryKey = resolveDeliveryKey(config, ctx.schedule, contentDate);
 
   if (ctx.feedCompatibility.supported.length === 0) {
     await commitStateUpdate(async (state) => {
@@ -414,7 +417,7 @@ async function execute(args) {
       state.sidecarJobId = ctx.sidecarJob.id;
     }
 
-    if (!args.force && state.lastDeliveredKey === ctx.schedule.key) {
+    if (!args.force && state.lastDeliveredKey === deliveryKey) {
       await saveSidecarState(state);
       return {
         skipped: true,
@@ -422,6 +425,7 @@ async function execute(args) {
           status: 'skipped',
           reason: 'already_delivered',
           key: state.lastDeliveredKey,
+          contentDate,
           commitSha: state.lastDeliveredCommitSha,
           upstreamFeeds: ctx.feedCompatibilitySummary
         }
@@ -726,7 +730,7 @@ async function execute(args) {
       };
     }
     if (!args.skipDelivery) {
-      state.lastDeliveredKey = ctx.schedule.key;
+      state.lastDeliveredKey = deliveryKey;
       state.lastDeliveredCommitSha = ctx.latestSupportedCommit?.sha || ctx.feedFingerprint;
       state.lastSuccessAt = ctx.currentIso;
     }

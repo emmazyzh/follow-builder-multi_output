@@ -48,7 +48,10 @@ function buildDateFromKey(key) {
 }
 
 function dateToKey(date) {
-  return date.toISOString().slice(0, 10);
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
 }
 
 function monthKey(date) {
@@ -92,7 +95,32 @@ function renderMarkdownLite(text) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/https?:\/\/[^\s<]+/g, (url) => `<a class="card-link" href="${url}" target="_blank" rel="noreferrer">${url}</a>`)
+    .replace(/(^|[\s(>])@([A-Za-z0-9_]{1,15})\b/g, (match, prefix, handle) => `${prefix}<a class="card-link" href="https://x.com/${handle}" target="_blank" rel="noreferrer">@${handle}</a>`)
     .replace(/\n/g, '<br />');
+}
+
+function applyLinkExpansions(text, section) {
+  let output = String(text || '');
+  const expansions = Array.isArray(section?.linkExpansions) ? section.linkExpansions : [];
+  expansions
+    .slice()
+    .sort((left, right) => String(right.shortUrl || '').length - String(left.shortUrl || '').length)
+    .forEach((entry) => {
+      const shortUrl = String(entry?.shortUrl || '').trim();
+      if (!shortUrl) return;
+      if (entry.kind === 'external' && entry.resolvedUrl) {
+        output = output.split(shortUrl).join(entry.resolvedUrl);
+        return;
+      }
+      output = output.split(shortUrl).join('');
+    });
+
+  return output
+    .replace(/[ \t]+\n/g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .replace(/[ ]{2,}/g, ' ')
+    .trim();
 }
 
 function stripSummaryPrefix(text) {
@@ -177,6 +205,39 @@ function renderSingleLanguageSummary(summary, language) {
   return [buildBulletList(text, language === 'zh')];
 }
 
+function splitHeadlineLanguages(headline) {
+  const value = String(headline || '').trim();
+  if (!value) {
+    return {
+      chinese: '',
+      english: ''
+    };
+  }
+  const segments = value
+    .split(/\s*(?:[|｜]|·)\s*/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const chinese = segments.find((part) => /[\u3400-\u9fff]/.test(part)) || '';
+  const english = segments.find((part) => !/[\u3400-\u9fff]/.test(part)) || '';
+  return {
+    chinese: chinese || value,
+    english
+  };
+}
+
+function stripBoldMarkdown(text) {
+  return String(text || '').replace(/\*\*([^*]+)\*\*/g, '$1');
+}
+
+function renderCardHeadline(headline) {
+  const { chinese, english } = splitHeadlineLanguages(headline);
+  const chineseHtml = renderMarkdownLite(chinese || '');
+  if (!english || normalizeComparableText(chinese) === normalizeComparableText(english)) {
+    return chineseHtml;
+  }
+  return `${chineseHtml} <span class="card-title-separator">|</span> <span class="card-title-en">${renderMarkdownLite(stripBoldMarkdown(english))}</span>`;
+}
+
 function normalizeMediaEntries(section) {
   const candidates = Array.isArray(section?.media) ? section.media : [];
   return candidates
@@ -192,6 +253,82 @@ function normalizeMediaEntries(section) {
       }
       return null;
     })
+    .filter(Boolean);
+}
+
+function previewHostLabel(url) {
+  try {
+    return new URL(url).hostname.replace(/^www\./, '');
+  } catch {
+    return '';
+  }
+}
+
+function trimPreviewText(text, maxLength = 280) {
+  const value = String(text || '').replace(/\s+/g, ' ').trim();
+  if (!value || value.length <= maxLength) return value;
+  return `${value.slice(0, maxLength - 1).trimEnd()}…`;
+}
+
+function renderQuoteMeta(preview) {
+  const authorName = String(preview?.authorName || '').trim();
+  const authorHandle = String(preview?.authorHandle || '').replace(/^@/, '').trim();
+  const parts = [];
+  if (authorName) {
+    parts.push(`<span class="preview-author">${renderMarkdownLite(authorName)}</span>`);
+  }
+  if (authorHandle) {
+    parts.push(`<span class="preview-handle">@${renderMarkdownLite(authorHandle)}</span>`);
+  }
+  if (preview?.displayDate) {
+    parts.push(`<span class="preview-date">${renderMarkdownLite(preview.displayDate)}</span>`);
+  }
+  if (parts.length === 0) return '';
+  return parts.join(' <span class="preview-dot">·</span> ');
+}
+
+function renderPreviewCard(preview) {
+  if (!preview || !preview.resolvedUrl) return null;
+
+  const card = document.createElement('a');
+  card.className = `preview-card${preview.type === 'tweet' ? ' preview-card-tweet' : ''}`;
+  card.href = preview.resolvedUrl;
+  card.target = '_blank';
+  card.rel = 'noreferrer';
+
+  if (preview.type === 'tweet') {
+    const metaHtml = renderQuoteMeta(preview);
+    if (metaHtml) {
+      const meta = document.createElement('div');
+      meta.className = 'preview-meta-line';
+      meta.innerHTML = metaHtml;
+      card.appendChild(meta);
+    }
+
+    if (preview.text) {
+      const text = document.createElement('div');
+      text.className = 'preview-text';
+      text.innerHTML = renderMarkdownLite(trimPreviewText(preview.text, 360));
+      card.appendChild(text);
+    }
+    return card;
+  }
+
+  if (preview.image) {
+    const image = document.createElement('img');
+    image.className = 'preview-image';
+    image.src = preview.image;
+    image.alt = preview.title || preview.siteName || 'Link preview image';
+    image.loading = 'lazy';
+    card.appendChild(image);
+  }
+
+  return null;
+}
+
+function renderSectionPreviews(previews) {
+  return (Array.isArray(previews) ? previews : [])
+    .map((preview) => renderPreviewCard(preview))
     .filter(Boolean);
 }
 
@@ -313,17 +450,14 @@ function renderSourceList(container, entries, formatter) {
 
 function renderSources() {
   const sources = state.sources || { blogs: [], podcasts: [], x: [] };
-  const visibleXSources = state.sourceXExpanded ? (sources.x || []) : (sources.x || []).slice(0, DEFAULT_VISIBLE_X_SOURCES);
+  const visibleXSources = sources.x || [];
   sourceBlogCount.textContent = String(sources.blogs.length || 0);
   sourcePodcastCount.textContent = String(sources.podcasts.length || 0);
   sourceXCount.textContent = String(sources.x.length || 0);
   renderSourceList(sourceBlogList, sources.blogs || [], (entry) => entry.name);
   renderSourceList(sourcePodcastList, sources.podcasts || [], (entry) => entry.name);
   renderSourceList(sourceXList, visibleXSources, (entry) => entry.handle ? `${entry.name} (@${entry.handle})` : entry.name);
-  if ((sources.x || []).length > DEFAULT_VISIBLE_X_SOURCES) {
-    sourceXToggle.hidden = false;
-    sourceXToggle.textContent = state.sourceXExpanded ? 'Show less' : `Show ${sources.x.length - DEFAULT_VISIBLE_X_SOURCES} more`;
-  } else {
+  if (sourceXToggle) {
     sourceXToggle.hidden = true;
   }
 }
@@ -413,6 +547,7 @@ function renderCards() {
     const summaryBody = fragment.querySelector('[data-card-body]');
     const fallbackBody = fragment.querySelector('[data-card-body-fallback]');
     const media = fragment.querySelector('[data-card-media]');
+    const previews = fragment.querySelector('[data-card-previews]');
     const links = fragment.querySelector('[data-card-links]');
 
     const avatarUrl = avatarUrlForItem(item);
@@ -427,9 +562,9 @@ function renderCards() {
     profileLink.href = item.profile_url || '#';
     profileIdentity.textContent = item.person_identity || item.source_label || '';
     profileMeta.textContent = `${item.source_label || ''} · ${formatPostedAt(item.posted_at)}`.replace(/^ · | · $/g, '');
-    title.innerHTML = renderMarkdownLite(section.headline || '');
+    title.innerHTML = renderCardHeadline(section.headline || '');
 
-    const body = section.body || '';
+    const body = applyLinkExpansions(section.body || '', section);
     if (isSummaryCard(item)) {
       summaryBlock.hidden = false;
       summaryBody.innerHTML = renderMarkdownLite(body);
@@ -437,11 +572,18 @@ function renderCards() {
       fallbackBody.remove();
     } else {
       const splitBody = splitXBody(body);
-      fallbackBody.innerHTML = renderXChineseBody(splitBody);
-      if (splitBody.original) {
+      const hasChinese = !!splitBody.chinese;
+      const hasOriginal = !!splitBody.original;
+      const areDifferent = hasChinese && hasOriginal && 
+        (normalizeComparableText(splitBody.chinese) !== normalizeComparableText(splitBody.original));
+
+      if (areDifferent) {
         xOriginal.hidden = false;
-        xOriginal.innerHTML = renderMarkdownLite(splitBody.original);
+        xOriginal.innerHTML = renderMarkdownLite(splitBody.chinese);
+        fallbackBody.innerHTML = `<div class="original-english-copy">${renderMarkdownLite(splitBody.original)}</div>`;
       } else {
+        const textToShow = splitBody.chinese || splitBody.original || '';
+        fallbackBody.innerHTML = renderMarkdownLite(textToShow);
         xOriginal.remove();
       }
       summaryBlock.remove();
@@ -462,6 +604,14 @@ function renderCards() {
       );
     } else {
       media.remove();
+    }
+
+    const previewEntries = renderSectionPreviews((section.previews || []).filter((entry) => entry.type === 'tweet'));
+    if (previewEntries.length > 0) {
+      previews.hidden = false;
+      previews.replaceChildren(...previewEntries);
+    } else {
+      previews.remove();
     }
 
     const sourceLinks = Array.isArray(section.source_links) ? section.source_links : [];
@@ -532,6 +682,20 @@ async function init() {
       setCalendarOpen(false);
     }
   });
+  const sourcesToggleBtn = document.getElementById('sourcesToggleBtn');
+  const sourcesPopover = document.getElementById('sourcesPopover');
+  if (sourcesToggleBtn && sourcesPopover) {
+    sourcesToggleBtn.addEventListener('click', (event) => {
+      event.stopPropagation();
+      sourcesPopover.classList.toggle('is-open');
+    });
+    document.addEventListener('click', (event) => {
+      if (!sourcesPopover.contains(event.target) && !sourcesToggleBtn.contains(event.target)) {
+        sourcesPopover.classList.remove('is-open');
+      }
+    });
+  }
+
   prevMonth.addEventListener('click', () => shiftMonth(-1));
   nextMonth.addEventListener('click', () => shiftMonth(1));
   await selectDate(latestDate);

@@ -16,6 +16,7 @@ import {
   log,
   normalizeDeliveryTargets,
   nowIso,
+  resolveDeliveryKey,
   resolveScheduleWindow,
   saveSidecarState,
   withStateLock
@@ -189,7 +190,7 @@ async function main() {
   const config = await loadSidecarConfig();
   const prepared = JSON.parse(await readFile(args.inputJsonPath, 'utf-8'));
   const rawPayload = JSON.parse(await readFile(args.payloadPath, 'utf-8'));
-  const payload = normalizePayloadForOutputs(prepared, rawPayload, config);
+  const payload = await normalizePayloadForOutputs(prepared, rawPayload, config);
   await writeFile(args.payloadPath, `${JSON.stringify(payload, null, 2)}\n`);
   if (!Array.isArray(payload.items) || payload.items.length === 0) {
     throw new Error('Payload must contain a non-empty items array');
@@ -197,6 +198,8 @@ async function main() {
 
   const currentIso = nowIso();
   const schedule = resolveScheduleWindow(config, new Date(currentIso));
+  const contentDate = payload?.date || prepared?.stats?.feedGeneratedAt || null;
+  const deliveryKey = resolveDeliveryKey(config, schedule, /^\d{4}-\d{2}-\d{2}$/.test(String(contentDate || '')) ? contentDate : payload?.date);
   const commit = prepared.sidecar?.latestSupportedCommit || prepared.sidecar?.latestOverallCommit || null;
   const feedFingerprint = prepared.sidecar?.feedFingerprint || null;
   const deliveryResult = args.skipDelivery
@@ -221,7 +224,7 @@ async function main() {
       };
     }
     if (!args.skipDelivery) {
-      state.lastDeliveredKey = schedule.key;
+      state.lastDeliveredKey = deliveryKey;
       state.lastDeliveredCommitSha = commit?.sha || feedFingerprint;
       state.lastSuccessAt = currentIso;
     }
