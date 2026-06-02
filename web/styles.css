@@ -748,8 +748,8 @@ button {
 }
 
 .original-english-copy {
-  color: var(--muted);
-  font-size: 14px;
+  color: var(--text);
+  font-size: 15px;
   line-height: 1.6;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
