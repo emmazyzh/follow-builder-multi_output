@@ -182,7 +182,7 @@
               {
                 "kind": "quote",
                 "shortUrl": "https://t.co/TixKoaIS0D",
-                "resolvedUrl": "https://x.com/OpenAI/status/2061564502160892138"
+                "resolvedUrl": "https://x.com/openai/status/2061564502160892138"
               }
             ]
           },
@@ -368,16 +368,16 @@
                 "authorName": "tigris",
                 "authorHandle": "tigrisli",
                 "authorUrl": "https://x.com/tigrisli",
-                "text": "omg pic.twitter.com/OsNzKONpAN",
-                "displayDate": "May 31",
+                "text": "omg",
+                "displayDate": "Jun 1",
                 "provider": "X"
               }
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/zAqrtrfd1k",
-                "resolvedUrl": "https://t.co/zAqrtrfd1k"
+                "resolvedUrl": "https://x.com/tigrisli/status/2061539771353067612"
               }
             ]
           },
@@ -402,9 +402,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/r3LEz2slaT",
-                "resolvedUrl": "https://twitter.com/replit/status/2061537387726119165"
+                "resolvedUrl": "https://x.com/replit/status/2061537387726119165"
               }
             ]
           }
@@ -441,7 +441,7 @@
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/SnZ54XoRWV",
-                "resolvedUrl": "https://nextjs.org/evals"
+                "resolvedUrl": "http://nextjs.org/evals"
               },
               {
                 "kind": "quote",
@@ -547,9 +547,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/I9XJyDAq9F",
-                "resolvedUrl": "https://twitter.com/openai/status/2061564502160892138"
+                "resolvedUrl": "https://x.com/openai/status/2061564502160892138"
               }
             ]
           }
@@ -774,7 +774,7 @@
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/oHS8ombQcW",
-                "resolvedUrl": "https://sag.sh/"
+                "resolvedUrl": "http://sag.sh/"
               },
               {
                 "kind": "external",
@@ -911,7 +911,7 @@
               {
                 "kind": "quote",
                 "shortUrl": "https://t.co/i0pkmF9Lmv",
-                "resolvedUrl": "https://x.com/FoundationOAI/status/2061463726407155795"
+                "resolvedUrl": "https://x.com/foundationoai/status/2061463726407155795"
               }
             ]
           }
@@ -921,7 +921,7 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-02T14:55:52.482Z",
+    "updatedAt": "2026-06-02T15:07:45.292Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
