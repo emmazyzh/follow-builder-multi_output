@@ -75,14 +75,23 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/puwZ8bKPH3",
-                "resolvedUrl": "https://twitter.com/swyx/status/2061658241877397917/photo/1"
+                "resolvedUrl": "https://x.com/swyx/status/2061658241877397917/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJx7PoKbAAAy4pT.jpg"
               },
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/rRWOfwqjjq",
                 "resolvedUrl": "https://twitter.com/nicknisi/status/2061509762420813993"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJx7PoKbAAAy4pT.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2061658241877397917/photo/1"
               }
             ]
           },
@@ -199,9 +208,18 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/7nAW7T3vDE",
-                "resolvedUrl": "https://twitter.com/petergyang/status/2061586272305795355/photo/1"
+                "resolvedUrl": "https://x.com/petergyang/status/2061586272305795355/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJw5wgDbgAAE93j.png"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJw5wgDbgAAE93j.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2061586272305795355/photo/1"
               }
             ]
           },
@@ -308,9 +326,18 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/nqIMcGXiKI",
-                "resolvedUrl": "https://twitter.com/trq212/status/2061545633560010826/photo/1"
+                "resolvedUrl": "https://x.com/trq212/status/2061545633560010826/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJwSCWMa4AAWI5Q.jpg"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJwSCWMa4AAWI5Q.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2061545633560010826/photo/1"
               }
             ]
           }
@@ -552,9 +579,18 @@
                 "resolvedUrl": "https://app.lightsprint.ai/office-hours"
               },
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/YEGSvd445K",
-                "resolvedUrl": "https://twitter.com/garrytan/status/2061568169354129640/photo/1"
+                "resolvedUrl": "https://x.com/garrytan/status/2061568169354129640/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJwpUxRboAAmpEs.jpg"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJwpUxRboAAmpEs.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2061568169354129640/photo/1"
               }
             ]
           },
@@ -592,9 +628,18 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/aEXYsQ8VdH",
-                "resolvedUrl": "https://twitter.com/garrytan/status/2061456821488169223/photo/1"
+                "resolvedUrl": "https://x.com/garrytan/status/2061456821488169223/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJvEC4ObEAAjHWR.jpg"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJvEC4ObEAAjHWR.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2061456821488169223/photo/1"
               }
             ]
           }
@@ -616,9 +661,18 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/eulDCgxkNQ",
-                "resolvedUrl": "https://x.com/alifarhat79/status/2061494705188184371/video/1"
+                "resolvedUrl": "https://x.com/alifarhat79/status/2061494705188184371/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2061494650418970624/img/q9XzHr1ULTFrrWwu.jpg"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/eulDCgxkNQ",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2061494650418970624/img/q9XzHr1ULTFrrWwu.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/alifarhat79/status/2061494705188184371/video/1"
               }
             ]
           }
@@ -640,9 +694,18 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/57WdrRvICw",
-                "resolvedUrl": "https://twitter.com/nikunj/status/2061662916039074267/video/1"
+                "resolvedUrl": "https://x.com/nikunj/status/2061662916039074267/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2061662199480041472/img/GVB4QNufFPROLxkR.jpg"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/57WdrRvICw",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2061662199480041472/img/GVB4QNufFPROLxkR.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2061662916039074267/video/1"
               }
             ]
           },
@@ -654,9 +717,18 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/SDEx6JE3P7",
-                "resolvedUrl": "https://twitter.com/nikunj/status/2061492724856234030/photo/1"
+                "resolvedUrl": "https://x.com/nikunj/status/2061492724856234030/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJvkj8xbcAAcsRK.jpg"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJvkj8xbcAAcsRK.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2061492724856234030/photo/1"
               }
             ]
           }
@@ -731,14 +803,23 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "media",
                 "shortUrl": "https://t.co/7wi1xkA3co",
-                "resolvedUrl": "https://twitter.com/danshipper/status/2061550920635191666/photo/1"
+                "resolvedUrl": "https://x.com/danshipper/status/2061550920635191666/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJwZgj8WoAAySQZ.jpg"
               },
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/D3PDOwsOJ8",
                 "resolvedUrl": "https://twitter.com/danshipper/status/2036498182436225513"
+              }
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJwZgj8WoAAySQZ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2061550920635191666/photo/1"
               }
             ]
           },
@@ -827,7 +908,7 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-02T14:35:48.561Z",
+    "updatedAt": "2026-06-02T14:39:12.262Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
