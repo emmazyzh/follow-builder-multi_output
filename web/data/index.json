@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-03T03:05:17.564Z",
+  "updatedAt": "2026-06-03T04:01:24.541Z",
   "latestDate": "2026-06-02",
   "dates": [
     {
       "date": "2026-06-02",
       "title": "AI Builders Daily · 2026-06-02",
-      "summary": "English: Today’s snapshot covers 14 X/Twitter builders and one podcast episode. The X posts center on **Codex**, AI agent workflows, enterprise AI strategy, model distribution, **Vercel** agent evaluations, and founder operating tactics. The podcast item summarizes **Unsupervised Learning**’s discussion with **Sebastian Mallaby** about **Demis Hassabis**, **DeepMind**, AI race dynamics, and government-led safety coordination.\n\n中文：今天的快照包含 14 位 X/Twitter builder 和 1 期播客。X 内容集中在 **Codex**、AI agent 工作流、企业 AI 策略、模型分发、**Vercel** agent 评测，以及创始人的实操方法。播客部分总结了 **Unsupervised Learning** 与 **Sebastian Mallaby** 关于 **Demis Hassabis**、**DeepMind**、AI 竞赛格局和政府主导安全协调的讨论。",
+      "summary": "**DeepMind’s origin story gets sharper**: Demis Hassabis’s biographer frames the AI race as inevitable, with safety now looking like a government-enforced coordination problem; **agentic coding goes mainstream and weird**: Codex gets farm jokes, voice nudges, worktrees, cross-model review, and always-on goal swarms; **model economics are heating up**: MiniMax M3 is pitched as an open-model contender near Opus and GPT-5 at a fraction of the cost; **enterprise AI advantage shifts from models to proprietary workflows**: Box’s Aaron Levie argues the moat is institutional knowledge plus data plus domain process.\n\n**DeepMind 往事更锋利了**：Demis Hassabis 传记作者把 AI 竞赛说成几乎不可避免，安全问题更像要靠政府强制协调；**代码智能体正在变得又主流又怪**：Codex 被拿来开农场玩笑、语音催人解锁、配合 worktree、跨模型审查和常驻 /goal；**模型价格战继续升温**：MiniMax M3 被推到开放模型前排，号称接近 Opus 和 GPT-5、成本低很多；**企业 AI 护城河从模型转向自有流程**：Box 的 Aaron Levie 认为关键是把机构知识、数据和行业工作流接进 AI。",
       "itemCount": 15,
       "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-03T03:05:17.544Z",
+      "updatedAt": "2026-06-03T04:01:24.539Z",
       "commit": {
         "sha": "09b2c68353367c217890dd87529b67684050f81a",
         "committedAt": "2026-06-02T07:59:05Z",

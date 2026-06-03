@@ -2,19 +2,19 @@
   "payload": {
     "date": "2026-06-02",
     "title": "AI Builders Daily · 2026-06-02",
-    "summary": "English: Today’s snapshot covers 14 X/Twitter builders and one podcast episode. The X posts center on **Codex**, AI agent workflows, enterprise AI strategy, model distribution, **Vercel** agent evaluations, and founder operating tactics. The podcast item summarizes **Unsupervised Learning**’s discussion with **Sebastian Mallaby** about **Demis Hassabis**, **DeepMind**, AI race dynamics, and government-led safety coordination.\n\n中文：今天的快照包含 14 位 X/Twitter builder 和 1 期播客。X 内容集中在 **Codex**、AI agent 工作流、企业 AI 策略、模型分发、**Vercel** agent 评测，以及创始人的实操方法。播客部分总结了 **Unsupervised Learning** 与 **Sebastian Mallaby** 关于 **Demis Hassabis**、**DeepMind**、AI 竞赛格局和政府主导安全协调的讨论。",
+    "summary": "**DeepMind’s origin story gets sharper**: Demis Hassabis’s biographer frames the AI race as inevitable, with safety now looking like a government-enforced coordination problem; **agentic coding goes mainstream and weird**: Codex gets farm jokes, voice nudges, worktrees, cross-model review, and always-on goal swarms; **model economics are heating up**: MiniMax M3 is pitched as an open-model contender near Opus and GPT-5 at a fraction of the cost; **enterprise AI advantage shifts from models to proprietary workflows**: Box’s Aaron Levie argues the moat is institutional knowledge plus data plus domain process.\n\n**DeepMind 往事更锋利了**：Demis Hassabis 传记作者把 AI 竞赛说成几乎不可避免，安全问题更像要靠政府强制协调；**代码智能体正在变得又主流又怪**：Codex 被拿来开农场玩笑、语音催人解锁、配合 worktree、跨模型审查和常驻 /goal；**模型价格战继续升温**：MiniMax M3 被推到开放模型前排，号称接近 Opus 和 GPT-5、成本低很多；**企业 AI 护城河从模型转向自有流程**：Box 的 Aaron Levie 认为关键是把机构知识、数据和行业工作流接进 AI。",
     "items": [
       {
         "person_name": "Unsupervised Learning",
         "person_handle": null,
         "person_identity": "AI Podcast",
         "profile_url": "https://www.youtube.com/@RedpointAI",
-        "source_label": "Podcast",
+        "source_label": "YouTube Podcast",
         "posted_at": "2026-06-01T12:46:52.000Z",
         "sections": [
           {
-            "headline": "**Unsupervised Learning** unpacks **Demis Hassabis**, **DeepMind**, and the AI race · **Unsupervised Learning** 拆解 **Demis Hassabis**、**DeepMind** 与 AI 竞赛",
-            "body": "The episode features **Sebastian Mallaby**, who spent extensive time with **DeepMind** CEO and cofounder **Demis Hassabis** while writing *The Infinity Machine*. The conversation covers **DeepMind**’s early hope of avoiding an AI race, why Mallaby now sees the race dynamic as inevitable, and how Hassabis shifted from a possible singleton-lab vision toward seeing safety as a collective action problem that governments must enforce.\n\n这一期请到 **Sebastian Mallaby**，他在写 *The Infinity Machine* 时与 **DeepMind** CEO 兼联合创始人 **Demis Hassabis** 深谈过很长时间。节目讨论了 **DeepMind** 早期想避免 AI 竞赛的设想、Mallaby 为什么认为竞赛几乎不可避免，以及 Hassabis 如何从“单一实验室掌控局面”的想法，转向把安全视为必须由政府执行的集体行动问题。\n\nMallaby also discusses the 2015 safety summit hosted at **SpaceX**, **Elon Musk**’s later move to start **OpenAI**, the trust problem between AI labs, and why he thinks enforceable rules would need both domestic technical institutions and some form of **US-China** coordination. He points to the UK AI Safety Institute as evidence that governments can assemble serious technical expertise, while noting the difficulty of international coordination.\n\nMallaby 还谈到 2015 年在 **SpaceX** 举办的安全峰会、**Elon Musk** 后来创办 **OpenAI**、AI 实验室之间的信任问题，以及为什么他认为可执行的规则既需要国内技术机构，也需要某种形式的 **中美** 协调。他以英国 AI Safety Institute 为例，说明政府可以组织起真正有技术能力的团队，但跨国协调依然很难。",
+            "headline": "**DeepMind’s** race-to-superintelligence story gets personal · **DeepMind** 超级智能竞赛故事变得更个人化",
+            "body": "Sebastian Mallaby, author of **The Infinity Machine**, discusses more than 30 hours of access to **Demis Hassabis** and the people dynamics around **DeepMind**, **Google**, **OpenAI**, **Elon Musk**, **Reid Hoffman**, **Sam Altman**, and **Dario Amodei**. The episode’s sharpest thread: Hassabis once hoped AGI could avoid a race dynamic, but now sees safety as a collective-action problem that likely needs government enforcement and even US-China coordination.\n\n《**The Infinity Machine**》作者 Sebastian Mallaby 聊了他和 **Demis Hassabis** 超过 30 小时交流后的观察，也谈到 **DeepMind**、**Google**、**OpenAI**、**Elon Musk**、**Reid Hoffman**、**Sam Altman**、**Dario Amodei** 之间的关系。最有信息量的一条线是：Hassabis 早年希望 AGI 不要变成竞赛，但现在更像是把安全看成集体行动问题，需要政府强制规则，甚至需要中美协调。",
             "source_links": [
               "https://www.youtube.com/@RedpointAI"
             ],
@@ -31,8 +31,8 @@
         "posted_at": "2026-06-02T06:22:03.000Z",
         "sections": [
           {
-            "headline": "**xAI Imagine** flipbook links from **Swyx** · **Swyx** 分享 **xAI Imagine** flipbook 线索",
-            "body": "@xai @imagine see more about flipbook from @zan2434 and @eddiejiao_obj !\n\nhttps://t.co/WHwtYQ3WWF\n\n@xai @imagine 可以看 @zan2434 和 @eddiejiao_obj 关于 flipbook 的更多内容！\n\nhttps://t.co/WHwtYQ3WWF",
+            "headline": "**xAI Imagine** flipbook gets a pointer · **xAI Imagine** flipbook 被点名推荐",
+            "body": "@xai @imagine see more about flipbook from @zan2434 and @eddiejiao_obj !\n\nhttps://t.co/WHwtYQ3WWF\n\n@xai @imagine 想了解更多 flipbook，可以看 @zan2434 和 @eddiejiao_obj！\n\nhttps://t.co/WHwtYQ3WWF",
             "source_links": [
               "https://x.com/swyx/status/2061694815130243344"
             ],
@@ -59,10 +59,18 @@
             ]
           },
           {
-            "headline": "**WorkOS** talk challenges **Matt Pocock**’s run · **WorkOS** 演讲开始挑战 **Matt Pocock** 的热度",
-            "body": "title undersells it - this @workos talk is doing v well and is the first to seriously challenge @mattpocockuk in weeks. team is ab testing https://t.co/puwZ8bKPH3 https://t.co/rRWOfwqjjq\n\n标题低估它了 - 这个 @workos 演讲表现很好，是几周来第一个真正挑战 @mattpocockuk 的。团队正在做 AB 测试 https://t.co/puwZ8bKPH3 https://t.co/rRWOfwqjjq",
+            "headline": "**WorkOS** talk challenges Matt Pocock’s run · **WorkOS** 演讲开始挑战 Matt Pocock 的热度",
+            "body": "title undersells it - this @workos talk is doing v well and is the first to seriously challenge @mattpocockuk in weeks. team is ab testing https://t.co/puwZ8bKPH3 https://t.co/rRWOfwqjjq\n\n标题低估了它——这个 @workos 演讲表现很好，是几周来第一个真正挑战 @mattpocockuk 的。团队正在做 A/B 测试 https://t.co/puwZ8bKPH3 https://t.co/rRWOfwqjjq",
             "source_links": [
               "https://x.com/swyx/status/2061658241877397917"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJx7PoKbAAAy4pT.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2061658241877397917/photo/1"
+              }
             ],
             "previews": [
               {
@@ -90,33 +98,13 @@
                 "shortUrl": "https://t.co/rRWOfwqjjq",
                 "resolvedUrl": "https://x.com/nicknisi/status/2061509762420813993"
               }
-            ],
-            "media": [
-              {
-                "shortUrl": null,
-                "url": "https://pbs.twimg.com/media/HJx7PoKbAAAy4pT.jpg",
-                "alt": "",
-                "expandedUrl": "https://x.com/swyx/status/2061658241877397917/photo/1"
-              }
             ]
           },
           {
-            "headline": "**Microsoft** and **Nvidia** links roundup · **Microsoft** 与 **Nvidia** 链接汇总",
-            "body": "@Microsoft @nvidia roundup of links: https://t.co/52cazFXk1f\n\n@Microsoft @nvidia 链接汇总：https://t.co/52cazFXk1f",
+            "headline": "**Microsoft** and **NVIDIA** links get rounded up · **Microsoft** 和 **NVIDIA** 链接被整理汇总",
+            "body": "@Microsoft @nvidia roundup of links: https://t.co/52cazFXk1f\n\n@Microsoft @nvidia 链接汇总： https://t.co/52cazFXk1f",
             "source_links": [
               "https://x.com/swyx/status/2061654021958762620"
-            ],
-            "previews": [
-              {
-                "type": "link",
-                "url": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
-                "resolvedUrl": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3",
-                "siteName": "latent.space",
-                "title": "[AINews] NVIDIA Cosmos 3, Nemotron 3 Ultra, and RTX Spark",
-                "description": "Jensen scores a huge win.",
-                "image": "https://substackcdn.com/image/fetch/$s_!5bzA!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Ff6685277-4569-4135-92cb-e7a645246125_4096x2732.jpeg",
-                "mediaKind": "image"
-              }
             ],
             "linkExpansions": [
               {
@@ -124,7 +112,8 @@
                 "shortUrl": "https://t.co/52cazFXk1f",
                 "resolvedUrl": "https://www.latent.space/p/ainews-nvidia-cosmos-3-nemotron-3"
               }
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -137,22 +126,10 @@
         "posted_at": "2026-06-02T03:52:50.000Z",
         "sections": [
           {
-            "headline": "**Codex** can run a farm · **Codex** 也能管农场",
-            "body": "You can just codex ... a farm\nhttps://t.co/pwmS7IvqbH\n\n你可以直接用 **Codex**……管一个农场\nhttps://t.co/pwmS7IvqbH",
+            "headline": "**Codex** can apparently do a farm · **Codex** 甚至可以“做个农场”",
+            "body": "You can just codex ... a farm\nhttps://t.co/pwmS7IvqbH\n\n你可以直接 codex……一个农场\nhttps://t.co/pwmS7IvqbH",
             "source_links": [
               "https://x.com/thsottiaux/status/2061657264508006738"
-            ],
-            "previews": [
-              {
-                "type": "link",
-                "url": "https://chatgptpro.substack.com/p/hiroki-tomiyasu",
-                "resolvedUrl": "https://chatgptpro.substack.com/p/hiroki-tomiyasu",
-                "siteName": "chatgptpro.substack.com",
-                "title": "A broccoli farmer in northern Japan shares his chats",
-                "description": "Hiroki Tomiyasu uses ChatGPT and Codex to troubleshoot problems on his farm and automate parts of his work",
-                "image": "https://substackcdn.com/image/fetch/$s_!hiEA!,w_1200,h_675,c_fill,f_jpg,q_auto:good,fl_progressive:steep,g_auto/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F7aa15e49-cb6e-4791-a171-d7b5c23342e5_1254x1254.png",
-                "mediaKind": "image"
-              }
             ],
             "linkExpansions": [
               {
@@ -160,11 +137,12 @@
                 "shortUrl": "https://t.co/pwmS7IvqbH",
                 "resolvedUrl": "https://chatgptpro.substack.com/p/hiroki-tomiyasu"
               }
-            ]
+            ],
+            "previews": []
           },
           {
-            "headline": "**GPT-5.5** shows up in an **AWS** joke · **GPT-5.5** 出现在 **AWS** 玩笑里",
-            "body": "Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D\n\n听说 **AWS** 是酷孩子待的地方。你好。我们有 **GPT-5.5**。https://t.co/TixKoaIS0D",
+            "headline": "**OpenAI** jokes about **GPT-5.5** on **AWS** · **OpenAI** 拿 **AWS** 和 **GPT-5.5** 开了个玩笑",
+            "body": "Heard that AWS is where the cool kids are. Hello. We have GPT-5.5. https://t.co/TixKoaIS0D\n\n听说 AWS 是酷孩子们待的地方。你好。我们有 GPT-5.5。 https://t.co/TixKoaIS0D",
             "source_links": [
               "https://x.com/thsottiaux/status/2061644307111796984"
             ],
@@ -191,8 +169,8 @@
             ]
           },
           {
-            "headline": "Rename **Codex** to **ChadGPT**? · 要把 **Codex** 改名叫 **ChadGPT** 吗？",
-            "body": "Should we rename Codex to ChadGPT?\n\n我们要把 **Codex** 改名叫 **ChadGPT** 吗？",
+            "headline": "**Codex** gets a **ChadGPT** rename joke · **Codex** 被调侃要不要改名 **ChadGPT**",
+            "body": "Should we rename Codex to ChadGPT?\n\n我们要不要把 Codex 改名叫 ChadGPT？",
             "source_links": [
               "https://x.com/thsottiaux/status/2061572602888589807"
             ],
@@ -203,24 +181,16 @@
       {
         "person_name": "Peter Yang",
         "person_handle": "petergyang",
-        "person_identity": "AI Product",
+        "person_identity": "AI Product Writer",
         "profile_url": "https://x.com/petergyang",
         "source_label": "X / Twitter",
         "posted_at": "2026-06-01T23:10:44.000Z",
         "sections": [
           {
-            "headline": "A most-used skill from **Peter Yang** · **Peter Yang** 最常用的 skill",
-            "body": "my #1 most used skill lol https://t.co/7nAW7T3vDE\n\n我最常用的第 1 个 skill，笑死 https://t.co/7nAW7T3vDE",
+            "headline": "A favorite AI skill gets called out · 一个最常用的 AI skill 被点名",
+            "body": "my #1 most used skill lol https://t.co/7nAW7T3vDE\n\n我最常用的第 1 个 skill，哈哈 https://t.co/7nAW7T3vDE",
             "source_links": [
               "https://x.com/petergyang/status/2061586272305795355"
-            ],
-            "linkExpansions": [
-              {
-                "kind": "media",
-                "shortUrl": "https://t.co/7nAW7T3vDE",
-                "resolvedUrl": "https://x.com/petergyang/status/2061586272305795355/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HJw5wgDbgAAE93j.png"
-              }
             ],
             "media": [
               {
@@ -230,25 +200,21 @@
                 "expandedUrl": "https://x.com/petergyang/status/2061586272305795355/photo/1"
               }
             ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/7nAW7T3vDE",
+                "resolvedUrl": "https://x.com/petergyang/status/2061586272305795355/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJw5wgDbgAAE93j.png"
+              }
+            ],
             "previews": []
           },
           {
-            "headline": "Peek into **Josh**’s skills library · 看看 **Josh** 的 skills 库",
-            "body": "You can get a sneek peek into Josh's full skills library here: https://t.co/d7n2UXsw6E\n\n你可以在这里提前看一下 **Josh** 完整的 skills 库：https://t.co/d7n2UXsw6E",
+            "headline": "Josh’s skills library gets a preview link · Josh 的 skills 库放出预览链接",
+            "body": "You can get a sneek peek into Josh's full skills library here: https://t.co/d7n2UXsw6E\n\n你可以在这里提前看一下 Josh 完整的 skills 库： https://t.co/d7n2UXsw6E",
             "source_links": [
               "https://x.com/petergyang/status/2061452081572282805"
-            ],
-            "previews": [
-              {
-                "type": "link",
-                "url": "https://initialcommit.co/library/skills/",
-                "resolvedUrl": "https://initialcommit.co/library/skills/",
-                "siteName": "Initial Commit",
-                "title": "Skills — Initial Commit",
-                "description": "Portable markdown playbooks for AI agents — reusable skills you drop into Claude Code or any agent that reads SKILL.md. Previews public; full text for Club members.",
-                "image": null,
-                "mediaKind": null
-              }
             ],
             "linkExpansions": [
               {
@@ -256,25 +222,14 @@
                 "shortUrl": "https://t.co/d7n2UXsw6E",
                 "resolvedUrl": "https://initialcommit.co/library/skills/"
               }
-            ]
+            ],
+            "previews": []
           },
           {
-            "headline": "**Peter Yang** shares six takeaways from **Josh Shpigford** on solo AI building · **Peter Yang** 总结 **Josh Shpigford** 单人用 AI 做产品的 6 点经验",
-            "body": "My top 6 takeaways from @Shpigford on how to build multiple products solo with AI agents:\n\n1. Keep shipping even if the fear of embarrassment never goes away.\n\nAfter 25 years as a solo builder, Josh still thinks \"It's terrifying launching something. Every single time it's just like, what if zero people care?\" But he ships early anyway: \"The idea of spending months working on something before you put it out for other people to use, I think that's a real bad idea.\"\n\n2. Charge from day one, and kill products that can’t pay for themselves.\n\nFor any product with built-in costs (e.g., hosting, LLM), Josh ships a paid version from day one. If the product can't cover its own costs, he doesn't hesitate to shut it down and refund recent payments.\n\n3. Build features in parallel with separate git worktrees\n\nEach worktree is a separate working copy of your codebase on its own branch, so features won't interact with each other. Worktrees stop context rot, isolate mistakes, and force you to test every chunk before moving on. Josh uses @conductor_build to manage them all.\n\n4. Have GPT review Claude's work and vice versa\n\nJosh builds with one model and then runs a review pass with another “GPT invariably finds three to five bugs that Opus overlooked.” Different models spot different mistakes. In Conductor, he sets a default review model so it runs on every PR.\n\n5. Build a skill to make AI better over time.\n\nJosh built a /learnings skill that runs at the end of each phase so that every \"no, that didn't work\" moment can be distilled into new rules to help the agent avoid repeating the same mistakes.\n\n6. AI lets anyone ship, but real experience still matters.\n\nJosh credits 25 years of building before AI for how fast he ships now with agents. \"I know the general shape of how I want things to work, so I can very quickly get to that point.\" His advice for newer builders is to \"just fail a lot, because the only way that you'll ever figure out what not to do is by doing the thing incorrectly.\"\n\nJosh walked through his entire development workflow in our episode and shared more skills.\n\n📌 Watch the full episode here: https://t.co/9brwr7daw8\n\n我从 @Shpigford 关于如何单人用 AI agents 做多个产品里，最想带走的 6 点：\n\n1. 哪怕怕丢脸的感觉一直都在，也要继续发布。\n\n做了 25 年 solo builder 之后，**Josh** 仍然觉得“发布东西很吓人。每一次都会想，要是没人关心怎么办？”但他还是会早早发布：“花几个月做东西，然后才拿给别人用，我觉得这是个很糟糕的主意。”\n\n2. 第一天就收费，养不活自己的产品就关掉。\n\n对任何有内置成本的产品，比如托管、LLM，**Josh** 从第一天就发布付费版本。如果产品不能覆盖自己的成本，他会直接关掉，并退还最近的付款。\n\n3. 用独立 git worktrees 并行做功能。\n\n每个 worktree 都是代码库在独立分支上的一个独立工作副本，所以功能之间不会互相干扰。Worktrees 能减少上下文腐烂、隔离错误，并迫使你在继续之前测试每一块。**Josh** 用 @conductor_build 管理这些 worktrees。\n\n4. 让 **GPT** 审 **Claude** 的工作，反过来也一样。\n\n**Josh** 用一个模型构建，再用另一个模型做 review，“**GPT** 总能找到 **Opus** 漏掉的三到五个 bug。”不同模型会发现不同问题。在 **Conductor** 里，他设置了默认 review 模型，让它在每个 PR 上运行。\n\n5. 做一个 skill，让 AI 越用越好。\n\n**Josh** 做了一个 /learnings skill，在每个阶段结束时运行，把每一次“不是，这样不行”的时刻提炼成新规则，帮助 agent 避免重复同样的错误。\n\n6. AI 让任何人都能发货，但真实经验仍然重要。\n\n**Josh** 认为，他能现在用 agents 快速发货，离不开 AI 出现前 25 年的构建经验。“我知道大概要让东西怎么运行，所以可以很快到达那个点。”他给新 builder 的建议是：“多失败，因为你只有把事情做错，才会知道什么不该做。”\n\n**Josh** 在我们的节目里完整演示了他的开发流程，并分享了更多 skills。\n\n📌 看完整节目：https://t.co/9brwr7daw8",
+            "headline": "Solo building with AI agents gets a six-point playbook · 用 AI agents 单人做产品的六条打法",
+            "body": "My top 6 takeaways from @Shpigford on how to build multiple products solo with AI agents:\n\n1. Keep shipping even if the fear of embarrassment never goes away.\n\nAfter 25 years as a solo builder, Josh still thinks \"It's terrifying launching something. Every single time it's just like, what if zero people care?\" But he ships early anyway: \"The idea of spending months working on something before you put it out for other people to use, I think that's a real bad idea.\"\n\n2. Charge from day one, and kill products that can’t pay for themselves.\n\nFor any product with built-in costs (e.g., hosting, LLM), Josh ships a paid version from day one. If the product can't cover its own costs, he doesn't hesitate to shut it down and refund recent payments.\n\n3. Build features in parallel with separate git worktrees\n\nEach worktree is a separate working copy of your codebase on its own branch, so features won't interact with each other. Worktrees stop context rot, isolate mistakes, and force you to test every chunk before moving on. Josh uses @conductor_build to manage them all.\n\n4. Have GPT review Claude's work and vice versa\n\nJosh builds with one model and then runs a review pass with another “GPT invariably finds three to five bugs that Opus overlooked.” Different models spot different mistakes. In Conductor, he sets a default review model so it runs on every PR.\n\n5. Build a skill to make AI better over time.\n\nJosh built a /learnings skill that runs at the end of each phase so that every \"no, that didn't work\" moment can be distilled into new rules to help the agent avoid repeating the same mistakes.\n\n6. AI lets anyone ship, but real experience still matters.\n\nJosh credits 25 years of building before AI for how fast he ships now with agents. \"I know the general shape of how I want things to work, so I can very quickly get to that point.\" His advice for newer builders is to \"just fail a lot, because the only way that you'll ever figure out what not to do is by doing the thing incorrectly.\"\n\nJosh walked through his entire development workflow in our episode and shared more skills.\n\n📌 Watch the full episode here: https://t.co/9brwr7daw8\n\n我从 @Shpigford 关于如何用 AI agents 单人做多个产品里，总结出的 6 条要点：\n\n1. 就算一直怕丢脸，也要持续发布。\n\n做了 25 年 solo builder 之后，Josh 还是觉得“发布东西很可怕。每一次都会想，要是根本没人关心怎么办？”但他还是会尽早发布：“花几个月做东西，然后才拿给别人用，我觉得这是个很糟糕的想法。”\n\n2. 第一天就收费，不能养活自己的产品就砍掉。\n\n只要产品有内置成本（比如托管、LLM），Josh 第一天就会上付费版。如果产品连自己的成本都覆盖不了，他会毫不犹豫地关掉，并退还近期付款。\n\n3. 用独立 git worktrees 并行做功能\n\n每个 worktree 都是代码库在独立分支上的一份独立工作副本，所以功能之间不会互相影响。Worktrees 能阻止上下文变烂、隔离错误，并逼你在继续之前测试每一块。Josh 用 @conductor_build 来管理它们。\n\n4. 让 GPT 审 Claude 的代码，反过来也一样\n\nJosh 用一个模型构建，然后用另一个模型做审查，“GPT 总能发现三到五个 Opus 漏掉的 bug。”不同模型会抓到不同问题。在 Conductor 里，他设置了默认审查模型，让每个 PR 都跑一遍。\n\n5. 做一个 skill，让 AI 越用越好。\n\nJosh 做了一个 /learnings skill，在每个阶段结束时运行，把每次“不是，这样不行”的时刻提炼成新规则，帮助 agent 避免重复犯同样的错。\n\n6. AI 让任何人都能发布，但真实经验仍然重要。\n\nJosh 认为自己能用 agents 这么快发布，得益于 AI 出现前 25 年的构建经验。“我知道事情大概要怎么运作，所以我能很快到达那个状态。”他给新 builder 的建议是“多失败，因为你只有把事情做错，才会知道什么不该做。”\n\nJosh 在我们的节目里完整走了一遍他的开发流程，并分享了更多 skills。\n\n📌 看完整节目： https://t.co/9brwr7daw8",
             "source_links": [
               "https://x.com/petergyang/status/2061452068792287622"
-            ],
-            "previews": [
-              {
-                "type": "link",
-                "url": "https://youtu.be/GdxLaeyu33c",
-                "resolvedUrl": "https://www.youtube.com/watch?v=GdxLaeyu33c&feature=youtu.be",
-                "siteName": "YouTube",
-                "title": "The Exact AI Skills This Solo Founder Uses to Build 5 Apps at Once | Josh Pigford",
-                "description": "Josh sold his last startup for $4M and is now building 5 products solo with agents. He showed me his exact AI skills stack, including a 4-step /build skill, ...",
-                "image": "https://i.ytimg.com/vi/GdxLaeyu33c/maxresdefault.jpg",
-                "mediaKind": "image"
-              }
             ],
             "linkExpansions": [
               {
@@ -282,7 +237,8 @@
                 "shortUrl": "https://t.co/9brwr7daw8",
                 "resolvedUrl": "https://youtu.be/GdxLaeyu33c"
               }
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -295,30 +251,18 @@
         "posted_at": "2026-06-01T23:07:06.000Z",
         "sections": [
           {
-            "headline": "**Claude** loop prompt works with voice mode · **Claude** 循环提示词也适合语音模式",
-            "body": "Suzanne also mentioned she uses this with voice mode to make it easier to respond and more natural.\n\n**Suzanne** 还提到，她会把这个和语音模式一起用，这样回复更容易，也更自然。",
+            "headline": "**Claude** workflow pairs with voice mode · **Claude** 工作流配合语音模式使用",
+            "body": "Suzanne also mentioned she uses this with voice mode to make it easier to respond and more natural.\n\nSuzanne 还提到，她会把这个和 voice mode 一起用，让回复更容易，也更自然。",
             "source_links": [
               "https://x.com/trq212/status/2061585357934878745"
             ],
             "previews": []
           },
           {
-            "headline": "Full prompt gist shared · 完整提示词 gist 已分享",
-            "body": "gist for the full prompt here: https://t.co/L0ffBeU1ua\n\n完整提示词的 gist 在这里：https://t.co/L0ffBeU1ua",
+            "headline": "A full prompt gist is shared · 完整 prompt 的 gist 放出",
+            "body": "gist for the full prompt here: https://t.co/L0ffBeU1ua\n\n完整 prompt 的 gist 在这里： https://t.co/L0ffBeU1ua",
             "source_links": [
               "https://x.com/trq212/status/2061545635141361687"
-            ],
-            "previews": [
-              {
-                "type": "link",
-                "url": "https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b",
-                "resolvedUrl": "https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b",
-                "siteName": "Gist",
-                "title": "Learn Quiz",
-                "description": "Learn Quiz. GitHub Gist: instantly share code, notes, and snippets.",
-                "image": "https://github.githubassets.com/assets/gist-og-image-54fd7dc0713e.png",
-                "mediaKind": "image"
-              }
             ],
             "linkExpansions": [
               {
@@ -326,21 +270,14 @@
                 "shortUrl": "https://t.co/L0ffBeU1ua",
                 "resolvedUrl": "https://gist.github.com/ThariqS/1389dcdff9eba4789887a2211370f06b"
               }
-            ]
+            ],
+            "previews": []
           },
           {
-            "headline": "Staying in the loop with **Claude** work · 如何跟上 **Claude** 正在做的工作",
-            "body": "been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done\n\nthis is one of my favorites from Suzanne: https://t.co/nqIMcGXiKI\n\n一直在问 **Anthropic** 的同事，他们是怎么跟上 **Claude** 的进展、并完整理解正在做的工作的。\n\n这是我最喜欢的一个，来自 **Suzanne**：https://t.co/nqIMcGXiKI",
+            "headline": "**Anthropic** shares how teammates stay in the loop with **Claude** · **Anthropic** 同事分享如何跟上 **Claude** 的工作",
+            "body": "been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done\n\nthis is one of my favorites from Suzanne: https://t.co/nqIMcGXiKI\n\n我一直在问 Anthropic 的其他人，他们是怎么跟上 Claude、并完全理解正在做的工作的\n\n这是 Suzanne 分享里我最喜欢的一个： https://t.co/nqIMcGXiKI",
             "source_links": [
               "https://x.com/trq212/status/2061545633560010826"
-            ],
-            "linkExpansions": [
-              {
-                "kind": "media",
-                "shortUrl": "https://t.co/nqIMcGXiKI",
-                "resolvedUrl": "https://x.com/trq212/status/2061545633560010826/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HJwSCWMa4AAWI5Q.jpg"
-              }
             ],
             "media": [
               {
@@ -348,6 +285,14 @@
                 "url": "https://pbs.twimg.com/media/HJwSCWMa4AAWI5Q.jpg",
                 "alt": "",
                 "expandedUrl": "https://x.com/trq212/status/2061545633560010826/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nqIMcGXiKI",
+                "resolvedUrl": "https://x.com/trq212/status/2061545633560010826/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJwSCWMa4AAWI5Q.jpg"
               }
             ],
             "previews": []
@@ -363,8 +308,8 @@
         "posted_at": "2026-06-02T04:56:17.000Z",
         "sections": [
           {
-            "headline": "**vibecon** from **Amjad Masad** · **Amjad Masad** 提到 **vibecon**",
-            "body": "vibecon https://t.co/zAqrtrfd1k\n\n**vibecon** https://t.co/zAqrtrfd1k",
+            "headline": "**vibecon** gets teased · **vibecon** 被预告",
+            "body": "vibecon https://t.co/zAqrtrfd1k\n\nvibecon https://t.co/zAqrtrfd1k",
             "source_links": [
               "https://x.com/amasad/status/2061673231309058241"
             ],
@@ -391,8 +336,8 @@
             ]
           },
           {
-            "headline": "Prompt to business with **Replit** · 用提示词到公司业务",
-            "body": "Prompt to business:\n- website\n- mobile app\n- monetization\n- Delaware corp\n\nStart for free: https://t.co/r3LEz2slaT\n\n提示词到业务：\n- 网站\n- 移动应用\n- 变现\n- 特拉华公司\n\n免费开始：https://t.co/r3LEz2slaT",
+            "headline": "**Replit** pitches prompt-to-business · **Replit** 打出 prompt 到公司的一条龙",
+            "body": "Prompt to business:\n- website\n- mobile app\n- monetization\n- Delaware corp\n\nStart for free: https://t.co/r3LEz2slaT\n\nPrompt 到 business：\n- website\n- mobile app\n- monetization\n- Delaware corp\n\n免费开始： https://t.co/r3LEz2slaT",
             "source_links": [
               "https://x.com/amasad/status/2061575503434408106"
             ],
@@ -429,8 +374,8 @@
         "posted_at": "2026-06-01T23:40:56.000Z",
         "sections": [
           {
-            "headline": "**MiniMax M3** leads open models on **Next.js** agent evals · **MiniMax M3** 领跑 **Next.js** agent 开放模型评测",
-            "body": "MiniMax M3 is now the leading open model on the Next.js agent evaluations (https://t.co/SnZ54XoRWV).\n\nRight behind Opus &amp; GPT5, but 10× cheaper (And 20× cheaper right now on ▲ AI Gateway!) https://t.co/z9ts1NZDyu\n\n**MiniMax M3** 现在是 **Next.js** agent 评测里的领先开放模型（https://t.co/SnZ54XoRWV）。\n\n紧跟在 **Opus** 和 **GPT5** 后面，但便宜 10 倍（现在在 ▲ **AI Gateway** 上便宜 20 倍！）https://t.co/z9ts1NZDyu",
+            "headline": "**MiniMax M3** climbs **Next.js** agent evals · **MiniMax M3** 登上 **Next.js** agent 评测前排",
+            "body": "MiniMax M3 is now the leading open model on the Next.js agent evaluations (https://t.co/SnZ54XoRWV).\n\nRight behind Opus &amp; GPT5, but 10× cheaper (And 20× cheaper right now on ▲ AI Gateway!) https://t.co/z9ts1NZDyu\n\nMiniMax M3 现在是 Next.js agent evaluations 上领先的开放模型（https://t.co/SnZ54XoRWV）。\n\n紧跟在 Opus 和 GPT5 后面，但便宜 10 倍（而且现在在 ▲ AI Gateway 上便宜 20 倍！） https://t.co/z9ts1NZDyu",
             "source_links": [
               "https://x.com/rauchg/status/2061593874498531707"
             ],
@@ -467,8 +412,8 @@
             ]
           },
           {
-            "headline": "**Git** remains the core tool · **Git** 还是核心工具",
-            "body": "Git is all you need. Always has been https://t.co/PEt3D4Pt70\n\n**Git** 就够了。一直如此 https://t.co/PEt3D4Pt70",
+            "headline": "**Git** is still all you need · **Git** 依然足够",
+            "body": "Git is all you need. Always has been https://t.co/PEt3D4Pt70\n\nGit 就够了。一直都是。 https://t.co/PEt3D4Pt70",
             "source_links": [
               "https://x.com/rauchg/status/2061533151676293430"
             ],
@@ -495,8 +440,8 @@
             ]
           },
           {
-            "headline": "Full-stack agent example on **Vercel** · **Vercel** 上的全栈 agent 示例",
-            "body": "Beautiful example of a full-stack agent on @vercel. Great learning material! https://t.co/jz1E7g4aSM\n\n这是一个在 @vercel 上做全栈 agent 的漂亮例子。很适合学习！https://t.co/jz1E7g4aSM",
+            "headline": "A full-stack agent on **Vercel** gets highlighted · 一个 **Vercel** 全栈 agent 案例被推荐",
+            "body": "Beautiful example of a full-stack agent on @vercel. Great learning material! https://t.co/jz1E7g4aSM\n\n一个跑在 @vercel 上的全栈 agent 漂亮案例。很好的学习材料！ https://t.co/jz1E7g4aSM",
             "source_links": [
               "https://x.com/rauchg/status/2061415178298937365"
             ],
@@ -533,16 +478,16 @@
         "posted_at": "2026-06-02T04:13:11.000Z",
         "sections": [
           {
-            "headline": "Enterprise advantage in the AI agent era comes from internal knowledge · AI agent 时代的企业优势来自内部知识",
-            "body": "As we enter the era of AI agents, one of the defining questions is how you develop competitive advantage when your competitor has access to the same AI models and intelligence as you. \n\nThe companies that are able to best harness their internal institutional knowledge, existing data assets, and domain-specific workflows -- connected with AI -- will be those that are able to stay ahead in the future.\n\nWhether a company decides to build out the tech stacks themselves, or leverage a variety of best-in-class tools is certainly one core variable. But the key is to find the way that the enterprise can capture and protect the value created by their unique data, processes, and expertise over the long run. Each industry will have their own version of this, and the competitive advantage will vary by vertical.\n\nWe’re increasingly seeing this at Box, where customers want to ensure that they can take advantage of their institutional knowledge and have the flexibility of bringing any AI model and intelligence to their data at any time. This is a pattern that will increasingly become a core principle of strategy in the future.\n\n随着我们进入 AI agents 时代，一个核心问题是：当竞争对手能访问和你一样的 AI 模型与智能时，你怎么建立竞争优势。\n\n那些最能利用内部组织知识、既有数据资产和行业专属工作流，并把它们与 AI 连接起来的公司，未来会更容易领先。\n\n公司是自己搭技术栈，还是使用各种 best-in-class 工具，当然是一个关键变量。但真正的关键，是企业能不能长期捕获并保护由自身独特数据、流程和专业知识创造出的价值。每个行业都会有自己的版本，竞争优势也会因垂直领域而不同。\n\n我们在 **Box** 越来越常看到这种模式：客户希望能利用自己的组织知识，同时保留灵活性，在任何时候把任意 AI 模型和智能接入自己的数据。这种模式会越来越成为未来战略的核心原则。",
+            "headline": "Enterprise AI advantage moves to data and workflows · 企业 AI 优势转向数据和工作流",
+            "body": "As we enter the era of AI agents, one of the defining questions is how you develop competitive advantage when your competitor has access to the same AI models and intelligence as you. \n\nThe companies that are able to best harness their internal institutional knowledge, existing data assets, and domain-specific workflows -- connected with AI -- will be those that are able to stay ahead in the future.\n\nWhether a company decides to build out the tech stacks themselves, or leverage a variety of best-in-class tools is certainly one core variable. But the key is to find the way that the enterprise can capture and protect the value created by their unique data, processes, and expertise over the long run. Each industry will have their own version of this, and the competitive advantage will vary by vertical.\n\nWe’re increasingly seeing this at Box, where customers want to ensure that they can take advantage of their institutional knowledge and have the flexibility of bringing any AI model and intelligence to their data at any time. This is a pattern that will increasingly become a core principle of strategy in the future.\n\n当我们进入 AI agents 时代，一个关键问题是：当竞争对手能访问和你一样的 AI 模型与智能时，你怎么建立竞争优势。\n\n那些最能把内部机构知识、现有数据资产和特定领域工作流与 AI 连接起来的公司，才会在未来保持领先。\n\n公司是自己搭技术栈，还是采用各种最佳工具，当然是一个核心变量。但关键在于，企业要找到一种方式，长期捕获并保护由自身独特数据、流程和专业知识创造出的价值。每个行业都会有自己的版本，竞争优势也会因垂直领域而异。\n\n我们在 Box 越来越多地看到这一点：客户希望确保自己能利用机构知识，并且随时把任何 AI 模型和智能接入自己的数据。这种模式会越来越成为未来战略的核心原则。",
             "source_links": [
               "https://x.com/levie/status/2061662386680127688"
             ],
             "previews": []
           },
           {
-            "headline": "**AWS** gives **OpenAI** broader enterprise distribution · **AWS** 为 **OpenAI** 带来更强企业分发",
-            "body": "AWS has massive enterprise traction, with large committed contracts from enterprises. So this partnership opens up both increased distribution for OpenAI’s models, but also likely drives an increase in token consumption overall across model providers. https://t.co/I9XJyDAq9F\n\n**AWS** 在企业市场有很强的牵引力，也有大量企业承诺合同。所以这次合作既会扩大 **OpenAI** 模型的分发，也很可能推动各模型供应商整体 token 消耗上升。https://t.co/I9XJyDAq9F",
+            "headline": "**AWS** distribution could lift **OpenAI** and token consumption · **AWS** 分发可能推高 **OpenAI** 和整体 token 消耗",
+            "body": "AWS has massive enterprise traction, with large committed contracts from enterprises. So this partnership opens up both increased distribution for OpenAI’s models, but also likely drives an increase in token consumption overall across model providers. https://t.co/I9XJyDAq9F\n\nAWS 在企业市场有巨大的牵引力，手里有大量企业长期承诺合同。所以这次合作既会扩大 OpenAI 模型的分发，也可能带动各模型提供商整体 token 消耗增长。 https://t.co/I9XJyDAq9F",
             "source_links": [
               "https://x.com/levie/status/2061612625574944804"
             ],
@@ -579,21 +524,17 @@
         "posted_at": "2026-06-01T21:58:48.000Z",
         "sections": [
           {
-            "headline": "Try **GStack** office hours quickly · 快速试用 **GStack** office hours",
-            "body": "Want to try GStack /office-hours for your product idea as quickly as possible? It's one click here: \n\nhttps://t.co/8g3LJkrV6i https://t.co/YEGSvd445K\n\n想尽快为你的产品想法试试 **GStack** /office-hours？这里一键开始：\n\nhttps://t.co/8g3LJkrV6i https://t.co/YEGSvd445K",
+            "headline": "**GStack /office-hours** gets a one-click trial · **GStack /office-hours** 放出一键试用",
+            "body": "Want to try GStack /office-hours for your product idea as quickly as possible? It's one click here: \n\nhttps://t.co/8g3LJkrV6i https://t.co/YEGSvd445K\n\n想尽快用 GStack /office-hours 试试你的产品想法？这里一键就行：\n\nhttps://t.co/8g3LJkrV6i https://t.co/YEGSvd445K",
             "source_links": [
               "https://x.com/garrytan/status/2061568169354129640"
             ],
-            "previews": [
+            "media": [
               {
-                "type": "link",
-                "url": "https://app.lightsprint.ai/office-hours",
-                "resolvedUrl": "https://app.lightsprint.ai/office-hours",
-                "siteName": "app.lightsprint.ai",
-                "title": "Office Hours with Gstack — the partner interview before you build | Lightsprint",
-                "description": "Describe your idea and get the partner interview experience powered by Garry Tan",
-                "image": null,
-                "mediaKind": null
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJwpUxRboAAmpEs.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2061568169354129640/photo/1"
               }
             ],
             "linkExpansions": [
@@ -609,18 +550,11 @@
                 "mediaUrl": "https://pbs.twimg.com/media/HJwpUxRboAAmpEs.jpg"
               }
             ],
-            "media": [
-              {
-                "shortUrl": null,
-                "url": "https://pbs.twimg.com/media/HJwpUxRboAAmpEs.jpg",
-                "alt": "",
-                "expandedUrl": "https://x.com/garrytan/status/2061568169354129640/photo/1"
-              }
-            ]
+            "previews": []
           },
           {
-            "headline": "**Brian Chesky** quote on leadership presence · **Brian Chesky** 关于领导力在场的引用",
-            "body": "\"Leadership is presence, not absence.\" —@bchesky https://t.co/hMnmq6yqxH\n\n“领导力是在场，不是缺席。”——@bchesky https://t.co/hMnmq6yqxH",
+            "headline": "Brian Chesky’s leadership line gets amplified · Brian Chesky 的领导力金句被转发",
+            "body": "\"Leadership is presence, not absence.\" —@bchesky https://t.co/hMnmq6yqxH\n\n“领导力是亲临现场，而不是缺席。”——@bchesky https://t.co/hMnmq6yqxH",
             "source_links": [
               "https://x.com/garrytan/status/2061495739637960927"
             ],
@@ -647,18 +581,10 @@
             ]
           },
           {
-            "headline": "The new way from **Garry Tan** · **Garry Tan** 提到新方式",
-            "body": "Or the new way? https://t.co/aEXYsQ8VdH\n\n或者用新方式？https://t.co/aEXYsQ8VdH",
+            "headline": "The “new way” gets teased · “新方式”被抛出",
+            "body": "Or the new way? https://t.co/aEXYsQ8VdH\n\n或者，新方式？ https://t.co/aEXYsQ8VdH",
             "source_links": [
               "https://x.com/garrytan/status/2061456821488169223"
-            ],
-            "linkExpansions": [
-              {
-                "kind": "media",
-                "shortUrl": "https://t.co/aEXYsQ8VdH",
-                "resolvedUrl": "https://x.com/garrytan/status/2061456821488169223/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HJvEC4ObEAAjHWR.jpg"
-              }
             ],
             "media": [
               {
@@ -666,6 +592,14 @@
                 "url": "https://pbs.twimg.com/media/HJvEC4ObEAAjHWR.jpg",
                 "alt": "",
                 "expandedUrl": "https://x.com/garrytan/status/2061456821488169223/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/aEXYsQ8VdH",
+                "resolvedUrl": "https://x.com/garrytan/status/2061456821488169223/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJvEC4ObEAAjHWR.jpg"
               }
             ],
             "previews": []
@@ -681,18 +615,10 @@
         "posted_at": "2026-06-01T19:40:35.000Z",
         "sections": [
           {
-            "headline": "CEO AI-agent claims meet CTO reality · CEO 的 AI agent 规模说法撞上 CTO 现实",
-            "body": "CEO: “we have tens of thousands of AI agents running in production at massive scale right now”\n\nCTO: https://t.co/eulDCgxkNQ\n\nCEO：“我们现在有数万个 AI agents 正在大规模生产环境中运行”\n\nCTO：https://t.co/eulDCgxkNQ",
+            "headline": "Production AI-agent claims meet CTO reality · 生产级 AI agent 豪言撞上 CTO 现实",
+            "body": "CEO: “we have tens of thousands of AI agents running in production at massive scale right now”\n\nCTO: https://t.co/eulDCgxkNQ\n\nCEO：“我们现在已经有数以万计的 AI agents 在大规模生产环境中运行”\n\nCTO： https://t.co/eulDCgxkNQ",
             "source_links": [
               "https://x.com/mattturck/status/2061533386296963464"
-            ],
-            "linkExpansions": [
-              {
-                "kind": "media",
-                "shortUrl": "https://t.co/eulDCgxkNQ",
-                "resolvedUrl": "https://x.com/alifarhat79/status/2061494705188184371/video/1",
-                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2061494650418970624/img/q9XzHr1ULTFrrWwu.jpg"
-              }
             ],
             "media": [
               {
@@ -702,6 +628,14 @@
                 "expandedUrl": "https://x.com/alifarhat79/status/2061494705188184371/video/1"
               }
             ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/eulDCgxkNQ",
+                "resolvedUrl": "https://x.com/alifarhat79/status/2061494705188184371/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2061494650418970624/img/q9XzHr1ULTFrrWwu.jpg"
+              }
+            ],
             "previews": []
           }
         ]
@@ -709,24 +643,16 @@
       {
         "person_name": "Nikunj Kothari",
         "person_handle": "nikunj",
-        "person_identity": "FPV Ventures",
+        "person_identity": "FPV Ventures Partner",
         "profile_url": "https://x.com/nikunj",
         "source_label": "X / Twitter",
         "posted_at": "2026-06-02T04:15:17.000Z",
         "sections": [
           {
-            "headline": "Walk in the park part II is coming · walk in the park 第二部要来了",
-            "body": "walk in the park part II (feat. @taiuti).. coming soon 👀 https://t.co/57WdrRvICw\n\nwalk in the park 第二部（feat. @taiuti）……很快就来 👀 https://t.co/57WdrRvICw",
+            "headline": "Walk in the park part II gets teased · walk in the park 第二部分预告",
+            "body": "walk in the park part II (feat. @taiuti).. coming soon 👀 https://t.co/57WdrRvICw\n\nwalk in the park 第二部分（feat. @taiuti）……即将推出 👀 https://t.co/57WdrRvICw",
             "source_links": [
               "https://x.com/nikunj/status/2061662916039074267"
-            ],
-            "linkExpansions": [
-              {
-                "kind": "media",
-                "shortUrl": "https://t.co/57WdrRvICw",
-                "resolvedUrl": "https://x.com/nikunj/status/2061662916039074267/video/1",
-                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2061662199480041472/img/GVB4QNufFPROLxkR.jpg"
-              }
             ],
             "media": [
               {
@@ -736,21 +662,21 @@
                 "expandedUrl": "https://x.com/nikunj/status/2061662916039074267/video/1"
               }
             ],
-            "previews": []
-          },
-          {
-            "headline": "Life-changing wealth along the **237** · 沿着 **237** 投资带来的财富机会",
-            "body": "All you had to do to make life changing wealth was to invest in ~every public company along the 237 https://t.co/SDEx6JE3P7\n\n想赚到改变人生的财富，你要做的只是投资 **237** 沿线几乎每一家上市公司 https://t.co/SDEx6JE3P7",
-            "source_links": [
-              "https://x.com/nikunj/status/2061492724856234030"
-            ],
             "linkExpansions": [
               {
                 "kind": "media",
-                "shortUrl": "https://t.co/SDEx6JE3P7",
-                "resolvedUrl": "https://x.com/nikunj/status/2061492724856234030/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HJvkj8xbcAAcsRK.jpg"
+                "shortUrl": "https://t.co/57WdrRvICw",
+                "resolvedUrl": "https://x.com/nikunj/status/2061662916039074267/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2061662199480041472/img/GVB4QNufFPROLxkR.jpg"
               }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Public-company wealth along 237 gets joked about · 237 沿线上市公司财富机会被调侃",
+            "body": "All you had to do to make life changing wealth was to invest in ~every public company along the 237 https://t.co/SDEx6JE3P7\n\n想赚到改变人生的钱，你只需要投资 237 沿线差不多每一家上市公司 https://t.co/SDEx6JE3P7",
+            "source_links": [
+              "https://x.com/nikunj/status/2061492724856234030"
             ],
             "media": [
               {
@@ -760,6 +686,14 @@
                 "expandedUrl": "https://x.com/nikunj/status/2061492724856234030/photo/1"
               }
             ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/SDEx6JE3P7",
+                "resolvedUrl": "https://x.com/nikunj/status/2061492724856234030/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJvkj8xbcAAcsRK.jpg"
+              }
+            ],
             "previews": []
           }
         ]
@@ -767,28 +701,16 @@
       {
         "person_name": "Peter Steinberger",
         "person_handle": "steipete",
-        "person_identity": "OpenAI Engineer",
+        "person_identity": "OpenAI Builder",
         "profile_url": "https://x.com/steipete",
         "source_label": "X / Twitter",
         "posted_at": "2026-06-01T22:24:57.000Z",
         "sections": [
           {
-            "headline": "**Codex** speaks up when blocked · **Codex** 卡住时会主动出声",
-            "body": "I told codex to use https://t.co/oHS8ombQcW whenever I'm distracted and it needs my help to be unblocked, and ever once it a while I hear it talking to me, and it's the coolest thing ever. (e.g. for releases, that needs npm and is 1Password-gated)\n\n我告诉 **Codex**，当我分心、而它需要我帮忙解除阻塞时，就用 https://t.co/oHS8ombQcW。于是偶尔我会听到它跟我说话，这太酷了。（比如发布时，需要 npm，而且被 **1Password** 卡着）",
+            "headline": "**Codex** gets permission to talk when blocked · **Codex** 被允许卡住时开口提醒",
+            "body": "I told codex to use https://t.co/oHS8ombQcW whenever I'm distracted and it needs my help to be unblocked, and ever once it a while I hear it talking to me, and it's the coolest thing ever. (e.g. for releases, that needs npm and is 1Password-gated)\n\n我告诉 codex，只要我分心了、它需要我帮忙解锁，就用 https://t.co/oHS8ombQcW。然后偶尔我会听到它跟我说话，这太酷了。（比如发布流程，需要 npm，而且被 1Password 卡住）",
             "source_links": [
               "https://x.com/steipete/status/2061574752574283858"
-            ],
-            "previews": [
-              {
-                "type": "link",
-                "url": "https://sag.sh/",
-                "resolvedUrl": "https://github.com/steipete/sag/",
-                "siteName": "GitHub",
-                "title": "GitHub - steipete/sag: Like the macOS say command, but with a modern voice.",
-                "description": "Like the macOS say command, but with a modern voice. - steipete/sag",
-                "image": "https://opengraph.githubassets.com/310a015b7a5744bce19109d4e8b4673a662e22d461e21416c050376bab138d08/steipete/sag",
-                "mediaKind": "image"
-              }
             ],
             "linkExpansions": [
               {
@@ -798,10 +720,11 @@
               },
               {
                 "kind": "external",
-                "shortUrl": "https://t.co/oHS8ombQcW%E3%80%82%E4%BA%8E%E6%98%AF%E5%81%B6%E5%B0%94%E6%88%91%E4%BC%9A%E5%90%AC%E5%88%B0%E5%AE%83%E8%B7%9F%E6%88%91%E8%AF%B4%E8%AF%9D%EF%BC%8C%E8%BF%99%E5%A4%AA%E9%85%B7%E4%BA%86%E3%80%82%EF%BC%88%E6%AF%94%E5%A6%82%E5%8F%91%E5%B8%83%E6%97%B6%EF%BC%8C%E9%9C%80%E8%A6%81",
-                "resolvedUrl": "https://t.co/oHS8ombQcW%E3%80%82%E4%BA%8E%E6%98%AF%E5%81%B6%E5%B0%94%E6%88%91%E4%BC%9A%E5%90%AC%E5%88%B0%E5%AE%83%E8%B7%9F%E6%88%91%E8%AF%B4%E8%AF%9D%EF%BC%8C%E8%BF%99%E5%A4%AA%E9%85%B7%E4%BA%86%E3%80%82%EF%BC%88%E6%AF%94%E5%A6%82%E5%8F%91%E5%B8%83%E6%97%B6%EF%BC%8C%E9%9C%80%E8%A6%81"
+                "shortUrl": "https://t.co/oHS8ombQcW%E3%80%82%E7%84%B6%E5%90%8E%E5%81%B6%E5%B0%94%E6%88%91%E4%BC%9A%E5%90%AC%E5%88%B0%E5%AE%83%E8%B7%9F%E6%88%91%E8%AF%B4%E8%AF%9D%EF%BC%8C%E8%BF%99%E5%A4%AA%E9%85%B7%E4%BA%86%E3%80%82%EF%BC%88%E6%AF%94%E5%A6%82%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B%EF%BC%8C%E9%9C%80%E8%A6%81",
+                "resolvedUrl": "https://t.co/oHS8ombQcW%E3%80%82%E7%84%B6%E5%90%8E%E5%81%B6%E5%B0%94%E6%88%91%E4%BC%9A%E5%90%AC%E5%88%B0%E5%AE%83%E8%B7%9F%E6%88%91%E8%AF%B4%E8%AF%9D%EF%BC%8C%E8%BF%99%E5%A4%AA%E9%85%B7%E4%BA%86%E3%80%82%EF%BC%88%E6%AF%94%E5%A6%82%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B%EF%BC%8C%E9%9C%80%E8%A6%81"
               }
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -814,10 +737,18 @@
         "posted_at": "2026-06-01T20:50:15.000Z",
         "sections": [
           {
-            "headline": "It happened for **Dan Shipper** · **Dan Shipper** 说事情发生了",
-            "body": "it happened! https://t.co/7wi1xkA3co https://t.co/D3PDOwsOJ8\n\n它发生了！https://t.co/7wi1xkA3co https://t.co/D3PDOwsOJ8",
+            "headline": "A long-awaited moment lands · 等待已久的一刻发生了",
+            "body": "it happened! https://t.co/7wi1xkA3co https://t.co/D3PDOwsOJ8\n\n它发生了！ https://t.co/7wi1xkA3co https://t.co/D3PDOwsOJ8",
             "source_links": [
               "https://x.com/danshipper/status/2061550920635191666"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJwZgj8WoAAySQZ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2061550920635191666/photo/1"
+              }
             ],
             "previews": [
               {
@@ -845,19 +776,11 @@
                 "shortUrl": "https://t.co/D3PDOwsOJ8",
                 "resolvedUrl": "https://x.com/danshipper/status/2036498182436225513"
               }
-            ],
-            "media": [
-              {
-                "shortUrl": null,
-                "url": "https://pbs.twimg.com/media/HJwZgj8WoAAySQZ.jpg",
-                "alt": "",
-                "expandedUrl": "https://x.com/danshipper/status/2061550920635191666/photo/1"
-              }
             ]
           },
           {
-            "headline": "A swarm of **Codex** agents on **/goal** · 一群跑在 **/goal** 上的 **Codex** agents",
-            "body": "you don't have to work 7 days a week if you just have a swarm of Codex's running on /goal all the time \n\nbut you'll probably want to\n\n如果你一直有一群 **Codex** 在 /goal 上跑，你不必每周工作 7 天。\n\n但你大概率会想这么干",
+            "headline": "Always-on **Codex** swarms make weekends optional · 常驻 **Codex** 群让周末工作变成可选项",
+            "body": "you don't have to work 7 days a week if you just have a swarm of Codex's running on /goal all the time \n\nbut you'll probably want to\n\n如果你一直有一群 Codex 在 /goal 上跑，你就不必一周工作 7 天\n\n但你大概率会想这么做",
             "source_links": [
               "https://x.com/danshipper/status/2061443674311999739"
             ],
@@ -868,14 +791,14 @@
       {
         "person_name": "Aditya Agarwal",
         "person_handle": "adityaag",
-        "person_identity": "SPC Partner",
+        "person_identity": "SPC GP",
         "profile_url": "https://x.com/adityaag",
         "source_label": "X / Twitter",
         "posted_at": "2026-06-02T04:20:36.000Z",
         "sections": [
           {
-            "headline": "**Gigascale** and **Schrep** get a nod from **Aditya Agarwal** · **Aditya Agarwal** 点名 **Gigascale** 与 **Schrep**",
-            "body": "Schrep and the Gigascale team are building something special.\n\nThey have been incredible partners to @southpkcommons portfolio companies.\n\n@schrep is someone who I have looked up to for a long time and I am very excited to continue to collaborate with him. https://t.co/Jo3bZ5So5A\n\n**Schrep** 和 **Gigascale** 团队正在做一些特别的东西。\n\n他们一直是 @southpkcommons 投资组合公司的出色伙伴。\n\n@schrep 是我长期敬佩的人，我很期待继续和他合作。https://t.co/Jo3bZ5So5A",
+            "headline": "**Gigascale** and Schrep get a strong endorsement · **Gigascale** 和 Schrep 获得强背书",
+            "body": "Schrep and the Gigascale team are building something special.\n\nThey have been incredible partners to @southpkcommons portfolio companies.\n\n@schrep is someone who I have looked up to for a long time and I am very excited to continue to collaborate with him. https://t.co/Jo3bZ5So5A\n\nSchrep 和 Gigascale 团队正在做一些特别的东西。\n\n他们一直是 @southpkcommons 投资组合公司的出色合作伙伴。\n\n@schrep 是我长期敬佩的人，我很期待继续和他合作。 https://t.co/Jo3bZ5So5A",
             "source_links": [
               "https://x.com/adityaag/status/2061664255007469881"
             ],
@@ -912,8 +835,8 @@
         "posted_at": "2026-06-01T21:36:34.000Z",
         "sections": [
           {
-            "headline": "**OpenAI Foundation** focuses on AI resilience · **OpenAI Foundation** 关注社会对 AI 的韧性",
-            "body": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here! https://t.co/i0pkmF9Lmv\n\n**OpenAI Foundation** 正在做很多很好的事情。\n\n帮助社会变得能承受 AI 带来的冲击，会非常重要。这里还会有更多进展！https://t.co/i0pkmF9Lmv",
+            "headline": "**OpenAI Foundation** work on AI resilience gets flagged · **OpenAI Foundation** 的 AI 韧性工作被点名",
+            "body": "The OpenAI Foundation is doing a lot of wonderful things.\n\nHelping society become resilient to AI is going to be incredibly important. Much more to come here! https://t.co/i0pkmF9Lmv\n\nOpenAI Foundation 正在做很多很棒的事情。\n\n帮助社会变得能更好应对 AI，会非常重要。这里还会有更多进展！ https://t.co/i0pkmF9Lmv",
             "source_links": [
               "https://x.com/sama/status/2061562575322492937"
             ],
@@ -945,14 +868,14 @@
   },
   "meta": {
     "date": "2026-06-02",
-    "updatedAt": "2026-06-03T03:05:17.538Z",
+    "updatedAt": "2026-06-03T04:01:24.537Z",
     "commit": {
       "sha": "09b2c68353367c217890dd87529b67684050f81a",
       "committedAt": "2026-06-02T07:59:05Z",
       "subject": "chore: update feeds [skip ci]",
       "file": "feed-blogs.json"
     },
-    "generatedAt": "2026-06-02T13:06:26.764Z",
+    "generatedAt": "2026-06-03T03:58:59.831Z",
     "feedGeneratedAt": "2026-06-02T07:59:00.877Z",
     "timezone": "Asia/Shanghai"
   }
