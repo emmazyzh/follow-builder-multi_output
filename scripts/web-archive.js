@@ -20,6 +20,11 @@ const execFileAsync = promisify(execFile);
 const SHORT_URL_HOSTS = new Set(['t.co']);
 const TWEET_HOSTS = new Set(['x.com', 'www.x.com', 'twitter.com', 'www.twitter.com']);
 const MEDIA_URL_PATTERN = /\.(?:png|jpe?g|gif|webp|avif|svg|mp4|mov|m4v|m3u8)(?:[?#].*)?$/i;
+const WEB_ARCHIVE_RUNTIME_DIR = join(REPO_DIR, '.runtime', 'web-archive');
+const QUOTE_TRANSLATION_CACHE_PATH = join(WEB_ARCHIVE_RUNTIME_DIR, 'quote-preview-translations.json');
+const QUOTE_TRANSLATION_PROMPT_PATH = join(WEB_ARCHIVE_RUNTIME_DIR, 'quote-preview-translations-prompt.txt');
+const QUOTE_TRANSLATION_OUTPUT_PATH = join(WEB_ARCHIVE_RUNTIME_DIR, 'quote-preview-translations-output.json');
+const CODEX_BIN = process.env.FOLLOW_BUILDERS_CODEX_BIN || 'codex';
 const HTML_ENTITY_MAP = {
   '&amp;': '&',
   '&lt;': '<',
@@ -248,6 +253,86 @@ const resolvedUrlCache = new Map();
 const tweetPreviewCache = new Map();
 const externalPreviewCache = new Map();
 const tweetSyndicationCache = new Map();
+
+function containsChinese(text) {
+  return /[\u3400-\u9fff]/.test(String(text || ''));
+}
+
+function quotePreviewCacheKey(preview) {
+  return normalizeTweetStatusUrl(preview?.resolvedUrl || preview?.url || '');
+}
+
+async function loadQuoteTranslationCache() {
+  return readJsonFile(QUOTE_TRANSLATION_CACHE_PATH, {});
+}
+
+async function saveQuoteTranslationCache(cache) {
+  await writeJsonFile(QUOTE_TRANSLATION_CACHE_PATH, cache);
+}
+
+function collectTweetPreviewsForTranslation(payload) {
+  const items = Array.isArray(payload?.items) ? payload.items : [];
+  const previews = [];
+  const seen = new Set();
+  for (const item of items) {
+    for (const section of Array.isArray(item?.sections) ? item.sections : []) {
+      for (const preview of Array.isArray(section?.previews) ? section.previews : []) {
+        if (preview?.type !== 'tweet') continue;
+        if (!preview.text || containsChinese(preview.text)) continue;
+        const key = quotePreviewCacheKey(preview);
+        if (!key || seen.has(key)) continue;
+        seen.add(key);
+        previews.push({
+          key,
+          text: String(preview.text || '').trim()
+        });
+      }
+    }
+  }
+  return previews;
+}
+
+function buildQuoteTranslationPrompt(entries) {
+  return [
+    'You are translating quoted X posts into natural Simplified Chinese.',
+    'Return pure JSON only with this exact shape:',
+    '{ "translations": [{ "key": "...", "textZh": "..." }] }',
+    'Rules:',
+    '- Preserve meaning faithfully.',
+    '- Preserve @handles, URLs, product names, company names, and model names.',
+    '- Do not add commentary or explanation.',
+    '- Keep the tone natural and concise.',
+    '- If the source text is already Chinese, return it unchanged.',
+    '<entries_json>',
+    JSON.stringify(entries, null, 2),
+    '</entries_json>'
+  ].join('\n');
+}
+
+async function generateQuoteTranslations(entries) {
+  if (entries.length === 0) return {};
+  await ensureDir(WEB_ARCHIVE_RUNTIME_DIR);
+  await writeTextFile(QUOTE_TRANSLATION_PROMPT_PATH, `${buildQuoteTranslationPrompt(entries)}\n`);
+  await execFileAsync('/bin/zsh', [
+    '-lc',
+    `"${CODEX_BIN}" exec --skip-git-repo-check --sandbox read-only --cd "${REPO_DIR}" --output-last-message "${QUOTE_TRANSLATION_OUTPUT_PATH}" - < "${QUOTE_TRANSLATION_PROMPT_PATH}"`
+  ], {
+    cwd: REPO_DIR,
+    maxBuffer: 16 * 1024 * 1024,
+    timeout: 30 * 60 * 1000
+  });
+  const output = await readJsonFile(QUOTE_TRANSLATION_OUTPUT_PATH, { translations: [] });
+  return Object.fromEntries(
+    (Array.isArray(output?.translations) ? output.translations : [])
+      .map((entry) => {
+        const key = String(entry?.key || '').trim();
+        const textZh = String(entry?.textZh || '').trim();
+        if (!key || !textZh) return null;
+        return [key, textZh];
+      })
+      .filter(Boolean)
+  );
+}
 
 function tweetIdFromUrl(url) {
   const normalized = normalizeUrlCandidate(url);
@@ -661,14 +746,54 @@ async function enrichPayloadMedia(prepared, payload) {
   };
 }
 
+async function enrichTweetPreviewTranslations(payload, config) {
+  if (config?.language === 'english') {
+    return payload;
+  }
+
+  const entries = collectTweetPreviewsForTranslation(payload);
+  if (entries.length === 0) {
+    return payload;
+  }
+
+  const cache = await loadQuoteTranslationCache();
+  const missingEntries = entries.filter((entry) => !String(cache[entry.key] || '').trim());
+  if (missingEntries.length > 0) {
+    try {
+      const translations = await generateQuoteTranslations(missingEntries);
+      Object.assign(cache, translations);
+      await saveQuoteTranslationCache(cache);
+    } catch {
+      return payload;
+    }
+  }
+
+  return {
+    ...payload,
+    items: (Array.isArray(payload.items) ? payload.items : []).map((item) => ({
+      ...item,
+      sections: (Array.isArray(item.sections) ? item.sections : []).map((section) => ({
+        ...section,
+        previews: (Array.isArray(section.previews) ? section.previews : []).map((preview) => {
+          if (preview?.type !== 'tweet') return preview;
+          const key = quotePreviewCacheKey(preview);
+          const textZh = key ? String(cache[key] || '').trim() : '';
+          return textZh ? { ...preview, textZh } : preview;
+        })
+      }))
+    }))
+  };
+}
+
 async function normalizePayloadForOutputs(prepared, payload, config) {
   const sourceDate = resolveSourceDate(prepared, payload, config);
   const title = `AI Builders Daily · ${sourceDate}`;
-  return enrichPayloadMedia(prepared, {
+  const enrichedPayload = await enrichPayloadMedia(prepared, {
     ...payload,
     date: sourceDate,
     title
   });
+  return enrichTweetPreviewTranslations(enrichedPayload, config);
 }
 
 function buildArchiveIndexEntry(payload, prepared, config) {

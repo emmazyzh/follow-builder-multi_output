@@ -4,31 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Builders Daily</title>
-    <link rel="stylesheet" href="./styles.css?v=20260602af" />
+    <link rel="stylesheet" href="./styles.css?v=20260603b" />
   </head>
   <body>
     <div class="app-shell">
       <main class="content-shell">
         <header class="content-header">
           <div class="content-header-main">
-            <h2 id="pageTitle">Follow Builders</h2>
-            <div class="calendar-dropdown" id="calendarDropdown">
-              <button class="content-header-date-button" id="contentHeaderDateButton" type="button" aria-haspopup="dialog" aria-expanded="false">
-                <span class="content-header-date" id="contentHeaderDate">--</span>
-              </button>
-              <div class="calendar-popover" id="calendarPopover" hidden>
-                <section class="calendar-panel">
-                  <div class="month-bar">
-                    <button class="month-button" id="prevMonth" type="button" aria-label="Previous month">&lt;</button>
-                    <div>
-                      <p class="month-label" id="monthLabel">Loading</p>
-                      <p class="month-subtitle" id="monthSubtitle">Choose a day</p>
+            <h2 id="pageTitle">哎嘛 AI Builder News</h2>
+            <div class="content-header-controls">
+              <button class="language-toggle-button" id="languageToggleButton" type="button" aria-label="Switch to English">En</button>
+              <div class="calendar-dropdown" id="calendarDropdown">
+                <button class="content-header-date-button" id="contentHeaderDateButton" type="button" aria-haspopup="dialog" aria-expanded="false">
+                  <span class="content-header-date" id="contentHeaderDate">--</span>
+                </button>
+                <div class="calendar-popover" id="calendarPopover" hidden>
+                  <section class="calendar-panel">
+                    <div class="month-bar">
+                      <button class="month-button" id="prevMonth" type="button" aria-label="Previous month">&lt;</button>
+                      <div>
+                        <p class="month-label" id="monthLabel">Loading</p>
+                        <p class="month-subtitle" id="monthSubtitle">Choose a day</p>
+                      </div>
+                      <button class="month-button" id="nextMonth" type="button" aria-label="Next month">&gt;</button>
                     </div>
-                    <button class="month-button" id="nextMonth" type="button" aria-label="Next month">&gt;</button>
-                  </div>
-                  <div class="weekday-row" id="weekdayRow"></div>
-                  <div class="calendar-grid" id="calendarGrid"></div>
-                </section>
+                    <div class="weekday-row" id="weekdayRow"></div>
+                    <div class="calendar-grid" id="calendarGrid"></div>
+                  </section>
+                </div>
               </div>
             </div>
           </div>
@@ -42,10 +45,6 @@
           <div class="detail-panel">
             <div class="detail-panel-head">
               <h2 class="detail-title" id="railTitle">Overview</h2>
-              <div class="detail-language-toggle" role="tablist" aria-label="Overview language">
-                <button class="detail-language-button is-active" id="overviewZhButton" type="button">中</button>
-                <button class="detail-language-button" id="overviewEnButton" type="button">En</button>
-              </div>
             </div>
             <div class="detail-summary-card is-zh" id="railSummaryCard">
               <div class="detail-summary-face" id="railSummaryZh">
@@ -129,6 +128,6 @@
       </article>
     </template>
 
-    <script type="module" src="./app.js?v=20260602af"></script>
+    <script type="module" src="./app.js?v=20260603b"></script>
   </body>
 </html>

@@ -3,7 +3,8 @@ const state = {
   digest: null,
   selectedDate: null,
   visibleMonth: null,
-  collapsed: false
+  collapsed: false,
+  language: 'zh'
 };
 
 const weekdayRow = document.getElementById('weekdayRow');
@@ -22,8 +23,7 @@ const railTitle = document.getElementById('railTitle');
 const railSummaryCard = document.getElementById('railSummaryCard');
 const railSummaryZh = document.getElementById('railSummaryZh');
 const railSummaryEn = document.getElementById('railSummaryEn');
-const overviewZhButton = document.getElementById('overviewZhButton');
-const overviewEnButton = document.getElementById('overviewEnButton');
+const languageToggleButton = document.getElementById('languageToggleButton');
 const sourceBlogCount = document.getElementById('sourceBlogCount');
 const sourcePodcastCount = document.getElementById('sourcePodcastCount');
 const sourceXCount = document.getElementById('sourceXCount');
@@ -229,8 +229,11 @@ function stripBoldMarkdown(text) {
   return String(text || '').replace(/\*\*([^*]+)\*\*/g, '$1');
 }
 
-function renderCardHeadline(headline) {
+function renderCardHeadline(headline, language) {
   const { chinese, english } = splitHeadlineLanguages(headline);
+  if (language === 'en') {
+    return renderMarkdownLite(stripBoldMarkdown(english || chinese || ''));
+  }
   const chineseHtml = renderMarkdownLite(chinese || '');
   if (!english || normalizeComparableText(chinese) === normalizeComparableText(english)) {
     return chineseHtml;
@@ -305,10 +308,14 @@ function renderPreviewCard(preview) {
       card.appendChild(meta);
     }
 
-    if (preview.text) {
+    const previewText = state.language === 'zh'
+      ? (preview.textZh || preview.text || '')
+      : (preview.text || '');
+
+    if (previewText) {
       const text = document.createElement('div');
       text.className = 'preview-text';
-      text.innerHTML = renderMarkdownLite(trimPreviewText(preview.text, 360));
+      text.innerHTML = renderMarkdownLite(trimPreviewText(previewText, 360));
       card.appendChild(text);
     }
     return card;
@@ -410,6 +417,26 @@ function splitXBody(text) {
   };
 }
 
+function splitBodyByLanguage(text) {
+  const paragraphs = String(text || '')
+    .split(/\n\s*\n/)
+    .map((part) => part.trim())
+    .filter(Boolean);
+  const chinese = [];
+  const english = [];
+  for (const paragraph of paragraphs) {
+    if (/[\u3400-\u9fff]/.test(paragraph)) {
+      chinese.push(paragraph);
+    } else {
+      english.push(paragraph);
+    }
+  }
+  return {
+    chinese: chinese.join('\n\n'),
+    english: english.join('\n\n')
+  };
+}
+
 function normalizeComparableText(text) {
   return String(text || '')
     .replace(/\s+/g, ' ')
@@ -435,12 +462,15 @@ async function fetchJson(path) {
   return response.json();
 }
 
-function setOverviewLanguage(language) {
-  state.overviewLanguage = language;
+function setLanguage(language) {
+  state.language = language;
   railSummaryCard.classList.toggle('is-zh', language === 'zh');
   railSummaryCard.classList.toggle('is-en', language === 'en');
-  overviewZhButton.classList.toggle('is-active', language === 'zh');
-  overviewEnButton.classList.toggle('is-active', language === 'en');
+  languageToggleButton.textContent = language === 'zh' ? 'En' : '中';
+  languageToggleButton.setAttribute('aria-label', language === 'zh' ? 'Switch to English' : '切换到中文');
+  if (state.digest) {
+    renderCards();
+  }
 }
 
 function renderSourceList(container, entries, formatter) {
@@ -538,7 +568,8 @@ function renderCalendar() {
 function renderCards() {
   const payload = state.digest?.payload;
   const cards = payload ? flattenCards(payload) : [];
-  pageTitle.textContent = 'Follow Builders';
+  const language = state.language || 'zh';
+  pageTitle.textContent = '哎嘛 AI Builder News';
   contentHeaderDate.textContent = payload?.date || '--';
   selectedDateChip.textContent = payload?.date || '--';
   selectedCountChip.textContent = `${cards.length} cards`;
@@ -582,28 +613,30 @@ function renderCards() {
     profileLink.href = item.profile_url || '#';
     profileIdentity.textContent = item.person_identity || item.source_label || '';
     profileMeta.textContent = `${item.source_label || ''} · ${formatPostedAt(item.posted_at)}`.replace(/^ · | · $/g, '');
-    title.innerHTML = renderCardHeadline(section.headline || '');
+    title.innerHTML = renderCardHeadline(section.headline || '', language);
 
     const body = applyLinkExpansions(section.body || '', section);
     if (isSummaryCard(item)) {
       summaryBlock.hidden = false;
-      summaryBody.innerHTML = renderMarkdownLite(body);
+      const splitBody = splitBodyByLanguage(body);
+      const summaryText = language === 'zh'
+        ? (splitBody.chinese || splitBody.english || '')
+        : (splitBody.english || splitBody.chinese || '');
+      summaryBody.innerHTML = renderMarkdownLite(summaryText);
       xOriginal.remove();
       fallbackBody.remove();
     } else {
       const splitBody = splitXBody(body);
-      const hasChinese = !!splitBody.chinese;
-      const hasOriginal = !!splitBody.original;
-      const areDifferent = hasChinese && hasOriginal && 
-        (normalizeComparableText(splitBody.chinese) !== normalizeComparableText(splitBody.original));
-
-      if (areDifferent) {
+      if (language === 'zh') {
+        const chineseText = splitBody.chinese || splitBody.original || '';
         xOriginal.hidden = false;
-        xOriginal.innerHTML = renderMarkdownLite(splitBody.chinese);
-        fallbackBody.innerHTML = `<div class="original-english-copy">${renderMarkdownLite(splitBody.original)}</div>`;
+        xOriginal.classList.add('is-plain-translation');
+        xOriginal.innerHTML = `<div class="translation-copy">${renderMarkdownLite(chineseText)}</div>`;
+        fallbackBody.remove();
       } else {
-        const textToShow = splitBody.chinese || splitBody.original || '';
-        fallbackBody.innerHTML = renderMarkdownLite(textToShow);
+        const englishText = splitBody.original || splitBody.chinese || '';
+        xOriginal.classList.remove('is-plain-translation');
+        fallbackBody.innerHTML = `<div class="original-english-copy">${renderMarkdownLite(englishText)}</div>`;
         xOriginal.remove();
       }
       summaryBlock.remove();
@@ -681,14 +714,15 @@ async function init() {
   state.sources = await fetchJson('./data/sources.json').catch(() => ({ blogs: [], podcasts: [], x: [] }));
   state.sourceXExpanded = false;
   renderSources();
-  setOverviewLanguage('zh');
+  setLanguage('zh');
   const latestDate = state.index.latestDate || state.index.dates?.[0]?.date;
   if (!latestDate) {
     renderCards();
     return;
   }
-  overviewZhButton.addEventListener('click', () => setOverviewLanguage('zh'));
-  overviewEnButton.addEventListener('click', () => setOverviewLanguage('en'));
+  languageToggleButton.addEventListener('click', () => {
+    setLanguage(state.language === 'zh' ? 'en' : 'zh');
+  });
   sourceXToggle.addEventListener('click', () => {
     state.sourceXExpanded = !state.sourceXExpanded;
     renderSources();

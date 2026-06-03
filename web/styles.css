@@ -112,6 +112,38 @@ button {
   min-width: 0;
 }
 
+.content-header-controls {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex: 0 0 auto;
+}
+
+.language-toggle-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 36px;
+  padding: 0 14px;
+  border: 1px solid rgba(29, 155, 240, 0.22);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+  color: var(--link);
+  box-shadow: 0 6px 16px rgba(29, 155, 240, 0.08);
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+}
+
+.language-toggle-button:hover {
+  background: linear-gradient(180deg, #ffffff 0%, #edf7ff 100%);
+  box-shadow: 0 8px 18px rgba(29, 155, 240, 0.12);
+  transform: translateY(-1px);
+}
+
 .calendar-dropdown {
   position: relative;
   flex: 0 0 auto;
@@ -402,6 +434,7 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  flex: 0 0 auto;
 }
 
 .detail-language-button {
@@ -714,6 +747,13 @@ button {
   line-height: 1.7;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+.x-original-card.is-plain-translation {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .summary-block {
