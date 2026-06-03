@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-03T04:01:24.541Z",
+  "updatedAt": "2026-06-03T04:07:47.102Z",
   "latestDate": "2026-06-02",
   "dates": [
     {
       "date": "2026-06-02",
       "title": "AI Builders Daily · 2026-06-02",
-      "summary": "**DeepMind’s origin story gets sharper**: Demis Hassabis’s biographer frames the AI race as inevitable, with safety now looking like a government-enforced coordination problem; **agentic coding goes mainstream and weird**: Codex gets farm jokes, voice nudges, worktrees, cross-model review, and always-on goal swarms; **model economics are heating up**: MiniMax M3 is pitched as an open-model contender near Opus and GPT-5 at a fraction of the cost; **enterprise AI advantage shifts from models to proprietary workflows**: Box’s Aaron Levie argues the moat is institutional knowledge plus data plus domain process.\n\n**DeepMind 往事更锋利了**：Demis Hassabis 传记作者把 AI 竞赛说成几乎不可避免，安全问题更像要靠政府强制协调；**代码智能体正在变得又主流又怪**：Codex 被拿来开农场玩笑、语音催人解锁、配合 worktree、跨模型审查和常驻 /goal；**模型价格战继续升温**：MiniMax M3 被推到开放模型前排，号称接近 Opus 和 GPT-5、成本低很多；**企业 AI 护城河从模型转向自有流程**：Box 的 Aaron Levie 认为关键是把机构知识、数据和行业工作流接进 AI。",
+      "summary": "**DeepMind’s origin story gets sharper**: Demis Hassabis moves from one-lab AGI dreams to government-enforced safety; **agent workflows keep getting real**: builders trade worktrees, cross-model reviews, voice prompts, and Codex swarms; **model distribution heats up**: OpenAI-on-AWS chatter, MiniMax M3’s agent benchmark claim, and enterprise data moats dominate the feed.\n\n**DeepMind 的旧账被翻出来了**：Demis 从“一个实验室搞定 AGI”走到“得靠政府定规矩”；**AI agent 不再只是口号**：worktree、交叉审查、语音提示、Codex 常驻跑任务，全是实操味；**模型入口开始抢人**：AWS、MiniMax M3、企业数据护城河一起冒头，热闹但不空泛。",
       "itemCount": 15,
       "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-03T04:01:24.539Z",
+      "updatedAt": "2026-06-03T04:07:47.100Z",
       "commit": {
         "sha": "09b2c68353367c217890dd87529b67684050f81a",
         "committedAt": "2026-06-02T07:59:05Z",
