@@ -1,5 +1,12 @@
 scripts/node_modules/
+# Runtime outputs and local archive caches
 .runtime/
+.runtime/local-runner/
+.runtime/web-archive/
+.runtime/web-archive/*.json
+.runtime/web-archive/*.txt
+
+# Local secrets and machine-specific config
 .env
 *.log
 .DS_Store

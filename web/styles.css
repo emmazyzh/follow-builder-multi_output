@@ -979,4 +979,19 @@ button {
   .card-title {
     font-size: 18px;
   }
+
+  .card-media,
+  .card-previews {
+    width: 100%;
+  }
+
+  .card-image,
+  .preview-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+    justify-self: stretch;
+    object-fit: contain;
+  }
 }
