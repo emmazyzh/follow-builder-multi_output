@@ -326,7 +326,8 @@ function renderPreviewCard(preview) {
     image.className = 'preview-image';
     image.src = preview.image;
     image.alt = preview.title || preview.siteName || 'Link preview image';
-    image.loading = 'lazy';
+    image.loading = 'eager';
+    image.decoding = 'async';
     card.appendChild(image);
   }
 
@@ -651,7 +652,8 @@ function renderCards() {
           image.className = 'card-image';
           image.src = entry.url;
           image.alt = entry.alt || title.textContent || item.person_name || 'Post image';
-          image.loading = 'lazy';
+          image.loading = 'eager';
+          image.decoding = 'async';
           return image;
         })
       );
