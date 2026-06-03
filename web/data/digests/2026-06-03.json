@@ -1,0 +1,1041 @@
+{
+  "payload": {
+    "date": "2026-06-03",
+    "title": "AI Builders Daily · 2026-06-03",
+    "summary": "**AI agents eat the work stack**: Codex expands from devs into knowledge work, Claude Code adds workflows, Gemini exposes Thinking Levels; **yes-code vs no-code** becomes the new platform fight as Vercel, Replit, OpenClaw, and enterprise sandboxes race to make agent-built apps deployable; **Listen Labs reframes market research**: thousands of AI voice interviews, emotion signals, traceable clips, and customer simulation turn “ask users” from slow theater into live product radar.\n\n**智能体开始吞掉工作流**：Codex 走出开发者圈，Claude Code 加上 workflows，Gemini 把 Thinking Levels 放到全端；**no-code 被 yes-code 反杀**：Vercel、Replit、OpenClaw 都在抢“让智能体写完就能上线”的底座；**Listen Labs 把用户调研改成雷达**：AI 同时跑上千个语音访谈，看表情、留证据、回连销售数据，比问卷狠多了。",
+    "items": [
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T06:43:26.000Z",
+        "sections": [
+          {
+            "headline": "Codex one-shotted it · Codex 一次搞定",
+            "body": "@saranormous **codex** is agi man \n\nhttps://t.co/LFzyjAdKfm\n\noneshotted this, no notes\n\nhttps://t.co/8tCIUSdxON https://t.co/LSoEaEHqfP\n\n@saranormous **codex** 这就是 agi 啊\n\nhttps://t.co/LFzyjAdKfm\n\n一次成了，没啥可挑的\n\nhttps://t.co/8tCIUSdxON https://t.co/LSoEaEHqfP",
+            "source_links": [
+              "https://x.com/swyx/status/2062062585391014245",
+              "https://t.co/LFzyjAdKfm",
+              "https://t.co/8tCIUSdxON",
+              "https://t.co/LSoEaEHqfP"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ3qn3ha8AAoCLs.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2062062585391014245/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/TheTuringPost/status/2061901518522188251?s=20",
+                "resolvedUrl": "https://x.com/TheTuringPost/status/2061901518522188251",
+                "authorName": "Turing Post",
+                "authorHandle": "TheTuringPost",
+                "authorUrl": "https://x.com/TheTuringPost",
+                "text": "Love that in this high-tech age of AI @swyx still uses paper 🥹",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "喜欢在这个 AI 高科技时代，@swyx 还在用纸 🥹"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/LFzyjAdKfm",
+                "resolvedUrl": "https://youtu.be/cFNI2FORAc0"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/8tCIUSdxON",
+                "resolvedUrl": "https://x.com/theturingpost/status/2061901518522188251"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/LSoEaEHqfP",
+                "resolvedUrl": "https://x.com/swyx/status/2062062585391014245/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ3qn3ha8AAoCLs.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "Reward function for reasoning efficiency · 推理效率的奖励函数",
+            "body": "probably the best reward function for reasoning efficiency i've seen https://t.co/dSEVUJDap9\n\n这可能是我见过最好的推理效率奖励函数 https://t.co/dSEVUJDap9",
+            "source_links": [
+              "https://x.com/swyx/status/2062060142489973010",
+              "https://t.co/dSEVUJDap9"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/eliebakouch/status/2061997579336912951",
+                "resolvedUrl": "https://x.com/eliebakouch/status/2061997579336912951",
+                "authorName": "elie",
+                "authorHandle": "eliebakouch",
+                "authorUrl": "https://x.com/eliebakouch",
+                "text": "length penalty is very elegant and simple tbh",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "说实话，长度惩罚非常优雅又简单"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/dSEVUJDap9",
+                "resolvedUrl": "https://x.com/eliebakouch/status/2061997579336912951"
+              }
+            ]
+          },
+          {
+            "headline": "Shared links for Jacob Effron · 给 Jacob Effron 的链接",
+            "body": "@jacobeffron https://t.co/SZSU872Ks0 https://t.co/BB4lMNtJJf\n\n@jacobeffron https://t.co/SZSU872Ks0 https://t.co/BB4lMNtJJf",
+            "source_links": [
+              "https://x.com/swyx/status/2062055084138316176",
+              "https://t.co/SZSU872Ks0",
+              "https://t.co/BB4lMNtJJf"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ3kDglbAAAi0py.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2062055084138316176/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/OpenAI/status/2061887650391625870",
+                "resolvedUrl": "https://x.com/OpenAI/status/2061887650391625870",
+                "authorName": "OpenAI",
+                "authorHandle": "OpenAI",
+                "authorUrl": "https://x.com/OpenAI",
+                "text": "We’re making Codex more useful for your work by expanding plugins beyond individual tools.\n\nThese plugins turn Codex into a specialist for a specific role with a single install, no coding required.\n\nCodex can access 62 popular apps and 110 skills for work across sales, data",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "我们正在通过将插件扩展到单个工具之外，让 Codex 对你的工作更有用。\n\n这些插件只需一次安装、无需编码，就能把 Codex 变成特定角色的专家。\n\nCodex 可以访问 62 个热门应用和 110 项技能，用于销售、数据等工作"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SZSU872Ks0",
+                "resolvedUrl": "https://x.com/openai/status/2061887650391625870"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/BB4lMNtJJf",
+                "resolvedUrl": "https://x.com/swyx/status/2062055084138316176/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ3kDglbAAAi0py.png"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T04:16:44.000Z",
+        "sections": [
+          {
+            "headline": "**Gemini** Thinking Levels are now live on Web, iOS, and Android / **Gemini** 思考级别已上线网页、iOS 和 Android",
+            "body": "✅ Papercut fixed: Thinking Levels are now available on **Gemini** across Web, iOS, and Android. https://t.co/aF02kkUekW\n\n✅ 小问题修好了：**Gemini** 的 Thinking Levels 现在已经在 Web、iOS 和 Android 全端可用。https://t.co/aF02kkUekW",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2062025667852812583",
+              "https://t.co/aF02kkUekW"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/aF02kkUekW",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2062025447836381184/img/rsSDwej0eY3DS0Ud.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/joshwoodward/status/2062025667852812583/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/aF02kkUekW",
+                "resolvedUrl": "https://x.com/joshwoodward/status/2062025667852812583/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2062025447836381184/img/rsSDwej0eY3DS0Ud.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex & ChatGPT",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T06:24:44.000Z",
+        "sections": [
+          {
+            "headline": "ChatGPT is here to stay · **ChatGPT** 会长期在场",
+            "body": "**ChatGPT**\n\nWhether you understand the name or not. It's here to stay. It's the past, the present, the future. Synonym with AI, soon synonym with agents. Much to build.\n\n**ChatGPT**\n\n不管你是否理解这个名字，它都会留下来。它是过去，是现在，也是未来。它已经等同于 AI，很快也会等同于 agents。还有太多东西要做。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2062057881424506950"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A shared link · 一个分享链接",
+            "body": "https://t.co/NvKKzB3bt3\n\nhttps://t.co/NvKKzB3bt3",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2061877014999830625",
+              "https://t.co/NvKKzB3bt3"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/NvKKzB3bt3",
+                "resolvedUrl": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Codex gets daily-work upgrades · **Codex** 迎来日常工作升级",
+            "body": "Tons of goodies for use of **codex** for day to day work. \n\nIf you are on a business plan you can now host and share websites, we launched vastly improved plugins and skills for broad roles and you can give feedback to your agent through visual annotations in docs, slides, sheets and more.\n\n**Codex** 用在日常工作里，有一大堆新东西。\n\n如果你在用 business plan，现在可以托管和分享网站；我们还上线了大幅改进的 plugins 和 skills，覆盖更多角色；你也可以在 docs、slides、sheets 等内容里用可视化批注，直接给你的 agent 反馈。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2061876999564791952"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "Roblox Product",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T03:47:14.000Z",
+        "sections": [
+          {
+            "headline": "Matt’s guide has a funny warning · Matt 的指南里有句提醒很有意思",
+            "body": "Matt's guide is great but this line is pretty funny: \n\n\"They're so lit up by being able to build anything that they don't do anything else. Then they launch and there are no users.\" 😆 https://t.co/Cu6i8e8WWN https://t.co/zxK7w11ynW\n\n**Matt** 的指南很棒，但这句话真的有点好笑：\n\n“他们因为终于能做任何东西而兴奋到发光，结果别的事都不做。等产品上线，却一个用户都没有。” 😆 https://t.co/Cu6i8e8WWN https://t.co/zxK7w11ynW",
+            "source_links": [
+              "https://x.com/petergyang/status/2062018242789670929"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ3CaUeaIAAeNaX.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2062018242789670929/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/mvanhorn/status/2061877533885473181",
+                "resolvedUrl": "https://x.com/mvanhorn/status/2061877533885473181",
+                "authorName": "Matt Van Horn",
+                "authorHandle": "mvanhorn",
+                "authorUrl": "https://x.com/mvanhorn",
+                "text": "http://x.com/i/article/2061440101411102721",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "http://x.com/i/article/2061440101411102721"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/Cu6i8e8WWN",
+                "resolvedUrl": "https://x.com/petergyang/status/2062018242789670929/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ3CaUeaIAAeNaX.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/zxK7w11ynW",
+                "resolvedUrl": "https://x.com/mvanhorn/status/2061877533885473181"
+              }
+            ]
+          },
+          {
+            "headline": "Credit to the Devin/Windsurf team · 得给 Devin/Windsurf 团队献花",
+            "body": "Have to give the Devin/Windsurf team flowers for staying disciplied through the ups and downs and keeping at it.\n\nI know many AI native builders who love Devin now. Will hopefully find some more time to try it myself. https://t.co/lTMAr2s8Yd\n\n必须给 **Devin** / **Windsurf** 团队献花。他们一路起伏还能保持克制、持续推进，很不容易。\n\n我认识不少 AI-native builder 现在都很喜欢 **Devin**。希望之后能多找点时间自己试试。 https://t.co/lTMAr2s8Yd",
+            "source_links": [
+              "https://x.com/petergyang/status/2061936952400814392"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/jeffwsurf/status/2061891987138380039",
+                "resolvedUrl": "https://x.com/jeffwsurf/status/2061891987138380039",
+                "authorName": "Jeff Wang",
+                "authorHandle": "jeffwsurf",
+                "authorUrl": "https://x.com/jeffwsurf",
+                "text": "Today we are saying goodbye to Windsurf\n\n…and we are transforming it to Devin Desktop\n\nWindsurf has been an absolutely amazing experience for me and the team. Though it has been rocky at times, we have seen every phase of AI coding and we want to keep embracing where things are",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "今天我们要告别 Windsurf\n\n……并把它转变为 Devin Desktop\n\nWindsurf 对我和团队来说一直是一次非常棒的经历。尽管有时过程并不平坦，但我们见证了 AI 编程的每个阶段，也想继续拥抱事物的发展方向"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/lTMAr2s8Yd",
+                "resolvedUrl": "https://x.com/jeffwsurf/status/2061891987138380039"
+              }
+            ]
+          },
+          {
+            "headline": "Simple SaaS is harder to monetize now · 简单 SaaS 现在更难变现",
+            "body": "People are saying SaaS is not dead.\n\nI think larger enterprise SaaS that can do multiple jobs are probably fine (e.g., Figma).\n\nBut if you’re building a simple SaaS for a narrow use case, I think it's harder to monetize now because:\n\n1.  AI skills can often solve the same problem in a much more flexible, personalized way.\n\n2.  AI-native agents like Codex / Claude Code that have a user's personal context and memory have far more knowledge to solve the user's problem vs. a standalone SaaS website or chatbot.\n\n3.  People are willing to pay hundreds or thousands for services (human touch is what's rare these days) but charge $20 / month for a SaaS and people will compare it's value to their Claude / ChatGPT subscription.\n\nCurious if others feel the same way? I guess I'm in a bubble and most people have not set up their own AI skills yet.\n\n大家都在说 **SaaS** 没死。\n\n我觉得能处理多种工作的、大型企业级 **SaaS** 应该没问题，比如 **Figma**。\n\n但如果你做的是面向窄场景的简单 **SaaS**，我觉得现在变现更难了，原因是：\n\n1.  **AI skills** 往往能用更灵活、更个性化的方式解决同一个问题。\n\n2.  像 **Codex** / **Claude Code** 这样的 AI-native agents，掌握用户的个人上下文和记忆。相比一个独立的 **SaaS** 网站或聊天机器人，它们更懂用户的问题。\n\n3.  人们愿意为服务付几百、几千美元，因为现在稀缺的是人的触感。但如果一个 **SaaS** 收 20 美元/月，用户就会拿它的价值去和自己的 **Claude** / **ChatGPT** 订阅比。\n\n好奇其他人是不是也有同感？也可能是我在同温层里，毕竟多数人还没配置自己的 **AI skills**。",
+            "source_links": [
+              "https://x.com/petergyang/status/2061846283263103274"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-02T20:28:45.000Z",
+        "sections": [
+          {
+            "headline": "Claude Blog availability · Claude 博客已上线",
+            "body": "This is also available on the **Claude Blog**! https://t.co/ScXhdyz6YI\n\n这篇也已经发在 **Claude Blog** 上了！https://t.co/ScXhdyz6YI",
+            "source_links": [
+              "https://x.com/trq212/status/2061907897928528349",
+              "https://t.co/ScXhdyz6YI"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/ScXhdyz6YI",
+                "resolvedUrl": "https://claude.com/blog/a-harness-for-every-task-dynamic-workflows-in-claude-code"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Claude Code workflows upgrade · Claude Code 工作流升级",
+            "body": "Workflows are the biggest upgrade to **Claude Code**’s capabilities since skills and subagents.\n\nI dove deep into it with @sidbid to figure out best practices, examples and more.  I’m particularly excited about the non-technical tasks it enables for **Claude Code**. https://t.co/cL24rmjrie\n\n工作流是继 skills 和 subagents 之后，**Claude Code** 能力上最大的一次升级。\n\n我和 @sidbid 深入研究了它，梳理最佳实践、示例等内容。我尤其期待它能让 **Claude Code** 处理更多非技术任务。https://t.co/cL24rmjrie",
+            "source_links": [
+              "https://x.com/trq212/status/2061907538741006796",
+              "https://t.co/cL24rmjrie"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/trq212/status/2061907337154367865",
+                "resolvedUrl": "https://x.com/trq212/status/2061907337154367865",
+                "authorName": "Thariq",
+                "authorHandle": "trq212",
+                "authorUrl": "https://x.com/trq212",
+                "text": "http://x.com/i/article/2061850535708483585",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "http://x.com/i/article/2061850535708483585"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/cL24rmjrie",
+                "resolvedUrl": "https://x.com/trq212/status/2061907337154367865"
+              }
+            ]
+          },
+          {
+            "headline": "Shared link · 分享链接",
+            "body": "https://t.co/R6exTuF7P8\n\nhttps://t.co/R6exTuF7P8",
+            "source_links": [
+              "https://x.com/trq212/status/2061907337154367865",
+              "https://t.co/R6exTuF7P8"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/R6exTuF7P8",
+                "resolvedUrl": "http://x.com/i/article/2061850535708483585"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T05:48:42.000Z",
+        "sections": [
+          {
+            "headline": "Your whole business on a canvas · 把整家公司摊在一张画布上",
+            "body": "Your whole business laid out on a canvas. https://t.co/Weour3fqAV\n\n把你的整家公司，摊开在一张画布上。https://t.co/Weour3fqAV",
+            "source_links": [
+              "https://x.com/amasad/status/2062048812345291259",
+              "https://t.co/Weour3fqAV"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/mannybernabe/status/2062040973971017913",
+                "resolvedUrl": "https://x.com/MannyBernabe/status/2062040973971017913",
+                "authorName": "Manny Bernabe",
+                "authorHandle": "MannyBernabe",
+                "authorUrl": "https://x.com/MannyBernabe",
+                "text": "Replit keeps blowing my mind. I'm working on something new, and in the same project I just keep coming up with new things to branch off and start building. It is crazy.\n\nI'm excited to show you what we have for you later on this week. Stay tuned. 🍿",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "Replit 一直让我惊艳。我正在做一个新东西，在同一个项目里，我不断冒出新的想法，可以分支出去开始构建。太疯狂了。\n\n很期待本周晚些时候向大家展示我们为你们准备的东西。敬请关注。🍿"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Weour3fqAV",
+                "resolvedUrl": "https://x.com/mannybernabe/status/2062040973971017913"
+              }
+            ]
+          },
+          {
+            "headline": "**Replit** partners with **Microsoft** on Fabric data apps · **Replit** 联手 **Microsoft** 做 Fabric 数据应用",
+            "body": "Excited to partner with @**Microsoft** to enable everyone in the enterprise to build and deploy safe &amp; secure **Fabric** data apps.\n\nThis is possible thanks to **Microsoft**'s new **Rayfin SDK**. https://t.co/sAEKkXYFfy\n\n很高兴和 @**Microsoft** 合作，让企业里的每个人都能构建并部署安全可靠的 **Fabric** 数据应用。\n\n这得益于 **Microsoft** 新推出的 **Rayfin SDK**。https://t.co/sAEKkXYFfy",
+            "source_links": [
+              "https://x.com/amasad/status/2061893093696434578",
+              "https://t.co/sAEKkXYFfy"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ1Ppb_bYAAVULp.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2061893093696434578/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/sAEKkXYFfy",
+                "resolvedUrl": "https://x.com/amasad/status/2061893093696434578/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ1Ppb_bYAAVULp.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**ViBench** measures app-building better than SWE benchmarks · **ViBench** 更能衡量应用构建能力",
+            "body": "SWE benchmarks don’t necessarily capture app building capabilities. **ViBench** does. https://t.co/zh663pe79v\n\nSWE 基准未必能反映应用构建能力。**ViBench** 可以。https://t.co/zh663pe79v",
+            "source_links": [
+              "https://x.com/amasad/status/2061878314311266552",
+              "https://t.co/zh663pe79v"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/zh663pe79v",
+                "resolvedUrl": "https://twitter.com/pirroh/status/2061868189630513509"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-02T22:13:06.000Z",
+        "sections": [
+          {
+            "headline": "YES-CODE: coding agents make code abundant / YES-CODE：编程智能体让代码变得充裕",
+            "body": "YES-CODE\n\nAn entire category of software, \"no-code\", was built under the presumption that code is expensive, difficult, and scarce.\n\nCoding agents have forever changed the equation. Code is now cheap, easy, and abundant.\n\nI remember @cramforce being asked by an analyst long ago: \"soo, is @vercel like a no-code platform?\" Without hesitation he goes \"no, it's the absolute opposite. It's a yes-code platform.\" 😁\n\nA key thing we set out to do was to be uncompromising in quality and sophistication of the things you could host. No-code solutions took shortcuts and set hard ceilings, typically on performance and sophistication.\n\nOur mission is to create the easiest cloud for agents that you never graduate from.\n\nPS: welcome https://t.co/WTKvpexJtD to Vercel!\n\n**YES-CODE**\n\n过去整个「无代码」软件品类，都是建立在一个前提上：代码昂贵、困难、稀缺。\n\n编程智能体已经彻底改写了这个公式。代码现在便宜、简单，而且充足。\n\n我记得很久以前有位分析师问 @cramforce：「所以，**Vercel** 算是无代码平台吗？」他毫不犹豫地说：「不，正好相反。它是一个 yes-code 平台。」😁\n\n我们一开始就很看重的一点，是对可托管内容的质量和复杂度不妥协。无代码方案往往会走捷径，并设置硬上限，通常卡在性能和复杂度上。\n\n我们的使命，是为智能体打造最容易上手、也永远不需要迁移出去的云。\n\nPS：欢迎 https://t.co/WTKvpexJtD 加入 **Vercel**！",
+            "source_links": [
+              "https://x.com/rauchg/status/2061934154732974376"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/WTKvpexJtD",
+                "resolvedUrl": "https://warp.dev/"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Language is the API in AI education / 语言正在成为 AI 教育里的 API",
+            "body": "This is what education in the age of AI looks like. Start with the language: the linguistic surface is your roadmap. Much like an SDK has a set of function definitions, human language is the new API to the world.\n\nIt also always has been… there's never been an expert in any field without mastery over its language. The distinction is that English alone could not produce tangible things. You had to translate it into machine instruction, through learning or delegation to others. You can now go direct.\n\n这就是 **AI** 时代的教育该有的样子。先从语言开始：语言表层就是你的路线图。就像一个 **SDK** 有一组函数定义，人类语言正在成为通向世界的新 **API**。\n\n其实它一直都是。任何领域的专家，都离不开对该领域语言的掌握。区别在于，以前单靠英语无法产出真实东西。你必须通过学习，或委托他人，把它翻译成机器指令。现在你可以直接抵达。",
+            "source_links": [
+              "https://x.com/rauchg/status/2061862134469062850"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Conductor is an ADE for coding agents / Conductor 是面向编程智能体的 ADE",
+            "body": "Conductor has the distinct edge of being an IDE born for coding agents. An ADE if you will.\n\nAgents will take remote dev mainstream. At most large and sensitive organizations, “local” isn’t a thing. But this future wasn’t evenly distributed.\n\nExcited to power their Sandbox! https://t.co/CdNkKGlNcD https://t.co/EcGjsS6tBN\n\n**Conductor** 的明显优势在于，它是一个为编程智能体而生的 **IDE**。你也可以叫它 **ADE**。\n\n智能体会把远程开发推向主流。在多数大型且敏感的组织里，「本地」并不存在。但这个未来此前并没有均匀到来。\n\n很高兴为他们的 **Sandbox** 提供支持！https://t.co/CdNkKGlNcD https://t.co/EcGjsS6tBN",
+            "source_links": [
+              "https://x.com/rauchg/status/2061809689973944724"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ0E_IqbcAAuEOe.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2061809689973944724/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel/status/2061807920275210336",
+                "resolvedUrl": "https://x.com/vercel/status/2061807920275210336",
+                "authorName": "Vercel",
+                "authorHandle": "vercel",
+                "authorUrl": "https://x.com/vercel",
+                "text": "Conductor's parallel coding agents were local-only, but now they can run remotely on Vercel.\n\n\"Our customers can't tell the difference because Vercel's Sandboxes are so fast.\" https://vercel.com/blog/how-conductor-moved-parallel-coding-agents-from-the-laptop-to-the-cloud-with-vercel-sandbox",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "Conductor 的并行编码智能体原本只能在本地运行，但现在它们可以在 Vercel 上远程运行了。\n\n“我们的客户感觉不出差别，因为 Vercel 的 Sandboxes 太快了。” https://vercel.com/blog/how-conductor-moved-parallel-coding-agents-from-the-laptop-to-the-cloud-with-vercel-sandbox"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/CdNkKGlNcD",
+                "resolvedUrl": "https://x.com/rauchg/status/2061809689973944724/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ0E_IqbcAAuEOe.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/EcGjsS6tBN",
+                "resolvedUrl": "https://x.com/vercel/status/2061807920275210336"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T00:52:37.000Z",
+        "sections": [
+          {
+            "headline": "Model routing becomes inevitable as token costs grow · 随着 token 成本上升，模型路由会成为必然",
+            "body": "As token budgets take on a larger part of operating expenses over time, model routing is the inevitable conclusion. This is also one of the biggest areas of differentiation for the applied AI layer over time. \n\nBy understanding the different work patterns in your domain, and having strong evals for that domain, you’ll be able to cost/performance optimize effectively.\n\nWe’re still likely at the point where most use-cases will need frontier performance for the foreseeable future; but soon you will be able to peel off individual use-cases and send them to lower cost models once the quality is sufficient for the task.\n\nEnterprises individually trying to figure this out themselves at scale will likely not be possible, so the products that can intelligently route these workflows to the right tier of model will be in a strong position to aggregate more demand.\n\n随着 token 预算在运营成本里占比越来越高，模型路由会成为必然结果。这也会是应用层 **AI** 长期拉开差距的关键领域之一。\n\n只要理解所在领域里的不同工作模式，并且有扎实的领域评测，就能有效优化成本和性能。\n\n短期看，大多数用例可能仍然需要前沿模型的能力；但很快，一旦某些任务的质量达标，就可以把单个用例拆出来，交给成本更低的模型处理。\n\n企业各自单独在大规模场景里摸索这件事，大概率走不通。所以，能把这些工作流智能路由到合适模型层级的产品，会处在更有利的位置，聚合更多需求。",
+            "source_links": [
+              "https://x.com/levie/status/2061974298760495132"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "Y Combinator CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T07:37:38.000Z",
+        "sections": [
+          {
+            "headline": "Phil Kim wins; Garry Tan reacts · Phil Kim 胜选，Garry Tan 发声",
+            "body": "Thank god **Phil Kim** beat the insane woman named **Brandee** who literally doxxed my home address and made me sell my home and move my family to a new one https://t.co/hpo6fXTnd1\n\n谢天谢地，**Phil Kim** 击败了那个叫 **Brandee** 的疯女人。她真的把我家地址扒出来公开，逼得我卖掉房子，带着家人搬去新住处。https://t.co/hpo6fXTnd1",
+            "source_links": [
+              "https://x.com/garrytan/status/2062076227977126237",
+              "https://t.co/hpo6fXTnd1"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/SusanDReynolds/status/2062021552300871984",
+                "resolvedUrl": "https://x.com/SusanDReynolds/status/2062021552300871984",
+                "authorName": "💥Susan Dyer Reynolds🗞️",
+                "authorHandle": "SusanDReynolds",
+                "authorUrl": "https://x.com/SusanDReynolds",
+                "text": "Wah wah Brandee Marckmann barely made a blip. She can take her spiderweb and go home.",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "哇哇，Brandee Marckmann 几乎没掀起什么水花。她可以带着她的蜘蛛网回家了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hpo6fXTnd1",
+                "resolvedUrl": "https://x.com/susandreynolds/status/2062021552300871984"
+              }
+            ]
+          },
+          {
+            "headline": "Many PRs landed, many more before sleep · 合了很多 PR，睡前还有更多",
+            "body": "tfw you land many PRs and have many more to go before you sleep https://t.co/RC8b9ywimy\n\n那种你已经合了很多 **PR**，但睡前还有一堆等着处理的感觉。https://t.co/RC8b9ywimy",
+            "source_links": [
+              "https://x.com/garrytan/status/2062074760331448381",
+              "https://t.co/RC8b9ywimy"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ31_3VakAE-l2z.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2062074760331448381/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/RC8b9ywimy",
+                "resolvedUrl": "https://x.com/garrytan/status/2062074760331448381/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ31_3VakAE-l2z.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "GBrain as agentic retrieval and memory tool · GBrain 是检索与记忆的智能体瑞士军刀",
+            "body": "**GBrain** is the agentic swiss army knife for retrieval and memory https://t.co/EgXmcs6ZOS\n\n**GBrain** 是做检索和记忆的智能体瑞士军刀。https://t.co/EgXmcs6ZOS",
+            "source_links": [
+              "https://x.com/garrytan/status/2062052761945223266",
+              "https://t.co/EgXmcs6ZOS"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/anirudh_twt/status/2062048005491175661",
+                "resolvedUrl": "https://x.com/anirudh_twt/status/2062048005491175661",
+                "authorName": "ani",
+                "authorHandle": "anirudh_twt",
+                "authorUrl": "https://x.com/anirudh_twt",
+                "text": "so i wrote a session warden. small script that sits on top and watches your agent sessions.\n\ncatches crash loops before they spiral, kills zombie processes, and uses @garrytan's gbrain to shove context back in when a session restarts. agent comes back and just picks up where it",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "所以我写了一个会话看守器。一个小脚本，挂在上层监控你的智能体会话。\n\n它能在崩溃循环失控前捕捉到问题，杀掉僵尸进程，并在会话重启时用 @garrytan 的 gbrain 把上下文塞回去。智能体回来后就能直接接着之前的进度继续"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/EgXmcs6ZOS",
+                "resolvedUrl": "https://x.com/anirudh_twt/status/2062048005491175661"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-02T21:33:56.000Z",
+        "sections": [
+          {
+            "headline": "Codex knowledge-worker adoption is accelerating / Codex 在知识工作者中加速普及",
+            "body": "From **OpenAI**'s latest **Codex** report:\n\"Knowledge workers now represent about 20% of **Codex** users and are adopting it more than 3 times as fast as developers\n\nThe fastest growing task types for knowledge workers are: Data Analysis (110% growth week over week); Research (+37%), and Knowledge Artifacts (+36%)\"\n\n来自 **OpenAI** 最新 **Codex** 报告：\n“知识工作者现在约占 **Codex** 用户的 20%，采用速度是开发者的 3 倍多。\n\n知识工作者增长最快的任务类型是：数据分析（周环比增长 110%）；研究（+37%）；知识工件（+36%）。”",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2061924300698091760"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ1s6mPawAAjU8O.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2061924300698091760/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Try Frontend Slides / 试试 Frontend Slides",
+            "body": "Try it: https://t.co/F951xNM4Bp\n\n试试：https://t.co/F951xNM4Bp",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2061892917514662152",
+              "https://t.co/F951xNM4Bp"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/F951xNM4Bp",
+                "resolvedUrl": "https://github.com/zarazhangrui/frontend-slides"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Frontend Slides reaches 20k GitHub stars / Frontend Slides 拿到 GitHub 2 万星",
+            "body": "**Frontend Slides** now has 20k stars on **GitHub** 😮 \nIt's insane how many people have already replaced PPTs with HTML decks and never looked back\n\nRecently added new features including beautiful templates, publish as webpage/export as PDF, and inline editing https://t.co/eH6VDaqoeS https://t.co/L6RgRTDVOU\n\n**Frontend Slides** 现在 **GitHub** 上已经有 2 万星了 😮\n太多人已经用 HTML deck 替代 PPT，而且再也没回头。\n\n最近还加了新功能，包括漂亮模板、发布为网页/导出为 PDF，以及内联编辑：https://t.co/eH6VDaqoeS https://t.co/L6RgRTDVOU",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2061889286585405790",
+              "https://t.co/eH6VDaqoeS",
+              "https://t.co/L6RgRTDVOU"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ1MRgrbwAAz5me.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2061889286585405790/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/zarazhangrui/status/2016337615843434646",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2016337615843434646",
+                "authorName": "Zara Zhang",
+                "authorHandle": "zarazhangrui",
+                "authorUrl": "https://x.com/zarazhangrui",
+                "text": "I created a Claude Skill that make beautiful slides on the web. The world hasn't woken up to the fact that code can create much better slides than most PPT tools.\n\n- Claude interviews you first about aesthetics, then generate a few directions to \"show not tell\", and you can pick",
+                "displayDate": "Jan 28",
+                "provider": "X",
+                "textZh": "我创建了一个 Claude Skill，可以在网页上制作漂亮的幻灯片。世界还没有意识到，代码能做出比大多数 PPT 工具好得多的幻灯片。\n\n- Claude 会先采访你，了解你的审美，然后生成几个“展示而非讲述”的方向供你选择"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/eH6VDaqoeS",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2061889286585405790/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ1MRgrbwAAz5me.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/L6RgRTDVOU",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2016337615843434646"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T04:48:20.000Z",
+        "sections": [
+          {
+            "headline": "Founders Need More Than One Edge · 创始人不能只押一个优势",
+            "body": "The best founders treat the following as a necessary component of their business but NOT the entire business..\n\n> AI / timing / why now\n> Funding\n> Distribution / hype\n> Market\n> Product\n> Revenue\n\nI’m seeing too many pitches that are touting only one of these as the core reason to invest. \n\nThe bar has frankly never been higher (see the seed - A gap) and you really need to be able to explain how you’re capturing at least multiple of these in a unique way that’ll be hard for others to copy. \n\nEspecially in overcrowded categories. Otherwise, it gets very hard for the other side (aka VC) to make a case for their own partners to write the check. \n\nAnd, founders often get frustrated because their businesses are strong. Stronger than they have ever been in the past. Why can’t people just write the check? Like why do I need to waste time fundraising? It’s because like it or not the levels do keep going up. Narrative matters, ambition matters and try to understand the opportunity cost has also never been higher on the other side. If you’re profitable and don’t need capital, then who cares. And you don’t need to optimize for VCs but you DO need to give them a reason to believe. \n\nSo, keep your bar high. Find a capital partner that still has conviction and deserves equity in your company. But, please take those ten extra minutes to communicate your long term ambition, because that might be the only small difference between you and the next round.\n\n最好的创始人会把下面这些视为业务的必要组成部分，但不会把其中任何一个当成全部业务：\n\n> **AI** / 时机 / 为什么是现在\n> 融资\n> 分发 / 热度\n> 市场\n> 产品\n> 收入\n\n我最近看到太多 pitch，只拿其中一个点当作投资的核心理由。\n\n坦白说，门槛从来没有这么高过（看看种子轮到 **A 轮**之间的断层就知道）。你真的得讲清楚：你如何以一种别人很难复制的方式，同时抓住其中多个要素。\n\n尤其是在拥挤赛道里。否则，对另一边（也就是 **VC**）来说，要说服自己的合伙人写支票会非常难。\n\n创始人也常常会因此沮丧，因为他们的业务确实很强。甚至比过去任何时候都强。为什么投资人不能直接写支票？为什么我还要浪费时间融资？原因是，不管你喜不喜欢，水位一直在涨。叙事重要，野心重要，也要理解投资人那边的机会成本同样从没这么高过。如果你已经盈利、不需要资本，那无所谓。你不需要围着 **VC** 优化，但你确实需要给他们一个相信你的理由。\n\n所以，继续把标准放高。找一个仍然有信念、也配得上拿你公司股权的资本伙伴。但请多花那十分钟，把你的长期野心讲清楚，因为这点小差别，可能就是你和下一轮融资之间的距离。",
+            "source_links": [
+              "https://x.com/nikunj/status/2062033620773306763"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Ramp Agent Key Feedback · 给 Ramp 反馈 Agent Key",
+            "body": "@tryramp using the latest agent key with full read/write permissions. sent feedback through ramp feedback jfyi.\n\n@tryramp 我用的是最新的 **agent key**，拥有完整读写权限。已经通过 **Ramp** 的反馈渠道提交了反馈，供参考。",
+            "source_links": [
+              "https://x.com/nikunj/status/2061866688866648573"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Ramp CLI Categorization Issue · Ramp CLI 不能分类",
+            "body": "@tryramp your CLI can't categorize :( https://t.co/rQ96oHQe9m\n\n@tryramp 你们的 **CLI** 不能分类 :( https://t.co/rQ96oHQe9m",
+            "source_links": [
+              "https://x.com/nikunj/status/2061866440513479135"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ04kcnaMAAMZmw.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2061866440513479135/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/rQ96oHQe9m",
+                "resolvedUrl": "https://x.com/nikunj/status/2061866440513479135/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ04kcnaMAAMZmw.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw + OpenAI",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-02T18:29:13.000Z",
+        "sections": [
+          {
+            "headline": "OpenClaw gets observability and verifiable workspaces / OpenClaw 引入可观测性与可验证工作区",
+            "body": "It’s been great working with **Omar** to get observability and verifiable workspaces into **OpenClaw**. https://t.co/2zVjntPUNh\n\n很高兴和 **Omar** 合作，把可观测性和可验证工作区带进 **OpenClaw**。https://t.co/2zVjntPUNh",
+            "source_links": [
+              "https://x.com/steipete/status/2061877813053907083"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/omarshahine/status/2061876244862619953",
+                "resolvedUrl": "https://x.com/OmarShahine/status/2061876244862619953",
+                "authorName": "Omar Shahine",
+                "authorHandle": "OmarShahine",
+                "authorUrl": "https://x.com/OmarShahine",
+                "text": "Introducing Microsoft Scout, the first autopilot agent from Microsoft - 57 days after starting my new job, we are launching Microsoft Scout to our Frontier customers. Big day for the team and for @openclaw #MicrosoftBuild https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "介绍 Microsoft Scout，微软首个自动驾驶智能体——在我入职新岗位 57 天后，我们正向 Frontier 客户推出 Microsoft Scout。对团队和 @openclaw 来说都是重要的一天 #MicrosoftBuild https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/2zVjntPUNh",
+                "resolvedUrl": "https://x.com/omarshahine/status/2061876244862619953"
+              }
+            ]
+          },
+          {
+            "headline": "Bringing claws to enterprises with Microsoft / 携手 Microsoft 把 claws 带进企业",
+            "body": "Such a privilege to work with **Microsoft** to bring claws to enterprises! https://t.co/1psejBcL7S\n\n很荣幸能和 **Microsoft** 合作，把 claws 带进企业场景！https://t.co/1psejBcL7S",
+            "source_links": [
+              "https://x.com/steipete/status/2061874084649025728"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/openclaw/status/2061869633624580452",
+                "resolvedUrl": "https://x.com/openclaw/status/2061869633624580452",
+                "authorName": "OpenClaw🦞",
+                "authorHandle": "openclaw",
+                "authorUrl": "https://x.com/openclaw",
+                "text": "\"You can run OpenClaw inside your company now.\" Annoucing our work with @Microsoft to bring OpenClaw to the Microsoft and Windows ecosystems. Claws now work securly in the enterprise.",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "“你现在可以在公司内部运行 OpenClaw 了。” 宣布我们与 @Microsoft 的合作，将 OpenClaw 带入 Microsoft 和 Windows 生态系统。Claws 现在可以在企业中安全运行。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/1psejBcL7S",
+                "resolvedUrl": "https://x.com/openclaw/status/2061869633624580452"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T00:06:49.000Z",
+        "sections": [
+          {
+            "headline": "Lucas leaves a lasting design mark at Every / Lucas 给 Every 留下了鲜明的设计印记",
+            "body": "**Lucas** joined us four years ago to sell ads. \n\nHe’s leaving having lead a team of designers who consistently set the bar for taste and creative direction in AI. Much of what makes @every distinctive visually came from his brain—and you can see his influence across the AI ecosystem. \n\nAs a founder, there nothing more rewarding than seeing someone like **Lucas** win—he’s going to do big things. \n\nAnd I am incredibly excited about the team and design culture he built @every that will continue to be inspired by his example and bar for excellence\n\n**Lucas** 四年前加入我们，当时是来卖广告的。\n\n现在他离开时，已经带出了一支设计团队，持续把 **AI** 领域的品味和创意方向标准往上拉。@every 视觉上很多独特的东西都来自他的脑子，你也能在整个 **AI** 生态里看到他的影响。\n\n作为创始人，没有什么比看到 **Lucas** 这样的人赢更让人开心了。他会做出大事。\n\n我也非常期待他在 @every 建起来的团队和设计文化。这个团队会继续被他的榜样和高标准激发。",
+            "source_links": [
+              "https://x.com/danshipper/status/2061962774918373592"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Internal reaction signals something worth watching / 内部反应强烈，值得盯紧",
+            "body": "people internally are freaking out about this, worth paying attention: https://t.co/hrQP6rYKat\n\n内部的人都在为这件事激动，值得关注：https://t.co/hrQP6rYKat",
+            "source_links": [
+              "https://x.com/danshipper/status/2061908190040645707",
+              "https://t.co/hrQP6rYKat"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/trq212/status/2061907538741006796",
+                "resolvedUrl": "https://x.com/trq212/status/2061907538741006796",
+                "authorName": "Thariq",
+                "authorHandle": "trq212",
+                "authorUrl": "https://x.com/trq212",
+                "text": "Workflows are the biggest upgrade to Claude Code’s capabilities since skills and subagents.\n\nI dove deep into it with @sidbid to figure out best practices, examples and more.  I’m particularly excited about the non-technical tasks it enables for Claude Code.",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "Workflows 是自 skills 和 subagents 以来，对 Claude Code 能力的最大升级。\n\n我和 @sidbid 深入研究了它，梳理最佳实践、示例等内容。我尤其期待它为 Claude Code 带来的非技术任务能力。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hrQP6rYKat",
+                "resolvedUrl": "https://x.com/trq212/status/2061907538741006796"
+              }
+            ]
+          },
+          {
+            "headline": "Rechecking the Opus 4.8 read after real-world use / 真实上手后重新看 Opus 4.8",
+            "body": "Almost a week later! What are your thoughts on **Opus 4.8**?\n\nWe were extremely bullish on it in testing—it seems the response was more tepid once y'all got your hands on it. If you disagreed with our take I'm curious why so we can tune our evaluations!\n\nOne theory I have is that by nature it pushes on your frame a little more, and the results are high-variance—sometimes it does something amazing, and sometimes it disagrees in a way that is obviously wrong.\n\nBut curious how you're feeling and what you're reaching for after a few days of testing\n\n快一周了！你们怎么看 **Opus 4.8**？\n\n我们测试时非常看好它，但大家真正上手后的反应似乎冷一些。如果你不同意我们的判断，我很想知道原因，这样我们可以调整评测方式。\n\n我的一个猜测是，它天生更会挑战你的框架，结果波动也更大：有时能做出很惊艳的东西，有时又会用一种明显错误的方式反驳你。\n\n不过我更想知道，你们测了几天之后现在感觉如何，实际会去用什么。",
+            "source_links": [
+              "https://x.com/danshipper/status/2061817375519809665"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "AI is cool i guess",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T00:48:34.000Z",
+        "sections": [
+          {
+            "headline": "**US** AI leadership and the new **EO** · **美国** AI 领导力与新行政令",
+            "body": "theUSshould lead on **AI** by continuing to develop the very best models, making sure they're safe, and getting cyber tools into the hands of trusted defenders.\n\nthe new **EO** gets the balance right.\n\n**美国**应该通过持续开发最好的模型、确保它们安全，并把网络工具交到可信防御者手中，来引领 **AI**。\n\n新的**行政令**把平衡拿捏对了。",
+            "source_links": [
+              "https://x.com/sama/status/2061973280655904815"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "one of the quotes i find most inspiring on a hard day: · 艰难的一天里，最能鼓舞我的一句话：\\n\\n“凡你手所当…",
+            "body": "one of the quotes i find most inspiring on a hard day:\n\n\"Whatever your hand finds to do, do it with all your might, for in the realm of the dead, where you are going, there is neither working nor planning nor knowledge nor wisdom\"\n\nEcclesiastes 9:10\n\n艰难的一天里，最能鼓舞我的一句话：\\n\\n“凡你手所当做的事，要尽力去做；因为在你所要去的阴间，没有工作，没有谋算，没有知识，也没有智慧。”\\n\\n**《传道书》9:10**\"}",
+            "source_links": [
+              "https://x.com/sama/status/2061828631089844709"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic AI Assistant",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-02T15:17:28.000Z",
+        "sections": [
+          {
+            "headline": "Problem Solvers with Claude · 用 Claude 解决硬问题",
+            "body": "From **The Problem Solvers**, our series featuring founders taking on hard problems with **Claude**: https://t.co/lXWwc2eHPe\n\n来自 **The Problem Solvers**，这是我们的一档系列，讲述创始人如何用 **Claude** 解决难题：https://t.co/lXWwc2eHPe",
+            "source_links": [
+              "https://x.com/claudeai/status/2061829560505655316",
+              "https://t.co/lXWwc2eHPe"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/lXWwc2eHPe",
+                "resolvedUrl": "https://claude.com/problem-solvers"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Legora brings law into its next era with Claude · Legora 用 Claude 推动法律进入下一阶段",
+            "body": "Interpreting law is one of the oldest jobs in the world. @MaxJunestrand, co-founder and CEO of @WeAreLegora, is bringing it into its next era with **Claude**.\n\nHis bet: every new model release raises the tide, and **Legora** is building the boats for everyone else. https://t.co/EOM8PqALT4\n\n解读法律是世界上最古老的工作之一。@MaxJunestrand 是 @WeAreLegora 的联合创始人兼 CEO，他正在用 **Claude** 把这件事带入下一个时代。\n\n他的判断是：每一次新模型发布都会抬高水位，而 **Legora** 正在为其他人造船。https://t.co/EOM8PqALT4",
+            "source_links": [
+              "https://x.com/claudeai/status/2061829558999912680",
+              "https://t.co/EOM8PqALT4"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/EOM8PqALT4",
+                "url": "https://pbs.twimg.com/media/HJ0XUsoWcAAPArm.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2061829558999912680/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/EOM8PqALT4",
+                "resolvedUrl": "https://x.com/claudeai/status/2061829558999912680/video/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ0XUsoWcAAPArm.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Alfred Wahlforss",
+        "person_handle": "",
+        "person_identity": "Listen Labs CEO",
+        "profile_url": "https://www.youtube.com/watch?v=Rumft-rsEu4",
+        "source_label": "Training Data Podcast",
+        "posted_at": "2026-06-02T09:00:00.000Z",
+        "sections": [
+          {
+            "headline": "AI customer research at interview scale / 用 AI 把客户研究扩到访谈级规模",
+            "body": "**Alfred Wahlforss**, founder and CEO of **Listen Labs**, describes the company as an AI-first customer research platform that can run thousands of voice interviews at once. Users ask a research question, **Listen Labs** generates an interview guide, recruits from a claimed audience of 30 million participants, conducts hundreds of AI-led interviews, and turns the results into recommendations.\n\nHe says the next step is simulation: after enough interviews, **Listen Labs** wants to predict how customers may answer future questions. His thesis is blunt: as building products gets easier with AI, knowing what to build becomes the harder and more valuable problem.\n\n**Listen Labs** 创始人兼 CEO **Alfred Wahlforss** 说，这家公司做的是 AI-first 客户研究平台：能同时跑成千上万场语音访谈。用户提出一个研究问题，**Listen Labs** 自动生成访谈提纲，从号称 3000 万人的受访者池里找人，完成数百场 AI 主持的访谈，再把结果整理成建议。\n\n下一步是“模拟”：当平台积累足够多访谈后，尝试预测客户未来会怎么回答问题。他的判断很直接：AI 会让造产品变得更容易，真正难的是知道该造什么。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=Rumft-rsEu4"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Why interviews beat shallow surveys / 为什么深度访谈比浅层问卷更有用",
+            "body": "Wahlforss argues that traditional surveys are often inconsistent, even when the same person answers the same multiple-choice question again. In contrast, he says AI-led interviews force respondents to reason through answers, producing more stable and useful signals.\n\nHe still frames A/B testing as the gold standard, but notes that many companies lack the traffic or conditions to run clean experiments. In those cases, fast customer input is better than flying blind. **Listen Labs** also compares interview findings against later sales data, such as product testing for **Chubbies**.\n\nWahlforss 认为，传统问卷的问题在于信号太浅。同一个人重新回答同一道选择题，结果也可能大幅摇摆。相比之下，AI 访谈会逼着受访者把想法讲清楚，答案更稳定，也更容易看出真实动机。\n\n他承认 **A/B testing** 仍是黄金标准，但很多公司没有足够流量，也很难把实验条件做干净。这种情况下，快速拿到客户输入，总比闭门拍脑袋强。**Listen Labs** 还会把访谈结论和后续销售数据对照，比如帮 **Chubbies** 做产品测试。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=Rumft-rsEu4"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Video, emotion, and traceability / 视频、情绪和可追溯性",
+            "body": "The product experience is closer to a video call with an AI agent than a static survey. **Listen Labs** captures voice, video, facial cues, and emotion signals, which Wahlforss says helps bridge the gap between what people claim and what they actually feel.\n\nFor advertising research, he says enthusiastic reactions on video can be more predictive than high Likert-scale purchase intent scores alone. The platform is also built around traceability: every synthesized insight can be clicked back to the underlying video clip or quote, so customers can inspect where the AI’s conclusion came from.\n\n这个产品更像是和 AI agent 开视频会，而不是填一张静态问卷。**Listen Labs** 会捕捉语音、视频、面部反应和情绪信号。Wahlforss 认为，这能拉近“嘴上怎么说”和“心里怎么想”之间的距离。\n\n在广告研究里，他说视频里真实兴奋的反应，往往比 Likert 量表上的高购买意愿分数更有参考价值。平台也强调可追溯：每条 AI 汇总出的洞察，都能点回原始视频片段或引用，客户可以直接检查结论从哪来。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=Rumft-rsEu4"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "From viral consumer app to enterprise research platform / 从爆款消费应用转向企业研究平台",
+            "body": "Wahlforss says **Listen Labs** grew out of the founders’ earlier consumer app, **Bfake**, which let users create AI avatars of themselves using fine-tuned **Stable Diffusion**. After the app went viral and gained 20,000 users overnight, the team had major churn and needed to understand why.\n\nThey built an AI interview tool for their own research: positioning, use cases, churn, and customer motivation. That internal tool became the seed for **Listen Labs**.\n\nWahlforss 说，**Listen Labs** 的起点是他们之前做的消费级应用 **Bfake**：用户可以用微调后的 **Stable Diffusion** 生成自己的 AI 分身。产品一夜爆火，来了 2 万用户，但流失也很严重，团队必须弄清楚原因。\n\n于是他们先给自己做了一个 AI 访谈工具，用来研究定位、使用场景、流失原因和用户动机。后来这个内部工具变成了 **Listen Labs** 的雏形。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=Rumft-rsEu4"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Market research moves from services to software / 市场研究从服务业变成软件能力",
+            "body": "Wahlforss contrasts the old market research world with the AI-native version. Historically, companies relied on survey tools like **Qualtrics** or expensive services firms to design questions, recruit participants, run focus groups, and analyze interviews. Large companies, including **Microsoft**, may spend tens of millions of dollars on focus groups and research operations.\n\nHis view is that AI lowers the friction enough that customer input can become part of many more decisions. **Listen Labs** can return feedback from real people within minutes, run asynchronously, and reduce costs because participants can respond on their own schedule.\n\nWahlforss 把旧市场研究和 AI-native 研究做了对比。过去，公司要么用 **Qualtrics** 这类问卷工具，要么找昂贵的服务公司来设计问题、招募受访者、组织焦点小组、分析访谈。像 **Microsoft** 这样的大公司，可能一年在焦点小组和研究流程上花掉数千万美元。\n\n他的观点是，AI 把和客户对话的摩擦降到足够低，客户输入就能进入更多决策。**Listen Labs** 能在几分钟内拿到真实用户反馈，异步进行，成本也更低，因为受访者可以按自己的时间完成访谈。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=Rumft-rsEu4"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-03",
+    "updatedAt": "2026-06-03T16:53:54.035Z",
+    "commit": {
+      "sha": "18db52e0b339796ce40704f6ac8518dfcf5ef9a8",
+      "committedAt": "2026-06-03T08:04:07Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-03T16:37:37.193Z",
+    "feedGeneratedAt": "2026-06-03T08:03:30.181Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

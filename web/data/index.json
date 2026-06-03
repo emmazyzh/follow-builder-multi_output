@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-03T04:07:47.102Z",
-  "latestDate": "2026-06-02",
+  "updatedAt": "2026-06-03T16:53:54.040Z",
+  "latestDate": "2026-06-03",
   "dates": [
+    {
+      "date": "2026-06-03",
+      "title": "AI Builders Daily · 2026-06-03",
+      "summary": "**AI agents eat the work stack**: Codex expands from devs into knowledge work, Claude Code adds workflows, Gemini exposes Thinking Levels; **yes-code vs no-code** becomes the new platform fight as Vercel, Replit, OpenClaw, and enterprise sandboxes race to make agent-built apps deployable; **Listen Labs reframes market research**: thousands of AI voice interviews, emotion signals, traceable clips, and customer simulation turn “ask users” from slow theater into live product radar.\n\n**智能体开始吞掉工作流**：Codex 走出开发者圈，Claude Code 加上 workflows，Gemini 把 Thinking Levels 放到全端；**no-code 被 yes-code 反杀**：Vercel、Replit、OpenClaw 都在抢“让智能体写完就能上线”的底座；**Listen Labs 把用户调研改成雷达**：AI 同时跑上千个语音访谈，看表情、留证据、回连销售数据，比问卷狠多了。",
+      "itemCount": 16,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-03T16:53:54.038Z",
+      "commit": {
+        "sha": "18db52e0b339796ce40704f6ac8518dfcf5ef9a8",
+        "committedAt": "2026-06-03T08:04:07Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-02",
       "title": "AI Builders Daily · 2026-06-02",
