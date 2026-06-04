@@ -214,7 +214,7 @@ function splitHeadlineLanguages(headline) {
     };
   }
   const segments = value
-    .split(/\s*(?:[|｜]|·)\s*/)
+    .split(/\s*(?:[|｜]|·|\/|／)\s*/)
     .map((part) => part.trim())
     .filter(Boolean);
   const chinese = segments.find((part) => /[\u3400-\u9fff]/.test(part)) || '';
@@ -405,8 +405,17 @@ function splitXBody(text) {
     .filter(Boolean);
   const chinese = [];
   const original = [];
+  let currentLanguage = 'en';
   for (const paragraph of paragraphs) {
-    if (/[\u3400-\u9fff]/.test(paragraph)) {
+    const hasChinese = /[\u3400-\u9fff]/.test(paragraph);
+    const hasLatin = /[A-Za-z]/.test(paragraph);
+    if (hasChinese) {
+      chinese.push(paragraph);
+      currentLanguage = 'zh';
+    } else if (hasLatin) {
+      original.push(paragraph);
+      currentLanguage = 'en';
+    } else if (currentLanguage === 'zh') {
       chinese.push(paragraph);
     } else {
       original.push(paragraph);
@@ -425,8 +434,17 @@ function splitBodyByLanguage(text) {
     .filter(Boolean);
   const chinese = [];
   const english = [];
+  let currentLanguage = 'en';
   for (const paragraph of paragraphs) {
-    if (/[\u3400-\u9fff]/.test(paragraph)) {
+    const hasChinese = /[\u3400-\u9fff]/.test(paragraph);
+    const hasLatin = /[A-Za-z]/.test(paragraph);
+    if (hasChinese) {
+      chinese.push(paragraph);
+      currentLanguage = 'zh';
+    } else if (hasLatin) {
+      english.push(paragraph);
+      currentLanguage = 'en';
+    } else if (currentLanguage === 'zh') {
       chinese.push(paragraph);
     } else {
       english.push(paragraph);
