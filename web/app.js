@@ -409,9 +409,14 @@ function splitXBody(text) {
   for (const paragraph of paragraphs) {
     const hasChinese = /[\u3400-\u9fff]/.test(paragraph);
     const hasLatin = /[A-Za-z]/.test(paragraph);
+    const isUrlOnly = /^(?:https?:\/\/\S+\s*)+$/.test(paragraph);
     if (hasChinese) {
       chinese.push(paragraph);
       currentLanguage = 'zh';
+    } else if (isUrlOnly && currentLanguage === 'zh') {
+      chinese.push(paragraph);
+    } else if (isUrlOnly) {
+      original.push(paragraph);
     } else if (hasLatin) {
       original.push(paragraph);
       currentLanguage = 'en';
@@ -438,9 +443,14 @@ function splitBodyByLanguage(text) {
   for (const paragraph of paragraphs) {
     const hasChinese = /[\u3400-\u9fff]/.test(paragraph);
     const hasLatin = /[A-Za-z]/.test(paragraph);
+    const isUrlOnly = /^(?:https?:\/\/\S+\s*)+$/.test(paragraph);
     if (hasChinese) {
       chinese.push(paragraph);
       currentLanguage = 'zh';
+    } else if (isUrlOnly && currentLanguage === 'zh') {
+      chinese.push(paragraph);
+    } else if (isUrlOnly) {
+      english.push(paragraph);
     } else if (hasLatin) {
       english.push(paragraph);
       currentLanguage = 'en';
