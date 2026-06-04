@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-04T12:03:57.810Z",
+  "updatedAt": "2026-06-04T13:49:38.392Z",
   "latestDate": "2026-06-04",
   "dates": [
     {
       "date": "2026-06-04",
       "title": "AI Builders Daily · 2026-06-04",
-      "summary": "**Microsoft’s Satya Nadella reframes the AI race as an ecosystem war**, with MAI models, private evals, harnesses, and “agentic systems” doing the real work; **Anthropic gets blunt about agent blast radius**, saying containment beats approval fatigue as Claude gets more access; **Google Labs ships Dreambeans**, a personal-intelligence app pitched as hope scrolling; **Codex keeps dominating the builder chatter**, from reliability resets to spreadsheet wins and default-tab envy.\n\n**纳德拉把 AI 战场说清了：不是单个模型炫技，而是生态、私有评测、工具 harness 一起跑**；**Anthropic 这篇安全文很硬：别指望用户一直认真点批准，得把 Claude 关在边界里**；**Google Labs 推 Dreambeans，主打“别 doom scroll 了”**；**Codex 今天刷屏，从故障补偿到表格编辑，热度不靠口号靠使用场景。**",
+      "summary": "**Microsoft’s Satya Nadella frames AI as an ecosystem fight**, not a single-model race; **Anthropic gets blunt about agent blast radius**, with containment replacing endless permission prompts; **Google Labs ships Dreambeans**, a personal-intelligence app for “hope scrolling”; **Codex, Claude Code, Vercel, Figma, Cursor, OpenClaw** all show the same pressure point: agents are moving from demo magic into daily work.\n\n**Nadella 把牌摊开了：AI 不是单模型争霸，而是生态战**；**Anthropic 这篇安全文很硬，重点不是多弹几个确认框，而是把 Claude 关进合适的笼子**；**Google Labs 推 Dreambeans，想把刷信息流改成“有点盼头的每日投喂”**；**Codex、Claude Code、Vercel、Figma、Cursor、OpenClaw 的消息挤在一起，信号很清楚：Agent 正在从演示台钻进日常工作流。**",
       "itemCount": 20,
       "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-04T12:03:57.808Z",
+      "updatedAt": "2026-06-04T13:49:38.391Z",
       "commit": {
         "sha": "4320f1901f4ee12119021aa93943698bfb1342e5",
         "committedAt": "2026-06-04T07:56:30Z",
