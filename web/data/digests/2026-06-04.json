@@ -1,0 +1,758 @@
+{
+  "payload": {
+    "date": "2026-06-04",
+    "title": "AI Builders Daily · 2026-06-04",
+    "summary": "**Microsoft’s Satya Nadella reframes the AI race as an ecosystem war**, with MAI models, private evals, harnesses, and “agentic systems” doing the real work; **Anthropic gets blunt about agent blast radius**, saying containment beats approval fatigue as Claude gets more access; **Google Labs ships Dreambeans**, a personal-intelligence app pitched as hope scrolling; **Codex keeps dominating the builder chatter**, from reliability resets to spreadsheet wins and default-tab envy.\n\n**纳德拉把 AI 战场说清了：不是单个模型炫技，而是生态、私有评测、工具 harness 一起跑**；**Anthropic 这篇安全文很硬：别指望用户一直认真点批准，得把 Claude 关在边界里**；**Google Labs 推 Dreambeans，主打“别 doom scroll 了”**；**Codex 今天刷屏，从故障补偿到表格编辑，热度不靠口号靠使用场景。**",
+    "items": [
+      {
+        "person_name": "No Priors",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@NoPriorsPodcast",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-04T07:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Satya Nadella** says the AI race is an ecosystem and harness game · **Satya Nadella** 说 AI 竞争打的是生态和 harness",
+            "body": "**Microsoft** CEO **Satya Nadella** frames the current platform shift as an ecosystem play, not a single-model contest. He talks up **MAI** models, clean model lineage, private evals, and “hill-climbing” scaffolds that let companies turn general models into specialists. The sharpest line: Microsoft’s job is not to run Azure networking by hand, but to build the agentic system that runs Azure networking.\n\n**Microsoft** CEO **Satya Nadella** 这次把话题拉回生态，而不是单模型比拼。他谈到 **MAI** 模型、干净的模型谱系、私有 eval，以及让企业把通用模型训成专家的“爬坡”脚手架。最有分量的一句是：微软的工作不是亲手做 Azure 网络，而是做出能做 Azure 网络的 agentic system。",
+            "source_links": [
+              "https://www.youtube.com/@NoPriorsPodcast"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "Anthropic Engineering",
+        "profile_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "source_label": "Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "**Anthropic** explains how it contains **Claude** as access expands · **Anthropic** 讲清楚 **Claude** 权限变大后怎么关住风险",
+            "body": "**Anthropic** lays out the security tradeoff behind giving **Claude** enough access to do real work: capability is rising, so the blast radius has to be capped. The post argues that human approval prompts are leaky because users approve most prompts and get tired, while containment through sandboxes, VMs, filesystem boundaries, and egress controls gives harder limits. It also names three risk buckets: user misuse, model misbehavior, and external attackers.\n\n**Anthropic** 这篇文章讲得很直接：**Claude** 要真干活，就得拿到更多权限；权限一大，爆炸半径就必须被硬控住。它没有把“人工确认”神化，反而说用户会疲劳，很多提示会被顺手批准。更可靠的是容器、虚拟机、文件边界、出站网络控制这些硬隔离。风险也拆得清楚：用户乱用、模型自己跑偏、外部攻击。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/how-we-contain-claude"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T04:48:26.000Z",
+        "sections": [
+          {
+            "headline": "**Swyx** mixes viral Hamilton, agent labs, and a knowing teaser · **Swyx** 从 Hamilton 刷屏聊到 agent labs",
+            "body": "@HamiltonMusical the most viral thing i have ever done and its a bootleg hamilton sitzprobe not anything ai related https://t.co/yYq6VTP0TT\n@HamiltonMusical 我做过最 viral 的东西，居然是一个盗录版 Hamilton sitzprobe，跟 AI 一点关系都没有 https://t.co/yYq6VTP0TT\n\nyou guys know where this is going right https://t.co/xPo8yualmd https://t.co/qGDrXayZET\n你们知道这接下来会往哪儿走，对吧 https://t.co/xPo8yualmd https://t.co/qGDrXayZET\n\n@jgreze will speak on this at https://t.co/9co6taxSJo \n\ngathering all the top agent labs. lfg\n@jgreze 会在 https://t.co/9co6taxSJo 讲这个\n\n把所有顶级 agent labs 都聚起来。lfg",
+            "source_links": [
+              "https://x.com/swyx/status/2062396031812481476",
+              "https://x.com/swyx/status/2062371515937800468",
+              "https://x.com/swyx/status/2062277925127520576"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ8aQuwbAAAK-Fz.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2062396031812481476/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/hasanluongo/status/2062352005214138413",
+                "resolvedUrl": "https://x.com/hasanluongo/status/2062352005214138413",
+                "authorName": "Hasan",
+                "authorHandle": "hasanluongo",
+                "authorUrl": "https://x.com/hasanluongo",
+                "text": "wow this @reve 2.0 launch copy is supurb.\n\n\"it is now clear that the key to both controllable image generation and editing is not denser prompts, but a highly detailed, highly manipulatable, intermediate representation expressed as code.\"\n\n\"Creativity is not, and will never be,",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "哇，@reve 2.0 这次发布文案太棒了。\n\n“现在已经很清楚，可控图像生成和编辑的关键，不是更密集的提示词，而是一个以代码表达的、高度详细且高度可操作的中间表示。”\n\n“创造力不是，也永远不会是，"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/yYq6VTP0TT",
+                "resolvedUrl": "https://x.com/swyx/status/2062396031812481476/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ8aQuwbAAAK-Fz.png"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/xPo8yualmd",
+                "resolvedUrl": "https://twitter.com/swyx/status/2062371515937800468/photo/1"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/qGDrXayZET",
+                "resolvedUrl": "https://x.com/hasanluongo/status/2062352005214138413"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9co6taxSJo",
+                "resolvedUrl": "https://ai.engineer/wf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T01:11:12.000Z",
+        "sections": [
+          {
+            "headline": "**Josh Woodward** shares the backstory for **Dreambeans** · **Josh Woodward** 讲 **Dreambeans** 的小团队起点",
+            "body": "These are so fun! https://t.co/3exzGRExg0\n这些太好玩了！https://t.co/3exzGRExg0\n\nA short backstory on this one:\n\nA small Google Labs team had an idea to make an app designed to connect you with what matters, without the endless scroll. \"Hope scrolling, not doom scrolling\" was the hallway pitch. \"Go for it.\"\n\nAnd today, that little experiment is rolling out. \n\nMeet Dreambeans, a daily dose of inspiration, brewed fresh for you. We're excited to see what you think!\n这件事有个小背景：\n\nGoogle Labs 的一个小团队有个想法，想做一个 app，把你和真正重要的东西连起来，而不是无止境地刷下去。“Hope scrolling, not doom scrolling” 是他们在走廊里的 pitch。“去做吧。”\n\n今天，这个小实验开始推出了。\n\n来认识一下 Dreambeans：每天一份为你新鲜冲泡的灵感。我们很期待听听你的想法！",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2062341366999601185",
+              "https://x.com/joshwoodward/status/2062217728824651848"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/FlowbyGoogle/status/2062265225416741274",
+                "resolvedUrl": "https://x.com/FlowbyGoogle/status/2062265225416741274",
+                "authorName": "Google Flow",
+                "authorHandle": "FlowbyGoogle",
+                "authorUrl": "https://x.com/FlowbyGoogle",
+                "text": "Our current favorite Gemini Omni trend: creating a surprising twist using real world footage. Try creating your own! 🧵",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "我们目前最喜欢的 Gemini Omni 趋势：用真实世界影像制造出人意料的反转。试试创作你自己的吧！🧵"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3exzGRExg0",
+                "resolvedUrl": "https://x.com/flowbygoogle/status/2062265225416741274"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T06:37:41.000Z",
+        "sections": [
+          {
+            "headline": "**OpenAI Codex** reliability gets a reset after incidents · **OpenAI Codex** 故障后重置付费用户额度",
+            "body": "Lots of little vectors at OpenAI all pointing in the same direction. Excited to see it all add up and come together over the coming weeks.\nOpenAI 内部有很多小向量都指向同一个方向。很期待接下来几周看到它们加总、汇到一起。\n\nHi. Over the last 24 hours we had three separate small incidents that affected Codex reliability. Those are three too many and we are taking active steps for them to not reproduce.\n\nI have reset usage limits for Codex across all paid plans. May the tokens flow again.\n大家好。过去 24 小时里，我们有三次独立的小事故影响了 Codex 的可靠性。三次已经太多了，我们正在采取主动措施，避免它们再次发生。\n\n我已经重置了所有付费计划的 Codex 使用额度。愿 tokens 再次流动起来。\n\nCan't stop watching it.\n停不下来，一直在看。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2062423528927015414",
+              "https://x.com/thsottiaux/status/2062329981548802523",
+              "https://x.com/thsottiaux/status/2062310691076558929"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Writer",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T00:16:03.000Z",
+        "sections": [
+          {
+            "headline": "**Peter Yang** wants **Codex** front and center in **ChatGPT** · **Peter Yang** 想让 **Codex** 成为 **ChatGPT** 默认入口",
+            "body": "How do I make Codex the default tab when I open the ChatGPT app\n怎么才能让我打开 ChatGPT app 时，Codex 是默认 tab\n\nCodex is absolutely killing it this afternoon for editing spreadsheets for me.\n今天下午 Codex 帮我改表格，表现真的很猛。\n\nAlso available as a written guide: https://t.co/qYNLCYn1UF\n也有文字版指南：https://t.co/qYNLCYn1UF",
+            "source_links": [
+              "https://x.com/petergyang/status/2062327484499317124",
+              "https://x.com/petergyang/status/2062283525542531194",
+              "https://x.com/petergyang/status/2062181457842651249"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/qYNLCYn1UF",
+                "resolvedUrl": "https://creatoreconomy.so/p/full-tutorial-build-self-improving-claude-skills-in-20-min"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Cat Wu",
+        "person_handle": "_catwu",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/_catwu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T05:38:28.000Z",
+        "sections": [
+          {
+            "headline": "**Anthropic** says **Claude** automates 95% of analytics queries · **Anthropic** 称 **Claude** 自动化了 95% 分析查询",
+            "body": "Excited to share how Anthropic's data team has automated 95% of business analytics queries with Claude. Blog post covers how we approach evals, ablations, and online validation! https://t.co/sMPtM0GscN\n很高兴分享 Anthropic 的数据团队如何用 Claude 自动化 95% 的业务分析查询。博客文章讲了我们怎么做 evals、ablations 和 online validation！https://t.co/sMPtM0GscN",
+            "source_links": [
+              "https://x.com/_catwu/status/2062408623565984209"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ClaudeDevs/status/2062274312363770064",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2062274312363770064",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "How do we automate business analytics with Claude?\n\nNew blog post covering our best practices for skills, data foundations, and evaluations when building agents to perform data analysis:\n\nhttps://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "我们如何用 Claude 自动化业务分析？\n\n新博客文章介绍了我们在构建执行数据分析的 agent 时，围绕 skills、数据基础和评估的最佳实践：\n\nhttps://claude.com/blog/how-anthropic-enables-self-service-data-analytics-with-claude"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/sMPtM0GscN",
+                "resolvedUrl": "https://x.com/claudedevs/status/2062274312363770064"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T16:57:05.000Z",
+        "sections": [
+          {
+            "headline": "**Thariq** points to Suzanne’s AI short story · **Thariq** 推荐 Suzanne 的 AI 短篇",
+            "body": "If this prompt feels well written to you, it's because Suzanne is a writer in her little spare time! \n\nYou can read her short story, Mall of America here: https://t.co/uYY8VlPIUt\n\nIt's one of my favorite short stories about the human condition that happens to involve AI. https://t.co/XRduxCgX8S\n如果你觉得这个 prompt 写得好，那是因为 Suzanne 在她少得可怜的空闲时间里是个作家！\n\n你可以在这里读她的短篇小说 Mall of America：https://t.co/uYY8VlPIUt\n\n这是我最喜欢的关于人类处境的短篇小说之一，而且刚好涉及 AI。https://t.co/XRduxCgX8S",
+            "source_links": [
+              "https://x.com/trq212/status/2062217018187923783"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/trq212/status/2061545633560010826",
+                "resolvedUrl": "https://x.com/trq212/status/2061545633560010826",
+                "authorName": "Thariq",
+                "authorHandle": "trq212",
+                "authorUrl": "https://x.com/trq212",
+                "text": "been asking others at Anthropic how they stay in the loop with Claude and fully understand the work being done\n\nthis is one of my favorites from Suzanne:",
+                "displayDate": "Jun 1",
+                "provider": "X",
+                "textZh": "一直在问 Anthropic 的同事，他们是如何跟上 Claude 的动态并充分理解正在进行的工作的\n\n这是我最喜欢的 Suzanne 的做法之一："
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/uYY8VlPIUt",
+                "resolvedUrl": "https://suzannewang.com/mall-of-america"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/XRduxCgX8S",
+                "resolvedUrl": "https://x.com/trq212/status/2061545633560010826"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Google Labs",
+        "person_handle": "GoogleLabs",
+        "person_identity": "Google AI Labs",
+        "profile_url": "https://x.com/GoogleLabs",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T16:15:13.000Z",
+        "sections": [
+          {
+            "headline": "**Google Labs** launches **Dreambeans** for eligible **AI Ultra** users · **Google Labs** 向部分 **AI Ultra** 用户推出 **Dreambeans**",
+            "body": "🚨 NEW EXPERIMENT 🚨\n\nDreambeans is a new, experimental mobile app that uses Personal Intelligence to connect to your Google apps. Every day, it delivers collections of personalized stories, surfacing things you might otherwise miss, alongside topics that are relevant to you, to help you dive deeper into the things you care about most.\n\nAvailable starting today for eligible US-based Google AI Ultra users (+18), with an open waitlist found on our website below!\n\nLearn more at https://t.co/jCdAzMHvOD\n🚨 新实验 🚨\n\nDreambeans 是一款新的实验性移动 app，使用 Personal Intelligence 连接你的 Google apps。每天，它会推送一组个性化故事，把你可能错过的内容，以及与你相关的话题浮出来，帮你更深入了解自己最在意的东西。\n\n从今天起，符合条件的美国 Google AI Ultra 用户（18 岁以上）可以使用，我们官网下面也开放了 waitlist！\n\n了解更多：https://t.co/jCdAzMHvOD",
+            "source_links": [
+              "https://x.com/GoogleLabs/status/2062206479026069544"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/8urEsuVEzf",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2062205365392175104/img/H6L_sDSTLJ2KFsxd.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/GoogleLabs/status/2062206479026069544/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/jCdAzMHvOD",
+                "resolvedUrl": "https://labs.google/dreambeans"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T03:01:30.000Z",
+        "sections": [
+          {
+            "headline": "**Amjad Masad** touts app-to-App-Store speed and SaaS gravity · **Amjad Masad** 晒 48 小时上架，也调侃 SaaS 逃不掉",
+            "body": "App to App Store in 48 hours! https://t.co/fiEORtgcMu\nApp 到 App Store，48 小时！https://t.co/fiEORtgcMu\n\nDon’t miss it! https://t.co/OdSseUjNOp\n别错过！https://t.co/OdSseUjNOp\n\nYou can run but you can’t hide from B2B SaaS https://t.co/kzLrH2PsL9\n你可以跑，但躲不过 B2B SaaS https://t.co/kzLrH2PsL9",
+            "source_links": [
+              "https://x.com/amasad/status/2062369124609892655",
+              "https://x.com/amasad/status/2062240846444110277",
+              "https://x.com/amasad/status/2062228935702921641"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/sommerkamp/status/2062348138656985372",
+                "resolvedUrl": "https://x.com/sommerkamp/status/2062348138656985372",
+                "authorName": "Deirdre Sommerkamp",
+                "authorHandle": "sommerkamp",
+                "authorUrl": "https://x.com/sommerkamp",
+                "text": "When @Replit said I could publish an app on the Apple app store, I was up for the adventure. Trust, but verify. 🤭\n\nSubmitted late last Friday night. Approved and in the app store 48 hours later. 🤯 and also 🥳\n\nCore Values: Find Yours\nhttps://apps.apple.com/us/app/core-values-find-yours/id6773931954\n\nWHY CORE VALUES?",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "当 @Replit 说我可以把一个应用发布到 Apple app store 时，我决定接受这个挑战。信任，但要验证。🤭\n\n上周五深夜提交。48 小时后获批并上架 app store。🤯 也 🥳\n\nCore Values: Find Yours\nhttps://apps.apple.com/us/app/core-values-find-yours/id6773931954\n\n为什么是核心价值观？"
+              },
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/tigrisli/status/2061501352648245616",
+                "resolvedUrl": "https://x.com/tigrisli/status/2061501352648245616",
+                "authorName": "tigris",
+                "authorHandle": "tigrisli",
+                "authorUrl": "https://x.com/tigrisli",
+                "text": "speaking ++ showing emotion alchemy at @Replit vibecon on June 17-18 in NYC! code! tech! art! and spike jonze!",
+                "displayDate": "Jun 1",
+                "provider": "X",
+                "textZh": "6 月 17-18 日在纽约 @Replit vibecon 演讲++展示 emotion alchemy！代码！科技！艺术！还有 spike jonze！"
+              },
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/meghanbobrowsky/status/2062176258679832584",
+                "resolvedUrl": "https://x.com/MeghanBobrowsky/status/2062176258679832584",
+                "authorName": "Meghan Bobrowsky",
+                "authorHandle": "MeghanBobrowsky",
+                "authorUrl": "https://x.com/MeghanBobrowsky",
+                "text": "New: Meta today launched an AI agent for businesses that can answer customer questions, book appts &amp; close sales\n\nEventually it will be able to run their entire business, Zuckerberg said during the launch announcement\n\nIt's part of Meta's broadening beyond its core ads biz",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "新消息：Meta 今天为企业推出了一款 AI agent，可以回答客户问题、预约并完成销售\n\nZuckerberg 在发布公告中表示，最终它将能够运营他们的整个业务\n\n这是 Meta 从核心广告业务向外拓展的一部分"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/fiEORtgcMu",
+                "resolvedUrl": "https://x.com/sommerkamp/status/2062348138656985372"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/OdSseUjNOp",
+                "resolvedUrl": "https://twitter.com/tigrisli/status/2061501352648245616"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/kzLrH2PsL9",
+                "resolvedUrl": "https://twitter.com/meghanbobrowsky/status/2062176258679832584"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T00:37:49.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel** pushes **Grok Imagine Video**, **v0**, **Next.js**, and **Snowflake** workflows · **Vercel** 把 **Grok Imagine Video**、**v0**、**Next.js** 和 **Snowflake** 串起来",
+            "body": "Grok Imagine Video on @vercel AI Gateway – the top image-to-video model on https://t.co/tN74yJZsfd https://t.co/hCSzh2JkKa\nGrok Imagine Video 登上 @vercel AI Gateway，它是 https://t.co/tN74yJZsfd 上排名第一的 image-to-video 模型 https://t.co/hCSzh2JkKa\n\n▲ + ❄️ \n\nGenerating frontends on top of your business data is one of the killer apps of coding AI. \n\nThe genie is out of the bottle. Never going back to clunky and rigid dashboards.\n\n@vercel already ran on Snowflake. But with @v0 and @nextjs, we’re now getting 1000x the value. https://t.co/INVGZ3CgsW\n▲ + ❄️\n\n基于你的业务数据生成前端，是 coding AI 的杀手级应用之一。\n\n瓶子里的精灵已经出来了。再也回不到笨重僵硬的 dashboards 了。\n\n@vercel 本来就跑在 Snowflake 上。但有了 @v0 和 @nextjs，我们现在拿到了 1000 倍的价值。https://t.co/INVGZ3CgsW\n\nYou know what to do 🗽 https://t.co/ITh1o0ETNa\n你知道该怎么做 🗽 https://t.co/ITh1o0ETNa",
+            "source_links": [
+              "https://x.com/rauchg/status/2062332963636060313",
+              "https://x.com/rauchg/status/2062199585322529108",
+              "https://x.com/rauchg/status/2062179592367227174"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2062331926296641565",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2062331926296641565",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "Grok Imagine Video 1.5 on AI Gateway.\n\nImage-to-video generation with synced audio in one pass.\n\n𝚊𝚠𝚊𝚒𝚝 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚅𝚒𝚍𝚎𝚘({\n 𝚖𝚘𝚍𝚎𝚕: '𝚡𝚊𝚒/𝚐𝚛𝚘𝚔-𝚒𝚖𝚊𝚐𝚒𝚗𝚎-𝚟𝚒𝚍𝚎𝚘-𝟷.𝟻-𝚙𝚛𝚎𝚟𝚒𝚎𝚠',\n 𝚙𝚛𝚘𝚖𝚙𝚝: '𝚊 𝚛𝚊𝚋𝚋𝚒𝚝 𝚜𝚙𝚛𝚒𝚗𝚝𝚒𝚗𝚐",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "AI Gateway 上的 Grok Imagine Video 1.5。\n\n一次完成带同步音频的图像转视频生成。\n\n𝚊𝚠𝚊𝚒𝚝 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚎𝚅𝚒𝚍𝚎𝚘({\n 𝚖𝚘𝚍𝚎𝚕: '𝚡𝚊𝚒/𝚐𝚛𝚘𝚔-𝚒𝚖𝚊𝚐𝚒𝚗𝚎-𝚟𝚒𝚍𝚎𝚘-𝟷.𝟻-𝚙𝚛𝚎𝚟𝚒𝚎𝚠',\n 𝚙𝚛𝚘𝚖𝚙𝚝: '𝚊 𝚛𝚊𝚋𝚋𝚒𝚝 𝚜𝚙𝚛𝚒𝚗𝚝𝚒𝚗𝚐"
+              },
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/v0/status/2062195681947971840",
+                "resolvedUrl": "https://x.com/v0/status/2062195681947971840",
+                "authorName": "v0",
+                "authorHandle": "v0",
+                "authorUrl": "https://x.com/v0",
+                "text": "v0’s Snowflake integration is now in public preview.\n\nPrompt v0 to use Snowflake, connect your account, and watch as it generates polished dashboards with your data.",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "v0 的 Snowflake 集成现已进入公开预览。\n\n提示 v0 使用 Snowflake，连接你的账户，然后看着它用你的数据生成精美的仪表盘。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/tN74yJZsfd",
+                "resolvedUrl": "http://arena.ai/"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hCSzh2JkKa",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2062331926296641565"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/INVGZ3CgsW",
+                "resolvedUrl": "https://twitter.com/v0/status/2062195681947971840"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/ITh1o0ETNa",
+                "resolvedUrl": "https://twitter.com/rauchg/status/2062179592367227174/photo/1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T00:49:18.000Z",
+        "sections": [
+          {
+            "headline": "**Aaron Levie** argues AI expands jobs and enterprise software spend · **Aaron Levie** 认为 AI 会扩大岗位和企业软件支出",
+            "body": "The jobs data coming out continues to suggest the opposite of what a lot of people had thought would happen. \n\nJust take engineering, as the prime example of the area with greatest AI impact (and perceived risk). Most companies now have far more software projects than ever before because of AI, and effectively only engineers are going to be the ones doing that work. \n\nYou can get by for a while by being non-technical building software, but eventually someone has to understand what the thing is that got built, has to maintain it, has to fix security issues that come up, upgrade the systems beneath it, and so on. That’s all jobs.\n\nNow apply that to a number of other job functions. AI is going to cause companies to hire more in sales because agents can let them process more leads and do more customer research. AI will cause an explosion of new marketing roles because of how much more efficient it is to launch campaigns and target. The list goes on.\n\nAI is going to have the opposite effect that lots of people thought on jobs.\n最新出来的就业数据继续显示，情况和很多人以为会发生的相反。\n\n就拿工程来说，这是 AI 影响最大、也被认为风险最大的领域。因为 AI，大多数公司现在的软件项目比以往多得多，而真正能做这些工作的，基本还是工程师。\n\n非技术背景的人做软件，可以撑一阵子，但最终总得有人理解做出来的东西是什么，要维护它，要修复出现的安全问题，要升级底层系统，等等。这些都是工作岗位。\n\n再把这个逻辑放到其他职能上。AI 会让公司在销售上招更多人，因为 agents 能让他们处理更多 leads，做更多客户研究。AI 会让新的市场岗位爆发，因为发起 campaign 和做定位会高效得多。类似例子还有很多。\n\nAI 对就业的影响，会和很多人以为的正好相反。\n\nEven with employer caps, the spend on AI tokens dramatically exceeds any other historical spend on software.\n\nTypically, companies maybe would spend on the order of $10-50 for a software license per month per employee, but now will pay hundreds or thousands on tokens to augment their productivity.\n\nThis shows you how big the TAM for intelligence is in the enterprise. The markets for AI are going to dramatically expand the size of the traditional software markets over time.\n即使有雇主设置上限，AI tokens 的支出也远远超过历史上任何软件支出。\n\n通常来说，公司每月可能给每位员工花 10 到 50 美元买软件 license，但现在会花几百甚至几千美元买 tokens 来提升生产力。\n\n这说明企业里的 intelligence TAM 有多大。随着时间推移，AI 市场会大幅扩大传统软件市场的规模。",
+            "source_links": [
+              "https://x.com/levie/status/2062335852379066698",
+              "https://x.com/levie/status/2062280745889222937"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T01:54:46.000Z",
+        "sections": [
+          {
+            "headline": "**Cursor** is hiring design engineers · **Cursor** 在招设计工程师",
+            "body": "Cursor is hiring design engineers.\n\nlooking for people with taste, systems thinking, and deep care for fast, polished experiences – especially folks excited to build the tools that help designers, engineers, and agents ship quality code.\n\nknow someone? tag them or DM me 📧\nCursor 正在招聘 design engineers。\n\n寻找有品味、有系统思维，并且非常在意快速、精致体验的人，尤其是那些想打造工具，帮助设计师、工程师和 agents 交付高质量代码的人。\n\n认识合适的人吗？tag 他们或 DM 我 📧",
+            "source_links": [
+              "https://x.com/ryolu_/status/2062352329903665471"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T06:49:01.000Z",
+        "sections": [
+          {
+            "headline": "**Garry Tan** weighs in on media and San Francisco politics · **Garry Tan** 评论媒体与旧金山政治",
+            "body": "The Pelley Firing Is Not a Free-Press Tragedy. It’s an Autopsy.\n\nhttps://t.co/ewvRiCHRW3 https://t.co/fGHMFTwUly\nPelley 被解雇不是一场新闻自由悲剧。它是一场验尸。\n\nhttps://t.co/ewvRiCHRW3 https://t.co/fGHMFTwUly\n\nSan Francisco is healing. We don't fall for this type of ridiculous gaslighting anymore. https://t.co/3iuIgPfENv\n旧金山正在恢复。我们不会再上这种荒唐 gaslighting 的当了。https://t.co/3iuIgPfENv",
+            "source_links": [
+              "https://x.com/garrytan/status/2062426378809794805",
+              "https://x.com/garrytan/status/2062285811366904091"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ812VobUAAbzsy.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2062426378809794805/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nypost/status/2062259678017417291",
+                "resolvedUrl": "https://x.com/nypost/status/2062259678017417291",
+                "authorName": "New York Post",
+                "authorHandle": "nypost",
+                "authorUrl": "https://x.com/nypost",
+                "text": "Ex-AOC aide's $10M campaign ends in humiliation as he bombs in every precinct https://trib.al/c2FqPM0",
+                "displayDate": "Jun 3",
+                "provider": "X",
+                "textZh": "前 AOC 助手的 1000 万美元竞选以羞辱告终，他在每个选区都惨败 https://trib.al/c2FqPM0"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/ewvRiCHRW3",
+                "resolvedUrl": "https://garryslist.org/posts/the-pelley-firing-is-not-a-free-press-tragedy-it-s-an-autopsy"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/fGHMFTwUly",
+                "resolvedUrl": "https://x.com/garrytan/status/2062426378809794805/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ812VobUAAbzsy.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3iuIgPfENv",
+                "resolvedUrl": "https://x.com/nypost/status/2062259678017417291"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Feishu Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T19:33:40.000Z",
+        "sections": [
+          {
+            "headline": "**Zara Zhang** introduces editable **Feishu/Lark Whiteboard** SVG graphics · **Zara Zhang** 发布可编辑的 **飞书/Lark 画板** SVG 图形能力",
+            "body": "Try it: https://t.co/tel5zrIGUF\n试试看：https://t.co/tel5zrIGUF\n\nIntroducing the Beautiful Feishu Whiteboard skill: \nYour agent can now create EDITABLE SVG graphics in Feishu/Lark docs in 30+ predefined styles\n\nGreat for concept visualization, technical architecture diagrams, summarizing meetings/long documents, or even replacing PPTs\n\nThe best part is everything is completely editable (can even drag elements around)\n\nSkill link in comment\n介绍 Beautiful Feishu Whiteboard skill：\n你的 agent 现在可以在 Feishu/Lark docs 里创建可编辑的 SVG 图形，有 30 多种预设风格\n\n很适合做概念可视化、技术架构图、会议/长文档总结，甚至替代 PPT\n\n最好的部分是，所有东西都完全可编辑（甚至可以拖动元素）\n\nSkill 链接在评论里",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2062256421610422759",
+              "https://x.com/zarazhangrui/status/2062256374730699257"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/tel5zrIGUF",
+                "resolvedUrl": "https://github.com/zarazhangrui/beautiful-feishu-whiteboard"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T15:43:19.000Z",
+        "sections": [
+          {
+            "headline": "**Nikunj Kothari** jumps on the **Fitbit Air** idea · **Nikunj Kothari** 加入 **Fitbit Air** 脑洞",
+            "body": "Getting on this Fitbit Air hype train. Professional at the top, monitoring at the bottom.. \n\nNow just need Google Health API, write capabilities to Apple Health and a nice band and we’re all set! https://t.co/SpVO7xZQP1\n我要上这趟 Fitbit Air 热门列车了。上面很职业，下面负责监测..\n\n现在只需要 Google Health API、写入 Apple Health 的能力，再加一条好看的表带，我们就齐了！https://t.co/SpVO7xZQP1",
+            "source_links": [
+              "https://x.com/nikunj/status/2062198451086221543"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/SpVO7xZQP1",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2062198396086296576/img/ACumrWWD-3vE40OE.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2062198451086221543/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/SpVO7xZQP1",
+                "resolvedUrl": "https://x.com/nikunj/status/2062198451086221543/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2062198396086296576/img/ACumrWWD-3vE40OE.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T04:27:03.000Z",
+        "sections": [
+          {
+            "headline": "**OpenClaw** posts big waitlist and download numbers · **OpenClaw** 晒出活动候补和下载量",
+            "body": "Here’s the video of my talk at MS Build: Build the thing that builds the thing. https://t.co/lJuv2twhFe\n这是我在 MS Build 演讲的视频：Build the thing that builds the thing. https://t.co/lJuv2twhFe\n\nWe have over 1300 people on the waitlist for today's OpenClaw event - will be livestreamed on Twitch and Discord tho! https://t.co/agbyZ79S0z\n今天的 OpenClaw 活动 waitlist 已经超过 1300 人，不过会在 Twitch 和 Discord 直播！https://t.co/agbyZ79S0z\n\nWe never had more npm downloads than this week on @openclaw - comined with Docker, GitHub, company-internal deployments and the numerous forks, real number is more in the 10-20 million downloads/week. https://t.co/ie8bXfD2ES\n@openclaw 这周的 npm 下载量创了新高，再加上 Docker、GitHub、公司内部部署和大量 forks，真实数字更可能是每周 1000 万到 2000 万下载。https://t.co/ie8bXfD2ES",
+            "source_links": [
+              "https://x.com/steipete/status/2062390654022332691",
+              "https://x.com/steipete/status/2062307384018829768",
+              "https://x.com/steipete/status/2062276065448669627"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/lJuv2twhFe",
+                "resolvedUrl": "https://build.microsoft.com/en-US/sessions/BRK245"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/agbyZ79S0z",
+                "resolvedUrl": "https://luma.com/OpenClaw-GitHub"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/ie8bXfD2ES",
+                "resolvedUrl": "https://twitter.com/steipete/status/2062276065448669627/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T16:01:02.000Z",
+        "sections": [
+          {
+            "headline": "**Dan Shipper** makes the **Figma** SaaS comeback case · **Dan Shipper** 借 **Figma** 反打 SaaS 悲观叙事",
+            "body": "YouTube: https://t.co/sEA04EtT0N\n\nSpotify: https://t.co/rDWvHIz2Xn\nYouTube：https://t.co/sEA04EtT0N\n\nSpotify：https://t.co/rDWvHIz2Xn\n\nI bought Figma stock during the SaaSpocalypse panic. Talking to @mcolyer, Figma's director of product management for developers, made me wish I'd bought more.\n\nHe joined me on @every's AI & I to make the case for a SaaS resurgence—and to explain why chat-based tools are the wrong interface for design. We get into:\n\n- Why running your own agents makes you more willing to pay for SaaS, not less\n- How Figma's MCP server allows you to approach design work from two directions: Take a live web page and reconstruct it on the Figma canvas, or hand a Figma design over to an agent so it can makes changes via pull request\n- The inherent limits of chat-based design, a format that isn’t equipped to generate lots of new ideas\n-Why review is the next bottleneck, and potential solutions for helping teams scale evaluations\n\nWatch below!\n\nTimestamps\n0:01:03 - Introduction\n0:02:15 - The SaaSpocalypse narrative has it backwards\n0:05:27 - Matt’s email-agent origin story\n0:13:21 - Divergent vs. convergent design thinking\n0:17:39 - Figma’s MCP server\n0:19:45 - Why design agents need personalization\n0:22:09 - Every problem is a context problem\n0:25:12 - Apple and Google as the reigning kings of context\n0:28:18 - Why review is the new bottleneck\n我在 SaaSpocalypse 恐慌期间买了 Figma 股票。和 @mcolyer，也就是 Figma 负责开发者产品管理的 director 聊完之后，我后悔当时没买更多。\n\n他来 @every 的 AI & I，讲 SaaS 复兴的理由，也解释为什么基于 chat 的工具不是设计的正确界面。我们聊到：\n\n- 为什么运行你自己的 agents 会让你更愿意为 SaaS 付费，而不是更不愿意\n- Figma 的 MCP server 如何让你从两个方向处理设计工作：拿一个实时网页，在 Figma canvas 上重建；或者把一个 Figma 设计交给 agent，让它通过 pull request 做修改\n- 基于 chat 的设计天然有什么限制：这种格式不适合生成大量新想法\n- 为什么 review 是下一个瓶颈，以及帮助团队扩大 evaluations 的可能方案\n\n在下面观看！\n\n时间戳\n0:01:03 - Introduction\n0:02:15 - The SaaSpocalypse narrative has it backwards\n0:05:27 - Matt’s email-agent origin story\n0:13:21 - Divergent vs. convergent design thinking\n0:17:39 - Figma’s MCP server\n0:19:45 - Why design agents need personalization\n0:22:09 - Every problem is a context problem\n0:25:12 - Apple and Google as the reigning kings of context\n0:28:18 - Why review is the new bottleneck\n\nCan you look the machine god in the face and keep your feet on the ground? Can you refuse to confuse your self with what can be measured, verbalized, or grasped? \n\nIf so, you will go far.\n你能直视 machine god，同时脚还踩在地上吗？你能拒绝把自我和那些能被衡量、说出口、抓住的东西混为一谈吗？\n\n如果能，你会走得很远。",
+            "source_links": [
+              "https://x.com/danshipper/status/2062202910377992244",
+              "https://x.com/danshipper/status/2062202908306030915",
+              "https://x.com/danshipper/status/2062144269285023839"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/sEA04EtT0N",
+                "resolvedUrl": "https://www.youtube.com/watch?v=kYKebKB3-d0"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/rDWvHIz2Xn",
+                "resolvedUrl": "https://open.spotify.com/episode/4qTiIlvhxgnGI0cG06aFw5?si=omYJmHwVQOWgi31EgQTX7Q"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-04T05:07:00.000Z",
+        "sections": [
+          {
+            "headline": "**Aditya Agarwal** welcomes Harshit Madan and Rohan Choudhary · **Aditya Agarwal** 欢迎 Harshit Madan 和 Rohan Choudhary 加入",
+            "body": "Very excited to welcome Harshit Madan and Rohan Choudhary to the team!\n\nhttps://t.co/3k23GK5Rdp\n非常高兴欢迎 Harshit Madan 和 Rohan Choudhary 加入团队！\n\nhttps://t.co/3k23GK5Rdp",
+            "source_links": [
+              "https://x.com/adityaag/status/2062400706448081342"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/3k23GK5Rdp",
+                "resolvedUrl": "https://blog.southparkcommons.com/p/harshit-madan-and-rohan-choudhary"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Claude",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-03T17:09:09.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Code** gets a miniature alert device and typewriter terminal · **Claude Code** 有了迷你提醒装置和打字机终端",
+            "body": "https://t.co/mEaNksHzrD\nhttps://t.co/mEaNksHzrD\n\nBen kept getting distracted during long Claude Code sessions, so he built a miniature Clawd to get his attention. When \nClaude Code needs input, a solenoid inside the aluminum body pushes it upward. In other words, it jumps up and down. https://t.co/hugzPTTnSw\nBen 在长时间 Claude Code 会话中总是分心，所以他做了一个迷你 Clawd 来吸引自己的注意。当 \nClaude Code 需要输入时，铝制机身内部的 solenoid 会把它向上推。换句话说，它会上下跳。https://t.co/hugzPTTnSw\n\nTo build the typewriter terminal, he intercepted the keyboard signals and re-routed them to an Arduino. In the back, a Raspberry Pi Zero acts as the ‘brains.’ https://t.co/o0Jxu4vpM7\n为了做这个打字机终端，他截获了键盘信号，并把它们重新路由到 Arduino。后面有一个 Raspberry Pi Zero 充当“大脑”。https://t.co/o0Jxu4vpM7",
+            "source_links": [
+              "https://x.com/claudeai/status/2062220051587952973",
+              "https://x.com/claudeai/status/2062220049146876347",
+              "https://x.com/claudeai/status/2062220045984346276"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ50xX3WwAALbxf.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2062220051587952973/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/mEaNksHzrD",
+                "resolvedUrl": "https://x.com/claudeai/status/2062220051587952973/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ50xX3WwAALbxf.jpg"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/hugzPTTnSw",
+                "resolvedUrl": "https://twitter.com/claudeai/status/2062220049146876347/photo/1"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/o0Jxu4vpM7",
+                "resolvedUrl": "https://twitter.com/claudeai/status/2062220045984346276/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-04",
+    "updatedAt": "2026-06-04T12:03:57.805Z",
+    "commit": {
+      "sha": "4320f1901f4ee12119021aa93943698bfb1342e5",
+      "committedAt": "2026-06-04T07:56:30Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-04T12:00:10.757Z",
+    "feedGeneratedAt": "2026-06-04T07:55:53.311Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
