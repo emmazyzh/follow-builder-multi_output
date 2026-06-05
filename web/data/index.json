@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-04T13:49:38.392Z",
-  "latestDate": "2026-06-04",
+  "updatedAt": "2026-06-05T15:19:08.316Z",
+  "latestDate": "2026-06-05",
   "dates": [
+    {
+      "date": "2026-06-05",
+      "title": "AI Builders Daily · 2026-06-05",
+      "summary": "**ChatGPT** rolled out web-app publishing and a memory upgrade; **Codex** got a Python SDK while OpenAI disclosed a token undercount bug; **Anthropic** dominated the builder chatter with Claude writing most of its own code, a blunt Claude Code postmortem, and Managed Agents pushing deeper into enterprise infra; real-world evals, agent-native writing tools, and personal workflow automation kept the pressure on. \n\n**ChatGPT** 今天连发两下：能直接做并发布网页应用，记忆也升级了；**Codex** 一边放出 Python SDK，一边公开说修了计费少算 token 的 bug；**Anthropic** 这波声量最大，既有 Claude Code 事故复盘，也有 Managed Agents 往企业内网继续钻，还顺手放出一组很猛的内部数据，说 Claude 已经写了大部分自家代码；另一边，真实世界评测、给代理用的写作工具、个人工作流自动化，也都开始从概念往实战挪。",
+      "itemCount": 22,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-05T15:19:08.315Z",
+      "commit": {
+        "sha": "401153549bd82d609d01269711ee4243b9cdd6be",
+        "committedAt": "2026-06-05T07:49:14Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-04",
       "title": "AI Builders Daily · 2026-06-04",

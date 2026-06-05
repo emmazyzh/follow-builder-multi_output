@@ -1,0 +1,903 @@
+{
+  "payload": {
+    "date": "2026-06-05",
+    "title": "AI Builders Daily · 2026-06-05",
+    "summary": "**ChatGPT** rolled out web-app publishing and a memory upgrade; **Codex** got a Python SDK while OpenAI disclosed a token undercount bug; **Anthropic** dominated the builder chatter with Claude writing most of its own code, a blunt Claude Code postmortem, and Managed Agents pushing deeper into enterprise infra; real-world evals, agent-native writing tools, and personal workflow automation kept the pressure on. \n\n**ChatGPT** 今天连发两下：能直接做并发布网页应用，记忆也升级了；**Codex** 一边放出 Python SDK，一边公开说修了计费少算 token 的 bug；**Anthropic** 这波声量最大，既有 Claude Code 事故复盘，也有 Managed Agents 往企业内网继续钻，还顺手放出一组很猛的内部数据，说 Claude 已经写了大部分自家代码；另一边，真实世界评测、给代理用的写作工具、个人工作流自动化，也都开始从概念往实战挪。",
+    "items": [
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=oWOz2htozfI",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-04T12:30:00.000Z",
+        "sections": [
+          {
+            "headline": "**OpenAI**’s Dan Roberts on RL, math breakthroughs, and AI discovery / **OpenAI** 的 Dan Roberts 谈强化学习、数学突破与 AI 发现",
+            "body": "**Matt Turck** talks with **OpenAI** researcher **Dan Roberts** about why reinforcement learning has become central to modern frontier models, and why test-time reasoning is starting to matter for real scientific work. The discussion ties a volatile week in AI math to a broader shift: models are getting better not just at solving framed tasks, but at pursuing contrarian lines of thought long enough to uncover something new.\n\nThey also draw a sharp contrast between **OpenAI**’s more open-ended exploratory approach and **DeepMind**’s formal proof workflow in **Lean**. Roberts argues the path to AI-assisted science will likely be gradual, but the combination of language, RL, and sustained reasoning is already pushing models into territory that looks much closer to genuine research behavior.\n\n**Matt Turck** 找来 **OpenAI** 的研究员 **Dan Roberts**，聊为什么强化学习已经成了前沿模型的核心，也聊测试时推理为什么开始真的影响科学研究。这期的背景是 AI 数学圈刚过了一周大新闻，重点不只是模型会做题，而是它们开始能沿着不那么顺手、甚至有点逆向的思路一直追下去，最后真挖出点新东西。\n\n他们也把 **OpenAI** 和 **DeepMind** 的路线差别讲得很清楚：前者更像开放式探索，后者更强调在 **Lean** 里做形式化证明。Roberts 的判断不算夸张，意思也很明确: AI 变成科学助手不会是一夜之间的事，但语言能力、强化学习和长程推理叠在一起，已经把模型推到更接近“真研究”的地带了。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=oWOz2htozfI"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "Anthropic Engineering",
+        "profile_url": "https://www.anthropic.com/engineering/april-23-postmortem",
+        "source_label": "Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "**Anthropic** details three separate **Claude Code** quality regressions / **Anthropic** 拆开讲清 **Claude Code** 的三次质量回退",
+            "body": "**Anthropic** says reports of worsening **Claude Code** quality traced back to three product-layer changes rather than model or API degradation. The first was a March switch from high to medium default reasoning effort to cut latency; users felt the drop in intelligence quickly, and Anthropic reversed it. The second was a prompt-caching bug that kept clearing prior reasoning after an idle session, making Claude seem forgetful, repetitive, and oddly inconsistent. The third was a prompt tweak meant to reduce verbosity that ended up hurting coding quality and was rolled back.\n\nThe post is unusually direct about how hard the issue was to reproduce and why internal evals missed it. Anthropic says the incidents have been fixed, subscriber usage limits are being reset, and the company is expanding review context and guardrails so similar regressions are less likely to slip through again.\n\n**Anthropic** 的说法很明确：大家感觉 **Claude Code** 变笨，不是底层模型坏了，也不是 API 出问题，而是产品层连续三处改动叠出来的。第一刀是 3 月把默认推理强度从 high 调到 medium，为了压延迟，结果用户很快就觉得智力掉了，于是又改回去。第二刀更伤，是缓存优化里的 bug，让空闲会话之后的历史推理被一轮轮清掉，Claude 就开始健忘、重复、工具乱用。第三刀是想压 verbosity 的系统提示词，结果把写代码质量也带崩了，最后撤回。\n\n这篇复盘难得不打官腔，直接承认问题一开始很难复现，内部评测也没及时抓到。现在这几处都已经修掉，订阅用户的额度会重置，后面还会补更多审查上下文和防线，免得这种回退再悄悄溜过去。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/april-23-postmortem"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "Anthropic Engineering",
+        "profile_url": "https://www.anthropic.com/engineering/managed-agents",
+        "source_label": "Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "**Managed Agents** splits the agent brain, hands, and memory / **Managed Agents** 把代理的大脑、手脚和记忆拆开了",
+            "body": "**Anthropic** frames **Managed Agents** as an infrastructure redesign for long-running agents. The core move is architectural: separate the harness that calls Claude, the sandbox that executes tools and code, and the durable session log that stores what happened. That decoupling makes failures easier to recover from, lets sandboxes be replaced without losing the agent session, and avoids tying the entire system to one fragile container.\n\nThe post also shows the security and context-management logic behind the design. Credentials are kept out of the sandbox through repo-scoped auth and MCP proxies, while the session log becomes an external memory object the agent can revisit instead of relying only on the model context window. It reads like Anthropic trying to turn agent orchestration into a stable systems interface rather than a one-off harness hack.\n\n**Anthropic** 这篇讲的不是功能小修小补，而是长程代理底座怎么重搭。核心动作很系统：把调用 Claude 的 harness、执行代码和工具的 sandbox、还有记录全过程的 session log 拆开。这样一来，哪块挂了就修哪块，sandbox 死了也不用把整场会话一起陪葬，整个系统不再绑在那种一坏就得人工抢救的单容器设计上。\n\n它顺手也把安全和上下文管理讲透了。凭证不进 sandbox，Git 和 MCP 调用都走更窄的边界；长任务的记忆也不再死扛模型上下文窗口，而是放进可回读的 session log。读下来很像 **Anthropic** 在把 agent orchestration 从“工程师临时拼的 harness”往稳定接口层推。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/managed-agents"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Claude Product",
+        "profile_url": "https://claude.com/blog/claude-managed-agents-updates",
+        "source_label": "Blog",
+        "posted_at": "May 19, 2026",
+        "sections": [
+          {
+            "headline": "**Claude Managed Agents** adds self-hosted sandboxes and private **MCP** tunnels / **Claude Managed Agents** 新增自托管沙箱和私有 **MCP** 隧道",
+            "body": "**Claude Managed Agents** can now run tool execution inside customer-controlled sandboxes and connect to private **MCP** servers without exposing them to the public internet. Anthropic keeps the orchestration loop, but compute, files, packages, and internal services can stay inside the customer perimeter or inside managed providers such as **Cloudflare**, **Daytona**, **Modal**, and **Vercel**.\n\nThe update is aimed squarely at enterprise deployment friction: more control over runtime images and resource sizing, tighter auditability, and a cleaner path to internal databases, APIs, and knowledge systems. Self-hosted sandboxes are in public beta, while MCP tunnels are still in research preview.\n\n**Claude Managed Agents** 现在可以把工具执行放进客户自己控制的 sandbox 里，也能连到私有 **MCP** 服务，而且不用把这些服务直接暴露到公网。Anthropic 继续托管编排循环，但算力、文件、依赖包和内部服务可以留在客户边界内，或者放在 **Cloudflare**、**Daytona**、**Modal**、**Vercel** 这些托管环境里。\n\n这次更新瞄得很准，就是企业落地时最烦的那几件事：运行环境谁说了算，审计怎么做，资源怎么配，内网数据库和 API 怎么接。自托管沙箱已经公测，MCP 隧道还在研究预览阶段。",
+            "source_links": [
+              "https://claude.com/blog/claude-managed-agents-updates"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Claude Product",
+        "profile_url": "https://claude.com/blog/connectors-for-everyday-life",
+        "source_label": "Blog",
+        "posted_at": "Apr 23, 2026",
+        "sections": [
+          {
+            "headline": "**Claude** expands connectors from work apps into everyday consumer services / **Claude** 把连接器从办公软件一路扩到日常消费应用",
+            "body": "**Claude** is adding a new wave of consumer-facing connectors, including **AllTrails**, **Instacart**, **Audible**, **Tripadvisor**, **TurboTax**, **Uber**, and more. Anthropic says connectors can now surface dynamically inside conversation based on user context, so Claude can suggest the right app for tasks like finding reservations, groceries, or travel options instead of forcing people to browse a static tool list.\n\nThe pitch is convenience without ads or hidden ranking deals: users choose what to connect, data from connected apps is not used for model training, and Claude is meant to confirm before purchases or bookings. The broader play is obvious even if Anthropic doesn’t overstate it: Claude wants to become a single conversational layer across both work tools and personal services.\n\n**Claude** 这次加的不只是工作软件，而是直接往日常生活里伸，接上了 **AllTrails**、**Instacart**、**Audible**、**Tripadvisor**、**TurboTax**、**Uber** 这些更偏消费场景的服务。Anthropic 还改了连接器的出现方式，不再让用户自己翻工具目录，而是根据上下文在对话里直接冒出来，比如订餐、买菜、查行程这种事，Claude 会自己提议该连哪个应用。\n\n它强调的一点也挺直白：不做广告位，不搞付费排序，用户自己决定连什么，连接过来的数据也不拿去训练模型，真到下单或预订前还会先确认。说白了，Claude 想吃下的不只是办公入口，而是整层对话式操作界面。",
+            "source_links": [
+              "https://claude.com/blog/connectors-for-everyday-life"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-05T00:16:00.000Z",
+        "sections": [
+          {
+            "headline": "Re-shared a linked point / 转发并表示认同链接内容",
+            "body": "ibid https://t.co/eKasZ0D6Q1\n\n同上，我也这个看法 https://t.co/eKasZ0D6Q1",
+            "source_links": [
+              "https://x.com/swyx/status/2062689862445379983"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/dkundel/status/2062650378089594955?s=46",
+                "resolvedUrl": "https://x.com/dkundel/status/2062650378089594955",
+                "authorName": "dominik kundel",
+                "authorHandle": "dkundel",
+                "authorUrl": "https://x.com/dkundel",
+                "text": "http://x.com/i/article/2062645394719547392",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "http://x.com/i/article/2062645394719547392"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/eKasZ0D6Q1",
+                "resolvedUrl": "https://x.com/dkundel/status/2062650378089594955"
+              }
+            ]
+          },
+          {
+            "headline": "Singapore investors finally take a local database winner seriously / 新加坡投资人终于认真看待本地跑出的数据库公司",
+            "body": "about time that the leading database company born in Singapore actually had Singapore investors take it seriously! https://t.co/UohEPZEUWH https://t.co/Gp9vO8mC7Q\n\n总算到了这一步：一家诞生在新加坡、已经做到头部的数据库公司，终于被新加坡本地投资人认真对待了。https://t.co/UohEPZEUWH https://t.co/Gp9vO8mC7Q",
+            "source_links": [
+              "https://x.com/swyx/status/2062627150885450065"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ_sT-DbwAAA_12.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2062627150885450065/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/kiwicopple/status/2062595323470717093",
+                "resolvedUrl": "https://x.com/kiwicopple/status/2062595323470717093",
+                "authorName": "Paul Copplestone - e/postgres",
+                "authorHandle": "kiwicopple",
+                "authorUrl": "https://x.com/kiwicopple",
+                "text": "Supabase has raised $500M at a $10B valuation\n\nIn this round we are giving @supabase employees the opportunity to cash out 25% of their vested options. We have done this in every round since inception.\n\nWe do it as a “cashless transaction” so that employees don’t need to front",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "Supabase 以 100 亿美元估值完成了 5 亿美元融资。\n\n在这一轮里，我们让 @supabase 员工有机会套现其已归属期权的 25%。自公司创立以来，我们每一轮都是这么做的。\n\n我们通过“无现金交易”来完成，这样员工就不需要先自己垫付"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/UohEPZEUWH",
+                "resolvedUrl": "https://x.com/swyx/status/2062627150885450065/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ_sT-DbwAAA_12.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Gp9vO8mC7Q",
+                "resolvedUrl": "https://x.com/kiwicopple/status/2062595323470717093"
+              }
+            ]
+          },
+          {
+            "headline": "**Cognition** ships long-horizon real-world evals for **Devin** / **Cognition** 放出面向 **Devin** 的长时程真实世界评测",
+            "body": "Finally! the first eval ship from cog!!!!!!!!!! 👼🏼\n\nTo contextualize: @METR_Evals cap out at ~16 hours. \n\nCog has private enterprise evals up to 100hrs, and is confident enough to put a financial guarantee on it 🤯\n\nMETR dataset: ML eng, GPU kernels, cybersecurity\n\n> \"METR (2026) used a combination of GPT-4o and GPT-5 to estimate the human-equivalent times from compressed Claude Code transcripts. These transcripts were collected from 7 METR technical staff on 34 sessions labeled on human ground truth\". rlog​ of 0.83\n\nCog dataset: real life java/typescript/python/c# feature dev, bugfixes, migrations\n\n> \"We collected a ground-truth dataset by asking Devin users to review recent representative sessions, and estimate how long each completed session would have taken without Devin. Our dataset consists of 258 sessions from 126 users across a diverse set of enterprise customers.\" rlog​ of 0.74 on held out set\n\nthis is pioneering real world evals work and part 1 of a broader frontier code evals drop that I'm really looking forward to writing up. huge kudos to @annarmitchell and @ryanbai1412 for leading the unglamorous last mile data collection!!\n\n终于！cog 发了第一份 eval!!!!!!!!!! 👼🏼\n\n补个背景：@METR_Evals 现在大概到 ~16 小时封顶。\n\nCog 这边已经有面向企业私有场景、最长到 100 小时的评测，而且甚至敢给金融担保 🤯\n\nMETR 数据集：机器学习工程、GPU kernel、网络安全\n\n> “METR（2026）使用 GPT-4o 和 GPT-5 的组合，从压缩后的 Claude Code 转录中估算等效人类耗时。这些转录来自 7 位 METR 技术成员的 34 次会话，并且有人类真实标注。” rlog 为 0.83\n\nCog 数据集：真实世界里的 java/typescript/python/c# 功能开发、修 bug、迁移\n\n> “我们通过让 Devin 用户回看近期具有代表性的会话，并估算如果没有 Devin，这些已完成会话要花多久，来收集真实标注数据。数据集包含 126 位用户、来自多家企业客户的 258 次会话。” 留出集上的 rlog 为 0.74\n\n这是真正在做真实世界评测的开路工作，也是更大一波前沿代码评测发布的第一部分。我很期待后面把它写出来。也得大力夸一下 @annarmitchell 和 @ryanbai1412，把这堆不光鲜但最难的最后一公里数据收集扛下来了！！",
+            "source_links": [
+              "https://x.com/swyx/status/2062611218196771017"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ_a3ThbMAAUATb.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2062611218196771017/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ_cQgpawAA8ND7.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2062611218196771017/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ_cTFRaEAA0IST.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2062611218196771017/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X",
+        "posted_at": "2026-06-04T22:48:56.000Z",
+        "sections": [
+          {
+            "headline": "**Gemini** feature on macOS gets a shout-out / macOS 上的 **Gemini** 功能被点名夸了一下",
+            "body": "Love this Gemini feature on my macOS app! https://t.co/NOa6NhnxOT\n\n我很喜欢这个在我 macOS 应用里的 Gemini 功能！https://t.co/NOa6NhnxOT",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2062667951485108354"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/GeminiApp/status/2062652523945836770",
+                "resolvedUrl": "https://x.com/GeminiApp/status/2062652523945836770",
+                "authorName": "Google Gemini",
+                "authorHandle": "GeminiApp",
+                "authorUrl": "https://x.com/GeminiApp",
+                "text": "Get tailored help for what's on your screen using the Gemini app for macOS. 💻\n\nSimply press both Command ⌘ keys at the same time to seamlessly attach your active window to the chat, without needing to take manual screenshots or switch tabs.",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "使用 macOS 版 Gemini app，针对你屏幕上的内容获得量身定制的帮助。💻\n\n只需同时按下两个 Command ⌘ 键，就能无缝将当前活动窗口附加到聊天中，无需手动截图或切换标签页。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/NOa6NhnxOT",
+                "resolvedUrl": "https://x.com/geminiapp/status/2062652523945836770"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-05T03:12:15.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** gets a Python SDK / **Codex** 现在有 Python SDK 了",
+            "body": "You can use codex within your own programs using the Python SDK. It's awesome. Built by @ah20im and friends\n\n```\npip install openai-codex\n```\n\nhttps://t.co/GjQVEPwtkF\n\n你现在可以在自己的程序里通过 Python SDK 用 codex 了。很好用。由 @ah20im 和朋友们做的。\n\n```\npip install openai-codex\n```\n\nhttps://t.co/GjQVEPwtkF",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2062734215494664697"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/GjQVEPwtkF",
+                "resolvedUrl": "https://developers.openai.com/codex/sdk#python-library"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** fixes token undercount bug for some paid accounts / **Codex** 修复了部分付费账户 token 少计数的问题",
+            "body": "We're fixing a codex bug today that was causing us to undercount tokens being served to some Pro and Plus accounts by a small amount. This impacted &lt; 15% of accounts.\n\nNot the kind of bug you want us to fix, but didn't want to do this silently and thought you should know.\n\n我们今天在修一个 codex 的 bug。这个问题会让部分 Pro 和 Plus 账户收到的 token 被少量少计数，影响范围不到 15% 的账户。\n\n这不是那种你会希望我们去修的 bug，但我们不想悄悄处理掉，还是觉得应该告诉你。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2062648326332539015"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "Product Creator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-05T04:00:00.000Z",
+        "sections": [
+          {
+            "headline": "Something just went live / 东西刚刚上线了",
+            "body": "lol it's on now https://t.co/FUhgGF2Z3d\n\n笑死，现在已经开了 / 上线了 https://t.co/FUhgGF2Z3d",
+            "source_links": [
+              "https://x.com/petergyang/status/2062746231173255459"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKBYwkYaUAAwzLW.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2062746231173255459/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/FUhgGF2Z3d",
+                "resolvedUrl": "https://x.com/petergyang/status/2062746231173255459/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKBYwkYaUAAwzLW.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** wins on capability but loses on first-impression frontend / **Codex** 能力强，但前端第一眼观感还差点意思",
+            "body": "Also as great as Codex is (and I'm really starting to love it) the frontend design still leaves alot to be desired. \n\nI have a /slides skill and you can guess which one Codex made vs. Claude.\n\nYes I know I can make an image with ChatGPT first and then tell Codex to build it but Claude can one shot great looking HTML slides.\n\nCodex needs to fix this imo it's often a novice's first impression of a coding or knowledge work tool.\n\n另外，Codex 虽然确实很强（而且我也越来越喜欢它了），但前端设计还是挺不够看的。\n\n我有个 /slides skill，你基本一眼就能猜出哪个是 Codex 做的，哪个是 Claude 做的。\n\n对，我知道我可以先用 ChatGPT 生成一张图，再让 Codex 去照着搭，但 Claude 现在就是能一把出很好看的 HTML 幻灯片。\n\n我觉得 Codex 得把这件事补上，因为这往往就是新手对一个编程或知识工作工具的第一印象。",
+            "source_links": [
+              "https://x.com/petergyang/status/2062743491365544361"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKBVrf5bQAAY2_L.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2062743491365544361/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKBVufVbQAA2S9B.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2062743491365544361/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Set up **Codex** workflows first, save half your time later / 先把 **Codex** 工作流搭好，后面至少能省一半时间",
+            "body": "I spent the whole day today setting up integrations and skills in Codex for my top creator workflows.\n\nNow I'm convinced that you can save at least 50% of your time on any type of knowledge work if you just set up the system upfront.\n\nNote that all my workflows have human checkpoints along the way so I can apply my \"taste.\"\n\nAnyway, it feels extremely liberating to have all this set up. If you want to do the same, just follow these three steps:\n\n1. Reflect on your past week:\n- What work did you spend the most time on?\n- What work was the most repetitive?\n\nPick your most painful, manual workflow to start.\n\n2. List out every single step of that manual workflow. Be very detail oriented.\n\n3. Open Codex (or Claude Code) and paste the list of steps from 2 and ask it \"What integrations and skills can I build to streamline this with your help?\"\n\nAI will guide you the rest of the way.\n\n我今天一整天都在给自己最常用的创作者工作流配置 Codex 的 integrations 和 skills。\n\n现在我基本确信，只要前面把系统搭好，任何知识工作都至少能省下 50% 的时间。\n\n先说明一下：我的所有工作流里都会保留人工检查点，这样我还能把自己的“品味”放进去。\n\n总之，全都搭好之后，整个人轻松很多。如果你也想这么做，就按这三步来：\n\n1. 回看你过去一周：\n- 什么工作最花时间？\n- 什么工作最重复？\n\n先挑那个最痛、最手工的流程下手。\n\n2. 把这个手工流程的每一步全部列出来。越细越好。\n\n3. 打开 Codex（或者 Claude Code），把第 2 步那份步骤清单贴进去，问它：“为了在你的帮助下把这件事变顺，我可以做哪些 integrations 和 skills？”\n\n后面的路，AI 会继续带你走。",
+            "source_links": [
+              "https://x.com/petergyang/status/2062740262338929110"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Cat Wu",
+        "person_handle": "_catwu",
+        "person_identity": "Anthropic PM",
+        "profile_url": "https://x.com/_catwu",
+        "source_label": "X",
+        "posted_at": "2026-06-04T22:15:29.000Z",
+        "sections": [
+          {
+            "headline": "Hiring a **Claude Code** PM focused on model performance / 招 **Claude Code** 产品经理，重点盯模型表现",
+            "body": "I'm hiring a PM for Claude Code, focused on model performance.\n\nIf you have experience writing agentic evals and want to integrate research ideas into our core products, I'd love to hear from you here: https://t.co/IKWlAr8tSb\n\n我在招一个做 Claude Code 的 PM，重点方向是模型表现。\n\n如果你写过 agentic evals，也想把研究思路真正接进核心产品，欢迎来找我：https://t.co/IKWlAr8tSb",
+            "source_links": [
+              "https://x.com/_catwu/status/2062659533047259212"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/IKWlAr8tSb",
+                "resolvedUrl": "https://job-boards.greenhouse.io/anthropic/jobs/5247640008"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-06-04T18:40:22.000Z",
+        "sections": [
+          {
+            "headline": "Personal software should feel like a home-cooked meal / 个人软件就该像一顿家常饭那样贴身",
+            "body": "An app can be a home-cooked meal (2020) \n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://t.co/vQLa9wxUzq\n\n一个 app 可以像一顿家常饭（2020）\n\n个人软件这个想法在 2020 年还有点太早，但到了 2026，它真的可以像一顿家里做的饭，或者一封手写信那样私人。\n\nhttps://t.co/vQLa9wxUzq",
+            "source_links": [
+              "https://x.com/trq212/status/2062605395101884916"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/vQLa9wxUzq",
+                "resolvedUrl": "https://robinsloan.com/notes/home-cooked-app/"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Dynamic workflows unlock new task types for **Claude Code** / 动态工作流让 **Claude Code** 能接住全新的任务类型",
+            "body": "How dynamic workflows allow Claude Code to handle whole new types of tasks\n\nhttps://t.co/xdRfnaa43V\n\n动态工作流是怎么让 Claude Code 能处理整批以前接不住的新任务类型的\n\nhttps://t.co/xdRfnaa43V",
+            "source_links": [
+              "https://x.com/trq212/status/2062556889171517499"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/trq212/status/2061907337154367865",
+                "resolvedUrl": "https://x.com/trq212/status/2061907337154367865",
+                "authorName": "Thariq",
+                "authorHandle": "trq212",
+                "authorUrl": "https://x.com/trq212",
+                "text": "http://x.com/i/article/2061850535708483585",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "http://x.com/i/article/2061850535708483585"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/xdRfnaa43V",
+                "resolvedUrl": "https://x.com/trq212/status/2061907337154367865"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-04T21:24:53.000Z",
+        "sections": [
+          {
+            "headline": "Prompt to shop / 用提示词直接购物",
+            "body": "Prompt to shop: https://t.co/onfxeUYGxB\n\n用提示词去购物：https://t.co/onfxeUYGxB",
+            "source_links": [
+              "https://x.com/amasad/status/2062646796804145517"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/replit/status/2062594881625940379",
+                "resolvedUrl": "https://x.com/Replit/status/2062594881625940379",
+                "authorName": "Replit ⠕",
+                "authorHandle": "Replit",
+                "authorUrl": "https://x.com/Replit",
+                "text": "We partnered with Shopify so you can go from idea to live store in minutes\n\nJust tell Replit Agent what you want to sell. It will:\n\n- Build a custom storefront\n- Create your Shopify store\n- Help you add products\n\nClaim it in Shopify, set up payments, and you're open for",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "我们与 Shopify 合作了，现在你可以在几分钟内从想法直接做到上线店铺。\n\n只要告诉 Replit Agent 你想卖什么，它就会：\n\n- 搭建一个定制店铺前端\n- 创建你的 Shopify 店铺\n- 帮你添加商品\n\n在 Shopify 中认领它，设置付款方式，然后你就可以开始营业了"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/onfxeUYGxB",
+                "resolvedUrl": "https://x.com/replit/status/2062594881625940379"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-04T14:02:26.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel** backs an open web platform and **Vite**-native frameworks / **Vercel** 继续押注开放 Web 平台和原生支持 **Vite** 的框架",
+            "body": "Congrats Void team!\n\nWe @vercel reaffirm our collaboration on an open platform for the web, with our investment in @nitrojsdev, open runtimes, and native support for Vite-based frameworks like Nuxt, Svelte, and TanStack Start 🫡 https://t.co/a6ZWOjPKPq\n\n恭喜 Void 团队！\n\n我们 @vercel 再次明确表态，会继续一起推动一个面向 Web 的开放平台，包括我们对 @nitrojsdev 的投资、开放 runtime，以及对 Nuxt、Svelte、TanStack Start 这类基于 Vite 的框架提供原生支持 🫡 https://t.co/a6ZWOjPKPq",
+            "source_links": [
+              "https://x.com/rauchg/status/2062535454130676193"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/voidzerodev/status/2062520542121304146",
+                "resolvedUrl": "https://x.com/voidzerodev/status/2062520542121304146",
+                "authorName": "VoidZero",
+                "authorHandle": "voidzerodev",
+                "authorUrl": "https://x.com/voidzerodev",
+                "text": "VoidZero is joining Cloudflare.\n\nOur mission stays the same: to make JavaScript developers more productive than ever before. Vite, Vitest, Rolldown, Oxc, and Vite+ remain MIT-licensed. Evan and the VoidZero team will continue leading them.\n\nCloudflare shares our commitment to",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "VoidZero 正在加入 Cloudflare。\n\n我们的使命不变：让 JavaScript 开发者比以往任何时候都更高效。Vite、Vitest、Rolldown、Oxc 和 Vite+ 将继续采用 MIT 许可证。Evan 和 VoidZero 团队也会继续主导这些项目。\n\nCloudflare 与我们一样致力于"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/a6ZWOjPKPq",
+                "resolvedUrl": "https://x.com/voidzerodev/status/2062520542121304146"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Alex Albert",
+        "person_handle": "alexalbert__",
+        "person_identity": "Anthropic Research",
+        "profile_url": "https://x.com/alexalbert__",
+        "source_label": "X",
+        "posted_at": "2026-06-04T17:01:43.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** now writes most of **Anthropic**’s code / **Claude** 现在已经写了 **Anthropic** 大部分代码",
+            "body": "We just published internal data on how much of Claude's development is already being done by Claude:\n- Over 80% of all code merged into our codebase is now written by Claude\n- It's been months since many researchers at Anthropic hand-wrote code\n- The typical Anthropic engineer ships 8x as much code as they did in 2024\n- On the most open-ended engineering tasks, Claude's success rate jumped from ~26% to 76% in 6 months\n- When research sessions went off-track, Claude proposed a better next step than the human took 64% of the time\n\nWe're not at recursive self-improvement yet, but it could come sooner than most expect. I highly recommend reading the full blog post.\n\n我们刚发布了一组内部数据，讲 Claude 的开发工作里到底有多少已经是 Claude 自己在做：\n- 现在合并进我们代码库的代码里，超过 80% 是 Claude 写的\n- Anthropic 里很多研究员已经好几个月没亲手写代码了\n- 一个典型的 Anthropic 工程师，现在交付的代码量是 2024 年的 8 倍\n- 在最开放式的工程任务上，Claude 的成功率 6 个月内从大约 26% 跳到 76%\n- 当研究会话跑偏时，Claude 提出的下一步有 64% 的时候比人类实际采取的那一步更好\n\n我们还没到递归式自我改进那一步，但它也许会比多数人想得更早到来。我很推荐去看完整博客。",
+            "source_links": [
+              "https://x.com/alexalbert__/status/2062580571214389510"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-05T02:48:34.000Z",
+        "sections": [
+          {
+            "headline": "AI creates more ideas than organizations can execute / AI 带来的点子已经多到组织执行不过来",
+            "body": "Good thought provoking post from Anthropic. I think this paragraph points to the key element of the optimistic scenario of AI:\n\n“There has been an explosion of new ideas, initiatives, tools, and simulations, as a result of Anthropic employees working with highly capable models—far more than we have the capacity to pursue. The rate at which organizations can spot and fix these bottlenecks may be a skill that improves over time, and it may become the most important skill for any organization.”\n\nAI lowers the barrier dramatically to allowing us to do more. As a result of that, we have far more ideas than we can pursue, and for the ones that we want to pursue we’re ultimately limited by our ability to go take on the surrounding work to execute those ideas. There’s almost no amount of AI progress that can happen where that goes away.\n\nAI is going to let us build much more software, launch more marketing campaigns, research more drugs, and so on. All of this work, even when augmented by agents, still ultimately requires people to manage.\n\nAnthropic 这篇挺值得想。我觉得下面这段抓住了 AI 乐观叙事里最关键的一点：\n\n“随着 Anthropic 员工和高能力模型一起工作，新的点子、项目、工具和模拟出现了爆发式增长，已经远远超过我们的实际承接能力。一个组织能多快发现并修掉这些瓶颈，可能会成为会持续进化的能力，也可能会变成任何组织最重要的能力。”\n\nAI 大幅降低了做更多事的门槛。结果就是，我们手里的想法会比能真正推进的多得多；而那些真想推进的事，最后还是受限于我们有没有能力把周边执行工作一起扛起来。这件事几乎不会因为 AI 再进步多少就自动消失。\n\nAI 会让我们能写更多软件、发更多营销活动、研究更多药物，等等。哪怕这些工作都有 agent 帮忙，最终还是得有人去管。",
+            "source_links": [
+              "https://x.com/levie/status/2062728257359790292"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-05T05:07:04.000Z",
+        "sections": [
+          {
+            "headline": "Two **YC** decacorns and a private fusion milestone in one day / 一天两个 **YC** 十角兽，还有私营核聚变新里程碑",
+            "body": "Two YC decacorns in one day and one of them is building commercial fusion. Polaris hit 150 million degrees C, first privately funded machine to do it. This is the abundance future, built by people who actually ship. https://t.co/calTVslNEw\n\n一天里冒出两个 YC 十角兽，其中一个还在做商业核聚变。Polaris 到了 1.5 亿摄氏度，是第一台做到这件事的私营资金机器。这就是那个“丰裕未来”，而且是会真做东西的人一步步造出来的。https://t.co/calTVslNEw",
+            "source_links": [
+              "https://x.com/garrytan/status/2062763109849411834"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/agupta/status/2062742126375428192",
+                "resolvedUrl": "https://x.com/agupta/status/2062742126375428192",
+                "authorName": "Ankit Gupta",
+                "authorHandle": "agupta",
+                "authorUrl": "https://x.com/agupta",
+                "text": "oh wow a second YC-funded decacorn in the same day that must be some sort of record",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "textZh": "哇，同一天出现第二家获得 YC 投资的十角兽，这大概算是某种纪录了吧"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/calTVslNEw",
+                "resolvedUrl": "https://x.com/agupta/status/2062742126375428192"
+              }
+            ]
+          },
+          {
+            "headline": "Almost product-market fit still is not product-market fit / 差一点的产品市场契合，还是不算契合",
+            "body": "So close to product market fit is still not product market fit https://t.co/Pmz5OH1xNV\n\n再接近产品市场契合，只要没到，那就还是没到。https://t.co/Pmz5OH1xNV",
+            "source_links": [
+              "https://x.com/garrytan/status/2062761266083754088"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/garrytan/status/2062760454649487491",
+                "resolvedUrl": "https://x.com/garrytan/status/2062760454649487491",
+                "authorName": "Garry Tan",
+                "authorHandle": "garrytan",
+                "authorUrl": "https://x.com/garrytan",
+                "text": "http://x.com/i/article/2062758410375110656",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "textZh": "http://x.com/i/article/2062758410375110656"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Pmz5OH1xNV",
+                "resolvedUrl": "https://x.com/garrytan/status/2062760454649487491"
+              }
+            ]
+          },
+          {
+            "headline": "Shared a link only / 仅分享了一个链接",
+            "body": "https://t.co/BA5kVYqcji\n\nhttps://t.co/BA5kVYqcji",
+            "source_links": [
+              "https://x.com/garrytan/status/2062760454649487491"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/BA5kVYqcji",
+                "resolvedUrl": "http://x.com/i/article/2062758410375110656"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "AI Podcast Host",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-04T17:27:17.000Z",
+        "sections": [
+          {
+            "headline": "Dan Roberts interview is live across platforms / Dan Roberts 访谈已在多平台上线",
+            "body": "This great conversation with @danintheory of @OpenAI  is also available on Spotify, Apple Podcasts and here on YouTube:\n\nhttps://t.co/0QNdUm8dVj\n\n这场和 @danintheory（@OpenAI）的对话现在也已经上了 Spotify、Apple Podcasts，以及这里的 YouTube：\n\nhttps://t.co/0QNdUm8dVj",
+            "source_links": [
+              "https://x.com/mattturck/status/2062587004261748887"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/0QNdUm8dVj",
+                "resolvedUrl": "https://youtu.be/oWOz2htozfI?si=_96kusfcj31LgbHl"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Thread maps the full Dan Roberts episode on **OpenAI** and RL / 这条长帖梳理了 Dan Roberts 那期关于 **OpenAI** 和强化学习的完整脉络",
+            "body": "Why AI Can Now Make Discoveries - my conversation with @danintheory, Lead of the Foundations of Reinforcement Learning team at @OpenAI \n\n00:00 Intro: AI's wild week in mathematics\n\n01:21 What OpenAI's Foundations of RL team does\n\n03:08 Dan's journey: from black holes and quantum gravity to frontier AI\n\n07:04 Are AI systems becoming useful for real science\n\n08:21 The AI math moment: Erdős, OpenAI, DeepMind, and Anthropic\n\n08:52 Why the OpenAI result was an act of exploration\n\n10:25 OpenAI vs. DeepMind: informal reasoning vs. formal proof\n\n12:13 RL 101: learning by doing, not just watching\n\n15:10 Why reinforcement learning works\n\n15:58 How RL breaks: sparse feedback and long-horizon tasks\n\n17:03 RLHF: how human feedback shaped early language models\n\n18:48 Move 37, self-play, and the search for novel strategies\n\n22:16 Explore vs. exploit in scientific discovery\n\n24:49 Why RL may now be \"the cake,\" not the cherry on top\n\n25:46 Why RL started working with large language models\n\n27:29 Is RL \"sucking supervision through a straw\"?\n\n28:47 Why language may be the grounding layer for intelligence\n\n31:46 A contrarian take on the Bitter Lesson\n\n32:41 What test-time compute actually is\n\n34:50 How RL gives models the ability to think\n\n35:40 Verifiable rewards, math, coding, and the messy real world\n\n38:00 What physics can teach us about AI\n\n42:08 Is there a thermodynamics of AI?\n\n43:08 From Erdős problems to Einstein-level AI\n\n45:16 Is AI already doing original science?\n\n45:51 How far are we from AI automating AI research\n\n47:41 Why Dan is excited about the future of science\n\n为什么 AI 现在能做出发现——这是我和 @danintheory、也就是 @OpenAI 强化学习基础团队负责人的对话\n\n00:00 开场：AI 数学圈疯狂的一周\n\n01:21 OpenAI 的 Foundations of RL 团队到底做什么\n\n03:08 Dan 的来路：从黑洞和量子引力走到前沿 AI\n\n07:04 AI 系统是不是开始对真正的科学有用了\n\n08:21 AI 数学时刻：Erdős、OpenAI、DeepMind、Anthropic\n\n08:52 为什么 OpenAI 的结果本质上是一种探索行为\n\n10:25 OpenAI vs. DeepMind：非形式化推理 vs. 形式化证明\n\n12:13 RL 101：靠做来学，不只是靠看\n\n15:10 为什么强化学习能奏效\n\n15:58 RL 怎么失灵：稀疏反馈和长时程任务\n\n17:03 RLHF：人类反馈怎样塑造早期语言模型\n\n18:48 Move 37、自我博弈，以及寻找新策略\n\n22:16 科学发现里怎么平衡探索与利用\n\n24:49 为什么 RL 现在可能已经不是“樱桃”，而是“蛋糕本体”\n\n25:46 为什么 RL 开始在大语言模型上起作用\n\n27:29 RL 是不是在“用吸管吸监督信号”\n\n28:47 为什么语言可能是智能的 grounding layer\n\n31:46 对 Bitter Lesson 的一个逆向看法\n\n32:41 test-time compute 到底是什么\n\n34:50 RL 怎么给模型带来“思考”的能力\n\n35:40 可验证奖励、数学、编码和混乱的真实世界\n\n38:00 物理学能教给 AI 什么\n\n42:08 AI 会不会也有一套“热力学”\n\n43:08 从 Erdős 问题到爱因斯坦级 AI\n\n45:16 AI 现在是不是已经在做原创科学\n\n45:51 距离 AI 自动化 AI 研究还有多远\n\n47:41 为什么 Dan 对科学的未来很兴奋",
+            "source_links": [
+              "https://x.com/mattturck/status/2062587000201580808"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/HMoLzqfFN7",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2062577879658213376/img/k4D4edmLYXWWhEQ2.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2062587000201580808/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-04T22:15:57.000Z",
+        "sections": [
+          {
+            "headline": "Built a founder-eval skill from real investor meeting notes / 用真实投资会谈笔记做了一个看 deck 的技能",
+            "body": "Introducing the Nock skill (powered by @meetgranola) 👀\n\nSomeone recently asked me if I can be replaced by AI, and my ego initially said NO WAY.. \n\nThen, I thought about what's the best way to have the most accurate \"AI\" representation of me for these conversations.\n\nSo, I used @claudeai Code to pull >200 1:1 founder pitch meeting notes that were captured by Granola in the last couple of years. \n\nFocused all the notes to only things I asked. Distilled it further down to ~53 meetings where there was a lot of good discussion and debate.\n\nFinally, I took a few of my essays which describe the kind of founders that I love.\n\nUsing those, I used Claude Code again to build this skill called \"Nock\" that has some principles and a question bank that are grounded in real conversations. \n\nTo refine, I used this skill over 5-10 actual decks and conversations where we first had the skill output what it thinks and then we compared it against the real conversation. We kept improving it - till it felt like an accurate representation of me. \n\nSo, if you are a founder raising and want to see what I would think about your deck, try this out: nikunjk dot com / nock\n\nAnd, if you are a VC who wants to build your own Nock, we have that too: nikunjk dot com / buildnock\n\n介绍一下 Nock skill（由 @meetgranola 驱动）👀\n\n最近有人问我，我会不会被 AI 取代，我的自尊第一反应当然是：不可能..\n\n但后来我开始想，怎样才能做出一个在这类对话里最接近“我本人”的 AI 版本。\n\n于是，我用 @claudeai Code 拉了过去几年里由 Granola 记录下来的 200 多份和创始人一对一 pitch 的会议笔记。\n\n先只保留我提过的问题，再进一步压缩到大约 53 场讨论特别充分、来回交锋比较多的会议。\n\n最后，我又加了几篇自己写的文章，里面讲的是我偏爱的创始人类型。\n\n拿这些材料，我又用 Claude Code 做了一个叫 “Nock” 的 skill，里面有一些原则和一套问题库，底子都来自真实对话。\n\n为了继续打磨，我拿这个 skill 跑了 5 到 10 个真实 deck 和真实对话，先让它输出自己的判断，再拿去和真实会谈对照。我们就这样一轮轮改，直到它开始像是一个靠谱的“我”。\n\n如果你正在融资，想看看我会怎么想你的 deck，可以试试：nikunjk dot com / nock\n\n如果你是 VC，也想做一个自己的 Nock，我们也有：nikunjk dot com / buildnock",
+            "source_links": [
+              "https://x.com/nikunj/status/2062659649732825549"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKAJtEoaAAAh1Yk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2062659649732825549/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Backed a team building for the trades / 投了一支做蓝领行业未来工具的团队",
+            "body": "For a year now, I’ve been texting @toddsaunders every week asking him when he’s going to quit to build the future for the trades..\n\nAnd finally when I got the text, I knew we @FPVventures had to invest. A lot of “businessmen” and technologists treat this area as a lucrative business. \n\nVery few people have the empathy, trust and sheer love for this space. And that’s what will enable him, Sean and @DaltonMillsAI to win. \n\nIf you are in the NY area, and want to join this phenomenal group, please reach out!\n\n过去这一年里，我几乎每周都给 @toddsaunders 发短信，问他到底什么时候辞职，去做服务 trades 行业的未来..\n\n等到那条短信终于来了，我就知道我们 @FPVventures 一定得投。很多“生意人”和技术人看这个领域，只会把它当成一个赚钱机会。\n\n真正对这个行业有同理心、有信任、也真心热爱它的人其实很少。而这恰恰是会让他、Sean 和 @DaltonMillsAI 赢下来的东西。\n\n如果你人在纽约，想加入这支很强的团队，欢迎联系！",
+            "source_links": [
+              "https://x.com/nikunj/status/2062543215392428193"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-04T20:10:53.000Z",
+        "sections": [
+          {
+            "headline": "Use **Spiral** with your agent / 让你的代理直接用 **Spiral**",
+            "body": "@every @TrySpiral with your agent here: https://t.co/KvyOAlbWGI\n\n在这里把 @every @TrySpiral 接给你的 agent 用：https://t.co/KvyOAlbWGI",
+            "source_links": [
+              "https://x.com/danshipper/status/2062628176908496989"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/KvyOAlbWGI",
+                "resolvedUrl": "https://writewithspiral.com/"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Spiral 4.0** becomes an agent-ready writing partner / **Spiral 4.0** 变成了给代理用的写作搭子",
+            "body": "NEW:\n\nSpiral 4.0—a writing partner for you and your agent by @every\n\n-> Stylometry: we built a new Style Engine based on the principles of stylometry to extract you and your brand's voice and produce great writing every time, based on examples of your past work\n\n-> MCP and CLI: Spiral is now built to be used by your agent like Codex, Claude Code, OpenClaw and more so you can get great writing automatically\n\nwe use it every day internally to write landing pages, tweets, podcasts, marketing emails and more and to make sure it's ALL on-brand across our entire 30 person team @every\n\n新东西：\n\nSpiral 4.0——来自 @every，给你和你的 agent 用的写作伙伴\n\n-> Stylometry：我们做了一个新的 Style Engine，基于文体计量学原理，从你过去的作品样本里抽出你个人和品牌的声音，让它每次都能写得更像你\n\n-> MCP 和 CLI：Spiral 现在就是按让 agent 直接调用来做的，像 Codex、Claude Code、OpenClaw 这些都能接，这样高质量写作就能自动化\n\n我们团队 @every 现在每天都在内部用它写落地页、推文、播客、营销邮件等等，也靠它保证整个 30 人团队写出来的东西都还是同一个品牌调性",
+            "source_links": [
+              "https://x.com/danshipper/status/2062628079869005876"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HJ_s5niWMAA3FP1.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2062628079869005876/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-04T22:00:35.000Z",
+        "sections": [
+          {
+            "headline": "More jobs are becoming engineering-infused roles / 越来越多岗位都会带上工程属性",
+            "body": "A lot of roles will now have engineering infused into them.\n\nMarketing Engineer is a great example of this. https://t.co/f8E9O8GXgi\n\n很多岗位现在都会被注入工程属性。\n\nMarketing Engineer 就是个很好的例子。https://t.co/f8E9O8GXgi",
+            "source_links": [
+              "https://x.com/adityaag/status/2062655784127971565"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/dbabbs/status/2062552434833068375",
+                "resolvedUrl": "https://x.com/dbabbs/status/2062552434833068375",
+                "authorName": "Dylan Babbs",
+                "authorHandle": "dbabbs",
+                "authorUrl": "https://x.com/dbabbs",
+                "text": "The first Marketing Engineer job board is now live: http://marketingengineer.jobs/\n\n\"Marketing Engineer jobs\" became a breakout Google Search term after we introduced this new role.\n\n@Google already hired their first Marketing Engineer, and companies like @Cloudflare, @tryramp,",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "首个 Marketing Engineer 招聘网站现已上线：http://marketingengineer.jobs/\n\n在我们提出这个新角色后，“Marketing Engineer jobs” 成为了 Google Search 的爆发式搜索词。\n\n@Google 已经招聘了他们的第一位 Marketing Engineer，而像 @Cloudflare、@tryramp 这样的公司，"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/f8E9O8GXgi",
+                "resolvedUrl": "https://x.com/dbabbs/status/2062552434833068375"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X",
+        "posted_at": "2026-06-04T22:22:05.000Z",
+        "sections": [
+          {
+            "headline": "Nostalgia for the early internet / 怀念早期互联网的那股劲儿",
+            "body": "man the early days of the internet were so special\n\n唉，互联网早期那些年真的很特别",
+            "source_links": [
+              "https://x.com/sama/status/2062661191969972645"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Build and publish web apps with **ChatGPT** / 用 **ChatGPT** 构建并发布网页应用",
+            "body": "build and publish web apps with chatgpt!\n\ni really wish i had this when i was a kid, but i do miss hypercard. https://t.co/6wN6SOiU27\n\n用 chatgpt 来构建并发布网页应用！\n\n我真希望自己小时候就有这玩意，不过我还是会想念 hypercard。https://t.co/6wN6SOiU27",
+            "source_links": [
+              "https://x.com/sama/status/2062661071761211561"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/OpenAI/status/2061845949170045346",
+                "resolvedUrl": "https://x.com/OpenAI/status/2061845949170045346",
+                "authorName": "OpenAI",
+                "authorHandle": "OpenAI",
+                "authorUrl": "https://x.com/OpenAI",
+                "text": "Building apps has never been easier.\n\nWith Sites, Codex can turn your work, ideas, and plans into an interactive website or app your team can explore, use, and share with a URL.\n\nRolling out to Business and Enterprise plans, before expanding more broadly.",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "textZh": "构建应用从未如此简单。\n\n有了 Sites，Codex 可以把你的工作、想法和计划变成一个可交互的网站或应用，让你的团队通过 URL 去探索、使用和分享。\n\n正在向 Business 和 Enterprise 方案推出，之后会更广泛开放。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/6wN6SOiU27",
+                "resolvedUrl": "https://x.com/openai/status/2061845949170045346"
+              }
+            ]
+          },
+          {
+            "headline": "Big **ChatGPT** memory upgrade rolls out / **ChatGPT** 记忆功能迎来一波大升级",
+            "body": "big upgrade to chatgpt memory rolling out today! https://t.co/ta7L1M6GDO\n\nchatgpt 的记忆功能今天开始推一波大升级！https://t.co/ta7L1M6GDO",
+            "source_links": [
+              "https://x.com/sama/status/2062660086787613116"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/OpenAI/status/2062567556524003631",
+                "resolvedUrl": "https://x.com/OpenAI/status/2062567556524003631",
+                "authorName": "OpenAI",
+                "authorHandle": "OpenAI",
+                "authorUrl": "https://x.com/OpenAI",
+                "text": "We’ve been researching new ways for ChatGPT memory to carry context across conversations and keep it useful over time.\n\nToday, that work is rolling out as a more capable memory system in ChatGPT. https://openai.com/index/chatgpt-memory-dreaming/",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "textZh": "我们一直在研究新的方式，让 ChatGPT 的记忆能跨对话延续上下文，并随着时间推移持续保持实用。\n\n今天，这项工作正以更强大的记忆系统形式在 ChatGPT 中推出。https://openai.com/index/chatgpt-memory-dreaming/"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ta7L1M6GDO",
+                "resolvedUrl": "https://x.com/openai/status/2062567556524003631"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-06-04T15:33:22.000Z",
+        "sections": [
+          {
+            "headline": "**The Problem Solvers** spotlights founders building with **Claude** / **The Problem Solvers** 系列继续讲用 **Claude** 做事的创始人",
+            "body": "From The Problem Solvers, our series featuring founders taking on hard problems with Claude: https://t.co/lXWwc2eHPe\n\n来自 The Problem Solvers，我们这个讲述创始人如何用 Claude 啃硬问题的系列：https://t.co/lXWwc2eHPe",
+            "source_links": [
+              "https://x.com/claudeai/status/2062558335358927317"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/lXWwc2eHPe",
+                "resolvedUrl": "https://claude.com/problem-solvers"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Lovable** CEO says trust may be AI’s most underrated moat / **Lovable** CEO 说，AI 最被低估的护城河可能是信任",
+            "body": "Anton Osika (@antonosika) is the co-founder and CEO of @lovable, where anyone can build software through conversation.\n\nHis working thesis: the most underrated moat in AI is trust, and earning it takes craft, care, and obsession. https://t.co/xxGDgonNzS\n\nAnton Osika（@antonosika）是 @lovable 的联合创始人兼 CEO，在那里，任何人都可以通过对话来构建软件。\n\n他的一个核心判断是：AI 里最被低估的护城河是信任，而信任这东西，得靠手艺、细心和近乎偏执的投入去挣。https://t.co/xxGDgonNzS",
+            "source_links": [
+              "https://x.com/claudeai/status/2062558332695556378"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/xxGDgonNzS",
+                "url": "https://pbs.twimg.com/media/HJ-uAocX0AAz_Kt.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2062558332695556378/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/xxGDgonNzS",
+                "resolvedUrl": "https://x.com/claudeai/status/2062558332695556378/video/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HJ-uAocX0AAz_Kt.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-05",
+    "updatedAt": "2026-06-05T15:19:08.310Z",
+    "commit": {
+      "sha": "401153549bd82d609d01269711ee4243b9cdd6be",
+      "committedAt": "2026-06-05T07:49:14Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-05T15:14:30.940Z",
+    "feedGeneratedAt": "2026-06-05T07:48:29.449Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
