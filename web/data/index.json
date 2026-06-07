@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-05T15:19:08.316Z",
-  "latestDate": "2026-06-05",
+  "updatedAt": "2026-06-07T14:50:46.163Z",
+  "latestDate": "2026-06-07",
   "dates": [
+    {
+      "date": "2026-06-07",
+      "title": "AI Builders Daily · 2026-06-07",
+      "summary": "**Post-transformer doubt is back** as **Lucas Kaiser** says reasoning alone may still fall short on generalization; **model routing is turning into the new moat**, with **Madhu Guru** and **Aaron Levie** both arguing that evals, token costs, and task-level dispatch will decide who wins; builders are getting pulled deeper into their tools, from **Peter Yang** drowning in **Codex** threads to **Garry Tan** drawing a clearer privacy line around **Paxel**.\n\n**后 Transformer** 的那点不服气又冒出来了：**Lucas Kaiser** 直说，光靠推理未必真能啃下泛化；**模型路由**也不只是工程细节了，**Madhu Guru** 和 **Aaron Levie** 都把话挑明了，评测、token 成本、任务拆分，接下来都要见真章；另一边，工具已经把人拽得更深，**Peter Yang** 嫌 **Codex** 线程快管不过来，**Garry Tan** 也顺手把 **Paxel** 的云端边界讲得更明白。",
+      "itemCount": 10,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-07T14:50:46.162Z",
+      "commit": {
+        "sha": "a82510971a2ecf8de87d7816492f9b9b91002148",
+        "committedAt": "2026-06-07T07:42:12Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-05",
       "title": "AI Builders Daily · 2026-06-05",

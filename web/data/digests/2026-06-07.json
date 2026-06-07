@@ -1,0 +1,357 @@
+{
+  "payload": {
+    "date": "2026-06-07",
+    "title": "AI Builders Daily · 2026-06-07",
+    "summary": "**Post-transformer doubt is back** as **Lucas Kaiser** says reasoning alone may still fall short on generalization; **model routing is turning into the new moat**, with **Madhu Guru** and **Aaron Levie** both arguing that evals, token costs, and task-level dispatch will decide who wins; builders are getting pulled deeper into their tools, from **Peter Yang** drowning in **Codex** threads to **Garry Tan** drawing a clearer privacy line around **Paxel**.\n\n**后 Transformer** 的那点不服气又冒出来了：**Lucas Kaiser** 直说，光靠推理未必真能啃下泛化；**模型路由**也不只是工程细节了，**Madhu Guru** 和 **Aaron Levie** 都把话挑明了，评测、token 成本、任务拆分，接下来都要见真章；另一边，工具已经把人拽得更深，**Peter Yang** 嫌 **Codex** 线程快管不过来，**Garry Tan** 也顺手把 **Paxel** 的云端边界讲得更明白。",
+    "items": [
+      {
+        "person_name": "Unsupervised Learning",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=N1geOimmdDo",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-03T12:50:11.000Z",
+        "sections": [
+          {
+            "headline": "**Lucas Kaiser** questions whether reasoning alone can reach generalization; why **Anthropic** won coding first | **Lucas Kaiser** 追问：光靠推理能不能走到泛化；**Anthropic** 为什么先把编码打穿",
+            "body": "**Lucas Kaiser**, coauthor of the **Transformer** paper, says today’s systems are astonishingly capable with reasoning, tools, and agents, but still feel wasteful in how they learn. His core point is blunt: models can absorb concepts, yet they often need enormous data and compute before the abstraction finally clicks.\n\nHe also sketches a real split in the field. One camp thinks **transformers** will keep stretching further; another suspects a post-transformer approach could generalize better from less data, especially in robotics and the physical world. On coding, Kaiser argues **Anthropic** got ahead by making a focused product bet while **OpenAI** aimed at **ChatGPT** more broadly.\n\n**Lucas Kaiser** 这期讲得很直接。作为 **Transformer** 论文作者之一，他承认现在这套推理+工具+智能体已经强得离谱，但学习方式还是有点“笨”：概念不是学不会，而是常常得先喂进海量数据和算力，模型才慢半拍地摸到门。\n\n他也把分歧摆在台面上。一派觉得 **transformer** 还远没榨干，另一派则怀疑下一代架构才更可能用更少数据学会真正的泛化，尤其是机器人和物理世界任务。说到编程模型，他的判断也很清楚：**Anthropic** 之所以先冲出来，靠的是聚焦；当时 **OpenAI** 更大的重心放在 **ChatGPT**。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=N1geOimmdDo"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-07T01:27:58.000Z",
+        "sections": [
+          {
+            "headline": "Tacit knowledge may be beating papers in AI diffusion, says **Swyx** / **Swyx**：AI 知识扩散现在更靠默会经验，不靠论文",
+            "body": "one popular theory is that research paper alpha* and lab publishing ~died when researchers realized that instead of fighting with marketing depts they could simply walk out the door and get >$100m for their legally protected tacit knowledge gained\n\ncalifornia non-noncompetes have a bigger impact on knowledge spreading than github, arxiv, and huggingface combined\n\n*btw this is a motivator for me to set up @aidotengineer as a product-centric industry conference to complement the paper-centric research conferences\n\n一种现在挺流行的看法是：研究论文 alpha* 和实验室发论文这套差不多“死”了，因为研究员发现，与其跟市场部拉扯，不如直接出门创业，凭自己那些受法律保护的默会知识拿走 >$100m。\n\n加州不执行竞业限制，对知识扩散的影响，可能比 **GitHub**、**arXiv** 和 **Hugging Face** 加起来还大。\n\n*顺带一提，这也是我想把 @aidotengineer 做成产品导向行业大会的原因，用它去补上论文导向研究会议的另一面。",
+            "source_links": [
+              "https://x.com/swyx/status/2063432747432268259"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "Roblox Product",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-07T05:21:34.000Z",
+        "sections": [
+          {
+            "headline": "Signing off for the night / 睡前收工",
+            "body": "Good night https://t.co/xtjcCGKP3G\n\n晚安 https://t.co/xtjcCGKP3G",
+            "source_links": [
+              "https://x.com/petergyang/status/2063491534339936584"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKL-mRZbQAAtJnA.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2063491534339936584/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/xtjcCGKP3G",
+                "resolvedUrl": "https://x.com/petergyang/status/2063491534339936584/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKL-mRZbQAAtJnA.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "Agentic coding feels more addictive than games / Agentic 编程比游戏还上头",
+            "body": "this agentic coding crack is more addictive than video games smh\n\n这玩意儿，agentic coding，真比打游戏还上头，服了。",
+            "source_links": [
+              "https://x.com/petergyang/status/2063486871037153558"
+            ]
+          },
+          {
+            "headline": "**Codex** thread management is already getting messy / **Codex** 线程管理已经开始失控",
+            "body": "There should be a way to filter or sort all my **Codex** threads in different ways vs. only by project. \n\nLike filter or sort by:\n\n- All waiting for approval\n- All currently working\n\nI'm trying to keep it to 10 threads but it's already getting unwieldly.  wdyt @ajambrosino ?\n\n应该得有办法用别的维度来筛选或排序我所有的 **Codex** 线程，而不只是按项目。\n\n比如按这些来筛或排：\n\n- 所有等待审批的\n- 所有正在运行的\n\n我本来想把线程数控制在 10 个，但现在已经开始不好收拾了。你怎么看，@ajambrosino？",
+            "source_links": [
+              "https://x.com/petergyang/status/2063475353335869922"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Ex-Gemini Product",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-06T19:28:26.000Z",
+        "sections": [
+          {
+            "headline": "Model routing is hard, and that’s where the opportunity is / 模型路由很难，而机会恰恰在这儿",
+            "body": "Routing to models is genuinely hard. It means mapping each task to the right model - which requires benchmarking models against your product's specific tasks and dialing in the quality/cost trade-off. \n\nAnd there is an opportunity in that difficulty.\n\nHere is the progression I saw with enterprises while on **Gemini**.\n\nPhase 1 (2024): Default to the \"it\" model. Everybody used **GPT** regardless of task, because it was the shiny new thing.\n\nPhase 2 (early 2025): Over-optimize. Teams over-corrected, looking for the smallest/cheapest model for their task, but did not have evals sophisticated enough to map tasks to models. They ended up burning cycles and shipping slower.\n\nPhase 3: Nuanced routing. The industry’s eval muscle and model diversity got to a point where the most sophisticated AI-native startups succeeded in breaking their product into sub-agents and routed each task to the right model - e.g. hardest reasoning to **Claude**, simplest to **Gemini Flash-Lite** or open-weight models.\n\nAnd like most product patterns, enterprises followed the AI-native builders 6-9 months later.\n\n把任务路由到不同模型，这事真的很难。你得把每个任务映射到合适的模型上，这就要求你拿自家产品里的具体任务去做基准测试，再把质量和成本的权衡一点点调出来。\n\n而机会就在这个难点里。\n\n这是我在做 **Gemini** 时看到的企业演进路径。\n\n阶段 1（2024）：默认用那个“最火”的模型。大家不管任务是什么，先上 **GPT**，因为它最亮眼。\n\n阶段 2（2025 年初）：过度优化。团队一下子拧过头，拼命找最小、最便宜的模型，但评测体系还没细到能把任务和模型真对应上，结果是白白烧时间，发版还更慢。\n\n阶段 3：精细路由。行业的评测能力和模型丰富度都起来了，最成熟的 AI-native 创业公司开始把产品拆成多个子代理，再把每个任务分发给最合适的模型，比如最难的推理交给 **Claude**，最简单的交给 **Gemini Flash-Lite** 或开源权重模型。\n\n跟大多数产品模式一样，企业会比 AI-native builders 晚 6 到 9 个月跟上。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2063342268472574268"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-06T19:37:09.000Z",
+        "sections": [
+          {
+            "headline": "Amjad says conviction filters out the wrong backers / Amjad 说，立场会帮你把不对的人筛出去",
+            "body": "When I spoke out against the Gaza genocide, a bunch of midwit VCs ganged up on me both in public and tried to hurt me in private too.\n\nMany of those who stood by me were also VCs. Just the better ones. Both morally, and in return profile.\n\nThe best way to avoid sociopaths is to have them self select out of your life by standing for your beliefs.\n\n当我公开反对加沙种族灭绝时，一帮自作聪明的 VC 不光在公开场合围攻我，私下里也想搞我。\n\n但当时站在我这边的人里，也有很多 VC。只是他们更好。不管是人品，还是回报画像，都更好。\n\n想避开那种反社会人格，最好的办法就是把自己的立场亮出来，让他们自己从你的人生里筛出去。",
+            "source_links": [
+              "https://x.com/amasad/status/2063344460705288401"
+            ]
+          },
+          {
+            "headline": "**Vibecon** sighting / **Vibecon** 现场一瞥",
+            "body": "Vibecon https://t.co/ggY7LLaB8y https://t.co/9YBgC412BZ\n\n**Vibecon** https://t.co/ggY7LLaB8y https://t.co/9YBgC412BZ",
+            "source_links": [
+              "https://x.com/amasad/status/2063300737296400516"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKJRFJ1aQAA4q8M.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2063300737296400516/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ggY7LLaB8y",
+                "resolvedUrl": "https://x.com/amasad/status/2063300737296400516/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKJRFJ1aQAA4q8M.jpg"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9YBgC412BZ",
+                "resolvedUrl": "https://t.co/9YBgC412BZ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-06T18:02:37.000Z",
+        "sections": [
+          {
+            "headline": "Token spend is forcing model routing into the enterprise stack / Token 成本正在把模型路由硬生生推进企业栈",
+            "body": "Token costs are becoming one of the hottest topics for any enterprise I talk with right now. It’s very bullish for AI in general because it means these systems are being used at a scale that wasn’t contemplated before. \n\nIt also gives way to another form of differentiation that will emerge for the applied AI layer, which is model routing.\n\nAs tokens take on a significant amount of the cost of any given workflow, then companies will inevitably want to ensure that their dollars go into the most efficient use of tokens for the particular job at hand. \n\nFrontier intelligence will always be relevant at the high end of tasks, like coding, legal and financial analysis, healthcare, and more. And dollars spent here will only go up over time. But, equally, you can peel off individual tasks to lower cost models (whether they’re from open weights vendors or the major labs) and deliver a more efficient end outcome. \n\nTo do this effectively, the applied AI layer needs to understand the workflows in their domain better than anyone else, and be able to mix and match models to different jobs. If you’re doing document extraction, you need to know which models perform better or worse for any given document type. If you’re legal analysis, you want to know which models perform various types of tasks best. And so on.\n\nThis will become one of the bigger differentiation points over time. The companies with the best evals, the best ability to route the workloads, and those that have business models directly aligned to customers financial goals, will be in a great position.\n\n现在我接触的企业里，token 成本已经成了最热的话题之一。这对 AI 整体反而很利多，因为这说明这些系统的使用规模已经大到过去没人认真预估过。\n\n这也给应用层 AI 带来了另一种会越来越重要的差异化：模型路由。\n\n当 token 在一个工作流里的成本占比越来越高，公司就一定会想办法，确保每一美元都花在最合适、最高效的 token 使用上。\n\n前沿模型的智能水平，在高难任务上永远有位置，比如编码、法律和金融分析、医疗等等。而且这部分投入只会继续涨。但与此同时，你也可以把部分子任务拆给更便宜的模型，不管是开源权重厂商还是大模型公司，最后把整体结果做得更省。\n\n要把这件事做好，应用层 AI 公司必须比别人更懂自己领域里的工作流，也得能把不同模型混搭到不同任务上。做文档抽取，你得知道哪类文档适合哪种模型；做法律分析，你得知道不同类型的法律任务分别是谁更强。别的领域也一样。\n\n这会慢慢变成更大的分水岭。谁的评测更强，谁更会路由工作负载，谁的商业模式又真的和客户的财务目标站在一边，谁就更占位置。",
+            "source_links": [
+              "https://x.com/levie/status/2063320673217609936"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-07T00:29:53.000Z",
+        "sections": [
+          {
+            "headline": "**Paxel** privacy line: code stays local, not all data does / **Paxel** 隐私边界：代码留在本地，但不是所有数据都如此",
+            "body": "We never said we don't upload any user data to the cloud. We said the code (file contents) specifically doesn't. \n\n**Paxel** is here to help you, and over time as local models get better, we'll be able to do even more locally. Can't wait, tbh. https://t.co/B0nygC4aph\n\n我们从没说过不会把任何用户数据上传到云端。我们说的是，代码（文件内容）这个部分不会。\n\n**Paxel** 是来帮你的。随着本地模型慢慢变强，我们以后能放在本地做的事只会更多。说实话，我很期待。 https://t.co/B0nygC4aph",
+            "source_links": [
+              "https://x.com/garrytan/status/2063418130714800487"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/B0nygC4aph",
+                "resolvedUrl": "https://t.co/B0nygC4aph"
+              }
+            ]
+          },
+          {
+            "headline": "**Paxel** should help people look more legit / **Paxel** 也该帮人把自己做得更像回事",
+            "body": "I also want to help people become more legit with **Paxel** https://t.co/9Atu5RfZ1C\n\n我也想用 **Paxel** 帮大家变得更像回事。 https://t.co/9Atu5RfZ1C",
+            "source_links": [
+              "https://x.com/garrytan/status/2063409501706018903"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9Atu5RfZ1C",
+                "resolvedUrl": "https://t.co/9Atu5RfZ1C"
+              }
+            ]
+          },
+          {
+            "headline": "Local government still matters, says **Garry Tan** / **Garry Tan**：地方治理这事，真不是摆设",
+            "body": "Local government matters\n\n**Oakland** mismanagement is fixable but there has not yet been a resurgence of common sense the way **SF** had it\n\n@empoweroak is working on this https://t.co/sPKswjImqY\n\n地方政府很重要。\n\n**Oakland** 的失管不是没法修，但它还没有像 **SF** 那样，出现那种常识回潮。\n\n@empoweroak 正在做这件事 https://t.co/sPKswjImqY",
+            "source_links": [
+              "https://x.com/garrytan/status/2063280482922663980"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/sPKswjImqY",
+                "resolvedUrl": "https://t.co/sPKswjImqY"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-06T22:45:05.000Z",
+        "sections": [
+          {
+            "headline": "Live, raw, and opinionated beats polished generic output / 现场感、棱角和观点，赢过那种磨平了的通用内容",
+            "body": "Really enjoyed this talk!\nThe value of static content is going down, the value of live interaction is going up\nPeople want to connect with the human being behind a piece of work, whether it's content or software\nRaw & opinionated > polished & generic https://t.co/bjOvGLZ1RZ\n\n这场分享我听得很爽！\n静态内容的价值在往下走，实时互动的价值在往上走。\n不管是内容还是软件，人们想连接的，都是作品背后的那个人。\n有棱角、带观点的东西 > 打磨得很顺但很泛的东西 https://t.co/bjOvGLZ1RZ",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2063391758189572266"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/bjOvGLZ1RZ",
+                "resolvedUrl": "https://t.co/bjOvGLZ1RZ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-06T22:05:23.000Z",
+        "sections": [
+          {
+            "headline": "Weekend reminder: go outside / 周末提醒：出去走走",
+            "body": "don’t forget to touch sand this weekend 🌞 https://t.co/oeVCnITvpF\n\n这周末别忘了去踩踩沙子，晒晒太阳。🌞 https://t.co/oeVCnITvpF",
+            "source_links": [
+              "https://x.com/nikunj/status/2063381764782116914"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKKaxumaMAA0k__.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2063381764782116914/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKKaxumbkAAMYdG.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2063381764782116914/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/oeVCnITvpF",
+                "resolvedUrl": "https://x.com/nikunj/status/2063381764782116914/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKKaxumbkAAMYdG.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "World models, stealth, and low latency in one walk-and-talk / 一边散步一边聊世界模型、隐身研发和低延迟",
+            "body": "A Walk In The Park (part II) feat @taiuti 🌎\n\n(00:00) 👋\n(01:10) What world models are\n(03:42) Origin story from text-to-3D to @reactorworld \n(09:22) Deciding to start the company\n(11:22) GTA, games, and the path into programming\n(15:09) Building in stealth and keeping secrets\n(18:32) Picking investors with independent conviction\n(21:43) Where world models will grow first\n(26:08) Why low latency matters\n(29:34) Becoming CEO and scaling the team\n(32:23) Final advice\n\nA Walk In The Park（第二部分），嘉宾 @taiuti 🌎\n\n(00:00) 👋\n(01:10) 什么是 world models\n(03:42) 从 text-to-3D 到 @reactorworld 的起源故事\n(09:22) 为什么决定创业\n(11:22) **GTA**、游戏，以及怎么一路走进编程\n(15:09) 如何在 stealth 状态下做产品并守住秘密\n(18:32) 怎么挑有独立判断的投资人\n(21:43) world models 会最先在哪些地方长起来\n(26:08) 为什么低延迟重要\n(29:34) 成为 CEO，以及团队怎么往上扩\n(32:23) 最后的建议",
+            "source_links": [
+              "https://x.com/nikunj/status/2063263389238087745"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/eTiCtu2Ixa",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2063137773897613313/img/4JMZkEjWZzIpUam4.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2063263389238087745/video/1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-07T01:49:53.000Z",
+        "sections": [
+          {
+            "headline": "**Plato**, virtue, and a proto-LLM reading / 用 **柏拉图** 重新照一遍 LLM 这件事",
+            "body": "my absolute favorite of **Plato**'s Dialogues is a deep discussion of the limits of techne and the necessity of aidos and dike\n\n**Protagoras** here, in the way he talks about where knowledge comes from and whether virtue can be taught,  pre-sages LLMs:\nhttps://t.co/8pDOaMnIIa\n\n我最喜欢的 **柏拉图** 对话录，是那段专门聊 techne 的边界、还有 aidos 和 dike 为什么不可少的讨论。\n\n这里的 **《普罗泰戈拉》**，尤其是它谈知识从哪来、德性能不能教会人的方式，简直像是在提前给 LLM 铺垫：\nhttps://t.co/8pDOaMnIIa",
+            "source_links": [
+              "https://x.com/danshipper/status/2063438262841094604"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/8pDOaMnIIa",
+                "resolvedUrl": "https://www.gutenberg.org/files/1591/1591-h/1591-h.htm"
+              }
+            ]
+          },
+          {
+            "headline": "Two virtues that rise in value: **Aidōs** and **Dikē** / 两个越来越值钱的东西：**Aidōs** 和 **Dikē**",
+            "body": "to add two more that increase in value:\n\nAidōs—reverence and responsiveness to others \nDikē—the capacity to perceive what is right https://t.co/X3LsGPfZa5\n\n再补两个会越来越值钱的：\n\nAidōs：对他人的敬畏和回应能力\nDikē：分辨何为正确的能力 https://t.co/X3LsGPfZa5",
+            "source_links": [
+              "https://x.com/danshipper/status/2063436919967522848"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/X3LsGPfZa5",
+                "resolvedUrl": "https://t.co/X3LsGPfZa5"
+              }
+            ]
+          },
+          {
+            "headline": "LLMs are not conscious, and not clearly not conscious either / LLM 没有意识，但也没法干脆地说它绝对没有",
+            "body": "LLMs are not conscious. \n\nLLMs are not not conscious. \n\nBoth true.\n\nLLM 没有意识。\n\nLLM 也不能简单说成“绝对没有意识”。\n\n这两句都成立。",
+            "source_links": [
+              "https://x.com/danshipper/status/2063426632824562167"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-07",
+    "updatedAt": "2026-06-07T14:50:46.155Z",
+    "commit": {
+      "sha": "a82510971a2ecf8de87d7816492f9b9b91002148",
+      "committedAt": "2026-06-07T07:42:12Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-07T14:46:58.144Z",
+    "feedGeneratedAt": "2026-06-07T07:41:30.877Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
