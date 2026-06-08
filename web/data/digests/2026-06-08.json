@@ -1,0 +1,515 @@
+{
+  "payload": {
+    "date": "2026-06-08",
+    "title": "AI Builders Daily · 2026-06-08",
+    "summary": "**Claude** gives managed agents memory \"dreaming,\" outcome graders, and multiagent orchestration; **Aaron Levie** says enterprise AI is trapped in a weird loop where model progress keeps outrunning rollout plans.\n\n**Codex** turns up the pressure with a 100-day power-user challenge; builders across X keep hammering the same idea: stop babysitting prompts and start designing loops; tokenmaxxing is giving way to token anxiety and token optimization; routing, retries, and cost-aware orchestration are starting to look like the real moat.\n\n**Claude** 这次把 agent 的底层玩法往前拱了一截，dreaming、结果评分、多 agent 编排一起放出来；**Aaron Levie** 说得很实在，模型进展太快，企业那套 rollout 反而更容易被打断。\n\n**Codex** 又添了一把火，100 天连续挑重度用户放大额度；X 上这波讨论也越来越集中，少纠结 prompt，多去搭 loop；token 焦虑这几周明显上来了；谁能把路由、重试、成本和效果一起压住，谁就更像下一层基础设施。",
+    "items": [
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-08T01:16:33.000Z",
+        "sections": [
+          {
+            "headline": "**Opus** for long autonomous runs: permissions, orchestration, and self-checks matter most · **Opus** 跑长时 автономous 任务，关键在权限、编排和自验证",
+            "body": "Seeing a number of benchmarks showing Opus is the best model for long-running work.\n\nFive tips for running Opus autonomously for hours/days:\n\n1. Use auto mode for permissions, so Claude doesn’t ask for approval\n2. Use dynamic workflows, to have Claude orchestrate hundreds/thousands of agents to get a task done\n3. Use /goal or /loop, to nudge Claude to keep going until it’s done\n4. Use Claude Code in the cloud, so you can close your laptop (easiest way is the desktop or mobile app)\n5. Make sure Claude has a way to self-verify its work end to end: Claude in Chrome browser extension for web, iOS/Android sim MCP for mobile, a way to start the full web server or service for backend work\n\n看到不少 benchmark 都在说明，**Opus** 现在最适合长时间连续工作。\n\n如果想让 **Opus** 连跑几小时甚至几天，我的五个建议是：\n\n1. 权限直接开 auto mode，这样 **Claude** 不会一直来找你批准\n2. 用 dynamic workflows，让 **Claude** 编排几百到几千个 agent 一起把任务做完\n3. 用 `/goal` 或 `/loop`，把 **Claude** 往前推，直到它把事情收尾\n4. 把 **Claude Code** 放到云上跑，这样你可以直接合上电脑（最省事的是桌面或移动端 app）\n5. 一定要给 **Claude** 一套端到端自验证的办法：网页场景用 **Claude** 的 **Chrome** 扩展，移动端用 iOS/Android 模拟器 MCP，后端场景要能把完整 web server 或服务真正拉起来",
+            "source_links": [
+              "https://x.com/bcherny/status/2063792263067754658"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-07T22:21:38.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** launches a 100-day builder challenge with 10x limits · **Codex** 开 100 天 builder 挑战，送 10 倍额度",
+            "body": "I have a new kind of big button that I can press for Codex. Over the next 100 days, we will select one person per day who does impressive or incredibly useful work with Codex and give them 10X usage limits for a month to see what they can do with it.\n\nFirst one tomorrow.\n\n我手上现在有一个给 **Codex** 用的新“大按钮”。接下来 100 天里，我们每天都会选出一位用 **Codex** 做出很厉害、或者特别有用成果的人，给他一个月 10 倍使用额度，看看他还能做出什么。\n\n第一个明天公布。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2063748242681307611"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-08T03:04:05.000Z",
+        "sections": [
+          {
+            "headline": "A **ChatGPT** punchline turns prompting into a marriage cron job · **ChatGPT** 接梗，把婚姻说成每日 cron job",
+            "body": "Ok ChatGPT had a good one:\n\nWife: \"I did, the loop is called marriage and this is your daily cron job.\"\n\n好吧，这次 **ChatGPT** 还真接住了：\n\n老婆：“我已经设计好了，这个 loop 叫婚姻，而这就是你的每日 cron job。”",
+            "source_links": [
+              "https://x.com/petergyang/status/2063819323106615434"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Prompt less, design loops: a dad joke setup goes full agent mode · 少写 prompt，多做 loop：一个老爸笑话直接拐进 agent 圈",
+            "body": "My wife asked me to take out the trash.\n\nI said, “You shouldn’t be prompting me anymore. You should be designing loops.”\n\nFinish the punch line of this dad joke please.\n\n我老婆叫我去倒垃圾。\n\n我说：“你现在不该再给我写 prompt 了，你应该去设计 loop。”\n\n请帮我把这个老爸笑话的包袱补完。",
+            "source_links": [
+              "https://x.com/petergyang/status/2063818032280170721"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Link drop: **Compound Engineering** and **Kun Chen**’s free tools · 链接补档：**Compound Engineering** 和 **Kun Chen** 的免费工具",
+            "body": "Links I mentioned:\n\nCompound Engineering:\nhttps://t.co/zo3cxxgMeD\n\nKun Chen's free tools:\nhttps://t.co/aqEdDzZKPe\n\n我提到的链接在这：\n\n**Compound Engineering**：\nhttps://t.co/zo3cxxgMeD\n\n**Kun Chen** 的免费工具：\nhttps://t.co/aqEdDzZKPe",
+            "source_links": [
+              "https://x.com/petergyang/status/2063773025196192188"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/zo3cxxgMeD",
+                "resolvedUrl": "https://github.com/EveryInc/compound-engineering-plugin"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/aqEdDzZKPe",
+                "resolvedUrl": "https://github.com/kunchenguid"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Ex-Google Product",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-06-07T19:27:14.000Z",
+        "sections": [
+          {
+            "headline": "Frontier data work is high-skill labor, not grunt work · 前沿训练数据不是苦力活，而是高技能工种",
+            "body": "A common misconception is that training data is low skill, grunt work - scan some notebooks, mine the internet, create labeled samples.\n\nThe data required to advance the model frontier is the opposite. Labs need training data for high-economic-value tasks. And most of these tasks outside of SWE have little documentation - it is complex, domain-specific knowledge built over the  years, spanning legacy tools that don’t talk to each other.\n\nThat's why we have SWE agents and not knowledge work agents yet.\n\nThe companies creating this training data, such as Mercor, are doing extremely high-leverage, high-skill work. \n\nCritical to moving AI forward. And deeply underappreciated.\n\n一个常见误解是，训练数据是低技能的苦力活: 扫几本笔记、去网上扒资料、做些标注样本。\n\n但真正推动模型前沿的数据，恰好相反。实验室需要的是高经济价值任务上的训练数据。而这些任务里，除了 SWE 之外，大多数都没多少现成文档可用，里面是多年积累下来的复杂领域知识，还牵扯一堆彼此不互通的老系统和工具。\n\n这也是为什么我们先有了 SWE agent，却还没有真正成熟的知识工作 agent。\n\n像 **Mercor** 这样做这类训练数据的公司，本质上干的是杠杆极高、门槛也很高的活。\n\n这对推进 AI 很关键，但外界明显低估了。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2063704354910347520"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-07T22:05:36.000Z",
+        "sections": [
+          {
+            "headline": "**Replit** pitches focus over clutter: ship faster, get to market · **Replit** 的卖点还是那句：少分心，快上线",
+            "body": "Replit is about removing all distractions and have you focus on what matters — getting to market and getting the bag. Congrats! https://t.co/Z2gcG0WF0t\n\n**Replit** 想做的就是把那些分散注意力的东西全拿掉，让你只盯住真正重要的事：把产品推向市场，然后把钱赚到。恭喜！ https://t.co/Z2gcG0WF0t",
+            "source_links": [
+              "https://x.com/amasad/status/2063744208587125142"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/theartofbace/status/2063733251735527822",
+                "resolvedUrl": "https://x.com/theartofbace/status/2063733251735527822",
+                "authorName": "theartofbace",
+                "authorHandle": "theartofbace",
+                "authorUrl": "https://x.com/theartofbace",
+                "text": "Just hit 10K MRR in 90 Days\n\nThese are 3 things that got us there\n\n1. Get to market ASAP. 60% ready means you're ready\n\n2. Post EVERY DAY on social. No exceptions\n\n3. Build/hire out a team to grow &amp; test quickly\n\n@speaksilq\n\nBig thank you to @Replit @amasad",
+                "displayDate": "Jun 7",
+                "provider": "X",
+                "textZh": "刚刚在 90 天内做到 1 万美元 MRR\n\n这是帮我们做到这一点的 3 件事\n\n1. 尽快推向市场。准备到 60% 就已经够了\n\n2. 每天都要在社交平台发内容。没有例外\n\n3. 组建/招聘一个团队，才能快速增长和测试\n\n@speaksilq\n\n非常感谢 @Replit @amasad"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Z2gcG0WF0t",
+                "resolvedUrl": "https://x.com/theartofbace/status/2063733251735527822"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-07T20:08:21.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel AI Gateway** says smart retries recover over 1T tokens a month · **Vercel AI Gateway** 称智能重试每月能捞回超 1 万亿 token",
+            "body": "Vercel AI Gateway recovers on average over 1T tokens a month 🤯 \n\nMuch like Stripe recovers revenue with smart retries on failed payments or credit card updates.\n\nAnd we do it with 0️⃣ zero markup over the labs; adding redundancy, zero-data retention enforcement, observability, usage APIs, caps, …\n\nhttps://t.co/OougSipbBX\n\n**Vercel AI Gateway** 平均每个月能捞回超过 1 万亿 token 🤯\n\n这有点像 **Stripe** 靠智能重试失败支付、或者信用卡更新去追回收入。\n\n而我们是在对模型实验室价格零加价的前提下做到的；同时还补上冗余、零数据保留约束、可观测性、usage API、额度上限这些能力……\n\nhttps://t.co/OougSipbBX",
+            "source_links": [
+              "https://x.com/rauchg/status/2063714700618334260"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/OougSipbBX",
+                "resolvedUrl": "https://vercel.com/ai-gateway"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-08T04:09:33.000Z",
+        "sections": [
+          {
+            "headline": "Model families will split, and routing becomes the hard agent problem · 模型分层会更明显，路由会变成 agent 的硬骨头",
+            "body": "The numbers may be a bit extreme here, but unquestionably use-cases have to stratify in the next year or two between model families.\n\nWe’ll see a split between frontier intelligence for high end tasks and work, and much cheaper models for high volume workloads that can sufficiently be peeled off to cheaper models. Frontier will still be far bigger than today because the use-cases will demand it, but the low-end will get quite a bit larger as well.\n\nThe big update here is that the layer that can efficiently route the workload to the right model will then become increasingly valuable since that becomes one of the new hard problems in AI agents. Agent orchestration that can cost optimize while still performing the task successfully will be in a strong position.\n\n这里面的数字也许夸张了点，但可以肯定的是，未来一两年里，不同用例一定会在不同模型家族之间分层。\n\n高端任务会继续吃前沿智能；高吞吐、大批量的工作，则会被尽可能剥离到更便宜的模型上。前沿模型的体量还是会比今天大得多，因为很多场景就得靠它；但低端模型那一层也会明显放大。\n\n真正新的变化在于，能把工作高效路由到合适模型的那一层，会越来越值钱，因为这正在变成 AI agent 里最难的新问题之一。谁的 agent 编排既能压成本、又不把任务做砸，谁就会占住好位置。",
+            "source_links": [
+              "https://x.com/levie/status/2063835799096090749"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI makes software easier to build, but enterprise GTM stays brutally hard · AI 让软件更容易做了，但企业级 GTM 还是硬仗",
+            "body": "This is what the market got wrong about AI eating enterprise software. Building good software in the past was very hard. Yes, AI has made that a bit easier, though it’s still hard to build something that’s got good taste, differentiated, high quality, secure, and so on.\n\nBut nevertheless, that’s only one component of building a platform that enterprises rely on. The plurality of costs in most enterprise software companies is actually on GTM, because at scale most enterprise software categories are tough to break into and need a heavy amount of consultative selling and support for implementation and integration of solutions.  \n\nAI hasn’t reduced the need for that, and in many cases requires it even more now, as landscapes get even more busy and complicated for buyers to navigate through. If you make one thing cheaper and more abundant (development of software) then the new problem of discoverability and market differentiation (GTM) becomes the hardest part.\n\n市场对“AI 会吃掉企业软件”这件事，理解偏了。过去做出好软件确实很难。没错，AI 让这件事轻松了一点，但要做出有品位、有差异化、高质量、够安全的产品，依然不容易。\n\n但这也只是企业平台建设的一部分。多数企业软件公司的大头成本，其实花在 GTM 上，因为一旦做到规模，很多企业软件赛道都很难切进去，必须靠很重的顾问式销售，以及实施、集成上的支持。\n\nAI 并没有让这部分需求消失，很多时候反而更需要，因为买方面对的选择越来越乱、越来越复杂。你把一件事变便宜、变充足了（软件开发），那新的难题就会变成可发现性和市场差异化，也就是 GTM。",
+            "source_links": [
+              "https://x.com/levie/status/2063756386572681606"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Box** adds web markdown editing, CLI support, comments, and version history · **Box** 上线网页 Markdown 编辑、CLI、评论和版本历史",
+            "body": "Box now has a markdown editor on the web. Full CLI support. Commenting. Full version history. Box Drive also lets you connect to any desktop client as a mounted drive, so you instantly work with all your files in Claude Cowork, Codex, Obsidian, Cursor, or any other app. https://t.co/3dJ5SBzhM5 https://t.co/WLUKegtiJ5\n\n**Box** 现在在网页端也有 Markdown 编辑器了。完整的 CLI 支持。评论功能。完整版本历史。**Box Drive** 还可以作为挂载盘接到任何桌面客户端上，所以你能立刻在 **Claude Cowork**、**Codex**、**Obsidian**、**Cursor** 或其他应用里直接处理全部文件。 https://t.co/3dJ5SBzhM5 https://t.co/WLUKegtiJ5",
+            "source_links": [
+              "https://x.com/levie/status/2063649508681224367"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/3dJ5SBzhM5",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2063649400552034304/img/9JtcpSdgnwtmUO0c.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2063649508681224367/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/jxnlco/status/2063324468056072524",
+                "resolvedUrl": "https://x.com/jxnlco/status/2063324468056072524",
+                "authorName": "jason",
+                "authorHandle": "jxnlco",
+                "authorUrl": "https://x.com/jxnlco",
+                "text": "I need Google Docs but just for markdown files.\n\nMultiplayer comments. Syncing resolving comments.\n\nSuggestion mode\nEdit mode\nEdit history\nMaybe some sense of multi edits.\n\nEasy cli access.",
+                "displayDate": "Jun 6",
+                "provider": "X",
+                "textZh": "我想要一个 Google Docs，但只针对 markdown 文件。\n\n支持多人评论。评论能同步、能标记为已解决。\n\n建议模式\n编辑模式\n编辑历史\n也许还要有点多人同时编辑的感觉。\n\nCLI 访问要方便。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/3dJ5SBzhM5",
+                "resolvedUrl": "https://x.com/levie/status/2063649508681224367/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2063649400552034304/img/9JtcpSdgnwtmUO0c.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/WLUKegtiJ5",
+                "resolvedUrl": "https://x.com/jxnlco/status/2063324468056072524"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "Y Combinator CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-08T00:52:23.000Z",
+        "sections": [
+          {
+            "headline": "A product plug tied to the current AI learning bottleneck · 借着这波 AI 学习瓶颈，顺手给自家产品打了一枪",
+            "body": "This is why we created https://t.co/NH6AWPWWkY\n\n这就是我们为什么做了这个：https://t.co/NH6AWPWWkY",
+            "source_links": [
+              "https://x.com/garrytan/status/2063786182140735829"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/NH6AWPWWkY",
+                "resolvedUrl": "http://paxel.ycombinator.com/"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Teaching people to use AI tools is becoming the bottleneck · 教人把 AI 工具用起来，已经快成瓶颈了",
+            "body": "Educating people on how to use the AI tools has become a serious bottleneck https://t.co/x624uLrMkb\n\n教大家怎么真正把 AI 工具用起来，已经成了一个很现实的瓶颈。 https://t.co/x624uLrMkb",
+            "source_links": [
+              "https://x.com/garrytan/status/2063786111588323780"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/JustJake/status/2063770868007002152",
+                "resolvedUrl": "https://x.com/JustJake/status/2063770868007002152",
+                "authorName": "Jake",
+                "authorHandle": "JustJake",
+                "authorUrl": "https://x.com/JustJake",
+                "text": "The problem with this, and why I think people are frustrated:\n\nNobody has taught folks how to do this\n\nIt feels both evidently the future and also somehow gatekept",
+                "displayDate": "Jun 7",
+                "provider": "X",
+                "textZh": "这件事的问题，以及我觉得大家为什么会感到挫败：\n\n没有人教过大家该怎么做\n\n它一方面显然像是未来，另一方面又让人觉得被某种门槛拦在外面"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/x624uLrMkb",
+                "resolvedUrl": "https://x.com/justjake/status/2063770868007002152"
+              }
+            ]
+          },
+          {
+            "headline": "**GBrain** adds a historical view of how your thinking changed · **GBrain** 新增“你的想法怎么一路变过来”的时间线总结",
+            "body": "GBrain v0.42.30 can now give you a detailed summary of how your thinking has changed over time. https://t.co/lcj64PThft\n\n**GBrain** v0.42.30 现在可以给你一份详细总结，回看你的想法是怎么随着时间变化的。 https://t.co/lcj64PThft",
+            "source_links": [
+              "https://x.com/garrytan/status/2063785286367392095"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKQJx-Ub0AAjZ6w.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2063785286367392095/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/lcj64PThft",
+                "resolvedUrl": "https://x.com/garrytan/status/2063785286367392095/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKQJx-Ub0AAjZ6w.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-07T15:04:47.000Z",
+        "sections": [
+          {
+            "headline": "HTML slides spread because they are social proof for AI-native builders · HTML 幻灯片能自己长，是因为它天然带社交传播",
+            "body": "I think one reason that my Frontend Slides skill has grown so much organically is because slides are inherently social\n\nPeople see these cool slides and always ask \"how did you make it\". And people tend to perceive those using HTML decks as more AI-native and AI-savvy\n\nhttps://t.co/CiQpfibZn5\n\n我觉得我的 **Frontend Slides** skill 能这么自然地长起来，一个原因是 slides 这东西本来就很社交。\n\n别人一看到这些很酷的页面，第一反应总是“你这怎么做的”。而且大家通常会默认，用 HTML deck 的人更 AI-native，也更懂这套东西。\n\nhttps://t.co/CiQpfibZn5",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2063638307586662539"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKODTlAbUAAxJvI.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2063638307586662539/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/CiQpfibZn5",
+                "resolvedUrl": "https://github.com/zarazhangrui/frontend-slides"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-08T03:44:00.000Z",
+        "sections": [
+          {
+            "headline": "WWDC loop jokes are already writing themselves for **Apple** · WWDC 还没开完，大家已经替 **Apple** 把 loop 梗写好了",
+            "body": "Given all the “loops” conversation, @Apple has the chance (and address) to do the funniest thing at WWDC.. https://t.co/HAhOpSW5Pn\n\n考虑到现在满屏都是“loops”讨论，**Apple** 在 **WWDC** 上完全有机会，也有这个地址，去做出全场最好笑的那个动作。 https://t.co/HAhOpSW5Pn",
+            "source_links": [
+              "https://x.com/nikunj/status/2063829369949467050"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKQx3-XaMAEoWeJ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2063829369949467050/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/HAhOpSW5Pn",
+                "resolvedUrl": "https://x.com/nikunj/status/2063829369949467050/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKQx3-XaMAEoWeJ.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The mood swings from tokenmaxxing to token optimization, but exploration still needs budget · 气氛已经从 tokenmaxxing 摇到精打细算，但探索还是得给预算",
+            "body": "The vibe shift from tokenmaxxing and token anxiety to tokenoptimizing in just a few weeks is wild 😅\n\nMight be a hot take but I still believe companies should give copious amounts of token budget to employees to stay at the frontier and explore all the edges. \n\nOtherwise, it’s way too easy to fall back to “doing the things how they have always been done”.\n\n短短几周里，气氛就从 tokenmaxxing、token 焦虑，直接摆到了 token 优化，这变化挺夸张 😅\n\n这话可能有点逆风，但我还是觉得，公司应该给员工足够多的 token 预算，让他们留在前沿、把边界都摸一遍。\n\n不然太容易又滑回“事情还是按老办法做”的那套。",
+            "source_links": [
+              "https://x.com/nikunj/status/2063630238123483195"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw Builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-07T18:58:39.000Z",
+        "sections": [
+          {
+            "headline": "Stop prompting coding agents; design loops that prompt them instead · 别再亲手喂 coding agent prompt 了，去设计会自己喂 prompt 的 loop",
+            "body": "Here’s your monthly reminder that you shouldn’t be prompting coding agents anymore.\n\nYou should be designing loops that prompt your agents.\n\n每月提醒一次：你现在不该再亲手给 coding agents 写 prompt 了。\n\n你该做的是设计 loop，让这些 agents 自己去被 prompt。",
+            "source_links": [
+              "https://x.com/steipete/status/2063697162748260627"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-07T21:16:11.000Z",
+        "sections": [
+          {
+            "headline": "IPO liquidity doesn’t just buy leisure; it restarts the **Silicon Valley** loop · IPO 带来的流动性不只换来躺平，也会把 **硅谷** 的循环再点起来",
+            "body": "I have had the chance to go through two IPOs (Meta and Dropbox).\n\nFabulous wealth tends to amplify deeper desires, not create new ones.\n\nThe mainstream narrative is: \"Early Employees make lots of money and buy mansions and go to the beach\".\n\nFor some: Yes, they want to chill. That is great. I am happy for them.\n\nBut for a lot of folks, it is a chance to do even crazier and wackier stuff. Start new things. Fund new things. Keep the crazy loop of Silicon Valley going.\n\nIt's going to be awesome to have a lot of folks with liquidity in the coming months. \n\nOnwards!.\n\n我亲历过两次 IPO（**Meta** 和 **Dropbox**）。\n\n巨额财富通常不是平白造出新的欲望，而是把人心里本来更深的那些东西放大。\n\n主流叙事总爱说：“早期员工赚了很多钱，然后去买豪宅、去海边躺着。”\n\n有些人确实会这样。挺好，我也替他们高兴。\n\n但对很多人来说，这反而是一个机会，去做更疯、更野的事。再创点新东西。再投点新东西。把 **Silicon Valley** 那个疯狂循环继续滚下去。\n\n接下来几个月，会有很多人手上开始有流动性，这会很有意思。\n\n继续往前。",
+            "source_links": [
+              "https://x.com/adityaag/status/2063731771284619521"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X",
+        "posted_at": "2026-06-08T00:25:45.000Z",
+        "sections": [
+          {
+            "headline": "**Sam Altman** spots a recursive loop and leaves the rest unsaid · **Sam Altman** 扔下一句 recursive loop，就不多解释了",
+            "body": "interesting recursive loop here maybe https://t.co/ejXil4AGyX\n\n这里也许有个挺有意思的 recursive loop。 https://t.co/ejXil4AGyX",
+            "source_links": [
+              "https://x.com/sama/status/2063779477419901071"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/thsottiaux/status/2063748242681307611",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2063748242681307611",
+                "authorName": "Tibo",
+                "authorHandle": "thsottiaux",
+                "authorUrl": "https://x.com/thsottiaux",
+                "text": "I have a new kind of big button that I can press for Codex. Over the next 100 days, we will select one person per day who does impressive or incredibly useful work with Codex and give them 10X usage limits for a month to see what they can do with it.\n\nFirst one tomorrow.",
+                "displayDate": "Jun 7",
+                "provider": "X",
+                "textZh": "我现在有了一个可以为 Codex 按下的新型大按钮。接下来的 100 天里，我们每天都会选出一位用 Codex 做出令人印象深刻或极其有用成果的人，给他们一个月 10 倍的使用额度，看看他们能用它做到什么。\n\n第一个人明天公布。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ejXil4AGyX",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2063748242681307611"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=Gs2styCcwro",
+        "source_label": "Podcast",
+        "posted_at": "2026-05-28T11:30:00.000Z",
+        "sections": [
+          {
+            "headline": "**Aaron Levie** on enterprise AI: model progress is outrunning deployment, and token cost is now a boardroom problem · **Aaron Levie** 谈企业 AI：模型跑太快，落地跟不上，token 成本已经进了会议室",
+            "body": "**Matt Turck** talks with **Box CEO Aaron Levie** about the strange state of enterprise AI in 2026: coding agents have already hit escape velocity inside engineering teams, but the rest of the enterprise is still stuck moving from chatbots to real agents. Levie’s core point is blunt: breakthroughs keep landing faster than customers can standardize on an architecture, so each new jump in capability can make the last rollout feel outdated before it finishes.\n\nHe says the mood among CIOs is still more optimistic than cynical because they can already see real gains from tools like **Codex**, **Cursor**, and cloud coding systems inside IT. But that optimism is colliding with hard operational questions: token budgets, deployment talent, workflow design, and the challenge of turning agent demos into durable business processes. His framing of “tokenmaxxing” versus enterprise budget planning stands out as one of the episode’s sharpest tensions.\n\n**Matt Turck** 跟 **Box** CEO **Aaron Levie** 聊的是 2026 年企业 AI 最别扭的现实：工程团队里的 coding agent 已经跑出速度了，非工程部门却还卡在“从聊天机器人过渡到真 agent”这一步。Levie 讲得很直接，模型突破来得比客户定架构还快，所以你刚把上一轮 rollout 做到一半，下一轮能力升级又把它搞得像旧方案。\n\n他判断 CIO 的整体情绪其实没外界想得那么悲观，因为他们已经在 IT 部门里看到了 **Codex**、**Cursor** 和云端 coding 工具带来的实打实效率提升。但乐观归乐观，真正难的都在后面：token 预算怎么管、有没有人能把系统部署起来、workflow 怎么设计、agent demo 怎么变成能长期跑的业务流程。节目里最有力的一条线索，就是“tokenmaxxing”和企业预算纪律之间那股越来越拧巴的张力。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=Gs2styCcwro"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "source_label": "Blog",
+        "posted_at": "2026-05-06",
+        "sections": [
+          {
+            "headline": "**Claude Managed Agents** adds dreaming, outcomes, and multiagent orchestration · **Claude Managed Agents** 新增 dreaming、结果评分和多 agent 编排",
+            "body": "**Anthropic** is expanding **Claude Managed Agents** with three notable capabilities. “Dreaming,” launched as a research preview, reviews past sessions and memory stores to extract patterns and improve future behavior. “Outcomes” adds a separate grader loop so agents can evaluate their work against a rubric and revise before returning results. Multiagent orchestration lets a lead agent split work across specialists that run in parallel on a shared filesystem.\n\nThe post leans hard on practical gains rather than abstract agent rhetoric. **Anthropic** says outcomes improved task success by up to 10 points in testing, with especially strong results on harder tasks and file generation like **docx** and **pptx**. It also highlights customer examples from **Harvey**, **Netflix**, **Every**, and **Wisedocs**, all pointing in the same direction: agents are being pushed toward longer-running, self-checking, and more distributed workflows.\n\n**Anthropic** 这篇更新，给 **Claude Managed Agents** 补了三块很关键的能力。第一块是 research preview 里的“dreaming”，它会回看过去的会话和记忆库，抽模式、修记忆，让 agent 下一次少踩坑。第二块是“outcomes”，相当于多了一层独立评分回路，agent 会照着 rubric 自查，不达标就再改。第三块是多 agent 编排，让一个主 agent 把任务拆给不同 specialist，在共享文件系统上并行干活。\n\n这篇文章可取的地方是没空谈什么 agent 愿景，而是直接报实际收益。**Anthropic** 说，outcomes 在测试里最多把任务成功率拉高了 10 个点，难任务和 **docx**、**pptx** 这类文件生成尤其明显。文里举的 **Harvey**、**Netflix**、**Every**、**Wisedocs** 也都指向同一件事：agent 正在从“会聊两句”往“能长时间跑、会自己复查、还能分工协作”那边走。",
+            "source_links": [
+              "https://claude.com/blog/new-in-claude-managed-agents"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-08",
+    "updatedAt": "2026-06-08T12:03:17.031Z",
+    "commit": {
+      "sha": "c914f84f4be9dab4b9c5f6181b8038977d01123f",
+      "committedAt": "2026-06-08T08:07:09Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-08T12:00:06.279Z",
+    "feedGeneratedAt": "2026-06-08T08:07:01.633Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

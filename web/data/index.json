@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-07T14:50:46.163Z",
-  "latestDate": "2026-06-07",
+  "updatedAt": "2026-06-08T12:03:17.038Z",
+  "latestDate": "2026-06-08",
   "dates": [
+    {
+      "date": "2026-06-08",
+      "title": "AI Builders Daily · 2026-06-08",
+      "summary": "**Claude** gives managed agents memory \"dreaming,\" outcome graders, and multiagent orchestration; **Aaron Levie** says enterprise AI is trapped in a weird loop where model progress keeps outrunning rollout plans.\n\n**Codex** turns up the pressure with a 100-day power-user challenge; builders across X keep hammering the same idea: stop babysitting prompts and start designing loops; tokenmaxxing is giving way to token anxiety and token optimization; routing, retries, and cost-aware orchestration are starting to look like the real moat.\n\n**Claude** 这次把 agent 的底层玩法往前拱了一截，dreaming、结果评分、多 agent 编排一起放出来；**Aaron Levie** 说得很实在，模型进展太快，企业那套 rollout 反而更容易被打断。\n\n**Codex** 又添了一把火，100 天连续挑重度用户放大额度；X 上这波讨论也越来越集中，少纠结 prompt，多去搭 loop；token 焦虑这几周明显上来了；谁能把路由、重试、成本和效果一起压住，谁就更像下一层基础设施。",
+      "itemCount": 15,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-08T12:03:17.037Z",
+      "commit": {
+        "sha": "c914f84f4be9dab4b9c5f6181b8038977d01123f",
+        "committedAt": "2026-06-08T08:07:09Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-07",
       "title": "AI Builders Daily · 2026-06-07",
