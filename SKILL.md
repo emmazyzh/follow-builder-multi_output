@@ -77,13 +77,6 @@ Before running setup, ask the user which Feishu card mode they want:
 1. Reuse an existing OpenClaw Feishu account
 2. Configure a local direct Feishu app for this sidecar
 
-If the user chooses direct Feishu app mode, collect:
-
-- `appId`
-- `appSecret`
-- `chatId`
-- optional `domain` (`feishu` by default, `lark` when needed)
-
 Run:
 
 ```bash
@@ -92,17 +85,9 @@ node scripts/sidecar-setup.js
 
 Optional flags:
 
-- `--driver openclaw_announce|feishu_card`
-- `--channel <channel>`
-- `--to <target>`
-- `--account <accountId>`
-- `--feishu-mode openclaw_account|direct_credentials`
-- `--feishu-account <accountId>`
-- `--feishu-chat-id <chatId>`
-- `--feishu-app-id <appId>`
-- `--feishu-app-secret <appSecret>`
-- `--feishu-domain feishu|lark`
-- `--avatar-fallback-account <accountId>`
+- `--generation-mode script_model|agent_native`
+- `--web-output-dir <absolute-path>`
+- `--web-site-url <public-url>`
 
 ### Configure
 
@@ -121,16 +106,8 @@ Common flags:
 - `--timezone <IANA timezone>`
 - `--frequency daily|weekly`
 - `--weekly-day monday|...|sunday`
-- `--driver openclaw_announce|feishu_card`
-- `--channel <channel>`
-- `--to <target>`
-- `--account <accountId>`
-- `--feishu-mode openclaw_account|direct_credentials`
-- `--feishu-account <accountId>`
-- `--feishu-chat-id <chatId>`
-- `--feishu-app-id <appId>`
-- `--feishu-app-secret <appSecret>`
-- `--feishu-domain feishu|lark`
+- `--web-output-dir <absolute-path>`
+- `--web-site-url <public-url>`
 
 Important:
 
@@ -158,7 +135,7 @@ Use `--reenable-original` only when the user explicitly wants to restore the ori
 
 ## Agent-native generation
 
-Set `--generation-mode agent_native` when you want the hourly OpenClaw cron agent itself to generate the card payload with its configured model. In this mode `run-sidecar.js --prepare-only` writes the prepared feed JSON, the agent writes the payload JSON, and `send-agent-payload.js` sends it and marks state. This avoids hard-coding a model call inside the sidecar runtime.
+Set `--generation-mode agent_native` when you want the hourly OpenClaw cron agent itself to generate the payload with its configured model. In this mode `run-sidecar.js --prepare-only` writes the prepared feed JSON, the agent writes the payload JSON, and `send-agent-payload.js` publishes the web archive and marks state. This avoids hard-coding a model call inside the sidecar runtime.
 
 ## Manual test run
 
@@ -170,11 +147,7 @@ node scripts/run-sidecar.js --skip-delivery
 
 ## Delivery rules
 
-- default driver is `openclaw_announce`
-- optional driver is `feishu_card`
-- Feishu card mode supports:
-  - `openclaw_account`: reuse a Feishu app already configured in OpenClaw
-  - `direct_credentials`: store a local-only Feishu `appId/appSecret/chatId` for this sidecar
+- delivery is web-only
 - feed freshness is based on upstream GitHub commit time
 - only same-local-day commits are valid
 - `daily`: one successful send per local day

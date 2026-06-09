@@ -5,25 +5,16 @@ import { fileURLToPath } from 'url';
 
 import {
   SCRIPT_DIR,
-  SIDECAR_CREDENTIALS_PATH,
   buildDefaultConfig,
   buildSidecarCronMessage,
   loadSidecarConfig,
   loadSidecarState,
   log,
   normalizeDeliveryTargets,
-  normalizeFeishuDeliveryMode,
   normalizeWeeklyDay,
   runOpenClaw,
   saveSidecarConfig
 } from './sidecar-common.js';
-import {
-  hasDirectFeishuCredentials,
-  loadSidecarCredentials,
-  mergeDirectFeishuCredentials,
-  redactSidecarCredentials,
-  saveSidecarCredentials
-} from './sidecar-credentials.js';
 
 function parseArgs(argv) {
   const args = argv.slice(2);
@@ -44,77 +35,17 @@ function parseArgs(argv) {
       case '--weekly-day':
         parsed.weeklyDay = args[++index];
         break;
-      case '--driver':
-        parsed.driver = args[++index];
-        break;
-      case '--targets':
-        parsed.targets = args[++index];
-        break;
-      case '--channel':
-        parsed.channel = args[++index];
-        break;
-      case '--to':
-        parsed.to = args[++index];
-        break;
-      case '--account':
-        parsed.accountId = args[++index];
-        break;
       case '--model':
         parsed.model = args[++index];
         break;
       case '--generation-mode':
         parsed.generationMode = args[++index];
         break;
-      case '--feishu-account':
-        parsed.feishuAccountId = args[++index];
-        break;
-      case '--feishu-mode':
-        parsed.feishuMode = args[++index];
-        break;
-      case '--feishu-chat-id':
-        parsed.feishuChatId = args[++index];
-        break;
-      case '--feishu-app-id':
-        parsed.feishuAppId = args[++index];
-        break;
-      case '--feishu-app-secret':
-        parsed.feishuAppSecret = args[++index];
-        break;
-      case '--feishu-domain':
-        parsed.feishuDomain = args[++index];
-        break;
-      case '--lark-cli-chat-id':
-        parsed.larkCliChatId = args[++index];
-        break;
-      case '--lark-cli-as':
-        parsed.larkCliAs = args[++index];
-        break;
-      case '--webhook-url':
-        parsed.webhookUrl = args[++index];
-        break;
       case '--web-output-dir':
         parsed.webOutputDir = args[++index];
         break;
       case '--web-site-url':
         parsed.webSiteUrl = args[++index];
-        break;
-      case '--avatar-fallback-account':
-        parsed.avatarFallbackAccountId = args[++index];
-        break;
-      case '--avatar-upload-app-id':
-        parsed.avatarUploadAppId = args[++index];
-        break;
-      case '--avatar-upload-app-secret':
-        parsed.avatarUploadAppSecret = args[++index];
-        break;
-      case '--avatar-upload-domain':
-        parsed.avatarUploadDomain = args[++index];
-        break;
-      case '--avatar-upload-account':
-        parsed.avatarUploadAccountId = args[++index];
-        break;
-      case '--avatar-upload-strategy':
-        parsed.avatarUploadStrategy = args[++index];
         break;
       default:
         throw new Error(`Unknown argument: ${arg}`);
@@ -124,60 +55,10 @@ function parseArgs(argv) {
   return parsed;
 }
 
-function inferFeishuMode(args, config) {
-  if (args.feishuMode) {
-    return normalizeFeishuDeliveryMode(args.feishuMode);
-  }
-  if (args.feishuAppId || args.feishuAppSecret) {
-    return 'direct_credentials';
-  }
-  return normalizeFeishuDeliveryMode(config.delivery?.feishu?.mode);
-}
-
-function validateFeishuConfig(config, directCredentials) {
-  const targets = normalizeDeliveryTargets(config.delivery?.targets);
-  if (!targets.includes('feishu')) {
-    return;
-  }
-
-  if (config.delivery?.driver === 'feishu_webhook_card') {
-    if (!config.delivery?.webhook?.url) {
-      throw new Error('Feishu webhook card delivery requires --webhook-url');
-    }
-    return;
-  }
-
-  if (config.delivery?.driver === 'lark_cli_feishu_card') {
-    if (!config.delivery?.larkCli?.chatId) {
-      throw new Error('lark-cli Feishu card delivery requires --lark-cli-chat-id oc_xxx');
-    }
-    return;
-  }
-
-  if (config.delivery?.driver !== 'feishu_card') {
-    return;
-  }
-
-  if (!config.delivery?.feishu?.chatId) {
-    throw new Error('Feishu card delivery requires chatId');
-  }
-
-  if (config.delivery?.feishu?.mode === 'direct_credentials') {
-    if (!hasDirectFeishuCredentials(directCredentials)) {
-      throw new Error(`Direct Feishu mode requires appId and appSecret in ${SIDECAR_CREDENTIALS_PATH}`);
-    }
-    return;
-  }
-
-  if (!config.delivery?.feishu?.accountId) {
-    throw new Error('Feishu card delivery requires a Feishu accountId from OpenClaw');
-  }
-}
-
 function validateWebConfig(config) {
   const targets = normalizeDeliveryTargets(config.delivery?.targets);
   if (!targets.includes('web')) {
-    return;
+    throw new Error('Web delivery must include the web target');
   }
   if (!config.delivery?.web?.outputDir) {
     throw new Error('Web delivery requires --web-output-dir or delivery.web.outputDir');
@@ -217,21 +98,6 @@ async function syncSidecarCronJob(config) {
 async function main() {
   const args = parseArgs(process.argv);
   const config = await loadSidecarConfig();
-  const existingCredentials = await loadSidecarCredentials();
-  const feishuMode = inferFeishuMode(args, config);
-  const nextCredentials = mergeDirectFeishuCredentials(existingCredentials, {
-    feishu: {
-      ...(args.feishuAppId ? { appId: args.feishuAppId } : {}),
-      ...(args.feishuAppSecret ? { appSecret: args.feishuAppSecret } : {}),
-      ...(args.feishuChatId ? { chatId: args.feishuChatId } : {}),
-      ...(args.feishuDomain ? { domain: args.feishuDomain } : {})
-    },
-    avatarFeishu: {
-      ...(args.avatarUploadAppId ? { appId: args.avatarUploadAppId } : {}),
-      ...(args.avatarUploadAppSecret ? { appSecret: args.avatarUploadAppSecret } : {}),
-      ...(args.avatarUploadDomain ? { domain: args.avatarUploadDomain } : {})
-    }
-  });
 
   const nextConfig = buildDefaultConfig({
     ...config,
@@ -246,68 +112,24 @@ async function main() {
     },
     delivery: {
       ...config.delivery,
-      ...(args.targets ? { targets: normalizeDeliveryTargets(args.targets) } : {}),
-      ...(args.driver ? { driver: args.driver } : {}),
-      openclaw: {
-        ...config.delivery.openclaw,
-        ...(args.channel ? { channel: args.channel } : {}),
-        ...(args.to ? { to: args.to } : {}),
-        ...(args.accountId ? { accountId: args.accountId } : {})
-      },
-      feishu: {
-        ...config.delivery.feishu,
-        ...(feishuMode ? { mode: feishuMode } : {}),
-        ...(args.feishuAccountId ? { accountId: args.feishuAccountId } : {}),
-        ...(args.feishuChatId ? { chatId: args.feishuChatId } : {}),
-        ...(args.feishuDomain ? { domain: args.feishuDomain } : {})
-      },
-      larkCli: {
-        ...config.delivery.larkCli,
-        ...(args.larkCliChatId ? { chatId: args.larkCliChatId } : {}),
-        ...(args.larkCliAs ? { as: args.larkCliAs } : {})
-      },
-      webhook: {
-        ...config.delivery.webhook,
-        ...(args.webhookUrl ? { url: args.webhookUrl } : {})
-      },
+      targets: ['web'],
       web: {
         ...config.delivery.web,
         ...(args.webOutputDir ? { outputDir: args.webOutputDir } : {}),
         ...(args.webSiteUrl ? { siteUrl: args.webSiteUrl } : {})
-      },
-      ...(args.avatarFallbackAccountId ? { avatarFallbackAccountId: args.avatarFallbackAccountId } : {}),
-      avatarUpload: {
-        ...config.delivery.avatarUpload,
-        ...(args.avatarUploadStrategy ? { strategy: args.avatarUploadStrategy } : {}),
-        ...(args.avatarUploadAccountId ? { accountId: args.avatarUploadAccountId } : {}),
-        ...(args.avatarUploadDomain ? { domain: args.avatarUploadDomain } : {})
       }
     }
   });
-  if (nextConfig.delivery?.feishu?.mode === 'direct_credentials' && !nextConfig.delivery?.feishu?.chatId) {
-    nextConfig.delivery.feishu.chatId = nextCredentials.feishu.chatId || null;
-  }
-  if (nextConfig.delivery?.feishu?.mode === 'direct_credentials' && !nextConfig.delivery?.feishu?.domain) {
-    nextConfig.delivery.feishu.domain = nextCredentials.feishu.domain || 'feishu';
-  }
-  if (nextConfig.delivery?.feishu?.mode === 'direct_credentials') {
-    nextConfig.delivery.feishu.accountId = null;
-  }
 
-  validateFeishuConfig(nextConfig, nextCredentials);
   validateWebConfig(nextConfig);
 
   await saveSidecarConfig(nextConfig);
-  if (hasDirectFeishuCredentials(nextCredentials)) {
-    await saveSidecarCredentials(nextCredentials);
-  }
 
   const sidecarJobId = await syncSidecarCronJob(nextConfig);
 
   process.stdout.write(`${JSON.stringify({
     status: 'ok',
     config: nextConfig,
-    directCredentials: redactSidecarCredentials(nextCredentials),
     sidecarJobId
   })}\n`);
 }

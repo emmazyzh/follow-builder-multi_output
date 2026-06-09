@@ -1,214 +1,256 @@
-**English** | [中文](README.zh-CN.md)
+# aimanews
 
-# follow-builders-sidecar-codex
+Static web digest generator for AI builder updates.
 
-This repository is a Codex-focused fork of
-[`AMortalsOdyssey/follow-builders-sidecar`](https://github.com/AMortalsOdyssey/follow-builders-sidecar),
-which itself is a companion skill for the original
-[`follow-builders`](https://github.com/zarazhangrui/follow-builders) project.
+## Scope
 
-The upstream `follow-builders-sidecar` is OpenClaw-only. This fork keeps the
-sidecar model, feed handling, and card pipeline, but adapts scheduling and
-delivery for a Codex local workflow with Feishu webhook delivery and a static
-web archive.
+This fork now keeps only the web publishing flow:
 
-For the local fork-specific notes, see [CODEX_PATCH.md](CODEX_PATCH.md).
+- fetch upstream feeds from `zarazhangrui/follow-builders`
+- generate a normalized daily payload
+- write static archive data into `web/data/`
+- publish the web archive snapshot through git
 
-## Preview
+Feishu/Lark/OpenClaw delivery code has been removed from the active runtime path.
 
-This is the delivery experience the sidecar is designed for: a cleaner Feishu
-interactive card that keeps the upstream signal intact while making it easier
-to scan, click through, and share in a group chat.
+## Main files
 
-![Feishu card preview](https://raw.githubusercontent.com/AMortalsOdyssey/follow-builders-sidecar/main/assets/feishu-card-preview.jpeg)
+- `scripts/run-local-codex-sidecar.js`: local scheduled runner
+- `scripts/send-agent-payload.js`: normalizes the payload and updates `web/data/`
+- `scripts/web-archive.js`: static archive publishing logic
+- `launchd/com.yongzhenzhuang.follow-builders-sidecar-codex.plist`: local LaunchAgent example
+- `web/`: static site assets
 
-- configurable Feishu group-chat delivery
-- real avatars instead of placeholder imagery
-- clickable name and role that jump back to the source profile
-- multiple updates from the same builder rendered within one card
-- direct source links preserved for each item
-- optional static web archive with a calendar sidebar and card-mode daily history
-- low-value / low-signal tweets filtered before delivery
-- quoted tweets expanded with the original post context
-- podcast links repaired to the exact episode or video page
+## Config
 
-## What it adds
+Sample config: `config/sidecar.config.sample.json`
 
-- Independent hourly OpenClaw cron
-- One-success-per-day or one-success-per-week dedupe
-- Same-day-only upstream commit gating by timezone
-- Original cron auto-disable if it gets re-enabled later
-- Structured digest generation with model repair and fallback
-- Quote tweet enrichment
-- Podcast episode link repair
-- Low-signal / low-value content filtering
-- OpenClaw default delivery driver
-- Optional Feishu interactive card delivery
-- Dedicated avatar-upload Feishu app support for card images
-- Avatar upload fallback to the default OpenClaw Feishu account
+Relevant delivery settings are now web-only:
 
-## Repo layout
+```json
+{
+  "delivery": {
+    "targets": ["web"],
+    "web": {
+      "outputDir": "/absolute/path/to/web",
+      "siteUrl": "https://example.pages.dev"
+    }
+  }
+}
+```
 
-- `assets/feishu-card-preview.jpeg`: Feishu card showcase screenshot
-- `config/sidecar.config.sample.json`: safe sample sidecar config for public repos
-- `config/credentials.sample.json`: safe sample credentials file with placeholders only
-- `SKILL.md`: companion skill instructions for OpenClaw
-- `scripts/sidecar-setup.js`: one-time takeover
-- `scripts/sidecar-configure.js`: manage sidecar-owned config
-- `scripts/sidecar-status.js`: inspect config, state, and cron linkage
-- `scripts/sidecar-rollback.js`: disable sidecar job and optionally re-enable the original job
-- `scripts/run-sidecar.js`: hourly runtime entrypoint
-- `web/`: static archive UI for Cloudflare Pages or any static host
-
-## Local state
-
-Sidecar stores its own files under `~/.follow-builders-sidecar/`:
-
-- `config.json`
-- `state.json`
-- `credentials.json` when direct Feishu app mode and/or dedicated avatar-upload app mode is enabled
-
-The original skill remains untouched. Its config is imported once from
-`~/.follow-builders/config.json` during takeover.
-
-For public repositories, commit only the sample files under `config/`.
-Keep real secrets and IDs in `~/.follow-builders-sidecar/` or in ignored local config files.
-
-## Setup flow
-
-1. Install the original `follow-builders` skill.
-2. Install this sidecar skill.
-3. Run takeover:
+## Useful commands
 
 ```bash
 cd scripts
 npm install
-node sidecar-setup.js
+node sidecar-status.js
+node sidecar-configure.js --web-output-dir /absolute/path/to/web
+node run-sidecar.js --skip-delivery
+node run-local-codex-sidecar.js --dry-run
 ```
 
-When Feishu card delivery is desired, choose one of two modes during setup:
+- `node sidecar-status.js`: print the current sidecar config, persisted state, upstream feed compatibility, and detected cron jobs as JSON.
+- `node sidecar-configure.js --web-output-dir /absolute/path/to/web`: update the configured web output directory used for archive publishing.
+- `node run-sidecar.js --skip-delivery`: execute the main sidecar flow without publishing the final web output, useful for checking upstream detection and payload generation safely.
+- `node run-local-codex-sidecar.js --dry-run`: execute the local LaunchAgent runner path in dry-run mode, useful for validating the real scheduled workflow without treating the run as a normal published delivery.
 
-- `openclaw_account`: reuse a Feishu app already configured in OpenClaw
-- `direct_credentials`: store a local-only `appId` / `appSecret` / `chatId` for this sidecar
+## Redeploy
 
-What takeover does:
+Step by step:
 
-- imports the original config once
-- finds the original OpenClaw digest cron
-- records its job id
-- disables the original job
-- creates a new hourly sidecar cron
-- writes sidecar config/state
+1. Update the repo and install script dependencies.
 
-## Delivery modes
+```bash
+cd /Users/yongzhenzhuang/Projects/aimanews
+git pull
+cd scripts
+npm install
+```
 
-Delivery is now split into two concerns:
+2. Confirm the web output directory in sidecar config.
 
-- `delivery.driver`: how Feishu delivery is sent
-- `delivery.targets`: where the finished digest goes (`feishu`, `web`, or both)
+```bash
+node sidecar-configure.js --web-output-dir /Users/yongzhenzhuang/Projects/aimanews/web
+node sidecar-status.js
+```
 
-### Default: `openclaw_announce`
+Expected result:
 
-The default driver reuses the original OpenClaw target:
+- `node sidecar-configure.js` returns `status: "ok"`
+- `config.delivery.web.outputDir` is `/Users/yongzhenzhuang/Projects/aimanews/web`
+- `node sidecar-status.js` shows the same output directory
+- `config.delivery.targets` is `["web"]`
 
-- `channel`
-- `to`
-- optional `accountId`
+3. Verify the generation path without publishing.
 
-The sidecar runtime sends through `openclaw message send`, so it does not rely
-on cron-delivery side effects.
+```bash
+node run-sidecar.js --skip-delivery
+node run-local-codex-sidecar.js --dry-run
+```
 
-### Optional: `feishu_card`
+Expected result:
 
-Feishu card delivery supports two modes:
+- both commands exit successfully with exit code `0`
+- `node run-sidecar.js --skip-delivery` usually returns either:
+  - `status: "ok"` when the generation path is valid for current upstream content
+  - `status: "skipped"` when there is no new eligible upstream content for the current day
+- `node run-local-codex-sidecar.js --dry-run` updates `.runtime/local-runner/last-result.json`
+  - it starts as `status: "in_progress"`
+  - it finishes as `status: "ok"`, `status: "skipped"`, or `status: "error"`
+  - a dry-run success should not be treated as a normal published delivery
 
-- `openclaw_account`: reuse an OpenClaw-configured Feishu account plus a target chat id
-- `direct_credentials`: write a local-only Feishu `appId` / `appSecret` / `chatId` into `~/.follow-builders-sidecar/credentials.json`
+4. Run one real local publish.
 
-If the chosen Feishu app cannot upload images, avatar upload can be routed through a dedicated avatar-upload Feishu app stored in `~/.follow-builders-sidecar/credentials.json` under `avatarFeishu`. If that path is not configured, avatar upload falls back to the configured default OpenClaw Feishu account.
+```bash
+/Users/yongzhenzhuang/.nvm/versions/node/v20.20.0/bin/node /Users/yongzhenzhuang/Projects/aimanews/scripts/run-local-codex-sidecar.js
+cat /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json
+```
 
-### Optional: `web`
+Expected result:
 
-When `delivery.targets` includes `web`, each successful run also updates:
+- the command exits successfully with exit code `0`
+- `.runtime/local-runner/last-result.json` finishes with:
+  - `status: "ok"`
+  - `stage: "delivery"`
+- the result usually also includes:
+  - `prepare.status: "needs_payload"`
+  - `delivery.status: "ok"`
+  - `delivery.delivery.results.web.status: "ok"`
+  - `delivery.delivery.results.web.digestPath`
+  - `delivery.delivery.results.web.indexPath`
+  - `delivery.delivered: true`
+
+5. Scheduled MacOS task with a LaunchAgent.
+
+How to set it up on macOS:
+
+- Put the plist in `~/Library/LaunchAgents/`
+- Load it into the current GUI user session with `launchctl bootstrap`
+- Verify the loaded schedule with `launchctl print`
+- Manually trigger one run with `launchctl kickstart -k` when needed
+
+```bash
+cp /Users/yongzhenzhuang/Projects/aimanews/launchd/com.yongzhenzhuang.follow-builders-sidecar-codex.plist /Users/yongzhenzhuang/Library/LaunchAgents/com.yongzhenzhuang.follow-builders-sidecar-codex.plist
+launchctl bootout gui/501 /Users/yongzhenzhuang/Library/LaunchAgents/com.yongzhenzhuang.follow-builders-sidecar-codex.plist 2>/dev/null || true
+launchctl bootstrap gui/501 /Users/yongzhenzhuang/Library/LaunchAgents/com.yongzhenzhuang.follow-builders-sidecar-codex.plist
+launchctl print gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex
+launchctl kickstart -k gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex
+```
+
+Expected schedule in the final output:
+
+- `Hour = 20`
+- `Minute = 0`
+
+6. Configure or refresh the macOS task
+
+- Change `launchd/com.yongzhenzhuang.follow-builders-sidecar-codex.plist` when you need to adjust when or how macOS launches the runner.
+- For schedule changes, edit `StartCalendarInterval`.
+- For Node path changes, edit `ProgramArguments[0]`.
+- For script path changes, edit `ProgramArguments[1]`.
+- For environment differences between Terminal and LaunchAgent, edit `EnvironmentVariables`, especially `PATH` and `HOME`.
+- For log locations, edit `StandardOutPath` and `StandardErrorPath`.
+
+
+## Daily Scheduled Flow
+
+Every day at `20:00`, the LaunchAgent runs:
+
+```bash
+/Users/yongzhenzhuang/.nvm/versions/node/v20.20.0/bin/node /Users/yongzhenzhuang/Projects/aimanews/scripts/run-local-codex-sidecar.js
+```
+
+What happens:
+
+1. `run-local-codex-sidecar.js` starts a run, writes `last-result.json` as `in_progress`, and acquires a local lock.
+2. It calls `run-sidecar.js --prepare-only` to inspect upstream feeds and decide whether there is a new same-day upstream commit worth processing.
+   The upstream feed check currently looks for:
+   - `feed-x.json`
+   - `feed-podcasts.json`
+   - `feed-blogs.json`
+   It first tries dynamic discovery of `feed-*.json` files from the upstream repo root, then falls back to the legacy list above if dynamic discovery fails.
+3. If upstream is valid, it writes the prepared snapshot into `.runtime/local-runner/latest-raw.json`.
+4. It asks Codex to generate a structured digest payload and writes it into `.runtime/local-runner/latest-payload.json`.
+5. It validates the payload shape and item count.
+6. It calls `send-agent-payload.js`, which normalizes the payload and updates:
+   - `web/data/index.json`
+   - `web/data/latest.json`
+   - `web/data/digests/YYYY-MM-DD.json`
+7. The web archive publish step commits the refreshed static data.
+8. `last-result.json` is updated to `ok`, `skipped`, or `error`, with `runId`, `startedAt`, and `finishedAt`.
+
+The main runtime artifacts are:
+
+- `.runtime/local-runner/last-result.json`
+- `.runtime/local-runner/stdout.log`
+- `.runtime/local-runner/stderr.log`
+- `.runtime/local-runner/latest-raw.json`
+- `.runtime/local-runner/latest-payload.json`
+
+## Daily Failure Troubleshooting
+
+Use this order:
+
+1. Check whether the LaunchAgent itself is loaded and what schedule is active.
+
+```bash
+launchctl print gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex | egrep 'state =|active count|last exit code|Hour|Minute'
+```
+
+2. Check whether a run is still active.
+
+```bash
+ps -ax | grep run-local-codex-sidecar.js | grep -v grep
+```
+
+3. Check the latest result and timestamps.
+
+```bash
+stat -f '%Sm %N' -t '%Y-%m-%d %H:%M:%S' /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stdout.log /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stderr.log
+cat /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json
+```
+
+4. Read recent logs.
+
+```bash
+tail -n 50 /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stderr.log
+tail -n 20 /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stdout.log
+```
+
+5. Re-run manually through the same scheduled path.
+
+```bash
+launchctl kickstart -k gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex
+sleep 30
+cat /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json
+```
+
+How to interpret common failures:
+
+- `status = in_progress`: the current run has started but has not finished yet. Wait and re-check timestamps before trusting old log lines.
+- `reason = upstream_unavailable`: upstream GitHub fetch failed during prepare. Check terminal connectivity to `api.github.com` and `raw.githubusercontent.com`.
+- `reason = already_delivered`: the sidecar already published once for the same local day, so the run skipped by design.
+- `reason = pipeline_failed`: payload generation failed before publish. Check `stderr.log` for validation or model-output errors.
+- `error = Local Codex sidecar runner is already in progress`: another run still holds the lock.
+
+Useful network checks when upstream fetch fails:
+
+```bash
+curl -I https://api.github.com
+curl -I https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json
+env | grep -i proxy
+scutil --dns | grep nameserver
+```
+
+## Output
+
+Successful runs update:
 
 - `web/data/index.json`
 - `web/data/latest.json`
 - `web/data/digests/YYYY-MM-DD.json`
 
-The static UI in `web/` reads those files directly.
-
-## Runtime semantics
-
-- cron runs every hour by default
-- the latest upstream feed commit is checked via GitHub API
-- commit time is converted into sidecar `timezone`
-- only commits that land on the same local day are considered valid
-- `daily`: one successful delivery max per local day
-- `weekly`: only on the configured `weeklyDay`, and one successful delivery max per week
-- later commits on the same day do not trigger another delivery once one send succeeded
-
-If a user wants a different trigger window, they should edit the sidecar cron
-itself. Sidecar does not auto-sync the original skill's `deliveryTime`.
-
-## Useful commands
-
-```bash
-node scripts/sidecar-status.js
-node scripts/sidecar-configure.js --driver feishu_card --feishu-account follow_builders_group --feishu-chat-id oc_xxx
-node scripts/sidecar-configure.js --driver feishu_card --feishu-mode direct_credentials --feishu-app-id cli_xxx --feishu-app-secret secret_xxx --feishu-chat-id oc_xxx
-node scripts/sidecar-configure.js --avatar-upload-strategy dedicated_credentials --avatar-upload-app-id cli_xxx --avatar-upload-app-secret secret_xxx --avatar-upload-domain feishu
-node scripts/run-sidecar.js --skip-delivery
-node scripts/sidecar-rollback.js --reenable-original
-```
-
-## Dedicated avatar upload app
-
-When card sending and image upload need different Feishu apps, configure them separately:
-
-- `delivery.feishu`: the app used to send the interactive card
-- `delivery.avatarUpload`: the strategy and optional OpenClaw account override for avatar image upload
-- `credentials.json > avatarFeishu`: dedicated local-only `appId` / `appSecret` used only for uploading avatar images
-
-Recommended strategy for this deployment:
-
-- send card with the existing direct-delivery app
-- upload avatar images with the dedicated avatar-upload app
-- keep `img_url` as the final display fallback when image upload still fails
-
-## Notes
-
-- v1 intentionally targets OpenClaw only
-- v1 does not modify the upstream `follow-builders` repo
-- upstream feed freshness is based on GitHub commit time, not local file mtime
-
 ## License
 
-MIT. See [LICENSE](LICENSE).
-
-## Agent-native generation mode
-
-By default, the sidecar uses `generation.mode = "script_model"`: the runtime script calls
-`openclaw infer model run` with `config.model` to turn the prepared feed into a card
-payload.
-
-For persistent OpenClaw installs, you can instead use `generation.mode = "agent_native"`.
-In this mode the hourly cron wakes an isolated OpenClaw agent. The scripts only prepare
-the feed snapshot and send the final payload; the scheduled agent itself generates the
-JSON payload with the cron job's configured model.
-
-```bash
-node scripts/sidecar-configure.js --generation-mode agent_native --model codex-5.5
-```
-
-The generated cron prompt is installation-local but not user-specific: it uses the
-installed script paths, writes temporary files under `/tmp`, and then calls
-`send-agent-payload.js` to deliver through the configured driver and mark the day as
-sent. The state gate is unchanged: hourly checks continue, and a successful daily send
-sets `lastDeliveredKey` so the same local day is not sent again unless you force a run.
-
-Useful manual checks:
-
-```bash
-node scripts/run-sidecar.js --prepare-only --skip-delivery
-node scripts/send-agent-payload.js --input-json /tmp/follow-builders-sidecar-raw.json --payload /tmp/follow-builders-sidecar-payload.json --skip-delivery
-```
+MIT. See `LICENSE`.

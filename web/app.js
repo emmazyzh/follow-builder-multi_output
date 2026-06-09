@@ -89,8 +89,31 @@ function initialsForName(name) {
   return parts.map((part) => part[0]?.toUpperCase() || '').join('') || 'AI';
 }
 
-function renderMarkdownLite(text) {
+function decodeHtmlEntities(text) {
   return String(text || '')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+}
+
+function renderMarkdownLite(text) {
+  const raw = decodeHtmlEntities(text);
+  const codeBlocks = [];
+  const withPlaceholders = raw.replace(/```([\s\S]*?)```/g, (match, code) => {
+    const placeholder = `__CODE_BLOCK_${codeBlocks.length}__`;
+    const normalized = String(code || '').replace(/^\n/, '').replace(/\n$/, '');
+    codeBlocks.push(
+      `<pre class="card-code-block"><code>${normalized
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')}</code></pre>`
+    );
+    return placeholder;
+  });
+
+  let html = withPlaceholders
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
@@ -98,6 +121,12 @@ function renderMarkdownLite(text) {
     .replace(/https?:\/\/[^\s<]+/g, (url) => `<a class="card-link" href="${url}" target="_blank" rel="noreferrer">${url}</a>`)
     .replace(/(^|[\s(>])@([A-Za-z0-9_]{1,15})\b/g, (match, prefix, handle) => `${prefix}<a class="card-link" href="https://x.com/${handle}" target="_blank" rel="noreferrer">@${handle}</a>`)
     .replace(/\n/g, '<br />');
+
+  codeBlocks.forEach((block, index) => {
+    html = html.replace(`__CODE_BLOCK_${index}__`, block);
+  });
+
+  return html;
 }
 
 function applyLinkExpansions(text, section) {
@@ -130,20 +159,26 @@ function stripSummaryPrefix(text) {
     .trim();
 }
 
-function splitBilingualSummary(text) {
-  const value = String(text || '').trim();
-  if (!value) return [];
-  return value
-    .split(/\n{2,}/)
-    .map((part) => part.trim())
-    .filter(Boolean);
-}
-
 function splitSummaryLanguage(summary) {
-  const parts = splitBilingualSummary(summary);
+  const english = [];
+  const chinese = [];
+  const parts = splitBilingualContentBlocks(summary);
+
+  parts.forEach((part) => {
+    const value = String(part || '').trim();
+    if (!value) return;
+    const normalized = stripSummaryPrefix(value);
+    if (!normalized) return;
+    if (/^中文：/i.test(value) || /[\u3400-\u9fff]/.test(normalized)) {
+      chinese.push(normalized);
+      return;
+    }
+    english.push(normalized);
+  });
+
   return {
-    english: parts[0] ? stripSummaryPrefix(parts[0]) : '',
-    chinese: parts[1] ? stripSummaryPrefix(parts[1]) : ''
+    english: english.join('\n\n'),
+    chinese: chinese.join('\n\n')
   };
 }
 
@@ -399,23 +434,20 @@ function flattenCards(payload) {
 }
 
 function splitXBody(text) {
-  const paragraphs = String(text || '')
-    .split(/\n\s*\n/)
-    .map((part) => part.trim())
-    .filter(Boolean);
+  const paragraphs = splitBilingualContentBlocks(text);
   const chinese = [];
   const original = [];
   let currentLanguage = 'en';
   for (const paragraph of paragraphs) {
-    const hasChinese = /[\u3400-\u9fff]/.test(paragraph);
-    const hasLatin = /[A-Za-z]/.test(paragraph);
-    const isUrlOnly = /^(?:https?:\/\/\S+\s*)+$/.test(paragraph);
+    const type = classifyLanguageBlock(paragraph);
+    const hasChinese = type === 'zh';
+    const hasLatin = type === 'en';
+    const isShared = type === 'shared';
     if (hasChinese) {
       chinese.push(paragraph);
       currentLanguage = 'zh';
-    } else if (isUrlOnly && currentLanguage === 'zh') {
+    } else if (isShared) {
       chinese.push(paragraph);
-    } else if (isUrlOnly) {
       original.push(paragraph);
     } else if (hasLatin) {
       original.push(paragraph);
@@ -433,23 +465,20 @@ function splitXBody(text) {
 }
 
 function splitBodyByLanguage(text) {
-  const paragraphs = String(text || '')
-    .split(/\n\s*\n/)
-    .map((part) => part.trim())
-    .filter(Boolean);
+  const paragraphs = splitBilingualContentBlocks(text);
   const chinese = [];
   const english = [];
   let currentLanguage = 'en';
   for (const paragraph of paragraphs) {
-    const hasChinese = /[\u3400-\u9fff]/.test(paragraph);
-    const hasLatin = /[A-Za-z]/.test(paragraph);
-    const isUrlOnly = /^(?:https?:\/\/\S+\s*)+$/.test(paragraph);
+    const type = classifyLanguageBlock(paragraph);
+    const hasChinese = type === 'zh';
+    const hasLatin = type === 'en';
+    const isShared = type === 'shared';
     if (hasChinese) {
       chinese.push(paragraph);
       currentLanguage = 'zh';
-    } else if (isUrlOnly && currentLanguage === 'zh') {
+    } else if (isShared) {
       chinese.push(paragraph);
-    } else if (isUrlOnly) {
       english.push(paragraph);
     } else if (hasLatin) {
       english.push(paragraph);
@@ -464,6 +493,28 @@ function splitBodyByLanguage(text) {
     chinese: chinese.join('\n\n'),
     english: english.join('\n\n')
   };
+}
+
+function splitBilingualContentBlocks(text) {
+  return String(text || '')
+    .replace(/\r\n/g, '\n')
+    .split(/(\n\s*\n|```[\s\S]*?```)/)
+    .map((part) => String(part || '').trim())
+    .filter(Boolean)
+    .filter((part) => !/^\n\s*\n$/.test(part));
+}
+
+function classifyLanguageBlock(block) {
+  const value = String(block || '').trim();
+  if (!value) return 'shared';
+  if (/^```[\s\S]*```$/.test(value)) return 'shared';
+  if (/^(?:https?:\/\/\S+\s*)+$/.test(value)) return 'shared';
+  if (/^[`[\](){}<>=/*+_.:;,\-0-9A-Za-z\s]+$/.test(value) && /[A-Za-z]/.test(value)) {
+    return 'shared';
+  }
+  if (/[\u3400-\u9fff]/.test(value)) return 'zh';
+  if (/[A-Za-z]/.test(value)) return 'en';
+  return 'shared';
 }
 
 function normalizeComparableText(text) {

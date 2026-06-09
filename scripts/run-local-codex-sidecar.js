@@ -33,6 +33,10 @@ const MAX_BLOG_CONTENT_CHARS = 8000;
 const FULL_PAYLOAD_ATTEMPTS = 1;
 const SEGMENT_ATTEMPTS = 3;
 
+function buildRunId() {
+  return `local-runner-${new Date().toISOString()}-pid-${process.pid}`;
+}
+
 function log(level, message, context = {}) {
   const payload = {
     ts: new Date().toISOString(),
@@ -669,11 +673,24 @@ async function persistResult(result) {
 
 async function main() {
   const args = parseArgs(process.argv);
+  const runId = buildRunId();
+  const startedAt = new Date().toISOString();
   await ensureRuntimeDir();
   await acquireRunLock();
 
   try {
+    await persistResult({
+      status: 'in_progress',
+      stage: 'startup',
+      runId,
+      startedAt,
+      dryRun: args.dryRun,
+      force: args.force
+    });
+
     log('info', 'Local Codex sidecar runner started', {
+      runId,
+      startedAt,
       force: args.force,
       dryRun: args.dryRun
     });
@@ -683,6 +700,9 @@ async function main() {
       const skipped = {
         status: 'skipped',
         stage: 'prepare',
+        runId,
+        startedAt,
+        finishedAt: new Date().toISOString(),
         reason: prepareResult.reason,
         detail: prepareResult
       };
@@ -735,6 +755,9 @@ async function main() {
     const finalResult = {
       status: 'ok',
       stage: 'delivery',
+      runId,
+      startedAt,
+      finishedAt: new Date().toISOString(),
       dryRun: args.dryRun,
       prepare: prepareResult,
       delivery: deliveryResult
@@ -749,6 +772,8 @@ async function main() {
 main().catch(async (error) => {
   const result = {
     status: 'error',
+    runId: `local-runner-failed-before-main-pid-${process.pid}`,
+    finishedAt: new Date().toISOString(),
     message: error.message,
     stack: error.stack
   };

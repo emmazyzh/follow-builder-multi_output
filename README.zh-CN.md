@@ -1,176 +1,253 @@
-# follow-builders-sidecar-codex
+# aimanews
 
-这个仓库是
-[`AMortalsOdyssey/follow-builders-sidecar`](https://github.com/AMortalsOdyssey/follow-builders-sidecar)
-的 Codex 本地 fork。上游 `follow-builders-sidecar` 本身又是原版
-[`follow-builders`](https://github.com/zarazhangrui/follow-builders) 的 sidecar。
+## 当前范围
 
-上游版本是 OpenClaw-only。本 fork 保留 sidecar 的整体思路，但把调度与投递改造成适合 Codex 本地工作流和 Feishu webhook 卡片发送的形态。
+这个分支现在只做下面几件事：
 
-和本地 fork 直接相关的实现说明见 [CODEX_PATCH.md](CODEX_PATCH.md)。
+- 从 `zarazhangrui/follow-builders` 拉取上游 feed
+- 生成统一的日报 payload
+- 把归档数据写入 `web/data/`
+- 通过 git 发布静态 Web 归档
 
-## 效果展示
 
-这张图就是 sidecar 想交付出来的效果：不是只把 digest 发出去，而是把上游信息整理成更适合在飞书群里阅读、转发和点开的消息卡片。
+## 主要文件
 
-![飞书卡片预览](https://raw.githubusercontent.com/AMortalsOdyssey/follow-builders-sidecar/main/assets/feishu-card-preview.jpeg)
+- `scripts/run-local-codex-sidecar.js`：本地定时运行入口
+- `scripts/send-agent-payload.js`：标准化 payload 并更新 `web/data/`
+- `scripts/web-archive.js`：静态归档发布逻辑
+- `launchd/com.yongzhenzhuang.follow-builders-sidecar-codex.plist`：本地 LaunchAgent 示例
+- `web/`：静态站资源
 
-- 支持把卡片发送到可配置的飞书群聊
-- 头像使用真实来源，不再是占位图
-- 姓名和身份信息都可以点击跳转回对应主页
-- 同一位 builder 的多条消息可以在一张卡片里分段展示
-- 每条内容都保留原文跳转入口
-- 低价值、低信号推文会先过滤，减少噪声
-- 转发 / quote tweet 会补读原帖上下文
-- podcast 链接会修复到具体单集或视频页，而不是只落到主页
+## 配置
 
-## 相对原版新增的能力
+示例配置见 `config/sidecar.config.sample.json`。
 
-- 独立的 hourly OpenClaw cron
-- 按本地时区判断“当天是否有上游更新”
-- `daily` / `weekly` 成功一次即停止当天/当周重复推送
-- 原版 cron 如果被重新启用，sidecar 下次运行会自动 disable
-- quote tweet 内容补全
-- podcast 单集真实链接修复
-- 低价值内容过滤
-- 模型输出校验、repair pass、程序化 fallback
-- 默认 OpenClaw 渠道投递
-- 可选 Feishu interactive card 投递
-- 支持单独的“头像上传专用 Feishu 应用”
-- 自定义 Feishu 应用缺少图片上传 scope 时，回退默认账号上传头像
+Web 投递配置：
 
-## 目录说明
-
-- `assets/feishu-card-preview.jpeg`：飞书卡片效果展示
-- `SKILL.md`：OpenClaw companion skill
-- `scripts/sidecar-setup.js`：首次 takeover
-- `scripts/sidecar-configure.js`：后续配置修改
-- `scripts/sidecar-status.js`：查看当前状态
-- `scripts/sidecar-rollback.js`：回滚并可选恢复原 job
-- `scripts/run-sidecar.js`：每小时运行的主入口
-
-## 本地配置目录
-
-sidecar 自己的配置和状态都写在：
-
-- `~/.follow-builders-sidecar/config.json`
-- `~/.follow-builders-sidecar/state.json`
-- 在直连 Feishu 应用模式和/或头像上传专用应用模式下写 `~/.follow-builders-sidecar/credentials.json`
-
-原版 `~/.follow-builders/config.json` 只会在 takeover 时导入一次。
-接管完成后，以 sidecar 配置为准。
-
-## 接管流程
-
-```bash
-cd scripts
-npm install
-node sidecar-setup.js
+```json
+{
+  "delivery": {
+    "targets": ["web"],
+    "web": {
+      "outputDir": "/absolute/path/to/web",
+      "siteUrl": "https://example.pages.dev"
+    }
+  }
+}
 ```
-
-如果要启用 Feishu 卡片投递，安装 / takeover 时需要先二选一：
-
-- `openclaw_account`：复用 OpenClaw 已配置好的 Feishu 应用
-- `direct_credentials`：给 sidecar 单独配置一套本地 Feishu `appId` / `appSecret` / `chatId`
-
-接管会做这些事：
-
-1. 一次性导入原 skill 配置
-2. 查找原版 OpenClaw digest cron
-3. 记录原 job id
-4. disable 原 job
-5. 创建 sidecar 自己的 hourly cron
-6. 写入 sidecar config/state
-
-## 投递方式
-
-### 默认：`openclaw_announce`
-
-默认会沿用原 job 的：
-
-- `channel`
-- `to`
-- 可选 `accountId`
-
-sidecar 运行时会主动调用 `openclaw message send` 发消息，而不是依赖
-cron job 的“最后一句回复”来投递。
-
-### 可选：`feishu_card`
-
-Feishu 卡片投递支持两种模式：
-
-- `openclaw_account`：复用 OpenClaw 已配置的 Feishu account，再配一个目标群聊 `chatId`
-- `direct_credentials`：把 sidecar 自己用的 Feishu `appId` / `appSecret` / `chatId` 写入本地 `~/.follow-builders-sidecar/credentials.json`
-
-如果发送应用没有图片上传 scope，可以把头像上传切到 `~/.follow-builders-sidecar/credentials.json` 里的 `avatarFeishu` 专用应用；如果这条链路也没配置，再自动回退到默认 Feishu account 上传头像。
-
-## 运行语义
-
-- sidecar 默认每小时检查一次
-- 上游是否更新，以 GitHub 上 feed 相关 commit 的时间为准
-- commit 时间会先转换到 sidecar `timezone`
-- 只有 commit 的本地日期与“今天”相同，才算有效更新
-- `daily`：本地当天最多成功发送一次
-- `weekly`：只在配置的 `weeklyDay` 允许发送，且当周最多成功一次
-- 同一天即使上游连更多次，只要已经成功推送过一次，就不再重复推送
-
-如果用户想改触发时段，直接改 sidecar 自己的 cron 即可。sidecar 不会再去同步原 skill 的 `deliveryTime`。
 
 ## 常用命令
 
 ```bash
-node scripts/sidecar-status.js
-node scripts/sidecar-configure.js --driver feishu_card --feishu-account follow_builders_group --feishu-chat-id oc_xxx
-node scripts/sidecar-configure.js --driver feishu_card --feishu-mode direct_credentials --feishu-app-id cli_xxx --feishu-app-secret secret_xxx --feishu-chat-id oc_xxx
-node scripts/sidecar-configure.js --avatar-upload-strategy dedicated_credentials --avatar-upload-app-id cli_xxx --avatar-upload-app-secret secret_xxx --avatar-upload-domain feishu
-node scripts/run-sidecar.js --skip-delivery
-node scripts/sidecar-rollback.js --reenable-original
+cd scripts
+npm install
+node sidecar-status.js
+node sidecar-configure.js --web-output-dir /absolute/path/to/web
+node run-sidecar.js --skip-delivery
+node run-local-codex-sidecar.js --dry-run
 ```
 
-## 头像上传专用应用
+- `node sidecar-status.js`：输出当前 sidecar 配置、状态文件、上游 feed 兼容性，以及识别到的原始/sidecar cron job 信息。
+- `node sidecar-configure.js --web-output-dir /absolute/path/to/web`：更新 Web 归档输出目录。
+- `node run-sidecar.js --skip-delivery`：执行主流程，但不落地最终 Web 发布结果，适合安全检查上游探测和 payload 生成链路。
+- `node run-local-codex-sidecar.js --dry-run`：按本地 LaunchAgent 的真实运行链路做一次 dry-run，适合排查定时任务是否能正常跑通。
 
-当“发卡片的应用”和“上传图片的应用”不是同一个时，可以拆开配置：
+## 重新部署
 
-- `delivery.feishu`：负责发 interactive card 的应用
-- `delivery.avatarUpload`：负责头像上传策略，以及可选的 OpenClaw account 覆盖
-- `credentials.json > avatarFeishu`：仅用于上传头像图片的本地凭据
+按这个顺序执行：
 
-当前这套部署建议是：
-
-- 卡片继续用现有直连应用发送
-- 头像改走专用上传应用
-- 如果上传仍失败，最后再回退到 `img_url` 外链显示
-
-## 备注
-
-- v1 只支持 OpenClaw
-- v1 不修改上游 `follow-builders` 仓库
-- 上游 freshness 判断依据是 GitHub commit 时间，不是本地文件 mtime
-
-## 协议
-
-MIT，见 [LICENSE](LICENSE)。
-
-## Agent-native 生成模式
-
-默认情况下，sidecar 使用 `generation.mode = "script_model"`：运行脚本会通过
-`openclaw infer model run` 和 `config.model` 把 feed 生成卡片 payload。
-
-在持久化 OpenClaw 环境里，也可以切到 `generation.mode = "agent_native"`。
-这个模式下，每小时 cron 唤醒一个 isolated OpenClaw agent；脚本只负责准备 feed
-快照和发送最终 payload，卡片 JSON 由被唤醒的 agent 使用 cron 配置的模型生成。
+1. 更新仓库并安装脚本依赖。
 
 ```bash
-node scripts/sidecar-configure.js --generation-mode agent_native --model codex-5.5
+cd /Users/yongzhenzhuang/Projects/aimanews
+git pull
+cd scripts
+npm install
 ```
 
-生成出来的 cron prompt 只依赖当前安装路径和 `/tmp` 临时文件，不绑定某个具体用户。
-发送成功后仍会写入 `lastDeliveredKey`，所以 sidecar 依然是每小时检查更新、每天成功推送一次，
-除非手动 force 运行。
-
-常用手动检查：
+2. 确认 sidecar 配置里的 Web 输出目录。
 
 ```bash
-node scripts/run-sidecar.js --prepare-only --skip-delivery
-node scripts/send-agent-payload.js --input-json /tmp/follow-builders-sidecar-raw.json --payload /tmp/follow-builders-sidecar-payload.json --skip-delivery
+node sidecar-configure.js --web-output-dir /Users/yongzhenzhuang/Projects/aimanews/web
+node sidecar-status.js
 ```
+
+预期结果：
+
+- `node sidecar-configure.js` 返回 `status: "ok"`
+- `config.delivery.web.outputDir` 是 `/Users/yongzhenzhuang/Projects/aimanews/web`
+- `node sidecar-status.js` 里能看到同样的输出目录
+- `config.delivery.targets` 是 `["web"]`
+
+3. 先做不发布的验证。
+
+```bash
+node run-sidecar.js --skip-delivery
+node run-local-codex-sidecar.js --dry-run
+```
+
+预期结果：
+
+- 两条命令都正常退出，退出码是 `0`
+- `node run-sidecar.js --skip-delivery` 通常会返回两种之一：
+  - `status: "ok"`：说明生成链路对当前上游内容可正常工作
+  - `status: "skipped"`：说明当天没有符合条件的新上游内容，这种情况也可能是正常的
+- `node run-local-codex-sidecar.js --dry-run` 会更新 `.runtime/local-runner/last-result.json`
+  - 开始时是 `status: "in_progress"`
+  - 结束时会变成 `status: "ok"`、`status: "skipped"` 或 `status: "error"`
+  - dry-run 即使成功，也不应当被视为一次正式发布成功
+
+4. 手动跑一次真实发布。
+
+```bash
+/Users/yongzhenzhuang/.nvm/versions/node/v20.20.0/bin/node /Users/yongzhenzhuang/Projects/aimanews/scripts/run-local-codex-sidecar.js
+cat /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json
+```
+
+预期结果：
+
+- 命令正常退出，退出码是 `0`
+- `.runtime/local-runner/last-result.json` 最终应包含：
+  - `status: "ok"`
+  - `stage: "delivery"`
+- 一般还会看到：
+  - `prepare.status: "needs_payload"`
+  - `delivery.status: "ok"`
+  - `delivery.delivery.results.web.status: "ok"`
+  - `delivery.delivery.results.web.digestPath`
+  - `delivery.delivery.results.web.indexPath`
+  - `delivery.delivered: true`
+
+5. 在 macOS 上配置 LaunchAgent 定时任务。
+
+在 macOS 上的基本配置方式：
+
+- 把 plist 放到 `~/Library/LaunchAgents/`
+- 用 `launchctl bootstrap` 加载到当前图形用户会话
+- 用 `launchctl print` 检查是否已经按预期生效
+- 需要时用 `launchctl kickstart -k` 手动触发一次
+
+```bash
+cp /Users/yongzhenzhuang/Projects/aimanews/launchd/com.yongzhenzhuang.follow-builders-sidecar-codex.plist /Users/yongzhenzhuang/Library/LaunchAgents/com.yongzhenzhuang.follow-builders-sidecar-codex.plist
+launchctl bootout gui/501 /Users/yongzhenzhuang/Library/LaunchAgents/com.yongzhenzhuang.follow-builders-sidecar-codex.plist 2>/dev/null || true
+launchctl bootstrap gui/501 /Users/yongzhenzhuang/Library/LaunchAgents/com.yongzhenzhuang.follow-builders-sidecar-codex.plist
+launchctl print gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex
+launchctl kickstart -k gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex
+```
+
+最终输出里应该看到：
+
+- `Hour = 20`
+- `Minute = 0`
+
+5. 修改 LaunchAgent 定时任务时间。
+
+- 如果你要改“macOS 何时、用什么环境启动任务”，就改 `launchd/com.yongzhenzhuang.follow-builders-sidecar-codex.plist`
+- 改定时时间：编辑 `StartCalendarInterval`
+- 改 Node 路径：编辑 `ProgramArguments[0]`
+- 改脚本路径：编辑 `ProgramArguments[1]`
+- 改 LaunchAgent 和终端环境差异：编辑 `EnvironmentVariables`，重点看 `PATH` 和 `HOME`
+- 改日志输出位置：编辑 `StandardOutPath` 和 `StandardErrorPath`
+
+
+## 每日定时任务流程
+
+每天 `20:00`，LaunchAgent 会执行：
+
+```bash
+/Users/yongzhenzhuang/.nvm/versions/node/v20.20.0/bin/node /Users/yongzhenzhuang/Projects/aimanews/scripts/run-local-codex-sidecar.js
+```
+
+执行过程如下：
+
+1. `run-local-codex-sidecar.js` 启动一次 run，把 `last-result.json` 先写成 `in_progress`，并获取本地锁。
+2. 它调用 `run-sidecar.js --prepare-only`，检查上游 feed，并判断当天是否有需要处理的新 commit。
+   现在检查的上游 feed 文件包括：
+   - `feed-x.json`
+   - `feed-podcasts.json`
+   - `feed-blogs.json`
+   代码会先动态发现上游仓库根目录下的 `feed-*.json` 文件；如果动态发现失败，再回退到上面这份固定列表。
+3. 如果上游有效，就把准备好的快照写入 `.runtime/local-runner/latest-raw.json`。
+4. 然后调用 Codex 生成结构化 digest payload，写入 `.runtime/local-runner/latest-payload.json`。
+5. 对 payload 的结构和 item 数量做校验。
+6. 调用 `send-agent-payload.js`，标准化 payload 并更新：
+   - `web/data/index.json`
+   - `web/data/latest.json`
+   - `web/data/digests/YYYY-MM-DD.json`
+7. Web 归档发布步骤会提交刷新后的静态数据。
+8. 最后把 `last-result.json` 更新成 `ok`、`skipped` 或 `error`，并记录 `runId`、`startedAt`、`finishedAt`。
+
+主要运行产物：
+
+- `.runtime/local-runner/last-result.json`
+- `.runtime/local-runner/stdout.log`
+- `.runtime/local-runner/stderr.log`
+- `.runtime/local-runner/latest-raw.json`
+- `.runtime/local-runner/latest-payload.json`
+
+## 每日定时任务失败排查
+
+建议按这个顺序查：
+
+1. 先看 LaunchAgent 是否加载正常、当前生效的时间是否正确。
+
+```bash
+launchctl print gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex | egrep 'state =|active count|last exit code|Hour|Minute'
+```
+
+2. 看当前是不是还有任务在跑。
+
+```bash
+ps -ax | grep run-local-codex-sidecar.js | grep -v grep
+```
+
+3. 看最新结果和文件时间戳。
+
+```bash
+stat -f '%Sm %N' -t '%Y-%m-%d %H:%M:%S' /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stdout.log /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stderr.log
+cat /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json
+```
+
+4. 读最近日志。
+
+```bash
+tail -n 50 /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stderr.log
+tail -n 20 /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stdout.log
+```
+
+5. 用同一条定时任务路径手动重跑。
+
+```bash
+launchctl kickstart -k gui/501/com.yongzhenzhuang.follow-builders-sidecar-codex
+sleep 30
+cat /Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/last-result.json
+```
+
+常见结果解释：
+
+- `status = in_progress`：本次任务已经启动但还没结束。先等一会儿，再看时间戳，不要直接把旧结果当成这次结果。
+- `reason = upstream_unavailable`：prepare 阶段拉上游 GitHub 失败。重点检查 `api.github.com` 和 `raw.githubusercontent.com`。
+- `reason = already_delivered`：同一个本地日期已经发布过一次，这是按设计跳过。
+- `reason = pipeline_failed`：payload 生成或校验失败。去看 `stderr.log` 里的模型输出或校验错误。
+- `error = Local Codex sidecar runner is already in progress`：另一个运行还持有锁。
+
+上游拉取失败时常用的网络检查：
+
+```bash
+curl -I https://api.github.com
+curl -I https://raw.githubusercontent.com/zarazhangrui/follow-builders/main/feed-x.json
+env | grep -i proxy
+scutil --dns | grep nameserver
+```
+
+## 输出
+
+成功运行后会更新：
+
+- `web/data/index.json`
+- `web/data/latest.json`
+- `web/data/digests/YYYY-MM-DD.json`
+
+## License
+
+MIT，见 `LICENSE`。

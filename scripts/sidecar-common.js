@@ -35,10 +35,7 @@ const DEFAULT_TIMEZONE = 'Asia/Shanghai';
 const DEFAULT_LANGUAGE = 'zh';
 const DEFAULT_FREQUENCY = 'daily';
 const DEFAULT_WEEKLY_DAY = 'monday';
-const DEFAULT_FEISHU_MODE = 'openclaw_account';
-const DEFAULT_LARK_CLI_AS = 'user';
-const DEFAULT_FEISHU_WEBHOOK_URL = null;
-const DEFAULT_DELIVERY_TARGETS = ['feishu'];
+const DEFAULT_DELIVERY_TARGETS = ['web'];
 const DEFAULT_WEB_OUTPUT_DIR = join(REPO_DIR, 'web');
 const SIDECAR_JOB_NAME = 'Follow Builders Sidecar';
 const LEGACY_FEED_FILES = ['feed-x.json', 'feed-podcasts.json', 'feed-blogs.json'];
@@ -145,10 +142,6 @@ function normalizeWeeklyDay(value) {
   ].includes(raw) ? raw : DEFAULT_WEEKLY_DAY;
 }
 
-function normalizeFeishuDeliveryMode(value) {
-  return value === 'direct_credentials' ? 'direct_credentials' : DEFAULT_FEISHU_MODE;
-}
-
 function normalizeDeliveryTargets(value) {
   const rawTargets = Array.isArray(value)
     ? value
@@ -157,7 +150,7 @@ function normalizeDeliveryTargets(value) {
       : [];
   const normalized = rawTargets
     .map((entry) => collapseWhitespace(entry).toLowerCase())
-    .filter((entry) => entry === 'feishu' || entry === 'web');
+    .filter((entry) => entry === 'web');
   return normalized.length > 0 ? Array.from(new Set(normalized)) : [...DEFAULT_DELIVERY_TARGETS];
 }
 
@@ -177,34 +170,9 @@ function buildDefaultConfig(overrides = {}) {
     },
     delivery: {
       targets: [...DEFAULT_DELIVERY_TARGETS],
-      driver: 'openclaw_announce',
-      openclaw: {
-        channel: null,
-        to: null,
-        accountId: null
-      },
-      feishu: {
-        mode: DEFAULT_FEISHU_MODE,
-        accountId: null,
-        chatId: null,
-        domain: 'feishu'
-      },
-      larkCli: {
-        chatId: null,
-        as: DEFAULT_LARK_CLI_AS
-      },
-      webhook: {
-        url: DEFAULT_FEISHU_WEBHOOK_URL
-      },
       web: {
         outputDir: DEFAULT_WEB_OUTPUT_DIR,
         siteUrl: null
-      },
-      avatarFallbackAccountId: null,
-      avatarUpload: {
-        strategy: 'dedicated_credentials',
-        accountId: null,
-        domain: 'feishu'
       }
     },
     importedFrom: {
@@ -228,28 +196,9 @@ function buildDefaultConfig(overrides = {}) {
       ...base.delivery,
       ...(overrides.delivery || {}),
       targets: normalizeDeliveryTargets(overrides.delivery?.targets || base.delivery.targets),
-      openclaw: normalizeOpenClawDelivery(overrides.delivery?.openclaw || base.delivery.openclaw),
-      feishu: {
-        mode: normalizeFeishuDeliveryMode(overrides.delivery?.feishu?.mode || base.delivery.feishu.mode),
-        accountId: overrides.delivery?.feishu?.accountId || base.delivery.feishu.accountId,
-        chatId: overrides.delivery?.feishu?.chatId || base.delivery.feishu.chatId,
-        domain: overrides.delivery?.feishu?.domain || base.delivery.feishu.domain
-      },
-      larkCli: {
-        chatId: overrides.delivery?.larkCli?.chatId || base.delivery.larkCli.chatId,
-        as: overrides.delivery?.larkCli?.as || base.delivery.larkCli.as
-      },
-      webhook: {
-        url: overrides.delivery?.webhook?.url || base.delivery.webhook.url
-      },
       web: {
         outputDir: overrides.delivery?.web?.outputDir || base.delivery.web.outputDir,
         siteUrl: overrides.delivery?.web?.siteUrl || base.delivery.web.siteUrl
-      },
-      avatarUpload: {
-        strategy: overrides.delivery?.avatarUpload?.strategy || base.delivery.avatarUpload.strategy,
-        accountId: overrides.delivery?.avatarUpload?.accountId || base.delivery.avatarUpload.accountId,
-        domain: overrides.delivery?.avatarUpload?.domain || base.delivery.avatarUpload.domain
       }
     },
     importedFrom: {
@@ -266,31 +215,7 @@ function buildDefaultConfig(overrides = {}) {
   merged.language = ['en', 'zh', 'bilingual'].includes(merged.language)
     ? merged.language
     : DEFAULT_LANGUAGE;
-  merged.delivery.driver = ['feishu_card', 'lark_cli_feishu_card', 'feishu_webhook_card'].includes(merged.delivery.driver)
-    ? merged.delivery.driver
-    : 'openclaw_announce';
   merged.delivery.targets = normalizeDeliveryTargets(merged.delivery.targets);
-  merged.delivery.openclaw = normalizeOpenClawDelivery(merged.delivery.openclaw);
-  merged.delivery.feishu = {
-    mode: normalizeFeishuDeliveryMode(merged.delivery.feishu?.mode),
-    accountId: merged.delivery.feishu?.accountId || null,
-    chatId: merged.delivery.feishu?.chatId || null,
-    domain: merged.delivery.feishu?.domain || 'feishu'
-  };
-  merged.delivery.avatarUpload = {
-    strategy: merged.delivery.avatarUpload?.strategy || 'dedicated_credentials',
-    accountId: merged.delivery.avatarUpload?.accountId || null,
-    domain: merged.delivery.avatarUpload?.domain || merged.delivery.feishu?.domain || 'feishu'
-  };
-  merged.delivery.larkCli = {
-    chatId: merged.delivery.larkCli?.chatId || null,
-    as: ['user', 'bot'].includes(merged.delivery.larkCli?.as)
-      ? merged.delivery.larkCli.as
-      : DEFAULT_LARK_CLI_AS
-  };
-  merged.delivery.webhook = {
-    url: merged.delivery.webhook?.url || null
-  };
   merged.delivery.web = {
     outputDir: collapseWhitespace(merged.delivery.web?.outputDir || DEFAULT_WEB_OUTPUT_DIR) || DEFAULT_WEB_OUTPUT_DIR,
     siteUrl: collapseWhitespace(merged.delivery.web?.siteUrl || '') || null
@@ -376,25 +301,6 @@ async function getOpenClawConfigValue(path, { json = false, fallback = null } = 
   } catch {
     return fallback;
   }
-}
-
-async function loadOpenClawFeishuConfig() {
-  const accounts = await getOpenClawConfigValue('channels.feishu.accounts', {
-    json: true,
-    fallback: null
-  });
-  const defaultAccount = await getOpenClawConfigValue('channels.feishu.defaultAccount', {
-    fallback: null
-  });
-  const domain = await getOpenClawConfigValue('channels.feishu.domain', {
-    fallback: 'feishu'
-  });
-
-  return {
-    accounts: accounts && typeof accounts === 'object' ? accounts : {},
-    defaultAccount,
-    domain: domain || 'feishu'
-  };
 }
 
 function extractLocalDateParts(value, timeZone) {
@@ -1144,7 +1050,6 @@ export {
   buildFeedFingerprint,
   loadCurrentFeeds,
   loadFeedsForCommit,
-  loadOpenClawFeishuConfig,
   loadOriginalConfig,
   loadSidecarConfig,
   loadSidecarPrompts,
@@ -1152,7 +1057,6 @@ export {
   log,
   normalizeOpenClawDelivery,
   normalizeWeeklyDay,
-  normalizeFeishuDeliveryMode,
   nowIso,
   resolveScheduleWindow,
   resolveDeliveryKey,

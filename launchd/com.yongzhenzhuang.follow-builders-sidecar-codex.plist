@@ -6,20 +6,20 @@
     <string>com.yongzhenzhuang.follow-builders-sidecar-codex</string>
 
     <key>WorkingDirectory</key>
-    <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex</string>
+    <string>/Users/yongzhenzhuang/Projects/aimanews</string>
 
     <key>ProgramArguments</key>
     <array>
       <string>/Users/yongzhenzhuang/.nvm/versions/node/v20.20.0/bin/node</string>
-      <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex/scripts/run-local-codex-sidecar.js</string>
+      <string>/Users/yongzhenzhuang/Projects/aimanews/scripts/run-local-codex-sidecar.js</string>
     </array>
 
     <key>StartCalendarInterval</key>
     <dict>
       <key>Hour</key>
-      <integer>6</integer>
+      <integer>20</integer>
       <key>Minute</key>
-      <integer>5</integer>
+      <integer>0</integer>
     </dict>
 
     <key>EnvironmentVariables</key>
@@ -31,10 +31,10 @@
     </dict>
 
     <key>StandardOutPath</key>
-    <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex/.runtime/local-runner/stdout.log</string>
+    <string>/Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stdout.log</string>
 
     <key>StandardErrorPath</key>
-    <string>/Users/yongzhenzhuang/Projects/Feishu/follow-builders-sidecar-codex/.runtime/local-runner/stderr.log</string>
+    <string>/Users/yongzhenzhuang/Projects/aimanews/.runtime/local-runner/stderr.log</string>
 
     <key>RunAtLoad</key>
     <false/>

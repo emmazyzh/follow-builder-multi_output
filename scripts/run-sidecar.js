@@ -7,7 +7,6 @@ import { execFile } from 'child_process';
 import { promisify } from 'util';
 
 import { buildPreparedDigest } from './prepare-digest.js';
-import { sendDigestPayloadThroughOpenClaw } from './send-openclaw-message.js';
 import {
   DEFAULT_MODEL,
   REPO_DIR,
@@ -40,9 +39,7 @@ import {
 const execFileAsync = promisify(execFile);
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const CARD_PIPELINE_SCRIPT = join(SCRIPT_DIR, 'run-feishu-card-digest.js');
-const FEISHU_SEND_SCRIPT = join(SCRIPT_DIR, 'send-feishu-card.js');
-const LARK_CLI_SEND_SCRIPT = join(SCRIPT_DIR, 'send-lark-cli-card.js');
-const FEISHU_WEBHOOK_SEND_SCRIPT = join(SCRIPT_DIR, 'send-feishu-webhook-card.js');
+const SEND_AGENT_PAYLOAD_SCRIPT = join(SCRIPT_DIR, 'send-agent-payload.js');
 const DEFAULT_INPUT_JSON_PATH = '/tmp/follow-builders-sidecar-raw.json';
 const DEFAULT_PAYLOAD_PATH = '/tmp/follow-builders-sidecar-payload.json';
 
@@ -138,94 +135,6 @@ async function runCardPipeline({ inputJsonPath, payloadPath, model }) {
     '--skip-send'
   ], {
     cwd: REPO_DIR,
-    maxBuffer: 16 * 1024 * 1024,
-    timeout: 180000
-  });
-
-  return stdout.trim() ? JSON.parse(stdout.trim()) : { status: 'ok' };
-}
-
-async function sendFeishuCard(payloadPath, config) {
-  const feishu = config.delivery?.feishu || {};
-  const args = ['node', FEISHU_SEND_SCRIPT, '--file', payloadPath];
-
-  if (config.delivery?.avatarFallbackAccountId) {
-    args.push('--avatar-fallback-account', config.delivery.avatarFallbackAccountId);
-  }
-  if (config.delivery?.avatarUpload?.strategy) {
-    args.push('--avatar-upload-strategy', config.delivery.avatarUpload.strategy);
-  }
-  if (config.delivery?.avatarUpload?.accountId) {
-    args.push('--avatar-upload-account', config.delivery.avatarUpload.accountId);
-  }
-  if (config.delivery?.avatarUpload?.domain) {
-    args.push('--avatar-upload-domain', config.delivery.avatarUpload.domain);
-  }
-
-  if (!feishu.accountId || !feishu.chatId) {
-    if (feishu.mode !== 'direct_credentials' || !feishu.chatId) {
-      throw new Error('Feishu card delivery requires chatId and a configured credential source');
-    }
-  }
-  args.push('--mode', feishu.mode || 'openclaw_account');
-  if (feishu.accountId) {
-    args.push('--account', feishu.accountId);
-  }
-  args.push(
-    '--to',
-    feishu.chatId
-  );
-
-  const { stdout } = await execFileAsync(args[0], args.slice(1), {
-    cwd: REPO_DIR,
-    maxBuffer: 16 * 1024 * 1024,
-    timeout: 180000
-  });
-
-  return stdout.trim() ? JSON.parse(stdout.trim()) : { status: 'ok' };
-}
-
-async function sendLarkCliFeishuCard(payloadPath, config) {
-  const larkCli = config.delivery?.larkCli || {};
-  if (!larkCli.chatId) {
-    throw new Error('lark-cli Feishu card delivery requires delivery.larkCli.chatId');
-  }
-
-  const { stdout } = await execFileAsync('node', [
-    LARK_CLI_SEND_SCRIPT,
-    '--file',
-    payloadPath,
-    '--to',
-    larkCli.chatId
-  ], {
-    cwd: REPO_DIR,
-    env: {
-      ...process.env,
-      FOLLOW_BUILDERS_LARK_CLI_AS: larkCli.as || 'user'
-    },
-    maxBuffer: 16 * 1024 * 1024,
-    timeout: 180000
-  });
-
-  return stdout.trim() ? JSON.parse(stdout.trim()) : { status: 'ok' };
-}
-
-async function sendFeishuWebhookCard(payloadPath, config) {
-  const webhook = config.delivery?.webhook || {};
-  if (!webhook.url) {
-    throw new Error('Feishu webhook card delivery requires delivery.webhook.url');
-  }
-
-  const { stdout } = await execFileAsync('node', [
-    FEISHU_WEBHOOK_SEND_SCRIPT,
-    '--file',
-    payloadPath
-  ], {
-    cwd: REPO_DIR,
-    env: {
-      ...process.env,
-      FOLLOW_BUILDERS_FEISHU_WEBHOOK_URL: webhook.url
-    },
     maxBuffer: 16 * 1024 * 1024,
     timeout: 180000
   });
@@ -700,17 +609,18 @@ async function execute(args) {
 
   let deliveryResult = { status: 'dry_run' };
   if (!args.skipDelivery) {
-    if (config.delivery.driver === 'feishu_card') {
-      deliveryResult = await sendFeishuCard(args.payloadPath, config);
-    } else if (config.delivery.driver === 'lark_cli_feishu_card') {
-      deliveryResult = await sendLarkCliFeishuCard(args.payloadPath, config);
-    } else if (config.delivery.driver === 'feishu_webhook_card') {
-      deliveryResult = await sendFeishuWebhookCard(args.payloadPath, config);
-    } else {
-      deliveryResult = await sendDigestPayloadThroughOpenClaw(payload, {
-        ...(config.delivery?.openclaw || {})
-      });
-    }
+    const { stdout } = await execFileAsync('node', [
+      SEND_AGENT_PAYLOAD_SCRIPT,
+      '--input-json',
+      args.inputJsonPath,
+      '--payload',
+      args.payloadPath
+    ], {
+      cwd: REPO_DIR,
+      maxBuffer: 16 * 1024 * 1024,
+      timeout: 180000
+    });
+    deliveryResult = stdout.trim() ? JSON.parse(stdout.trim()) : { status: 'ok' };
   }
 
   await commitStateUpdate(async (state) => {

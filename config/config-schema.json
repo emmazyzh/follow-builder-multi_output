@@ -74,9 +74,7 @@
       "type": "object",
       "required": [
         "targets",
-        "driver",
-        "openclaw",
-        "feishu"
+        "web"
       ],
       "properties": {
         "targets": {
@@ -84,110 +82,14 @@
           "items": {
             "type": "string",
             "enum": [
-              "feishu",
               "web"
             ]
           },
           "minItems": 1,
           "uniqueItems": true,
           "default": [
-            "feishu"
-          ]
-        },
-        "driver": {
-          "type": "string",
-          "enum": [
-            "openclaw_announce",
-            "feishu_card",
-            "lark_cli_feishu_card",
-            "feishu_webhook_card"
+            "web"
           ],
-          "default": "openclaw_announce"
-        },
-        "openclaw": {
-          "type": "object",
-          "properties": {
-            "channel": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "to": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "accountId": {
-              "type": [
-                "string",
-                "null"
-              ]
-            }
-          }
-        },
-        "feishu": {
-          "type": "object",
-          "properties": {
-            "mode": {
-              "type": "string",
-              "enum": [
-                "openclaw_account",
-                "direct_credentials"
-              ],
-              "default": "openclaw_account"
-            },
-            "accountId": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "chatId": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "domain": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "default": "feishu"
-            }
-          }
-        },
-        "larkCli": {
-          "type": "object",
-          "properties": {
-            "chatId": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "as": {
-              "type": "string",
-              "enum": [
-                "user",
-                "bot"
-              ],
-              "default": "user"
-            }
-          }
-        },
-        "webhook": {
-          "type": "object",
-          "properties": {
-            "url": {
-              "type": [
-                "string",
-                "null"
-              ]
-            }
-          }
         },
         "web": {
           "type": "object",
@@ -201,38 +103,6 @@
                 "string",
                 "null"
               ]
-            }
-          }
-        },
-        "avatarFallbackAccountId": {
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "avatarUpload": {
-          "type": "object",
-          "properties": {
-            "strategy": {
-              "type": "string",
-              "enum": [
-                "dedicated_credentials",
-                "openclaw_account"
-              ],
-              "default": "dedicated_credentials"
-            },
-            "accountId": {
-              "type": [
-                "string",
-                "null"
-              ]
-            },
-            "domain": {
-              "type": [
-                "string",
-                "null"
-              ],
-              "default": "feishu"
             }
           }
         }

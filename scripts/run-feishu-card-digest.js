@@ -10,13 +10,11 @@ import { enrichFeedXQuotes, enrichPodcastEpisodeLinks } from './prepare-digest.j
 const execFileAsync = promisify(execFile);
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const PREPARE_SCRIPT = join(SCRIPT_DIR, 'prepare-digest.js');
-const SEND_SCRIPT = join(SCRIPT_DIR, 'send-feishu-card.js');
 const PROMPT_PATH = join(SCRIPT_DIR, '..', 'prompts', 'feishu-card-digest.md');
 const DEFAULT_MODEL = 'openai-codex/gpt-5.4';
 const DEFAULT_PAYLOAD_PATH = '/tmp/follow-builders-card-payload.json';
 const MODEL_TIMEOUT_MS = 120000;
 const PREPARE_TIMEOUT_MS = 120000;
-const SEND_TIMEOUT_MS = 120000;
 const MAX_PODCAST_TRANSCRIPT_CHARS = 12000;
 const MAX_BLOG_CONTENT_CHARS = 8000;
 const MAX_MODEL_REPAIR_PASSES = 2;
@@ -1444,39 +1442,9 @@ async function finalizePayload(payload, context) {
   };
 }
 
-async function sendCard(payloadPath, to, accountId, mode) {
-  log('info', 'Sending generated payload via send-feishu-card.js', {
-    payloadPath,
-    accountId,
-    mode
-  });
-
-  const sendArgs = [
-    SEND_SCRIPT,
-    '--file',
-    payloadPath,
-    '--to',
-    to,
-    '--mode',
-    mode || 'openclaw_account'
-  ];
-
-  if (accountId) {
-    sendArgs.push('--account', accountId);
-  }
-
-  const { stdout } = await execFileAsync('node', sendArgs, {
-    cwd: SCRIPT_DIR,
-    maxBuffer: 16 * 1024 * 1024,
-    timeout: SEND_TIMEOUT_MS
-  });
-
-  return stdout.trim();
-}
-
 async function main() {
   const args = parseArgs(process.argv);
-  log('info', 'Feishu digest pipeline started', {
+  log('info', 'Structured digest pipeline started', {
     model: args.model,
     accountId: args.accountId,
     mode: args.mode
@@ -1555,16 +1523,14 @@ async function main() {
   });
 
   if (args.skipSend) {
-    log('info', 'Feishu digest pipeline completed without sending', {
+    log('info', 'Structured digest pipeline completed without sending', {
       payloadPath: args.payloadPath
     });
     process.stdout.write(`${JSON.stringify({ status: 'ok', skippedSend: true, payloadPath: args.payloadPath })}\n`);
     return;
   }
 
-  const sendResult = await sendCard(args.payloadPath, args.to, args.accountId, args.mode);
-  log('info', 'Feishu digest pipeline completed');
-  process.stdout.write(`${sendResult}\n`);
+  throw new Error('Direct send mode has been removed; use --skip-send and publish through the web archive flow.');
 }
 
 export {
