@@ -509,7 +509,7 @@ function classifyLanguageBlock(block) {
   if (!value) return 'shared';
   if (/^```[\s\S]*```$/.test(value)) return 'shared';
   if (/^(?:https?:\/\/\S+\s*)+$/.test(value)) return 'shared';
-  if (/^[`[\](){}<>=/*+_.:;,\-0-9A-Za-z\s]+$/.test(value) && /[A-Za-z]/.test(value)) {
+  if (!/[A-Za-z\u3400-\u9fff]/.test(value)) {
     return 'shared';
   }
   if (/[\u3400-\u9fff]/.test(value)) return 'zh';
