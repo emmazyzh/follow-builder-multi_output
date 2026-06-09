@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-08T12:03:17.038Z",
-  "latestDate": "2026-06-08",
+  "updatedAt": "2026-06-09T12:44:35.303Z",
+  "latestDate": "2026-06-09",
   "dates": [
+    {
+      "date": "2026-06-09",
+      "title": "AI Builders Daily · 2026-06-09",
+      "summary": "**Benchmarks just got meaner**: **FrontierCode** lands with maintainer-grade rubrics and a brutal 13.8% on FC Diamond, calling half of **SWE-Bench** “unmergeable slop”; **Apple developers get a new routing stack** as **Claude** plugs into the Foundation Models framework for heavier reasoning and tool use; the builder chatter is all about interfaces and control, from **NotebookLM** expanding beyond source files to **Codex** phone workflows, nested loops, and the stubborn reality that context still beats raw intelligence.\n\n**基准开始下狠手了**：**FrontierCode** 这次不看会不会跑通测试，直接盯上代码能不能真进主干，连 **SWE-Bench** 都被点名一半是“合不进去的糊弄活”；**Apple** 这边也有实打实的新东西，**Claude** 接进 Foundation Models，轻任务留在端侧，复杂推理再往上接；另一条线也很热闹，大家都在聊工具怎么真正顺手，从 **NotebookLM** 往外扩检索、**Codex** 上手机桌面，到一句老实话反复被验证：模型再强，没上下文还是容易跑偏。",
+      "itemCount": 17,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-09T12:44:35.301Z",
+      "commit": {
+        "sha": "5cea16075eb9baf5d48e708f84006ba8a8f5cbf7",
+        "committedAt": "2026-06-09T07:33:24Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-08",
       "title": "AI Builders Daily · 2026-06-08",

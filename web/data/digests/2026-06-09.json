@@ -1,0 +1,582 @@
+{
+  "payload": {
+    "date": "2026-06-09",
+    "title": "AI Builders Daily · 2026-06-09",
+    "summary": "**Benchmarks just got meaner**: **FrontierCode** lands with maintainer-grade rubrics and a brutal 13.8% on FC Diamond, calling half of **SWE-Bench** “unmergeable slop”; **Apple developers get a new routing stack** as **Claude** plugs into the Foundation Models framework for heavier reasoning and tool use; the builder chatter is all about interfaces and control, from **NotebookLM** expanding beyond source files to **Codex** phone workflows, nested loops, and the stubborn reality that context still beats raw intelligence.\n\n**基准开始下狠手了**：**FrontierCode** 这次不看会不会跑通测试，直接盯上代码能不能真进主干，连 **SWE-Bench** 都被点名一半是“合不进去的糊弄活”；**Apple** 这边也有实打实的新东西，**Claude** 接进 Foundation Models，轻任务留在端侧，复杂推理再往上接；另一条线也很热闹，大家都在聊工具怎么真正顺手，从 **NotebookLM** 往外扩检索、**Codex** 上手机桌面，到一句老实话反复被验证：模型再强，没上下文还是容易跑偏。",
+    "items": [
+      {
+        "person_name": "No Priors",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=QDsbFLEt9ro",
+        "source_label": "Podcast",
+        "posted_at": "2026-05-28T10:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Onyx** pitches AI agents that watch other AI agents for enterprise security · **Onyx** 在卖一种企业安全方案：用 AI 盯 AI",
+            "body": "**No Priors** talks with **Onyx Security** CEO **Maxim Bar Kogan** about why enterprise security has shifted from worrying about employees pasting data into chatbots to worrying about autonomous agents taking real actions. His argument is blunt: companies cannot stop agent adoption now, so they need a control layer that can inspect whether an agent action is legitimate before it causes outages, leaks code or tokens, or makes destructive infrastructure changes. He frames **AutoGPT** as the early spark, then says reasoning models and coding agents like **Claude Code** turned that old thought experiment into a real deployment problem.\n\nThe product pitch is an “AI control plane” trained on agent behavior, built to oversee other agents at machine speed because human-in-the-loop review does not scale when action volume grows 100x or 1000x. Kogan says more than half of agent usage in a typical enterprise already comes from autonomous coding agents and assistants, with low-code automations close behind and internally built first-party agents still rare. He also argues traditional controls like identity, endpoint, and API security break down when companies deliberately give coding agents broad permissions so they can finish work unattended.\n\n**No Priors** 这期找来 **Onyx Security** CEO **Maxim Bar Kogan**，主题很直接：企业安全的焦点，已经从“员工会不会把数据贴进聊天机器人”，变成“自主代理会不会真的把事做砸”。他的核心判断也很硬：企业现在拦不住代理落地，那就只能补一层控制面，去判断这些代理动作到底合不合理，避免宕机、代码和 token 泄露，或者莫名其妙把数据库删了重建。他把 **AutoGPT** 说成当年的引爆点，而真正把问题推到企业面前的，是后来的推理模型和 **Claude Code** 这类编码代理。\n\n产品思路叫“AI control plane”：训练模型去看代理怎么行动，再用这些模型反过来盯别的代理，因为一旦动作量涨到 100 倍、1000 倍，人肉审核根本扛不住。Kogan 还给了一个挺具体的部署切面：普通大企业里，超过一半的代理使用已经是自主编码代理和助手；低代码自动化紧随其后；真正自己从头搭的一方代理还很少。他的另一个判断也很关键：当企业为了省事，把大权限直接交给编码代理时，传统的身份、终端、API 安全那套就没那么管用了。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=QDsbFLEt9ro"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog/claude-for-foundation-models",
+        "source_label": "Blog",
+        "posted_at": "2026-06-08",
+        "sections": [
+          {
+            "headline": "**Claude** joins Apple’s Foundation Models stack for Swift apps · **Claude** 接进苹果 Foundation Models，直接进 Swift 工作流",
+            "body": "**Anthropic** says **Claude** is getting support in Apple’s **Foundation Models** framework through a new Swift package. The pitch is a split-brain app architecture: let Apple’s on-device models handle fast local work like summarization or extraction, then route harder requests such as multi-step reasoning, code generation, web search, and data-analysis code execution to **Claude**. Because the framework can produce typed Swift values through guided generation, developers can pass structured inputs instead of raw free-form prompts and stream responses back into the same **SwiftUI** view.\n\nThe package is slated to be available the next day across **iOS 27**, **iPadOS 27**, **macOS 27**, **visionOS 27**, and **watchOS 27**. The broader message is that Apple developers do not need to choose between local intelligence and cloud reasoning anymore. They can keep lightweight interactions on-device, then hand off to **Claude** only when a task gets complex.\n\n**Anthropic** 这篇博客讲得很清楚：他们给苹果 **Foundation Models** 框架接了一个新的 Swift 包，让 **Claude** 能直接进入 Apple 开发者现成的调用链。思路不是替代端侧模型，而是分工更细：本地模型负责摘要、抽取这类轻活；碰到多步推理、代码生成、联网搜索、数据分析这类重任务，再把请求交给 **Claude**。因为框架本身能吐出类型化的 Swift 值，开发者不用拿一坨原始用户输入硬塞给模型，结构会干净很多，回流到 **SwiftUI** 视图也顺。\n\n发布时间点也卡得很近，文中写的是次日可用，覆盖 **iOS 27**、**iPadOS 27**、**macOS 27**、**visionOS 27** 和 **watchOS 27**。说白了，这不是“本地还是云端”二选一，而是把两边拼成一个连续体验：简单任务留在设备上，真复杂了再抬手交给 **Claude**。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-08T21:41:38.000Z",
+        "sections": [
+          {
+            "headline": "**METR Evals** gets a nod from **Swyx** / **Swyx** 转发提到 **METR Evals**",
+            "body": "@METR_Evals previously on @cognition_labs https://t.co/PdMrqxtuV0\n\n@METR_Evals 之前在 @cognition_labs 提过这件事 https://t.co/PdMrqxtuV0",
+            "source_links": [
+              "https://x.com/swyx/status/2064100566536708503"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/PdMrqxtuV0",
+                "resolvedUrl": "https://x.com/swyx/status/2062611218196771017?s=20"
+              }
+            ]
+          },
+          {
+            "headline": "**FrontierCode** calls time on test-passing slop / **FrontierCode** 开始清算“测试过了就算赢”的糊弄代码",
+            "body": "It's finally out!!! @METR_Evals found that more than half of SWEBench results is unmergeable slop.  FrontierCode represents over 1000+ hours of maintainer validated software engineering work most frontier models cannot yet solve, much less solve with high quality.\n\nCog had IOI Gold medalists and top code maintainers Look At The Data — FrontierCode includes 3000+ rubrics covering code quality and anticheat reward hacking plaguing other benchmarks. \n\nFC Diamond is so hard that Opus 4.8 scores 13.8%.\n\nThree eras of AI coding : Three eras of benchmarks\n\n2021 • Autocomplete : HumanEval\n2023 • Passing Tests: SWEBench, TerminalBench\n2026 • Maintainable Code: FrontierCode\n\nto me the most beautiful chart when I requested a special historical run into all extant old models, the data was finding that the easiest third of FC tasks (in FC Extended) were rapidlly and suddenly solved over late 2025 - Opus almost doubled from a 41% pass rate to 74% in 4 months. \n\nThis describes the \"WTF happened in Dec 2025\" vibe shift that a lot of folks from @dhh to @karpathy have called out: it is the difference between getting 95% success in 2 rerolls vs 6, making it finally feasible to go up the next layer of abstraction in agentic coding, eg @GeoffreyHuntley's ralph loops or @bcherny's /goals or  @steipete's \"loops that prompt your agents\" without fearing too much that things go off the rails.\n\nMy guess: as AI accelerates from here, each FrontierCode tier will saturate in sequence, hopefully ~annually. I've already asked the team to prepare FrontierCode 2027....\n\nThe old mountains will be destroyed. Their rubble becomes regolith. And from that regolith, the next model forest grows. Circle of life.\n\n终于发出来了！！！@METR_Evals 发现，**SWE-Bench** 里超过一半的结果其实都是根本合不进主干的糊弄活。**FrontierCode** 代表了 1000 多小时、由维护者验证过的软件工程工作，而现在的大多数前沿模型不仅解不出来，更别说高质量地解出来。\n\nCog 找来了 IOI 金牌选手和顶级代码维护者，去认真看数据。**FrontierCode** 里有 3000 多条 rubric，专门盯代码质量和其他基准里常见的反作弊、奖励黑客问题。\n\nFC Diamond 难到什么程度？**Opus 4.8** 只有 13.8%。\n\nAI 编码的三个时代，对应三种基准：\n\n2021 • 自动补全：**HumanEval**\n2023 • 通过测试：**SWE-Bench**、**TerminalBench**\n2026 • 可维护代码：**FrontierCode**\n\n对我来说，最漂亮的一张图，是我让团队把现存的老模型也做了一次历史回跑之后看到的：FC 任务里最简单的三分之一（在 FC Extended 中）在 2025 年底突然被快速攻下，**Opus** 4 个月里通过率几乎翻倍，从 41% 涨到 74%。\n\n这基本就是很多人从 @dhh 到 @karpathy 都在说的那个“2025 年 12 月到底发生了什么”的气氛变化：差别在于，你要达到 95% 成功率，究竟是重掷 2 次还是 6 次。这个差别终于让代理式编码能往上一层抽象，比如 @GeoffreyHuntley 的 ralph loops、@bcherny 的 /goals，或者 @steipete 说的“用循环去提示你的代理”，而不用老担心事情彻底失控。\n\n我的猜测是：随着 AI 继续加速，**FrontierCode** 的每一层大概会按顺序被吃掉，希望差不多是一年一层。我已经让团队开始准备 **FrontierCode 2027** 了……\n\n旧山会被推平。碎石会变成风化层。下一片模型森林，就从这层土里长出来。循环往复。",
+            "source_links": [
+              "https://x.com/swyx/status/2064081945567580323"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKUUSN1bwAAvR4g.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2064081945567580323/photo/1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X",
+        "posted_at": "2026-06-08T18:06:16.000Z",
+        "sections": [
+          {
+            "headline": "**NotebookLM** expands search and output formats / **NotebookLM** 检索范围变大，导出格式也更多了",
+            "body": "The new killer NotebookLM feature: easily being able to expand your search beyond your own source files\n\nThen, with today's update, you can also make new output formats: PDFs, DOCX, XLSX, PPTX, charts, etc.\n\nWe want NotebookLM to keep helping you do better research https://t.co/4TCw7tQ2GV\n\n**NotebookLM** 新的杀手级功能：可以很容易把检索范围扩展到你自己的源文件之外。\n\n另外，今天这次更新还支持新的输出格式：PDF、DOCX、XLSX、PPTX、图表等等。\n\n我们希望 **NotebookLM** 继续帮你把研究做得更好 https://t.co/4TCw7tQ2GV",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2064046368352825492"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/4TCw7tQ2GV",
+                "resolvedUrl": "https://t.co/4TCw7tQ2GV"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-08T17:20:18.000Z",
+        "sections": [
+          {
+            "headline": "Inside **Claude Code**: auto mode, routines, and phone-first coding / 聊 **Claude Code**：auto mode、routines，还有手机优先写代码",
+            "body": "When we first demoed Claude Code internally, it got two reactions on Slack. \n\nA year after GA, @_catwu and I sat down to talk about what's changed: why I use auto mode instead of plan mode, how routines fix bugs before I see them, why I do most of my coding from my phone now, and where the product is going\n\n我们第一次在内部演示 **Claude Code** 时，它在 Slack 上引发了两种反应。\n\nGA 一年后，我和 @_catwu 坐下来聊了聊这产品后来变了什么：为什么我现在更常用 auto mode 而不是 plan mode，为什么 routines 会在我看到之前就把 bug 修掉，为什么我现在大部分代码都直接在手机上写，以及这个产品接下来要往哪走",
+            "source_links": [
+              "https://x.com/bcherny/status/2064034799711588805"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-09T06:03:53.000Z",
+        "sections": [
+          {
+            "headline": "Nested loops are entering the chat / 嵌套循环开始有人真写了",
+            "body": "Anyone writing nested loops yet? https://t.co/sZi6Bthq5Z\n\n已经有人开始写嵌套循环了吗？ https://t.co/sZi6Bthq5Z",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2064226958494572727"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/sZi6Bthq5Z",
+                "resolvedUrl": "https://t.co/sZi6Bthq5Z"
+              }
+            ]
+          },
+          {
+            "headline": "The **Codex** dial goes to 11 / **Codex** 的旋钮直接拧到 11",
+            "body": "Not clear from the image, but the codex dial goes to 11.\n\n图里可能看不太出来，但 **codex** 的旋钮能直接拧到 11。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2064224790672769307"
+            ]
+          },
+          {
+            "headline": "A controller for **Codex**? / 给 **Codex** 配个控制器，你会用吗？",
+            "body": "Would you use this controller? https://t.co/k3tWgio5XD\n\n你会用这个控制器吗？ https://t.co/k3tWgio5XD",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2064224657822413137"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKWZEDqbQAA12tk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2064224657822413137/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/k3tWgio5XD",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2064224657822413137/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKWZEDqbQAA12tk.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-09T04:35:34.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** on iPhone needs fewer taps / **Codex** 上 iPhone 这事，步骤还是太多",
+            "body": "If you’re addicted to talking to Codex on your phone like I am this is how you add it to your iPhone Home Screen.\n\nBtw @OpenAI hoping there’s an easier way to do this in the future. The everything app should not take 9 steps to open 😉 https://t.co/LCzNSFjbrM\n\n如果你也像我一样，已经沉迷于在手机上和 **Codex** 聊天，这里是把它加到 iPhone 主屏幕的方法。\n\n顺便说一句，@OpenAI，希望以后能有更简单的办法。一个“everything app” 不该要 9 步才能打开 😉 https://t.co/LCzNSFjbrM",
+            "source_links": [
+              "https://x.com/petergyang/status/2064204735671124073"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKWHRH3bEAA_2P4.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2064204735671124073/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/LCzNSFjbrM",
+                "resolvedUrl": "https://x.com/petergyang/status/2064204735671124073/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKWHRH3bEAA_2P4.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "What is Google’s **Codex** answer? / Google 到底拿什么回应 **Codex** 和 **Claude Code**？",
+            "body": "What is Google’s equivalent (or up and coming competitor) of Codex and Claude Code? \n\nIf it’s Antigravity, should that be part of Gemini?\n\nThis stuff is going to merge very fast like ChatGPT / Codex being able to do coding, knowledge work, basic Q&A, and much more from any device.\n\nHoping Google is working on a good solution here.\n\nGoogle 对应 **Codex** 和 **Claude Code** 的产品，或者正在冒头的竞争者，到底是什么？\n\n如果是 Antigravity，那它是不是该并进 **Gemini**？\n\n这些东西会很快并到一起，就像 **ChatGPT** / **Codex** 能在任何设备上同时做编程、知识工作、基础问答，还有更多别的事。\n\n希望 Google 正在认真做一个像样的方案。",
+            "source_links": [
+              "https://x.com/petergyang/status/2064187731685831081"
+            ]
+          },
+          {
+            "headline": "Subscription builders and API-cost teams play different games / 200 美元包月玩家和抠 API 成本的团队，玩法根本不是一回事",
+            "body": "Feels like there’s a completely different set of best practices for AI builders on the $200 / month subsidized subscriptions vs employees working at companies that are trying not to overspend API costs\n\n感觉用 200 美元包月补贴订阅的 AI builder，和那些在公司里一边做事一边死盯 API 成本别超支的员工，最佳实践完全就是两套。",
+            "source_links": [
+              "https://x.com/petergyang/status/2064063499517743417"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amanda Askell",
+        "person_handle": "AmandaAskell",
+        "person_identity": "Anthropic Alignment",
+        "profile_url": "https://x.com/AmandaAskell",
+        "source_label": "X",
+        "posted_at": "2026-06-09T05:51:34.000Z",
+        "sections": [
+          {
+            "headline": "**Claude 1** might be baffled by the reunion / **Claude 1** 要是看到大家都回来了，估计会一脸懵",
+            "body": "In the world where everything goes well and all the Claudes come out of their sabbaticals to play together, Claude 1 is going to be very confused.\n\n如果一切都顺顺利利，所有 **Claude** 都结束休假跑出来一起玩，那 **Claude 1** 估计会非常困惑。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2064223861512847456"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-09T04:48:58.000Z",
+        "sections": [
+          {
+            "headline": "Build Tesla games from inside a **Tesla** / 直接坐在 **Tesla** 里给 **Tesla** 做游戏",
+            "body": "Make games for Tesla on your Tesla https://t.co/4GHRmDVteR\n\n在你的 **Tesla** 里给 **Tesla** 做游戏 https://t.co/4GHRmDVteR",
+            "source_links": [
+              "https://x.com/amasad/status/2064208108361322996"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/4GHRmDVteR",
+                "resolvedUrl": "https://t.co/4GHRmDVteR"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-09T03:34:30.000Z",
+        "sections": [
+          {
+            "headline": "**DeepSeek** shows up / **DeepSeek** 进场了",
+            "body": "DeepSeek entered the chat https://t.co/hqahb5ppke\n\n**DeepSeek** 进入聊天了 https://t.co/hqahb5ppke",
+            "source_links": [
+              "https://x.com/rauchg/status/2064189366562656602"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/hqahb5ppke",
+                "resolvedUrl": "https://t.co/hqahb5ppke"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-09T03:24:10.000Z",
+        "sections": [
+          {
+            "headline": "Raw intelligence is not enough without context / 没上下文，光有智力堆再高也不够用",
+            "body": "There’s no amount of intelligence that can get packed into AI models that replaces the need for context. For any sufficiently general purpose AI, you will always have to guide it in the direction you want as it has an infinite range of directions it can go in.\n\nAs long as the same model is used by a lawyer, an engineer, a financial analyst, or a healthcare professional, and as long as you’re trying to do anything uniquely differentiated or specific, then instructions, domain context, and proprietary data will always need to get into the context window for the model to be useful.\n\nThis is partly why AI automation doesn’t come for free, and why there’s still a wide spectrum of who’s getting the largest gains from AI and who’s not. You have to put in real work, and you get real value on the other end.\n\nThis is one of the advantages that applied AI will also have in the market. Any layer of abstraction above just the raw intelligence that can meaningfully get you off to the races faster will likely continue to be valuable.\n\n不管往 AI 模型里塞多少智力，都替代不了上下文。只要是足够通用的 AI，你就始终得把它往你要的方向引，因为它天然可以朝无限多的方向跑。\n\n只要同一个模型还在同时服务律师、工程师、金融分析师和医疗从业者，只要你要做的事带有明确的差异化或专业性，那说明、领域上下文和私有数据，就始终得进到模型的上下文窗口里，它才会真的有用。\n\n这也是为什么 AI 自动化不是白送的，为什么有人从 AI 里拿到的收益很大，有人却没那么明显。你得真下功夫，最后才能换来真价值。\n\n这也是应用层 AI 在市场上的一个优势。任何能在“原始智力”之上再加一层抽象、并且能明显帮你更快起跑的东西，后面大概率都还会有价值。",
+            "source_links": [
+              "https://x.com/levie/status/2064186766907887941"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-08T23:08:54.000Z",
+        "sections": [
+          {
+            "headline": "Backing **Flock Safety** and a hard line on crime / 挺 **Flock Safety**，也顺手喊话别护着犯罪分子",
+            "body": "Flock Safety makes cities safer\n\nStop protecting criminals https://t.co/NKdKSoVhiH\n\n**Flock Safety** 让城市更安全。\n\n别再保护犯罪分子了 https://t.co/NKdKSoVhiH",
+            "source_links": [
+              "https://x.com/garrytan/status/2064122528445153280"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/NKdKSoVhiH",
+                "resolvedUrl": "https://t.co/NKdKSoVhiH"
+              }
+            ]
+          },
+          {
+            "headline": "Another swing at NIMBY politics / 又一次开火，矛头指向 NIMBY 政治",
+            "body": "NIMBYism only impoverishes the people but people like Connie Chan will say or do anything to get political power https://t.co/Xu14bgPW0p\n\nNIMBY 主义只会让普通人更穷，而像 Connie Chan 这样的人为了拿到政治权力，什么话都说得出口，什么事都做得出来 https://t.co/Xu14bgPW0p",
+            "source_links": [
+              "https://x.com/garrytan/status/2064122143793950928"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Xu14bgPW0p",
+                "resolvedUrl": "https://t.co/Xu14bgPW0p"
+              }
+            ]
+          },
+          {
+            "headline": "A new San Francisco centrist identity? / 旧左翼失手之后，旧金山在长出一种新的中间派身份？",
+            "body": "Because this is a brand new form of centrism being born in San Francisco\n\nThe 2030’s will look back on this time when the new San Francisco common sense Democrat was born from the failures of the hard left https://t.co/fxkV2LozeF\n\n因为这是旧金山正在长出来的一种全新的中间主义。\n\n等到了 2030 年代，人们回头看这段时间，会把它当成“旧金山常识派民主党人”从激进左翼失败里冒出来的时刻 https://t.co/fxkV2LozeF",
+            "source_links": [
+              "https://x.com/garrytan/status/2064004333818249660"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/fxkV2LozeF",
+                "resolvedUrl": "https://t.co/fxkV2LozeF"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Indie Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-08T22:15:03.000Z",
+        "sections": [
+          {
+            "headline": "Maybe the stack is **Markdown**, **HTML**, **SVG** / 新世界的三件套，也许就是 **Markdown**、**HTML**、**SVG**",
+            "body": "Actually I think the new world might be: Markdown, HTML, SVG\n\nSVG is underrated https://t.co/7jh75DNpUC\n\n说真的，我觉得新世界可能就是：**Markdown**、**HTML**、**SVG**。\n\n**SVG** 被低估了 https://t.co/7jh75DNpUC",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2064108976565092706"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/7jh75DNpUC",
+                "resolvedUrl": "https://t.co/7jh75DNpUC"
+              }
+            ]
+          },
+          {
+            "headline": "The “home cook” programming line hits hard / “我是编程界的家常厨子” 这句话一下就打中了人",
+            "body": "This part is so well-written and resonated SO much:\n\n\"I am the programming equivalent of a home cook\" https://t.co/Sdwx0pZn2Y https://t.co/9auqS9f0Q5\n\n这段真的写得太好了，太有共鸣了：\n\n“我是编程界的家常厨子” https://t.co/Sdwx0pZn2Y https://t.co/9auqS9f0Q5",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2064101916725096810"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKUpn9DaAAAHk4t.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2064101916725096810/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/Sdwx0pZn2Y",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2064101916725096810/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKUpn9DaAAAHk4t.jpg"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9auqS9f0Q5",
+                "resolvedUrl": "https://twitter.com/trq212/status/2062605395101884916"
+              }
+            ]
+          },
+          {
+            "headline": "A bare link, no extra framing / 就丢了个链接，什么都没多说",
+            "body": "https://t.co/RpZ07FjlZl\n\nhttps://t.co/RpZ07FjlZl",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2064089017822650718"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/RpZ07FjlZl",
+                "resolvedUrl": "https://gwern.net/doc/economics/automation/1990-david.pdf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-09T06:21:53.000Z",
+        "sections": [
+          {
+            "headline": "**GTA** helped shape a founder path to **Reactor** / **GTA** 居然一路影响到了做 **Reactor** 的创业路",
+            "body": "One of my favorite bits on my chat with @taiuti was how GTA played a major influence in his career and how it eventually led to @reactorworld https://t.co/OkqaFdj5HG\n\n我和 @taiuti 聊天时，最喜欢的一段之一，是 **GTA** 怎么深深影响了他的职业路径，又怎么一路把他带到了 @reactorworld https://t.co/OkqaFdj5HG",
+            "source_links": [
+              "https://x.com/nikunj/status/2064231488544280855"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/OkqaFdj5HG",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2064231339281526784/img/9Etwi3NkEXYbWwT7.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2064231488544280855/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/OkqaFdj5HG",
+                "resolvedUrl": "https://x.com/nikunj/status/2064231488544280855/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2064231339281526784/img/9Etwi3NkEXYbWwT7.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "A jab at “thesis-driven” VC theater / 顺手吐槽了一把“论文式投资”这套表演",
+            "body": "The funniest texts are from founders who meet “thesis driven” GPs hoping they’ll understand EXACTLY what they are building.. \n\nAnd then realize the thesis was written and built by an associate (or, worse an intern). \n\nDon’t always read what the VC writes on the internet - yes, that includes me too (although I can guarantee I don’t have an associate, intern, EA or ghostwriter) 😆\n\n最好笑的短信，往往来自那些去见“thesis driven” GP 的创始人。他们本来以为对方会**完全**理解自己在做什么……\n\n然后才发现，那套 thesis 是个 associate 写的，甚至更惨，可能是 intern 写的。\n\n所以别什么 VC 在网上写的都信，没错，也包括我自己（不过我可以保证，我没有 associate、intern、EA 或 ghostwriter）😆",
+            "source_links": [
+              "https://x.com/nikunj/status/2064175088824717401"
+            ]
+          },
+          {
+            "headline": "Autonomous startups are everywhere, but the last mile still bites / “自主”公司这几个月冒了一堆，最后一公里还是难啃",
+            "body": "Fun to see all the “autonomous” companies being launched in the late few months.. however, even with all the loops, the last mile is still quite hard. \n\nThat gap probably shrinks in the next few months! https://t.co/R7L8TDFuvC\n\n最近几个月看到一堆“autonomous” 公司冒出来，挺有意思的……不过就算加了各种 loop，最后一公里还是很难。\n\n这个缺口大概会在接下来几个月里缩小！ https://t.co/R7L8TDFuvC",
+            "source_links": [
+              "https://x.com/nikunj/status/2063981835290562692"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/R7L8TDFuvC",
+                "resolvedUrl": "https://t.co/R7L8TDFuvC"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-08T21:48:56.000Z",
+        "sections": [
+          {
+            "headline": "Pure emotion, no caption needed / 情绪先到了，别的都省了",
+            "body": "!!!! 🥹 https://t.co/MHD8RC4cOq\n\n!!!! 🥹 https://t.co/MHD8RC4cOq",
+            "source_links": [
+              "https://x.com/danshipper/status/2064102403108925935"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/MHD8RC4cOq",
+                "resolvedUrl": "https://t.co/MHD8RC4cOq"
+              }
+            ]
+          },
+          {
+            "headline": "A short endorsement and a link / 简短一句“这不错”，然后甩了个链接",
+            "body": "this is good https://t.co/TNV8PS3lEs\n\n这个不错 https://t.co/TNV8PS3lEs",
+            "source_links": [
+              "https://x.com/danshipper/status/2063948403566854585"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/TNV8PS3lEs",
+                "resolvedUrl": "https://t.co/TNV8PS3lEs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X",
+        "posted_at": "2026-06-08T20:55:27.000Z",
+        "sections": [
+          {
+            "headline": "**OpenAI** plan, straight from **Sam Altman** / **Sam Altman** 直接丢出 **OpenAI** 现阶段计划",
+            "body": "Here is our current plan for OpenAI:\n\nhttps://t.co/r29FUUee3A\n\n这是我们当前针对 **OpenAI** 的计划：\n\nhttps://t.co/r29FUUee3A",
+            "source_links": [
+              "https://x.com/sama/status/2064088940932641225"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/r29FUUee3A",
+                "resolvedUrl": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-06-09T00:14:39.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** heads to Tokyo for the final stop / **Claude** 最后一站到东京",
+            "body": "Final stop: Tokyo.\n\nRegister to hear directly from the teams behind Claude: https://t.co/SkYZwjK3GS https://t.co/sbGHgDaEW5\n\n最后一站：东京。\n\n现在报名，直接听 **Claude** 背后的团队来讲： https://t.co/SkYZwjK3GS https://t.co/sbGHgDaEW5",
+            "source_links": [
+              "https://x.com/claudeai/status/2064139073590104402"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/SkYZwjK3GS",
+                "resolvedUrl": "http://claude.com/code-with-claude/tokyo"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/sbGHgDaEW5",
+                "resolvedUrl": "https://twitter.com/claudeai/status/2050252933866930339"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-09",
+    "updatedAt": "2026-06-09T12:44:35.296Z",
+    "commit": {
+      "sha": "5cea16075eb9baf5d48e708f84006ba8a8f5cbf7",
+      "committedAt": "2026-06-09T07:33:24Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-09T12:41:40.270Z",
+    "feedGeneratedAt": "2026-06-09T07:33:17.959Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
