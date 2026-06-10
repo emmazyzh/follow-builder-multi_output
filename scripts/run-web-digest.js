@@ -9,12 +9,24 @@ import { enrichFeedXQuotes, enrichPodcastEpisodeLinks } from './prepare-digest.j
 
 const execFileAsync = promisify(execFile);
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
+const REPO_DIR = join(SCRIPT_DIR, '..');
 const PREPARE_SCRIPT = join(SCRIPT_DIR, 'prepare-digest.js');
-const PROMPT_PATH = join(SCRIPT_DIR, '..', 'prompts', 'feishu-card-digest.md');
+const PROMPT_PATH = join(SCRIPT_DIR, '..', 'prompts', 'web-digest.md');
 const DEFAULT_MODEL = 'openai-codex/gpt-5.4';
-const DEFAULT_PAYLOAD_PATH = '/tmp/follow-builders-card-payload.json';
+const DEFAULT_PAYLOAD_PATH = '/tmp/follow-builders-web-payload.json';
 const MODEL_TIMEOUT_MS = 120000;
 const PREPARE_TIMEOUT_MS = 120000;
+const NODE_BIN_DIR = dirname(process.execPath);
+const CODEX_BIN = process.env.FOLLOW_BUILDERS_CODEX_BIN || 'codex';
+const PATH_PREFIX = [
+  NODE_BIN_DIR,
+  '/opt/homebrew/bin',
+  '/usr/local/bin',
+  '/usr/bin',
+  '/bin',
+  '/usr/sbin',
+  '/sbin'
+].join(':');
 const MAX_PODCAST_TRANSCRIPT_CHARS = 12000;
 const MAX_BLOG_CONTENT_CHARS = 8000;
 const MAX_MODEL_REPAIR_PASSES = 2;
@@ -130,7 +142,7 @@ function assertChineseUserFacingPayload(payload, language = 'zh') {
   });
 
   if (failures.length > 0) {
-    throw new Error(`Chinese digest validation failed; refusing to send non-Chinese card content: ${failures.slice(0, 8).join(', ')}`);
+    throw new Error(`Chinese digest validation failed; refusing non-Chinese digest content: ${failures.slice(0, 8).join(', ')}`);
   }
 }
 
@@ -142,49 +154,43 @@ function log(level, message, context = {}) {
   console.error(JSON.stringify(payload));
 }
 
+function runnerEnv() {
+  return {
+    ...process.env,
+    PATH: `${PATH_PREFIX}:${process.env.PATH || ''}`.replace(/:+/g, ':')
+  };
+}
+
 function parseArgs(argv) {
   const args = argv.slice(2);
   const parsed = {
-    accountId: null,
     inputJsonPath: null,
     model: DEFAULT_MODEL,
-    mode: 'openclaw_account',
     payloadPath: DEFAULT_PAYLOAD_PATH,
-    skipSend: false,
-    to: null
+    skipPublish: false
   };
 
   for (let i = 0; i < args.length; i += 1) {
     const arg = args[i];
     switch (arg) {
-      case '--account':
-        parsed.accountId = args[++i];
-        break;
       case '--input-json':
         parsed.inputJsonPath = args[++i];
         break;
       case '--model':
         parsed.model = args[++i];
         break;
-      case '--mode':
-        parsed.mode = args[++i];
-        break;
       case '--payload-out':
         parsed.payloadPath = args[++i];
         break;
-      case '--skip-send':
-        parsed.skipSend = true;
+      case '--skip-publish':
+        parsed.skipPublish = true;
         break;
-      case '--to':
-        parsed.to = args[++i];
+      case '--skip-send':
+        parsed.skipPublish = true;
         break;
       default:
         throw new Error(`Unknown argument: ${arg}`);
     }
-  }
-
-  if (!parsed.skipSend && !parsed.to) {
-    throw new Error('Missing required argument: --to');
   }
 
   return parsed;
@@ -484,7 +490,7 @@ function buildPrompt(template, condensedFeed, options = {}) {
   }
 
   return [
-    'You are generating a Feishu card payload for a daily AI builders digest.',
+    'You are generating a structured web digest payload for a daily AI builders digest.',
     'Return pure JSON only.',
     'Do not wrap the result in markdown fences.',
     '',
@@ -508,25 +514,22 @@ function extractTrailingJson(rawText) {
 }
 
 async function runModel(prompt, model) {
-  log('info', 'Calling model to generate structured card payload', { model });
-  const { stdout } = await execFileAsync('openclaw', [
-    'infer',
-    'model',
-    'run',
-    '--model',
-    model,
-    '--json',
-    '--prompt',
-    prompt
+  log('info', 'Calling model to generate structured web payload', { model });
+  const promptPath = `/tmp/follow-builders-web-digest.prompt.${process.pid}.txt`;
+  const outputPath = `/tmp/follow-builders-web-digest.output.${process.pid}.txt`;
+  await writeFile(promptPath, `${prompt}\n`);
+  await execFileAsync('/bin/zsh', [
+    '-lc',
+    `"${CODEX_BIN}" exec --skip-git-repo-check --sandbox read-only --cd "${REPO_DIR}" --output-last-message "${outputPath}" - < "${promptPath}"`
   ], {
-    cwd: SCRIPT_DIR,
+    cwd: REPO_DIR,
+    env: runnerEnv(),
     maxBuffer: 16 * 1024 * 1024,
     timeout: MODEL_TIMEOUT_MS
   });
 
-  const response = extractTrailingJson(stdout);
-  const text = response?.outputs?.[0]?.text;
-  if (!text) {
+  const text = await readFile(outputPath, 'utf-8');
+  if (!String(text || '').trim()) {
     throw new Error('Model returned no text output');
   }
 
@@ -1383,7 +1386,7 @@ async function finalizePayload(payload, context) {
   const firstPass = materializeGeneratedItems(payload.items, sourceIndex);
   registerItems(firstPass.items);
 
-  log('info', 'Initial card payload coverage analyzed', {
+  log('info', 'Initial payload coverage analyzed', {
     expectedSources: sourceCatalog.length,
     matchedSources: itemMap.size,
     unmatchedItems: firstPass.unmatchedItems.length
@@ -1445,9 +1448,7 @@ async function finalizePayload(payload, context) {
 async function main() {
   const args = parseArgs(process.argv);
   log('info', 'Structured digest pipeline started', {
-    model: args.model,
-    accountId: args.accountId,
-    mode: args.mode
+    model: args.model
   });
 
   const raw = args.inputJsonPath
@@ -1475,7 +1476,7 @@ async function main() {
       date: condensedFeed.date,
       filter_stats: condensedFeed.filter_stats
     };
-    log('info', 'No sources passed quality filters, skipping card generation', skipped);
+    log('info', 'No sources passed quality filters, skipping digest generation', skipped);
     process.stdout.write(`${JSON.stringify(skipped)}\n`);
     return;
   }
@@ -1522,15 +1523,15 @@ async function main() {
     expectedSources: sourceCatalog.length
   });
 
-  if (args.skipSend) {
-    log('info', 'Structured digest pipeline completed without sending', {
+  if (args.skipPublish) {
+    log('info', 'Structured digest pipeline completed without publishing', {
       payloadPath: args.payloadPath
     });
-    process.stdout.write(`${JSON.stringify({ status: 'ok', skippedSend: true, payloadPath: args.payloadPath })}\n`);
+    process.stdout.write(`${JSON.stringify({ status: 'ok', skippedPublish: true, payloadPath: args.payloadPath })}\n`);
     return;
   }
 
-  throw new Error('Direct send mode has been removed; use --skip-send and publish through the web archive flow.');
+  throw new Error('Direct publish mode has been removed; use --skip-publish and publish through the web archive flow.');
 }
 
 export {
@@ -1544,7 +1545,7 @@ const IS_ENTRYPOINT = process.argv[1] && fileURLToPath(import.meta.url) === proc
 
 if (IS_ENTRYPOINT) {
   main().catch((error) => {
-    log('error', 'Feishu digest pipeline failed', {
+    log('error', 'Web digest pipeline failed', {
       error: error.message,
       stack: error.stack
     });

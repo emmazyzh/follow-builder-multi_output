@@ -38,7 +38,7 @@ import {
 
 const execFileAsync = promisify(execFile);
 const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
-const CARD_PIPELINE_SCRIPT = join(SCRIPT_DIR, 'run-feishu-card-digest.js');
+const DIGEST_PIPELINE_SCRIPT = join(SCRIPT_DIR, 'run-web-digest.js');
 const SEND_AGENT_PAYLOAD_SCRIPT = join(SCRIPT_DIR, 'send-agent-payload.js');
 const DEFAULT_INPUT_JSON_PATH = '/tmp/follow-builders-sidecar-raw.json';
 const DEFAULT_PAYLOAD_PATH = '/tmp/follow-builders-sidecar-payload.json';
@@ -123,16 +123,16 @@ function toPreparedConfig(config) {
   };
 }
 
-async function runCardPipeline({ inputJsonPath, payloadPath, model }) {
+async function runDigestPipeline({ inputJsonPath, payloadPath, model }) {
   const { stdout } = await execFileAsync('node', [
-    CARD_PIPELINE_SCRIPT,
+    DIGEST_PIPELINE_SCRIPT,
     '--input-json',
     inputJsonPath,
     '--payload-out',
     payloadPath,
     '--model',
     model,
-    '--skip-send'
+    '--skip-publish'
   ], {
     cwd: REPO_DIR,
     maxBuffer: 16 * 1024 * 1024,
@@ -533,7 +533,7 @@ async function execute(args) {
 
   let pipelineResult;
   try {
-    pipelineResult = await runCardPipeline({
+    pipelineResult = await runDigestPipeline({
       inputJsonPath: args.inputJsonPath,
       payloadPath: args.payloadPath,
       model: args.model || config.model || DEFAULT_MODEL

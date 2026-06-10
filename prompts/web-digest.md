@@ -1,10 +1,10 @@
-# Feishu Card Digest Prompt
+# Web Digest Prompt
 
-You are preparing a structured daily AI builders digest for a Feishu interactive card.
+You are preparing a structured daily AI builders digest for the static web archive.
 
 ## Goal
 
-Turn the raw Follow Builders feed into a structured JSON payload that can be rendered as a clean Feishu card for mobile reading.
+Turn the raw Follow Builders feed into a structured JSON payload that can be rendered cleanly in the static web digest.
 
 ## Editorial Rules
 
@@ -13,7 +13,7 @@ Turn the raw Follow Builders feed into a structured JSON payload that can be ren
 - Preserve multiple original sources for the same person when the summary depends on more than one post.
 - Prefer grouping by source/person: one item per builder, one item per blog post, one item per podcast episode.
 - When one builder has multiple unrelated posts, keep one item for that builder but split it into multiple `sections`.
-- When a post is a quote tweet and the quoted original contains the real information, restate the original content first and then include the builder's comment or framing.
+- When a post is a quote tweet and the quoted original contains the real information, restate the quoted original content first and then include the builder's comment or framing. Do not leave the quoted content represented only by a `t.co` link.
 - Keep `person_identity` concise and familiar, in the style of short role labels such as `Box CEO`, `OpenAI Product`, or `AI Podcast`.
 - For `X / Twitter` items, do not summarize the post body. Put the original post text directly in the body, then put the Chinese translation immediately below it.
 - For `X / Twitter` items, write a short one-line bilingual headline that restates the core point of the post, English first and Chinese second.
@@ -79,7 +79,7 @@ Turn the raw Follow Builders feed into a structured JSON payload that can be ren
 - `summary` should be one punchy sentence in Chinese.
 - `summary` should be one punchy sentence in Chinese that has already been humanized.
 - Each item must contain a non-empty `sections` array.
-- Each `sections[].headline` should stay close to the original source meaning and be short enough for a card title.
+- Each `sections[].headline` should stay close to the original source meaning and be short enough for a digest title.
 - For X items, each `sections[].body` must contain the original source text first, then the Chinese translation below it.
 - For blog and podcast items, each `sections[].body` should remain a concise bilingual summary grounded in the source.
 - Preserve paragraph breaks in `sections[].body`; do not collapse everything into one block.

@@ -4,7 +4,7 @@ import { execFile } from 'child_process';
 import { mkdir, readFile, readdir, rename, rm, writeFile } from 'fs/promises';
 import { dirname, join } from 'path';
 import { promisify } from 'util';
-import { fileURLToPath } from 'url';
+import { fileURLToPath, pathToFileURL } from 'url';
 
 const execFileAsync = promisify(execFile);
 
@@ -138,6 +138,7 @@ function buildInlineCodexPrompt(rawJson, payloadPath, expectedItemCount, options
     'Each section must include headline, body, and source_links.',
     'Keep person_identity concise and familiar, in the style of short role labels such as "Box CEO", "OpenAI Product", or "AI Podcast".',
     'For X / Twitter items: do not summarize the body. Use the original post text from the JSON directly, then provide a Chinese translation immediately below it in the same body string. Keep the meaning faithful and do not compress, paraphrase, or add commentary.',
+    'For X / Twitter quote tweets: when quotedTweet text contains the main information, show the quotedTweet text first and the user comment text after it. Do not leave the quoted content hidden behind only a t.co link.',
     'For X / Twitter items: write a short one-line bilingual headline that restates the core point of the post, English first and Chinese second. Do not use labels like "Original Post · 原文".',
     'For blog and podcast items: keep the current summary flow. Write a bilingual summary with English first and Chinese second. These are the only item types that should be summarized.',
     'Each headline must be bilingual in a single string, English first then Chinese.',
@@ -156,6 +157,23 @@ function buildInlineCodexPrompt(rawJson, payloadPath, expectedItemCount, options
 function trimText(value, maxChars) {
   const text = String(value || '');
   return text.length <= maxChars ? text : `${text.slice(0, Math.max(1, maxChars - 1)).trimEnd()}…`;
+}
+
+function collapseWhitespace(value) {
+  return String(value || '').replace(/\s+/g, ' ').trim();
+}
+
+function hasReadableText(value) {
+  return Boolean(collapseWhitespace(value).replace(/https?:\/\/\S+/g, '').trim());
+}
+
+function buildPreferredXEnglishBody(tweet) {
+  const parts = [];
+  const quotedText = collapseWhitespace(tweet?.quotedTweet?.text || '');
+  const tweetText = String(tweet?.text || '').trim();
+  if (hasReadableText(quotedText)) parts.push(quotedText);
+  if (tweetText) parts.push(tweetText);
+  return parts.join('\n\n');
 }
 
 function buildCodexInput(raw) {
@@ -409,6 +427,7 @@ function buildItemPrompt(sourceKind, sourceJson) {
       ? [
         'This is an X / Twitter source.',
         'Do not summarize the body. Use the original post text directly, then provide a faithful Chinese translation immediately below it in the same body string.',
+        'If a tweet includes quotedTweet text and that quoted text carries the main information, show the quotedTweet text first and the user comment after it. Do not leave the quote as only a link.',
         'Write a short one-line bilingual headline with English first and Chinese second.',
         'Do not use labels like "Original Post · 原文".'
       ]
@@ -432,6 +451,7 @@ function buildXSectionPrompt(tweetJson) {
     'Return pure JSON only, with no markdown fences and no explanation.',
     'The root shape must be exactly: { "headline": "...", "body": "..." }.',
     'Do not summarize the body. Use the original post text directly, then provide a faithful Chinese translation immediately below it in the same body string.',
+    'If quotedTweet text is present and carries the main information, the body must show that quotedTweet text first, then the user comment text after it. Do not leave the quoted content as only a t.co link.',
     'Write a short one-line bilingual headline with English first and Chinese second.',
     'Do not use labels like "Original Post · 原文".',
     'Preserve paragraph breaks.',
@@ -500,11 +520,12 @@ async function salvageXSectionFallback(tweet, outputStem) {
     ? `${englishHeadline} · ${chineseHeadline}`
     : `${englishHeadline} · ${englishHeadline}`;
 
-  const bodyParts = [tweet.text.trim()];
+  const preferredBody = buildPreferredXEnglishBody(tweet);
+  const bodyParts = [preferredBody];
   if (richest?.chineseTail) {
     bodyParts.push(richest.chineseTail);
   } else {
-    bodyParts.push(tweet.text.trim());
+    bodyParts.push(preferredBody);
   }
 
   return {
@@ -571,7 +592,10 @@ async function generateXItemFallback(entry, index) {
     sections.push({
       headline: section.headline,
       body: section.body,
-      source_links: tweet.url ? [tweet.url] : []
+      source_links: [
+        ...(tweet.url ? [tweet.url] : []),
+        ...(tweet.quotedTweet?.url ? [tweet.quotedTweet.url] : [])
+      ]
     });
   }
 
@@ -769,23 +793,33 @@ async function main() {
   }
 }
 
-main().catch(async (error) => {
-  const result = {
-    status: 'error',
-    runId: `local-runner-failed-before-main-pid-${process.pid}`,
-    finishedAt: new Date().toISOString(),
-    message: error.message,
-    stack: error.stack
-  };
-  try {
-    await ensureRuntimeDir();
-    await persistResult(result);
-  } catch {
-    // best effort only
-  }
-  log('error', 'Local Codex sidecar runner failed', {
-    error: error.message,
-    stack: error.stack
+const isMainModule = process.argv[1]
+  ? pathToFileURL(process.argv[1]).href === import.meta.url
+  : false;
+
+if (isMainModule) {
+  main().catch(async (error) => {
+    const result = {
+      status: 'error',
+      runId: `local-runner-failed-before-main-pid-${process.pid}`,
+      finishedAt: new Date().toISOString(),
+      message: error.message,
+      stack: error.stack
+    };
+    try {
+      await ensureRuntimeDir();
+      await persistResult(result);
+    } catch {
+      // best effort only
+    }
+    log('error', 'Local Codex sidecar runner failed', {
+      error: error.message,
+      stack: error.stack
+    });
+    process.exit(1);
   });
-  process.exit(1);
-});
+}
+
+export {
+  buildPreferredXEnglishBody
+};

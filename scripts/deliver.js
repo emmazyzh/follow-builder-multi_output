@@ -200,7 +200,7 @@ async function main() {
 
       case 'stdout':
       default:
-        // Just print to terminal — the agent or OpenClaw handles delivery
+        // Just print to terminal — an external runner can decide what to do next
         console.log(digestText);
         break;
     }

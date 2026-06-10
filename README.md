@@ -16,6 +16,7 @@ Feishu/Lark/OpenClaw delivery code has been removed from the active runtime path
 ## Main files
 
 - `scripts/run-local-codex-sidecar.js`: local scheduled runner
+- `scripts/run-web-digest.js`: turns prepared feed JSON into the normalized web payload
 - `scripts/send-agent-payload.js`: normalizes the payload and updates `web/data/`
 - `scripts/web-archive.js`: static archive publishing logic
 - `launchd/com.yongzhenzhuang.follow-builders-sidecar-codex.plist`: local LaunchAgent example

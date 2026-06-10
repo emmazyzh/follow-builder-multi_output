@@ -127,7 +127,7 @@
     },
     "generation": {
       "type": "object",
-      "description": "Controls whether the sidecar script calls a model itself or asks the scheduled OpenClaw agent to generate the payload.",
+      "description": "Controls whether the sidecar script calls a model itself or asks the scheduled agent runner to generate the payload.",
       "properties": {
         "mode": {
           "type": "string",

@@ -394,8 +394,7 @@ function isOriginalFollowBuildersJob(job) {
   const message = extractCronMessage(job);
   const name = collapseWhitespace(job?.name).toLowerCase();
   return Boolean(
-    message.includes('follow-builders/scripts/run-scheduled-feishu-card-digest.js')
-    || message.includes('follow-builders/scripts/prepare-digest.js')
+    message.includes('follow-builders/scripts/prepare-digest.js')
     || name === 'ai builders digest'
   );
 }
@@ -460,7 +459,7 @@ function buildAgentNativeCronMessage({ scriptPath, sendScriptPath = join(SCRIPT_
   const inputPath = '/tmp/follow-builders-sidecar-raw.json';
   const payloadPath = '/tmp/follow-builders-sidecar-payload.json';
   return [
-    'Run the Follow Builders sidecar in agent-native mode. In this mode, YOU generate the digest payload with your current cron model; scripts only prepare feeds and send the card/message.',
+    'Run the Follow Builders sidecar in agent-native mode. In this mode, YOU generate the digest payload with your current cron model; scripts only prepare feeds and publish the web output.',
     '',
     'Step 1: prepare the feed snapshot. Run exactly:',
     `\`node ${scriptPath} --prepare-only --input-json-out ${inputPath} --payload-out ${payloadPath}\``,
