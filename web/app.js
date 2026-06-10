@@ -132,16 +132,26 @@ function renderMarkdownLite(text) {
 function applyLinkExpansions(text, section) {
   let output = String(text || '');
   const expansions = Array.isArray(section?.linkExpansions) ? section.linkExpansions : [];
+  const previewUrls = new Set(
+    (Array.isArray(section?.previews) ? section.previews : [])
+      .map((entry) => String(entry?.resolvedUrl || entry?.url || '').trim())
+      .filter(Boolean)
+  );
   expansions
     .slice()
     .sort((left, right) => String(right.shortUrl || '').length - String(left.shortUrl || '').length)
     .forEach((entry) => {
       const shortUrl = String(entry?.shortUrl || '').trim();
       if (!shortUrl) return;
+      if (entry.kind === 'quote' || entry.kind === 'self') {
+        output = output.split(shortUrl).join('');
+        return;
+      }
       if (entry.kind === 'external' && entry.resolvedUrl) {
         const resolvedUrl = String(entry.resolvedUrl || '').trim();
         const isQuotedXLink = /^https?:\/\/(?:www\.)?x\.com\/(?:i\/status\/|[A-Za-z0-9_]+\/status\/)\d+/i.test(resolvedUrl);
-        output = output.split(shortUrl).join(isQuotedXLink ? '' : resolvedUrl);
+        const hasPreview = previewUrls.has(resolvedUrl);
+        output = output.split(shortUrl).join(isQuotedXLink || hasPreview ? '' : resolvedUrl);
         return;
       }
       output = output.split(shortUrl).join('');
@@ -152,6 +162,18 @@ function applyLinkExpansions(text, section) {
     .replace(/\n{3,}/g, '\n\n')
     .replace(/[ ]{2,}/g, ' ')
     .trim();
+}
+
+function normalizePreviewKey(preview) {
+  const candidates = [
+    preview?.resolvedUrl,
+    preview?.url
+  ].map((value) => String(value || '').trim()).filter(Boolean);
+  for (const value of candidates) {
+    const match = value.match(/\/status\/(\d+)/i);
+    if (match) return `status:${match[1]}`;
+  }
+  return candidates[0] || '';
 }
 
 function normalizeSourceLinkEntry(entry, index, allEntries) {
@@ -407,7 +429,15 @@ function renderPreviewCard(preview) {
 }
 
 function renderSectionPreviews(previews) {
-  return (Array.isArray(previews) ? previews : [])
+  const deduped = [];
+  const seen = new Set();
+  for (const preview of (Array.isArray(previews) ? previews : [])) {
+    const key = normalizePreviewKey(preview);
+    if (key && seen.has(key)) continue;
+    if (key) seen.add(key);
+    deduped.push(preview);
+  }
+  return deduped
     .map((preview) => renderPreviewCard(preview))
     .filter(Boolean);
 }

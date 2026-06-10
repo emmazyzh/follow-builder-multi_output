@@ -17,7 +17,8 @@
             "body": "**No Priors** talks with **Onyx Security** CEO **Maxim Bar Kogan** about why enterprise security has shifted from worrying about employees pasting data into chatbots to worrying about autonomous agents taking real actions. His argument is blunt: companies cannot stop agent adoption now, so they need a control layer that can inspect whether an agent action is legitimate before it causes outages, leaks code or tokens, or makes destructive infrastructure changes. He frames **AutoGPT** as the early spark, then says reasoning models and coding agents like **Claude Code** turned that old thought experiment into a real deployment problem.\n\nThe product pitch is an “AI control plane” trained on agent behavior, built to oversee other agents at machine speed because human-in-the-loop review does not scale when action volume grows 100x or 1000x. Kogan says more than half of agent usage in a typical enterprise already comes from autonomous coding agents and assistants, with low-code automations close behind and internally built first-party agents still rare. He also argues traditional controls like identity, endpoint, and API security break down when companies deliberately give coding agents broad permissions so they can finish work unattended.\n\n**No Priors** 这期找来 **Onyx Security** CEO **Maxim Bar Kogan**，主题很直接：企业安全的焦点，已经从“员工会不会把数据贴进聊天机器人”，变成“自主代理会不会真的把事做砸”。他的核心判断也很硬：企业现在拦不住代理落地，那就只能补一层控制面，去判断这些代理动作到底合不合理，避免宕机、代码和 token 泄露，或者莫名其妙把数据库删了重建。他把 **AutoGPT** 说成当年的引爆点，而真正把问题推到企业面前的，是后来的推理模型和 **Claude Code** 这类编码代理。\n\n产品思路叫“AI control plane”：训练模型去看代理怎么行动，再用这些模型反过来盯别的代理，因为一旦动作量涨到 100 倍、1000 倍，人肉审核根本扛不住。Kogan 还给了一个挺具体的部署切面：普通大企业里，超过一半的代理使用已经是自主编码代理和助手；低代码自动化紧随其后；真正自己从头搭的一方代理还很少。他的另一个判断也很关键：当企业为了省事，把大权限直接交给编码代理时，传统的身份、终端、API 安全那套就没那么管用了。",
             "source_links": [
               "https://www.youtube.com/watch?v=QDsbFLEt9ro"
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -34,7 +35,8 @@
             "body": "**Anthropic** says **Claude** is getting support in Apple’s **Foundation Models** framework through a new Swift package. The pitch is a split-brain app architecture: let Apple’s on-device models handle fast local work like summarization or extraction, then route harder requests such as multi-step reasoning, code generation, web search, and data-analysis code execution to **Claude**. Because the framework can produce typed Swift values through guided generation, developers can pass structured inputs instead of raw free-form prompts and stream responses back into the same **SwiftUI** view.\n\nThe package is slated to be available the next day across **iOS 27**, **iPadOS 27**, **macOS 27**, **visionOS 27**, and **watchOS 27**. The broader message is that Apple developers do not need to choose between local intelligence and cloud reasoning anymore. They can keep lightweight interactions on-device, then hand off to **Claude** only when a task gets complex.\n\n**Anthropic** 这篇博客讲得很清楚：他们给苹果 **Foundation Models** 框架接了一个新的 Swift 包，让 **Claude** 能直接进入 Apple 开发者现成的调用链。思路不是替代端侧模型，而是分工更细：本地模型负责摘要、抽取这类轻活；碰到多步推理、代码生成、联网搜索、数据分析这类重任务，再把请求交给 **Claude**。因为框架本身能吐出类型化的 Swift 值，开发者不用拿一坨原始用户输入硬塞给模型，结构会干净很多，回流到 **SwiftUI** 视图也顺。\n\n发布时间点也卡得很近，文中写的是次日可用，覆盖 **iOS 27**、**iPadOS 27**、**macOS 27**、**visionOS 27** 和 **watchOS 27**。说白了，这不是“本地还是云端”二选一，而是把两边拼成一个连续体验：简单任务留在设备上，真复杂了再抬手交给 **Claude**。",
             "source_links": [
               "https://claude.com/blog/claude-for-foundation-models"
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -58,7 +60,8 @@
                 "shortUrl": "https://t.co/PdMrqxtuV0",
                 "resolvedUrl": "https://x.com/swyx/status/2062611218196771017?s=20"
               }
-            ]
+            ],
+            "previews": []
           },
           {
             "headline": "**FrontierCode** calls time on test-passing slop / **FrontierCode** 开始清算“测试过了就算赢”的糊弄代码",
@@ -72,6 +75,20 @@
                 "url": "https://pbs.twimg.com/media/HKUUSN1bwAAvR4g.jpg",
                 "alt": "",
                 "expandedUrl": "https://x.com/swyx/status/2064081945567580323/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/cognition/status/2064061031912288715",
+                "resolvedUrl": "https://x.com/cognition/status/2064061031912288715",
+                "authorName": "Cognition",
+                "authorHandle": "cognition",
+                "authorUrl": "https://x.com/cognition",
+                "text": "Introducing FrontierCode: a coding eval that raises the bar for difficulty &amp; quality. Each task took 40+ hrs of work by leading open-source maintainers.\n\nModels write sloppy code that works but isn’t maintainable. Our eval is first to measure: would you actually merge this code?",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "介绍 FrontierCode：一项把难度和质量门槛都拉高的编程评测。每道任务都由顶尖开源维护者投入了 40+ 小时完成。\n\n模型会写出能跑但很粗糙、不可维护的代码。我们的评测首次衡量的是：你真的会把这段代码合并吗？"
               }
             ]
           }
@@ -97,6 +114,20 @@
                 "shortUrl": "https://t.co/4TCw7tQ2GV",
                 "resolvedUrl": "https://t.co/4TCw7tQ2GV"
               }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/NotebookLM/status/2064016460964585549",
+                "resolvedUrl": "https://x.com/NotebookLM/status/2064016460964585549",
+                "authorName": "NotebookLM",
+                "authorHandle": "NotebookLM",
+                "authorUrl": "https://x.com/NotebookLM",
+                "text": "Introducing a more powerful NotebookLM 🚀\n\nMassive upgrades deliver agentic capabilities in chat, more advanced reasoning, and a suite of new output formats. Tackling complex, multi-step research problems has never been easier.\n\nRolling out now to Google AI Ultra subscribers.",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "更强大的 NotebookLM 来了 🚀\n\n大幅升级带来了聊天中的 agentic 能力、更高级的推理能力，以及一整套新的输出格式。处理复杂的多步骤研究问题，从未如此轻松。\n\n现已开始向 Google AI Ultra 订阅用户推出。"
+              }
             ]
           }
         ]
@@ -114,6 +145,20 @@
             "body": "When we first demoed Claude Code internally, it got two reactions on Slack. \n\nA year after GA, @_catwu and I sat down to talk about what's changed: why I use auto mode instead of plan mode, how routines fix bugs before I see them, why I do most of my coding from my phone now, and where the product is going\n\n我们第一次在内部演示 **Claude Code** 时，它在 Slack 上引发了两种反应。\n\nGA 一年后，我和 @_catwu 坐下来聊了聊这产品后来变了什么：为什么我现在更常用 auto mode 而不是 plan mode，为什么 routines 会在我看到之前就把 bug 修掉，为什么我现在大部分代码都直接在手机上写，以及这个产品接下来要往哪走",
             "source_links": [
               "https://x.com/bcherny/status/2064034799711588805"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/ClaudeDevs/status/2064032814392352816",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2064032814392352816",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Claude Code's first demo got two Slack reactions.\n\nOne year after GA, @bcherny and @_catwu look back: verification best practices, why we built auto mode, routines and loops, and what's next.\n\nhttps://www.youtube.com/watch?v=Hth_tLaC2j8",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "Claude Code 的第一次演示只收到了两个 Slack 表情反应。\n\nGA 一年后，@bcherny 和 @_catwu 回顾了验证最佳实践、我们为什么做 auto mode、routines 和 loops，以及接下来会做什么。\n\nhttps://www.youtube.com/watch?v=Hth_tLaC2j8"
+              }
             ]
           }
         ]
@@ -135,9 +180,35 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/sZi6Bthq5Z",
                 "resolvedUrl": "https://x.com/steipete/status/2063697162748260627"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/steipete/status/2063697162748260627",
+                "resolvedUrl": "https://x.com/steipete/status/2063697162748260627",
+                "authorName": "Peter Steinberger 🦞",
+                "authorHandle": "steipete",
+                "authorUrl": "https://x.com/steipete",
+                "text": "Here’s your monthly reminder that you shouldn’t be prompting coding agents anymore.\n\nYou should be designing loops that prompt your agents.",
+                "displayDate": "Jun 7",
+                "provider": "X",
+                "textZh": "每月提醒一次：你不该再亲自给 coding agents 写 prompt 了。\n\n你该做的是设计循环，让这些循环去给你的 agents 写 prompt。"
+              },
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/steipete/status/2063697162748260627",
+                "resolvedUrl": "https://x.com/steipete/status/2063697162748260627",
+                "authorName": "Peter Steinberger 🦞",
+                "authorHandle": "steipete",
+                "authorUrl": "https://x.com/steipete",
+                "text": "Here’s your monthly reminder that you shouldn’t be prompting coding agents anymore.\n\nYou should be designing loops that prompt your agents.",
+                "displayDate": "Jun 7",
+                "provider": "X",
+                "textZh": "每月提醒一次：你不该再亲自给 coding agents 写 prompt 了。\n\n你该做的是设计循环，让这些循环去给你的 agents 写 prompt。"
               }
             ]
           },
@@ -146,7 +217,8 @@
             "body": "Not clear from the image, but the codex dial goes to 11.\n\n图里可能看不太出来，但 **codex** 的旋钮能直接拧到 11。",
             "source_links": [
               "https://x.com/thsottiaux/status/2064224790672769307"
-            ]
+            ],
+            "previews": []
           },
           {
             "headline": "A controller for **Codex**? / 给 **Codex** 配个控制器，你会用吗？",
@@ -169,7 +241,8 @@
                 "resolvedUrl": "https://x.com/thsottiaux/status/2064224657822413137/photo/1",
                 "mediaUrl": "https://pbs.twimg.com/media/HKWZEDqbQAA12tk.jpg"
               }
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -202,21 +275,24 @@
                 "resolvedUrl": "https://x.com/petergyang/status/2064204735671124073/photo/1",
                 "mediaUrl": "https://pbs.twimg.com/media/HKWHRH3bEAA_2P4.jpg"
               }
-            ]
+            ],
+            "previews": []
           },
           {
             "headline": "What is Google’s **Codex** answer? / Google 到底拿什么回应 **Codex** 和 **Claude Code**？",
             "body": "What is Google’s equivalent (or up and coming competitor) of Codex and Claude Code? \n\nIf it’s Antigravity, should that be part of Gemini?\n\nThis stuff is going to merge very fast like ChatGPT / Codex being able to do coding, knowledge work, basic Q&A, and much more from any device.\n\nHoping Google is working on a good solution here.\n\nGoogle 对应 **Codex** 和 **Claude Code** 的产品，或者正在冒头的竞争者，到底是什么？\n\n如果是 Antigravity，那它是不是该并进 **Gemini**？\n\n这些东西会很快并到一起，就像 **ChatGPT** / **Codex** 能在任何设备上同时做编程、知识工作、基础问答，还有更多别的事。\n\n希望 Google 正在认真做一个像样的方案。",
             "source_links": [
               "https://x.com/petergyang/status/2064187731685831081"
-            ]
+            ],
+            "previews": []
           },
           {
             "headline": "Subscription builders and API-cost teams play different games / 200 美元包月玩家和抠 API 成本的团队，玩法根本不是一回事",
             "body": "Feels like there’s a completely different set of best practices for AI builders on the $200 / month subsidized subscriptions vs employees working at companies that are trying not to overspend API costs\n\n感觉用 200 美元包月补贴订阅的 AI builder，和那些在公司里一边做事一边死盯 API 成本别超支的员工，最佳实践完全就是两套。",
             "source_links": [
               "https://x.com/petergyang/status/2064063499517743417"
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -233,7 +309,8 @@
             "body": "In the world where everything goes well and all the Claudes come out of their sabbaticals to play together, Claude 1 is going to be very confused.\n\n如果一切都顺顺利利，所有 **Claude** 都结束休假跑出来一起玩，那 **Claude 1** 估计会非常困惑。",
             "source_links": [
               "https://x.com/AmandaAskell/status/2064223861512847456"
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -256,6 +333,20 @@
                 "kind": "external",
                 "shortUrl": "https://t.co/4GHRmDVteR",
                 "resolvedUrl": "https://t.co/4GHRmDVteR"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/FrancisStudio_/status/2064064591764615384",
+                "resolvedUrl": "https://x.com/FrancisStudio_/status/2064064591764615384",
+                "authorName": "Francis",
+                "authorHandle": "FrancisStudio_",
+                "authorUrl": "https://x.com/FrancisStudio_",
+                "text": "Got tired of waiting for Starcraft 3 so I vibecoded my own RTS game on Replit! Completely playable on any Tesla browser 👾",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "等 Starcraft 3 等烦了，于是我直接在 Replit 上 vibecoding 了一个自己的 RTS 游戏！任何 Tesla 浏览器都能完整游玩 👾"
               }
             ]
           }
@@ -281,6 +372,20 @@
                 "shortUrl": "https://t.co/hqahb5ppke",
                 "resolvedUrl": "https://t.co/hqahb5ppke"
               }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/vercel/status/2064188171294761076",
+                "resolvedUrl": "https://x.com/vercel/status/2064188171294761076",
+                "authorName": "Vercel",
+                "authorHandle": "vercel",
+                "authorUrl": "https://x.com/vercel",
+                "text": "https://t.co/hUowOdv4Ci",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "https://t.co/hUowOdv4Ci"
+              }
             ]
           }
         ]
@@ -298,6 +403,20 @@
             "body": "There’s no amount of intelligence that can get packed into AI models that replaces the need for context. For any sufficiently general purpose AI, you will always have to guide it in the direction you want as it has an infinite range of directions it can go in.\n\nAs long as the same model is used by a lawyer, an engineer, a financial analyst, or a healthcare professional, and as long as you’re trying to do anything uniquely differentiated or specific, then instructions, domain context, and proprietary data will always need to get into the context window for the model to be useful.\n\nThis is partly why AI automation doesn’t come for free, and why there’s still a wide spectrum of who’s getting the largest gains from AI and who’s not. You have to put in real work, and you get real value on the other end.\n\nThis is one of the advantages that applied AI will also have in the market. Any layer of abstraction above just the raw intelligence that can meaningfully get you off to the races faster will likely continue to be valuable.\n\n不管往 AI 模型里塞多少智力，都替代不了上下文。只要是足够通用的 AI，你就始终得把它往你要的方向引，因为它天然可以朝无限多的方向跑。\n\n只要同一个模型还在同时服务律师、工程师、金融分析师和医疗从业者，只要你要做的事带有明确的差异化或专业性，那说明、领域上下文和私有数据，就始终得进到模型的上下文窗口里，它才会真的有用。\n\n这也是为什么 AI 自动化不是白送的，为什么有人从 AI 里拿到的收益很大，有人却没那么明显。你得真下功夫，最后才能换来真价值。\n\n这也是应用层 AI 在市场上的一个优势。任何能在“原始智力”之上再加一层抽象、并且能明显帮你更快起跑的东西，后面大概率都还会有价值。",
             "source_links": [
               "https://x.com/levie/status/2064186766907887941"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/gabriel1/status/2063992788853658024",
+                "resolvedUrl": "https://x.com/gabriel1/status/2063992788853658024",
+                "authorName": "gabriel",
+                "authorHandle": "gabriel1",
+                "authorUrl": "https://x.com/gabriel1",
+                "text": "every job will turn into explaining your intentions to ai\n\nexplaining what you want to ai is surpringly time consuming, coders already spend 80% of their time doing it, and this will be true for everyone",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "每份工作最终都会变成向 ai 解释你的意图。\n\n向 ai 解释你想要什么，出奇地耗时。程序员已经有 80% 的时间花在这上面了，而以后每个人都会是这样。"
+              }
             ]
           }
         ]
@@ -322,6 +441,20 @@
                 "shortUrl": "https://t.co/NKdKSoVhiH",
                 "resolvedUrl": "https://t.co/NKdKSoVhiH"
               }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/rahul/status/2063984276610114001",
+                "resolvedUrl": "https://x.com/rahul/status/2063984276610114001",
+                "authorName": "Rahul Sidhu",
+                "authorHandle": "rahul",
+                "authorUrl": "https://x.com/rahul",
+                "text": "One of the most prolific criminals in all of San Francisco tells @adam22 that “crime in San Francisco is over with” because of Flock cameras + drones. He complains that he can’t even do drivebys anymore.\n\nIt’s simple: when the risk of getting caught is too high, crime plummets.",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "旧金山最活跃的罪犯之一告诉 @adam22：“旧金山的犯罪已经结束了”，因为有 Flock 摄像头和无人机。他抱怨说，自己现在连 driveby 都做不了了。\n\n道理很简单：当被抓到的风险高得多时，犯罪率就会暴跌。"
+              }
             ]
           },
           {
@@ -336,6 +469,20 @@
                 "shortUrl": "https://t.co/Xu14bgPW0p",
                 "resolvedUrl": "https://t.co/Xu14bgPW0p"
               }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/ArmandDoma/status/2063703057276547348",
+                "resolvedUrl": "https://x.com/ArmandDoma/status/2063703057276547348",
+                "authorName": "Armand Domalewski",
+                "authorHandle": "ArmandDoma",
+                "authorUrl": "https://x.com/ArmandDoma",
+                "text": "people are missing two big things in the SF election: 1) the deck was stacked against progressives, the two Supervisor races were in some of the most moderate districts in SF 2) i have no idea what the SF progressive coalition stands for now---their biggest success, Connie… https://t.co/8kEaq7nl4e",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "大家忽略了这次 SF 选举里的两件大事：1）局面对进步派非常不利，这两场 Supervisor 选举都发生在 SF 最温和的几个选区里；2）我现在完全不知道 SF 的进步派联盟到底代表什么了——他们最大的成功，Connie… https://t.co/8kEaq7nl4e"
+              }
             ]
           },
           {
@@ -349,6 +496,20 @@
                 "kind": "external",
                 "shortUrl": "https://t.co/fxkV2LozeF",
                 "resolvedUrl": "https://t.co/fxkV2LozeF"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/firstadopter/status/2063887741364949075",
+                "resolvedUrl": "https://x.com/firstadopter/status/2063887741364949075",
+                "authorName": "tae kim",
+                "authorHandle": "firstadopter",
+                "authorUrl": "https://x.com/firstadopter",
+                "text": "Why aren't there more Daniel Lurie type politicians in state and federal governments? Centrists, pro-housing, pro-business, effective public safety and services and anti-bureaucracy",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "为什么州和联邦政府里没有更多 Daniel Lurie 这种类型的政治人物？中间派、支持住房、支持商业、重视有效的公共安全和公共服务、反官僚主义。"
               }
             ]
           }
@@ -373,6 +534,20 @@
                 "kind": "external",
                 "shortUrl": "https://t.co/7jh75DNpUC",
                 "resolvedUrl": "https://t.co/7jh75DNpUC"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/zarazhangrui/status/2042513006018601065",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2042513006018601065",
+                "authorName": "Zara Zhang",
+                "authorHandle": "zarazhangrui",
+                "authorUrl": "https://x.com/zarazhangrui",
+                "text": "The old world: Word, Excel, PowerPoint The new world: Markdown, CSV/JSON, HTML",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "旧世界：Word、Excel、PowerPoint 新世界：Markdown、CSV/JSON、HTML"
               }
             ]
           },
@@ -400,7 +575,21 @@
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/9auqS9f0Q5",
-                "resolvedUrl": "https://twitter.com/trq212/status/2062605395101884916"
+                "resolvedUrl": "https://t.co/9auqS9f0Q5"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/trq212/status/2062605395101884916",
+                "resolvedUrl": "https://x.com/trq212/status/2062605395101884916",
+                "authorName": "Thariq",
+                "authorHandle": "trq212",
+                "authorUrl": "https://x.com/trq212",
+                "text": "An app can be a home-cooked meal (2020) personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letterhttps://t.co/bzzbHofywN",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "一个 app 可以像一顿家常饭一样（2020）。个人软件在 2020 年还稍微早了点，但到了 2026 年，它真的可以像一顿家常饭，或者一封手写信那样私人化。https://t.co/bzzbHofywN"
               }
             ]
           },
@@ -416,7 +605,8 @@
                 "shortUrl": "https://t.co/RpZ07FjlZl",
                 "resolvedUrl": "https://gwern.net/doc/economics/automation/1990-david.pdf"
               }
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -449,14 +639,16 @@
                 "resolvedUrl": "https://x.com/nikunj/status/2064231488544280855/video/1",
                 "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2064231339281526784/img/9Etwi3NkEXYbWwT7.jpg"
               }
-            ]
+            ],
+            "previews": []
           },
           {
             "headline": "A jab at “thesis-driven” VC theater / 顺手吐槽了一把“论文式投资”这套表演",
             "body": "The funniest texts are from founders who meet “thesis driven” GPs hoping they’ll understand EXACTLY what they are building.. \n\nAnd then realize the thesis was written and built by an associate (or, worse an intern). \n\nDon’t always read what the VC writes on the internet - yes, that includes me too (although I can guarantee I don’t have an associate, intern, EA or ghostwriter) 😆\n\n最好笑的短信，往往来自那些去见“thesis driven” GP 的创始人。他们本来以为对方会**完全**理解自己在做什么……\n\n然后才发现，那套 thesis 是个 associate 写的，甚至更惨，可能是 intern 写的。\n\n所以别什么 VC 在网上写的都信，没错，也包括我自己（不过我可以保证，我没有 associate、intern、EA 或 ghostwriter）😆",
             "source_links": [
               "https://x.com/nikunj/status/2064175088824717401"
-            ]
+            ],
+            "previews": []
           },
           {
             "headline": "Autonomous startups are everywhere, but the last mile still bites / “自主”公司这几个月冒了一堆，最后一公里还是难啃",
@@ -469,7 +661,33 @@
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/R7L8TDFuvC",
-                "resolvedUrl": "https://x.com/i/status/1947438681113169962"
+                "resolvedUrl": "https://twitter.com/nikunj/status/1947438681113169962"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/i/status/1947438681113169962",
+                "resolvedUrl": "https://x.com/i/status/1947438681113169962",
+                "authorName": "Quoted post",
+                "authorHandle": null,
+                "authorUrl": null,
+                "text": "Autonomous startups are everywhere, but the last mile still bites",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "自主创业公司到处都是，但最后一公里依然最难啃"
+              },
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nikunj/status/1947438681113169962",
+                "resolvedUrl": "https://x.com/nikunj/status/1947438681113169962",
+                "authorName": "Nikunj Kothari",
+                "authorHandle": "nikunj",
+                "authorUrl": "https://x.com/nikunj",
+                "text": "Waymo spent 15 years getting from 90% to mostly autonomous. Companies are about to learn the same lesson..",
+                "displayDate": "Jul 21",
+                "provider": "X",
+                "textZh": "Waymo 花了 15 年，才从 90% 走到基本自主。各家公司也快要学到同样的教训了。"
               }
             ]
           }
@@ -495,6 +713,20 @@
                 "shortUrl": "https://t.co/MHD8RC4cOq",
                 "resolvedUrl": "https://t.co/MHD8RC4cOq"
               }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/BigTechAlert/status/2064098922826449310",
+                "resolvedUrl": "https://x.com/BigTechAlert/status/2064098922826449310",
+                "authorName": "Big Tech Alert",
+                "authorHandle": "BigTechAlert",
+                "authorUrl": "https://x.com/BigTechAlert",
+                "text": "🆕 @karpathy has just followed @danshipper (🤖💡: how do we make sense of this?) pic.twitter.com/nKvN7kOdU0",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "🆕 @karpathy 刚刚关注了 @danshipper（🤖💡：我们该怎么理解这件事？）pic.twitter.com/nKvN7kOdU0"
+              }
             ]
           },
           {
@@ -505,9 +737,35 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/TNV8PS3lEs",
-                "resolvedUrl": "https://t.co/TNV8PS3lEs"
+                "resolvedUrl": "https://x.com/mvanhorn/status/2063865685558903149"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/mvanhorn/status/2063865685558903149",
+                "resolvedUrl": "https://x.com/mvanhorn/status/2063865685558903149",
+                "authorName": "Matt Van Horn",
+                "authorHandle": "mvanhorn",
+                "authorUrl": "https://x.com/mvanhorn",
+                "text": "https://t.co/DM0CAuyprS",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "https://t.co/DM0CAuyprS"
+              },
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/mvanhorn/status/2063865685558903149",
+                "resolvedUrl": "https://x.com/mvanhorn/status/2063865685558903149",
+                "authorName": "Matt Van Horn",
+                "authorHandle": "mvanhorn",
+                "authorUrl": "https://x.com/mvanhorn",
+                "text": "http://x.com/i/article/2063850827694096385",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "textZh": "https://t.co/DM0CAuyprS"
               }
             ]
           }
@@ -533,7 +791,8 @@
                 "shortUrl": "https://t.co/r29FUUee3A",
                 "resolvedUrl": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
               }
-            ]
+            ],
+            "previews": []
           }
         ]
       },
@@ -560,7 +819,21 @@
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/sbGHgDaEW5",
-                "resolvedUrl": "https://twitter.com/claudeai/status/2050252933866930339"
+                "resolvedUrl": "https://t.co/sbGHgDaEW5"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/claudeai/status/2050252933866930339",
+                "resolvedUrl": "https://x.com/claudeai/status/2050252933866930339",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "Code with Claude, our developer conference, returns next week. Whether you're just getting started with Claude Code or you've been building for a while, there's a session for you. Register for the livestream: https://t.co/GJwOPMDLEC pic.twitter.com/uwAZgWPu7F",
+                "displayDate": null,
+                "provider": "X",
+                "textZh": "Code with Claude，我们的开发者大会，将于下周回归。无论你是刚开始接触 Claude Code，还是已经构建了一段时间，都能找到适合你的场次。直播报名地址：https://t.co/GJwOPMDLEC pic.twitter.com/uwAZgWPu7F"
               }
             ]
           }
@@ -570,7 +843,7 @@
   },
   "meta": {
     "date": "2026-06-09",
-    "updatedAt": "2026-06-09T12:44:35.296Z",
+    "updatedAt": "2026-06-10T10:01:00.050Z",
     "commit": {
       "sha": "5cea16075eb9baf5d48e708f84006ba8a8f5cbf7",
       "committedAt": "2026-06-09T07:33:24Z",
