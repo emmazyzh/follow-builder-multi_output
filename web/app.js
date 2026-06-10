@@ -134,7 +134,7 @@ function applyLinkExpansions(text, section) {
   const expansions = Array.isArray(section?.linkExpansions) ? section.linkExpansions : [];
   const previewUrls = new Set(
     (Array.isArray(section?.previews) ? section.previews : [])
-      .map((entry) => String(entry?.resolvedUrl || entry?.url || '').trim())
+      .map((entry) => normalizePreviewKey(entry))
       .filter(Boolean)
   );
   expansions
@@ -143,14 +143,14 @@ function applyLinkExpansions(text, section) {
     .forEach((entry) => {
       const shortUrl = String(entry?.shortUrl || '').trim();
       if (!shortUrl) return;
-      if (entry.kind === 'quote' || entry.kind === 'self') {
+      if (entry.kind === 'quote' || entry.kind === 'self' || entry.kind === 'unresolved') {
         output = output.split(shortUrl).join('');
         return;
       }
       if (entry.kind === 'external' && entry.resolvedUrl) {
         const resolvedUrl = String(entry.resolvedUrl || '').trim();
         const isQuotedXLink = /^https?:\/\/(?:www\.)?x\.com\/(?:i\/status\/|[A-Za-z0-9_]+\/status\/)\d+/i.test(resolvedUrl);
-        const hasPreview = previewUrls.has(resolvedUrl);
+        const hasPreview = previewUrls.has(normalizePreviewKey({ resolvedUrl }));
         output = output.split(shortUrl).join(isQuotedXLink || hasPreview ? '' : resolvedUrl);
         return;
       }
@@ -176,7 +176,7 @@ function normalizePreviewKey(preview) {
   return candidates[0] || '';
 }
 
-function normalizeSourceLinkEntry(entry, index, allEntries) {
+function normalizeSourceLinkEntry(entry, index, allEntries, section) {
   const normalized = typeof entry === 'string'
     ? { url: entry, label: '' }
     : { url: entry?.url, label: entry?.label || '' };
@@ -185,11 +185,18 @@ function normalizeSourceLinkEntry(entry, index, allEntries) {
   const isXStatus = /^https?:\/\/(?:www\.)?x\.com\/(?:i\/status\/|[A-Za-z0-9_]+\/status\/)\d+/i.test(url);
   const label = String(normalized.label || '').trim();
   if (label) return { url, label };
-  if (isXStatus && allEntries.length > 1) {
-    return {
-      url,
-      label: index === 0 ? 'View post' : 'View quote'
-    };
+  if (isXStatus) {
+    // If this is the original post (index 0), show "View post"; otherwise it's a quote link — hide it if there's a preview
+    if (index === 0) return { url, label: 'View post' };
+    // Check if this quote URL is already shown as an inline preview
+    const urlTweetId = url.match(/\/status\/(\d+)/i)?.[1];
+    const hasPreview = urlTweetId && (Array.isArray(section?.previews) ? section.previews : [])
+      .some((p) => {
+        const pid = (p?.resolvedUrl || p?.url || '').match(/\/status\/(\d+)/i)?.[1];
+        return pid === urlTweetId;
+      });
+    if (hasPreview) return null;
+    return allEntries.length > 1 ? { url, label: 'View quote' } : { url, label: 'View source' };
   }
   return {
     url,
@@ -197,10 +204,10 @@ function normalizeSourceLinkEntry(entry, index, allEntries) {
   };
 }
 
-function dedupeSourceLinks(entries) {
+function dedupeSourceLinks(entries, section) {
   const rawEntries = Array.isArray(entries) ? entries : [];
   const normalized = rawEntries
-    .map((entry, index) => normalizeSourceLinkEntry(entry, index, rawEntries))
+    .map((entry, index) => normalizeSourceLinkEntry(entry, index, rawEntries, section))
     .filter(Boolean);
   const seen = new Set();
   return normalized.filter((entry) => {
@@ -388,7 +395,7 @@ function renderPreviewCard(preview) {
   if (!preview || !preview.resolvedUrl) return null;
 
   const card = document.createElement('a');
-  card.className = `preview-card${preview.type === 'tweet' ? ' preview-card-tweet' : ''}`;
+  card.className = `preview-card${preview.type === 'tweet' ? ' preview-card-tweet' : ' preview-card-link'}`;
   card.href = preview.resolvedUrl;
   card.target = '_blank';
   card.rel = 'noreferrer';
@@ -412,17 +419,60 @@ function renderPreviewCard(preview) {
       text.innerHTML = renderMarkdownLite(trimPreviewText(previewText, 360));
       card.appendChild(text);
     }
+
+    // Show images inside quote tweet
+    const quoteMedia = Array.isArray(preview.media) ? preview.media : [];
+    if (quoteMedia.length > 0) {
+      const mediaWrap = document.createElement('div');
+      mediaWrap.className = 'preview-media';
+      quoteMedia.forEach((entry) => {
+        if (!entry?.url) return;
+        const img = document.createElement('img');
+        img.className = 'preview-media-image';
+        img.src = entry.url;
+        img.alt = entry.alt || '';
+        img.loading = 'eager';
+        img.decoding = 'async';
+        mediaWrap.appendChild(img);
+      });
+      if (mediaWrap.hasChildNodes()) card.appendChild(mediaWrap);
+    }
+
     return card;
   }
 
-  if (preview.image) {
-    const image = document.createElement('img');
-    image.className = 'preview-image';
-    image.src = preview.image;
-    image.alt = preview.title || preview.siteName || 'Link preview image';
-    image.loading = 'eager';
-    image.decoding = 'async';
-    card.appendChild(image);
+  // Article / link preview (problem 4)
+  if (preview.type === 'link' && (preview.title || preview.description)) {
+    if (preview.image) {
+      const img = document.createElement('img');
+      img.className = 'preview-image';
+      img.src = preview.image;
+      img.alt = preview.title || preview.siteName || '';
+      img.loading = 'eager';
+      img.decoding = 'async';
+      card.appendChild(img);
+    }
+    if (preview.title) {
+      const titleEl = document.createElement('div');
+      titleEl.className = 'preview-article-title';
+      titleEl.textContent = preview.title;
+      card.appendChild(titleEl);
+    }
+    if (preview.description) {
+      const words = preview.description.split(/\s+/).slice(0, 30);
+      const snippet = words.join(' ') + (words.length === 30 ? '…' : '');
+      const desc = document.createElement('div');
+      desc.className = 'preview-article-desc';
+      desc.textContent = snippet;
+      card.appendChild(desc);
+    }
+    if (preview.siteName) {
+      const site = document.createElement('div');
+      site.className = 'preview-article-site';
+      site.textContent = preview.siteName;
+      card.appendChild(site);
+    }
+    return card;
   }
 
   return null;
@@ -807,7 +857,7 @@ function renderCards() {
       media.remove();
     }
 
-    const previewEntries = renderSectionPreviews((section.previews || []).filter((entry) => entry.type === 'tweet'));
+    const previewEntries = renderSectionPreviews((section.previews || []).filter((entry) => entry.type === 'tweet' || entry.type === 'link'));
     if (previewEntries.length > 0) {
       previews.hidden = false;
       previews.replaceChildren(...previewEntries);
@@ -815,7 +865,7 @@ function renderCards() {
       previews.remove();
     }
 
-    const sourceLinks = dedupeSourceLinks(section.source_links);
+    const sourceLinks = dedupeSourceLinks(section.source_links, section);
     links.replaceChildren(
       ...sourceLinks.map((entry) => {
         const anchor = document.createElement('a');

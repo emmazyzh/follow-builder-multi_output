@@ -655,6 +655,8 @@ button {
   padding: 16px;
   border-bottom: 1px solid var(--border);
   background: var(--surface);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .digest-card:hover {
@@ -836,6 +838,8 @@ button {
   border-radius: 18px;
   background: var(--surface-alt);
   color: var(--text);
+  min-width: 0;
+  overflow: hidden;
 }
 
 .preview-card:hover {
@@ -912,6 +916,41 @@ button {
   font-weight: 400;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
+}
+
+.preview-media {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.preview-media-image {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.preview-article-title {
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.preview-article-desc {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.preview-article-site {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
 }
 
 .card-code-block {

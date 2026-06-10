@@ -341,6 +341,32 @@ function tweetIdFromUrl(url) {
   return match ? match[1] : null;
 }
 
+function sameTweetById(left, right) {
+  const leftId = tweetIdFromUrl(left);
+  const rightId = tweetIdFromUrl(right);
+  return Boolean(leftId && rightId && leftId === rightId);
+}
+
+function mergePreviewEntries(basePreview, nextPreview) {
+  if (!basePreview) return nextPreview;
+  if (!nextPreview) return basePreview;
+  const preferredResolvedUrl = nextPreview.authorHandle && !basePreview.authorHandle
+    ? (nextPreview.resolvedUrl || nextPreview.url || basePreview.resolvedUrl || basePreview.url)
+    : (basePreview.resolvedUrl || basePreview.url || nextPreview.resolvedUrl || nextPreview.url);
+  return {
+    ...basePreview,
+    ...nextPreview,
+    resolvedUrl: preferredResolvedUrl,
+    url: nextPreview.url || basePreview.url || preferredResolvedUrl,
+    text: nextPreview.text || basePreview.text || '',
+    textZh: nextPreview.textZh || basePreview.textZh || '',
+    authorName: nextPreview.authorName || basePreview.authorName || '',
+    authorHandle: nextPreview.authorHandle || basePreview.authorHandle || '',
+    authorUrl: nextPreview.authorUrl || basePreview.authorUrl || '',
+    displayDate: nextPreview.displayDate || basePreview.displayDate || null
+  };
+}
+
 function findMatchingTweet(prepared, item, section) {
   const sourceLabel = String(item?.source_label || '').toLowerCase();
   if (!prepared || (!sourceLabel.includes('x') && !sourceLabel.includes('twitter'))) return null;
@@ -466,7 +492,8 @@ async function fetchTweetPreview(url) {
       authorHandle: syndication?.user?.screen_name || preview.authorHandle,
       authorUrl: syndication?.user?.screen_name ? `https://x.com/${syndication.user.screen_name}` : preview.authorUrl,
       text: applySyndicationTextExpansions(syndication?.text || preview.text, syndication),
-      displayDate: formatTweetPreviewDate(syndication?.created_at || preview.displayDate)
+      displayDate: formatTweetPreviewDate(syndication?.created_at || preview.displayDate),
+      media: uniqueMedia(mediaCandidatesFromSyndication(syndication))
     };
   }
 
@@ -611,7 +638,11 @@ function mediaCandidatesFromSyndication(data) {
 
 async function buildLinkExpansions(section, tweet, tweetPreview) {
   const currentSyndication = await fetchTweetSyndication(tweet?.url);
+  // Collect all tweet IDs already represented as previews (to suppress their short URLs)
+  const allQuotePreviews = Array.isArray(section?.previews) ? section.previews : [];
+  const previewTweetIds = new Set(allQuotePreviews.map((p) => tweetIdFromUrl(p?.resolvedUrl || p?.url)).filter(Boolean));
   const quoteResolvedUrl = normalizeTweetStatusUrl(tweetPreview?.resolvedUrl) || normalizeTweetStatusUrl(tweet?.quotedTweet?.url);
+  const quoteTweetId = tweetIdFromUrl(tweetPreview?.resolvedUrl) || tweetIdFromUrl(tweet?.quotedTweet?.url);
   const expandedByShortUrl = new Map(
     (Array.isArray(currentSyndication?.entities?.urls) ? currentSyndication.entities.urls : [])
       .map((entry) => {
@@ -650,7 +681,12 @@ async function buildLinkExpansions(section, tweet, tweetPreview) {
     const resolvedUrl = expandedByShortUrl.get(shortUrl) || await resolveShortUrl(shortUrl);
     if (!resolvedUrl) continue;
 
-    if (quoteResolvedUrl && normalizeTweetStatusUrl(resolvedUrl) === quoteResolvedUrl) {
+    const resolvedTweetId = tweetIdFromUrl(resolvedUrl);
+    if (
+      (quoteTweetId && resolvedTweetId === quoteTweetId)
+      || (quoteResolvedUrl && normalizeTweetStatusUrl(resolvedUrl) === quoteResolvedUrl)
+      || (resolvedTweetId && previewTweetIds.has(resolvedTweetId))
+    ) {
       expansions.push({
         kind: 'quote',
         shortUrl,
@@ -668,8 +704,10 @@ async function buildLinkExpansions(section, tweet, tweetPreview) {
       continue;
     }
 
+    // If t.co failed to resolve (resolvedUrl is still a t.co link), mark as 'unresolved' to drop it
+    const resolvedHost = hostFromUrl(resolvedUrl);
     expansions.push({
-      kind: 'external',
+      kind: resolvedHost === 't.co' ? 'unresolved' : 'external',
       shortUrl,
       resolvedUrl: normalizeUrlCandidate(resolvedUrl)
     });
@@ -680,34 +718,45 @@ async function buildLinkExpansions(section, tweet, tweetPreview) {
 
 async function buildSectionPreviews(section, tweet) {
   const previews = [];
-  const seen = new Set();
+  const seen = new Map();
+
+  const pushPreview = (preview) => {
+    if (!preview) return;
+    const key = tweetIdFromUrl(preview.resolvedUrl || preview.url) || normalizeUrlCandidate(preview.resolvedUrl || preview.url);
+    if (!key) {
+      previews.push(preview);
+      return;
+    }
+    const existingIndex = seen.get(key);
+    if (typeof existingIndex === 'number') {
+      previews[existingIndex] = mergePreviewEntries(previews[existingIndex], preview);
+      return;
+    }
+    seen.set(key, previews.length);
+    previews.push(preview);
+  };
 
   const preparedQuotePreview = buildTweetPreviewFromPreparedTweet(tweet);
   const fetchedQuotePreview = await fetchTweetPreview(tweet?.quotedTweet?.url || '');
   const quotePreview = mergeTweetPreview(preparedQuotePreview, fetchedQuotePreview);
 
-  if (quotePreview?.resolvedUrl) {
-    const key = normalizeUrlCandidate(quotePreview.resolvedUrl);
-    if (key) {
-      seen.add(key);
-      previews.push(quotePreview);
-    }
-  }
+  pushPreview(quotePreview);
 
   for (const candidate of collectPreviewUrls(section, tweet)) {
     const resolvedUrl = await resolveShortUrl(candidate);
     const normalizedResolved = normalizeUrlCandidate(resolvedUrl) || normalizeUrlCandidate(candidate);
-    if (!normalizedResolved || seen.has(normalizedResolved)) continue;
+    if (!normalizedResolved) continue;
     if (normalizeUrlCandidate(tweet?.url) === normalizedResolved) continue;
 
     let preview = null;
     if (isTweetStatusUrl(normalizedResolved)) {
       preview = await fetchTweetPreview(normalizedResolved);
+    } else if (!isDirectMediaUrl(normalizedResolved)) {
+      preview = await fetchExternalPreview(normalizedResolved);
     }
 
     if (preview) {
-      seen.add(normalizedResolved);
-      previews.push(preview);
+      pushPreview(preview);
     }
   }
 
