@@ -719,6 +719,8 @@ button {
   flex-direction: column;
   gap: 12px;
   padding-left: 60px;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .card-title {
@@ -919,9 +921,9 @@ button {
 }
 
 .preview-media {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: 6px;
   overflow: hidden;
 }
 
@@ -929,9 +931,10 @@ button {
   display: block;
   width: 100%;
   max-height: 200px;
-  border-radius: 12px;
+  border-radius: 10px;
   border: 1px solid var(--border);
   object-fit: cover;
+  min-width: 0;
 }
 
 .preview-article-title {
