@@ -177,8 +177,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/wkvnoEmsCK",
-                "resolvedUrl": "https://x.com/swyx/status/2064415059003248694/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKZGZKTbMAAu791.jpg"
+                "resolvedUrl": "https://twitter.com/swyx/status/2064415059003248694/photo/1"
               }
             ]
           }
@@ -198,26 +197,12 @@
             "source_links": [
               "https://x.com/joshwoodward/status/2064509357216428171"
             ],
-            "previews": [
-              {
-                "type": "tweet",
-                "url": "https://twitter.com/OfficialLoganK/status/2064423388928790943",
-                "resolvedUrl": "https://x.com/OfficialLoganK/status/2064423388928790943",
-                "authorName": "Logan Kilpatrick",
-                "authorHandle": "OfficialLoganK",
-                "authorUrl": "https://x.com/OfficialLoganK",
-                "text": "In @GoogleAIStudio we are now making more than 1,200,000 apps a week (and growing) with more than 18,000,000 created since late February 🤯\n\nThe progress continues!!!",
-                "displayDate": "Jun 9",
-                "provider": "X",
-                "media": [],
-                "textZh": "在 @GoogleAIStudio，我们现在每周产出的应用已经超过 1,200,000 个，而且还在增长，自 2 月底以来累计已创建超过 18,000,000 个 🤯\n\n进展还在继续！！！"
-              }
-            ],
+            "previews": [],
             "linkExpansions": [
               {
-                "kind": "quote",
+                "kind": "unresolved",
                 "shortUrl": "https://t.co/cw1ojEhxq1",
-                "resolvedUrl": "https://x.com/officiallogank/status/2064423388928790943"
+                "resolvedUrl": "https://t.co/cw1ojEhxq1"
               }
             ]
           }
@@ -254,9 +239,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "quote",
+                "kind": "external",
                 "shortUrl": "https://t.co/X38ItA7vpj",
-                "resolvedUrl": "https://x.com/claudedevs/status/2064464557951852643"
+                "resolvedUrl": "https://twitter.com/ClaudeDevs/status/2064464557951852643"
               }
             ]
           },
@@ -387,8 +372,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/xa1ijT3KMG",
-                "resolvedUrl": "https://x.com/petergyang/status/2064577126385459265/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKbZ8N2bAAA7s3t.png"
+                "resolvedUrl": "https://twitter.com/petergyang/status/2064577126385459265/photo/1"
               }
             ],
             "previews": []
@@ -437,8 +421,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/BXfvEJVvrf",
-                "resolvedUrl": "https://x.com/trq212/status/2064521202622960058/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKanFxLawAA7Ojs.jpg"
+                "resolvedUrl": "https://twitter.com/trq212/status/2064521202622960058/photo/1"
               }
             ],
             "previews": []
@@ -568,8 +551,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/ZOuhwIp7h5",
-                "resolvedUrl": "https://x.com/rauchg/status/2064551967461114111/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKbBk03aYAA39Hg.png"
+                "resolvedUrl": "https://twitter.com/rauchg/status/2064551967461114111/photo/1"
               },
               {
                 "kind": "quote",
@@ -691,8 +673,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/3CKQuX5HsG",
-                "resolvedUrl": "https://x.com/levie/status/2064396746953023647/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKY032Fa0AA7-gl.jpg"
+                "resolvedUrl": "https://twitter.com/levie/status/2064396746953023647/photo/1"
               },
               {
                 "kind": "quote",
@@ -745,8 +726,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/5t6oabHOnR",
-                "resolvedUrl": "https://x.com/garrytan/status/2064559225859416186/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKbJnB1bYAAtR9H.jpg"
+                "resolvedUrl": "https://twitter.com/garrytan/status/2064559225859416186/photo/1"
               }
             ],
             "previews": []
@@ -769,8 +749,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/nTuUasuCvU",
-                "resolvedUrl": "https://x.com/garrytan/status/2064519190061666393/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKalI-CbcAApjHj.jpg"
+                "resolvedUrl": "https://twitter.com/garrytan/status/2064519190061666393/photo/1"
               }
             ],
             "previews": []
@@ -810,7 +789,7 @@
             "previews": [],
             "linkExpansions": [
               {
-                "kind": "quote",
+                "kind": "external",
                 "shortUrl": "https://t.co/4wxpJjrAAB",
                 "resolvedUrl": "https://luma.com/n77w0jwq"
               },
@@ -842,7 +821,7 @@
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/zPGOiwmiXG",
-                "resolvedUrl": "http://escurves.com/"
+                "resolvedUrl": "https://escurves.com/"
               }
             ]
           },
@@ -864,8 +843,7 @@
               {
                 "kind": "media",
                 "shortUrl": "https://t.co/jYMCkJde9x",
-                "resolvedUrl": "https://x.com/nikunj/status/2064506504888373758/video/1",
-                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2064504415453880320/img/CmyLyd9hq24oh7s0.jpg"
+                "resolvedUrl": "https://twitter.com/nikunj/status/2064506504888373758/video/1"
               }
             ],
             "previews": []
@@ -889,7 +867,7 @@
             "previews": [],
             "linkExpansions": [
               {
-                "kind": "quote",
+                "kind": "external",
                 "shortUrl": "https://t.co/SOW9nt2wC7",
                 "resolvedUrl": "https://www.youtube.com/watch?v=GrdEid8H6H4"
               }
@@ -941,10 +919,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "media",
+                "kind": "unresolved",
                 "shortUrl": "https://t.co/ZdceXz3apU",
-                "resolvedUrl": "https://x.com/danshipper/status/2064395167658860859/video/1",
-                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2064394638098636800/img/fC0Ymvu_-I9eUWG4.jpg"
+                "resolvedUrl": "https://t.co/ZdceXz3apU"
               },
               {
                 "kind": "quote",
@@ -1018,7 +995,7 @@
             "previews": [],
             "linkExpansions": [
               {
-                "kind": "quote",
+                "kind": "external",
                 "shortUrl": "https://t.co/iQymY0jiGq",
                 "resolvedUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
               }
@@ -1046,15 +1023,15 @@
   },
   "meta": {
     "date": "2026-06-10",
-    "updatedAt": "2026-06-10T12:05:21.950Z",
+    "updatedAt": "2026-06-10T13:26:13.509Z",
     "commit": {
       "sha": "5521c73ef1d91698713752c3aacc29fd94d9b97a",
       "committedAt": "2026-06-10T07:48:52Z",
       "subject": "chore: update feeds [skip ci]",
       "file": "feed-blogs.json"
     },
-    "generatedAt": "2026-06-10T12:00:13.012Z",
+    "generatedAt": null,
     "feedGeneratedAt": "2026-06-10T07:48:48.549Z",
-    "timezone": "Asia/Shanghai"
+    "timezone": "America/Los_Angeles"
   }
 }

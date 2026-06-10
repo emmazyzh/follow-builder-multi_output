@@ -149,9 +149,9 @@ function applyLinkExpansions(text, section) {
       }
       if (entry.kind === 'external' && entry.resolvedUrl) {
         const resolvedUrl = String(entry.resolvedUrl || '').trim();
-        const isQuotedXLink = /^https?:\/\/(?:www\.)?x\.com\/(?:i\/status\/|[A-Za-z0-9_]+\/status\/)\d+/i.test(resolvedUrl);
+        const isQuotedXStatus = /^https?:\/\/(?:www\.)?x\.com\/(?:i\/status\/|[A-Za-z0-9_]+\/status\/)\d+/i.test(resolvedUrl);
         const hasPreview = previewUrls.has(normalizePreviewKey({ resolvedUrl }));
-        output = output.split(shortUrl).join(isQuotedXLink || hasPreview ? '' : resolvedUrl);
+        output = output.split(shortUrl).join(isQuotedXStatus || hasPreview ? '' : resolvedUrl);
         return;
       }
       output = output.split(shortUrl).join('');
@@ -315,7 +315,7 @@ function splitHeadlineLanguages(headline) {
     };
   }
   const segments = value
-    .split(/\s*(?:[|｜]|·|\/|／)\s*/)
+    .split(/\s*(?:[|｜]|·|\/|／|;\s+)\s*/)
     .map((part) => part.trim())
     .filter(Boolean);
   const chinese = segments.find((part) => /[\u3400-\u9fff]/.test(part)) || '';

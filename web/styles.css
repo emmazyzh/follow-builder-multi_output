@@ -922,19 +922,19 @@ button {
 
 .preview-media {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-  gap: 6px;
+  gap: 8px;
   overflow: hidden;
 }
 
 .preview-media-image {
   display: block;
-  width: 100%;
-  max-height: 200px;
-  border-radius: 10px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 420px;
+  border-radius: 14px;
   border: 1px solid var(--border);
-  object-fit: cover;
-  min-width: 0;
+  justify-self: start;
 }
 
 .preview-article-title {

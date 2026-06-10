@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-10T12:05:21.959Z",
+  "updatedAt": "2026-06-10T13:26:13.544Z",
   "latestDate": "2026-06-10",
   "dates": [
     {
@@ -7,8 +7,8 @@
       "title": "AI Builders Daily · 2026-06-10",
       "summary": "**Fable 5 detonated across builder Twitter**; power users called it the biggest jump since **Opus 4.5** and started talking like the model had crossed from assistant into partner; the louder second-order claim was even bigger: **software demand is about to spike**, not shrink. **Enterprise reality pushed back**; Aaron Levie hammered the integration gap between frontier models and usable company workflows; meanwhile builders traded hard-won tactics on self-verification, objective-first prompting, onboarding, and where browser automation still drags performance.\n\n**今天的主线就一条：Fable 5 把圈子点着了**；一堆老手都在说这是自 **Opus 4.5** 之后最狠的一次跃迁，语气已经不是“工具升级”，而是模型开始像搭档；跟着冒出来的判断也很直接：**软件需求只会更猛，不会变少**。另一边，落地派没跟着上头；Aaron Levie 把企业里那道脏活累活的鸿沟讲得很明白，数据、流程、变更管理一个都躲不开；实操层面也很实在，大家在交换怎么写目标、怎么做自验证、怎么做 onboarding，以及浏览器链路到底有多拖后腿。",
       "itemCount": 18,
-      "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-10T12:05:21.957Z",
+      "siteUrl": null,
+      "updatedAt": "2026-06-10T13:26:13.522Z",
       "commit": {
         "sha": "5521c73ef1d91698713752c3aacc29fd94d9b97a",
         "committedAt": "2026-06-10T07:48:52Z",

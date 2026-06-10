@@ -636,11 +636,11 @@ function mediaCandidatesFromSyndication(data) {
   return uniqueMedia([...photos, ...details].filter((entry) => entry?.url));
 }
 
-async function buildLinkExpansions(section, tweet, tweetPreview) {
+async function buildLinkExpansions(section, tweet, tweetPreview, allPreviews) {
   const currentSyndication = await fetchTweetSyndication(tweet?.url);
-  // Collect all tweet IDs already represented as previews (to suppress their short URLs)
-  const allQuotePreviews = Array.isArray(section?.previews) ? section.previews : [];
-  const previewTweetIds = new Set(allQuotePreviews.map((p) => tweetIdFromUrl(p?.resolvedUrl || p?.url)).filter(Boolean));
+  // Only tweet-type previews suppress their short URLs as 'quote'
+  const effectivePreviews = Array.isArray(allPreviews) ? allPreviews : (Array.isArray(section?.previews) ? section.previews : []);
+  const previewTweetIds = new Set(effectivePreviews.filter((p) => p?.type === 'tweet').map((p) => tweetIdFromUrl(p?.resolvedUrl || p?.url)).filter(Boolean));
   const quoteResolvedUrl = normalizeTweetStatusUrl(tweetPreview?.resolvedUrl) || normalizeTweetStatusUrl(tweet?.quotedTweet?.url);
   const quoteTweetId = tweetIdFromUrl(tweetPreview?.resolvedUrl) || tweetIdFromUrl(tweet?.quotedTweet?.url);
   const expandedByShortUrl = new Map(
@@ -701,6 +701,12 @@ async function buildLinkExpansions(section, tweet, tweetPreview) {
         shortUrl,
         resolvedUrl: normalizeUrlCandidate(resolvedUrl)
       });
+      continue;
+    }
+
+    // t.co resolving to a /photo/ or /video/ path means it's media already shown inline
+    if (/\/(?:photo|video)\/\d+\s*$/i.test(resolvedUrl)) {
+      expansions.push({ kind: 'media', shortUrl, resolvedUrl: normalizeUrlCandidate(resolvedUrl) });
       continue;
     }
 
@@ -772,7 +778,7 @@ async function enrichPayloadMedia(prepared, payload) {
       sections: await Promise.all((Array.isArray(item.sections) ? item.sections : []).map(async (section) => {
         const tweet = findMatchingTweet(prepared, item, section);
         const quotePreviews = await buildSectionPreviews(section, tweet);
-        const linkExpansions = await buildLinkExpansions(section, tweet, quotePreviews[0] || null);
+        const linkExpansions = await buildLinkExpansions(section, tweet, quotePreviews.find((p) => p?.type === 'tweet') || null, quotePreviews);
         const media = tweet
           ? uniqueMedia([
             ...mediaCandidatesFromValue(tweet.media),
