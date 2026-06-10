@@ -56,12 +56,45 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/PdMrqxtuV0",
-                "resolvedUrl": "https://x.com/swyx/status/2062611218196771017?s=20"
+                "resolvedUrl": "https://x.com/swyx/status/2062611218196771017"
               }
             ],
-            "previews": []
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/swyx/status/2062611218196771017?s=20",
+                "resolvedUrl": "https://x.com/swyx/status/2062611218196771017",
+                "authorName": "swyx",
+                "authorHandle": "swyx",
+                "authorUrl": "https://x.com/swyx",
+                "text": "Finally! the first eval ship from cog!!!!!!!!!! 👼🏼\n\nTo contextualize: @METR_Evals cap out at ~16 hours.\n\nCog has private enterprise evals up to 100hrs, and is confident enough to put a financial guarantee on it 🤯\n\nMETR dataset: ML eng, GPU kernels, cybersecurity\n\n&gt; \"METR (2026)",
+                "displayDate": "Jun 4",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HJ_a3ThbMAAUATb.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2062611218196771017/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HJ_cQgpawAA8ND7.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2062611218196771017/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HJ_cTFRaEAA0IST.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2062611218196771017/photo/1"
+                  }
+                ],
+                "textZh": "终于！cog 的第一艘 eval 大船终于发布了!!!!!!!!!! 👼🏼\n\n补充一下背景：@METR_Evals 的上限大约是 16 小时。\n\nCog 的私有企业 eval 最长可达 100 小时，而且他们有足够信心，甚至愿意为此提供财务担保 🤯\n\nMETR 数据集：机器学习工程、GPU 内核、网络安全\n\n> \"METR (2026)"
+              }
+            ]
           },
           {
             "headline": "**FrontierCode** calls time on test-passing slop / **FrontierCode** 开始清算“测试过了就算赢”的糊弄代码",
@@ -110,15 +143,15 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/4TCw7tQ2GV",
-                "resolvedUrl": "https://t.co/4TCw7tQ2GV"
+                "resolvedUrl": "https://x.com/notebooklm/status/2064016460964585549"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/NotebookLM/status/2064016460964585549",
+                "url": "https://twitter.com/NotebookLM/status/2064016460964585549",
                 "resolvedUrl": "https://x.com/NotebookLM/status/2064016460964585549",
                 "authorName": "NotebookLM",
                 "authorHandle": "NotebookLM",
@@ -126,6 +159,14 @@
                 "text": "Introducing a more powerful NotebookLM 🚀\n\nMassive upgrades deliver agentic capabilities in chat, more advanced reasoning, and a suite of new output formats. Tackling complex, multi-step research problems has never been easier.\n\nRolling out now to Google AI Ultra subscribers.",
                 "displayDate": "Jun 8",
                 "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/zBXD7unIC7",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2064016066377052160/img/kzz10I0srLDDBt_9.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/NotebookLM/status/2064016460964585549/video/1"
+                  }
+                ],
                 "textZh": "更强大的 NotebookLM 来了 🚀\n\n大幅升级带来了聊天中的 agentic 能力、更高级的推理能力，以及一整套新的输出格式。处理复杂的多步骤研究问题，从未如此轻松。\n\n现已开始向 Google AI Ultra 订阅用户推出。"
               }
             ]
@@ -197,18 +238,6 @@
                 "displayDate": "Jun 7",
                 "provider": "X",
                 "textZh": "每月提醒一次：你不该再亲自给 coding agents 写 prompt 了。\n\n你该做的是设计循环，让这些循环去给你的 agents 写 prompt。"
-              },
-              {
-                "type": "tweet",
-                "url": "https://twitter.com/steipete/status/2063697162748260627",
-                "resolvedUrl": "https://x.com/steipete/status/2063697162748260627",
-                "authorName": "Peter Steinberger 🦞",
-                "authorHandle": "steipete",
-                "authorUrl": "https://x.com/steipete",
-                "text": "Here’s your monthly reminder that you shouldn’t be prompting coding agents anymore.\n\nYou should be designing loops that prompt your agents.",
-                "displayDate": "Jun 7",
-                "provider": "X",
-                "textZh": "每月提醒一次：你不该再亲自给 coding agents 写 prompt 了。\n\n你该做的是设计循环，让这些循环去给你的 agents 写 prompt。"
               }
             ]
           },
@@ -236,10 +265,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "media",
+                "kind": "external",
                 "shortUrl": "https://t.co/k3tWgio5XD",
-                "resolvedUrl": "https://x.com/thsottiaux/status/2064224657822413137/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKWZEDqbQAA12tk.jpg"
+                "resolvedUrl": "https://twitter.com/thsottiaux/status/2064224657822413137/photo/1"
               }
             ],
             "previews": []
@@ -270,10 +298,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "media",
+                "kind": "external",
                 "shortUrl": "https://t.co/LCzNSFjbrM",
-                "resolvedUrl": "https://x.com/petergyang/status/2064204735671124073/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKWHRH3bEAA_2P4.jpg"
+                "resolvedUrl": "https://twitter.com/petergyang/status/2064204735671124073/photo/1"
               }
             ],
             "previews": []
@@ -330,15 +357,15 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/4GHRmDVteR",
-                "resolvedUrl": "https://t.co/4GHRmDVteR"
+                "resolvedUrl": "https://x.com/francisstudio_/status/2064064591764615384"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/FrancisStudio_/status/2064064591764615384",
+                "url": "https://twitter.com/francisstudio_/status/2064064591764615384",
                 "resolvedUrl": "https://x.com/FrancisStudio_/status/2064064591764615384",
                 "authorName": "Francis",
                 "authorHandle": "FrancisStudio_",
@@ -346,6 +373,14 @@
                 "text": "Got tired of waiting for Starcraft 3 so I vibecoded my own RTS game on Replit! Completely playable on any Tesla browser 👾",
                 "displayDate": "Jun 8",
                 "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/Mt0HtrMpqM",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2064064484021293056/img/EDItyZSIcvEZ8Xkl.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Tomtech10000/status/2064064591764615384/video/1"
+                  }
+                ],
                 "textZh": "等 Starcraft 3 等烦了，于是我直接在 Replit 上 vibecoding 了一个自己的 RTS 游戏！任何 Tesla 浏览器都能完整游玩 👾"
               }
             ]
@@ -368,22 +403,23 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/hqahb5ppke",
-                "resolvedUrl": "https://t.co/hqahb5ppke"
+                "resolvedUrl": "https://x.com/vercel/status/2064188171294761076"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/vercel/status/2064188171294761076",
+                "url": "https://twitter.com/vercel/status/2064188171294761076",
                 "resolvedUrl": "https://x.com/vercel/status/2064188171294761076",
                 "authorName": "Vercel",
                 "authorHandle": "vercel",
                 "authorUrl": "https://x.com/vercel",
-                "text": "https://t.co/hUowOdv4Ci",
-                "displayDate": null,
+                "text": "http://x.com/i/article/2064040500168966144",
+                "displayDate": "Jun 9",
                 "provider": "X",
+                "media": [],
                 "textZh": "https://t.co/hUowOdv4Ci"
               }
             ]
@@ -437,15 +473,15 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/NKdKSoVhiH",
-                "resolvedUrl": "https://t.co/NKdKSoVhiH"
+                "resolvedUrl": "https://x.com/rahul/status/2063984276610114001"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/rahul/status/2063984276610114001",
+                "url": "https://twitter.com/rahul/status/2063984276610114001",
                 "resolvedUrl": "https://x.com/rahul/status/2063984276610114001",
                 "authorName": "Rahul Sidhu",
                 "authorHandle": "rahul",
@@ -453,6 +489,14 @@
                 "text": "One of the most prolific criminals in all of San Francisco tells @adam22 that “crime in San Francisco is over with” because of Flock cameras + drones. He complains that he can’t even do drivebys anymore.\n\nIt’s simple: when the risk of getting caught is too high, crime plummets.",
                 "displayDate": "Jun 8",
                 "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/DZtC0jyaAA",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2063984201943142400/img/p7CkEhuEiAvOUihj.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/rahul/status/2063984276610114001/video/1"
+                  }
+                ],
                 "textZh": "旧金山最活跃的罪犯之一告诉 @adam22：“旧金山的犯罪已经结束了”，因为有 Flock 摄像头和无人机。他抱怨说，自己现在连 driveby 都做不了了。\n\n道理很简单：当被抓到的风险高得多时，犯罪率就会暴跌。"
               }
             ]
@@ -465,22 +509,23 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/Xu14bgPW0p",
-                "resolvedUrl": "https://t.co/Xu14bgPW0p"
+                "resolvedUrl": "https://x.com/armanddoma/status/2063703057276547348"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/ArmandDoma/status/2063703057276547348",
+                "url": "https://twitter.com/armanddoma/status/2063703057276547348",
                 "resolvedUrl": "https://x.com/ArmandDoma/status/2063703057276547348",
                 "authorName": "Armand Domalewski",
                 "authorHandle": "ArmandDoma",
                 "authorUrl": "https://x.com/ArmandDoma",
-                "text": "people are missing two big things in the SF election: 1) the deck was stacked against progressives, the two Supervisor races were in some of the most moderate districts in SF 2) i have no idea what the SF progressive coalition stands for now---their biggest success, Connie… https://t.co/8kEaq7nl4e",
-                "displayDate": null,
+                "text": "people are missing two big things in the SF election:\n\n1) the deck was stacked against progressives, the two Supervisor races were in some of the most moderate districts in SF\n\n2) i have no idea what the SF progressive coalition stands for now---their biggest success, Connie",
+                "displayDate": "Jun 7",
                 "provider": "X",
+                "media": [],
                 "textZh": "大家忽略了这次 SF 选举里的两件大事：1）局面对进步派非常不利，这两场 Supervisor 选举都发生在 SF 最温和的几个选区里；2）我现在完全不知道 SF 的进步派联盟到底代表什么了——他们最大的成功，Connie… https://t.co/8kEaq7nl4e"
               }
             ]
@@ -493,15 +538,15 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/fxkV2LozeF",
-                "resolvedUrl": "https://t.co/fxkV2LozeF"
+                "resolvedUrl": "https://x.com/firstadopter/status/2063887741364949075"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/firstadopter/status/2063887741364949075",
+                "url": "https://twitter.com/firstadopter/status/2063887741364949075",
                 "resolvedUrl": "https://x.com/firstadopter/status/2063887741364949075",
                 "authorName": "tae kim",
                 "authorHandle": "firstadopter",
@@ -509,6 +554,20 @@
                 "text": "Why aren't there more Daniel Lurie type politicians in state and federal governments? Centrists, pro-housing, pro-business, effective public safety and services and anti-bureaucracy",
                 "displayDate": "Jun 8",
                 "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKRm9nHW0AAh99r.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/firstadopter/status/2063887741364949075/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKRm9nGWMAATAL7.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/firstadopter/status/2063887741364949075/photo/1"
+                  }
+                ],
                 "textZh": "为什么州和联邦政府里没有更多 Daniel Lurie 这种类型的政治人物？中间派、支持住房、支持商业、重视有效的公共安全和公共服务、反官僚主义。"
               }
             ]
@@ -531,22 +590,23 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/7jh75DNpUC",
-                "resolvedUrl": "https://t.co/7jh75DNpUC"
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2042513006018601065"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/zarazhangrui/status/2042513006018601065",
+                "url": "https://twitter.com/zarazhangrui/status/2042513006018601065",
                 "resolvedUrl": "https://x.com/zarazhangrui/status/2042513006018601065",
                 "authorName": "Zara Zhang",
                 "authorHandle": "zarazhangrui",
                 "authorUrl": "https://x.com/zarazhangrui",
-                "text": "The old world: Word, Excel, PowerPoint The new world: Markdown, CSV/JSON, HTML",
-                "displayDate": null,
+                "text": "The old world: Word, Excel, PowerPoint\n\nThe new world: Markdown, CSV/JSON, HTML",
+                "displayDate": "Apr 10",
                 "provider": "X",
+                "media": [],
                 "textZh": "旧世界：Word、Excel、PowerPoint 新世界：Markdown、CSV/JSON、HTML"
               }
             ]
@@ -567,28 +627,28 @@
             ],
             "linkExpansions": [
               {
-                "kind": "media",
+                "kind": "external",
                 "shortUrl": "https://t.co/Sdwx0pZn2Y",
-                "resolvedUrl": "https://x.com/zarazhangrui/status/2064101916725096810/photo/1",
-                "mediaUrl": "https://pbs.twimg.com/media/HKUpn9DaAAAHk4t.jpg"
+                "resolvedUrl": "https://twitter.com/zarazhangrui/status/2064101916725096810/photo/1"
               },
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/9auqS9f0Q5",
-                "resolvedUrl": "https://t.co/9auqS9f0Q5"
+                "resolvedUrl": "https://x.com/trq212/status/2062605395101884916"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/trq212/status/2062605395101884916",
+                "url": "https://twitter.com/trq212/status/2062605395101884916",
                 "resolvedUrl": "https://x.com/trq212/status/2062605395101884916",
                 "authorName": "Thariq",
                 "authorHandle": "trq212",
                 "authorUrl": "https://x.com/trq212",
-                "text": "An app can be a home-cooked meal (2020) personal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letterhttps://t.co/bzzbHofywN",
-                "displayDate": null,
+                "text": "An app can be a home-cooked meal (2020)\n\npersonal software was a bit early in 2020 but in 2026, it really can be as personal as a home cooked meal, or a handwritten letter\n\nhttps://robinsloan.com/notes/home-cooked-app/",
+                "displayDate": "Jun 4",
                 "provider": "X",
+                "media": [],
                 "textZh": "一个 app 可以像一顿家常饭一样（2020）。个人软件在 2020 年还稍微早了点，但到了 2026 年，它真的可以像一顿家常饭，或者一封手写信那样私人化。https://t.co/bzzbHofywN"
               }
             ]
@@ -634,10 +694,9 @@
             ],
             "linkExpansions": [
               {
-                "kind": "media",
+                "kind": "external",
                 "shortUrl": "https://t.co/OkqaFdj5HG",
-                "resolvedUrl": "https://x.com/nikunj/status/2064231488544280855/video/1",
-                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2064231339281526784/img/9Etwi3NkEXYbWwT7.jpg"
+                "resolvedUrl": "https://twitter.com/nikunj/status/2064231488544280855/video/1"
               }
             ],
             "previews": []
@@ -659,24 +718,12 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/R7L8TDFuvC",
-                "resolvedUrl": "https://twitter.com/nikunj/status/1947438681113169962"
+                "resolvedUrl": "https://x.com/nikunj/status/1947438681113169962"
               }
             ],
             "previews": [
-              {
-                "type": "tweet",
-                "url": "https://x.com/i/status/1947438681113169962",
-                "resolvedUrl": "https://x.com/i/status/1947438681113169962",
-                "authorName": "Quoted post",
-                "authorHandle": null,
-                "authorUrl": null,
-                "text": "Autonomous startups are everywhere, but the last mile still bites",
-                "displayDate": null,
-                "provider": "X",
-                "textZh": "自主创业公司到处都是，但最后一公里依然最难啃"
-              },
               {
                 "type": "tweet",
                 "url": "https://twitter.com/nikunj/status/1947438681113169962",
@@ -687,6 +734,20 @@
                 "text": "Waymo spent 15 years getting from 90% to mostly autonomous. Companies are about to learn the same lesson..",
                 "displayDate": "Jul 21",
                 "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/GwawevAbEAMd2AN.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/nikunj/status/1947438681113169962/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/GwawfXxbEAAJxhL.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/nikunj/status/1947438681113169962/photo/1"
+                  }
+                ],
                 "textZh": "Waymo 花了 15 年，才从 90% 走到基本自主。各家公司也快要学到同样的教训了。"
               }
             ]
@@ -709,22 +770,30 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/MHD8RC4cOq",
-                "resolvedUrl": "https://t.co/MHD8RC4cOq"
+                "resolvedUrl": "https://x.com/bigtechalert/status/2064098922826449310"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/BigTechAlert/status/2064098922826449310",
+                "url": "https://twitter.com/BigTechAlert/status/2064098922826449310",
                 "resolvedUrl": "https://x.com/BigTechAlert/status/2064098922826449310",
                 "authorName": "Big Tech Alert",
                 "authorHandle": "BigTechAlert",
                 "authorUrl": "https://x.com/BigTechAlert",
-                "text": "🆕 @karpathy has just followed @danshipper (🤖💡: how do we make sense of this?) pic.twitter.com/nKvN7kOdU0",
-                "displayDate": null,
+                "text": "🆕 @karpathy has just followed @danshipper\n\n(🤖💡: how do we make sense of this?)",
+                "displayDate": "Jun 8",
                 "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKUnCD1WIAAwYpb.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/BigTechAlert/status/2064098922826449310/photo/1"
+                  }
+                ],
                 "textZh": "🆕 @karpathy 刚刚关注了 @danshipper（🤖💡：我们该怎么理解这件事？）pic.twitter.com/nKvN7kOdU0"
               }
             ]
@@ -739,35 +808,10 @@
               {
                 "kind": "quote",
                 "shortUrl": "https://t.co/TNV8PS3lEs",
-                "resolvedUrl": "https://x.com/mvanhorn/status/2063865685558903149"
+                "resolvedUrl": "https://t.co/TNV8PS3lEs"
               }
             ],
-            "previews": [
-              {
-                "type": "tweet",
-                "url": "https://x.com/mvanhorn/status/2063865685558903149",
-                "resolvedUrl": "https://x.com/mvanhorn/status/2063865685558903149",
-                "authorName": "Matt Van Horn",
-                "authorHandle": "mvanhorn",
-                "authorUrl": "https://x.com/mvanhorn",
-                "text": "https://t.co/DM0CAuyprS",
-                "displayDate": null,
-                "provider": "X",
-                "textZh": "https://t.co/DM0CAuyprS"
-              },
-              {
-                "type": "tweet",
-                "url": "https://twitter.com/mvanhorn/status/2063865685558903149",
-                "resolvedUrl": "https://x.com/mvanhorn/status/2063865685558903149",
-                "authorName": "Matt Van Horn",
-                "authorHandle": "mvanhorn",
-                "authorUrl": "https://x.com/mvanhorn",
-                "text": "http://x.com/i/article/2063850827694096385",
-                "displayDate": "Jun 8",
-                "provider": "X",
-                "textZh": "https://t.co/DM0CAuyprS"
-              }
-            ]
+            "previews": []
           }
         ]
       },
@@ -787,7 +831,7 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/r29FUUee3A",
                 "resolvedUrl": "https://openai.com/index/built-to-benefit-everyone-our-plan/"
               }
@@ -812,27 +856,35 @@
             ],
             "linkExpansions": [
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/SkYZwjK3GS",
-                "resolvedUrl": "http://claude.com/code-with-claude/tokyo"
+                "resolvedUrl": "https://claude.com/code-with-claude/tokyo"
               },
               {
-                "kind": "external",
+                "kind": "quote",
                 "shortUrl": "https://t.co/sbGHgDaEW5",
-                "resolvedUrl": "https://t.co/sbGHgDaEW5"
+                "resolvedUrl": "https://x.com/claudeai/status/2050252933866930339"
               }
             ],
             "previews": [
               {
                 "type": "tweet",
-                "url": "https://x.com/claudeai/status/2050252933866930339",
+                "url": "https://twitter.com/claudeai/status/2050252933866930339",
                 "resolvedUrl": "https://x.com/claudeai/status/2050252933866930339",
                 "authorName": "Claude",
                 "authorHandle": "claudeai",
                 "authorUrl": "https://x.com/claudeai",
-                "text": "Code with Claude, our developer conference, returns next week. Whether you're just getting started with Claude Code or you've been building for a while, there's a session for you. Register for the livestream: https://t.co/GJwOPMDLEC pic.twitter.com/uwAZgWPu7F",
-                "displayDate": null,
+                "text": "Code with Claude, our developer conference, returns next week.\n\nWhether you're just getting started with Claude Code or you've been building for a while, there's a session for you.\n\nRegister for the livestream: http://claude.com/code-with-claude",
+                "displayDate": "May 1",
                 "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/uwAZgWPu7F",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2050249102663835648/img/OAdlqExTTwYWuntW.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2050252933866930339/video/1"
+                  }
+                ],
                 "textZh": "Code with Claude，我们的开发者大会，将于下周回归。无论你是刚开始接触 Claude Code，还是已经构建了一段时间，都能找到适合你的场次。直播报名地址：https://t.co/GJwOPMDLEC pic.twitter.com/uwAZgWPu7F"
               }
             ]
@@ -843,15 +895,15 @@
   },
   "meta": {
     "date": "2026-06-09",
-    "updatedAt": "2026-06-10T10:01:00.050Z",
+    "updatedAt": "2026-06-10T11:48:12.973Z",
     "commit": {
       "sha": "5cea16075eb9baf5d48e708f84006ba8a8f5cbf7",
       "committedAt": "2026-06-09T07:33:24Z",
       "subject": "chore: update feeds [skip ci]",
       "file": "feed-blogs.json"
     },
-    "generatedAt": "2026-06-09T12:41:40.270Z",
+    "generatedAt": null,
     "feedGeneratedAt": "2026-06-09T07:33:17.959Z",
-    "timezone": "Asia/Shanghai"
+    "timezone": "America/Los_Angeles"
   }
 }

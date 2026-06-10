@@ -1,14 +1,28 @@
 {
-  "updatedAt": "2026-06-09T12:44:35.303Z",
-  "latestDate": "2026-06-09",
+  "updatedAt": "2026-06-10T12:05:21.959Z",
+  "latestDate": "2026-06-10",
   "dates": [
+    {
+      "date": "2026-06-10",
+      "title": "AI Builders Daily · 2026-06-10",
+      "summary": "**Fable 5 detonated across builder Twitter**; power users called it the biggest jump since **Opus 4.5** and started talking like the model had crossed from assistant into partner; the louder second-order claim was even bigger: **software demand is about to spike**, not shrink. **Enterprise reality pushed back**; Aaron Levie hammered the integration gap between frontier models and usable company workflows; meanwhile builders traded hard-won tactics on self-verification, objective-first prompting, onboarding, and where browser automation still drags performance.\n\n**今天的主线就一条：Fable 5 把圈子点着了**；一堆老手都在说这是自 **Opus 4.5** 之后最狠的一次跃迁，语气已经不是“工具升级”，而是模型开始像搭档；跟着冒出来的判断也很直接：**软件需求只会更猛，不会变少**。另一边，落地派没跟着上头；Aaron Levie 把企业里那道脏活累活的鸿沟讲得很明白，数据、流程、变更管理一个都躲不开；实操层面也很实在，大家在交换怎么写目标、怎么做自验证、怎么做 onboarding，以及浏览器链路到底有多拖后腿。",
+      "itemCount": 18,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-10T12:05:21.957Z",
+      "commit": {
+        "sha": "5521c73ef1d91698713752c3aacc29fd94d9b97a",
+        "committedAt": "2026-06-10T07:48:52Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-09",
       "title": "AI Builders Daily · 2026-06-09",
       "summary": "**Benchmarks just got meaner**: **FrontierCode** lands with maintainer-grade rubrics and a brutal 13.8% on FC Diamond, calling half of **SWE-Bench** “unmergeable slop”; **Apple developers get a new routing stack** as **Claude** plugs into the Foundation Models framework for heavier reasoning and tool use; the builder chatter is all about interfaces and control, from **NotebookLM** expanding beyond source files to **Codex** phone workflows, nested loops, and the stubborn reality that context still beats raw intelligence.\n\n**基准开始下狠手了**：**FrontierCode** 这次不看会不会跑通测试，直接盯上代码能不能真进主干，连 **SWE-Bench** 都被点名一半是“合不进去的糊弄活”；**Apple** 这边也有实打实的新东西，**Claude** 接进 Foundation Models，轻任务留在端侧，复杂推理再往上接；另一条线也很热闹，大家都在聊工具怎么真正顺手，从 **NotebookLM** 往外扩检索、**Codex** 上手机桌面，到一句老实话反复被验证：模型再强，没上下文还是容易跑偏。",
       "itemCount": 17,
-      "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-09T12:44:35.301Z",
+      "siteUrl": null,
+      "updatedAt": "2026-06-10T11:48:12.983Z",
       "commit": {
         "sha": "5cea16075eb9baf5d48e708f84006ba8a8f5cbf7",
         "committedAt": "2026-06-09T07:33:24Z",

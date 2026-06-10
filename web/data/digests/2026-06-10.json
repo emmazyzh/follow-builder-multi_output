@@ -1,0 +1,1060 @@
+{
+  "payload": {
+    "date": "2026-06-10",
+    "title": "AI Builders Daily · 2026-06-10",
+    "summary": "**Fable 5 detonated across builder Twitter**; power users called it the biggest jump since **Opus 4.5** and started talking like the model had crossed from assistant into partner; the louder second-order claim was even bigger: **software demand is about to spike**, not shrink. **Enterprise reality pushed back**; Aaron Levie hammered the integration gap between frontier models and usable company workflows; meanwhile builders traded hard-won tactics on self-verification, objective-first prompting, onboarding, and where browser automation still drags performance.\n\n**今天的主线就一条：Fable 5 把圈子点着了**；一堆老手都在说这是自 **Opus 4.5** 之后最狠的一次跃迁，语气已经不是“工具升级”，而是模型开始像搭档；跟着冒出来的判断也很直接：**软件需求只会更猛，不会变少**。另一边，落地派没跟着上头；Aaron Levie 把企业里那道脏活累活的鸿沟讲得很明白，数据、流程、变更管理一个都躲不开；实操层面也很实在，大家在交换怎么写目标、怎么做自验证、怎么做 onboarding，以及浏览器链路到底有多拖后腿。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+        "source_label": "Podcast",
+        "posted_at": "2026-05-27T16:28:59.000Z",
+        "sections": [
+          {
+            "headline": "Automation creates more expert work, not less · 自动化带来的不是少干活，而是更需要专家收尾",
+            "body": "**Every**’s latest **AI & I** episode stages a direct argument against the lazy “AI kills all knowledge work” take. Dan Shipper and Brandon argue that when models make yesterday’s expert competence cheap, teams don’t magically reach autonomy. They flood the zone with work that is close, fast, and often good enough to look finished, but still needs expert judgment to shape, verify, and adapt to the real situation.\n\nThe punchline is practical: more automation can increase demand for humans who design systems, review outputs, and push ambiguous work across the line. The episode leans on **Every**’s own experience as an AI-native company using agents constantly while still growing headcount from 4 to 30. Their claim is not that AI is small; it is that the further an agent gets from a human, the less valuable it becomes.\n\n这期 **Every** 的 **AI & I**，就是冲着那种“AI 一上来，白领工作全没了”的说法去的。Dan Shipper 和 Brandon 的核心判断很简单：模型把昨天那套专家能力压到很便宜，不代表公司就自动运转了。更常见的情况是，大家一下子能产出更多“看起来差不多”的东西，速度很快，表面也像那么回事，但最后还是得靠懂行的人来定方向、验结果、把东西修到能真正落地。\n\n重点不在口号，在工作流本身：自动化越多，越需要人来搭流程、做 review、处理那些边界不清但影响很大的事。节目里反复拿 **Every** 自己举例，他们已经算是 agent 用得很狠的团队了，结果人数还是从 4 人长到 30 人，还在继续招。不是说 AI 不强，恰恰相反；他们的结论是，agent 离人越远，价值反而越容易掉。",
+            "source_links": [
+              "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Andrej Karpathy",
+        "person_handle": "karpathy",
+        "person_identity": "AI researcher",
+        "profile_url": "https://x.com/karpathy",
+        "source_label": "X",
+        "posted_at": "2026-06-09T18:10:00.000Z",
+        "sections": [
+          {
+            "headline": "Karpathy calls **Claude Fable 5** a major step change; says software demand will explode · Karpathy 称 **Claude Fable 5** 是一次大版本级跃迁；还说软件需求会猛增",
+            "body": "This is a super exciting release - Claude Fable 5 is the same underlying model as Mythos but with added safeguards. The benchmarks are great and it's SOTA on everything by a margin but I'll add that *qualitatively* also, this is a major-version-bump-deserving step change forward (imo of the same order as Claude 4.5 was in November), peaking especially for long problem-solving sessions on very difficult problems. You can give it a lot more ambitious tasks than what you're used to, the model \"gets it\" and it will just go, and it's never felt this tempting to stop looking at the code at all (but don't do this in prod!). The model still has quirks that people will run into and the safeguards are configured to be a little too trigger happy for launch, which can hopefully be tuned over time.\n\nI feel a lot of things changing as working software increasingly comes out on a tap. The Jevon's paradox kicks in and I feel my own demand for software growing substantially. You can ask for anything - explainers, visualizers, dashboards, bespoke single-use apps (e.g. a full wandb that is hyper-specific just for your project), you can 10X your test suite, auto-optimize code, run giant research projects with custom HTML for the results, anything! \"Free your mind\" (Matrix ref). Really looking forward to all the things people build!\n\n这次发布真的非常让人兴奋。**Claude Fable 5** 和 **Mythos** 用的是同一个底层模型，只是加了更多安全护栏。基准测试很强，几乎各项都是断档级 SOTA，但我还想补一句：光看使用感受，这也是一次该配得上“大版本升级”四个字的跃迁（在我看来，量级和去年 11 月的 **Claude 4.5** 差不多），尤其是在长时间攻坚特别难的问题时最明显。你现在可以把比以前大胆得多的任务交给它，模型是真的“懂了”，然后就一路往下做；说实话，这是我第一次这么想完全不看代码了（但生产环境别这么干！）。当然它还是有些怪脾气，很多人会撞上，而且现在的安全设置对触发很敏感，后面应该还能慢慢调。\n\n我越来越强烈地感觉到，很多事情都在变，因为可运行的软件正在变成一种“拧开就有”的东西。**杰文斯悖论** 开始起作用了，我自己对软件的需求就在明显上升。你几乎什么都能开口要：解释器、可视化、dashboard、一次性的定制小应用（比如一个只服务你项目的超细分版 **wandb**）、把测试套件扩十倍、自动优化代码、跑大型研究项目再配上定制 **HTML** 结果页，什么都行！“Free your mind”（**黑客帝国** 梗）。我很期待大家接下来会做出什么。",
+            "source_links": [
+              "https://x.com/karpathy/status/2064409694761054332"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI podcaster",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-09T23:40:20.000Z",
+        "sections": [
+          {
+            "headline": "Use **Fable** for ruthless code review while it’s cheap; 用 **Fable** 做狠一点的代码审查，趁现在还便宜",
+            "body": "btw insane amounts of alpha in telling claude code to \"review my code for issues\" on Fable rn while it is not pay per use\n\nbe prepared to be in abject horror that you shipped anything to prod without a Fable Check™ first https://t.co/wPCWRO84xV\n\n顺带一提，现在让 **claude code** 在 **Fable** 上跑一句“review my code for issues”，信息含量高得离谱，尤其是在它还不是按量计费的时候。\n\n你最好先做好心理准备：在跑完一次 **Fable Check™** 之前，你可能会被自己居然把某些东西发到生产环境这件事吓到。https://t.co/wPCWRO84xV",
+            "source_links": [
+              "https://x.com/swyx/status/2064492823781789969"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/swyx/status/2064414823748886591",
+                "resolvedUrl": "https://x.com/swyx/status/2064414823748886591",
+                "authorName": "swyx",
+                "authorHandle": "swyx",
+                "authorUrl": "https://x.com/swyx",
+                "text": "just finished rerunning FC Diamond on my historical charts. none of the official tables/charts are capturing the degree of takeoff.\n\nhttps://x.com/karpathy/status/2064409694761054332\n\nits this same chart all the way down difficulty classes (below) breaks every curve fit because Fable is a diffferent",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKZGOXDaMAAtpxh.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2064414823748886591/photo/1"
+                  }
+                ],
+                "textZh": "刚刚在我的历史图表上重新跑完 FC Diamond。官方那些表格和图表，没有一个真正反映出这种起飞的程度。\n\nhttps://x.com/karpathy/status/2064409694761054332\n\n所有难度等级一路往下看都是同一张图（如下），它把所有曲线拟合都打破了，因为 Fable 完全不是一个量级的东西。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/wPCWRO84xV",
+                "resolvedUrl": "https://x.com/swyx/status/2064414823748886591"
+              }
+            ]
+          },
+          {
+            "headline": "Mythos-class model hit GA in 34 days after the deal; 签约后 34 天就把 Mythos 级模型推到 GA",
+            "body": "for those keeping track at home it was 34 days between signing this deal and launching Mythos-class model GA to the world.\n\nhttps://t.co/J1dZDZcxMu\n\nbuilding on @nvidia stack means you can just do things™.\n\n给还在记时间线的人一个数字：从签下这笔 deal 到把 **Mythos** 级模型正式推向全球 GA，中间只过了 34 天。\n\nhttps://t.co/J1dZDZcxMu\n\n建在 **@nvidia** 的技术栈上，就是能把很多事直接做出来™。",
+            "source_links": [
+              "https://x.com/swyx/status/2064421542503797186"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/leerob/status/2052059466821198061?s=20",
+                "resolvedUrl": "https://x.com/leerob/status/2052059466821198061",
+                "authorName": "Lee Robinson",
+                "authorHandle": "leerob",
+                "authorUrl": "https://x.com/leerob",
+                "text": "Anthropic is partnering with @SpaceX to run models on their compute, exciting!",
+                "displayDate": "May 6",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HHphNUHa4AARGXi.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/leerob/status/2052059466821198061/photo/1"
+                  }
+                ],
+                "textZh": "Anthropic 正在和 @SpaceX 合作，在他们的算力上运行模型，太让人兴奋了！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/J1dZDZcxMu",
+                "resolvedUrl": "https://x.com/leerob/status/2052059466821198061"
+              }
+            ]
+          },
+          {
+            "headline": "More tier charts, including the vibe-shift view; 更多分层图表，也把 vibe shift 那张放出来了",
+            "body": "more charts of other tiers where its less stark \n\nincluding the vibe shift chart from https://t.co/Ht1G2fials here https://t.co/wkvnoEmsCK\n\n再补几张别的 tier 图，没那么夸张，但也能看出差别。\n\n其中也包括从 https://t.co/Ht1G2fials 里拿来的那张 vibe shift 图：https://t.co/wkvnoEmsCK",
+            "source_links": [
+              "https://x.com/swyx/status/2064415059003248694"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKZGZKBbgAEgcX2.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2064415059003248694/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKZGZKBasAA968P.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2064415059003248694/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKZGZKTbMAAu791.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2064415059003248694/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/swyx/status/2064081945567580323",
+                "resolvedUrl": "https://x.com/swyx/status/2064081945567580323",
+                "authorName": "swyx",
+                "authorHandle": "swyx",
+                "authorUrl": "https://x.com/swyx",
+                "text": "It's finally out!!! @METR_Evals found that more than half of SWEBench results is unmergeable slop. FrontierCode represents over 1000+ hours of maintainer validated software engineering work most frontier models cannot yet solve, much less solve with high quality.\n\nCog had IOI",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKUUSN1bwAAvR4g.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2064081945567580323/photo/1"
+                  }
+                ],
+                "textZh": "终于发布了！！！@METR_Evals 发现，SWEBench 的结果里有一半以上都是根本无法合并的垃圾。FrontierCode 代表了 1000+ 小时经过维护者验证的软件工程工作，而大多数前沿模型现在还解不出来，更别说高质量地解出来。\n\nCog 有 IOI"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Ht1G2fials",
+                "resolvedUrl": "https://x.com/swyx/status/2064081945567580323"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/wkvnoEmsCK",
+                "resolvedUrl": "https://x.com/swyx/status/2064415059003248694/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKZGZKTbMAAu791.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X",
+        "posted_at": "2026-06-10T00:46:02.000Z",
+        "sections": [
+          {
+            "headline": "Software demand will go off the charts; 软件需求会直接冲顶",
+            "body": "The demand for software is going to be off the charts https://t.co/cw1ojEhxq1\n\n对软件的需求，接下来会直接冲到天上去。https://t.co/cw1ojEhxq1",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2064509357216428171"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/OfficialLoganK/status/2064423388928790943",
+                "resolvedUrl": "https://x.com/OfficialLoganK/status/2064423388928790943",
+                "authorName": "Logan Kilpatrick",
+                "authorHandle": "OfficialLoganK",
+                "authorUrl": "https://x.com/OfficialLoganK",
+                "text": "In @GoogleAIStudio we are now making more than 1,200,000 apps a week (and growing) with more than 18,000,000 created since late February 🤯\n\nThe progress continues!!!",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [],
+                "textZh": "在 @GoogleAIStudio，我们现在每周产出的应用已经超过 1,200,000 个，而且还在增长，自 2 月底以来累计已创建超过 18,000,000 个 🤯\n\n进展还在继续！！！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/cw1ojEhxq1",
+                "resolvedUrl": "https://x.com/officiallogank/status/2064423388928790943"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-09T22:06:34.000Z",
+        "sections": [
+          {
+            "headline": "Quick handoff from **Claude Code** team; **Claude Code** 团队的简短放送",
+            "body": "Enjoy! https://t.co/X38ItA7vpj\n\n请享用！https://t.co/X38ItA7vpj",
+            "source_links": [
+              "https://x.com/bcherny/status/2064469227499929651"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ClaudeDevs/status/2064464557951852643",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2064464557951852643",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "We've reset 5-hour and weekly rate limits for all users. Enjoy Fable 5!",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们已经为所有用户重置了 5 小时和每周的速率限制。尽情享受 Fable 5 吧！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/X38ItA7vpj",
+                "resolvedUrl": "https://x.com/claudedevs/status/2064464557951852643"
+              }
+            ]
+          },
+          {
+            "headline": "**Fable 5** feels like a jump from coding agent to thought partner; **Fable 5** 像是从写码代理跨到了思考搭档",
+            "body": "Fable 5 is the biggest step up I’ve felt in our models since Opus 4.5 back in November. After 4.5 came out I uninstalled my IDE when I realized that I’d been doing 100% of my coding in a terminal for a few weeks. With Fable, it’s felt like Claude has stepped up from being a coding agent to a thought and design partner in building the product. Fable has judgement, taste, and dimensionality in a way that previous models didn’t, leading me to trust it more with the most complex work.\n\nI think the first time I had this realization was when I asked Fable to debug something. It is the first model I have used that was so methodical and precise, taking measurements and adding logs then verifying that it truly fixed the issue before declaring victory.\n\nThere’s nothing in claude code’s prompting telling the model to do that, it’s just part of its personality. It really has this “big model smell” that I haven’t felt before.\n\n**Fable 5** 是我自去年 11 月 **Opus 4.5** 以来，在自家模型上感受到的最大一次升级。4.5 出来之后，我发现自己连续几周 100% 都在终端里写代码，干脆把 IDE 卸了。到了 **Fable**，感觉 **Claude** 已经不只是个 coding agent，而是做产品时能一起思考、一起做设计的搭档。它身上有以前模型没有的判断力、品味和层次感，所以我会更放心把最复杂的工作交给它。\n\n我第一次真正意识到这点，是让 **Fable** 去 debug 一个问题的时候。它是我用过第一个这么有条理、这么精确的模型：会先量测、加日志，再确认问题是不是真的修掉了，然后才宣布结束。\n\n**claude code** 的 prompt 里根本没有专门要求模型这样做，这更像是它自己的“性格”。它真的有一种我以前没闻到过的 “big model smell”。",
+            "source_links": [
+              "https://x.com/bcherny/status/2064431111154053187"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Self-verification loops matter more as models run longer; 模型跑得越久，自验证回路越关键",
+            "body": "We talk a lot about how important it is to set up self-verification loops. Especially in the age of powerful models that can run for long periods of time, self-verification is a key ingredient that enables the model to run for much longer, delivering a result that is closer to what you intended, so you can do more without having to constantly check in on Claude as it works.\n\n@delba_oliveira gives a great breakdown of what that looks like and why it matters\n\n我们一直在讲，建立自验证回路到底有多重要。尤其是在强模型已经能连续跑很长时间的阶段，自验证是个关键配料：它能让模型跑得更久，最后给出的结果也更接近你本来想要的东西，这样你就不用一边让 **Claude** 工作、一边频繁盯着它看。\n\n@delba_oliveira 对这件事是什么样、为什么重要，做了个很清楚的拆解。",
+            "source_links": [
+              "https://x.com/bcherny/status/2064426115255730578"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "Codex & ChatGPT",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-10T04:56:03.000Z",
+        "sections": [
+          {
+            "headline": "Royalty-joke post about **Codex** output; 拿 **Codex** 产出开了个版税玩笑",
+            "body": "I would like to claim my 1% of royalty fees. https://t.co/TkizkUmfZ8\n\n我想认领我那 1% 的版税。https://t.co/TkizkUmfZ8",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2064572276180484475"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/thsottiaux/status/2043177597434306699",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2043177597434306699",
+                "authorName": "Tibo",
+                "authorHandle": "thsottiaux",
+                "authorUrl": "https://x.com/thsottiaux",
+                "text": "Imagine the alternate reality where we named GPT-5.4-Pro something like Fable.",
+                "displayDate": "Apr 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "想象一下那个平行世界：我们把 GPT-5.4-Pro 命名成类似 Fable 这样的名字。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/TkizkUmfZ8",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2043177597434306699"
+              }
+            ]
+          },
+          {
+            "headline": "Polling how people use `/goal` in **Codex**; 在问大家 `/goal` 到底是偶尔用还是主力用法",
+            "body": "Do you use codex /goal occasionally or as your main way to get things done?\n\n你用 **codex /goal**，是偶尔来一下，还是已经把它当成主要干活方式了？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2064308436133716008"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "One `/goal` at a time, orchestra-style; 一次一个 `/goal`，把 **Codex** 指挥成乐团",
+            "body": "Playing codex like an orchestra. One /goal at a time. https://t.co/vlpypZu20A\n\n把 **codex** 当乐团来指挥。一次一个 /goal。https://t.co/vlpypZu20A",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2064307859903447396"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/charliermarsh/status/2064127484665487377",
+                "resolvedUrl": "https://x.com/charliermarsh/status/2064127484665487377",
+                "authorName": "Charlie Marsh",
+                "authorHandle": "charliermarsh",
+                "authorUrl": "https://x.com/charliermarsh",
+                "text": "Since my last post, I reduced ty’s retained memory by another 15% with Codex. We're now at a ~25% memory reduction overall via /goal, largely in the background.\n\nI love working with the GPT models so much.",
+                "displayDate": "Jun 8",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKVA6j2bkAA-f9r.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/charliermarsh/status/2064127484665487377/photo/1"
+                  }
+                ],
+                "textZh": "自从我上一篇帖子之后，我又用 Codex 把 ty 的常驻内存降低了 15%。现在通过 /goal，我们的总体内存占用大约已经下降了 25%，而且大部分工作都是在后台完成的。\n\n我真的太喜欢和 GPT 模型一起工作了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/vlpypZu20A",
+                "resolvedUrl": "https://x.com/charliermarsh/status/2064127484665487377"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-10T05:15:19.000Z",
+        "sections": [
+          {
+            "headline": "Browser use is slowing **Fable** down; 浏览器链路把 **Fable** 拖慢了",
+            "body": "The browser use is really slowing Fable down for me https://t.co/xa1ijT3KMG\n\n对我来说，browser use 这块真的把 **Fable** 拖慢了。https://t.co/xa1ijT3KMG",
+            "source_links": [
+              "https://x.com/petergyang/status/2064577126385459265"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKbZ8N2bAAA7s3t.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2064577126385459265/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/xa1ijT3KMG",
+                "resolvedUrl": "https://x.com/petergyang/status/2064577126385459265/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKbZ8N2bAAA7s3t.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Still asking what “big model smell” even means; 大家都在说 “big model smell”，他直接问这到底啥意思",
+            "body": "wtf does \"big model smell\" mean\n\n到底什么叫 “big model smell” 啊。",
+            "source_links": [
+              "https://x.com/petergyang/status/2064563041166090672"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Shared the exact prompt for a neon cyberpunk **F-Zero** build; 公开了做霓虹赛博朋克版 **F-Zero** 的完整 prompt",
+            "body": "Btw this is the prompt I used:\n\nBuild F-Zero: futuristic anti-gravity racer with pseudo-3D track (raycasting or mode-7 style scaling), 3 AI opponents, boost meter that drains health, speed 400-800 km/h with visible sense of speed via track warping and scrolling ground pattern, arrow keys to steer, shift to boost, 3 laps on a looping track with checkpoints. \n\nStyle it neon cyberpunk (dark sky, glowing track edges, chromatic aberration on boost), show HUD with position/lap/speed/health, and make the ship bank into turns. Prioritize feel over realism - the speed sensation is the whole game.\n\n顺带一提，这就是我用的 prompt：\n\n做一个 **F-Zero**：未来感反重力赛车，带伪 3D 赛道（raycasting 或 mode-7 风格缩放），3 个 AI 对手，boost 条会消耗生命值，速度 400-800 km/h，并通过赛道扭曲和滚动地面纹理做出明显的速度感，方向键转向，shift 加速，3 圈循环赛道并带 checkpoint。\n\n风格做成霓虹赛博朋克（暗色天空、发光赛道边缘、boost 时有色差效果），显示 HUD：名次 / 圈数 / 速度 / 生命值，并让飞船转弯时有倾斜动作。优先保证手感，不要太追求真实感，整个游戏的核心就是速度感。",
+            "source_links": [
+              "https://x.com/petergyang/status/2064550073594446059"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-06-10T01:33:06.000Z",
+        "sections": [
+          {
+            "headline": "Checking in from Code w/ **Claude** Tokyo; 在东京的 Code w/ **Claude** 现场打卡",
+            "body": "at Code w/ Claude Tokyo! say hi if you see me around https://t.co/BXfvEJVvrf\n\n在东京的 Code w/ **Claude**！如果你看到我，来打个招呼。https://t.co/BXfvEJVvrf",
+            "source_links": [
+              "https://x.com/trq212/status/2064521202622960058"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKanFxLawAA7Ojs.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2064521202622960058/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/BXfvEJVvrf",
+                "resolvedUrl": "https://x.com/trq212/status/2064521202622960058/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKanFxLawAA7Ojs.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Fable** should push people to take bigger swings; **Fable** 出来后，做事该更敢一点",
+            "body": "Fable is a step-change in models, and I hope it changes how you work with Claude. \n\nMore to come in a series of posts on how it’s reshaped our work, but the TLDR: it’s time to be more ambitious. https://t.co/bWoxbTBShh\n\n**Fable** 是模型能力上的一次台阶式变化，我也希望它会改掉你和 **Claude** 一起工作的方式。\n\n后面我会连续发几篇，讲它怎么重塑了我们的工作流；但先说结论：现在该把目标定得更大一点了。https://t.co/bWoxbTBShh",
+            "source_links": [
+              "https://x.com/trq212/status/2064437561930682672"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudedevs/status/2064399512664526853",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2064399512664526853",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Claude Fable 5 changed how we work on the Claude Code team day to day.\n\nWe used to verify that Claude did the work right. Now we verify that it's doing the right work.\n\nHere’s the 3 biggest changes:",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/KhYNlNWcC4",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2064397545754025984/img/iC8vcvOrxKiA2ieG.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ClaudeDevs/status/2064399512664526853/video/1"
+                  }
+                ],
+                "textZh": "Claude Fable 5 改变了我们 Claude Code 团队的日常工作方式。\n\n以前我们是在验证 Claude 有没有把工作做对。现在我们是在验证它是不是在做对的工作。\n\n这里是 3 个最大的变化："
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/bWoxbTBShh",
+                "resolvedUrl": "https://x.com/claudedevs/status/2064399512664526853"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-09T18:18:20.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Mythos** lands on **Replit** with a 25% discount; **Claude Mythos** 上线 **Replit**，还给了 25% 折扣",
+            "body": "Try Claude Mythos at 25% off on Replit. https://t.co/Lq68eRydYI\n\n来 **Replit** 试试 **Claude Mythos**，现在打 75 折。https://t.co/Lq68eRydYI",
+            "source_links": [
+              "https://x.com/amasad/status/2064411791015432466"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/pirroh/status/2064408022651191613",
+                "resolvedUrl": "https://x.com/pirroh/status/2064408022651191613",
+                "authorName": "Michele Catasta",
+                "authorHandle": "pirroh",
+                "authorUrl": "https://x.com/pirroh",
+                "text": "High Effort handles your most complex builds with ease on Replit.\n\nNow powered by Claude Fable 5.\n\n25% off for the next 7 days.",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKZAJ2_X0AAaIAN.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/pirroh/status/2064408022651191613/photo/1"
+                  }
+                ],
+                "textZh": "High Effort 现在可以在 Replit 上轻松处理你最复杂的构建任务。\n\n现在由 Claude Fable 5 驱动。\n\n接下来 7 天享受 25% 折扣。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Lq68eRydYI",
+                "resolvedUrl": "https://x.com/pirroh/status/2064408022651191613"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-10T03:35:21.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel CLI** adds AI Gateway keys, spend caps, and quota refresh; **Vercel CLI** 新增 AI Gateway 密钥、预算上限和额度刷新周期",
+            "body": "Vercel CLI now allows you to:\n◾ create AI Gateway API keys\n◾ pass a --𝚋𝚞𝚍𝚐𝚎𝚝 to cap their spend\n◾ set a --𝚛𝚎𝚏𝚛𝚎𝚜𝚑-𝚙𝚎𝚛𝚒𝚘𝚍 for the quota\n\nThink of it as virtual credit cards for AI tokens 🤖💳 https://t.co/ZOuhwIp7h5 https://t.co/mvIsJkaBfR\n\n**Vercel CLI** 现在可以：\n◾ 创建 **AI Gateway** API keys\n◾ 通过 `--𝚋𝚞𝚍𝚐𝚎𝚝` 给花费设上限\n◾ 用 `--𝚛𝚎𝚏𝚛𝚎𝚜𝚑-𝚙𝚎𝚛𝚒𝚘𝚍` 设置额度刷新周期\n\n可以把它理解成给 AI token 用的虚拟信用卡 🤖💳 https://t.co/ZOuhwIp7h5 https://t.co/mvIsJkaBfR",
+            "source_links": [
+              "https://x.com/rauchg/status/2064551967461114111"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKbBk03aYAA39Hg.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2064551967461114111/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2064509018719273300",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2064509018719273300",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "AI Gateway API keys now support budgets. Set one programmatically or configure on the API keys page:\n\n𝚟𝚎𝚛𝚌𝚎𝚕 𝚊𝚒-𝚐𝚊𝚝𝚎𝚠𝚊𝚢 𝚊𝚙𝚒-𝚔𝚎𝚢𝚜 𝚌𝚛𝚎𝚊𝚝𝚎 \\\n --𝚗𝚊𝚖𝚎 𝚖𝚢-𝚔𝚎𝚢 \\\n --𝚋𝚞𝚍𝚐𝚎𝚝 𝟷𝟶𝟶𝟶\n\nhttps://vercel.com/changelog/budgets-for-api-keys-on-ai-gateway",
+                "displayDate": "Jun 10",
+                "provider": "X",
+                "media": [],
+                "textZh": "AI Gateway API keys 现在支持预算了。你可以通过编程方式设置，也可以在 API keys 页面配置：\n\n𝚟𝚎𝚛𝚌𝚎𝚕 𝚊𝚒-𝚐𝚊𝚝𝚎𝚠𝚊𝚢 𝚊𝚙𝚒-𝚔𝚎𝚢𝚜 𝚌𝚛𝚎𝚊𝚝𝚎 \\\n --𝚗𝚊𝚖𝚎 𝚖𝚢-𝚔𝚎𝚢 \\\n --𝚋𝚞𝚍𝚐𝚎𝚝 𝟷𝟶𝟶𝟶\n\nhttps://vercel.com/changelog/budgets-for-api-keys-on-ai-gateway"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ZOuhwIp7h5",
+                "resolvedUrl": "https://x.com/rauchg/status/2064551967461114111/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKbBk03aYAA39Hg.png"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/mvIsJkaBfR",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2064509018719273300"
+              }
+            ]
+          },
+          {
+            "headline": "One model wrote the VM, another verified it; 一个模型写 VM，另一个模型来验",
+            "body": "Opus wrote us a VM and then Mythos verified it https://t.co/oOJlo6aSLI\n\n**Opus** 给我们写了个 VM，然后 **Mythos** 把它验了一遍。https://t.co/oOJlo6aSLI",
+            "source_links": [
+              "https://x.com/rauchg/status/2064419055726215438"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/cramforce/status/2064416629627265026",
+                "resolvedUrl": "https://x.com/cramforce/status/2064416629627265026",
+                "authorName": "Malte Ubl",
+                "authorHandle": "cramforce",
+                "authorUrl": "https://x.com/cramforce",
+                "text": "Huge thanks to the @AnthropicAI team for investigating `just-bash` with Mythos as part of Project Glasswing\n\nThere are no serious findings. I'll issue a release with minor hardening improvements after my vacation.\n\nThis is an interesting case for 2 reasons:\n\n1. `just-bash` is a",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [],
+                "textZh": "非常感谢 @AnthropicAI 团队，作为 Project Glasswing 的一部分，用 Mythos 对 `just-bash` 进行了调查。\n\n没有发现严重问题。等我休假回来后，我会发布一个版本，加入一些小幅的加固改进。\n\n这个案例有两个有意思的原因：\n\n1. `just-bash` 是一个"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/oOJlo6aSLI",
+                "resolvedUrl": "https://x.com/cramforce/status/2064416629627265026"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Alex Albert",
+        "person_handle": "alexalbert__",
+        "person_identity": "Anthropic Research",
+        "profile_url": "https://x.com/alexalbert__",
+        "source_label": "X",
+        "posted_at": "2026-06-09T22:00:20.000Z",
+        "sections": [
+          {
+            "headline": "Anthropic resets limits and shares four ways to use **Fable** better; **Anthropic** 重置使用额度，并给出四条 **Fable** 实战建议",
+            "body": "We've reset usage limits across our products! \n\nFor those just starting to test Fable, here's four tips for using it more effectively:\n1. Give it bigger, more ambitious tasks than what previous models could handle.\n2. Use xhigh/high effort as your default for best performance, med for faster interactive sessions.\n3. Rework your skills and CLAUDE.mds. Instructions written for prior models anchor Fable to stale patterns, let it use its own judgment first.\n4. Move from providing tasks to providing objectives. Describe what done looks like and how to verify it, then let Fable find the path (/loop and /goal are built for this)\n\n我们已经把各个产品的使用限制重置了！\n\n刚开始测试 **Fable** 的人，可以先记这四条，更容易用出效果：\n1. 交给它更大、更有野心的任务，别还按旧模型的尺度来。\n2. 默认用 xhigh/high effort 追性能；想要更快的交互节奏，再用 med。\n3. 把你的 skills 和 `CLAUDE.mds` 重写一遍。给旧模型写的指令会把 **Fable** 锚在过时套路里，先让它自己判断。\n4. 少给 task，多给 objective。把“做完是什么样、怎么验证”说清楚，然后让 **Fable** 自己找路径（`/loop` 和 `/goal` 就是干这个的）。",
+            "source_links": [
+              "https://x.com/alexalbert__/status/2064467657483829441"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Fable** joins Anthropic’s short list of true step-change launches; **Fable** 被列进 **Anthropic** 少数几次真正的跃迁发布",
+            "body": "I've been at Anthropic through every model launch. There's been a few cases I can remember of a launch that stands out and marks a step-change in how we use models:\n- Claude Opus 3\n- Claude Sonnet 3.5\n- Claude Opus 4.5\n\nAnd now Claude Fable 5.\n\nWith Fable, the model stopped feeling like a tool I direct and started feeling more like something I collaborate with.\n\n我在 **Anthropic** 经历了每一次模型发布。真要说能明显改掉我们使用模型方式、称得上台阶式变化的，其实没几次：\n- **Claude Opus 3**\n- **Claude Sonnet 3.5**\n- **Claude Opus 4.5**\n\n现在要把 **Claude Fable 5** 也加进去了。\n\n到了 **Fable**，模型不再只是我指哪打哪的工具，更像是我会一起协作的对象。",
+            "source_links": [
+              "https://x.com/alexalbert__/status/2064394410004304003"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-10T04:45:04.000Z",
+        "sections": [
+          {
+            "headline": "Levie says applied AI wins on messy enterprise translation; Levie 直说了：应用层 AI 拼的是企业现场那堆脏活",
+            "body": "This is a critical post to read if you’re building an applied AI company right now.\n\n“An application earns its place in the untrainable corner by doing unglamorous work: arranging a company's private reality so a model can act on it, handing the model the tools to act, working with the customer to change the reality of its workforce. A company that brings the translation is tough to copy – and the translation never ends. Integration and maintenance run as long as the relationship does, won by teams that put domain-specialized engineers and tools next to the customer.”\n\nThere’s still an insanely large gulf between model capabilities and what it takes to apply them to specific corporate workflows. Some of that is technology that needs to be built, a lot is access to (and formatting of) the right data to work with, and a ton more is on the change management and specific implementation work (FDEs, etc.) it takes to make AI work in any specific corporate setting. \n\n2 things can be very true at once: frontier models and labs will continue to grow an incredible amount, and there will be a vast ecosystem of software and services companies that emerge to bring the power of these models to real enterprises. This makes room for new infrastructure provides, applied AI companies in every vertical, new versions of system integrators, and more players.\n\nIncredibly exciting time on all fronts.\n\n如果你现在在做应用层 AI 公司，这篇东西非常值得看。\n\n“一个应用之所以能站进模型学不会的那一角，靠的不是炫技，而是那些不体面的活：把一家公司的私有现实整理成模型能动手的样子，把模型需要的工具接上，再和客户一起改变员工真正的工作方式。能做这种翻译的公司很难复制，而且翻译这件事永远不会结束。集成和维护会跟着客户关系一直存在，最后赢的是那些把垂直领域工程师和工具直接放到客户身边的团队。”\n\n模型能力和它在具体企业流程里真正能跑起来之间，仍然隔着一条很大的沟。这里面有一部分是还得继续补的技术，有很大一部分是拿到对的数据、把数据整理成能用的格式，另外还有更多是变更管理和具体实施工作（比如 FDE 这类角色）才能让 AI 在某个真实企业环境里发挥作用。\n\n有两件事完全可以同时成立：前沿模型和实验室还会继续猛进；同时，也会长出一个非常大的软件与服务生态，把这些模型的能力真正送进企业。这里面容得下新型基础设施提供商、各垂直领域的应用层 AI 公司、新一代系统集成商，以及更多别的玩家。\n\n现在这个阶段，前后端都很热闹。",
+            "source_links": [
+              "https://x.com/levie/status/2064569513023328268"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Immediate answer to “is AI progress slowing?”: no; “AI 进展是不是慢下来了”的即时回答：没有",
+            "body": "If you thought AI progress was slowing down, well here's the immediate answer to that. Huge jump in capability across the board. This is going to deliver major improvement in agents across almost all knowledge work categories. https://t.co/3CKQuX5HsG https://t.co/yPR4SfMrxM\n\n如果你觉得 AI 进展在放缓，那这就是眼前最直接的回答。几乎所有维度都出现了很大的能力跃升。这会让 agent 在几乎所有知识工作类别里都得到明显改进。https://t.co/3CKQuX5HsG https://t.co/yPR4SfMrxM",
+            "source_links": [
+              "https://x.com/levie/status/2064396746953023647"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKY032Fa0AA7-gl.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2064396746953023647/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2064394146916229443",
+                "resolvedUrl": "https://x.com/claudeai/status/2064394146916229443",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "Introducing Claude Fable 5: a Mythos-class model that we’ve made safe for general use.\n\nIts capabilities exceed those of any model we’ve ever made generally available.",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/2AvmEjHIX8",
+                    "url": "https://pbs.twimg.com/media/HKY5eixXIAE9EAZ.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2064394146916229443/video/1"
+                  }
+                ],
+                "textZh": "推出 Claude Fable 5：这是一个 Mythos 级模型，我们已经把它做到了足够安全，可以面向公众普遍使用。\n\n它的能力超过了我们以往所有曾经广泛开放过的模型。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/3CKQuX5HsG",
+                "resolvedUrl": "https://x.com/levie/status/2064396746953023647/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKY032Fa0AA7-gl.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/yPR4SfMrxM",
+                "resolvedUrl": "https://x.com/claudeai/status/2064394146916229443"
+              }
+            ]
+          },
+          {
+            "headline": "Compute-normalized benchmarks are the right direction, even if messy; 按推理算力归一化做 benchmark 才靠谱，只是这事真不简单",
+            "body": "Great post. So much about model performance is a function of how much compute you’re doing at inference time. This means compute-normalized benchmarks is the only logical path forward. \n\nAnd yet, the challenge is it’s a lot harder than it seems given it’s subjective how much compute to apply, which means models behave differently at different thresholds (simplistically, model X’s min thinking may beat model Y’s min thinking, but be reversed at high), and there are a near infinite set of thresholds you could choose to set. \n\nBut either way, moving more in this direction would be great for better understanding AI progress.\n\n好文。模型表现很大程度上取决于你在推理时到底砸了多少算力。所以从逻辑上说，按算力归一化的 benchmark 才是正确方向。\n\n但麻烦也确实比看起来大，因为该给多少算力本身就带主观性，这意味着模型在不同阈值下的表现会变形（简单说，模型 X 在最低思考量时可能赢模型 Y，但到了高思考量又可能反过来），而你能设的阈值几乎是无限的。\n\n不过不管怎样，往这个方向多走一步，都会更有助于理解 AI 的真实进展。",
+            "source_links": [
+              "https://x.com/levie/status/2064379199629181139"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-10T05:02:20.000Z",
+        "sections": [
+          {
+            "headline": "Garry says **Fable 5** has the biggest model energy he’s seen; Garry 说 **Fable 5** 的模型气场是他见过最猛的",
+            "body": "Fable 5 is the biggest model energy I've ever seen\n\n**Fable 5** 是我见过“模型能量”最强的一次。",
+            "source_links": [
+              "https://x.com/garrytan/status/2064573857911152710"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Even while fixing **GStack**, **Fable 5** is throwing friction; 修 **GStack** 的时候，**Fable 5** 也在给他上强度",
+            "body": "Just trying to work on fixing GStack and running into this with Fable 5 *long sigh* https://t.co/5t6oabHOnR\n\n我只是想修一下 **GStack**，结果又在 **Fable 5** 这里撞上这个，*长叹一口气* https://t.co/5t6oabHOnR",
+            "source_links": [
+              "https://x.com/garrytan/status/2064559225859416186"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKbJnB1bYAAtR9H.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2064559225859416186/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/5t6oabHOnR",
+                "resolvedUrl": "https://x.com/garrytan/status/2064559225859416186/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKbJnB1bYAAtR9H.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Local politics, not AI: Garry posts a hard-edged SF rant; 这条不是 AI，是 Garry 火力全开的旧金山政治帖",
+            "body": "I eat Aaron Peskin's hate for breakfast. Guys, we're winning. It feels good. \n\nAaron Peskin is no public servant. He was all along just a grifter trying to protect his views at the expense of the people.\n\nWe are the real people powered movement of San Francisco. https://t.co/nTuUasuCvU\n\nAaron Peskin 那点恶意，我拿来当早饭吃。各位，我们在赢，感觉很好。\n\nAaron Peskin 根本不是什么公仆。他从头到尾就是个只顾自己立场、拿公众利益垫背的投机者。\n\n我们才是旧金山真正由民众推动的运动。https://t.co/nTuUasuCvU",
+            "source_links": [
+              "https://x.com/garrytan/status/2064519190061666393"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKalI-CbcAApjHj.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2064519190061666393/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nTuUasuCvU",
+                "resolvedUrl": "https://x.com/garrytan/status/2064519190061666393/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKalI-CbcAApjHj.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-10T05:56:08.000Z",
+        "sections": [
+          {
+            "headline": "The real barrier to coding agents is knowing what to ask; coding agent 真正的门槛，不是界面，是你根本不知道该问什么",
+            "body": "The barrier for non-technical people using coding agents was never the interface. Chatting is the easiest UI ever invented\n\nThe barrier is that they don't know what to ask for.\n\nThe blank chat box assumes you already know what's possible. Most people don't.\n\nWhen I tried Town, I was impressed by its onboarding process where the agent proactively suggested workflows & things it can take off my plate, rather than waiting for me to give instructions\n\n非技术用户用不上 coding agent，问题从来不在界面。聊天已经是人类发明过最简单的 UI 了。\n\n真正的门槛是，他们不知道该要什么。\n\n一个空白对话框默认你已经知道这东西能干嘛，但大多数人根本不知道。\n\n我试 **Town** 的时候，最让我服气的是它的 onboarding：agent 会主动建议工作流、告诉你它能替你接走哪些活，而不是干等你下指令。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2064587398529606082"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Zara tees up a talk on vibe coding, design, and storytelling; Zara 要开一场聊 vibe coding、设计和叙事的分享",
+            "body": "I will be doing a virtual talk this Friday on my vibe coding process. \n\nAs a non-technical person who has somehow managed to get 30k stars on GitHub, I will be sharing the behind-the-scenes of how I get product ideas, how I work with coding agents, how to design stuff that's not AI slop, and why I think code is a medium for storytelling. \n\nRSVP here https://t.co/4wxpJjrAAB (Use the code PREMIUMPASS under \"Add a coupon\" to access the event for free)\n\n(Thanks to @sariazout and the @wwwsublimeapp  community for hosting)\n\n这周五我会做一场线上分享，聊我的 vibe coding 流程。\n\n我是个非技术出身的人，却阴差阳错在 **GitHub** 上拿了 3 万星。这次我会讲一些幕后细节：我的产品想法怎么来、我怎么和 coding agents 协作、怎么做出不那么像 AI slop 的设计，以及为什么我一直觉得代码本身也是一种讲故事的媒介。\n\n报名在这：https://t.co/4wxpJjrAAB（在 “Add a coupon” 里填 `PREMIUMPASS` 可以免费参加）\n\n（感谢 @sariazout 和 @wwwsublimeapp 社区组织这场活动）",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2064486120386379950"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKaHFdAbkAA3q5u.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2064486120386379950/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/4wxpJjrAAB",
+                "resolvedUrl": "https://luma.com/n77w0jwq"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/4wxpJjrAAB%EF%BC%88%E5%9C%A8",
+                "resolvedUrl": "https://t.co/4wxpJjrAAB%EF%BC%88%E5%9C%A8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-10T00:42:28.000Z",
+        "sections": [
+          {
+            "headline": "Shared the research-mode prompt behind the S-curves site; 公开了那个 S-curves 网站背后的 research 模式 prompt",
+            "body": "For the prompt, in Claude app with research mode on - I dumped the transcript for the episode, have it research all the scurves in history, figure out all the sections and give me a Claude code prompt that I could one shot.\n\nHere’s the website: https://t.co/zPGOiwmiXG\n\n说下 prompt：我是在 **Claude** app 里开了 research mode，把那期节目的 transcript 全扔进去，让它研究历史上所有的 S-curves，拆出整站需要的 sections，再给我一个能直接 one shot 的 **Claude code** prompt。\n\n网站在这：https://t.co/zPGOiwmiXG",
+            "source_links": [
+              "https://x.com/nikunj/status/2064508462034501997"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/zPGOiwmiXG",
+                "resolvedUrl": "http://escurves.com/"
+              }
+            ]
+          },
+          {
+            "headline": "Used **Fable** to one-shot a live site about 200 years of S-curves; 用 **Fable** 一把做出一个讲 200 年 S 曲线的网站",
+            "body": "I was listening to the latest episode of @InvestLikeBest and it talked a lot about S-curves..\n\nSo I had Fable one shot a website that talked about all the S-curves, their inflection point &amp; commentary on each being a bubble in the last 200 years.\n\nLive now on escurves dot com 🌊 https://t.co/jYMCkJde9x\n\n我在听 @InvestLikeBest 最新一期节目，里面一直在聊 S-curves。\n\n于是我让 **Fable** 一把做了个网站，讲过去 200 年里各种 S-curves、它们的拐点，以及每一轮作为泡沫时的点评。\n\n现在已经上线到 escurves dot com 了 🌊 https://t.co/jYMCkJde9x",
+            "source_links": [
+              "https://x.com/nikunj/status/2064506504888373758"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/jYMCkJde9x",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2064504415453880320/img/CmyLyd9hq24oh7s0.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2064506504888373758/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/jYMCkJde9x",
+                "resolvedUrl": "https://x.com/nikunj/status/2064506504888373758/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2064504415453880320/img/CmyLyd9hq24oh7s0.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-09T17:26:25.000Z",
+        "sections": [
+          {
+            "headline": "Dan points people to the **Every** YouTube watch link; Dan 把 **Every** 的 YouTube 观看链接贴出来了",
+            "body": "@every watch on YouTube: https://t.co/SOW9nt2wC7\n\n@every 的 YouTube 观看链接在这：https://t.co/SOW9nt2wC7",
+            "source_links": [
+              "https://x.com/danshipper/status/2064398724495737180"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SOW9nt2wC7",
+                "resolvedUrl": "https://www.youtube.com/watch?v=GrdEid8H6H4"
+              }
+            ]
+          },
+          {
+            "headline": "Vibe check says **Claude Fable 5** is out; vibe check 版官宣：**Claude Fable 5** 已上线",
+            "body": "VIBE CHECK: Claude Fable 5 IS OUT! https://t.co/dGVuRlK7H8\n\nVIBE CHECK：**Claude Fable 5** 上线了！https://t.co/dGVuRlK7H8",
+            "source_links": [
+              "https://x.com/danshipper/status/2064395458777108707"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/dGVuRlK7H8",
+                "resolvedUrl": "https://x.com/i/broadcasts/1pKdRRPydyoJW"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "After a week of testing, Dan says **Fable / Mythos** is out; 测了一周后，Dan 放出 **Fable / Mythos** 体验结论",
+            "body": "FABLE (MYTHOS) is OUT!\n\nwe've been testing for a week @every. here's our vibe check: https://t.co/ZdceXz3apU https://t.co/jZ2690Th1G\n\n**FABLE（MYTHOS）** 上线了！\n\n我们在 **@every** 已经测了一周。这是我们的 vibe check：https://t.co/ZdceXz3apU https://t.co/jZ2690Th1G",
+            "source_links": [
+              "https://x.com/danshipper/status/2064395167658860859"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/ZdceXz3apU",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2064394638098636800/img/fC0Ymvu_-I9eUWG4.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2064395167658860859/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/felixrieseberg/status/2064392202504310900",
+                "resolvedUrl": "https://x.com/felixrieseberg/status/2064392202504310900",
+                "authorName": "Felix Rieseberg",
+                "authorHandle": "felixrieseberg",
+                "authorUrl": "https://x.com/felixrieseberg",
+                "text": "Today, we're introducing Claude Fable 5 and Mythos 5, two configurations of our next major language model.\n\nI'd normally highlight the numbers: It's SOTA on nearly all benchmarks. I want to talk about something else, because with Fable 5 out in the world, I think a third era",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [],
+                "textZh": "今天，我们推出 Claude Fable 5 和 Mythos 5，这是我们下一代大型语言模型的两种配置。\n\n通常我会重点讲数据：它在几乎所有基准测试上都是 SOTA。但这次我想谈点别的，因为随着 Fable 5 进入现实世界，我觉得第三个时代"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ZdceXz3apU",
+                "resolvedUrl": "https://x.com/danshipper/status/2064395167658860859/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2064394638098636800/img/fC0Ymvu_-I9eUWG4.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/jZ2690Th1G",
+                "resolvedUrl": "https://x.com/felixrieseberg/status/2064392202504310900"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "Investor",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-09T16:58:19.000Z",
+        "sections": [
+          {
+            "headline": "A startup moment that reminds investors why they fund big swings; 这种时刻会提醒投资人，为什么要投那些想做大事的创业公司",
+            "body": "As an investor, these are the moments that remind you why you fund startups to do important things. https://t.co/AK1rHnp2nG\n\n作为投资人，这种时刻会提醒你，为什么当初要投创业公司去做重要的事。https://t.co/AK1rHnp2nG",
+            "source_links": [
+              "https://x.com/adityaag/status/2064391655453802773"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/Reddy_XX/status/2064358966277312948",
+                "resolvedUrl": "https://x.com/Reddy_XX/status/2064358966277312948",
+                "authorName": "Rajshekar Reddy",
+                "authorHandle": "Reddy_XX",
+                "authorUrl": "https://x.com/Reddy_XX",
+                "text": "Ivan had a spinal cord injury three years ago that left him quadriplegic.\n\nLast week, he ordered dinner from his favorite restaurant by himself.\n\nThis level of control used to need brain surgery. Not anymore.\n\nIntroducing Click by @axionlabsinc.",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/URKTgXgd70",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2064358615776149504/img/coEz9-9UHfkhL7fO.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Reddy_XX/status/2064358966277312948/video/1"
+                  }
+                ],
+                "textZh": "Ivan 在三年前遭遇了脊髓损伤，导致四肢瘫痪。\n\n上周，他第一次独自从自己最喜欢的餐厅点了晚餐。\n\n以前，这种级别的控制能力需要做脑部手术。现在不需要了。\n\n介绍一下 @axionlabsinc 推出的 Click。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/AK1rHnp2nG",
+                "resolvedUrl": "https://x.com/reddy_xx/status/2064358966277312948"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-06-09T17:08:17.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Fable 5** launches broadly; **Mythos 5** stays limited for now · **Claude Fable 5** 全面上线；**Mythos 5** 暂时仍受限",
+            "body": "Claude Fable 5 is available everywhere today. Claude Mythos 5 is restricted to Glasswing partners until we expand our trusted access program.\n\nhttps://t.co/iQymY0jiGq\n\n今天起，**Claude Fable 5** 已全面可用。**Claude Mythos 5** 目前只开放给 **Glasswing** 合作伙伴，之后 trusted access program 扩大了再放更多人进来。\n\nhttps://t.co/iQymY0jiGq",
+            "source_links": [
+              "https://x.com/claudeai/status/2064394160522559632"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/iQymY0jiGq",
+                "resolvedUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+              }
+            ]
+          },
+          {
+            "headline": "Trusted access for **Mythos 5** will expand later; **Mythos 5** 之后会通过更大的 trusted access 计划放开",
+            "body": "Soon, we intend to expand access to Mythos 5 through a broader trusted access program, both for defensive cybersecurity work and biomedical research.\n\n很快，我们会通过更大的 trusted access program 扩大 **Mythos 5** 的访问范围，覆盖防御性网络安全工作和生物医学研究。",
+            "source_links": [
+              "https://x.com/claudeai/status/2064394159318782217"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Mythos 5** is the same model as **Fable 5** with some safeguards lifted; **Mythos 5** 和 **Fable 5** 同源，只是在部分场景放松了护栏",
+            "body": "For a small group of cyber defenders and critical infrastructure providers, we are also launching Claude Mythos 5.\n\nMythos 5 shares the same underlying model as Fable 5, but with the safeguards lifted in some areas.\n\n我们也在向一小部分网络防御团队和关键基础设施提供方推出 **Claude Mythos 5**。\n\n**Mythos 5** 和 **Fable 5** 共享同一个底层模型，只是在部分领域放松了安全护栏。",
+            "source_links": [
+              "https://x.com/claudeai/status/2064394158056386684"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-10",
+    "updatedAt": "2026-06-10T12:05:21.950Z",
+    "commit": {
+      "sha": "5521c73ef1d91698713752c3aacc29fd94d9b97a",
+      "committedAt": "2026-06-10T07:48:52Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-10T12:00:13.012Z",
+    "feedGeneratedAt": "2026-06-10T07:48:48.549Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
