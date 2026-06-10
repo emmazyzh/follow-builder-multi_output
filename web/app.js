@@ -139,7 +139,9 @@ function applyLinkExpansions(text, section) {
       const shortUrl = String(entry?.shortUrl || '').trim();
       if (!shortUrl) return;
       if (entry.kind === 'external' && entry.resolvedUrl) {
-        output = output.split(shortUrl).join(entry.resolvedUrl);
+        const resolvedUrl = String(entry.resolvedUrl || '').trim();
+        const isQuotedXLink = /^https?:\/\/(?:www\.)?x\.com\/(?:i\/status\/|[A-Za-z0-9_]+\/status\/)\d+/i.test(resolvedUrl);
+        output = output.split(shortUrl).join(isQuotedXLink ? '' : resolvedUrl);
         return;
       }
       output = output.split(shortUrl).join('');
@@ -150,6 +152,41 @@ function applyLinkExpansions(text, section) {
     .replace(/\n{3,}/g, '\n\n')
     .replace(/[ ]{2,}/g, ' ')
     .trim();
+}
+
+function normalizeSourceLinkEntry(entry, index, allEntries) {
+  const normalized = typeof entry === 'string'
+    ? { url: entry, label: '' }
+    : { url: entry?.url, label: entry?.label || '' };
+  const url = String(normalized.url || '').trim();
+  if (!url) return null;
+  const isXStatus = /^https?:\/\/(?:www\.)?x\.com\/(?:i\/status\/|[A-Za-z0-9_]+\/status\/)\d+/i.test(url);
+  const label = String(normalized.label || '').trim();
+  if (label) return { url, label };
+  if (isXStatus && allEntries.length > 1) {
+    return {
+      url,
+      label: index === 0 ? 'View post' : 'View quote'
+    };
+  }
+  return {
+    url,
+    label: 'View source'
+  };
+}
+
+function dedupeSourceLinks(entries) {
+  const rawEntries = Array.isArray(entries) ? entries : [];
+  const normalized = rawEntries
+    .map((entry, index) => normalizeSourceLinkEntry(entry, index, rawEntries))
+    .filter(Boolean);
+  const seen = new Set();
+  return normalized.filter((entry) => {
+    const key = entry.url;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
 }
 
 function stripSummaryPrefix(text) {
@@ -748,20 +785,15 @@ function renderCards() {
       previews.remove();
     }
 
-    const sourceLinks = Array.isArray(section.source_links) ? section.source_links : [];
+    const sourceLinks = dedupeSourceLinks(section.source_links);
     links.replaceChildren(
       ...sourceLinks.map((entry) => {
         const anchor = document.createElement('a');
         anchor.className = 'card-link';
         anchor.target = '_blank';
         anchor.rel = 'noreferrer';
-        if (typeof entry === 'string') {
-          anchor.href = entry;
-          anchor.textContent = 'View source';
-        } else {
-          anchor.href = entry.url;
-          anchor.textContent = entry.label || 'View source';
-        }
+        anchor.href = entry.url;
+        anchor.textContent = entry.label;
         return anchor;
       })
     );

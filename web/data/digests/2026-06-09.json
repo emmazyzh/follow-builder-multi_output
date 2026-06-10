@@ -128,15 +128,16 @@
         "sections": [
           {
             "headline": "Nested loops are entering the chat / 嵌套循环开始有人真写了",
-            "body": "Anyone writing nested loops yet? https://t.co/sZi6Bthq5Z\n\n已经有人开始写嵌套循环了吗？ https://t.co/sZi6Bthq5Z",
+            "body": "Here’s your monthly reminder that you shouldn’t be prompting coding agents anymore.\n\nYou should be designing loops that prompt your agents.\n\nAnyone writing nested loops yet?\n\n每月提醒一次：你现在不该再亲手给 coding agents 写 prompt 了。\n\n你该做的是设计 loop，让这些 agents 自己去被 prompt。\n\n已经有人开始写嵌套循环了吗？",
             "source_links": [
-              "https://x.com/thsottiaux/status/2064226958494572727"
+              "https://x.com/thsottiaux/status/2064226958494572727",
+              "https://x.com/steipete/status/2063697162748260627"
             ],
             "linkExpansions": [
               {
                 "kind": "external",
                 "shortUrl": "https://t.co/sZi6Bthq5Z",
-                "resolvedUrl": "https://t.co/sZi6Bthq5Z"
+                "resolvedUrl": "https://x.com/steipete/status/2063697162748260627"
               }
             ]
           },
