@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-10T13:26:13.544Z",
-  "latestDate": "2026-06-10",
+  "updatedAt": "2026-06-11T17:45:31.271Z",
+  "latestDate": "2026-06-11",
   "dates": [
+    {
+      "date": "2026-06-11",
+      "title": "AI Builders Daily · 2026-06-11",
+      "summary": "**Fable** stole the frame: builders kept posting that bigger models are changing how they work, from overnight coding loops to full video production without touching an editor; **Gemini** briefly went down, then came back, a reminder that the stack is getting more powerful and more fragile at once; product signals were everywhere: **Codex** token usage spiked, **Project Genie** expanded, and **Claude Platform** shipped scheduled deployments plus vault-backed env vars; the sharpest takeaway is practical, not philosophical: start with the strongest model, delegate longer horizons, and only optimize down once the magic is real.\n\n今天最抢眼的还是 **Fable**：一堆 builder 都在晒，模型一变强，工作方式也跟着变了，从通宵跑代码到整支发布视频都让它自己剪，连视频编辑器都没碰；**Gemini** 先宕了一下又恢复，挺直接地提醒人一句，能力在往上冲，脆弱点也没少；产品面也很密：**Codex** token 用量突然拉高，**Project Genie** 扩容，**Claude Platform** 也把定时部署和 vault 环境变量放出来了；最有用的结论不玄，先拿最强模型把事情做通，再回头压成本、换小模型。",
+      "itemCount": 19,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-11T17:45:31.251Z",
+      "commit": {
+        "sha": "82042d980ade67ec0e570bc0b14b8a821aa98efc",
+        "committedAt": "2026-06-11T08:02:10Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-10",
       "title": "AI Builders Daily · 2026-06-10",
