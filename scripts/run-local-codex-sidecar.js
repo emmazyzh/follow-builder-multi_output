@@ -5,6 +5,7 @@ import { mkdir, readFile, readdir, rename, rm, writeFile } from 'fs/promises';
 import { dirname, join } from 'path';
 import { promisify } from 'util';
 import { fileURLToPath, pathToFileURL } from 'url';
+import { loadSidecarConfig } from './sidecar-common.js';
 
 const execFileAsync = promisify(execFile);
 
@@ -32,6 +33,7 @@ const MAX_PODCAST_TRANSCRIPT_CHARS = 12000;
 const MAX_BLOG_CONTENT_CHARS = 8000;
 const FULL_PAYLOAD_ATTEMPTS = 1;
 const SEGMENT_ATTEMPTS = 3;
+const DEFAULT_MODEL = 'gpt-5.4';
 
 function buildRunId() {
   return `local-runner-${new Date().toISOString()}-pid-${process.pid}`;
@@ -51,10 +53,30 @@ function log(level, message, context = {}) {
 
 function parseArgs(argv) {
   const args = argv.slice(2);
-  return {
-    force: args.includes('--force'),
-    dryRun: args.includes('--dry-run')
+  const parsed = {
+    dryRun: false,
+    force: false,
+    model: null
   };
+
+  for (let index = 0; index < args.length; index += 1) {
+    const arg = args[index];
+    switch (arg) {
+      case '--dry-run':
+        parsed.dryRun = true;
+        break;
+      case '--force':
+        parsed.force = true;
+        break;
+      case '--model':
+        parsed.model = args[++index];
+        break;
+      default:
+        throw new Error(`Unknown argument: ${arg}`);
+    }
+  }
+
+  return parsed;
 }
 
 function runnerEnv() {
@@ -223,7 +245,7 @@ function buildCodexInput(raw) {
   };
 }
 
-async function generatePayloadWithCodex(expectedItemCount, options = {}) {
+async function generatePayloadWithCodex(expectedItemCount, model, options = {}) {
   const attempt = Number.isInteger(options.attempt) ? options.attempt : 0;
   const attemptPayloadPath = join(RUNTIME_DIR, `latest-payload.pid-${process.pid}.attempt-${attempt + 1}.json`);
   const raw = JSON.parse(await readFile(RAW_PATH, 'utf-8'));
@@ -233,15 +255,15 @@ async function generatePayloadWithCodex(expectedItemCount, options = {}) {
     expectedItemCount,
     options
   );
-  await runCodexPrompt(prompt, attemptPayloadPath);
+  await runCodexPrompt(prompt, attemptPayloadPath, model);
   return attemptPayloadPath;
 }
 
-async function runCodexPrompt(prompt, outputPath) {
+async function runCodexPrompt(prompt, outputPath, model) {
   await writeFile(PROMPT_PATH, `${prompt}\n`);
   await execFileAsync('/bin/zsh', [
     '-lc',
-    `"${CODEX_BIN}" exec --skip-git-repo-check --sandbox read-only --cd "${REPO_DIR}" --output-last-message "${outputPath}" - < "${PROMPT_PATH}"`
+    `"${CODEX_BIN}" exec --model "${model}" --skip-git-repo-check --sandbox read-only --cd "${REPO_DIR}" --output-last-message "${outputPath}" - < "${PROMPT_PATH}"`
   ], {
     cwd: REPO_DIR,
     env: runnerEnv(),
@@ -534,13 +556,13 @@ async function salvageXSectionFallback(tweet, outputStem) {
   };
 }
 
-async function generateJsonSegment({ label, predicate, promptBuilder, outputStem }) {
+async function generateJsonSegment({ label, predicate, promptBuilder, outputStem }, model) {
   let lastError = null;
   for (let attempt = 0; attempt < SEGMENT_ATTEMPTS; attempt += 1) {
     const outputPath = join(RUNTIME_DIR, `${outputStem}.attempt-${attempt + 1}.json`);
     try {
       const prompt = promptBuilder(attempt, lastError);
-      await runCodexPrompt(prompt, outputPath);
+      await runCodexPrompt(prompt, outputPath, model);
       const outputText = await readFile(outputPath, 'utf-8');
       return parseJsonObjectByPredicate(outputText, predicate, label);
     } catch (error) {
@@ -554,7 +576,7 @@ async function generateJsonSegment({ label, predicate, promptBuilder, outputStem
   throw lastError || new Error(`Failed to generate ${label}`);
 }
 
-async function generateXItemFallback(entry, index) {
+async function generateXItemFallback(entry, index, model) {
   log('warning', 'Falling back to per-tweet generation for X item', {
     index: index + 1,
     handle: entry.handle
@@ -580,7 +602,7 @@ async function generateXItemFallback(entry, index) {
             ]
             : [])
         ].join('\n')
-      });
+      }, model);
     } catch (error) {
       log('warning', 'Falling back to salvaged X section output', {
         index: index + 1,
@@ -610,7 +632,7 @@ async function generateXItemFallback(entry, index) {
   };
 }
 
-async function generateSegmentedPayload(raw, prepareResult) {
+async function generateSegmentedPayload(raw, prepareResult, model) {
   const codexInput = buildCodexInput(raw);
   const contentDate = buildContentDate(prepareResult, raw);
 
@@ -628,7 +650,7 @@ async function generateSegmentedPayload(raw, prepareResult) {
         ]
         : [])
     ].join('\n')
-  });
+  }, model);
 
   const entries = [
     ...codexInput.x.map((entry) => ({ kind: 'x', data: entry })),
@@ -641,7 +663,7 @@ async function generateSegmentedPayload(raw, prepareResult) {
     const entry = entries[index];
     let item;
     if (entry.kind === 'x') {
-      item = await generateXItemFallback(entry, index);
+      item = await generateXItemFallback(entry, index, model);
     } else {
       item = await generateJsonSegment({
         label: `item ${index + 1}`,
@@ -657,7 +679,7 @@ async function generateSegmentedPayload(raw, prepareResult) {
             ]
             : [])
         ].join('\n')
-      });
+      }, model);
     }
     items.push(item);
   }
@@ -697,6 +719,8 @@ async function persistResult(result) {
 
 async function main() {
   const args = parseArgs(process.argv);
+  const config = await loadSidecarConfig();
+  const model = args.model || config.model || DEFAULT_MODEL;
   const runId = buildRunId();
   const startedAt = new Date().toISOString();
   await ensureRuntimeDir();
@@ -750,7 +774,7 @@ async function main() {
     let attempt = 0;
     while (attempt < FULL_PAYLOAD_ATTEMPTS) {
       const isRetry = attempt > 0;
-      const attemptPayloadPath = await generatePayloadWithCodex(expectedItemCount, {
+      const attemptPayloadPath = await generatePayloadWithCodex(expectedItemCount, model, {
         attempt,
         extraStrict: isRetry,
         retryReason: lastValidationError?.message || ''
@@ -772,7 +796,7 @@ async function main() {
       log('warning', 'Falling back to segmented payload generation after repeated full-payload failures', {
         error: lastValidationError.message
       });
-      await generateSegmentedPayload(raw, prepareResult);
+      await generateSegmentedPayload(raw, prepareResult, model);
     }
     const deliveryResult = await deliverPayload(args.dryRun);
 

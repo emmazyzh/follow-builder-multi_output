@@ -1,0 +1,713 @@
+{
+  "payload": {
+    "date": "2026-06-12",
+    "title": "AI Builders Daily · 2026-06-12",
+    "summary": "**Google’s agent era is getting a real control layer**; **Anthropic says containment, not just alignment, is what makes powerful agents shippable**; OpenAI’s Codex orbit keeps pulling talent in, while builders on X keep arguing about the last mile: closed-loop tooling, safer autonomy, and whether current agent stacks are actually pleasant to use.\n\n**Google 把 agent 这事往“控制层”上推了一步**；**Anthropic 明说了，光靠模型听话不够，真要上线还得把爆炸半径卡死**；另一边，OpenAI 的 Codex 继续吸人，X 上的 builder 们也没闲着，讨论点很实在：闭环工具到底谁来做，自动化怎么别翻车，现在这批 agent 到底有没有顺手到能天天用。",
+    "items": [
+      {
+        "person_name": "Training Data",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=cMAs8z2dehs",
+        "source_label": "YouTube Podcast",
+        "posted_at": "2026-06-11T09:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Google DeepMind’s Logan Kilpatrick** says the model is no longer the whole story, the agent harness is / **Google DeepMind** 的 **Logan Kilpatrick** 说，关键已不只是模型本身，而是 agent 的执行框架",
+            "body": "On **Training Data**, **Logan Kilpatrick** described Google’s new agent push as a shift from **Gemini** being the shared layer across products to an agent harness, referred to in the conversation as **Antigravity**, becoming the new through line. He framed it as an ecosystem spanning an IDE, web experience, CLI, and SDK, with the same base harness also powering products like Search, the **Gemini** app, Cloud, and **AI Studio**.\n\n在 **Training Data** 这期里，**Logan Kilpatrick** 把 Google 的新一轮 agent 推进讲得很直白：以前串起各产品的是 **Gemini**，现在往前顶的是一个 agent 执行框架，节目里提到它叫 **Antigravity**。按他的说法，这不是单点产品，而是一整套东西，包括 IDE、Web 端、CLI 和 SDK；更重要的是，同一套底层框架也会给 Search、**Gemini** app、Cloud 和 **AI Studio** 这些产品供能。\n\nHe also argued that Google is still in the \"crawl\" phase for most agentic product behavior, with the **Gemini** app closest to \"walk.\" On business tradeoffs, he pushed back on the idea that success means maximizing time spent in products, saying the real goal is maximizing user outcomes even if that means fewer eyeballs. He also suggested the jump from SEO to generative or agent-led discovery may look less radical than people assume because the systems compound on each other.\n\n他还判断，Google 大多数 agent 产品体验现在顶多算在“爬”阶段，离“走”最近的是 **Gemini** app。说到商业取舍，他明显不认同“把用户留得越久越成功”这套逻辑，反而强调目标应该是让用户更快拿到结果，哪怕这会减少停留时长。至于从 SEO 走向生成式、agent 驱动的分发，他的看法也没那么戏剧化：变化会很大，但未必像很多人现在想的那样断裂，因为这些系统本来就是叠在一起长出来的。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=cMAs8z2dehs"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "Anthropic Engineering",
+        "profile_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "source_label": "Company Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "**Anthropic** says shipping stronger agents now hinges on containment and blast-radius control / **Anthropic** 说，更强的 agent 能不能上线，关键在隔离和爆炸半径控制",
+            "body": "**Anthropic Engineering** argues that as **Claude** gets more access across products, the core deployment question is no longer just whether failures are likely, but how much damage a failure could do. The post breaks agent risk into three buckets: user misuse, model misbehavior, and external attackers. It also lays out three defensive layers: the model, the runtime environment, and the external content the agent can touch.\n\n**Anthropic Engineering** 这篇文章的重点很硬：随着 **Claude** 在不同产品里拿到越来越多权限，问题早就不只是“会不会出错”，而是“出错一次能炸多大”。文中把风险拆成三类：用户自己乱来、模型自己跑偏、外部攻击者借工具或内容下手。对应的防线也分三层：模型本身、运行环境，以及 agent 能接触到的外部内容。\n\nThe post is especially strong on containment. Anthropic says human approval flows degrade in practice because users approve most prompts, so the company has leaned harder on sandboxes, virtual machines, filesystem boundaries, and egress controls. It points to different isolation patterns across **claude.ai**, **Claude Code**, and **Claude Cowork**, with the broader claim that powerful agents become deployable when the environment puts a hard cap on what they can reach, even if model safeguards are never perfect.\n\n文章最有料的部分在“containment”。**Anthropic** 直说了，人盯人的审批流在现实里会疲劳，用户大多数时候都会点通过，所以他们越来越依赖沙箱、虚拟机、文件系统边界和出口控制这类硬隔离。文中还分别讲了 **claude.ai**、**Claude Code**、**Claude Cowork** 的隔离模式。核心意思很清楚：模型防线再强也不是百分百，真正让高能力 agent 变得可上线的，是环境层先把它能碰到的范围钉死。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/how-we-contain-claude"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Commentator",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-12T05:37:48.000Z",
+        "sections": [
+          {
+            "headline": "Loopcraft is stacking loops for reliability and leverage / Loopcraft 拼的是把循环叠起来，先保稳，再放大杠杆",
+            "body": "## On Loopcraft\n\nOne might argue the entire game of the next century is to be able to stack loops as effectively as possible. \n\nIn the early days of each phase, it will be valuable to know when to go **DOWN** a loop when things go wrong (for reliability)… \n\nbut it will probably be more valuable to know how to go **UP** a loop as models improve (for leverage).\n\nIf you don’t figure out how to do this, don’t be salty when you lose to those that do.\n\n## 关于 Loopcraft\n\n可以说，接下来一个世纪真正的游戏，就是看谁更会把一层层 loop 叠起来。\n\n每个阶段刚开始的时候，出问题时知道什么时候往 **下** 走一层 loop，会很值钱（这是为了可靠性）。\n\n但随着模型变强，更值钱的可能是知道怎么往 **上** 走一层 loop（这是为了杠杆）。\n\n你要是没把这件事搞明白，就别等输给那些搞明白的人之后再不服气。",
+            "source_links": [
+              "https://x.com/swyx/status/2065307558198567206"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Swyx wants a vibecoding platform that actually closes the loop / Swyx 想要的不是更多工具，而是真能闭环的 vibecoding 平台",
+            "body": "the #1 thing that is driving me to build my own vibecoding platform rn is that none of them - and i lov vercel, cloudflare, netlify etc - none of them really close the loop for you in terms of setting you on the right path with errors and pinging you when shit fails (shit always fails)  \n\nthere's way too much \"webmaster\" infra to setup for every single project and i just want to do it once and for all, instead i'm being asked to npx posthog wizard here and npx arize skills there and it all just needs to be swallowed up into One Thing.\n\n现在最让我想自己做一个 vibecoding 平台的原因，就是现在这些平台都不行。不是说我不喜欢 **Vercel**、**Cloudflare**、**Netlify** 这些，而是它们没一个能真正帮你把闭环做完，比如报错时把你带回正确路径，或者东西挂了以后主动提醒你（东西总会挂的）。\n\n每个项目都还得自己搭一堆“站长式”的基础设施，实在太烦了。我只想把这套事一次性搞定，不想这里跑个 `npx posthog wizard`，那里再来个 `npx arize skills`，这些零碎东西本来就该被吞进一个统一产品里。",
+            "source_links": [
+              "https://x.com/swyx/status/2065264832056889711"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Swyx flags Ona joining OpenAI and hints at what’s next for Codex / Swyx 提到 Ona 加入 OpenAI，也顺手放了点 Codex 的后续味道",
+            "body": "congrats to our friends @ona_hq on joining @openai! \n\nsee their talk here for alpha on what’s next for Codex 👀 https://t.co/u4EkcJvlAf\n\n恭喜我们的朋友 @ona_hq 加入 @openai！\n\n想提前看看 **Codex** 接下来可能往哪走，可以去看他们这场分享 👀 https://t.co/u4EkcJvlAf",
+            "source_links": [
+              "https://x.com/swyx/status/2065176231453282777"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/u4EkcJvlAf",
+                "resolvedUrl": "https://twitter.com/aidotengineer/status/2065175479343284421"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-11T22:03:40.000Z",
+        "sections": [
+          {
+            "headline": "Thibault welcomes Ona into the Codex orbit / Thibault 欢迎 Ona 进入 Codex 这一圈",
+            "body": "Codex 🤟Ona\n\nBeyond excited to work with Johannes and team to build the future. https://t.co/XekiPZIBAs\n\nCodex 🤟Ona\n\n非常期待和 Johannes 以及团队一起做接下来的东西。https://t.co/XekiPZIBAs",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2065193272952422852"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/OpenAINewsroom/status/2065088002335158753",
+                "resolvedUrl": "https://x.com/OpenAINewsroom/status/2065088002335158753",
+                "authorName": "OpenAI Newsroom",
+                "authorHandle": "OpenAINewsroom",
+                "authorUrl": "https://x.com/OpenAINewsroom",
+                "text": "We’ve reached an agreement to acquire @ona_hq.\n\nIts secure cloud execution technology will help Codex take on longer-running work, even when laptops are closed, and help more organizations deploy agents securely in production.\n\nAfter closing, Ona will join OpenAI’s Codex team.",
+                "displayDate": "Jun 11",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们已达成收购 @ona_hq 的协议。\n\n其安全的云端执行技术将帮助 Codex 承担运行时间更长的工作，即使笔记本电脑合上也能继续运行，并帮助更多组织在生产环境中安全部署 agents。\n\n交易完成后，Ona 将加入 OpenAI 的 Codex 团队。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/XekiPZIBAs",
+                "resolvedUrl": "https://x.com/openainewsroom/status/2065088002335158753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-12T04:46:58.000Z",
+        "sections": [
+          {
+            "headline": "Netflix now lets you play FIFA with your phone as the controller / Netflix 现在能让你用手机当手柄玩 FIFA",
+            "body": "Wow you can play fifa on Netflix now with your phone as the controller.\n\nI just tried it and it’s pretty great. https://t.co/YEtRFhgPl5\n\n哇，现在你可以在 **Netflix** 上玩 **FIFA**，而且手机还能直接当手柄。\n\n我刚试了下，体验还真挺不错。https://t.co/YEtRFhgPl5",
+            "source_links": [
+              "https://x.com/petergyang/status/2065294767760769222"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/playfifa/status/2065153659667701869",
+                "resolvedUrl": "https://x.com/Playfifa/status/2065153659667701869",
+                "authorName": "Play FIFA",
+                "authorHandle": "Playfifa",
+                "authorUrl": "https://x.com/Playfifa",
+                "text": "It’s game time! FIFA World Cup: Launch Edition is now on Netflix Games.\n\nChoose a team, storm the pitch, and play on your TV or computer with up to four friends!\n\n📲 http://www.netflix.com/fifaworldcup",
+                "displayDate": "Jun 11",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKjmTxfXUAEmRlu.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Playfifa/status/2065153659667701869/photo/1"
+                  }
+                ],
+                "textZh": "开赛时间到！FIFA World Cup: Launch Edition 现已上线 Netflix Games。\n\n选择一支球队，冲上赛场，和最多四位好友一起在电视或电脑上开踢！\n\n📲 http://www.netflix.com/fifaworldcup"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/YEtRFhgPl5",
+                "resolvedUrl": "https://x.com/playfifa/status/2065153659667701869"
+              }
+            ]
+          },
+          {
+            "headline": "Peter points to his current plan without unpacking it / Peter 丢出一张“我现在的计划”，但没展开讲",
+            "body": "@Alphaschool fwiw this is my current plan https://t.co/bwG2nJ96n1\n\n@Alphaschool 供参考，这就是我现在的计划 https://t.co/bwG2nJ96n1",
+            "source_links": [
+              "https://x.com/petergyang/status/2065287078452371598"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKlfmD0a8AAfBGg.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2065287078452371598/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/bwG2nJ96n1",
+                "resolvedUrl": "https://x.com/petergyang/status/2065287078452371598/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKlfmD0a8AAfBGg.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI models feel a lot like RPG characters to Peter / Peter 觉得这些 AI 模型越来越像 RPG 角色",
+            "body": "These AI models remind me of RPGs tbh https://t.co/84tXOpnofH\n\n说真的，这些 AI 模型让我想起 RPG。https://t.co/84tXOpnofH",
+            "source_links": [
+              "https://x.com/petergyang/status/2065283568918794658"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKlcdbtbIAErwHM.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2065283568918794658/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/84tXOpnofH",
+                "resolvedUrl": "https://x.com/petergyang/status/2065283568918794658/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKlcdbtbIAErwHM.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-12T02:26:52.000Z",
+        "sections": [
+          {
+            "headline": "Amjad says Fable got cheap enough to stomach because it makes fewer mistakes / Amjad 说 Fable 现在终于“花得下去”，因为犯错少了",
+            "body": "Replit Agent team did a great job making Fable cost stomachable. The lack of mistakes net net makes it more affordable. https://t.co/ICkFYKxqYt\n\n**Replit Agent** 团队把 **Fable** 的成本压到了终于能接受的程度。归根结底，少犯错这件事本身就让它更便宜。https://t.co/ICkFYKxqYt",
+            "source_links": [
+              "https://x.com/amasad/status/2065259509082411233"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKlGk_1bMAAOiXY.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2065259509082411233/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ICkFYKxqYt",
+                "resolvedUrl": "https://x.com/amasad/status/2065259509082411233/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKlGk_1bMAAOiXY.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Replit’s canvas pitch is one surface for app, mobile, and marketing / Replit 想卖的是一个画布，把应用、移动端和营销素材都装进去",
+            "body": "This is what building a company looks like on Replit. \n\nOne canvas with your web app, mobile app, marketing &amp; App Store material.\n\nClick into any one of those and start building, changing, and generating new things. https://t.co/gX7qCakTOe\n\n这就是在 **Replit** 上“搭一家公司”的样子。\n\n一个画布里放下你的 Web 应用、移动应用、营销素材和 **App Store** 物料。\n\n点进任何一个部分，就能直接开始构建、修改、生成新内容。https://t.co/gX7qCakTOe",
+            "source_links": [
+              "https://x.com/amasad/status/2065241626436583860"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKk2GybbQAAe1lI.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2065241626436583860/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/gX7qCakTOe",
+                "resolvedUrl": "https://x.com/amasad/status/2065241626436583860/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKk2GybbQAAe1lI.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Amjad says Fable on Replit finally made vibecoding feel frictionless / Amjad 说 Fable 上线 Replit 后，vibecoding 终于顺了",
+            "body": "For the first time, I'm vibecoding with ZERO frustration and in a complete state of flow, so much so that I'm running out of ideas.\n\nTypically, I have so much backlog of things I want to add, but after Fable landed on Replit, I'm almost certain I don't need more IQ for vibecoding, just cheaper and faster models, and we're done here.\n\n这是我第一次在 vibecoding 的时候几乎 **零挫败感**，整个过程顺到离谱，顺到我都快没新点子可做了。\n\n平时我脑子里总有一长串 backlog 想加的东西，但 **Fable** 上了 **Replit** 之后，我几乎确定了：vibecoding 缺的不是更高智商，缺的是更便宜、更快的模型，差不多就这样。",
+            "source_links": [
+              "https://x.com/amasad/status/2065236013627351551"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-11T17:06:20.000Z",
+        "sections": [
+          {
+            "headline": "Guillermo tees up Vercel plus Grok / Guillermo 抛出 Vercel 加 Grok 的组合",
+            "body": "Vercel + Grok https://t.co/Bokuav4YOs\n\n**Vercel** + **Grok** https://t.co/Bokuav4YOs",
+            "source_links": [
+              "https://x.com/rauchg/status/2065118448947216681"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Bokuav4YOs",
+                "resolvedUrl": "https://twitter.com/xai/status/2065099299541893577"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Guillermo hypes a Vercel plus Shopify build that processed 500+ orders in 2 minutes / Guillermo 转发一个 Vercel 加 Shopify 的案例，2 分钟处理 500 多单",
+            "body": "Vercel + Shopify is too good…\nhttps://t.co/DHNo9pIOaK by @foda: \n◾ 500+ orders processed in *2 minutes*\n◾ Built with @v0 + @cursor_ai \n◾ Fully custom @nextjs storefront on headless\n\nSo long on the web. \nAnyone can now dream → build →  ship → sell https://t.co/lX8TNLYoKS\n\n**Vercel** + **Shopify** 这个组合太狠了……\nhttps://t.co/DHNo9pIOaK by @foda: \n◾ *2 分钟*处理 500+ 订单\n◾ 用 @v0 + @cursor_ai 搭的\n◾ 基于 headless 的全自定义 @nextjs 店面\n\nWeb 这条路我继续长期看多。\n现在任何人都能 dream → build → ship → sell https://t.co/lX8TNLYoKS",
+            "source_links": [
+              "https://x.com/rauchg/status/2065116986678624419"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/lX8TNLYoKS",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2065113780032561153/img/Ue3oAYPSxlvumlyr.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2065116986678624419/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/DHNo9pIOaK",
+                "resolvedUrl": "http://superbape.com/"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/lX8TNLYoKS",
+                "resolvedUrl": "https://x.com/rauchg/status/2065116986678624419/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2065113780032561153/img/Ue3oAYPSxlvumlyr.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-12T04:16:33.000Z",
+        "sections": [
+          {
+            "headline": "Box survey says the heaviest AI adopters also plan to hire more / Box 的调研说，用 AI 最狠的公司反而更想扩招",
+            "body": "At Box, we just surveyed 1,640 IT leaders across the US, Japan, and Europe about agentic AI adoption. Many standout findings, but a big one was that the companies that adopted AI the most are planning to grow headcount the most.\n\nObviously lots of ways you can read that data and variables mixed in, but it’s actually quite intuitive that the companies that become most productive want to (and are able to) reinvest back into the business to keep getting the gains going. \n\nThe narrative of jobs being wiped out assumes that companies will take a fixed approach to what they want to be able for work on. What’s happening in practice is it’s causing companies to want to light up more engineering projects, sell to more customers, automate more processes to give time back, and more. That all leads to more work to be done by people.\n\n在 **Box**，我们刚刚面向美国、日本和欧洲的 1,640 位 IT 负责人做了一个关于 agentic AI 采用情况的调研。里面有不少值得看的点，但有一个很扎眼：采用 AI 最多的公司，反而也是最计划增加 headcount 的公司。\n\n当然，这组数据怎么解读都可以，里面也混着很多变量。但直觉上其实说得通：生产率提升最快的公司，会更愿意、也更有能力把收益再投回业务里，继续把优势滚下去。\n\n“工作会被清空”的叙事，默认公司对自己要做的事情是固定不变的。现实里更常见的是，AI 让公司想开更多工程项目、卖给更多客户、自动化更多流程，把时间腾出来。这些变化最后都会变成新的人工工作量。",
+            "source_links": [
+              "https://x.com/levie/status/2065287110744297809"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKlfrrebgAAJk75.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2065287110744297809/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-12T06:04:56.000Z",
+        "sections": [
+          {
+            "headline": "Garry argues a 12.3% eminence rate among gifted kids proves the filter works / Garry 说，天才儿童里 12.3% 走到顶尖位置，恰好说明筛选机制有效",
+            "body": "The centerpiece stat is a self-own: she cites a 35-year study where 12.3% of 677 gifted kids reached \"eminence\" (full professor, Fortune 500 exec, federal judge) as proof the category is a lie. \n\nThe general-population base rate for outcomes that rarefied is far worse, much closer to zero than double digit percentage. 12.3% is the selection mechanism working spectacularly.\n\n最关键的那组数据简直是在自己打自己脸：她拿一项 35 年研究说事，里面 677 个 gifted kids 里有 12.3% 最后达到了“eminence”（正教授、**Fortune 500** 高管、联邦法官），却把这当成“这个分类是假的”证据。\n\n可放到普通人总体里，这种级别结果的基准概率低得多，离零更近，不是什么两位数。12.3% 恰恰说明这套筛选机制效果强得离谱。",
+            "source_links": [
+              "https://x.com/garrytan/status/2065314389196959813"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Garry says the community note has it right and calls out bad in-group signaling / Garry 觉得社区注释写对了，也顺手骂了那种圈内装腔的写法",
+            "body": "The community note clearly specifies the writer Katie Arnold-Ratliff is the one whose understanding of gifted is inherently flawed\n\nStop making it cool for writers to in-group signal with lies https://t.co/QSxcjimgYa\n\n社区注释已经写得很清楚了，真正对 gifted 这件事理解有根本问题的人，是作者 Katie Arnold-Ratliff。\n\n别再把作者靠说假话搞圈内身份认同这件事包装成“很酷”了。https://t.co/QSxcjimgYa",
+            "source_links": [
+              "https://x.com/garrytan/status/2065313198237180238"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/NYMag/status/2065127209929683024",
+                "resolvedUrl": "https://x.com/NYMag/status/2065127209929683024",
+                "authorName": "New York Magazine",
+                "authorHandle": "NYMag",
+                "authorUrl": "https://x.com/NYMag",
+                "text": "Gifted and Talented, or G&amp;T, programs have long been a perennial subject of debate, particularly in New York City, where it has bedeviled mayors for years. Some parents have already washed their hands of the whole G&amp;T business, refusing to participate in what they view as a",
+                "displayDate": "Jun 11",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKjOP_1akAAdcq4.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/NYMag/status/2065127209929683024/photo/1"
+                  }
+                ],
+                "textZh": "Gifted and Talented，也就是 G&T 项目，长期以来一直是争论不休的话题，尤其是在纽约市，多年来一直让几任市长头疼。一些家长已经彻底不想再掺和整个 G&T 的事了，拒绝参与他们认为是一个"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/QSxcjimgYa",
+                "resolvedUrl": "https://x.com/nymag/status/2065127209929683024"
+              }
+            ]
+          },
+          {
+            "headline": "Garry says Gavin Newsom visited YC to talk tech, YIMBY, and California policy / Garry 说 Gavin Newsom 到 YC 聊了科技、YIMBY 和加州政策",
+            "body": "Gavin Newsom came for a @garryslist event at YC and we were proud to talk little tech, YIMBY, how to stop the the asset seizure tax, and how to keep California's innovation wave going while making sure things work for every Californian. \n\nThank you @GavinNewsom https://t.co/0e2nhtsIlB\n\nGavin Newsom 来参加了 YC 的一个 @garryslist 活动，我们聊了不少：科技、YIMBY、怎么拦住那个资产没收税，还有怎么让加州的创新势头继续往前走，同时也让这套东西真正对每个加州人起作用。\n\n谢谢 @GavinNewsom https://t.co/0e2nhtsIlB",
+            "source_links": [
+              "https://x.com/garrytan/status/2065298785463579053"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKlpj5lbYAAkk9P.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2065298785463579053/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/0e2nhtsIlB",
+                "resolvedUrl": "https://x.com/garrytan/status/2065298785463579053/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKlpj5lbYAAkk9P.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-11T18:33:49.000Z",
+        "sections": [
+          {
+            "headline": "Zara previews tomorrow’s deck / Zara 提前放出明天要讲的 deck",
+            "body": "This is tomorrow!\nSneak peek of the deck I'll be sharing: https://t.co/qJhLRXgtTy https://t.co/mjYTPb7EHe\n\n就是明天！\n我会分享的 deck 先给你们看一眼：https://t.co/qJhLRXgtTy https://t.co/mjYTPb7EHe",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2065140462709506108"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKjaSBGXoAAZRyd.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2065140462709506108/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/zarazhangrui/status/2064486120386379950",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2064486120386379950",
+                "authorName": "Zara Zhang",
+                "authorHandle": "zarazhangrui",
+                "authorUrl": "https://x.com/zarazhangrui",
+                "text": "I will be doing a virtual talk this Friday on my vibe coding process.\n\nAs a non-technical person who has somehow managed to get 30k stars on GitHub, I will be sharing the behind-the-scenes of how I get product ideas, how I work with coding agents, how to design stuff that's not",
+                "displayDate": "Jun 9",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKaHFdAbkAA3q5u.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/zarazhangrui/status/2064486120386379950/photo/1"
+                  }
+                ],
+                "textZh": "这周五我会做一场线上分享，聊聊我的 vibe coding 流程。\n\n作为一个非技术背景的人，却 somehow 在 GitHub 上拿到了 3 万星，我会分享一些幕后内容：我是怎么获得产品灵感的，怎么和 coding agents 协作，以及怎么设计出不那么"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/qJhLRXgtTy",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2065140462709506108/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKjaSBGXoAAZRyd.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/mjYTPb7EHe",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2064486120386379950"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-11T14:15:08.000Z",
+        "sections": [
+          {
+            "headline": "Nikunj says ambition plus fun is the moat / Nikunj 觉得真正的护城河，是做又疯又好玩的事",
+            "body": "What you work on has never been more important. \n\nMake sure it’s fun. Make sure it’s insanely ambitious. \n\nThat’s the greatest moat.\n\n你做什么，重要性从来没像现在这么高。\n\n确保它是好玩的。确保它野心大到离谱。\n\n那才是最强的护城河。",
+            "source_links": [
+              "https://x.com/nikunj/status/2065075361969500162"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw Builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-11T20:58:58.000Z",
+        "sections": [
+          {
+            "headline": "Peter gets Chris to open a PR with Codex / Peter 让 Chris 用 Codex 提了个 PR",
+            "body": "Getting Chris to do a PR with Codex! https://t.co/yX5iyYfNsw\n\n让 Chris 用 **Codex** 提了个 PR！https://t.co/yX5iyYfNsw",
+            "source_links": [
+              "https://x.com/steipete/status/2065176989359808636"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ChrisWillx/status/2065174575566983481",
+                "resolvedUrl": "https://x.com/ChrisWillx/status/2065174575566983481",
+                "authorName": "Chris Williamson",
+                "authorHandle": "ChrisWillx",
+                "authorUrl": "https://x.com/ChrisWillx",
+                "text": "Cooking. @steipete 🦞",
+                "displayDate": "Jun 11",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKj5PBvWsAApv7w.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ChrisWillx/status/2065174575566983481/photo/1"
+                  }
+                ],
+                "textZh": "做饭。@steipete 🦞"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/yX5iyYfNsw",
+                "resolvedUrl": "https://x.com/chriswillx/status/2065174575566983481"
+              }
+            ]
+          },
+          {
+            "headline": "Peter says writing Mac apps is still hard / Peter 说写 Mac 应用还是难",
+            "body": "writing mac apps is still hard. https://t.co/Nl5i9qN7BP\n\n写 **Mac** 应用这事，到现在还是难。https://t.co/Nl5i9qN7BP",
+            "source_links": [
+              "https://x.com/steipete/status/2065132980398444945"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Nl5i9qN7BP",
+                "resolvedUrl": "https://twitter.com/larryhaonlp/status/2065095618926977408"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "OpenClaw swaps ffmpeg shelling for wasm to cut surface risk / OpenClaw 把 ffmpeg 外壳调用换成 wasm，先把风险面缩掉",
+            "body": "Part of the OpenClaw hardening work is reducing surface risk; for some media conversion we had to shell out to ffmpeg.\n\nIn the next release that can now be done via wasm, with similar performance for our use cases.\nhttps://t.co/tGOI87C7lc\n\n**OpenClaw** 的一部分加固工作，就是尽量缩小暴露面；之前有些媒体转换步骤，我们不得不通过 shell 去调用 **ffmpeg**。\n\n下个版本里，这部分现在可以改成用 **wasm** 来做，按我们的使用场景看，性能差不多。\nhttps://t.co/tGOI87C7lc",
+            "source_links": [
+              "https://x.com/steipete/status/2064999763397980286"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/tGOI87C7lc",
+                "resolvedUrl": "https://github.com/openclaw/ffmpeg-wasm"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-12T03:06:54.000Z",
+        "sections": [
+          {
+            "headline": "Dan says a big Fable run tripped safeguards and pushed him back to Codex / Dan 说 Fable 大项目半路撞上 safeguard，结果他又回了 Codex",
+            "body": "had an idea for a big fable project, set it up, and let it cook\n\ncame back an hour later and it had triggered the safeguards and fell back to 4.8 10 minutes in\n\nback to codex 😬\n\n我有个挺大的 **Fable** 项目想法，先把它搭好，然后就放着让它自己跑。\n\n一小时后回来一看，10 分钟的时候它就触发了 safeguard，然后回退到了 4.8。\n\n于是又回 **Codex** 了 😬",
+            "source_links": [
+              "https://x.com/danshipper/status/2065269582961737957"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "Investor",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-11T19:34:28.000Z",
+        "sections": [
+          {
+            "headline": "Aditya calls out production-grade visual AI / Aditya 点名这才叫 production-grade 的视觉 AI",
+            "body": "This is what production-grade visual AI looks like. https://t.co/na3bE5ZIpq\n\n这才是 production-grade 的视觉 AI 该有的样子。https://t.co/na3bE5ZIpq",
+            "source_links": [
+              "https://x.com/adityaag/status/2065155724850942050"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/na3bE5ZIpq",
+                "resolvedUrl": "https://twitter.com/vlmrun/status/2065071718394380728"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Aditya says impossible only lasts until someone ships it / Aditya 说，不可能这件事，只持续到有人真把它做出来为止",
+            "body": "Things are only impossible to build until someone builds them. https://t.co/LvYP2BEz6x\n\n很多东西所谓“不可能做出来”，也就维持到真有人把它做出来那一刻。https://t.co/LvYP2BEz6x",
+            "source_links": [
+              "https://x.com/adityaag/status/2065155311770440097"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/JPBrebner/status/2065138110627811611",
+                "resolvedUrl": "https://x.com/JPBrebner/status/2065138110627811611",
+                "authorName": "Jonathan Brebner",
+                "authorHandle": "JPBrebner",
+                "authorUrl": "https://x.com/JPBrebner",
+                "text": "Turns out building a space gun isn’t as crazy as it sounds",
+                "displayDate": "Jun 11",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/WvLeuTForV",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2065136233697738752/img/33qZzIyueZyGDAF5.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/JPBrebner/status/2065138110627811611/video/1"
+                  }
+                ],
+                "textZh": "结果发现，造一把太空枪并没有听起来那么疯狂"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/LvYP2BEz6x",
+                "resolvedUrl": "https://x.com/jpbrebner/status/2065138110627811611"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-11T19:54:36.000Z",
+        "sections": [
+          {
+            "headline": "Sam says he’s looking forward to working together / Sam 说他很期待一起做事",
+            "body": "really looking forward to working together! https://t.co/p4gB58deNL\n\n真的很期待接下来一起做事！https://t.co/p4gB58deNL",
+            "source_links": [
+              "https://x.com/sama/status/2065160791205310565"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/p4gB58deNL",
+                "resolvedUrl": "https://twitter.com/jolandgraf/status/2065089676122235376"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-12",
+    "updatedAt": "2026-06-13T06:06:02.347Z",
+    "commit": {
+      "sha": "9226228a6f463d789100cd3a3ccf2cdc28123f23",
+      "committedAt": "2026-06-12T07:57:44Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-13T06:02:07.523Z",
+    "feedGeneratedAt": "2026-06-12T07:57:08.681Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

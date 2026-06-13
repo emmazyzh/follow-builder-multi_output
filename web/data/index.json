@@ -1,7 +1,20 @@
 {
-  "updatedAt": "2026-06-11T17:45:31.271Z",
-  "latestDate": "2026-06-11",
+  "updatedAt": "2026-06-13T06:06:02.351Z",
+  "latestDate": "2026-06-12",
   "dates": [
+    {
+      "date": "2026-06-12",
+      "title": "AI Builders Daily · 2026-06-12",
+      "summary": "**Google’s agent era is getting a real control layer**; **Anthropic says containment, not just alignment, is what makes powerful agents shippable**; OpenAI’s Codex orbit keeps pulling talent in, while builders on X keep arguing about the last mile: closed-loop tooling, safer autonomy, and whether current agent stacks are actually pleasant to use.\n\n**Google 把 agent 这事往“控制层”上推了一步**；**Anthropic 明说了，光靠模型听话不够，真要上线还得把爆炸半径卡死**；另一边，OpenAI 的 Codex 继续吸人，X 上的 builder 们也没闲着，讨论点很实在：闭环工具到底谁来做，自动化怎么别翻车，现在这批 agent 到底有没有顺手到能天天用。",
+      "itemCount": 15,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-13T06:06:02.350Z",
+      "commit": {
+        "sha": "9226228a6f463d789100cd3a3ccf2cdc28123f23",
+        "committedAt": "2026-06-12T07:57:44Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
     {
       "date": "2026-06-11",
       "title": "AI Builders Daily · 2026-06-11",

@@ -29,7 +29,7 @@ const SIDECAR_RUNTIME_DIR = join(REPO_DIR, '.runtime');
 const SIDECAR_SHADOW_STATE_PATH = join(SIDECAR_RUNTIME_DIR, 'state.json');
 const ORIGINAL_CONFIG_PATH = join(homedir(), '.follow-builders', 'config.json');
 
-const DEFAULT_MODEL = 'openai-codex/gpt-5.4';
+const DEFAULT_MODEL = 'gpt-5.4';
 const DEFAULT_CRON_EXPR = '0 * * * *';
 const DEFAULT_TIMEZONE = 'Asia/Shanghai';
 const DEFAULT_LANGUAGE = 'zh';

@@ -12,7 +12,7 @@ const SCRIPT_DIR = dirname(fileURLToPath(import.meta.url));
 const REPO_DIR = join(SCRIPT_DIR, '..');
 const PREPARE_SCRIPT = join(SCRIPT_DIR, 'prepare-digest.js');
 const PROMPT_PATH = join(SCRIPT_DIR, '..', 'prompts', 'web-digest.md');
-const DEFAULT_MODEL = 'openai-codex/gpt-5.4';
+const DEFAULT_MODEL = 'gpt-5.4';
 const DEFAULT_PAYLOAD_PATH = '/tmp/follow-builders-web-payload.json';
 const MODEL_TIMEOUT_MS = 120000;
 const PREPARE_TIMEOUT_MS = 120000;
@@ -520,7 +520,7 @@ async function runModel(prompt, model) {
   await writeFile(promptPath, `${prompt}\n`);
   await execFileAsync('/bin/zsh', [
     '-lc',
-    `"${CODEX_BIN}" exec --skip-git-repo-check --sandbox read-only --cd "${REPO_DIR}" --output-last-message "${outputPath}" - < "${promptPath}"`
+    `"${CODEX_BIN}" exec --model "${model}" --skip-git-repo-check --sandbox read-only --cd "${REPO_DIR}" --output-last-message "${outputPath}" - < "${promptPath}"`
   ], {
     cwd: REPO_DIR,
     env: runnerEnv(),
