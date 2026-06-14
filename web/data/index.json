@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-14T07:57:54.352Z",
+  "updatedAt": "2026-06-14T10:31:13.034Z",
   "latestDate": "2026-06-13",
   "dates": [
     {
       "date": "2026-06-13",
       "title": "AI Builders Daily · 2026-06-13",
-      "summary": "**Anthropic** spent the day cleaning house: a blunt **Claude Code** postmortem, a bigger **Managed Agents** architecture reveal, and a new push into self-hosted sandboxes plus private **MCP** tunnels; **Fable** turned into the flashpoint, with builders debating access shutdowns, ID checks, and whether governments are starting to regulate models instead of uses; **Vercel** pushed **HarnessAgent** to break agent lock-in while the podcast circuit kept hammering the same thesis: coding agents are stretching into longer horizons and open-weight economics look shakier; meanwhile **SpaceX** stole the emotional oxygen, pulling awe-struck reactions from half the timeline.\n\n**Anthropic** 今天连发几枪：先把 **Claude Code** 近期变差的锅摊开讲明白，又把 **Managed Agents** 的底层设计掰开了讲，顺手还把自托管沙箱和私有 **MCP** 通道推上台面；另一边 **Fable** 直接炸场，停用、限人、实名门槛这些话题全冒出来了，讨论已经不是产品体验，而是模型到底该不该被管；**Vercel** 也没闲着，扔出 **HarnessAgent** 去拆代理锁定，播客圈则在反复确认一件事：代码代理开始真干长活了，但开源权重这门生意看着越来越悬；至于情绪面，今天基本被 **SpaceX** 一把拿走。",
+      "summary": "**Labs are tightening the screws**: **Anthropic** admits three **Claude Code** regressions and ships a postmortem; managed agents get self-hosted sandboxes and private **MCP** tunnels; builders are suddenly talking about model access, regulation, and ID gates; meanwhile **Vercel** pushes **HarnessAgent** as the new anti-lock-in play.\n\n**气氛明显变了**；**Anthropic** 先把 **Claude Code** 最近掉链子的三处问题摊开讲清，又把托管 Agent 往企业内网里推，沙箱和 **MCP** 通道都给了；另一边不少人开始盯着准入、监管和 Fable 限制，味道一下就不一样了；产品层面也没闲着，**Vercel** 把 **HarnessAgent** 端上来，摆明了要抢 agent 编排这一层。\n\n**Coding agents keep stretching their leash**: long-horizon automation, token-cost backlash, merge-conflict fatigue, benchmark wars, and founders openly saying the real job is now managing agent fleets; even the hot takes feel more operational than theoretical.\n\n**大家聊的也更务实了**；长任务 agent 终于真能跑起来，但账单、上下文、评审瓶颈、合并冲突这些老问题没消失，只是换了个地方爆；有人在吹基准，有人在骂流程，有人已经让 Codex 连跑四天，像是在试探软件生产的下一套默认设置。",
       "itemCount": 20,
       "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-14T07:57:54.350Z",
+      "updatedAt": "2026-06-14T10:31:13.032Z",
       "commit": {
         "sha": "2cefd5ad4ffc1be5277fed07d09a132ab209d397",
         "committedAt": "2026-06-13T07:35:56Z",
