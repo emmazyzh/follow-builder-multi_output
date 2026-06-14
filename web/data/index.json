@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-14T14:51:29.009Z",
+  "updatedAt": "2026-06-14T15:55:25.447Z",
   "latestDate": "2026-06-13",
   "dates": [
     {
       "date": "2026-06-13",
       "title": "AI Builders Daily · 2026-06-13",
-      "summary": "**Anthropic** spent the day explaining itself: Claude Code regressions came from product-layer changes, not the API; Managed Agents kept expanding with cleaner abstractions, self-hosted sandboxes, and private **MCP** access; **builder mood turned jumpy** as posts about **Fable**, ID checks, and model controls dragged regulation and geopolitics straight into the dev timeline; shipping did not slow down, though, with **HarnessAgent**, Codex UX tweaks, benchmark talk, and founders describing agents that now run for days instead of demos for minutes.\n\n**Anthropic** 这波先灭火再推新品：Claude Code 变差不是模型突然塌了，而是产品层几处改动叠出来的；Managed Agents 也没停，接口拆得更干净，还把自托管沙箱和私有 **MCP** 通道放了出来；X 上的气氛就没这么平，**Fable**、身份验证、模型管制混在一起，开发者时间线一股火药味；另一边大家照样猛干，**HarnessAgent**、Codex 小改动、基准测试、还有那种一跑就是几天的 agent 工作流，已经不是演示味了。",
+      "summary": "**Anthropic** spent the day cleaning up its own agent stack; **Managed Agents** got a sharper architecture story plus private sandboxes and **MCP tunnels**; builders on X were split between shipping euphoria, **Fable** access anxiety, and fresh arguments over whether APIs, Git, and even token-maxxing are already aging out.\n\n**Anthropic** 这边像是在连夜补后台：先把 **Claude Code** 质量事故摊开讲清，再把 **Managed Agents** 的底层设计和私有沙箱方案摆上台面；X 上则完全是另一种气氛，有人狂夸 **SpaceX**，有人盯着 **Fable** 限制发火，也有人开始认真怀疑 API、生搬硬套的 Git 流程、还有那股 token 冲榜风，到底还能撑多久。",
       "itemCount": 20,
       "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-14T14:51:29.008Z",
+      "updatedAt": "2026-06-14T15:55:25.446Z",
       "commit": {
         "sha": "2cefd5ad4ffc1be5277fed07d09a132ab209d397",
         "committedAt": "2026-06-13T07:35:56Z",
