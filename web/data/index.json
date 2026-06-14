@@ -1,7 +1,20 @@
 {
-  "updatedAt": "2026-06-13T06:06:02.351Z",
-  "latestDate": "2026-06-12",
+  "updatedAt": "2026-06-14T07:57:54.352Z",
+  "latestDate": "2026-06-13",
   "dates": [
+    {
+      "date": "2026-06-13",
+      "title": "AI Builders Daily · 2026-06-13",
+      "summary": "**Anthropic** spent the day cleaning house: a blunt **Claude Code** postmortem, a bigger **Managed Agents** architecture reveal, and a new push into self-hosted sandboxes plus private **MCP** tunnels; **Fable** turned into the flashpoint, with builders debating access shutdowns, ID checks, and whether governments are starting to regulate models instead of uses; **Vercel** pushed **HarnessAgent** to break agent lock-in while the podcast circuit kept hammering the same thesis: coding agents are stretching into longer horizons and open-weight economics look shakier; meanwhile **SpaceX** stole the emotional oxygen, pulling awe-struck reactions from half the timeline.\n\n**Anthropic** 今天连发几枪：先把 **Claude Code** 近期变差的锅摊开讲明白，又把 **Managed Agents** 的底层设计掰开了讲，顺手还把自托管沙箱和私有 **MCP** 通道推上台面；另一边 **Fable** 直接炸场，停用、限人、实名门槛这些话题全冒出来了，讨论已经不是产品体验，而是模型到底该不该被管；**Vercel** 也没闲着，扔出 **HarnessAgent** 去拆代理锁定，播客圈则在反复确认一件事：代码代理开始真干长活了，但开源权重这门生意看着越来越悬；至于情绪面，今天基本被 **SpaceX** 一把拿走。",
+      "itemCount": 20,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-14T07:57:54.350Z",
+      "commit": {
+        "sha": "2cefd5ad4ffc1be5277fed07d09a132ab209d397",
+        "committedAt": "2026-06-13T07:35:56Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
     {
       "date": "2026-06-12",
       "title": "AI Builders Daily · 2026-06-12",
