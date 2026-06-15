@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-14T15:55:25.447Z",
+  "updatedAt": "2026-06-15T06:48:19.706Z",
   "latestDate": "2026-06-13",
   "dates": [
     {
       "date": "2026-06-13",
       "title": "AI Builders Daily · 2026-06-13",
-      "summary": "**Anthropic** spent the day cleaning up its own agent stack; **Managed Agents** got a sharper architecture story plus private sandboxes and **MCP tunnels**; builders on X were split between shipping euphoria, **Fable** access anxiety, and fresh arguments over whether APIs, Git, and even token-maxxing are already aging out.\n\n**Anthropic** 这边像是在连夜补后台：先把 **Claude Code** 质量事故摊开讲清，再把 **Managed Agents** 的底层设计和私有沙箱方案摆上台面；X 上则完全是另一种气氛，有人狂夸 **SpaceX**，有人盯着 **Fable** 限制发火，也有人开始认真怀疑 API、生搬硬套的 Git 流程、还有那股 token 冲榜风，到底还能撑多久。",
+      "summary": "**Coding agents crossed into real work**; cost, access, and regulation are suddenly the fight, from Fable restrictions to talk of ID-gated frontier models; **Anthropic spent the cycle fixing Claude Code and hardening Managed Agents**; X felt like a live wire: merge-conflict heresy, tokenmaxxing backlash, founder-brand advice, and a lot of people realizing attention is now the real bottleneck.\n\n**能干活的 coding agent 已经不是演示了**；这两天吵得最凶的不是能力上限，而是谁能用、要花多少钱、政府准备管到哪一步；**Anthropic 一边给 Claude Code 擦屁股，一边把 Managed Agents 往企业内网里塞**；X 上也挺真实：有人嫌 Git 这套该退休了，有人拿 Fable 限制开火，还有人直说现在最稀缺的不是模型，是注意力。",
       "itemCount": 20,
       "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-14T15:55:25.446Z",
+      "updatedAt": "2026-06-15T06:48:19.704Z",
       "commit": {
         "sha": "2cefd5ad4ffc1be5277fed07d09a132ab209d397",
         "committedAt": "2026-06-13T07:35:56Z",
