@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-06-15T06:48:19.706Z",
+  "updatedAt": "2026-06-15T06:56:22.615Z",
   "latestDate": "2026-06-13",
   "dates": [
     {
       "date": "2026-06-13",
       "title": "AI Builders Daily · 2026-06-13",
-      "summary": "**Coding agents crossed into real work**; cost, access, and regulation are suddenly the fight, from Fable restrictions to talk of ID-gated frontier models; **Anthropic spent the cycle fixing Claude Code and hardening Managed Agents**; X felt like a live wire: merge-conflict heresy, tokenmaxxing backlash, founder-brand advice, and a lot of people realizing attention is now the real bottleneck.\n\n**能干活的 coding agent 已经不是演示了**；这两天吵得最凶的不是能力上限，而是谁能用、要花多少钱、政府准备管到哪一步；**Anthropic 一边给 Claude Code 擦屁股，一边把 Managed Agents 往企业内网里塞**；X 上也挺真实：有人嫌 Git 这套该退休了，有人拿 Fable 限制开火，还有人直说现在最稀缺的不是模型，是注意力。",
+      "summary": "**Agent infrastructure is getting real**: Anthropic split the “brain” from the “hands,” opened self-hosted sandboxes, and admitted Claude Code quality regressions came from product-layer changes, not the API; **AI policy heat spiked**: builders reacted to Fable access restrictions and the possibility that top models may soon require identity checks; **Code workflow is under attack**: swyx questioned Git itself, Vercel shipped **HarnessAgent**, and more builders described agents moving from autocomplete to full workflow operators; **The vibe was loud and personal**: founders pushed face-first distribution, complained about brutal attention scarcity, and cheered SpaceX as the week’s dominant non-AI flex.\n\n**Agent 基建开始上硬菜了**：Anthropic 把 agent 的“脑子”和“手”拆开，自托管 sandbox 和 MCP tunnel 直接端上来；Claude Code 口碑下滑也查清了，锅在产品层改动，不在 API；**监管味道一下重了**：Fable 访问限制把圈里人炸醒了，连“顶级模型以后要不要实名”都被摆到台面上；**写代码这套老流程也被公开质疑**：swyx 开始怀疑 Git 该不该一起进博物馆，Vercel 发了 **HarnessAgent**，越来越多人已经把 agent 当执行层，不只是补全工具；**这一波内容也很有人味**：有人吐槽注意力战场卷到离谱，有人强调创始人必须亲自出镜，还有一堆人顺手把 **SpaceX** 当成这几天最硬的现实世界参照物。",
       "itemCount": 20,
       "siteUrl": "https://follow-builder-multi-output.pages.dev",
-      "updatedAt": "2026-06-15T06:48:19.704Z",
+      "updatedAt": "2026-06-15T06:56:22.613Z",
       "commit": {
         "sha": "2cefd5ad4ffc1be5277fed07d09a132ab209d397",
         "committedAt": "2026-06-13T07:35:56Z",
