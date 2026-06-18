@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-15T06:56:22.615Z",
-  "latestDate": "2026-06-13",
+  "updatedAt": "2026-06-18T12:04:54.667Z",
+  "latestDate": "2026-06-18",
   "dates": [
+    {
+      "date": "2026-06-18",
+      "title": "AI Builders Daily · 2026-06-18",
+      "summary": "**GitHub says AI code is exploding** with 17M agent PRs in a month and 14B commits on the horizon; **Claude Design** hits paid plans and starts syncing with **Claude Code**, pushing design and shipping closer together; **OpenAI Codex** drops a surprise double reset while **Sam Altman** celebrates Noam joining after a 10-year wait; the sharper argument underneath it all is about taste, workflow depth, and whether AI is building real products or just generating faster noise.\n\n**GitHub 把数字摊开了**：单月 1700 万个 agent PR，14B commit 的年化节奏，代码洪水已经真来了；**Claude Design** 开测，还能和 **Claude Code** 双向联动，设计和交付开始拧在一起；**Codex** 突然送双倍重置，**Sam Altman** 连发两条欢迎 Noam，牌桌上的人还在继续换位；另一边吵得也挺实在：品味怎么练，工作流的护城河到底有没有，AI 做出来的到底是产品，还是一堆勉强能跑的壳子。",
+      "itemCount": 17,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-18T12:04:54.666Z",
+      "commit": {
+        "sha": "22c9450e3425b8be9e2d18d155405ff909aadd6b",
+        "committedAt": "2026-06-18T08:03:03Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-13",
       "title": "AI Builders Daily · 2026-06-13",
