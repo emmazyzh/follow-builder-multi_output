@@ -1,0 +1,589 @@
+{
+  "payload": {
+    "date": "2026-06-23",
+    "title": "AI Builders Daily · 2026-06-23",
+    "summary": "**Security and agent tooling stole the spotlight**; **OpenAI pushed GPT-5.5-Cyber, Codex Security, and Patch The Planet** while builders kept circling one question: how do you actually work with long-horizon coding agents day to day?; **Vercel landed two sharp moves** with Claude Design deployment and WebSocket support; **Box made HTML a first-class artifact** and Aaron Levie argued evals are the real control plane for enterprise AI.; Cursor, Claude Code, and Codex kept showing up in the trenches; the mood was less \"wow, cool demo\" and more \"show me the workflow, the infra math, and the production path.\"\n\n**安全和代码智能体今天最抢戏**；**OpenAI 一口气推了 GPT-5.5-Cyber、Codex Security 和 Patch The Planet**，讨论点也很直接：长时程 coding agent 到底该怎么真用起来；**Vercel 连出两招**，一边把 Claude Design 一键发到线上，一边补上 WebSocket；**Box 把 HTML 当成正式内容来管**，Aaron Levie 也把话挑明了，企业做 AI，最后拼的就是 evals。; Cursor、Claude Code、Codex 这几个名字反复出现；气氛已经不是看 demo 图个新鲜，而是盯着工作流、算力账和能不能上线。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-10T17:27:38.000Z",
+        "sections": [
+          {
+            "headline": "**Anthropic's Mike Krieger says Fable 5 changes the job from prompting to delegation | Anthropic 的 Mike Krieger 说，Fable 5 把工作重心从提示词改成了委派**",
+            "body": "On **AI & I by Every**, **Mike Krieger** describes **Claude Fable 5** as the first model that consistently holds long context, carries work overnight, and recovers when services fail. His main point is not raw intelligence but trust: he now hands the model complex tasks, expects it to scaffold around outages, and reviews the result in the morning.\n\nHe also says the workflow itself has changed. Instead of tiny back and forth prompts, he spends more time on architecture, intent, and planning documents, then runs several long sessions in parallel. The practical shift is stark: one fast, high context assistant for quick loops, and one deeper model for long horizon execution.\n\n在 **AI & I by Every** 这期节目里，**Mike Krieger** 讲得很具体：**Claude Fable 5** 真正拉开的，不只是模型更强，而是它开始能稳稳接住长上下文、整夜跑任务，甚至在外部服务挂掉时自己想办法绕过去。重点不是“聪明”，而是“敢不敢交给它做”。他现在会把复杂任务整段委派出去，第二天早上再回来验收。\n\n他还提到，工作方式已经变了。以前是来回抠 prompt，现在更多时间花在架构、意图和前期规划上，再把任务分给多个长会话并行推进。说白了，就是一边留一个高上下文、反应快的助手处理短回路，一边让更重的模型去啃长任务。",
+            "source_links": [
+              "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer / Writer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T06:42:42.000Z",
+        "sections": [
+          {
+            "headline": "Link drop from **Swyx** | **Swyx** 发了一条链接",
+            "body": "https://t.co/HDDg9fFDK6\n\nhttps://t.co/HDDg9fFDK6",
+            "source_links": [
+              "https://x.com/swyx/status/2069310157864194066"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/HDDg9fFDK6",
+                "resolvedUrl": "https://www.latent.space/p/ainews-spacex-is-already-a-28byr"
+              }
+            ]
+          },
+          {
+            "headline": "**Swyx** argues the model-lab-plus-neocloud combo is the real compute power play | **Swyx** 认为，模型实验室加新云的组合，才是现在最狠的算力打法",
+            "body": "i dont think anyone is correctly doing the math around how SpaceX, the NeoCloud+NeoLab, is currently going to market?\n\nSpaceX has already recouped about HALF its investment in Cursor, in compute deals. The other half is  paid for if Composer 3 does well. \n\nNo other company is simultaneously a leading model lab + neocloud (at least where GPUs is concerned). its a crazy effective combo iff you've adequately planned out gpu supply if inhouse training 1) goes very well 2) doesn't go very well\n\n我觉得现在还没人真正把账算明白：SpaceX 这个 NeoCloud+NeoLab 的组合，到底是怎么在市场上打的？\n\nSpaceX 光靠算力交易，已经收回了投给 Cursor 的大概一半资金。另一半如果 Composer 3 表现不错，也能回本。\n\n现在没有别的公司能同时做到头部模型实验室 + 新云服务商，至少在 GPU 这件事上没有。这种组合的效率高得离谱，前提是你真的把 GPU 供给规划好了，不管自研训练 1）进展特别顺，还是 2）进展没那么顺。",
+            "source_links": [
+              "https://x.com/swyx/status/2069301071965741388"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T03:52:44.000Z",
+        "sections": [
+          {
+            "headline": "Late-night **Codex** roll call | 深夜 **Codex** 开工帖",
+            "body": "What are we codexing tonight\n\n今晚我们准备用 Codex 搞点什么",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2069267387464274366"
+            ]
+          },
+          {
+            "headline": "Link drop from **Thibault Sottiaux** | **Thibault Sottiaux** 发了一条链接",
+            "body": "https://t.co/aEkhh523n3\n\nhttps://t.co/aEkhh523n3",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2069152499416928256"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLcbOvTasAAJww2.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2069152499416928256/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/aEkhh523n3",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2069152499416928256/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLcbOvTasAAJww2.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "**OpenAI** pushes **Codex** security updates and **GPT-5.5-Cyber** | **OpenAI** 推出 **Codex** 安全更新和 **GPT-5.5-Cyber**",
+            "body": "Let's Patch The Planet. Updates to codex security and a new GPT-5.5-Cyber. A day of celebration for cyber defense acceleration.\n\nhttps://t.co/SYKQvsTA44\n\n一起给地球打补丁。Codex 安全更新来了，还有新的 GPT-5.5-Cyber。这一天属于网络防御加速。\n\nhttps://t.co/SYKQvsTA44",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2069152290326630518"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/SYKQvsTA44",
+                "resolvedUrl": "https://openai.com/index/daybreak-securing-the-world/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Creator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T04:41:21.000Z",
+        "sections": [
+          {
+            "headline": "**Peter Yang** calls out ragebait clips about parenting and work | **Peter Yang** 点名批评拿育儿和工作做文章的 ragebait 切片",
+            "body": "Ok I've fallen for the ragebaiting and have been triggered by this so I'm going to say this: \n\nWhether intentional or not, there's a lot of virality that comes from:\n\n1. Pick the most ragebait moment of the conversation\n2. Make a clip of that exact moment\n3. Get tons of retweets and views\n\nI can tell it's rage baiting (just like the Corgi founder clip) but here's the thing - if even one parent watches this clip and decides to neglect their kids more then the damage is done.\n\nAnd yes it's hard to work at home when your kid comes back at 3 pm (or 1 pm with summer camp!) but we all make our choices.\n\n行吧，我还是被这种 ragebait 钓到了，也确实被激到了，所以我得说一句：\n\n不管是不是故意的，很多传播就是这么来的：\n\n1. 挑对话里最容易惹火的那一刻\n2. 单独把那一段剪出来\n3. 拿到一堆转发和播放\n\n我看得出这就是在钓情绪（跟那个 Corgi 创始人的片段一个路数），但问题在这儿：哪怕只有一个家长看了这个片段之后，决定更少管自己的孩子，那伤害就已经发生了。\n\n没错，孩子下午 3 点回家（或者夏令营 1 点就结束）的时候，在家工作确实很难。但选择还是每个人自己做。",
+            "source_links": [
+              "https://x.com/petergyang/status/2069279618969075819"
+            ]
+          },
+          {
+            "headline": "**Peter Yang** says **Claude Code** docs still don't make dynamic workflows click | **Peter Yang** 说 **Claude Code** 的 dynamic workflow 还是没讲明白",
+            "body": "I'm reading this and I still don't get what a dynamic workflow is or when to use it in Claude Code \n\nhttps://t.co/2dlfB1Qof3 https://t.co/PESTVQfSQ1\n\n我在看这个，但我还是没明白 dynamic workflow 到底是什么，或者什么时候该在 Claude Code 里用它。\n\nhttps://t.co/2dlfB1Qof3 https://t.co/PESTVQfSQ1",
+            "source_links": [
+              "https://x.com/petergyang/status/2069267139576693028"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLeDdD5aIAAfi8A.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2069267139576693028/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/2dlfB1Qof3",
+                "resolvedUrl": "https://code.claude.com/docs/en/workflows#when-to-use-a-workflow"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/PESTVQfSQ1",
+                "resolvedUrl": "https://x.com/petergyang/status/2069267139576693028/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLeDdD5aIAAfi8A.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "**Peter Yang** wants a **Codex / Claude Code** game-building podcast guest | **Peter Yang** 想找会用 **Codex / Claude Code** 做游戏的人来录播客",
+            "body": "I want to do a podcast episode with someone who's good at using Codex / Claude Code to create fun pixel or threejs games and can show us how to do it.\n\nI am a gamer at heart! Who's the best person to talk to?\n\n我想录一期播客，找一个真正擅长用 Codex / Claude Code 做有意思的像素游戏或 threejs 游戏的人，能现场给大家演示怎么做。\n\n我骨子里还是个玩家！最适合聊这件事的人是谁？",
+            "source_links": [
+              "https://x.com/petergyang/status/2069118077313425840"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T00:33:04.000Z",
+        "sections": [
+          {
+            "headline": "**Amjad Masad** posts a blunt resilience note | **Amjad Masad** 扔下一句很直白的打气话",
+            "body": "Never quit https://t.co/INdRImOBUI\n\n永远别放弃 https://t.co/INdRImOBUI",
+            "source_links": [
+              "https://x.com/amasad/status/2069217138775388603"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/INdRImOBUI",
+                "resolvedUrl": "https://t.co/INdRImOBUI"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T00:41:13.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Design** can now ship to **Vercel** in one click | **Claude Design** 现在可以一键发到 **Vercel**",
+            "body": "Claude Design → Vercel, in one click https://t.co/Btq9hFk7OB https://t.co/NpgdokzpvE\n\nClaude Design → Vercel，现在一键就能发 https://t.co/Btq9hFk7OB https://t.co/NpgdokzpvE",
+            "source_links": [
+              "https://x.com/rauchg/status/2069219190834127276"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLdXD2qboAAFH1a.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2069219190834127276/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/Btq9hFk7OB",
+                "resolvedUrl": "https://x.com/rauchg/status/2069219190834127276/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLdXD2qboAAFH1a.jpg"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/NpgdokzpvE",
+                "resolvedUrl": "https://t.co/NpgdokzpvE"
+              }
+            ]
+          },
+          {
+            "headline": "**Vercel** adds **WebSocket** and **socket.io** support across CDN to Fluid | **Vercel** 补上了从 CDN 到 Fluid 的 **WebSocket** 和 **socket.io** 支持",
+            "body": "𝚆𝚎𝚋𝚂𝚘𝚌𝚔𝚎𝚝 (and 𝚜𝚘𝚌𝚔𝚎𝚝.𝚒𝚘) now supported on Vercel, from CDN to Fluid.\n\nSpecial full circle moment for @vercel https://t.co/a4ltxacug5\n\nVercel 现在支持 𝚆𝚎𝚋𝚂𝚘𝚌𝚔𝚎𝚝（以及 𝚜𝚘𝚌𝚔𝚎𝚝.𝚒𝚘）了，从 CDN 到 Fluid 都能跑。\n\n这对 @vercel 来说，是个很有闭环感的时刻 https://t.co/a4ltxacug5",
+            "source_links": [
+              "https://x.com/rauchg/status/2069109057433035171"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/a4ltxacug5",
+                "resolvedUrl": "https://t.co/a4ltxacug5"
+              }
+            ]
+          },
+          {
+            "headline": "Quick morning post from **Guillermo Rauch** | **Guillermo Rauch** 发了句早安",
+            "body": "gm https://t.co/cgg5e13mEy\n\n早啊 https://t.co/cgg5e13mEy",
+            "source_links": [
+              "https://x.com/rauchg/status/2069103803727556689"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLbu72sWEAESXdk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2069103803727556689/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/cgg5e13mEy",
+                "resolvedUrl": "https://x.com/rauchg/status/2069103803727556689/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLbu72sWEAESXdk.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T01:17:34.000Z",
+        "sections": [
+          {
+            "headline": "**Aaron Levie** says enterprise AI success comes down to evals | **Aaron Levie** 直说企业 AI 最后拼的就是 evals",
+            "body": "Almost all AI model and agent progress is downstream from evals. Open weights post training for specific domains comes down to evals. Agent improvements in the applied AI layer is all about evals. Agentic enterprise deployments that actually can augment work is all about evals. It’s all evals.\n\nThis will become a core competency of any enterprise in the future. The companies that are able to best understand their own (and/or customers) workflows and how well agents participate in that work will be in the best position to actually drive real automation.\n\n几乎所有 AI 模型和 agent 的进步，往下拆，最后都落在 evals 上。特定领域的开源权重后训练，关键是 evals。应用层的 agent 提升，关键是 evals。真正能增强工作的企业级 agent 部署，关键还是 evals。归根到底，全是 evals。\n\n这以后会变成任何企业的核心能力。谁最懂自己（以及/或者客户）的工作流，最清楚 agent 在这些流程里到底做得怎么样，谁就最有机会真正把自动化做出来。",
+            "source_links": [
+              "https://x.com/levie/status/2069228335255949775"
+            ]
+          },
+          {
+            "headline": "**Box** turns HTML into a managed, shareable artifact | **Box** 让 HTML 重新变成可管理、可分享的正式内容",
+            "body": "We heard that HTML is a big deal again. You can now preview, edit, manage versions, and securely share any HTML based content on Box. Great for being able to work with any agent produced content immediately. https://t.co/Rgo2TO6RIg\n\n我们听说 HTML 又变重要了。现在你可以直接在 Box 里预览、编辑、管理版本，并安全分享任何基于 HTML 的内容。这样一来，各种 agent 生成的内容也能马上接着处理。https://t.co/Rgo2TO6RIg",
+            "source_links": [
+              "https://x.com/levie/status/2069140445205348432"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/Rgo2TO6RIg",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069138629751185408/img/8C1kV3k_XircVn9c.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2069140445205348432/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/Rgo2TO6RIg",
+                "resolvedUrl": "https://x.com/levie/status/2069140445205348432/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2069138629751185408/img/8C1kV3k_XircVn9c.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T00:38:54.000Z",
+        "sections": [
+          {
+            "headline": "**Ryo Lu** shares the YouTube version of his **Cursor Compile** talk | **Ryo Lu** 放出了他在 **Cursor Compile** 演讲的 YouTube 版",
+            "body": "watch on youtube:\nhttps://t.co/2EXXS1YKZk\n\nYouTube 观看：\nhttps://t.co/2EXXS1YKZk",
+            "source_links": [
+              "https://x.com/ryolu_/status/2069218604449771989"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/2EXXS1YKZk",
+                "resolvedUrl": "https://youtu.be/az6OEZV8iHw"
+              }
+            ]
+          },
+          {
+            "headline": "**Ryo Lu** reflects on what changes and what doesn't in the AI era | **Ryo Lu** 聊了 AI 时代里哪些变了，哪些没变",
+            "body": "here's my talk at Cursor Compile\nsome thoughts on how we build in the age of AI\nand what doesn't change https://t.co/otMw3nwPkr\n\n这是我在 Cursor Compile 的演讲。\n讲了些我对 AI 时代如何做产品、以及哪些东西其实没变的想法 https://t.co/otMw3nwPkr",
+            "source_links": [
+              "https://x.com/ryolu_/status/2069218497272717661"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/otMw3nwPkr",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069217629999652864/img/UhlSQY6LaBrEzmG4.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/ryolu_/status/2069218497272717661/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/otMw3nwPkr",
+                "resolvedUrl": "https://x.com/ryolu_/status/2069218497272717661/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2069217629999652864/img/UhlSQY6LaBrEzmG4.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T07:07:52.000Z",
+        "sections": [
+          {
+            "headline": "**Garry Tan** shouts out **Ben Davis** and **Illuminate** | **Garry Tan** 点名夸了 **Ben Davis** 和 **Illuminate**",
+            "body": "Ben Davis of Illuminate is an SF treasure https://t.co/dGeztCBIGY\n\nIlluminate 的 Ben Davis 是旧金山的宝藏人物 https://t.co/dGeztCBIGY",
+            "source_links": [
+              "https://x.com/garrytan/status/2069316493259706583"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLewU69bkAEEY-B.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2069316493259706583/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/dGeztCBIGY",
+                "resolvedUrl": "https://x.com/garrytan/status/2069316493259706583/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLewU69bkAEEY-B.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "**Garry Tan** urges people to catch **7x7** at SF City Hall before July 4 | **Garry Tan** 叫大家在 7 月 4 日前去 SF City Hall 看 **7x7**",
+            "body": "If you haven’t seen 7x7 at SF City Hall it is a sight to behold. Go see it before it goes away July 4th https://t.co/76Lvq32YED\n\n如果你还没去 SF City Hall 看过 7x7，那真该去一趟。它很值得看，7 月 4 日撤展前去看看 https://t.co/76Lvq32YED",
+            "source_links": [
+              "https://x.com/garrytan/status/2069298247055925475"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/76Lvq32YED",
+                "resolvedUrl": "https://t.co/76Lvq32YED"
+              }
+            ]
+          },
+          {
+            "headline": "**Garry Tan** attacks California's proposed asset seizure tax | **Garry Tan** 猛批加州拟议中的资产没收税",
+            "body": "The California asset seizure tax is only going to impoverish the state and reduce funding for health care\n\nThe SEIU UHW union doesn’t care if quality of care or even the state’s ability to care for its people goes away\n\nThere is only pure self interest there https://t.co/KI3PnPkvV3\n\n加州这个资产没收税，只会让这个州更穷，也会减少医疗资金。\n\nSEIU UHW 工会根本不在乎医疗质量会不会下滑，甚至不在乎这个州照顾居民的能力会不会被削弱。\n\n这里面只有赤裸裸的自身利益 https://t.co/KI3PnPkvV3",
+            "source_links": [
+              "https://x.com/garrytan/status/2069234760615096344"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/KI3PnPkvV3",
+                "resolvedUrl": "https://t.co/KI3PnPkvV3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T19:03:57.000Z",
+        "sections": [
+          {
+            "headline": "**Matt Turck** says the commentator upgraded Messi's nickname again | **Matt Turck** 吐槽解说又给 Messi 换了个新外号",
+            "body": "Update: he now just called him \"the little maestro\" and \"little Leo\"\n\n更新：他刚刚又叫他 \"the little maestro\"，还叫他 \"little Leo\"",
+            "source_links": [
+              "https://x.com/mattturck/status/2069134312239219000"
+            ]
+          },
+          {
+            "headline": "**Matt Turck** mocks the way commentators talk about Messi | **Matt Turck** 吐槽解说员形容 Messi 的方式",
+            "body": "You can be Messi, the best footballer ever, and some rando commentator on Fox will still call you \"the little magic man\"\n\n你哪怕是 Messi，史上最强足球运动员，Fox 上某个路人解说还是会叫你 \"the little magic man\"",
+            "source_links": [
+              "https://x.com/mattturck/status/2069133752727445551"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder / Educator",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T06:48:21.000Z",
+        "sections": [
+          {
+            "headline": "**Zara Zhang** shares the YouTube link for her Frontend Slides walkthrough | **Zara Zhang** 放出了她的 Frontend Slides 教程视频",
+            "body": "Watch on YouTube: https://t.co/FVBCFHXAqK\n\nYouTube 观看： https://t.co/FVBCFHXAqK",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2069311581985665385"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/FVBCFHXAqK",
+                "resolvedUrl": "https://www.youtube.com/watch?v=372Iksaz8b0"
+              }
+            ]
+          },
+          {
+            "headline": "**Zara Zhang** publishes a full walkthrough of her **Frontend Slides** skill | **Zara Zhang** 做了一期完整的 **Frontend Slides** skill 讲解",
+            "body": "I created a complete walkthrough of my Frontend Slides skill (22k+ stars on GitHub):\n- Complete demo of how to create beautiful HTML slides with Claude Code (beginner friendly)\n- How I created the skill\n- How you can create your own skill\n- Tips like how to insert images/videos into deck, how to publish\n- Lessons I learned\n(11-min video, YouTube link below)\n\n我做了一期完整 walkthrough，讲我的 Frontend Slides skill（GitHub 22k+ stars）：\n- 完整演示怎么用 Claude Code 做好看的 HTML 幻灯片（对新手也友好）\n- 我是怎么做出这个 skill 的\n- 你怎么自己做一个 skill\n- 一些实用细节，比如怎么往 deck 里插图片/视频、怎么发布\n- 我踩过的坑和学到的东西\n（11 分钟视频，YouTube 链接在下面）",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2069311440692072481"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T14:50:52.000Z",
+        "sections": [
+          {
+            "headline": "**Nikunj Kothari** says **Diljit Dosanjh** puts on another level of live show | **Nikunj Kothari** 说 **Diljit Dosanjh** 的现场就是另一个级别",
+            "body": "I have been to many concerts but man no one knows how to put on a show like @diljitdosanjh.. \n\n2 hours of nonstop singing and dancing 🕺 https://t.co/wnGpTmQBNV\n\n我看过很多演唱会，但真要说会做现场，还是没人比得上 @diljitdosanjh..\n\n整整 2 个小时不停唱不停跳 🕺 https://t.co/wnGpTmQBNV",
+            "source_links": [
+              "https://x.com/nikunj/status/2069070621183758369"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/wnGpTmQBNV",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069070548165083137/img/ML7vDq-IwD9ca2b3.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2069070621183758369/video/1"
+              },
+              {
+                "shortUrl": "https://t.co/wnGpTmQBNV",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069070548152582144/img/RRQy83WRxV03vtCY.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2069070621183758369/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/wnGpTmQBNV",
+                "resolvedUrl": "https://x.com/nikunj/status/2069070621183758369/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2069070548152582144/img/RRQy83WRxV03vtCY.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenAI / OpenClaw",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-23T03:02:52.000Z",
+        "sections": [
+          {
+            "headline": "**Peter Steinberger** says he feels the same way about shared offices | **Peter Steinberger** 说自己对共享办公也有同感",
+            "body": "I feel the same about shared office spaces. https://t.co/uUI0iIXlzr\n\n我对共享办公空间也是同样的感觉。 https://t.co/uUI0iIXlzr",
+            "source_links": [
+              "https://x.com/steipete/status/2069254835686576316"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/uUI0iIXlzr",
+                "resolvedUrl": "https://t.co/uUI0iIXlzr"
+              }
+            ]
+          },
+          {
+            "headline": "**Peter Steinberger** boosts **Patch the Planet** | **Peter Steinberger** 转发支持 **Patch the Planet**",
+            "body": "Patch the Planet. https://t.co/3VK1ikQ0Im\n\n给地球打补丁。 https://t.co/3VK1ikQ0Im",
+            "source_links": [
+              "https://x.com/steipete/status/2069132838356840857"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/3VK1ikQ0Im",
+                "resolvedUrl": "https://t.co/3VK1ikQ0Im"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T18:12:29.000Z",
+        "sections": [
+          {
+            "headline": "**Sam Altman** pitches **GPT-5.5-Cyber**, **Patch The Planet**, and **Codex Security** as a security push | **Sam Altman** 把 **GPT-5.5-Cyber**、**Patch The Planet** 和 **Codex Security** 打成一整套安全攻势",
+            "body": "We want to help all companies be secure, working with the USG and the security ecosystem.\n\n*The full version of GPT-5.5-Cyber is here; state of the art performance on CyberGym.\n\n*Patch The Planet and Codex Security will help solve security problems instead of just finding them. https://t.co/otyCFHJR4d\n\n我们想帮助所有公司把安全这件事做好，也会和美国政府以及整个安全生态一起推进。\n\n*GPT-5.5-Cyber 的完整版本来了；在 CyberGym 上做到最强表现。\n\n*Patch The Planet 和 Codex Security 的目标，不只是发现安全问题，而是帮你把问题解决掉。 https://t.co/otyCFHJR4d",
+            "source_links": [
+              "https://x.com/sama/status/2069121360744550796"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLb-oXnagAEXv7z.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/sama/status/2069121360744550796/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/otyCFHJR4d",
+                "resolvedUrl": "https://x.com/sama/status/2069121360744550796/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLb-oXnagAEXv7z.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-23",
+    "updatedAt": "2026-06-23T12:05:26.428Z",
+    "commit": {
+      "sha": "b2976a97178264ea2acd731e664e1cb12a72fb61",
+      "committedAt": "2026-06-23T07:33:26Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-23T12:00:14.816Z",
+    "feedGeneratedAt": "2026-06-23T07:33:17.525Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

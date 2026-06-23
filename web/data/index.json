@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-18T12:04:54.667Z",
-  "latestDate": "2026-06-18",
+  "updatedAt": "2026-06-23T12:05:26.435Z",
+  "latestDate": "2026-06-23",
   "dates": [
+    {
+      "date": "2026-06-23",
+      "title": "AI Builders Daily · 2026-06-23",
+      "summary": "**Security and agent tooling stole the spotlight**; **OpenAI pushed GPT-5.5-Cyber, Codex Security, and Patch The Planet** while builders kept circling one question: how do you actually work with long-horizon coding agents day to day?; **Vercel landed two sharp moves** with Claude Design deployment and WebSocket support; **Box made HTML a first-class artifact** and Aaron Levie argued evals are the real control plane for enterprise AI.; Cursor, Claude Code, and Codex kept showing up in the trenches; the mood was less \"wow, cool demo\" and more \"show me the workflow, the infra math, and the production path.\"\n\n**安全和代码智能体今天最抢戏**；**OpenAI 一口气推了 GPT-5.5-Cyber、Codex Security 和 Patch The Planet**，讨论点也很直接：长时程 coding agent 到底该怎么真用起来；**Vercel 连出两招**，一边把 Claude Design 一键发到线上，一边补上 WebSocket；**Box 把 HTML 当成正式内容来管**，Aaron Levie 也把话挑明了，企业做 AI，最后拼的就是 evals。; Cursor、Claude Code、Codex 这几个名字反复出现；气氛已经不是看 demo 图个新鲜，而是盯着工作流、算力账和能不能上线。",
+      "itemCount": 14,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-23T12:05:26.433Z",
+      "commit": {
+        "sha": "b2976a97178264ea2acd731e664e1cb12a72fb61",
+        "committedAt": "2026-06-23T07:33:26Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-18",
       "title": "AI Builders Daily · 2026-06-18",
