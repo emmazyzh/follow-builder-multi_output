@@ -1,0 +1,926 @@
+{
+  "payload": {
+    "date": "2026-06-17",
+    "title": "AI Builders Daily · 2026-06-17",
+    "summary": "**Codex** turbulence flipped to expansion in a day, with Europe rollout and rate-limit resets; **Cursor** kept sucking up the oxygen as operators argued the real asset is the agent harness, GTM, and the first real applied-AI mega-win; **Anthropic** plugged **Claude** into Apple’s **Foundation Models** stack while **Vercel** pushed 24-hour sandboxes and longer function runs.\n\n**Codex** 这边先是容量报错，转头又在欧洲放功能、调额度，节奏很急； **Cursor** 继续霸屏，大家盯着的不只是交易本身，而是那套 agent harness、分发能力，还有应用层第一次真正跑出大结果的模板； **Anthropic** 把 **Claude** 接进 Apple 的 **Foundation Models**，另一边 **Vercel** 直接把沙箱寿命和函数时长一起往上抬。",
+    "items": [
+      {
+        "person_name": "Training Data",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=lfhFmwcESRw",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-16T09:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Simile** says human simulation is finally within reach, but current models still miss real people / **Simile** 认为人类社会模拟终于摸到门槛，但现有模型离真实人性还差一截",
+            "body": "**Joon Sung Park** frames **Simile** around a big bet: LLMs have become good enough to simulate micro-behaviors, memories, and routines at the level needed for social experiments. He revisits **Smallville**, the 25-agent Stanford town where characters planned parties, forgot invitations, and formed relationships, then traces the line back to **Social Simulacra**, an earlier attempt to simulate entire online communities.\n\nThe sharper point is that frontier models are not automatically the best human simulators. Park argues today’s labs mostly optimize for rational super-problem-solvers, while actual people are messy, subjective, and inconsistent. His pitch for **Simile** is to turn that gap into product: a way to test communities, platforms, and policy choices before they hit the real world.\n\n**Joon Sung Park** 讲得很直接，**Simile** 赌的是另一条线：LLM 现在已经能撑起不少微观行为、记忆和日常决策，可以拿来做社会模拟。他回头讲了 **Smallville**，那个在斯坦福做的 25 个 agent 小镇，里面的人会办派对、忘记邀请、谈关系；再往前，则是更早的 **Social Simulacra**，试着把整套线上社区先在模拟器里跑一遍。\n\n更有意思的是他的判断：前沿模型越强，不代表越会“像人”。Park 觉得现在大厂主要在冲理性、解题型的超级模型，但真实的人并不是那套逻辑，很多时候就是主观、拧巴、会跑偏。**Simile** 想做的，就是把这段落差变成工具，让社区设计、平台机制、产品决策先在模拟里挨打，再去碰真实世界。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=lfhFmwcESRw"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog/claude-for-foundation-models",
+        "source_label": "Blog",
+        "posted_at": "2026-06-08",
+        "sections": [
+          {
+            "headline": "**Claude** plugs into Apple’s **Foundation Models** stack for heavier reasoning, code, and web tasks / **Claude** 接入 Apple **Foundation Models**，专门接更重的推理、代码和联网任务",
+            "body": "**Anthropic** says Apple developers will be able to call **Claude** through a new Swift package built for Apple’s **Foundation Models** framework. The pitch is straightforward: let Apple’s on-device models handle fast local work such as summarization or extraction, then hand off to **Claude** when the app needs multi-step reasoning, code generation, tool use, or structured responses.\n\nThe interesting product move is the split stack. Apple’s framework can already return typed Swift values, so developers arrive at the **Claude** call with cleaner inputs instead of raw chat text. **Anthropic** is positioning **Claude** as the cloud-side brain for more demanding workflows across **iOS 27**, **iPadOS 27**, **macOS 27**, **visionOS 27**, and **watchOS 27**.\n\n**Anthropic** 这次不是单独发一个 SDK 了，而是把 **Claude** 塞进 Apple 的 **Foundation Models** 框架里。思路很清楚：本地的小活，比如摘要、抽取，先让 Apple 设备上的模型干；碰到多步推理、写代码、调工具、要结构化输出这种更重的请求，再切给 **Claude**。\n\n更实在的点在于这套分工。Apple 那边先把输入整理成 typed Swift values，到了 **Claude** 这里，不用再硬吃一坨原始用户文本。**Anthropic** 等于是在说，Apple 负责端上的顺手体验，**Claude** 负责更难的脑力活，覆盖 **iOS 27**、**iPadOS 27**、**macOS 27**、**visionOS 27** 和 **watchOS 27**。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer Host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-17T01:32:02.000Z",
+        "sections": [
+          {
+            "headline": "**Swyx** says **WorkOS** content is landing hard with the AI engineer crowd / **Swyx** 说 **WorkOS** 的内容在 AI 工程师圈子里很吃得开",
+            "body": "@WorkOS @mattpocockuk @zackproser also doing great. AIE audience LOVES the workos content, they are doing something right https://t.co/nLZTQyAk1i\n\n@WorkOS @mattpocockuk @zackproser 也做得很不错。AIE 的受众很喜欢 WorkOS 的内容，他们显然有些地方做对了 https://t.co/nLZTQyAk1i",
+            "source_links": [
+              "https://x.com/swyx/status/2067057648617538037"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK-p6wBbUAA019O.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2067057648617538037/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nLZTQyAk1i",
+                "resolvedUrl": "https://x.com/swyx/status/2067057648617538037/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK-p6wBbUAA019O.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Swyx** points people to the full **Cursor** info link / **Swyx** 贴出 **Cursor** 的完整信息链接",
+            "body": "@TomasReimers @cursor_ai full info https://t.co/R8Mp5Iemfn\n\n@TomasReimers @cursor_ai 完整信息在这里 https://t.co/R8Mp5Iemfn",
+            "source_links": [
+              "https://x.com/swyx/status/2067023688906822020"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/R8Mp5Iemfn",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2067012220832329782?s=20"
+              }
+            ]
+          },
+          {
+            "headline": "**Swyx** calls it a **GitHub** competitor / **Swyx** 直接说这是个 **GitHub** 竞品",
+            "body": "@TomasReimers @cursor_ai *github competitor fml\n\n@TomasReimers @cursor_ai *GitHub 竞品，服了",
+            "source_links": [
+              "https://x.com/swyx/status/2066937943139479618"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X",
+        "posted_at": "2026-06-16T23:25:41.000Z",
+        "sections": [
+          {
+            "headline": "**Google** expands its AI Futures Fund to Brazil with the **Gama Fund** / **Google** 把 AI Futures Fund 扩到巴西，联手推出 **Gama Fund**",
+            "body": "🇧🇷World-changing AI companies are coming from Brazil.\n\nThat’s why we’ve officially expanded our Google AI Futures Fund to Brazil, partnering with venture capital leader Monashees to launch the Gama Fund.\n\nWe’re looking for an elite cohort of deep tech founders and will offer:\n\n- Early access to Google DeepMind models\n- Up to $2M in co-investment\n- $350k in Google Cloud & Gemini credits\n- Direct co-development with Google engineers at our new IPT Open campus hub\n\nApply today: https://t.co/8sv9seJLdB\n\n🇧🇷正在改变世界的 AI 公司会从巴西冒出来。\n\n所以我们正式把 Google AI Futures Fund 扩展到巴西，并与头部风投 Monashees 合作推出 Gama Fund。\n\n我们正在寻找一批顶尖的 deep tech 创始人，并提供：\n\n- 提前使用 Google DeepMind 模型\n- 最多 200 万美元联合投资\n- 35 万美元 Google Cloud 和 Gemini 额度\n- 在新的 IPT Open campus hub 与 Google 工程师直接联合开发\n\n现在就申请： https://t.co/8sv9seJLdB",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2067025851829330076"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK-MvY0W8AAA3_4.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/joshwoodward/status/2067025851829330076/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/8sv9seJLdB",
+                "resolvedUrl": "https://gamafund.com/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-17T01:58:47.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** rolls out new features across Europe / **Codex** 开始在欧洲铺开新功能",
+            "body": "Bim bada boum. I am in France for the week and we are rolling out all the most exciting Codex features across Europe. Coincidence or did the team think I wasn't able to be productive otherwise? https://t.co/LilIl4XkJF\n\nBim bada boum。我这周人在法国，而我们正把最让人兴奋的 Codex 新功能陆续推向整个欧洲。这是巧合，还是团队觉得不这样我就没法高效干活？ https://t.co/LilIl4XkJF",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2067064381855187231"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/OpenAIDevs/status/2066916479438930166",
+                "resolvedUrl": "https://x.com/OpenAIDevs/status/2066916479438930166",
+                "authorName": "OpenAI Developers",
+                "authorHandle": "OpenAIDevs",
+                "authorUrl": "https://x.com/OpenAIDevs",
+                "text": "More of Codex is rolling out across Europe this week.\n\nWe’re bringing Computer use, the Codex Chrome extension, personalized memory, and Chronicle to Codex users in the EEA, UK, and Switzerland.\n\nhttps://developers.openai.com/codex/changelog/#codex-2026-06-16-app",
+                "displayDate": "Jun 16",
+                "provider": "X",
+                "media": [],
+                "textZh": "更多 Codex 功能将于本周在欧洲陆续上线。 我们将为 EEA、英国和瑞士的 Codex 用户带来 Computer use、Codex Chrome extension、personalized memory 和 Chronicle。 https://developers.openai.com/codex/changelog/#codex-2026-06-16-app"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/LilIl4XkJF",
+                "resolvedUrl": "https://x.com/openaidevs/status/2066916479438930166"
+              }
+            ]
+          },
+          {
+            "headline": "**Codex** says rate-limit resets are coming within 24 hours / **Codex** 表示 24 小时内会重置各档位限额",
+            "body": "This was fixed. You know what's coming 👀\n\nGive us 24 hours to reset the Codex rate limits across all plans. https://t.co/vx3Jb7YT6K\n\n这个已经修好了。你们知道接下来要来了 👀\n\n给我们 24 小时，把 Codex 各个套餐的速率限制重新调一遍。 https://t.co/vx3Jb7YT6K",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2066956441173323943"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/vx3Jb7YT6K",
+                "resolvedUrl": "https://twitter.com/thsottiaux/status/2066865154902380796"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** acknowledges elevated capacity errors / **Codex** 承认出现高比例容量错误",
+            "body": "Oy. We are aware that some Codex users are experiencing high error rates with \"model at capacity\" and are working to bring things back to being stable.\n\nhttps://t.co/R3dCKGGtQw\n\n哎。我们已经注意到，一些 Codex 用户正在遇到较高比例的 \"model at capacity\" 错误，我们正在处理，争取尽快恢复稳定。\n\nhttps://t.co/R3dCKGGtQw",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2066865154902380796"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/R3dCKGGtQw",
+                "resolvedUrl": "https://status.openai.com/"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-17T01:29:22.000Z",
+        "sections": [
+          {
+            "headline": "**Peter Yang** teases a **Codex** and **Claude Code** advisor tutorial / **Peter Yang** 预告一篇把 **Codex** 和 **Claude Code** 变成个人顾问的教程",
+            "body": "Publishing a new tutorial to make Codex or Claude Code your personal advisor using a skill with 4 files. Plus, I managed to save Fable's advice too before it got restricted 🥲\n\n📌 Subscribe to get the tutorial tmr: https://t.co/MbOfeFUJbn https://t.co/bYW7tP4v0l\n\n我会发一个新教程，用 4 个文件做成一个 skill，把 Codex 或 Claude Code 变成你的个人顾问。另外，我也赶在 Fable 的建议内容被限制前把它保存下来了 🥲\n\n📌 订阅后明天就能拿到教程： https://t.co/MbOfeFUJbn https://t.co/bYW7tP4v0l",
+            "source_links": [
+              "https://x.com/petergyang/status/2067056979974160749"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/petergyang/status/2065446074228290007",
+                "resolvedUrl": "https://x.com/petergyang/status/2065446074228290007",
+                "authorName": "Peter Yang",
+                "authorHandle": "petergyang",
+                "authorUrl": "https://x.com/petergyang",
+                "text": "For me, the best use case for Fable isn't coding.\n\nIt’s giving it a ton of context about my business and life, then asking:\n\n→ What opportunities am I missing?\n→ What should I stop doing?\n→ Where am I lying to myself?\n\nHaving a sharper second brain for business strategy has",
+                "displayDate": "Jun 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "对我来说，Fable 最好的用法不是写代码。 而是先把我业务和生活中的大量背景信息都给它，然后问： → 我错过了哪些机会？ → 我该停止做什么？ → 我在哪些地方在自欺欺人？ 有一个更敏锐的第二大脑来做商业战略，已经"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/MbOfeFUJbn",
+                "resolvedUrl": "https://www.youtube.com/@PeterYangYT?subscribe"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/bYW7tP4v0l",
+                "resolvedUrl": "https://x.com/petergyang/status/2065446074228290007"
+              }
+            ]
+          },
+          {
+            "headline": "**Peter Yang** takes a shot at a CEO-driven product decision / **Peter Yang** 吐槽这是没人敢对 CEO 说不的典型结果",
+            "body": "Honestly I don't want to be a hater but I feel like this is what happens when nobody internally wants to tell the CEO no. \n\nMaybe this thing will blow our socks off? https://t.co/PRD3LeNy03\n\n说真的，我也不想当那个泼冷水的人，但我觉得这就是公司里没人愿意对 CEO 说不时会发生的事。\n\n当然，也许这东西最后会把我们都震住？ https://t.co/PRD3LeNy03",
+            "source_links": [
+              "https://x.com/petergyang/status/2067047343971848201"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/NathieVR/status/2066967928495640729",
+                "resolvedUrl": "https://x.com/NathieVR/status/2066967928495640729",
+                "authorName": "Nathie",
+                "authorHandle": "NathieVR",
+                "authorUrl": "https://x.com/NathieVR",
+                "text": "Evan Spiegel showing off the new Specs AR glasses to the public for the first time.",
+                "displayDate": "Jun 16",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/pCYBLU9xxH",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2066967867237847040/img/B1y78tlP-jl7_LOa.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/NathieVR/status/2066967928495640729/video/1"
+                  }
+                ],
+                "textZh": "Evan Spiegel 首次向公众展示全新的 Specs AR 眼镜。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/PRD3LeNy03",
+                "resolvedUrl": "https://x.com/nathievr/status/2066967928495640729"
+              }
+            ]
+          },
+          {
+            "headline": "**Peter Yang** groans at yet another big-company move / **Peter Yang** 对又一家千人公司这么干表示无语",
+            "body": "Damn not again. Is every company with 1,000+ people going to do this 😭 https://t.co/Mg3wk7ZYT6\n\n靠，又来。难道每一家 1000 人以上的公司都要这么干吗 😭 https://t.co/Mg3wk7ZYT6",
+            "source_links": [
+              "https://x.com/petergyang/status/2066975504973050077"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/RobinhoodComms/status/2066828553199464933",
+                "resolvedUrl": "https://x.com/RobinhoodComms/status/2066828553199464933",
+                "authorName": "Robinhood Comms",
+                "authorHandle": "RobinhoodComms",
+                "authorUrl": "https://x.com/RobinhoodComms",
+                "text": "Our CEO Vlad Tenev shared the following note with our team at Robinhood today:\n\nRobinhoodies,\n\nWe’ve made the difficult decision to say goodbye to some of our team members today. Those departing are being notified, and we’re offering them full support through this transition,",
+                "displayDate": "Jun 16",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们的 CEO Vlad Tenev 今天向 Robinhood 团队分享了以下说明： Robinhoodies， 我们今天做出了一个艰难的决定，将与部分团队成员告别。相关离职员工正在收到通知，我们也会在这次过渡中为他们提供全力支持，"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Mg3wk7ZYT6",
+                "resolvedUrl": "https://x.com/robinhoodcomms/status/2066828553199464933"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Ex-Google Product",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-06-17T03:42:29.000Z",
+        "sections": [
+          {
+            "headline": "**Madhu Guru** says AI will force a rethink of what makes people distinct / **Madhu Guru** 说 AI 会逼着我们重想“人到底靠什么和机器区分”",
+            "body": "over the last century, we’ve treated the intellect as a defining human trait and under-invested   in other aspects that make us uniquely human, such as self-awareness, intuition, compassion and kindness. \n\nthe next few years will force us to rethink this. https://t.co/4iE3kAMauP\n\n在过去一个世纪里，我们一直把智力当成人类的核心特征，却没有足够重视那些真正让人之所以为人的部分，比如自我觉察、直觉、同理心和善意。\n\n接下来的几年会逼着我们重新想这件事。 https://t.co/4iE3kAMauP",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2067090477434966396"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/tszzl/status/2067054217521766516",
+                "resolvedUrl": "https://x.com/tszzl/status/2067054217521766516",
+                "authorName": "roon",
+                "authorHandle": "tszzl",
+                "authorUrl": "https://x.com/tszzl",
+                "text": "humans are really not built for first principles analytical thinking. even smart people find it incredibly exhausting. what we consider analysis is usually anxious panicking and avoiding something or the other. it is clear we are going to be massively outclassed in this soon",
+                "displayDate": "Jun 17",
+                "provider": "X",
+                "media": [],
+                "textZh": "人类其实真的不是为第一性原理式的分析思维而生的。即便是聪明人，也会觉得这件事极其耗费心力。我们所谓的分析，通常只是焦虑地恐慌，以及回避这样那样的事情。很明显，我们很快就会在这方面被远远甩开"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/4iE3kAMauP",
+                "resolvedUrl": "https://x.com/tszzl/status/2067054217521766516"
+              }
+            ]
+          },
+          {
+            "headline": "**Madhu Guru** says the **SpaceX-Cursor** prize is the agent harness, not just the deal / **Madhu Guru** 说 **SpaceX-Cursor** 交易真正值钱的是 agent harness，不只是交易本身",
+            "body": "The real prize in the SpaceX-Cursor deal is the agentic harness that will become the core for automating all knowledge work at scale.\n\nHere’s what SpaceX is getting:\n\n1. Production-grade agentic harness  -planning, context management, tool use, iteration, verification, memory, error recovery. \nAny product experience can be completely redesigned in an AI-native way with this harness.\n\n2. Expertise on the full AI stack - model, evals, harness, application layer.\n\n3. End to end product lifecycle focus: product strategy -> user journeys -> GTM. Everything optimized for one job: helping software engineers build.\n\nVery few companies do even one of these well. Cursor brings all three.\n\nSpaceX-Cursor 这笔交易里真正的大奖，是那套 agentic harness。它会成为大规模自动化知识工作的核心。\n\nSpaceX 得到的是：\n\n1. 生产级 agentic harness  - 规划、上下文管理、工具使用、迭代、验证、记忆、错误恢复。\n有了这套 harness，任何产品体验都可以按 AI-native 的方式重新设计。\n\n2. 覆盖整条 AI 技术栈的能力 - 模型、evals、harness、应用层。\n\n3. 盯住完整产品生命周期的能力：产品战略 -> 用户旅程 -> GTM。所有东西都围绕一件事优化：帮助软件工程师构建。\n\n很少有公司连其中一项都能做好。Cursor 三项都带来了。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2066935654500671499"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-06-16T23:07:46.000Z",
+        "sections": [
+          {
+            "headline": "**Slack** now renders HTML attachments inline / **Slack** 现在会直接渲染 HTML 附件了",
+            "body": "Slack now renders HTML attachments instead of just showing it as text 😭🙏 https://t.co/rHoAChwRyv\n\nSlack 现在会把 HTML 附件直接渲染出来，不再只是当纯文本显示了 😭🙏 https://t.co/rHoAChwRyv",
+            "source_links": [
+              "https://x.com/trq212/status/2067021344341098670"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/rHoAChwRyv",
+                "resolvedUrl": "https://t.co/rHoAChwRyv"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-16T18:48:24.000Z",
+        "sections": [
+          {
+            "headline": "**Replit** wins **Databricks** partner of the year / **Replit** 拿下 **Databricks** 年度合作伙伴",
+            "body": "Databricks partner of the year! https://t.co/pdxBVKE6M2\n\nDatabricks 年度合作伙伴！ https://t.co/pdxBVKE6M2",
+            "source_links": [
+              "https://x.com/amasad/status/2066956074360426622"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/pdxBVKE6M2",
+                "resolvedUrl": "https://t.co/pdxBVKE6M2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-17T06:50:02.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel** sets the stage with 30-minute functions and 24-hour sandboxes / **Vercel** 先亮底牌：30 分钟函数调用加 24 小时沙箱寿命",
+            "body": "Quick one to set the stage:\n\n☑️ 30 minute function invocations\n🆕 24 hour sandbox lifetimes https://t.co/r69vntZpbf\n\n先快速铺个底：\n\n☑️ 30 分钟函数调用\n🆕 24 小时沙箱生命周期 https://t.co/r69vntZpbf",
+            "source_links": [
+              "https://x.com/rauchg/status/2067137678772937000"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/r69vntZpbf",
+                "resolvedUrl": "https://t.co/r69vntZpbf"
+              }
+            ]
+          },
+          {
+            "headline": "**Guillermo Rauch** says it is time to ship / **Guillermo Rauch** 说现在就是发货的时候",
+            "body": "It’s time to ship\n\n是时候开干、把东西发出去了",
+            "source_links": [
+              "https://x.com/rauchg/status/2067106499449565265"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Guillermo Rauch** revives an old take with a laugh / **Guillermo Rauch** 拿旧话回看，觉得这下真有点好笑",
+            "body": "This aged well 😂 iykyk https://t.co/d9ncX1aP2X\n\n这话现在看真是经得起时间 😂 懂的都懂 https://t.co/d9ncX1aP2X",
+            "source_links": [
+              "https://x.com/rauchg/status/2067098826830164310"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/varticoo/status/2066430626245349475",
+                "resolvedUrl": "https://x.com/Varticoo/status/2066430626245349475",
+                "authorName": "𝐕𝐚𝐫𝐭𝐢𝐜𝐨",
+                "authorHandle": "Varticoo",
+                "authorUrl": "https://x.com/Varticoo",
+                "text": "When is Argentina playing their first World Cup game? Tired of watching these amateurs.",
+                "displayDate": "Jun 15",
+                "provider": "X",
+                "media": [],
+                "textZh": "阿根廷第一场世界杯比赛什么时候踢？看这些业余选手看烦了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/d9ncX1aP2X",
+                "resolvedUrl": "https://x.com/varticoo/status/2066430626245349475"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-17T02:24:45.000Z",
+        "sections": [
+          {
+            "headline": "**Aaron Levie** says the open-vs-closed model gap will decide huge chunks of the AI market / **Aaron Levie** 说开源权重和闭源模型的差距，会改写 AI 市场的大半盘棋",
+            "body": "One of the biggest questions in AI is how far behind open weights models remain from closed models at any given time. There are huge differences in market structures depending on whether open weights models remain 3 or 6 months behind, or if they fall behind by years. \n\nThe answer to this will determine how the chip stack plays out, where inference can be run, what sovereign AI looks like, what happens at the applied AI layer, what the margin structure looks like in AI, how much companies can afford to spend on AI, and more.\n\nAt the moment the open weights players appear to be holding up at keeping close to frontier levels of capability. Will be fun to see how this plays out.\n\nAI 里有个特别大的问题，就是开源权重模型在任何一个时间点到底会落后闭源模型多远。如果只是落后 3 到 6 个月，和落后几年，对应的市场结构完全不是一回事。\n\n这个答案会决定芯片栈怎么演化、推理部署能放在哪、主权 AI 会长什么样、应用层怎么打、AI 的利润结构会怎样、公司到底能在 AI 上花多少钱，等等。\n\n就目前看，开源权重阵营似乎还顶得住，能力上依然贴着前沿在跑。接下来怎么展开，会很好看。",
+            "source_links": [
+              "https://x.com/levie/status/2067070918300664161"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Aaron Levie** calls the **Cursor** deal the first mega-win in applied AI / **Aaron Levie** 把 **Cursor** 交易称作应用层 AI 的第一次超级胜利",
+            "body": "The Cursor deal is symbolically quite significant. It was effectively the first mega success in the applied layer of AI. \n\nThey firmly proved out the value proposition of having a deep domain focus, the role you play as a model router, when to lean into frontier models vs. when to train your own, and the role of applied AI GTM and distribution to make sure you’re actually taking advantage of the market opportunity. \n\nEvery aspect of their business was tuned to carve out ground and keep doubling down in a highly competitive space. This is really the first at scale template for how to execute this playbook.\n\nCursor 这笔交易在象征意义上确实很重。它基本上是应用层 AI 第一个超级大成功。\n\n他们把几件事都跑通了：深耕垂直领域到底值不值；作为 model router 该扮演什么角色；什么时候该吃前沿模型，什么时候该自己训练；以及应用层 AI 的 GTM 和分发到底有多关键，才不至于眼看着市场机会从手里溜掉。\n\n他们业务里的每个环节都在为一件事服务：先占住位置，再在激烈竞争里持续加码。这大概是第一份真正大规模跑通这套打法的模板。",
+            "source_links": [
+              "https://x.com/levie/status/2066908002809221496"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X",
+        "posted_at": "2026-06-17T06:55:00.000Z",
+        "sections": [
+          {
+            "headline": "**Ryo Lu** posts two links without comment / **Ryo Lu** 只发了两个链接，没有多说",
+            "body": "https://t.co/vozY3udGoP https://t.co/GSUZuCoER1\n\nhttps://t.co/vozY3udGoP https://t.co/GSUZuCoER1",
+            "source_links": [
+              "https://x.com/ryolu_/status/2067138928864555222"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK_z5ErbsAAGLHt.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/ryolu_/status/2067138928864555222/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ellev3n11/status/2067056938391920640",
+                "resolvedUrl": "https://x.com/ellev3n11/status/2067056938391920640",
+                "authorName": "Federico Cassano",
+                "authorHandle": "ellev3n11",
+                "authorUrl": "https://x.com/ellev3n11",
+                "text": "le cursor big",
+                "displayDate": "Jun 17",
+                "provider": "X",
+                "media": [],
+                "textZh": "le cursor 好大"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/vozY3udGoP",
+                "resolvedUrl": "https://x.com/ryolu_/status/2067138928864555222/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK_z5ErbsAAGLHt.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/GSUZuCoER1",
+                "resolvedUrl": "https://x.com/ellev3n11/status/2067056938391920640"
+              }
+            ]
+          },
+          {
+            "headline": "**Ryo Lu** says **Cursor Mobile** proves designers can just build / **Ryo Lu** 说 **Cursor Mobile** 证明所谓头衔没那么重要，能做就行",
+            "body": "the crazy thing about Cursor mobile\nis @rikcreation coded most of the real thing with Cursor, as a “designer”\n\ntitles don’t mean shit.\nyou can just build. https://t.co/UYOoUYf0t0\n\nCursor mobile 最离谱的一点是\n@rikcreation 作为一个“designer”，却用 Cursor 写出了大部分真正上线的东西\n\n头衔根本不算什么。\n你就是可以直接开做。 https://t.co/UYOoUYf0t0",
+            "source_links": [
+              "https://x.com/ryolu_/status/2067124871226929526"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/UYOoUYf0t0",
+                "resolvedUrl": "https://t.co/UYOoUYf0t0"
+              }
+            ]
+          },
+          {
+            "headline": "**Ryo Lu** floats **X** and **Cursor** becoming the same thing / **Ryo Lu** 脑洞大开：如果 **X** 和 **Cursor** 是同一个东西呢",
+            "body": "crazy idea: what if X, Cursor, were the same thing? https://t.co/nUgSVT3i6J\n\n疯狂想法：如果 X 和 Cursor 是同一个东西，会怎样？ https://t.co/nUgSVT3i6J",
+            "source_links": [
+              "https://x.com/ryolu_/status/2066902677905461579"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/cursor_ai/status/2066875698346954891",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2066875698346954891",
+                "authorName": "Cursor",
+                "authorHandle": "cursor_ai",
+                "authorUrl": "https://x.com/cursor_ai",
+                "text": "We're excited to join forces with @SpaceX to advance the frontier of useful AI. Expect significant improvements to Cursor soon.",
+                "displayDate": "Jun 16",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们很高兴与 @SpaceX 携手合作，一起推进实用 AI 的前沿发展。Cursor 很快会迎来显著改进。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/nUgSVT3i6J",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2066875698346954891"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-17T04:26:54.000Z",
+        "sections": [
+          {
+            "headline": "**Garry Tan** says **9Mothers** clicks instantly for warfighters / **Garry Tan** 说 **9Mothers** 对作战人员来说一眼就懂价值",
+            "body": "9Mothers is one of those technologies whose impact is immediately obvious to warfighters https://t.co/Aqnl9d84ky\n\n9Mothers 属于那种一拿给作战人员看，价值就会立刻变得很直观的技术 https://t.co/Aqnl9d84ky",
+            "source_links": [
+              "https://x.com/garrytan/status/2067101655934591154"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/camilobacosta/status/2067074226478293188",
+                "resolvedUrl": "https://x.com/CamiloBAcosta/status/2067074226478293188",
+                "authorName": "Camilo Acosta",
+                "authorHandle": "CamiloBAcosta",
+                "authorUrl": "https://x.com/CamiloBAcosta",
+                "text": "Just an anti-drone artillery gun at YC demo day. Nothing to see here…",
+                "displayDate": "Jun 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HK-5DGjawAAh95K.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/CamiloBAcosta/status/2067074226478293188/photo/1"
+                  }
+                ],
+                "textZh": "YC demo day 上就这么摆着一门反无人机火炮。没什么好看的……"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Aqnl9d84ky",
+                "resolvedUrl": "https://x.com/camilobacosta/status/2067074226478293188"
+              }
+            ]
+          },
+          {
+            "headline": "**Garry Tan** argues fear of cringe kills ambition / **Garry Tan** 觉得怕尴尬的人，基本做不成什么事",
+            "body": "You’ll never achieve anything if you are afraid of being cringe\n\nThen again this is from someone trying to use looksmaxxing to achieve outsize return, good luck with that https://t.co/azxDnN4YMf\n\n如果你害怕自己看起来很尴尬，那你基本做不成什么事。\n\n当然，这话是说给那种想靠 looksmaxxing 搞出超额回报的人听的，祝你好运吧 https://t.co/azxDnN4YMf",
+            "source_links": [
+              "https://x.com/garrytan/status/2067101283493040518"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/looksmaxxvc/status/2067066405728797035",
+                "resolvedUrl": "https://x.com/looksmaxxvc/status/2067066405728797035",
+                "authorName": "Looksmaxx VC",
+                "authorHandle": "looksmaxxvc",
+                "authorUrl": "https://x.com/looksmaxxvc",
+                "text": "@omooretweets This is so cringe",
+                "displayDate": "Jun 17",
+                "provider": "X",
+                "media": [],
+                "textZh": "@omooretweets 这也太尴尬了"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/azxDnN4YMf",
+                "resolvedUrl": "https://x.com/looksmaxxvc/status/2067066405728797035"
+              }
+            ]
+          },
+          {
+            "headline": "**Garry Tan** posts on self-differentiation, anxiety, and boundaries / **Garry Tan** 发长帖聊自我分化、焦虑和边界感",
+            "body": "Which leads to… Bowen’s differentiation of self\n\nLow differentiation = highly reactive to others' emotional cues, loses self in relationships, can't hold boundaries under pressure — collapses into \"we-ness\" (everyone must feel the same or the bond feels threatened).\n\nTwo flavors of the same disease: chameleons (adjust themselves to please, fusion mode) and bullies (force others to conform, the asshole mode). Both are undifferentiated. The self-abandoner and the asshole are the same person.\n\nThe fix is the same: lower the chronic anxiety, raise the capacity to stay a separate self in contact.\n\n这就说到……Bowen 的自我分化。\n\n低分化 = 对他人的情绪信号高度敏感，在关系里丢掉自我，在压力下守不住边界，最后塌进一种“我们必须一致”的状态（好像大家感受不一样，这段关系就要出问题）。\n\n这病有两种表现：变色龙型（为了讨好不断调整自己，进入融合模式）和霸凌型（逼别人来配合自己，混蛋模式）。两种其实是一回事。那个不断放弃自我的人，和那个混蛋，底层上是同一个人。\n\n解法也一样：先把长期焦虑降下来，再把自己作为独立个体、同时还能跟别人保持连接的能力提上去。",
+            "source_links": [
+              "https://x.com/garrytan/status/2067100549775032702"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-16T13:29:44.000Z",
+        "sections": [
+          {
+            "headline": "**Matt Turck** says the **FirstMark Guilds Summit** swag delivered / **Matt Turck** 说 **FirstMark Guilds Summit** 的周边赢麻了",
+            "body": "FirstMark Guilds Summit swag wins https://t.co/hD1yMKqiaR\n\nFirstMark Guilds Summit 的周边这次是真的赢了 https://t.co/hD1yMKqiaR",
+            "source_links": [
+              "https://x.com/mattturck/status/2066875878731100668"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK8Ep-YXEAAA04w.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2066875878731100668/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK8Ep-bWEAAY6qA.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2066875878731100668/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK8Ep-dWoAAbyM4.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2066875878731100668/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/hD1yMKqiaR",
+                "resolvedUrl": "https://x.com/mattturck/status/2066875878731100668/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK8Ep-dWoAAbyM4.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-16T21:20:50.000Z",
+        "sections": [
+          {
+            "headline": "**Zara Zhang** says depth makes the thing cool, not the other way around / **Zara Zhang** 说不是追热点才酷，而是把小东西做到极深才会变酷",
+            "body": "You don’t have to chase the cool thing. Do whatever you’re already doing so well that it becomes the cool thing.\n\nThe cool thing is rarely cool when it starts. It becomes cool because someone went deep on something everyone else thought was too small.\n\n你不必去追那个看起来最酷的东西。把你已经在做的事做到足够好，它自己会变成那个酷的东西。\n\n所谓“酷”的东西，刚开始时通常一点也不酷。它后来之所以变酷，只是因为有人把一件别人嫌太小的事挖得够深。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066994434953421226"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Zara Zhang** says generic all-purpose agents are already taken / **Zara Zhang** 说那种什么都做的通用 agent，别人早就占完位了",
+            "body": "Every other product right now is \"an AI agent that does everything in your work & life & integrates with everything.\" \n\nCool, that's just Claude/Codex. \n\nIf you want me to use your thing instead, it needs an opinion & a soul. Build small & sharp, not big & generic.\n\nDoing everything means doing nothing. Speaking to everybody means speaking to nobody.\n\n现在隔一个产品就是“一个能包办你工作和生活一切、还能接一切集成的 AI agent”。\n\n行啊，那不就是 Claude/Codex。\n\n如果你想让我改用你的东西，它得有立场，也得有灵魂。做小、做尖，不要做大而泛。\n\n什么都做，最后就是什么都没做好。想跟所有人说话，最后就是谁都没说到。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066936706281206165"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-16T19:28:55.000Z",
+        "sections": [
+          {
+            "headline": "**Nikunj Kothari** says **Cursor Compile** nailed the vibe and raised the swag bar / **Nikunj Kothari** 说 **Cursor Compile** 氛围拉满，定制机械键盘把会议周边天花板又抬高了",
+            "body": "Vibes at Cursor Compile were immaculate. Also getting a custom mechanical keyboard is a new kind of swag ceiling for conferences ⌨️ https://t.co/RXq9qLvXJJ\n\nCursor Compile 的现场氛围非常顶。还有，给一把定制机械键盘，算是把会议周边的天花板又抬到了新高度 ⌨️ https://t.co/RXq9qLvXJJ",
+            "source_links": [
+              "https://x.com/nikunj/status/2066966270197805331"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK9W207bgAAWCAk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2066966270197805331/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK9W205bAAAkg-e.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2066966270197805331/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK9W202aYAAaFFt.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2066966270197805331/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/RXq9qLvXJJ",
+                "resolvedUrl": "https://x.com/nikunj/status/2066966270197805331/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK9W202aYAAaFFt.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Nikunj Kothari** says app companies need the judgment path or the token path / **Nikunj Kothari** 说应用公司得站进判断链路，或者站进 token 链路",
+            "body": "Be in the judgement (data) path or the token path. Today’s @cursor_ai acquisition sets the path for more application companies. Congrats to all my friends 🥳 https://t.co/wCKIwElVji\n\n要么站进 judgement（data）path，要么站进 token path。今天 @cursor_ai 的收购案，算是给更多应用公司把路标立出来了。恭喜我的朋友们 🥳 https://t.co/wCKIwElVji",
+            "source_links": [
+              "https://x.com/nikunj/status/2066905445974102384"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/wCKIwElVji",
+                "resolvedUrl": "https://t.co/wCKIwElVji"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-16T20:55:58.000Z",
+        "sections": [
+          {
+            "headline": "**Dan Shipper** says the linked prediction looks pretty likely / **Dan Shipper** 觉得链接里的判断大概率会成真",
+            "body": "I think this is quite likely https://t.co/duB1OtqSIj\n\n我觉得这件事很可能会发生 https://t.co/duB1OtqSIj",
+            "source_links": [
+              "https://x.com/danshipper/status/2066988174849749303"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nxthompson/status/2066970358545043614",
+                "resolvedUrl": "https://x.com/nxthompson/status/2066970358545043614",
+                "authorName": "nxthompson",
+                "authorHandle": "nxthompson",
+                "authorUrl": "https://x.com/nxthompson",
+                "text": "What if AI changes writing the way that photography changed painting? By Adam Kirsch. https://www.theatlantic.com/ideas/2026/06/ai-writing-style-literature/687536/?utm_source=twitter&utm_campaign=ntatl&utm_medium=social",
+                "displayDate": "Jun 16",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HK9aladWAAAMzu-.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/nxthompson/status/2066970358545043614/photo/1"
+                  }
+                ],
+                "textZh": "如果 AI 改变写作的方式，就像摄影改变绘画那样，会怎样？作者 Adam Kirsch。https://www.theatlantic.com/ideas/2026/06/ai-writing-style-literature/687536/?utm_source=twitter&utm_campaign=ntatl&utm_medium=social"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/duB1OtqSIj",
+                "resolvedUrl": "https://x.com/nxthompson/status/2066970358545043614"
+              }
+            ]
+          },
+          {
+            "headline": "**Dan Shipper** switches back to **Dia** after bugs in **Atlas Browser** / **Dan Shipper** 因为 bug 太多，从 **Atlas Browser** 切回 **Dia**",
+            "body": "just switched off of Atlas Browser and back onto Dia\n\ni've been having so many weird bugs with atlas, and doesn't feel like it's improving\n\n刚从 Atlas Browser 切走，又回到了 Dia\n\nAtlas 上那些奇怪 bug 我已经撞太多次了，而且感觉也没在变好",
+            "source_links": [
+              "https://x.com/danshipper/status/2066914130863473048"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-16T16:08:24.000Z",
+        "sections": [
+          {
+            "headline": "**Aditya Agarwal** invites people to apply to **SPC** / **Aditya Agarwal** 邀请大家申请 **SPC**",
+            "body": "Apply to SPC if you'd like to join us https://t.co/Dcd8nkNcLR\n\n如果你想加入我们，欢迎申请 SPC https://t.co/Dcd8nkNcLR",
+            "source_links": [
+              "https://x.com/adityaag/status/2066915805476827629"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Dcd8nkNcLR",
+                "resolvedUrl": "https://www.southparkcommons.com/"
+              }
+            ]
+          },
+          {
+            "headline": "**Aditya Agarwal** says **Snowflake** CEO **Sridhar Ramaswamy** is visiting **South Park Commons** / **Aditya Agarwal** 说 **Snowflake** CEO **Sridhar Ramaswamy** 下周会来 **South Park Commons**",
+            "body": "You didn't miss this one. @RamaswmySridhar is dropping by @southpkcommons next week.\n\nHe grew Google's ad business from $1.5B to $ 100B+. \n\nNow he's running Snowflake through the AI shift. https://t.co/xOCxkftsvo\n\n这条你没看漏。@RamaswmySridhar 下周会来 @southpkcommons。\n\n他把 Google 的广告业务从 15 亿美元做到 1000 多亿美元。\n\n现在他正在带着 Snowflake 穿过这波 AI 转型。 https://t.co/xOCxkftsvo",
+            "source_links": [
+              "https://x.com/adityaag/status/2066915803610370098"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK8nY1pXkAAf7C0.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2066915803610370098/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/xOCxkftsvo",
+                "resolvedUrl": "https://x.com/adityaag/status/2066915803610370098/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK8nY1pXkAAf7C0.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-17",
+    "updatedAt": "2026-06-24T10:22:57.594Z",
+    "commit": {
+      "sha": "ab0e36f0139c14c07436123275d153e84f16bceb",
+      "committedAt": "2026-06-17T08:14:01Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T10:14:28.449Z",
+    "feedGeneratedAt": "2026-06-17T08:13:23.213Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

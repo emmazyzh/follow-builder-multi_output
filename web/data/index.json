@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T09:50:45.232Z",
+  "updatedAt": "2026-06-24T10:22:57.599Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -80,6 +80,19 @@
         "committedAt": "2026-06-18T08:03:03Z",
         "subject": "chore: update feeds [skip ci]",
         "file": "feed-blogs.json"
+      }
+    },
+    {
+      "date": "2026-06-17",
+      "title": "AI Builders Daily · 2026-06-17",
+      "summary": "**Codex** turbulence flipped to expansion in a day, with Europe rollout and rate-limit resets; **Cursor** kept sucking up the oxygen as operators argued the real asset is the agent harness, GTM, and the first real applied-AI mega-win; **Anthropic** plugged **Claude** into Apple’s **Foundation Models** stack while **Vercel** pushed 24-hour sandboxes and longer function runs.\n\n**Codex** 这边先是容量报错，转头又在欧洲放功能、调额度，节奏很急； **Cursor** 继续霸屏，大家盯着的不只是交易本身，而是那套 agent harness、分发能力，还有应用层第一次真正跑出大结果的模板； **Anthropic** 把 **Claude** 接进 Apple 的 **Foundation Models**，另一边 **Vercel** 直接把沙箱寿命和函数时长一起往上抬。",
+      "itemCount": 18,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T10:22:57.598Z",
+      "commit": {
+        "sha": "ab0e36f0139c14c07436123275d153e84f16bceb",
+        "committedAt": "2026-06-17T08:14:01Z",
+        "subject": "chore: update feeds [skip ci]"
       }
     },
     {
