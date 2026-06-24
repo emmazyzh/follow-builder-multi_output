@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-24T10:56:27.812Z",
-  "latestDate": "2026-06-23",
+  "updatedAt": "2026-06-24T14:05:50.362Z",
+  "latestDate": "2026-06-24",
   "dates": [
+    {
+      "date": "2026-06-24",
+      "title": "AI Builders Daily · 2026-06-24",
+      "summary": "**Claude Tag** turns Slack into an agent operating system; **Karpathy** calls it the third big LLM UI shift, and Anthropic staff say it already writes code, merges PRs, and keeps its own thread memory; **Codex**, **Vercel**, **Replit**, and **Shopify** builders all push the same direction: software is getting more headless, more multiplayer, and more native to agents; pricing pressure is getting real as **GLM** gets victory laps, **Box** argues the applied layer wins, and founders fight over where value actually lands; the wild card comes from biology, where **Biohub** pitches open-source tooling plus frontier AI as a serious path from scientific discovery toward engineering.\n\n**Claude Tag** 今天最抢眼，Slack 里直接长出一个能干活的代理位；**Karpathy** 说这像是大模型交互的第三次改版，Anthropic 自己的人则把话说得更直白: 会写代码、会开线程、还会自己盯进度；另一边，**Codex**、**Vercel**、**Replit**、**Shopify** 这几路人马其实在讲同一件事，软件正越来越像给代理准备的底座，不再只服务人类点点点；价格战也开始有火药味了，**GLM** 被高调点名，**Box** 押注应用层，大家争的不是热闹，是价值最后落在哪一层；最出圈的反而不是纯软件，**Biohub** 把开放工具、前沿 AI 和生物学硬绑在一起，这个路数不花哨，但很硬。",
+      "itemCount": 20,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T14:05:50.361Z",
+      "commit": {
+        "sha": "202f7c8a6e0eb347c6875bbe2964463da0ce0469",
+        "committedAt": "2026-06-24T07:29:10Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-23",
       "title": "AI Builders Daily · 2026-06-23",

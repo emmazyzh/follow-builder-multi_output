@@ -1,0 +1,1039 @@
+{
+  "payload": {
+    "date": "2026-06-24",
+    "title": "AI Builders Daily · 2026-06-24",
+    "summary": "**Claude Tag** turns Slack into an agent operating system; **Karpathy** calls it the third big LLM UI shift, and Anthropic staff say it already writes code, merges PRs, and keeps its own thread memory; **Codex**, **Vercel**, **Replit**, and **Shopify** builders all push the same direction: software is getting more headless, more multiplayer, and more native to agents; pricing pressure is getting real as **GLM** gets victory laps, **Box** argues the applied layer wins, and founders fight over where value actually lands; the wild card comes from biology, where **Biohub** pitches open-source tooling plus frontier AI as a serious path from scientific discovery toward engineering.\n\n**Claude Tag** 今天最抢眼，Slack 里直接长出一个能干活的代理位；**Karpathy** 说这像是大模型交互的第三次改版，Anthropic 自己的人则把话说得更直白: 会写代码、会开线程、还会自己盯进度；另一边，**Codex**、**Vercel**、**Replit**、**Shopify** 这几路人马其实在讲同一件事，软件正越来越像给代理准备的底座，不再只服务人类点点点；价格战也开始有火药味了，**GLM** 被高调点名，**Box** 押注应用层，大家争的不是热闹，是价值最后落在哪一层；最出圈的反而不是纯软件，**Biohub** 把开放工具、前沿 AI 和生物学硬绑在一起，这个路数不花哨，但很硬。",
+    "items": [
+      {
+        "person_name": "No Priors",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@NoPriorsPodcast",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-10T13:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Biohub** bets on open-source biology and frontier AI · **Biohub** 押注开源生物学与前沿 AI",
+            "body": "On **No Priors**, **Mark Zuckerberg**, **Priscilla Chan**, and **Alex Rives** frame **Biohub** as a long-horizon tool-building effort, not a moonshot drug company. Their argument is blunt: biology still lacks the shared infrastructure, durable datasets, and reusable software that let machine learning compound in other fields.\n\nThe episode’s strongest claim is that frontier AI only matters here if it is paired with frontier data collection. They connect protein models, single-cell atlases, imaging, and measurement tools into a feedback loop: build better instruments, generate new biological data, train better models, and hand the tools back to scientists as open infrastructure.\n\nThey also make a sharper philosophical turn than the usual biotech pitch. Instead of talking about one-off discoveries, they describe a path from observational biology toward engineered understanding, where models do not just classify patterns but help explain mechanisms and guide interventions at the level of proteins, cells, and eventually larger systems.\n\n在 **No Priors** 这期里，**Mark Zuckerberg**、**Priscilla Chan** 和 **Alex Rives** 把 **Biohub** 讲得很清楚: 这不是一家冲着单个药物去的公司，而是一套长期工具工程。核心判断也不绕: 生物学到现在都还缺共享基础设施、耐用的数据集，还有能被反复复用的软件，这些东西别的领域早就靠它们滚雪球了。\n\n这期最硬的一点，是他们把“前沿 AI”这件事落到了数据采集上。意思很简单，只有模型不够，还得同时把蛋白质、单细胞、成像和测量设备这些环节一起推上去。先造更好的工具，再拿到以前没有的数据，再训练更好的模型，最后把工具继续开放给科学家用，这才转得起来。\n\n他们的说法也比常见的生物科技叙事更激进一点。重点不在“某个发现”，而在把生物学从观察学科慢慢往工程学科推。模型不只是认模式，而是要帮人理解机制，最后能在蛋白质、细胞，甚至更大的系统层面动手干预。",
+            "source_links": [
+              "https://www.youtube.com/@NoPriorsPodcast"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Andrej Karpathy",
+        "person_handle": "karpathy",
+        "person_identity": "AI researcher",
+        "profile_url": "https://x.com/karpathy",
+        "source_label": "X",
+        "posted_at": "2026-06-23T22:26:31.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** as a persistent teammate, not just an app · **Claude** 不只是应用，而是常驻队友",
+            "body": "This is a new paradigm for interacting with **Claude** that is significantly more \"inline\" with all the other human activity org-wide. Once you do all of the under the hood engineering work to make this \"just work\" (e.g. across tools, integrations, compute environments, memory, security, etc.), **Claude** basically joins the team in a seamless way - you can talk to it as you would talk to a person and it can help with a very large variety of workloads.\n\nImo this is the 3rd major redesign of LLM UIUX. The first paradigm was that the LLM is a website you go to, the second was that it is an app you download to your computer. This third one is that it is a self-contained, persistent, asynchronous entity with org-wide tools and context, working alongside teams of humans. It really takes a while to wrap your head around it, but it works and it is awesome.\n\n这是和 **Claude** 互动的一种新范式，它和整个组织里其他人的工作流更“贴边”。只要把底层那堆工程问题真的打通，比如工具、集成、计算环境、记忆、安全这些，**Claude** 就会很自然地加入团队。你可以像跟同事说话那样跟它沟通，它也确实能接住很多不同类型的工作。\n\n在我看来，这算是 LLM UI/UX 的第三次大改。第一阶段是你去一个网站上用模型，第二阶段是把它装进电脑当应用。第三阶段则是它变成一个自洽、常驻、异步运行的实体，带着组织级工具和上下文，跟一群人并排工作。这个转变刚开始确实有点难消化，但它真的能跑起来，而且很好用。",
+            "source_links": [
+              "https://x.com/karpathy/status/2069547676849557725"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI podcaster",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-24T06:13:38.000Z",
+        "sections": [
+          {
+            "headline": "**Lit Fellows** gets a Women in AI nod · **Lit Fellows** 被点名推荐给 Women in AI",
+            "body": "@LitFellows also a great related event for Women in AI\n\nhttps://t.co/AULDW3dUtA\n\n@LitFellows 也是一个很适合 Women in AI 的相关活动。\n\nhttps://t.co/AULDW3dUtA",
+            "source_links": [
+              "https://x.com/swyx/status/2069665232822366577"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/AULDW3dUtA",
+                "resolvedUrl": "https://x.com/raila_san/status/2069591704970396060"
+              }
+            ]
+          },
+          {
+            "headline": "**Zai / GLM** gets a comeback-victory lap · **Zai / GLM** 被 Swyx 高调夸成翻身局",
+            "body": "btw **Zai** IPO'ed in Jan at HK$120 a share. when I first met  @louszbd nobody really knew anyone using **GLM**'s.\n\nnow they have beat **deepseek** with the world's undisputed top open model and in some respects (see @ml_angelopoulos) say top model period, and are returning to SF @aidotengineer on top of the world and open for business!\n\nexcited for @Thom_Wolf and @ZixuanLi_ to chat onstage!\n\n顺带一提，**Zai** 今年 1 月以每股 120 港元上市。我第一次见 @louszbd 的时候，几乎没人知道谁在用 **GLM**。\n\n现在他们已经用公认的全球最强开源模型压过了 **deepseek**，甚至在某些维度上（见 @ml_angelopoulos）可以说就是最强模型。他们这次回到旧金山参加 @aidotengineer，状态拉满，也正式开门做生意了！\n\n很期待 @Thom_Wolf 和 @ZixuanLi_ 上台聊这事！",
+            "source_links": [
+              "https://x.com/swyx/status/2069598378191941835"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLiwQW8W0AAQzxN.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2069598378191941835/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Swyx plugs **Touchy Feely** and **LIT Fellows** culture · Swyx 给 **Touchy Feely** 和 **LIT Fellows** 打 call",
+            "body": "very proud to host this session opening night!\n\nif you work in tech but have never heard of **Touchy Feely**, you are exactly the kind of person that needs to see this. You have no idea the shocking number of tech leadeds on here are secret @LITfellows alums and i have seen first hand how strong the bonds you form are, it blows my engineer mind.\n\nFREE ADMISSION, application in link reply\n\n很自豪能在开场夜主持这场活动！\n\n如果你在科技行业工作，却从没听过 **Touchy Feely**，那你大概正是最该去看的人。你可能根本想不到，这里有多少科技圈负责人其实都是偷偷的 @LITfellows 校友。我是亲眼见过那种关系有多牢，真的把我这个工程师看愣了。\n\n免费参加，申请链接在回复里。",
+            "source_links": [
+              "https://x.com/swyx/status/2069582337034330186"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X",
+        "posted_at": "2026-06-23T13:11:35.000Z",
+        "sections": [
+          {
+            "headline": "**Gemini App** rolls out sports-fan image templates · **Gemini App** 推出球迷图像模板玩法",
+            "body": "⚽️Turn your team loyalty into a custom trading card, mural, or virtual plushie in @GeminiApp\n\nHow to create yours:\n\n1) Go to https://t.co/z0bvXTam3G or open the app\n2) Tap Images (side panel)\n3) Select the \"Get in the game\" template\n4) Upload your photo and share your output here https://t.co/aysNORY2ea\n\n⚽️在 @GeminiApp 里把你对球队的支持做成定制球星卡、壁画或虚拟玩偶。\n\n创建方法：\n\n1) 打开 https://t.co/z0bvXTam3G 或直接打开应用\n2) 点击 Images（侧边栏）\n3) 选择 “Get in the game” 模板\n4) 上传你的照片，然后把生成结果发到这里 https://t.co/aysNORY2ea",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2069408025362714957"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/aysNORY2ea",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069406988484636673/img/v4mALLd-8lHf7Ezt.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/joshwoodward/status/2069408025362714957/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/z0bvXTam3G",
+                "resolvedUrl": "http://gemini.google/"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/aysNORY2ea",
+                "resolvedUrl": "https://x.com/joshwoodward/status/2069408025362714957/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2069406988484636673/img/v4mALLd-8lHf7Ezt.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "**NotebookLM** gets a campus-grade testimonial from **FSU** · **NotebookLM** 收到 **FSU** 的校园成绩单式背书",
+            "body": "**Florida State University**: \"Shortly after introducing **NotebookLM** on campus, we watched students who were struggling with a ‘C’ grade completely transform their study habits and their grades in a matter of weeks.\"\n\nhttps://t.co/xcPbvA37s0\n\n**Florida State University** 说：“在校园里引入 **NotebookLM** 后没多久，我们就看到那些原本只能拿 C 的学生，在几周内彻底改变了学习习惯，成绩也一起变了。”\n\nhttps://t.co/xcPbvA37s0",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2069406832523624696"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/xcPbvA37s0",
+                "resolvedUrl": "https://blog.google/products-and-platforms/products/education/florida-state-university-notebooklm/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-23T17:36:29.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** lands in **Slack** beta for teams · **Claude** 进驻 **Slack**，团队版开始公测",
+            "body": "That's it. Point it at a channel, give it a task, and let it work. It's in beta on **Slack** today for **Claude Enterprise** and Team customers. More surfaces coming soon!\n\nLearn more: https://t.co/tcvNSCANlf\n\n就这么简单。把它放进一个频道，交给它任务，然后让它自己干。它今天已经在 **Slack** 上向 **Claude Enterprise** 和 Team 客户开放测试。后面还会去更多入口。\n\n了解更多: https://t.co/tcvNSCANlf",
+            "source_links": [
+              "https://x.com/bcherny/status/2069474691010707486"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/tcvNSCANlf",
+                "resolvedUrl": "https://www.anthropic.com/news/introducing-claude-tag"
+              }
+            ]
+          },
+          {
+            "headline": "**Claude** gets one sandbox per thread · **Claude** 现在是一条线程一个沙箱",
+            "body": "Tag **Claude** in a channel, it spins up an instance with its own sandbox. It clones repos, writes code, tests, compiles all in that isolated environment and the sandbox gets thrown away when it's done. One instance per thread, its own memory and permissions per channel.\n\n在频道里 @**Claude**，它就会拉起一个带独立沙箱的实例。它会在那个隔离环境里克隆仓库、写代码、跑测试、做编译，任务结束后沙箱直接销毁。每条线程一个实例，每个频道各自有记忆和权限。",
+            "source_links": [
+              "https://x.com/bcherny/status/2069474689819480394"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claude** can monitor channels and draft PRs proactively · **Claude** 能主动盯频道、答问题、起草 PR",
+            "body": "I also have **Claude** monitoring **Slack** channels to proactively respond to people to answer their questions and draft PRs, and to react with specific emojis like ✅❌ when a thread is resolved.\n\nTo set it up, just add @.**Claude** to a channel and ask it to do this^, in natural language.\n\n我还让 **Claude** 盯着 **Slack** 频道，主动回复大家、回答问题、起草 PR，并在某个线程处理完时用 ✅❌ 这类表情做状态反馈。\n\n要配置这个，只要把 @.**Claude** 加进频道，然后直接用自然语言告诉它这么做就行。",
+            "source_links": [
+              "https://x.com/bcherny/status/2069474688619958517"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-24T03:31:54.000Z",
+        "sections": [
+          {
+            "headline": "Five quiet minutes at **OpenAI**? rare enough to post · 在 **OpenAI** 安静五分钟，稀有到值得发帖",
+            "body": "If you are at **OpenAI**, you would know that this never happens. Be right back celebrating 5 minutes of peace. https://t.co/kxMOXFsg8s\n\n如果你在 **OpenAI**，你就知道这种事根本不会发生。我先去庆祝一下这来之不易的 5 分钟安静。https://t.co/kxMOXFsg8s",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2069624530960838914"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLjIbuRaAAARw_a.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2069624530960838914/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/kxMOXFsg8s",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2069624530960838914/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLjIbuRaAAARw_a.png"
+              }
+            ]
+          },
+          {
+            "headline": "**Codex** is hungry for bug reports · **Codex** 对 bug 报告来者不拒",
+            "body": "**Codex** loves slurping up bugs https://t.co/2REc24J0VO\n\n**Codex** 就爱把 bug 一口吞掉。https://t.co/2REc24J0VO",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2069592160966733853"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLirEBobEAAv6nN.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2069592160966733853/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/2REc24J0VO",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2069592160966733853/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLirEBobEAAv6nN.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "A **Codex** bug gets fixed in public · 一个 **Codex** bug 当场公开修掉了",
+            "body": "**Codex** **had** a bug. Fixed.\n\nMore feedback. Better product. Keep it coming. https://t.co/hopJLfcDxd\n\n**Codex** 之前**有**个 bug。已经修好。\n\n反馈越多，产品越好。继续来。https://t.co/hopJLfcDxd",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2069579993588625574"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/uzairansar/status/2069117176863220061",
+                "resolvedUrl": "https://x.com/uzairansar/status/2069117176863220061",
+                "authorName": "Uzi",
+                "authorHandle": "uzairansar",
+                "authorUrl": "https://x.com/uzairansar",
+                "text": "So Codex has a bug that could kill your SSD in under a year...",
+                "displayDate": "Jun 22",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLb7G0PX0AEQcmD.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/uzairansar/status/2069117176863220061/photo/1"
+                  }
+                ],
+                "textZh": "所以 Codex 有个 bug，可能不到一年就把你的 SSD 搞坏……"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hopJLfcDxd",
+                "resolvedUrl": "https://x.com/uzairansar/status/2069117176863220061"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI writer",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-24T02:08:18.000Z",
+        "sections": [
+          {
+            "headline": "If agents use your product, what does design become? · 如果用你产品的是代理，设计还剩下什么",
+            "body": "What is design if what’s accessing your product is just an agent looking for an api or CLI?\n\n如果访问你产品的只是一个在找 API 或 CLI 的代理，那设计到底算什么？",
+            "source_links": [
+              "https://x.com/petergyang/status/2069603490524254473"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Google Workspace CLI** earns a surprised fan · **Google Workspace CLI** 意外收获一位激动用户",
+            "body": "wtf the **Google Workspace CLI** is super useful it should be celebrated? https://t.co/ulweVvibfr\n\nwtf，**Google Workspace CLI** 也太好用了吧，这东西居然没人庆祝？https://t.co/ulweVvibfr",
+            "source_links": [
+              "https://x.com/petergyang/status/2069551302246592799"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/ulweVvibfr",
+                "resolvedUrl": "https://t.co/ulweVvibfr"
+              }
+            ]
+          },
+          {
+            "headline": "Managing agents starts to look like managing employees · 管代理这件事，越来越像在带员工",
+            "body": "Human-agent interaction is basically trending towards managing a highly capable employee.\n\n1 on 1s and performance reviews for **Claude** next? 😅 https://t.co/s37TYKzSUn\n\n人和代理的互动，基本上已经越来越像在管理一个能力很强的员工。\n\n下一步是不是要给 **Claude** 开 1 对 1 和绩效评估了？😅 https://t.co/s37TYKzSUn",
+            "source_links": [
+              "https://x.com/petergyang/status/2069530765352907180"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2069468693017268244",
+                "resolvedUrl": "https://x.com/claudeai/status/2069468693017268244",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "Introducing Claude Tag, a new way for teams to work with Claude.\n\nIn Slack, Claude joins as a team member with access to the channels and tools you choose. Tag Claude in and delegate tasks to it while you focus on other work.",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/R2C6A5Kcye",
+                    "url": "https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2069468693017268244/video/1"
+                  }
+                ],
+                "textZh": "推出 Claude Tag，一种让团队与 Claude 协作的新方式。 在 Slack 里，Claude 会作为团队成员加入，并获得你选择开放的频道和工具访问权限。@Claude 之后，你可以把任务交给它，自己专注于其他工作。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/s37TYKzSUn",
+                "resolvedUrl": "https://x.com/claudeai/status/2069468693017268244"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Product leader",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-06-23T16:18:38.000Z",
+        "sections": [
+          {
+            "headline": "Token pricing fights are really fights over where value lands · token 定价吵成这样，本质上是在抢价值归属",
+            "body": "I’ve had the chance to see this ecosystem from the different sides - enterprises, agent startups, data providers, labs. \n\nThe core tension here is that the business models, moats, value exchange, execution playbooks for all players are being figured out in real time.\n\nThis debate around token pricing is really a debate over where value will accrue - models, application layer, distribution or other layers.\n\nExpect a lot of strong opinions from the different sides to shape the narrative in their favor.\n\n我有机会从几个不同位置看这个生态: 企业、代理初创公司、数据提供方、实验室。\n\n这里最核心的张力是，所有参与者的商业模式、护城河、价值交换方式和执行打法，都还在实时摸索中。\n\n围绕 token 定价的争论，本质上是在争未来的价值到底沉到哪一层: 模型层、应用层、分发层，还是别的地方。\n\n接下来肯定还会冒出很多立场很重的观点，各方都会努力把叙事往自己那边拽。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2069455097193697393"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Cat Wu",
+        "person_handle": "_catwu",
+        "person_identity": "Anthropic product",
+        "profile_url": "https://x.com/_catwu",
+        "source_label": "X",
+        "posted_at": "2026-06-23T18:23:02.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Tag** shows six common workflows · **Claude Tag** 放出六种常见用法",
+            "body": "There are 100s of ways you can customize **Claude Tag** for any use case.\n\nHere are 6 common flows that have resonated with our internal users and external design partners: https://t.co/eMw8xdDZOZ\n\n你可以用上百种方式定制 **Claude Tag**，去适配各种不同场景。\n\n这里是 6 个在内部用户和外部设计合作伙伴里最有共鸣的常见流程: https://t.co/eMw8xdDZOZ",
+            "source_links": [
+              "https://x.com/_catwu/status/2069486403696869555"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudedevs/status/2069468902216945939",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2069468902216945939",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Incident response\n\nTag Claude in the incident thread when the page lands. It pulls graphs, diffs the deploy, comes back with root cause and the author tagged.\n\nYour team approves in-thread. Claude opens the fix, lands it, watches the metric recover, and resolves the page.",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/sNOnPpn5YC",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2069464922942267392/img/fggf0NOE8601NN4j.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ClaudeDevs/status/2069468902216945939/video/1"
+                  }
+                ],
+                "textZh": "事故响应 当告警触发时，在事故线程里 @Claude。它会拉取图表、比对部署差异，返回根因并 @ 相关作者。 你的团队在线程内批准后，Claude 会打开修复、完成上线、观察指标恢复，并解除告警。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/eMw8xdDZOZ",
+                "resolvedUrl": "https://x.com/claudedevs/status/2069468902216945939"
+              }
+            ]
+          },
+          {
+            "headline": "**Claude Tag** gets a permissions setup guide · **Claude Tag** 权限配置指南已经放出",
+            "body": "Here’s our Get Started guide for configuring agent permissions for **Claude Tag**! https://t.co/x7G0o8Cjx1\n\n这是我们给 **Claude Tag** 配置代理权限的入门指南！https://t.co/x7G0o8Cjx1",
+            "source_links": [
+              "https://x.com/_catwu/status/2069484330938998993"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/noahzweben/status/2069481892475445695",
+                "resolvedUrl": "https://x.com/noahzweben/status/2069481892475445695",
+                "authorName": "Noah Zweben",
+                "authorHandle": "noahzweben",
+                "authorUrl": "https://x.com/noahzweben",
+                "text": "(Look mom - I made it!)\n\nLearn more about configuring agent identity and some of the key decisions we made for Claude Tag- https://claude.com/blog/agent-identity-access-model",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/Mh3zEepVMg",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2069481383597309952/img/PzbwHVgYOX_N3Sph.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/noahzweben/status/2069481892475445695/video/1"
+                  }
+                ],
+                "textZh": "（妈，你看——我上了！） 想进一步了解 agent identity 的配置方式，以及我们为 Claude Tag 做出的一些关键决策，请看： https://claude.com/blog/agent-identity-access-model"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/x7G0o8Cjx1",
+                "resolvedUrl": "https://x.com/noahzweben/status/2069481892475445695"
+              }
+            ]
+          },
+          {
+            "headline": "**Claude Tag** is pitched as a product-shipping shift at **Anthropic** · **Claude Tag** 被说成是 **Anthropic** 发产品方式的转折点",
+            "body": "**Claude Tag** is a paradigm shift in how we ship products at **Anthropic**. Our internal version merges 65% of product PRs and this is our first product that is natively multi-player and proactive.\n\nWe're excited for you to try this out. Let us know your feedback! https://t.co/YOENq4hDSt\n\n**Claude Tag** 正在改变我们在 **Anthropic** 发产品的方式。内部版本已经能合并 65% 的产品 PR，而且这是我们第一个天生就是多人协作、还能主动干活的产品。\n\n很期待你们上手试试，欢迎把反馈都丢过来！https://t.co/YOENq4hDSt",
+            "source_links": [
+              "https://x.com/_catwu/status/2069473118742331608"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2069468693017268244",
+                "resolvedUrl": "https://x.com/claudeai/status/2069468693017268244",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "Introducing Claude Tag, a new way for teams to work with Claude.\n\nIn Slack, Claude joins as a team member with access to the channels and tools you choose. Tag Claude in and delegate tasks to it while you focus on other work.",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/R2C6A5Kcye",
+                    "url": "https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2069468693017268244/video/1"
+                  }
+                ],
+                "textZh": "推出 Claude Tag，一种让团队与 Claude 协作的新方式。 在 Slack 里，Claude 会作为团队成员加入，并获得你选择开放的频道和工具访问权限。@Claude 之后，你可以把任务交给它，自己专注于其他工作。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/YOENq4hDSt",
+                "resolvedUrl": "https://x.com/claudeai/status/2069468693017268244"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-06-23T17:35:07.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** gets a scheduling channel use case · **Claude** 又多了一个排日程频道场景",
+            "body": "Finally, get creative! I'm setting up a \"scheduling\" channel which lets people tag **Claude** to find time on our calendars.\n\n最后，玩点有创意的！我在搭一个 “scheduling” 频道，让大家可以直接 @**Claude** 帮忙在日历里找时间。",
+            "source_links": [
+              "https://x.com/trq212/status/2069474343512617390"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Emoji status becomes thread telemetry for **Claude** · 用表情给 **Claude** 线程做状态灯",
+            "body": "When it's working, I ask it to react to the top level thread with the following emojis: ⏲️✅❓🛑\n\nThat way it's easy to see its status at a glance.\n\n它开始工作后，我会让它在顶层线程上用这些表情做反应: ⏲️✅❓🛑\n\n这样一眼就能看出它现在是什么状态。",
+            "source_links": [
+              "https://x.com/trq212/status/2069474342220820657"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A pinned status board helps manage agent thread overload · 线程一多顶不住？置顶状态板来兜底",
+            "body": "When you really get going, it's easy to get overwhelmed with all the threads. \n\nIn my personal channel I like to ask **Claude** to keep a pinned message that it updates with the status of everything.\n\n等你真用起来，线程一多很容易被淹掉。\n\n在我的个人频道里，我喜欢让 **Claude** 维护一条置顶消息，持续更新所有事情的状态。",
+            "source_links": [
+              "https://x.com/trq212/status/2069474339679052144"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-24T01:07:21.000Z",
+        "sections": [
+          {
+            "headline": "From prompt to product: **Amjad** congratulates a shipped build · 从一句 prompt 到成品，**Amjad** 为上线项目庆功",
+            "body": "It starts with a prompt — it’s a whole lot of work to get here — but it starts with an idea.\n\nCongrats Yousef and team! https://t.co/ARUtRHwvFf https://t.co/fu1FQpfyHY\n\n一切都从一个 prompt 开始。走到这里当然得做很多活，但起点就是一个想法。\n\n恭喜 Yousef 和团队！https://t.co/ARUtRHwvFf https://t.co/fu1FQpfyHY",
+            "source_links": [
+              "https://x.com/amasad/status/2069588152285794373"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLincyNXkAAMXOH.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2069588152285794373/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLincyNXsAAXQOD.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2069588152285794373/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ARUtRHwvFf",
+                "resolvedUrl": "https://x.com/amasad/status/2069588152285794373/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLincyNXsAAXQOD.jpg"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/fu1FQpfyHY",
+                "resolvedUrl": "https://t.co/fu1FQpfyHY"
+              }
+            ]
+          },
+          {
+            "headline": "\"K-coding\" lands as a tiny slogan post · “K-coding” 被压缩成一句口号式发言",
+            "body": "K-coding https://t.co/xDprsRZeLP\n\nK-coding https://t.co/xDprsRZeLP",
+            "source_links": [
+              "https://x.com/amasad/status/2069322872456364540"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/xDprsRZeLP",
+                "resolvedUrl": "https://t.co/xDprsRZeLP"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-24T01:16:24.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel** feedback moves into a private builder group · **Vercel** 把代理反馈拉进私密讨论群",
+            "body": "Starting an X Chat group for https://t.co/99eEa13mZ3 feedback. If you’re deep into building an agent and have high quality critical feedback or requirements to share, DM me and I’ll add you to a group with eve engineers\n\n我在开一个 X 群聊，专门收集 https://t.co/99eEa13mZ3 的反馈。如果你正在认真做代理，而且手里有高质量、够尖锐的反馈或需求，私信我，我会把你拉进一个和 eve 工程师一起的群。",
+            "source_links": [
+              "https://x.com/rauchg/status/2069590431646769472"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/99eEa13mZ3",
+                "resolvedUrl": "http://eve.dev/"
+              }
+            ]
+          },
+          {
+            "headline": "**Vercel** plus **Cursor**, in two words · **Vercel** 加 **Cursor**，两个词就发出来了",
+            "body": "**Vercel** + **Cursor** https://t.co/3AyhoYnUM1\n\n**Vercel** + **Cursor** https://t.co/3AyhoYnUM1",
+            "source_links": [
+              "https://x.com/rauchg/status/2069513849578082474"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/cursor_ai/status/2069512593887092811",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2069512593887092811",
+                "authorName": "Cursor",
+                "authorHandle": "cursor_ai",
+                "authorUrl": "https://x.com/cursor_ai",
+                "text": "Cursor now shows you a leaderboard of the most popular plugins, skills, and MCPs across your team.\n\nAdd any to your setup with one click from the new Customize page.",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/1DXQXkGTVn",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2069512002662502400/img/IbecqeIVGUdhngNJ.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/cursor_ai/status/2069512593887092811/video/1"
+                  }
+                ],
+                "textZh": "Cursor 现在会向你展示团队里最受欢迎的插件、skills 和 MCP 排行榜。 在新的 Customize 页面里，一键就能把其中任意项加入你的配置。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3AyhoYnUM1",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2069512593887092811"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Alex Albert",
+        "person_handle": "alexalbert__",
+        "person_identity": "Anthropic researcher",
+        "profile_url": "https://x.com/alexalbert__",
+        "source_label": "X",
+        "posted_at": "2026-06-23T17:19:24.000Z",
+        "sections": [
+          {
+            "headline": "Working with **Claude** starts to feel like managing a team · 跟 **Claude** 一起干活，开始像在带一个团队",
+            "body": "This has completely changed how I work with **Claude**. It feels less like using a tool and more like managing a team. https://t.co/JaUllMPTJW\n\n这已经彻底改变了我和 **Claude** 一起工作的方式。感觉不太像在用工具，更像是在管理一个团队。https://t.co/JaUllMPTJW",
+            "source_links": [
+              "https://x.com/alexalbert__/status/2069470389391241314"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/JaUllMPTJW",
+                "resolvedUrl": "https://t.co/JaUllMPTJW"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-24T04:31:47.000Z",
+        "sections": [
+          {
+            "headline": "**Box** bets the applied AI layer wins the pricing war · **Box** 判断定价战里真正吃肉的是应用层",
+            "body": "Good post on the dynamics of AI pricing right now. We’re basically going to see a barbell dynamic on pricing between high cost frontier models and cheap but good open or closed weights models. \n\nThen the question is how do you maximize efficiency from the frontier models, and get better quality and performance of the cheaper models. That’s where the applied AI layer comes in.\n\nThe applied layer can route to the best model at any time given the workload at hand, as well as mitigate either high token costs or worse performance. The closer you are to the underlying workflow, the better you can tune the use of models for a given business process. \n\nThat’s all about understanding the workflows, domain specific FDEs, evals by customer or process, getting data setup well for agents, and more. Overall good for applied AI.\n\n这篇关于 AI 定价动态的文章不错。接下来大概率会出现一种两头分化的价格结构: 一边是昂贵的前沿模型，另一边是便宜但已经够好的开源或闭源权重模型。\n\n接下来的问题就变成，怎么把前沿模型的效率榨到最高，以及怎么把便宜模型的质量和性能调得更好。这正是应用层 AI 要发挥作用的地方。\n\n应用层可以根据手头的工作负载随时路由到最合适的模型，也能对冲 token 成本太高或者性能不够的问题。你离底层工作流越近，就越能针对某个业务流程把模型用法调到位。\n\n这件事最终都落在对工作流的理解、特定领域的 FDE、按客户或流程做 eval、给代理把数据底子打好这些具体活上。总体看，这对应用层 AI 是好事。",
+            "source_links": [
+              "https://x.com/levie/status/2069639600310767616"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claude Tag** plus **Box** turns enterprise files into an agent knowledge base · **Claude Tag** 接上 **Box**，企业文件直接变代理知识库",
+            "body": "Another example of the power of headless software with agents. With **Claude Tag**, you can give **Claude** access to any corporate files in **Box** that you can interact with from **Slack**. Now all of your enterprise content becomes a portable knowledge base. https://t.co/m7UPdmqnn8 https://t.co/qrHqoZKHG4\n\n这又是一个代理时代 headless software 的例子。通过 **Claude Tag**，你可以让 **Claude** 访问你在 **Box** 里那些原本就能从 **Slack** 里操作的企业文件。这样一来，你所有企业内容都能变成一个可携带的知识库。https://t.co/m7UPdmqnn8 https://t.co/qrHqoZKHG4",
+            "source_links": [
+              "https://x.com/levie/status/2069596515560267891"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/m7UPdmqnn8",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069536847974531072/img/Afb1knxxsByZ7irw.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2069596515560267891/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2069468693017268244",
+                "resolvedUrl": "https://x.com/claudeai/status/2069468693017268244",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "Introducing Claude Tag, a new way for teams to work with Claude.\n\nIn Slack, Claude joins as a team member with access to the channels and tools you choose. Tag Claude in and delegate tasks to it while you focus on other work.",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/R2C6A5Kcye",
+                    "url": "https://pbs.twimg.com/media/HLg9iF5XYAAhaS7.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2069468693017268244/video/1"
+                  }
+                ],
+                "textZh": "推出 Claude Tag，一种让团队与 Claude 协作的新方式。 在 Slack 里，Claude 会作为团队成员加入，并获得你选择开放的频道和工具访问权限。@Claude 之后，你可以把任务交给它，自己专注于其他工作。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/m7UPdmqnn8",
+                "resolvedUrl": "https://x.com/levie/status/2069596515560267891/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2069536847974531072/img/Afb1knxxsByZ7irw.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/qrHqoZKHG4",
+                "resolvedUrl": "https://x.com/claudeai/status/2069468693017268244"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "Y Combinator CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-23T18:06:43.000Z",
+        "sections": [
+          {
+            "headline": "Garry pivots from AI to public-sector competence · Garry 从 AI 话题切到政府执行力",
+            "body": "We should demand government competence instead of whatever we have to deal with in **California** government and local city management today https://t.co/6378A01vgm\n\n我们该要求政府有基本的执行能力，而不是继续忍受今天 **California** 州政府和地方城市管理这副样子。https://t.co/6378A01vgm",
+            "source_links": [
+              "https://x.com/garrytan/status/2069482298547044788"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/garryslist/status/2069473132335837643",
+                "resolvedUrl": "https://x.com/garryslist/status/2069473132335837643",
+                "authorName": "Garry's List",
+                "authorHandle": "garryslist",
+                "authorUrl": "https://x.com/garryslist",
+                "text": "LA's housing department oversaw 47,000 affordable units and $2.9 billion in loans, with no system to track whether any of those properties were financially solvent, physically safe, or following the rules.\n\nA third were noncompliant. Inspectors found roach infestations and did",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLg-2J7aoAA1YkP.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/garryslist/status/2069473132335837643/photo/1"
+                  }
+                ],
+                "textZh": "洛杉矶住房部门监管着 47,000 套保障性住房和 29 亿美元贷款，却没有任何系统来跟踪这些房产是否财务稳健、实体安全，或遵守规定。 其中三分之一不合规。检查人员发现了蟑螂 infestations，而且还"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/6378A01vgm",
+                "resolvedUrl": "https://x.com/garryslist/status/2069473132335837643"
+              }
+            ]
+          },
+          {
+            "headline": "**Linzumi** gets pitched as multiplayer **Codex** · **Linzumi** 被 Garry 夸成多人版 **Codex**",
+            "body": "**Linzumi** is **Codex** but actually multiplayer. It’s magical for teams. \n\nAlso **Sean Grove** was on the team at **OpenAI** that greatly reduced sycophancy in **ChatGPT** before he left to start this **YC** startup! https://t.co/uShBOGz3tV\n\n**Linzumi** 很像 **Codex**，但它是真的多人协作版。对团队来说，这东西很有魔力。\n\n另外，**Sean Grove** 以前在 **OpenAI**，他参与过大幅降低 **ChatGPT** 谄媚倾向的那支团队，后来才出来做这个 **YC** 创业项目！https://t.co/uShBOGz3tV",
+            "source_links": [
+              "https://x.com/garrytan/status/2069474420113146355"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/uShBOGz3tV",
+                "resolvedUrl": "https://t.co/uShBOGz3tV"
+              }
+            ]
+          },
+          {
+            "headline": "AI data growth makes **Dropbox** look undersized at 3TB · AI 数据量上来后，**Dropbox** 的 3TB 看着太小了",
+            "body": "**Dropbox** should really support larger than 3TB plans - it's not 2015 anymore. The amount of data we are throwing off and that is *actually usable* is going to go exponential from AI, and **Dropbox** will be run over by this if they don't update for the future.\n\n**Dropbox** 真的该支持超过 3TB 的套餐了，现在又不是 2015 年。AI 带来的数据量，而且是那种*真的能拿来用*的数据，会指数级往上冲；如果 **Dropbox** 不为这个未来更新自己，迟早会被碾过去。",
+            "source_links": [
+              "https://x.com/garrytan/status/2069434452628185241"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-23T18:04:37.000Z",
+        "sections": [
+          {
+            "headline": "A rare non-AI break: **Matt Turck** loves the 48-team World Cup · 难得不聊 AI，**Matt Turck** 在夸 48 队世界杯",
+            "body": "Expanding the world cup from 32 to 48 teams was such a genius idea.  Creates some Cinderalla stories (**Curacao**, **Cabo Verde**, **DR Congo** etc), and enables the stars (**Messi**, **Ronaldo**, **MBappe**, **Haaland** etc) to shine early.  Loving it all so far.\n\n把世界杯从 32 队扩到 48 队真是个天才主意。这样会冒出一些灰姑娘故事（**Curacao**、**Cabo Verde**、**DR Congo** 等），也能让那些大牌球星（**Messi**、**Ronaldo**、**MBappe**、**Haaland** 等）更早发光。到目前为止我看得很爽。",
+            "source_links": [
+              "https://x.com/mattturck/status/2069481767652794768"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-23T22:24:39.000Z",
+        "sections": [
+          {
+            "headline": "**Plug That Shop** ships with **Conductor**, **Opus 4.8**, **Shopify UCP CLI**, and **Railway** · **Plug That Shop** 技术栈直接摊牌",
+            "body": "Built using @conductor_build, @AnthropicAI **Opus 4.8**, @shopify **UCP CLI** and @**Railway**.\n\nLive now here: https://t.co/oSJhkFkEKP\n\n用 @conductor_build、@AnthropicAI **Opus 4.8**、@shopify **UCP CLI** 和 @**Railway** 搭出来的。\n\n现已上线: https://t.co/oSJhkFkEKP",
+            "source_links": [
+              "https://x.com/nikunj/status/2069547206504566980"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/oSJhkFkEKP",
+                "resolvedUrl": "https://plugthatshop.com/"
+              }
+            ]
+          },
+          {
+            "headline": "**Plug That Shop** turns websites into one-click contextual stores · **Plug That Shop** 想把网站直接变成一键嵌入商店",
+            "body": "Introducing **Plug That Shop** 🔌\n\nSo @**Shopify** launched their **UCP CLI** that allows all the products on their stores available via the command line.\n\nI was thinking of interesting use cases for the CLI over the weekend and realized that I can use this to create contextual embedded shops for websites.\n\nSo now, you can enter your website and get four HIGHLY relevant shops that you can embed in just one click.\n\nFor the buyer using this shop, it's an insanely simple experience since they can click buy and checkout with **Shop** in literally one click.\n\nAvailable, free to use, NO affiliate revenue at plugthatshop dot com\n\nFeedback welcome!\n\n介绍一下 **Plug That Shop** 🔌\n\n@**Shopify** 刚推出了他们的 **UCP CLI**，可以让店铺里的所有商品都通过命令行访问。\n\n我周末一直在想这个 CLI 能拿来干什么，后来意识到，我可以用它给网站生成有上下文关系的嵌入式商店。\n\n现在你只要输入自己的网站，就能拿到四个高度相关的商店，而且一键就能嵌进去。\n\n对买家来说，这个体验也极简，因为他们点一下 buy，就能用 **Shop** 真正做到一键结账。\n\n已经可用，免费，没有联盟分成，地址是 plugthatshop dot com。\n\n欢迎反馈！",
+            "source_links": [
+              "https://x.com/nikunj/status/2069534712763490668"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/gOOukcSQlX",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069522331303890944/img/nUc1TG6LRWTx4lSn.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2069534712763490668/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-24T01:31:22.000Z",
+        "sections": [
+          {
+            "headline": "**Google Workspace CLI** drama gets a sharp retweet-style jab · **Google Workspace CLI** 的戏剧性后续被狠狠补了一刀",
+            "body": "**Google** fired the guy that made the **Google Workspace CLI**, because he made the **Google Workspace CLI**.\n\nLucky me, **Google** can't fire me. https://t.co/o15a6lOxec https://t.co/COuHqv5u6J\n\n**Google** 把那个做出 **Google Workspace CLI** 的人开了，就因为他做出了 **Google Workspace CLI**。\n\n还好，**Google** 开不了我。https://t.co/o15a6lOxec https://t.co/COuHqv5u6J",
+            "source_links": [
+              "https://x.com/steipete/status/2069594195522941059"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/o15a6lOxec",
+                "resolvedUrl": "https://gogcli.sh/"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/COuHqv5u6J",
+                "resolvedUrl": "https://t.co/COuHqv5u6J"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-23T16:57:27.000Z",
+        "sections": [
+          {
+            "headline": "\"Why we invested\" for **Longshot Space** · “为什么投” 的链接指向 **Longshot Space**",
+            "body": "Why we invested: https://t.co/v9V7e4MAoq\n\n我们为什么投: https://t.co/v9V7e4MAoq",
+            "source_links": [
+              "https://x.com/adityaag/status/2069464865568166180"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/v9V7e4MAoq",
+                "resolvedUrl": "https://www.southparkcommons.com/companies/longshot#investment"
+              }
+            ]
+          },
+          {
+            "headline": "**Longshot Space** wants to fire payloads into orbit with a cannon · **Longshot Space** 要用大炮把载荷打上轨道",
+            "body": "There's way more demand for space than capacity to launch.\n\n@**LongshotSpace** is building a cannon that fires payloads into orbit.\n\nWe’re excited to partner with them at @southpkcommons.\n\nLet’s shoot things into space. https://t.co/TRWlr76HWn https://t.co/aTDr0vjR5K\n\n现在对太空发射的需求，远远超过现有运力。\n\n@**LongshotSpace** 正在造一门能把载荷打进轨道的大炮。\n\n我们很高兴在 @southpkcommons 跟他们合作。\n\n那就把东西打上天吧。https://t.co/TRWlr76HWn https://t.co/aTDr0vjR5K",
+            "source_links": [
+              "https://x.com/adityaag/status/2069464862556619263"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLgzXW6WAAA7kIu.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2069464862556619263/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/LongshotSpace/status/2069421283515957555",
+                "resolvedUrl": "https://x.com/LongshotSpace/status/2069421283515957555",
+                "authorName": "Longshot",
+                "authorHandle": "LongshotSpace",
+                "authorUrl": "https://x.com/LongshotSpace",
+                "text": "$20M and counting.\n\n@southpkcommons has invested $5M in Longshot, helping us accelerate the future of #hypersonic testing and ground-based launch. @adityaag @JPBrebner\n\n🔗: https://www.globenewswire.com/news-release/2026/06/23/3316001/0/en/longshot-secures-5-million-investment-from-south-park-commons-bringing-total-funding-to-20-million.html",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLgPkthakAA5JBp.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/LongshotSpace/status/2069421283515957555/photo/1"
+                  }
+                ],
+                "textZh": "已经达到 2000 万美元，而且还在增加。 @southpkcommons 已向 Longshot 投资 500 万美元，帮助我们加速推进 #hypersonic 测试和地基发射的未来。@adityaag @JPBrebner 🔗: https://www.globenewswire.com/news-release/2026/06/23/3316001/0/en/longshot-secures-5-million-investment-from-south-park-commons-bringing-total-funding-to-20-million.html"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/TRWlr76HWn",
+                "resolvedUrl": "https://x.com/adityaag/status/2069464862556619263/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLgzXW6WAAA7kIu.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/aTDr0vjR5K",
+                "resolvedUrl": "https://x.com/longshotspace/status/2069421283515957555"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic assistant",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-06-23T17:12:41.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Tag** opens beta on **Slack** for paid teams · **Claude Tag** 在 **Slack** 面向付费团队开启测试",
+            "body": "**Claude Tag** is available in beta today on **Slack** for **Claude Enterprise** and Team plans. We plan to expand it more widely in the future.\n\nRead more: https://t.co/MGV30Ml8mL\n\n**Claude Tag** 今天已经在 **Slack** 上向 **Claude Enterprise** 和 Team 方案开放测试。后面还会逐步扩大范围。\n\n更多信息: https://t.co/MGV30Ml8mL",
+            "source_links": [
+              "https://x.com/claudeai/status/2069468701548531895"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/MGV30Ml8mL",
+                "resolvedUrl": "https://www.anthropic.com/news/introducing-claude-tag"
+              }
+            ]
+          },
+          {
+            "headline": "Ambient mode lets **Claude** follow up on its own · 环境行为一开，**Claude** 会自己接着往下做",
+            "body": "Turn ambient behavior on, and **Claude** takes initiative. It follows up on threads that have gone quiet and flags what's relevant from across its channels and tools. https://t.co/fTMkAHY4Gr\n\n打开 ambient behavior，**Claude** 就会自己主动起来。它会跟进那些已经安静下来的线程，也会从它接入的频道和工具里挑出相关内容提醒你。https://t.co/fTMkAHY4Gr",
+            "source_links": [
+              "https://x.com/claudeai/status/2069468699766005847"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLg4kFIXEAAHHOk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2069468699766005847/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/fTMkAHY4Gr",
+                "resolvedUrl": "https://x.com/claudeai/status/2069468699766005847/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLg4kFIXEAAHHOk.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "One **Claude** per channel means shared context for the whole team · 一个频道一个 **Claude**，整个团队共用上下文",
+            "body": "In a channel, there’s one **Claude** that interacts with everyone, so a teammate can pick up exactly where you left off.\n\nIt builds more context about the work as it follows the channel, so you don’t need to explain things from scratch.\n\n在一个频道里，只有一个 **Claude** 跟所有人互动，所以你的队友可以直接接着你停下来的地方往下做。\n\n它会随着频道里的工作继续积累上下文，这样你就不用每次都从头解释一遍。",
+            "source_links": [
+              "https://x.com/claudeai/status/2069468698071494976"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-24",
+    "updatedAt": "2026-06-24T14:05:50.358Z",
+    "commit": {
+      "sha": "202f7c8a6e0eb347c6875bbe2964463da0ce0469",
+      "committedAt": "2026-06-24T07:29:10Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-24T14:00:08.806Z",
+    "feedGeneratedAt": "2026-06-24T07:29:07.207Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
