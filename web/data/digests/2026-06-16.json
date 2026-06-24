@@ -1,0 +1,715 @@
+{
+  "payload": {
+    "date": "2026-06-16",
+    "title": "AI Builders Daily · 2026-06-16",
+    "summary": "**Anthropic** pushes managed agents into self-editing mode with dreaming and multiagent orchestration; **OpenAI** researcher **Dan Roberts** says reinforcement learning plus test-time compute is turning models into engines for scientific discovery; **Vercel**, **Replit**, and **Google** all ship harder toward agentic products, longer runtimes, specialist agents, and 70+ language voice input; meanwhile builders on X keep the tone volatile, mixing tool obsession, regulation fights, and a lot of very online product takes.\n\n**Anthropic**把托管代理往前推了一截，dreaming、outcomes、多代理编排一口气放出来；**OpenAI** 的 **Dan Roberts** 讲得很直，RL 加测试时算力，已经开始摸到“模型自己做发现”这件事；产品层面也没闲着，**Vercel** 拉长函数运行时，**Replit** 继续押注垂类代理，**Google** 把语音输入扩到 70 多种语言；X 上还是那个熟悉的 builder 气味，一边晒爽点，一边吵开源、监管，还有人已经从 VC 往一线跑了。",
+    "items": [
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=oWOz2htozfI",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-04T12:30:00.000Z",
+        "sections": [
+          {
+            "headline": "**OpenAI’s Dan Roberts** says reasoning + RL may turn AI into a discovery engine / **OpenAI** 的 **Dan Roberts** 说，推理加 RL 正把 AI 往“发现引擎”上推",
+            "body": "On **The MAD Podcast**, **Dan Roberts** argues the big shift is not a single magic moment but a smooth climb driven by reinforcement learning, test-time compute, and models that can stay on a hard problem long enough to find something non-obvious. He points to **o1**-style reasoning as the clearest public marker so far, and says that in science and math the interesting jump is persistence: models can now explore contrarian paths instead of only polishing familiar ones.\n\nHe also contrasts **OpenAI**’s recent math work with **Google DeepMind**’s formal-proof route in **Lean**. Roberts’ framing is that AI science will arrive gradually, through systems that become useful in more parts of the research loop before they ever look like fully autonomous scientists.\n\n在 **The MAD Podcast** 里，**Dan Roberts** 的判断很明确：这不是某个神奇时刻突然发生的飞跃，而是一条持续上升的线，背后靠的是强化学习、测试时算力，还有模型愿意在难题上硬啃更久。他把 **o1** 式推理看作目前最清楚的公开信号，尤其在科学和数学里，真正变有意思的是“韧性”这件事，模型不只是修修补补熟路子，已经会往反常识的方向试。\n\n他还拿 **OpenAI** 和 **Google DeepMind** 的数学路线做了对照：前者更像开放探索，后者更偏 **Lean** 里的形式化证明。Roberts 的核心意思不是“科学家 AI 明天就来了”，而是研究流程里越来越多环节，模型已经开始真正派上用场。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=oWOz2htozfI"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "AI Blog",
+        "profile_url": "https://claude.com/blog/new-in-claude-managed-agents",
+        "source_label": "Blog",
+        "posted_at": "2026-05-06",
+        "sections": [
+          {
+            "headline": "**Claude Managed Agents** adds dreaming, outcomes, and multiagent orchestration / **Claude Managed Agents** 上线 dreaming、outcomes 和多代理编排",
+            "body": "**Anthropic** is extending **Claude Managed Agents** in three directions at once: dreaming to review past sessions and rewrite memory, outcomes to grade work against a rubric and trigger retries, and multiagent orchestration so a lead agent can split jobs across specialists on a shared filesystem. The pitch is simple: less babysitting, more self-correction, and better handling of long, messy tasks.\n\nThe blog also comes with concrete benchmark-style claims. **Outcomes** improved task success by up to 10 points in internal testing, with file generation gains of +8.4% on **docx** and +10.1% on **pptx**. Customer examples are aggressive too: **Harvey** reportedly saw roughly 6x higher completion rates, while **Wisedocs** cut review time by 50%.\n\n**Anthropic** 这次不是补小功能，而是把 **Claude Managed Agents** 往“能自己迭代”的方向推了一大步。dreaming 负责回看历史会话、整理记忆；outcomes 用 rubric 打分，不达标就重来；多代理编排则让主代理把活拆给不同 specialist，在同一个文件系统里并行干活。意思很直白：少盯人，多自纠，复杂脏活也能扛久一点。\n\n它还给了几组挺硬的数字。**Outcomes** 在内部测试里把任务成功率最多拉高 10 个点，生成 **docx** 和 **pptx** 的成绩也分别多了 8.4% 和 10.1%。客户案例更敢写：**Harvey** 说完成率大概涨了 6 倍，**Wisedocs** 说审查速度快了 50%。",
+            "source_links": [
+              "https://claude.com/blog/new-in-claude-managed-agents"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space co-host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-16T02:13:10.000Z",
+        "sections": [
+          {
+            "headline": "Goblingate already feels ancient online / Goblingate 这事在线上已经像上个时代",
+            "body": "guys \n\ngoblingate was 1.5 months ago https://t.co/5R9y0wqfPf\n\n各位，\n\ngoblingate 已经是一个半月前的事了 https://t.co/5R9y0wqfPf",
+            "source_links": [
+              "https://x.com/swyx/status/2066705614454337663"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK5py8taUAAmg_c.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2066705614454337663/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/5R9y0wqfPf",
+                "resolvedUrl": "https://x.com/swyx/status/2066705614454337663/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK5py8taUAAmg_c.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google Labs VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-16T00:04:20.000Z",
+        "sections": [
+          {
+            "headline": "Web rollout next for the new **Gemini** voice experience / 新版 **Gemini** 语音体验下周左右上 Web",
+            "body": "And coming to the Web in another week or so!\n\n再过一周左右也会上 Web！",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2066673191783665722"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Gemini** voice input expands to 70+ languages and mixed-language speech / **Gemini** 语音输入扩到 70 多种语言，还支持混说",
+            "body": "Our mic icon just got way better on Android and iOS! This is HUGE for non-English speakers.\n\n+ now 70+ languages\n+ mix languages freely\n+ don't have to change language settings\n+ still doesn't interrupt you :) https://t.co/KQuUyC52fl\n\n我们的麦克风图标在 Android 和 iOS 上刚刚变强了很多！这对非英语用户来说太重要了。\n\n+ 现在支持 70 多种语言\n+ 可以自由混用语言\n+ 不用再改语言设置\n+ 还是不会打断你 :) https://t.co/KQuUyC52fl",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2066673011554435450"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK5LxBdXAAAJ6sy.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/joshwoodward/status/2066673011554435450/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/KQuUyC52fl",
+                "resolvedUrl": "https://x.com/joshwoodward/status/2066673011554435450/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK5LxBdXAAAJ6sy.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Gemini** opens a limited trusted tester signup / **Gemini** 开放少量 Trusted Tester 名额",
+            "body": "Want unreleased @GeminiApp features before anyone else? Love breaking, testing, and shaping new tech?\n\nWe're opening a limited number of slots for power users to join the Gemini Trusted Tester program.\n\nSign up here: https://t.co/kSsRsavJPv https://t.co/6sxYCb8S0y\n\n想比别人更早用到还没发布的 @GeminiApp 功能吗？喜欢把新技术拿来折腾、测试、一起塑形吗？\n\n我们正在开放少量名额，邀请重度用户加入 Gemini Trusted Tester 项目。\n\n报名链接在这里： https://t.co/kSsRsavJPv https://t.co/6sxYCb8S0y",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2066664862671921259"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK5DsZdWQAA8rWe.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/joshwoodward/status/2066664862671921259/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/kSsRsavJPv",
+                "resolvedUrl": "http://goo.gle/4onCRHq"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/6sxYCb8S0y",
+                "resolvedUrl": "https://x.com/joshwoodward/status/2066664862671921259/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK5DsZdWQAA8rWe.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-16T05:34:46.000Z",
+        "sections": [
+          {
+            "headline": "**Cursor** gets credit for Michelin-level dinner planning / **Cursor** 被夸成能做米其林级晚餐规划",
+            "body": "I have to give @cursor_ai credit for planning the best dinner that was Michelin quality.\n\n我得给 @cursor_ai 记一功，它把那顿晚餐规划得真有米其林水准。",
+            "source_links": [
+              "https://x.com/petergyang/status/2066756347438469602"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** browser use is so good it makes APIs feel optional / **Codex** 的 browser use 强到让人怀疑 API 还需不需要",
+            "body": "Codex browser use is so good that it almost makes me forget APIs are even needed\n\nCodex 的 browser use 好到差点让我忘了 API 甚至还需不需要。",
+            "source_links": [
+              "https://x.com/petergyang/status/2066753125197967653"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A one-line reaction: “What” / 一句反应帖：就一个“啥”",
+            "body": "1) What https://t.co/UX2vVhspvD\n\n1）啥 https://t.co/UX2vVhspvD",
+            "source_links": [
+              "https://x.com/petergyang/status/2066752332197716285"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK6USsRbQAAqK_h.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2066752332197716285/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/UX2vVhspvD",
+                "resolvedUrl": "https://x.com/petergyang/status/2066752332197716285/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK6USsRbQAAqK_h.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Head of Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-15T14:50:28.000Z",
+        "sections": [
+          {
+            "headline": "Nan Yu salutes whoever pushed this through / Nan Yu 直接给把这事推动成的人敬礼",
+            "body": "Whichever lobbyist made this happen is an absolute legend https://t.co/tiElSlwPMj\n\n不管是哪位说客把这事搞成的，都是个传奇。 https://t.co/tiElSlwPMj",
+            "source_links": [
+              "https://x.com/thenanyu/status/2066533806694080898"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK3NbipXIAAiTwE.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thenanyu/status/2066533806694080898/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/tiElSlwPMj",
+                "resolvedUrl": "https://x.com/thenanyu/status/2066533806694080898/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK3NbipXIAAiTwE.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-16T01:54:14.000Z",
+        "sections": [
+          {
+            "headline": "Amjad jokes that **Mistral**’s cat beats **Fable** / Amjad 开玩笑说 **Mistral** 这只猫都能顶 **Fable**",
+            "body": "Who needs Fable when you can have Mistral’s Le Chaton Fat\n\n既然有 Mistral 的 Le Chaton Fat，谁还需要 Fable。",
+            "source_links": [
+              "https://x.com/amasad/status/2066700847187140655"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Replit** doubles down on domain-specific agents / **Replit** 继续猛推垂类代理",
+            "body": "I absolutely love Replit’s domain-specific agents:\n\n- growth agent surfacing SEO issues\n- security agent surfacing potential vulnerabilities\n\nMy favorite thing is: select all, fix with Agent. https://t.co/7TrK2UpNXQ\n\n我真的很喜欢 Replit 的垂类代理：\n\n- growth agent 会把 SEO 问题拎出来\n- security agent 会把潜在漏洞拎出来\n\n我最喜欢的一点是：全选，然后让 Agent 修。 https://t.co/7TrK2UpNXQ",
+            "source_links": [
+              "https://x.com/amasad/status/2066683949129330817"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK5WFlnWwAAy6JD.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2066683949129330817/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK5WGEkWMAAss7u.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2066683949129330817/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/7TrK2UpNXQ",
+                "resolvedUrl": "https://x.com/amasad/status/2066683949129330817/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK5WGEkWMAAss7u.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Build outside, apparently / 在外面也能顺手开建",
+            "body": "Touch grass…. AND build things. At the same time https://t.co/mpRp8P0XCM\n\n去户外吧……同时也把东西做出来。两件事一起干。 https://t.co/mpRp8P0XCM",
+            "source_links": [
+              "https://x.com/amasad/status/2066557465991557491"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/francisstudio_/status/2066529449416278165",
+                "resolvedUrl": "https://x.com/FrancisStudio_/status/2066529449416278165",
+                "authorName": "Francis",
+                "authorHandle": "FrancisStudio_",
+                "authorUrl": "https://x.com/FrancisStudio_",
+                "text": "Build an iPhone app anywhere your phone gets signal! I can be outdoors enjoying nature, knowing Replit is handling the work in the background",
+                "displayDate": "Jun 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/O5DuSGKSep",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2066529351483412480/img/YG8XfEM0Bz60SpG6.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/FrancisStudio_/status/2066529449416278165/video/1"
+                  }
+                ],
+                "textZh": "只要手机有信号，你就能随时随地开发 iPhone app！我可以在户外享受大自然，同时知道 Replit 正在后台处理这些工作"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/mpRp8P0XCM",
+                "resolvedUrl": "https://x.com/francisstudio_/status/2066529449416278165"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-15T17:02:50.000Z",
+        "sections": [
+          {
+            "headline": "**v0** wants default skills to feel like a **Vercel** engineer on every prompt / **v0** 想把默认技能做成“每次提示词都配一个 **Vercel** 工程师”",
+            "body": "v0 commits to shipping the best skills by default. \n\nOur goal is to give you the equivalent of a @vercel product engineer like @shuding and @shadcn on each prompt.\n\nBut you can also now grab any skill from https://t.co/pYz1Gn97jD or add your team’s private set. https://t.co/s2tHUBYNC4\n\nv0 承诺默认就交付最好的 skills。\n\n我们的目标是：让你每次下 prompt 时，都像身边配了一个 @vercel 的产品工程师，比如 @shuding 和 @shadcn 那样的人。\n\n不过你现在也可以从 https://t.co/pYz1Gn97jD 抓任意 skill，或者加上你们团队自己的私有技能集。 https://t.co/s2tHUBYNC4",
+            "source_links": [
+              "https://x.com/rauchg/status/2066567117562868009"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/v0/status/2066555389622284288",
+                "resolvedUrl": "https://x.com/v0/status/2066555389622284288",
+                "authorName": "v0",
+                "authorHandle": "v0",
+                "authorUrl": "https://x.com/v0",
+                "text": "You can now use skills in v0.\n\nAttach one from the prompt bar, and the agent uses it in every generation.\n\nPull them from http://skills.sh/, your saved skills, or your repo.",
+                "displayDate": "Jun 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/rPJdM1VAsA",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2066555321787809792/img/7JG1pk_ymaUZfv7d.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/v0/status/2066555389622284288/video/1"
+                  }
+                ],
+                "textZh": "你现在可以在 v0 里使用 skills 了。 在提示栏里附加一个，agent 就会在每次生成时使用它。 你可以从 http://skills.sh/、你保存的 skills，或者你的 repo 中调用它们。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/pYz1Gn97jD",
+                "resolvedUrl": "http://skills.sh/"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/s2tHUBYNC4",
+                "resolvedUrl": "https://x.com/v0/status/2066555389622284288"
+              }
+            ]
+          },
+          {
+            "headline": "Rauch says sandboxes, functions, servers, and builds are converging / Rauch 说 sandbox、function、server、build 本质上正在并线",
+            "body": "A sandbox\nA function\nA server\nA build \n\nAre you getting it!? These are all expressions of the same underlying compute infrastructure.\n\nWith tweaks to load balancing, concurrency, persistence, overcommit…\n\n2026 is the year serverless and servers finally converge. With no gotchas\n\n一个 sandbox\n一个 function\n一个 server\n一个 build\n\n懂了吗！？这些其实都是同一套底层计算基础设施的不同表达。\n\n只是在负载均衡、并发、持久化、超卖这些地方做了些调节……\n\n2026 会是 serverless 和 servers 终于并线的一年。而且没有那些坑。",
+            "source_links": [
+              "https://x.com/rauchg/status/2066556235961237826"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Longer **Vercel** function runtimes land on top of **Fluid** compute / 更长的 **Vercel** 函数运行时，背后是 **Fluid** 计算底座",
+            "body": "One of our most requested features, longer Vercel function runtime, is here.\n\nWhat looks like an innocent tweak of a constant… is actually the conclusion a multi-year compute platform investment.\n\nBuilds, Sandbox, and now Functions run on our homegrown microVM-based Fluid compute infrastructure.\n\nThis investment has enabled innovations like function multi-concurrency, Active CPU pricing, and Secure Compute for private connectivity to existing cloud workloads… with lots more to come, in fact, in the coming days and weeks 😎\n\n我们最常被提的功能之一，更长的 Vercel function 运行时，现在来了。\n\n看上去像只是改了个无害常量……其实是多年计算平台投入的结果。\n\nBuilds、Sandbox，现在连 Functions，都跑在我们自研、基于 microVM 的 Fluid 计算基础设施上。\n\n这笔投入已经带来了 function 多并发、Active CPU 定价、还有给现有云工作负载做私有连接的 Secure Compute……而且后面还有更多，真的就是接下来几天几周。😎",
+            "source_links": [
+              "https://x.com/rauchg/status/2066553521978097921"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-16T04:13:26.000Z",
+        "sections": [
+          {
+            "headline": "Levie says the winners will customize intelligence, not just scale models / Levie 说赢的人靠的不是把模型堆更大，而是把智能做成自己的",
+            "body": "Key post that gives a bit of insight into what the future of AI could look like.\n\n“The most interesting thing happening in AI isn't that one model is getting smarter. It's that intelligence is becoming increasingly customizable. The companies that win won't necessarily be the ones with the biggest models. They'll be the ones that turn intelligence into something uniquely their own.”\n\nThe ability to combine your unique data, workflows, and a layer that can route intelligence to whatever model best performs the task is clearly the future.\n\n这条帖子挺能说明 AI 未来大概会长什么样。\n\n“AI 里最有意思的变化，不是某一个模型变得更聪明了，而是智能正在变得越来越可定制。最后赢的公司，不一定是模型最大的那家，而是能把智能真正做成自己东西的那家。”\n\n把你自己的数据、工作流，再加上一层能把任务路由到最合适模型的系统拼起来，这显然就是接下来的方向。",
+            "source_links": [
+              "https://x.com/levie/status/2066735879213994434"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Levie argues AI regulation should focus on uses, not every model release / Levie 认为监管该盯应用风险，不该卡死每一次模型发布",
+            "body": "It’s very easy to say “we need an FDA for AI” or some equivalent government agency. Well this is what that would look like.\n\nThe capabilities of AI models have near infinite permutations. It’s going to be very hard have a purely objective set of metrics that can be universally applied before every model release, without extended back and forth, research, and debate between model labs, academics, and the government. \n\nNow, imagine this same process with every country that you’re doing business with, globally, for every single model release. Add in a backlog of dozens of AI model releases, and you can quickly see how in the limit this will dramatically slow down all AI progress. \n\nThis is why we need to primarily focus on regulating the applied uses of AI, where the risk actually shows up.\n\n嘴上说“我们需要一个 AI 版 FDA”或者类似机构很容易。那真做出来，大概就是下面这样。\n\nAI 模型的能力组合几乎是无限的。想在每次模型发布前，都拿出一套纯客观、还能普遍套用的指标，基本注定会陷进模型实验室、学界和政府之间没完没了的拉扯、研究和争论。\n\n再想想，如果你在全球多个国家做业务，每次模型发布都要重复这一整套流程。再叠上几十个模型版本排队，你很快就会发现，这样搞下去，AI 进展会被明显拖慢。\n\n所以监管重点应该主要放在 AI 的实际使用场景上，因为风险真正冒出来的地方在那里。",
+            "source_links": [
+              "https://x.com/levie/status/2066554018953146689"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Levie backs open source with four blunt words / Levie 用四个字站队开源",
+            "body": "Open source going to win big https://t.co/qYcpy56OmT\n\n开源会大赢。 https://t.co/qYcpy56OmT",
+            "source_links": [
+              "https://x.com/levie/status/2066526720480690221"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/unusual_whales/status/2066505250606022876",
+                "resolvedUrl": "https://x.com/unusual_whales/status/2066505250606022876",
+                "authorName": "unusual_whales",
+                "authorHandle": "unusual_whales",
+                "authorUrl": "https://x.com/unusual_whales",
+                "text": "Canadian Prime Minister Mark Carney has said that US restrictions on new Anthropic AI models show danger of relying too much on American providers",
+                "displayDate": "Jun 15",
+                "provider": "X",
+                "media": [],
+                "textZh": "加拿大总理 Mark Carney 表示，美国对新的 Anthropic AI 模型施加限制，说明过度依赖美国供应商存在风险"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/qYcpy56OmT",
+                "resolvedUrl": "https://x.com/unusual_whales/status/2066505250606022876"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "Y Combinator CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-16T03:46:01.000Z",
+        "sections": [
+          {
+            "headline": "Garry Tan posts a minimalist nod to attention / Garry Tan 发了条极简版“注意力才是关键”",
+            "body": "Attention is all you need https://t.co/PbSruYTMXZ https://t.co/q9GYL5kq9v\n\n你需要的只有注意力。 https://t.co/PbSruYTMXZ https://t.co/q9GYL5kq9v",
+            "source_links": [
+              "https://x.com/garrytan/status/2066728979978244355"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK5_DY5bMAA6YsL.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2066728979978244355/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ihtesham2005/status/2066543765825945842",
+                "resolvedUrl": "https://x.com/ihtesham2005/status/2066543765825945842",
+                "authorName": "Ihtesham Ali",
+                "authorHandle": "ihtesham2005",
+                "authorUrl": "https://x.com/ihtesham2005",
+                "text": "Does money buy happiness? A Princeton Nobel laureate said no above $75,000. A Penn researcher with 1.7 million data points said yes. The day they sat down together to settle the fight, the answer they reached should change how you think about your own life.\n\nThe Nobel laureate is",
+                "displayDate": "Jun 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HK3WmlTbkAAP-Ae.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ihtesham2005/status/2066543765825945842/photo/1"
+                  }
+                ],
+                "textZh": "金钱能买来幸福吗？普林斯顿一位诺奖得主说，当收入超过 75,000 美元后就不能了。一位掌握了 170 万条数据的宾大研究者说可以。当他们坐下来一起解决这场争论时，最终得出的答案，会改变你看待自己人生的方式。 这位诺奖得主是"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/PbSruYTMXZ",
+                "resolvedUrl": "https://x.com/garrytan/status/2066728979978244355/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK5_DY5bMAA6YsL.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/q9GYL5kq9v",
+                "resolvedUrl": "https://x.com/ihtesham2005/status/2066543765825945842"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-15T18:24:18.000Z",
+        "sections": [
+          {
+            "headline": "Matt Turck turns a LinkedIn DM story into a sales lesson / Matt Turck 把 LinkedIn 私信故事顺手讲成了一课销售启示",
+            "body": "Key lesson: don't ignore your DMs on LinkedIn (he got recruited to the national Cabo Verde team via a couple of LinkedIn messages)\n\nProbably some lessons for B2B sales as well https://t.co/ovEtx6J1Td\n\n关键教训：别不看 LinkedIn 私信（他就是靠几条 LinkedIn 消息被招进佛得角国家队的）\n\n对 B2B 销售大概也有点启发。 https://t.co/ovEtx6J1Td",
+            "source_links": [
+              "https://x.com/mattturck/status/2066587619132146164"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/Squawka/status/2066586691347841172",
+                "resolvedUrl": "https://x.com/Squawka/status/2066586691347841172",
+                "authorName": "Squawka",
+                "authorHandle": "Squawka",
+                "authorUrl": "https://x.com/Squawka",
+                "text": "Roborto Lopes' game by numbers vs Spain:\n\n61 touches\n31/41 passes completed\n11 clearances (most)\n6 headed clearances (most)\n2 interceptions\n\nVozinha will get the headlines, but what a performance that was from Lopes at the back. 🧱\n\n#FIFAWorldCup",
+                "displayDate": "Jun 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HK39CyaWgAAiwH6.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Squawka/status/2066586691347841172/photo/1"
+                  }
+                ],
+                "textZh": "Roborto Lopes 对阵 Spain 的数据表现： 61 次触球 41 次传球成功 31 次 11 次解围（最多） 6 次头球解围（最多） 2 次拦截 Vozinha 会拿到头条，但 Lopes 在后防线上的这场表现真的太强了。🧱 #FIFAWorldCup"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ovEtx6J1Td",
+                "resolvedUrl": "https://x.com/squawka/status/2066586691347841172"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-15T19:19:20.000Z",
+        "sections": [
+          {
+            "headline": "Zara Zhang praises an interface for feeling obvious in the best way / Zara Zhang 夸一个界面“直觉到位”",
+            "body": "This is great UX, so intuitive https://t.co/w4iqTafSF2\n\n这 UX 很棒，直觉上就会用。 https://t.co/w4iqTafSF2",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066601470678749270"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/rauchg/status/2065494112669966660",
+                "resolvedUrl": "https://x.com/rauchg/status/2065494112669966660",
+                "authorName": "Guillermo Rauch",
+                "authorHandle": "rauchg",
+                "authorUrl": "https://x.com/rauchg",
+                "text": "HTML is so back.\nDrag and http://vercel.com/drop",
+                "displayDate": "Jun 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "HTML 真回来了。 拖进去，然后用 http://vercel.com/drop"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/w4iqTafSF2",
+                "resolvedUrl": "https://x.com/rauchg/status/2065494112669966660"
+              }
+            ]
+          },
+          {
+            "headline": "Zara Zhang hits 70k followers and links an authenticity playbook / Zara Zhang 到了 7 万粉，也顺手丢出一篇“真实增长”心得",
+            "body": "I just reached 70k followers on X 🙏🏼 \n\nX is where I learn in public &amp; build in public. I've learned so much and met so many wonder people here\n\nIf you're curious about how I grew my followers while being completely authentic, read my article below https://t.co/01IIgDs9yL https://t.co/pI8h5ImOda\n\n我刚刚在 X 上到 7 万粉了 🙏🏼\n\nX 是我公开学习、公开构建的地方。我在这里学到了很多，也认识了很多很棒的人。\n\n如果你想知道我是在完全做自己的前提下怎么把粉丝做起来的，可以看下面这篇文章 https://t.co/01IIgDs9yL https://t.co/pI8h5ImOda",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066579717285957692"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK321uDbgAEteXH.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2066579717285957692/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/zarazhangrui/status/2035758067116359902",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2035758067116359902",
+                "authorName": "Zara Zhang",
+                "authorHandle": "zarazhangrui",
+                "authorUrl": "https://x.com/zarazhangrui",
+                "text": "I just reached 70k followers on X 🙏🏼 X is where I learn in public &amp; build in public. I've learned so much and met so many wonder people here If you're curious about how I grew my followers while being completely authentic, read my article below",
+                "displayDate": "Mar 22",
+                "provider": "X",
+                "media": [],
+                "textZh": "我刚刚在 X 上达到 7 万粉丝了 🙏🏼 X 是我公开学习、公开构建的地方。我在这里学到了很多，也认识了很多很棒的人。如果你想知道我是如何在完全真实做自己的情况下增长粉丝的，看看我下面这篇文章"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/01IIgDs9yL",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2066579717285957692/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK321uDbgAEteXH.png"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/pI8h5ImOda",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2035758067116359902"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-16T01:58:09.000Z",
+        "sections": [
+          {
+            "headline": "Nikunj says VCs are heading back to operating, faster than before / Nikunj 说 VC 正在加速回到一线做事",
+            "body": "I now know 32 VCs who have moved back to operating in the last 12 months.. everyone from associates to GPs. \n\nMaybe it’s this way all the time and I’m just noticing it, but the pace seems to be accelerating. And they seem much much happier? \n\nFrom a professional perspective, it makes sense especially if you are junior. You get to work directly with customers and work as a team. A lot more autonomy than having to pander to GPs. \n\nFrom a compensation perspective too, why wait for carry for 13 years when you can have a chance of liquidity a lot sooner. \n\nAs someone who had been operating for a while but loving venture rn, I completely get the trade. To the remaining players, see you on the field 🫡\n\n过去 12 个月里，我已经知道有 32 个 VC 回去做一线运营了……从 associates 到 GPs 都有。\n\n也许一直都这样，只是我现在才注意到，但这个速度看起来确实在变快。而且他们看上去开心多了？\n\n从职业角度看，这很说得通，尤其如果你还比较 junior。你可以直接面对客户，也能跟团队一起干活。比起一直迎合 GPs，自主性高太多。\n\n从收入角度也一样，既然有机会更早拿到流动性，为什么还要为了 carry 等 13 年。\n\n我是那种做过一线、现在也挺喜欢做 venture 的人，所以我完全理解这个选择。还留在场上的各位，球场见 🫡",
+            "source_links": [
+              "https://x.com/nikunj/status/2066701833964531736"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-15T10:43:49.000Z",
+        "sections": [
+          {
+            "headline": "Peter Steinberger hits a wall buying a **Mac Studio** / Peter Steinberger 买 **Mac Studio** 时直接撞墙",
+            "body": "Wanted to buy a new Mac Studio for San Francisco.\nWe don’t even know how to make these anymore. https://t.co/WH1vRjDDHK\n\n本来想给旧金山买一台新的 Mac Studio。\n我们现在连这玩意儿怎么下单都快不会了。 https://t.co/WH1vRjDDHK",
+            "source_links": [
+              "https://x.com/steipete/status/2066471737068232835"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK2U_mEXYAAVjUi.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2066471737068232835/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/WH1vRjDDHK",
+                "resolvedUrl": "https://x.com/steipete/status/2066471737068232835/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK2U_mEXYAAVjUi.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A short post, maximum loop energy / 一条超短帖，循环感拉满",
+            "body": "IS THIS A LOOP\n\n这是个循环吗",
+            "source_links": [
+              "https://x.com/steipete/status/2066458424041251244"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Clawsweeper** now auto-picks issues that fit the vision and opens PRs / **Clawsweeper** 现在会按愿景文件自动接 issue、起 PR",
+            "body": "Whenever you create an issue on one of oure open source projects, @clawsweeper will review it, and *if* it fits the VISION.md file, will pick it up and create+autoreview a PR.\n\ne.g.: https://t.co/Q4xOh8RFVp\n\n每次你在我们的某个开源项目里提 issue，@clawsweeper 都会先过一遍；如果它符合 VISION.md 里的方向，就会接手，然后创建并自动审查一个 PR。\n\n例如： https://t.co/Q4xOh8RFVp",
+            "source_links": [
+              "https://x.com/steipete/status/2066457262571360396"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Q4xOh8RFVp",
+                "resolvedUrl": "https://github.com/openclaw/gogcli/pull/816"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-16",
+    "updatedAt": "2026-06-24T10:27:28.220Z",
+    "commit": {
+      "sha": "b792a85a11e96d3bdc957c82146fb4cce3eede27",
+      "committedAt": "2026-06-16T08:21:02Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T10:23:21.414Z",
+    "feedGeneratedAt": "2026-06-16T08:20:57.835Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T10:22:57.599Z",
+  "updatedAt": "2026-06-24T10:27:28.223Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -92,6 +92,19 @@
       "commit": {
         "sha": "ab0e36f0139c14c07436123275d153e84f16bceb",
         "committedAt": "2026-06-17T08:14:01Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
+    {
+      "date": "2026-06-16",
+      "title": "AI Builders Daily · 2026-06-16",
+      "summary": "**Anthropic** pushes managed agents into self-editing mode with dreaming and multiagent orchestration; **OpenAI** researcher **Dan Roberts** says reinforcement learning plus test-time compute is turning models into engines for scientific discovery; **Vercel**, **Replit**, and **Google** all ship harder toward agentic products, longer runtimes, specialist agents, and 70+ language voice input; meanwhile builders on X keep the tone volatile, mixing tool obsession, regulation fights, and a lot of very online product takes.\n\n**Anthropic**把托管代理往前推了一截，dreaming、outcomes、多代理编排一口气放出来；**OpenAI** 的 **Dan Roberts** 讲得很直，RL 加测试时算力，已经开始摸到“模型自己做发现”这件事；产品层面也没闲着，**Vercel** 拉长函数运行时，**Replit** 继续押注垂类代理，**Google** 把语音输入扩到 70 多种语言；X 上还是那个熟悉的 builder 气味，一边晒爽点，一边吵开源、监管，还有人已经从 VC 往一线跑了。",
+      "itemCount": 14,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T10:27:28.221Z",
+      "commit": {
+        "sha": "b792a85a11e96d3bdc957c82146fb4cce3eede27",
+        "committedAt": "2026-06-16T08:21:02Z",
         "subject": "chore: update feeds [skip ci]"
       }
     },
