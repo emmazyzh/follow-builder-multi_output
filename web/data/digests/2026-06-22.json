@@ -1,0 +1,658 @@
+{
+  "payload": {
+    "date": "2026-06-22",
+    "title": "AI Builders Daily · 2026-06-22",
+    "summary": "**Agents are swallowing the stack**; **Google's Gemini play is shifting from model to harness**, with Logan Kilpatrick describing an \"Antigravity\" layer meant to power coding, search, and consumer agents alike; builders across X keep circling the same pressure point: context beats prompts, routing beats monoliths, and headless software may become the real enterprise battleground.\n\n**The builder feed had bite today**; **Vercel and Cursor people obsessed over craft and performance**, OpenAI folks asked where Codex still feels rough, and several investors and operators zeroed in on the strange new economics of token plans, personal context, and agents that may soon touch more data in a query than a human does in a month.\n\n**今天最硬的线索还是 agent 在吞整条工具链**；**Logan Kilpatrick 说得很直白，Google 不只想卖模型，还想把 agent 的那层“harness”铺进编码、搜索和 Gemini 产品里**；X 上一圈人也在往同一个点上收：上下文比提示词更要命，路由层开始冒头，软件一旦变成“给 agent 用”，企业侧的玩法就要重写。\n\n**这波动态也不只是空喊概念**；**Vercel、Cursor 这帮人盯的是手感、性能、完成度**，OpenAI 在追问 Codex 哪儿还不顺手；另一边，投资人和产品人已经在聊更现实的事：token 到底该怎么花，个人上下文值不值钱，agent 一次任务可能会翻的数据，真能比人一个月摸过的还多。",
+    "items": [
+      {
+        "person_name": "Training Data",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=cMAs8z2dehs",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-11T09:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Google** says the harness now matters as much as the model; **Google** 把重心从模型推到 agent harness",
+            "body": "In this **Training Data** episode, **Logan Kilpatrick** lays out how **Google** is moving past the old \"model as the through line\" story. His argument is that **Gemini** was step one; now the real unifier is the agent harness behind **Antigravity**, which stretches across an IDE, web experience, CLI, SDK, **AI Studio**, Search, and the **Gemini** app. The framing is blunt: coding turned out to be a strong general-purpose harness, not just a coding feature.\n\nHe also draws a line between near-term product caution and long-term ambition. **Google** is still in \"crawl\" mode for most products, with the **Gemini** app closer to \"walk,\" because mainstream users still want to stay in the driver's seat. On business tradeoffs, Kilpatrick pushes a clear view: success is about outcomes, not maximizing eyeballs. If agents do more on a user's behalf, **Google** would rather that increase total value than keep people parked in interfaces.\n\n这期 **Training Data** 里，**Logan Kilpatrick** 把 **Google** 的路数说得挺明白：以前大家讲的是“模型是主线”，现在主线开始变成 agent 的 harness。按他的说法，**Gemini** 只是第一层，下一层是 **Antigravity** 这套底盘，往外接 IDE、网页端、CLI、SDK，再一路接进 **AI Studio**、Search 和 **Gemini** app。重点不在“会写代码”本身，而在编码这件事意外长成了一种通用 agent 框架。\n\n他对产品节奏也没打鸡血。大部分 **Google** 产品还在“crawl”阶段，真正接近“walk”的更像 **Gemini** app，因为普通用户暂时还不想把方向盘彻底交出去。至于业务上的自我蚕食，他的说法很直接：别盯着停留时长，先看结果。要是 agent 真能把事办掉，那就让它办，不用非把人困在界面里。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=cMAs8z2dehs"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Founder",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T05:10:02.000Z",
+        "sections": [
+          {
+            "headline": "Corgi is winning insurer trust fast; **Corgi** 在保险圈的渗透速度惊人",
+            "body": "btw i've been shopping around for insurers for the New Media Lab we are setting up (basically the creative playground housing swyx inc) and yeah the NPS of Corgi is insanely high\n\nmy real estate broker: \"just go with corgi they are covering every single one of my clients rn\"\n\nbreaking through with ~100% greenfield market share like this is unheard of in the insurance industry\n\n顺带一提，我最近在给我们要搭的新媒体实验室找保险方案（基本上就是装下 swyx inc 的创意游乐场），结果发现 **Corgi** 的 NPS 高得离谱。\n\n我的地产经纪人直接说：“就选 **Corgi** 吧，他们现在几乎把我所有客户都保了。”\n\n能在这种全新市场里几乎吃到 100% 的新增份额，在保险行业真挺离谱。",
+            "source_links": [
+              "https://x.com/swyx/status/2068924451887129055"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Poaster session challenge goes to the Wills; poaster 对决开始点名几位 Will",
+            "body": "@QuinnyPig i think this is where i challenge @willccbb to his first poaster session. or maybe @willdepue. or @WilliamBryk. idk all the wills?\n\n@QuinnyPig 我觉得这里该轮到我挑战 @willccbb 来一场他的第一次 poaster session 了。或者也可能是 @willdepue。又或者 @WilliamBryk。也不知道，Will 太多了？",
+            "source_links": [
+              "https://x.com/swyx/status/2068868744206799270"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A bare link reply, no extra caption; 只甩链接，不多解释",
+            "body": "@QuinnyPig https://t.co/6639ddlPvc\n\n@QuinnyPig https://t.co/6639ddlPvc",
+            "source_links": [
+              "https://x.com/swyx/status/2068868568348070344"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/6639ddlPvc",
+                "resolvedUrl": "https://app.notion.com/p/Call-For-Poster-Poaster-Session-22372013d9a280e894eefea4bef84d05"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-21T20:23:58.000Z",
+        "sections": [
+          {
+            "headline": "A link drop without context; 只发了个链接，没加注释",
+            "body": "https://t.co/pBWhE53c4A\n\nhttps://t.co/pBWhE53c4A",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2068792061265121316"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLXTYdobcAAyWLF.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2068792061265121316/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/pBWhE53c4A",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2068792061265121316/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLXTYdobcAAyWLF.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Codex usage resets spark hoarder vs spender debate; **Codex** 重置额度让人纠结囤着还是狠狠干",
+            "body": "Now that you can bank usage resets in Codex. Are you a hoarder or do you use them without breaking a sweat? How do you think about them?\n\n现在 **Codex** 可以把 usage resets 攒起来了。你是会囤着不舍得用的人，还是会毫不手软直接用掉？你怎么看这件事？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2068792010715324444"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Open question on what still feels bad in Codex; 直接问 **Codex** 现在到底哪儿还不顺手",
+            "body": "What should we improve in the Codex app. What's not delightful?\n\n**Codex** app 该改进什么？哪里还不够顺手、不够让人舒服？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2068736857312198928"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T01:50:33.000Z",
+        "sections": [
+          {
+            "headline": "Unlimited tokens trigger a scarcity paradox; 无限 token 反而把人逼进另一种焦虑",
+            "body": "It’s funny, growing up as an immigrant I developed a scarcity mindset around saving money and resources.\n\nBut when it comes to unlimited token plans and tokenmaxxing, it feels like a missed opportunity if I don’t burn as many tokens as possible and hit the limit each time.\n\nHow do I address this disconnect? 🥹\n\n挺好笑的，作为移民长大，我对存钱和省资源一直有种稀缺心态。\n\n但一到无限 token 套餐和 tokenmaxxing 这件事上，如果我没尽量把 token 烧满、每次都打到上限，反而会觉得像是错过了什么。\n\n我该怎么处理这种反差？🥹",
+            "source_links": [
+              "https://x.com/petergyang/status/2068874249167884544"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Ferryman pitches one-post-to-seven cross-posting; **Ferryman** 想把一条内容同时发到七个平台",
+            "body": "Check out my friend Kevin's awesome tool @ferrymanio to post from your favorite social platform and have that cross post to 7+ platforms at once. https://t.co/3uLlQUeTFk\n\n看看我朋友 Kevin 做的工具 @ferrymanio，你可以从自己常用的社交平台发一条内容，然后一口气同步到 7 个以上的平台。https://t.co/3uLlQUeTFk",
+            "source_links": [
+              "https://x.com/petergyang/status/2068854663534031124"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/KevinNaughtonJr/status/2068780712308683067",
+                "resolvedUrl": "https://x.com/KevinNaughtonJr/status/2068780712308683067",
+                "authorName": "Kevin Naughton Jr.",
+                "authorHandle": "KevinNaughtonJr",
+                "authorUrl": "https://x.com/KevinNaughtonJr",
+                "text": "my little saas has officially crossposted over 20,000 posts for our users 🎉\n\ni've been working on the product for ~8 months so just know it takes time especially if you're at the beginning of your journey! you can even see from the graph that it takes so long then it happens all",
+                "displayDate": "Jun 21",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLXIj2GXQAAU5J3.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/KevinNaughtonJr/status/2068780712308683067/photo/1"
+                  }
+                ],
+                "textZh": "我的小 SaaS 现在已经正式为我们的用户跨平台转发了超过 20,000 条帖子 🎉 我已经做这个产品大概 8 个月了，所以如果你才刚刚开始，一定要知道这事需要时间！你甚至能从图表里看出来，前面会花很久，然后一切才突然开始发生"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3uLlQUeTFk",
+                "resolvedUrl": "https://x.com/kevinnaughtonjr/status/2068780712308683067"
+              }
+            ]
+          },
+          {
+            "headline": "HTML becomes the substrate for agentic video; **HTML** 被拉进 agent 视频制作底层",
+            "body": "Why HTML turned out to be the foundation for agentic video making from @liu8in:\n\n“We’ve been trying to build a video agent. However, we learned the hard way that agents have no visual intelligence.\n\nSo that’s when we turned to code. HTML is the LLM’s native language. LLMs can express not only information, but also visual aesthetics through HTML, CSS, and JavaScript.\n\nFootage, images, assets, SVGs can all sit on top of HTML.”\n\n📌 As an example, see how you can make a product video from any website URL here: https://t.co/Q2p8XzCfc6\n\n@liu8in 解释了为什么 **HTML** 最后成了 agent 视频制作的底层：\n\n“我们一直想做一个视频 agent。但后来硬碰硬地发现，agent 根本没有视觉智能。\n\n所以我们转去写代码。**HTML** 是 LLM 的母语。LLM 不只会用 **HTML**、**CSS** 和 **JavaScript** 表达信息，也能借它们表达视觉审美。\n\n素材、图片、资源、SVG，都可以叠在 **HTML** 上面。”\n\n📌 这里有个例子，演示怎么从任意网站 URL 做出产品视频：https://t.co/Q2p8XzCfc6",
+            "source_links": [
+              "https://x.com/petergyang/status/2068755908319236338"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/eoF62mjGBN",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2068755848214851584/img/Ycr3wh9Ht5INRx-o.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2068755908319236338/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Q2p8XzCfc6",
+                "resolvedUrl": "https://www.youtube.com/watch?v=iqb5Rd6KKr8&t=230s"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-21T19:31:04.000Z",
+        "sections": [
+          {
+            "headline": "Quality takes irrational commitment; 做质量这件事，本来就得有点不讲理",
+            "body": "“Quality is irrational” is a great way to describe it. You have to have an irrational level of commitment to constantly choose quality and an irrational level of self-belief that controlling things top to bottom will yield better results than using common frameworks. https://t.co/NPtm8c7sid\n\n“Quality is irrational” 这话形容得很准。你得带着一种近乎不讲理的执念，反复选质量这条更难的路；还得有点不讲理的自信，相信从上到下自己控住，最后就是会比套常见框架做得更好。https://t.co/NPtm8c7sid",
+            "source_links": [
+              "https://x.com/thenanyu/status/2068778750800531640"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/Pragmatic_Eng/status/2068726099119329558",
+                "resolvedUrl": "https://x.com/Pragmatic_Eng/status/2068726099119329558",
+                "authorName": "The Pragmatic Engineer",
+                "authorHandle": "Pragmatic_Eng",
+                "authorUrl": "https://x.com/Pragmatic_Eng",
+                "text": "Product quality comes from doing irrational things. Dax Raad(@thdxr), creator of OpenCode, on how quality is a constant practice, not a decision:\n\n“It's easier than ever to rot your product, with these agents and everything.\n\nYou see it with big companies. Big companies'",
+                "displayDate": "Jun 21",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/SJhd8WU7xy",
+                    "url": "https://pbs.twimg.com/ext_tw_video_thumb/2068725810337320961/pu/img/Qmt1mhDJ5GkZ9QAX.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Pragmatic_Eng/status/2068726099119329558/video/1"
+                  }
+                ],
+                "textZh": "产品质量来自去做一些“不理性”的事。OpenCode 的创作者 Dax Raad(@thdxr) 认为，质量是一种持续的实践，而不是一个决策： “现在有了这些 agents 之类的东西，把你的产品做烂比以往任何时候都更容易。 大公司身上就能看到这一点。大公司'"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/NPtm8c7sid",
+                "resolvedUrl": "https://x.com/pragmatic_eng/status/2068726099119329558"
+              }
+            ]
+          },
+          {
+            "headline": "Default behavior, not patch fixes, is the problem; 问题在默认行为，不在补丁式修修补补",
+            "body": "@Outlook @gmail No that’s not going to solve the problem to any significant degree. We are talking about default behavior.\n\nhttps://t.co/zbZtXMJVkR\n\n@Outlook @gmail 不，这样根本解决不了多少问题。我们说的是默认行为本身。\n\nhttps://t.co/zbZtXMJVkR",
+            "source_links": [
+              "https://x.com/thenanyu/status/2068668365623710018"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/ThatWrldWideWeb/status/2068381425703756158?s=20",
+                "resolvedUrl": "https://x.com/ThatWrldWideWeb/status/2068381425703756158",
+                "authorName": "worldwideweb",
+                "authorHandle": "ThatWrldWideWeb",
+                "authorUrl": "https://x.com/ThatWrldWideWeb",
+                "text": "@thenanyu oh no I have to CTRL + Z and CTRL + SHIFT + V whatever will I do",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [],
+                "textZh": "@thenanyu 哦不，我居然得按 CTRL + Z 和 CTRL + SHIFT + V 了，我可怎么办啊"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/zbZtXMJVkR",
+                "resolvedUrl": "https://x.com/thatwrldwideweb/status/2068381425703756158"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-21T23:29:20.000Z",
+        "sections": [
+          {
+            "headline": "Every frame got inspected in a performance push; **Vercel** 把性能抠到了逐帧级别",
+            "body": "The team cooked on https://t.co/A1yfEM3p7O performance. 'Everything the light touches' was optimized Simba. Painting, layout, WebGPU shaders, blocking scripts. Every frame scrutinized. The best part is that we'll be updating our https://t.co/pYz1Gn9F9b with the lessons learned! https://t.co/NkxvURcNbq\n\n团队这次在 https://t.co/A1yfEM3p7O 的性能上狠狠干了一把。\"Everything the light touches\" 都被优化了，Simba。绘制、布局、**WebGPU** shader、阻塞脚本，全都过了一遍。每一帧都被盯过。最妙的是，我们还会把学到的东西写进 https://t.co/pYz1Gn9F9b！https://t.co/NkxvURcNbq",
+            "source_links": [
+              "https://x.com/rauchg/status/2068838709517336756"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/NkxvURcNbq",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2068837698039934976/img/H-KEJrVTIQMm9sQM.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2068838709517336756/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/A1yfEM3p7O",
+                "resolvedUrl": "http://vercel.com/home"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/pYz1Gn9F9b",
+                "resolvedUrl": "http://skills.sh/"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/NkxvURcNbq",
+                "resolvedUrl": "https://x.com/rauchg/status/2068838709517336756/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2068837698039934976/img/H-KEJrVTIQMm9sQM.jpg"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/pYz1Gn9F9b%EF%BC%81https://t.co/NkxvURcNbq",
+                "resolvedUrl": "https://t.co/pYz1Gn9F9b%EF%BC%81https://t.co/NkxvURcNbq"
+              }
+            ]
+          },
+          {
+            "headline": "Coding agents amplify the IKEA effect; 编码 agent 很会把你的宜家效应榨干",
+            "body": "Coding agents will squeeze every ounce of IKEA effect out of you, if you let them.\n\n如果你放任它们，编码 agent 会把你身上每一点宜家效应都榨出来。",
+            "source_links": [
+              "https://x.com/rauchg/status/2068778558672273422"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A Father's Day nod to the \"bicycle of the mind\"; 父亲节献给那辆“心智的自行车”",
+            "body": "Happy Father's Day. Thankful to my dad who spent every last penny on buying our family 'the bicycle of the mind' https://t.co/y4xvwtYPjr\n\n父亲节快乐。感谢我爸，把最后一点积蓄都拿出来，给我们家买了那辆“心智的自行车”。https://t.co/y4xvwtYPjr",
+            "source_links": [
+              "https://x.com/rauchg/status/2068732939559727468"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/y4xvwtYPjr",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2068732624206774273/img/L4Kvj06AJSQ2kVi7.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2068732939559727468/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/y4xvwtYPjr",
+                "resolvedUrl": "https://x.com/rauchg/status/2068732939559727468/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2068732624206774273/img/L4Kvj06AJSQ2kVi7.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T04:41:21.000Z",
+        "sections": [
+          {
+            "headline": "**Sakana's Fugu** pushes model routing into one API; **Sakana Fugu** 想把多模型调度塞进单一接口",
+            "body": "Another new idea to push the state of AI architectures forward. Sakana released a model that effectively uses a mixture of models to get work done. You get a single API but then the work gets farmed out the model that best performs the task. \n\n“Fugu manages model selection, delegation, verification, and synthesis automatically. It solves tasks directly when that is enough, or coordinates a team of expert models when a problem calls for more. The complexity of a multi-agent system never reaches your code.”\n\nThis is generally how applied AI products are building their agent harnesses at this point, but the idea of making this an LLM that any developer can interact with is also a great idea. As we get more innovation with both frontier closed and OSS models, there’s going to be a ton of value produced for the layer that can route the best.\n\n又来了个把 AI 架构往前推一步的新点子。**Sakana** 发了一个模型，本质上是靠多模型协作来把活干完。你面对的是一个 API，但具体任务会被分发给最适合它的模型。\n\n“**Fugu** 会自动处理模型选择、委派、验证和综合。任务简单时它自己做；问题更复杂时，它会拉起一组专家模型协作。多 agent 系统的复杂度不会直接砸到你的代码上。”\n\n现在很多应用型 AI 产品做 agent harness，本来就差不多是这个思路；但把这层做成任何开发者都能直接交互的 LLM，本身也是个很好的方向。等前沿闭源模型和开源模型继续往外冒，最能把路由做好的那一层，会吃到不少价值。",
+            "source_links": [
+              "https://x.com/levie/status/2068917230570795178"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLZFQdIa0AAXdpa.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2068917230570795178/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Headless agents may become the biggest enterprise users; 无头 agent 可能很快成为企业软件的头号用户",
+            "body": "Agents will use software 100X more than people. \n\nWhen that happens, theres a huge need for guardrails on what the agents are doing so they don’t leak data or change the wrong information, authoritative sources of truth for them to work with, logging and auditing of what they’re doing, the ability to collaborate with people through these systems, and more.\n\nA simple query on any given agentic task could pull in more data than a user touches in a month. As a result, there are lots of categories of software that when it goes headless that the usage and value go up substantially. Agents will end up using our CRM data, documents and corporate knowledge, analytics data, and other information far more than people ever did.\n\nThe platforms that can move toward the model of powering these headless interactions, and have a business model and technology strategy to support this, will be in the best position in the future.\n\nagent 用软件的频率会比人高出 100 倍。\n\n真到了那一步，就会特别需要护栏：得防它们泄露数据、改错信息；得给它们权威真源；得有日志和审计；还得让它们能通过这些系统和人协作，等等。\n\n一个看起来很简单的 agent 任务查询，拉进来的数据量，可能就比一个用户一个月摸过的还多。结果就是，很多软件类别一旦变成无头调用，使用量和价值都会明显往上走。agent 最后会比人更频繁地去用我们的 CRM 数据、文档、企业知识、分析数据，以及其他各种信息。\n\n谁能把这种无头交互跑起来，同时业务模式和技术策略也跟得上，谁以后的位置就会更好。",
+            "source_links": [
+              "https://x.com/levie/status/2068851573175021864"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T05:09:44.000Z",
+        "sections": [
+          {
+            "headline": "Books in ryOS syncs EPUB progress; **ryOS** 里的 Books 开始同步 EPUB 阅读进度",
+            "body": "works with any epub\nsyncs progress with ryOS account\nhttps://t.co/99stn8QuPH\n\n支持任意 epub\n会和 **ryOS** 账号同步阅读进度\nhttps://t.co/99stn8QuPH",
+            "source_links": [
+              "https://x.com/ryolu_/status/2068924375341179347"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/99stn8QuPH",
+                "resolvedUrl": "https://os.ryo.lu/books"
+              }
+            ]
+          },
+          {
+            "headline": "Missing shelves turned into a book app experiment; 没有木书架，就自己在 **ryOS** 里做个 Books",
+            "body": "missing wooden shelves\nso i made Books in ryOS\n\nstarted in Cursor mobile, then hand-tuned the animations and textures until things felt right https://t.co/f2yFZ2N1CQ\n\n少了木书架\n所以我就在 **ryOS** 里做了个 Books\n\n先在 **Cursor** mobile 里起步，后来再手工一点点调动画和材质，直到手感对了。https://t.co/f2yFZ2N1CQ",
+            "source_links": [
+              "https://x.com/ryolu_/status/2068923971136098633"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/f2yFZ2N1CQ",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2068921098746621952/img/x7qxrIlrU2UCrhPc.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/ryolu_/status/2068923971136098633/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/f2yFZ2N1CQ",
+                "resolvedUrl": "https://x.com/ryolu_/status/2068923971136098633/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2068921098746621952/img/x7qxrIlrU2UCrhPc.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-21T14:23:32.000Z",
+        "sections": [
+          {
+            "headline": "Open-sourcing **GBrain** ties back to personal context; 开源 **GBrain**，说到底还是为了把个人上下文攒起来",
+            "body": "This is why I made GBrain and open sourced it\n\nhttps://t.co/yFpFU4pn5b\n\n这就是我做 **GBrain** 并把它开源出来的原因。\n\nhttps://t.co/yFpFU4pn5b",
+            "source_links": [
+              "https://x.com/garrytan/status/2068701357696323769"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/yFpFU4pn5b",
+                "resolvedUrl": "https://github.com/garrytan/gbrain"
+              }
+            ]
+          },
+          {
+            "headline": "Usable AGI still needs a personal and company brain; 到了能用的 AGI，个人脑和公司脑反而更值钱",
+            "body": "I think one underestimated thing when we look back on it was how useful it is to have your own personal brain and company brain in 2026 at the dawn of usable AGI\n\nAGI gives you the intelligence\n\nYou still have to collect your personal context to get the real unlock\n\n我觉得以后回头看，会有一件事被严重低估：在 2026 这个可用 **AGI** 刚冒头的阶段，拥有你自己的 personal brain 和 company brain 到底有多有用。\n\n**AGI** 给你的是智能。\n\n但你还是得把自己的上下文收起来，真正的解锁点才会出现。",
+            "source_links": [
+              "https://x.com/garrytan/status/2068701356358308112"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Indie Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T07:47:24.000Z",
+        "sections": [
+          {
+            "headline": "The argument is about context, not prompts; 重点是上下文，不是提示词",
+            "body": "I’m talking about context, not prompt\n\n我说的是上下文，不是 prompt。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2068964055235321954"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Longer context beats slop-prone short prompts; 输入太短，AI slop 基本躲不过",
+            "body": "A good rule of thumb for preventing AI slop (in writing, design, etc):\n\nIs your input (the context) longer than the output? \n\nI've found that for the AI to produce quality results, my input is often 3-5 times the length of the output.\n\nIf your input is much shorter than the output, it's almost certainly going to produce slop\n\n防止 AI slop（不管是写作还是设计）有个挺好用的经验法则：\n\n你的输入（也就是上下文）是不是比输出更长？\n\n我发现，要让 AI 产出像样的结果，我的输入通常得是输出长度的 3 到 5 倍。\n\n如果你的输入远短于输出，那基本八九不离十会产出 slop。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2068923768500793603"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-21T16:59:23.000Z",
+        "sections": [
+          {
+            "headline": "Inbox mood check on Father's Day; 父亲节这天，邮箱先替你定调了",
+            "body": "How your email finds me today.. \n\nHappy Father’s Day to all the families celebrating today 🕺 https://t.co/ltYZwS2toM\n\n今天我的邮箱大概就是这么看待我的..\n\n祝今天在过节的所有家庭父亲节快乐 🕺 https://t.co/ltYZwS2toM",
+            "source_links": [
+              "https://x.com/nikunj/status/2068740575130689554"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLWklvga0AAD5Tm.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2068740575130689554/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ltYZwS2toM",
+                "resolvedUrl": "https://x.com/nikunj/status/2068740575130689554/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLWklvga0AAD5Tm.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Founder DMs still slip through the cracks; 创业者私信总还是会漏掉一些",
+            "body": "Happens every week 🙈\n\n&gt; see an interesting project on X\n&gt; play with it, fork it, try it, have some ideas\n&gt; go to founder profile\n&gt; press the message button \n\n…\n\n&gt; pray to God that I haven’t missed a DM from them before 😢\n\nI try to respond to all the DMs but miss sometimes!!\n\n几乎每周都会这样 🙈\n\n&gt; 在 X 上看到一个挺有意思的项目\n&gt; 去玩一玩、fork 一下、试一试，脑子里也冒出些想法\n&gt; 点进创始人主页\n&gt; 按下 message 按钮\n\n…\n\n&gt; 开始祈祷自己之前没漏看过他们的私信 😢\n\n我真的会尽量回所有 DM，但有时候还是会漏！！",
+            "source_links": [
+              "https://x.com/nikunj/status/2068714024934740476"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw / OpenAI",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-22T07:51:57.000Z",
+        "sections": [
+          {
+            "headline": "A new favorite way to read Twitter; 他找到了一种更顺手的 Twitter 阅读方式",
+            "body": "This is becoming my favorite way to read Twitter. https://t.co/eykEElxzu7 https://t.co/m5qM5PP3rA\n\n这快成了我最喜欢的 Twitter 阅读方式。https://t.co/eykEElxzu7 https://t.co/m5qM5PP3rA",
+            "source_links": [
+              "https://x.com/steipete/status/2068965200343224367"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLZw0EsbAAAMyrS.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2068965200343224367/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/eykEElxzu7",
+                "resolvedUrl": "http://birdclaw.sh/"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/m5qM5PP3rA",
+                "resolvedUrl": "https://x.com/steipete/status/2068965200343224367/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLZw0EsbAAAMyrS.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "OpenClaw says hype cooled, quality and team grew; **OpenClaw** 说热度退了，但质量和团队都在涨",
+            "body": "People here discussing what happened with OpenClaw.\n\nThe hype died down. We improved quality and grew a team. We created a non-profit whereas competiors are VC funded and have other agendas.\n\nThis is our strongest week so far. https://t.co/j6uwRneNvh\n\n这边有人在讨论 **OpenClaw** 到底发生了什么。\n\n热度是下来了。我们把质量做上去了，团队也变大了。我们成立的是非营利组织，而竞争对手拿的是 VC 的钱，盘算也不一样。\n\n这是我们到现在最强的一周。https://t.co/j6uwRneNvh",
+            "source_links": [
+              "https://x.com/steipete/status/2068961217524490739"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vincent_koc/status/2068959794820735233",
+                "resolvedUrl": "https://x.com/vincent_koc/status/2068959794820735233",
+                "authorName": "Vincent Koc",
+                "authorHandle": "vincent_koc",
+                "authorUrl": "https://x.com/vincent_koc",
+                "text": "New NPM all time high record for @openclaw, going from strength to strength!",
+                "displayDate": "Jun 22",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLZr5gwasAA1MPG.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/vincent_koc/status/2068959794820735233/photo/1"
+                  }
+                ],
+                "textZh": "@openclaw 的 NPM 创下历史新高，势头越来越猛！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/j6uwRneNvh",
+                "resolvedUrl": "https://x.com/vincent_koc/status/2068959794820735233"
+              }
+            ]
+          },
+          {
+            "headline": "Skepticism on multi-model routing hardens; 他对多模型路由的怀疑更重了",
+            "body": "I was skeptical about the multi-model routing. Seems my hinch was right. https://t.co/oVUUqBYRyy\n\n我之前就对多模型路由这套有点怀疑。看起来我的直觉没错。https://t.co/oVUUqBYRyy",
+            "source_links": [
+              "https://x.com/steipete/status/2068960117253632160"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/LLMJunky/status/2068932670696952075",
+                "resolvedUrl": "https://x.com/LLMJunky/status/2068932670696952075",
+                "authorName": "am.will",
+                "authorHandle": "LLMJunky",
+                "authorUrl": "https://x.com/LLMJunky",
+                "text": "I tried this so you don't have to.\n\nI know this is going to absolutely shock you but no this does not match the performance of Mythos.\n\nA few early thoughts:\n\n1. The limits are pretty bad. I used 100% of my 5-hour usage in less than 1 prompt.\n\n2. I specifically gave it a threejs",
+                "displayDate": "Jun 22",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/t7ftZjKiLj",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2068930551235375104/img/91jEVDE7KrhCc5_l.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/LLMJunky/status/2068932670696952075/video/1"
+                  }
+                ],
+                "textZh": "我替你们试过了，所以你们不用自己试。 我知道这肯定会让你们无比震惊，但不，这个表现比不上 Mythos。 先说几点初步想法： 1. 限制挺糟糕的。我的 5 小时使用额度，不到 1 个 prompt 就用掉了 100%。 2. 我特意给了它一个 threejs"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/oVUUqBYRyy",
+                "resolvedUrl": "https://x.com/llmjunky/status/2068932670696952075"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-22",
+    "updatedAt": "2026-06-24T08:14:02.250Z",
+    "commit": {
+      "sha": "6882ab5cc44c63cef5f41b416d61760d6093c5ec",
+      "committedAt": "2026-06-22T08:29:45Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T08:10:02.907Z",
+    "feedGeneratedAt": "2026-06-22T08:29:37.749Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

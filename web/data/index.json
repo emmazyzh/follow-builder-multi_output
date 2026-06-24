@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-23T12:05:26.435Z",
+  "updatedAt": "2026-06-24T08:14:02.256Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -14,6 +14,19 @@
         "committedAt": "2026-06-23T07:33:26Z",
         "subject": "chore: update feeds [skip ci]",
         "file": "feed-blogs.json"
+      }
+    },
+    {
+      "date": "2026-06-22",
+      "title": "AI Builders Daily · 2026-06-22",
+      "summary": "**Agents are swallowing the stack**; **Google's Gemini play is shifting from model to harness**, with Logan Kilpatrick describing an \"Antigravity\" layer meant to power coding, search, and consumer agents alike; builders across X keep circling the same pressure point: context beats prompts, routing beats monoliths, and headless software may become the real enterprise battleground.\n\n**The builder feed had bite today**; **Vercel and Cursor people obsessed over craft and performance**, OpenAI folks asked where Codex still feels rough, and several investors and operators zeroed in on the strange new economics of token plans, personal context, and agents that may soon touch more data in a query than a human does in a month.\n\n**今天最硬的线索还是 agent 在吞整条工具链**；**Logan Kilpatrick 说得很直白，Google 不只想卖模型，还想把 agent 的那层“harness”铺进编码、搜索和 Gemini 产品里**；X 上一圈人也在往同一个点上收：上下文比提示词更要命，路由层开始冒头，软件一旦变成“给 agent 用”，企业侧的玩法就要重写。\n\n**这波动态也不只是空喊概念**；**Vercel、Cursor 这帮人盯的是手感、性能、完成度**，OpenAI 在追问 Codex 哪儿还不顺手；另一边，投资人和产品人已经在聊更现实的事：token 到底该怎么花，个人上下文值不值钱，agent 一次任务可能会翻的数据，真能比人一个月摸过的还多。",
+      "itemCount": 12,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T08:14:02.254Z",
+      "commit": {
+        "sha": "6882ab5cc44c63cef5f41b416d61760d6093c5ec",
+        "committedAt": "2026-06-22T08:29:45Z",
+        "subject": "chore: update feeds [skip ci]"
       }
     },
     {
