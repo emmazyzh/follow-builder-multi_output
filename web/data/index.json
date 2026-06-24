@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T10:27:28.223Z",
+  "updatedAt": "2026-06-24T10:34:26.510Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -105,6 +105,19 @@
       "commit": {
         "sha": "b792a85a11e96d3bdc957c82146fb4cce3eede27",
         "committedAt": "2026-06-16T08:21:02Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
+    {
+      "date": "2026-06-15",
+      "title": "AI Builders Daily · 2026-06-15",
+      "summary": "**Agents moved from demo to operating model**; **Jensen Huang** framed AI factories as the new generators of real-time intelligence, while builders on X argued that subagents, goals, and long-running workflows are where the real leverage is; enterprise voices pushed a harder line on learning loops, proprietary knowledge, and who controls the stack; open source kept surfacing as the hedge when model access feels shaky.\n\n**这波讨论不空了，开始落到怎么干活**；**黄仁勋**把 AI factory 讲成“生产智能”的基础设施，不只是卖卡那套话；X 上一群人聊得更具体，subagents、goal、自我拆任务、长链路 agent workflow，这些开始像真工具，不像概念片；另一条线也很直白，企业想吃到 AI 红利，得先把自家知识和数据攥在手里，开源因此又被抬回桌面。",
+      "itemCount": 12,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T10:34:26.509Z",
+      "commit": {
+        "sha": "bf0fd66705bb2f51a5ff44e2b9f32360ee216772",
+        "committedAt": "2026-06-15T08:30:47Z",
         "subject": "chore: update feeds [skip ci]"
       }
     },

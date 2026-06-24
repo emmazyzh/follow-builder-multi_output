@@ -1,0 +1,566 @@
+{
+  "payload": {
+    "date": "2026-06-15",
+    "title": "AI Builders Daily · 2026-06-15",
+    "summary": "**Agents moved from demo to operating model**; **Jensen Huang** framed AI factories as the new generators of real-time intelligence, while builders on X argued that subagents, goals, and long-running workflows are where the real leverage is; enterprise voices pushed a harder line on learning loops, proprietary knowledge, and who controls the stack; open source kept surfacing as the hedge when model access feels shaky.\n\n**这波讨论不空了，开始落到怎么干活**；**黄仁勋**把 AI factory 讲成“生产智能”的基础设施，不只是卖卡那套话；X 上一群人聊得更具体，subagents、goal、自我拆任务、长链路 agent workflow，这些开始像真工具，不像概念片；另一条线也很直白，企业想吃到 AI 红利，得先把自家知识和数据攥在手里，开源因此又被抬回桌面。",
+    "items": [
+      {
+        "person_name": "Training Data",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=2UpQbeAZuqA",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-10T09:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Jensen Huang** says the future runs on **AI factories** and agent swarms · **黄仁勋**：未来拼的是 **AI factory** 和成群协作的 agent",
+            "body": "**Jensen Huang** argues that AI has crossed from novelty into paid labor: systems now reason, use tools, and complete work, which makes them economically valuable in a way early chatbots were not. He describes an **AI factory** as the new kind of computing center, built not to retrieve stored files but to generate intelligence in real time for each query, context, image, sound, or workflow.\n\nHe pushes the infrastructure case hard. Traditional data centers stored data; the next wave, in his framing, produces tokens, decisions, and actions on demand. He links that shift to agentic software inside companies, where large numbers of guarded and sandboxed agents coordinate work, and says the internet may increasingly serve billions of agents rather than only human users.\n\n**黄仁勋**的核心判断很直接：AI 已经从“挺好玩”变成“能交付工作”。一旦系统能推理、调工具、把活做完，它就不再只是聊天界面，而是能按小时计价的生产力。他把 **AI factory** 说成一种新的计算中心，不靠检索旧文件吃饭，而是按上下文实时生成智能、答案、图像和动作。\n\n他的重点也不只是模型，而是底层供给。老的数据中心偏存储，新一代基础设施要连续产出 token、决策和执行结果。顺着这个逻辑，他把企业里的 agentic software 往前推了一步：大量受约束、被沙箱隔离的 agents 会互相协作，未来互联网服务的对象，可能不只是人，还包括规模更夸张的 agent 网络。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=2UpQbeAZuqA"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-15T07:00:18.000Z",
+        "sections": [
+          {
+            "headline": "Subagents are powerful but brutal on tokens; repo setup matters · Subagents 很猛，但很烧 token，仓库结构得跟上",
+            "body": "havent seen many people outside anthropic ultracode yet. this thing is scarily good at burning tokens but you need to set up your repo to parallelize properly to make use of the fanout that i think subagents are best at.\n\nbasically the idea is \"subroutines but intelligent\". when you undersatnd just how much knowledge work is just yakshaves after yakshaves that require some judgment and intelligence, you start to appreciate that dynamic workflows are not just for coding tasks...\n\n除了 **Anthropic ultracode** 那圈人，我还没看到太多人真正用起来。这东西烧 token 烧得有点吓人，但如果你的仓库没按并行化思路搭好，就吃不到我认为 subagents 最擅长的 fanout。\n\n说白了，它像是“带智能的子程序”。等你意识到有多少知识工作，本质上都是一层套一层、需要判断力的小杂活，你就会明白，动态工作流根本不只适合写代码这件事……",
+            "source_links": [
+              "https://x.com/swyx/status/2066415484149633329"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK1hVrMb0AABggV.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2066415484149633329/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Satya's bet: the moat is the learning loop, not the model · Satya 的判断：护城河不是模型，是学习闭环",
+            "body": "Satya on loops as IP:\nhttps://t.co/87HBsQptdQ\n> This is the first time we can create a real cognitive loop between people and digital systems. That is a mind-bender, because it changes how we even conceptualize work inside an enterprise.\n\n> This means the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound. You can offload a task, or even a job, but you can never offload your learning\n\n> In my view, our priority has to be building a frontier ecosystem, not just a frontier model, so value flows broadly across every company, every industry, and every country. One where every organization can own the learning loop that encodes its institutional knowledge, compounding its human and token capital.\n\nSatya 在讲把 loop 当成 IP：\nhttps://t.co/87HBsQptdQ\n> 这是我们第一次能在人和数字系统之间建立真正的认知闭环。这很颠覆，因为它会改变我们理解企业内部工作的方式。\n\n> 这意味着，真正的机会不在于挑出最好的模型，而在于在模型之上搭建学习闭环，让人力资本和 token 资本一起复利。你可以把一个任务，甚至一份工作外包出去，但你永远不能把学习外包出去。\n\n> 在我看来，优先级应该是建设前沿生态，而不只是前沿模型，这样价值才能流向每家公司、每个行业、每个国家。每个组织都应该拥有那个编码其机构知识的学习闭环，让人力资本和 token 资本持续复利。",
+            "source_links": [
+              "https://x.com/swyx/status/2066235625695850526"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/satyanadella/status/2066182223213293753",
+                "resolvedUrl": "https://x.com/satyanadella/status/2066182223213293753",
+                "authorName": "Satya Nadella",
+                "authorHandle": "satyanadella",
+                "authorUrl": "https://x.com/satyanadella",
+                "text": "Satya on loops as IP: > This is the first time we can create a real cognitive loop between people and digital systems. That is a mind-bender, because it changes how we even conceptualize work inside an enterprise. > This means the real opportunity is not in picking the best model but instead in building a learning loo...",
+                "displayDate": "Jun 14",
+                "provider": "X",
+                "media": [],
+                "textZh": "Satya 谈把循环当作 IP：> 这是我们第一次能够在人和数字系统之间建立真正的认知闭环。这很颠覆认知，因为它改变了我们甚至如何去理解企业内部的工作。> 这意味着，真正的机会不在于挑选最好的模型，而在于构建一个学习闭环……"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/87HBsQptdQ",
+                "resolvedUrl": "https://x.com/satyanadella/status/2066182223213293753"
+              }
+            ]
+          },
+          {
+            "headline": "Direct link drop for **DevinAI** · 直接放出 **DevinAI** 链接",
+            "body": "@DevinAI link here! https://t.co/kdtMCNXwzI\n\n@DevinAI 链接在这！https://t.co/kdtMCNXwzI",
+            "source_links": [
+              "https://x.com/swyx/status/2066225354885488709"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/kdtMCNXwzI",
+                "resolvedUrl": "https://notion.qualtrics.com/jfe/form/SV_bP07tSVMXH7ePCS"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-14T21:24:25.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** can set its own goal as agent tooling turns inward · **Codex** 能自己设 goal，agent 工具开始反过来服务 agent 自己",
+            "body": "Codex can see and set its own /goal. Everything we build, we build also as a tool for the agent. This is a generalization of meta prompting, where you let the agent set its own task based on your intent. https://t.co/8xyjRjFk4v\n\n**Codex** 现在能看到并设置它自己的 `/goal`。我们做的每样东西，也都会做成 agent 自己能用的工具。这算是 meta prompting 的进一步泛化：你给出意图，agent 再自己把任务定下来。https://t.co/8xyjRjFk4v",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2066270561081454989"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/skirano/status/2066225908202053818",
+                "resolvedUrl": "https://x.com/skirano/status/2066225908202053818",
+                "authorName": "Pietro Schirano",
+                "authorHandle": "skirano",
+                "authorUrl": "https://x.com/skirano",
+                "text": "I basically never write my own /goal anymore.\n\nI ask Codex to write one for itself, and one for each agent it spawns.\n\nLike this 👇",
+                "displayDate": "Jun 14",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/8ykoPJNLmC",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2066225679662780416/img/Umzvf35ivqWaIyIm.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/skirano/status/2066225908202053818/video/1"
+                  }
+                ],
+                "textZh": "我现在基本已经不会再自己写 /goal 了。 我会让 Codex 给它自己写一个，也给它启动的每个 agent 各写一个。 像这样 👇"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/8xyjRjFk4v",
+                "resolvedUrl": "https://x.com/skirano/status/2066225908202053818"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Creator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-15T02:16:23.000Z",
+        "sections": [
+          {
+            "headline": "Calling on **Grok** for an explanation · 喊 **Grok** 出来解释一下",
+            "body": "@grok do you know why? Explain to us\n\n@grok 你知道为什么吗？给我们讲讲。",
+            "source_links": [
+              "https://x.com/petergyang/status/2066344036030636041"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A blunt World Cup question about China and India · 一个很直白的世界杯问题：中印为什么踢不出来",
+            "body": "Dumb question - Why can’t China and India train good enough teams to qualify for the World Cup?\n\n一个笨问题：为什么中国和印度培养不出强到足以打进世界杯的球队？",
+            "source_links": [
+              "https://x.com/petergyang/status/2066331938760314909"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Interview links out, next guest hunt begins · 采访链接放出，下一位采访对象开始征集",
+            "body": "Watch the interviews here:\n\nKieran: https://t.co/bomAyU9Utg\n\nKun: https://t.co/qfug4hOuhw\n\nMatt: https://t.co/vPVZNwtsCu\n\nWho should I interview next?\n\n采访在这里看：\n\nKieran: https://t.co/bomAyU9Utg\n\nKun: https://t.co/qfug4hOuhw\n\nMatt: https://t.co/vPVZNwtsCu\n\n我接下来该采访谁？",
+            "source_links": [
+              "https://x.com/petergyang/status/2066309743619244174"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/bomAyU9Utg",
+                "resolvedUrl": "https://www.youtube.com/watch?v=g6z_4TMDiaE"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/qfug4hOuhw",
+                "resolvedUrl": "https://www.youtube.com/watch?v=88B6DimMD2g"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/vPVZNwtsCu",
+                "resolvedUrl": "https://youtu.be/BxEf3RqIHkw"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-06-14T16:04:33.000Z",
+        "sections": [
+          {
+            "headline": "Pair programming now means a human and a robot · 现在说结对编程，默认就是人加机器人",
+            "body": "Counterpoint: everyone pair programs now, with a robot. https://t.co/eDDgBiPAkT\n\n反过来说：现在大家都在结对编程，只不过搭档变成了机器人。https://t.co/eDDgBiPAkT",
+            "source_links": [
+              "https://x.com/thenanyu/status/2066190061419282602"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/eDDgBiPAkT",
+                "resolvedUrl": "https://twitter.com/nateberkopec/status/2066013507901116622"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Color grading accidentally made everyone a Knicks fan · 调色师可能早就把大家悄悄调成了尼克斯球迷",
+            "body": "Modern color graders been subconsciously turning everyone into Knicks fans this whole time https://t.co/YWoP1fxegg\n\n现代调色师这些年可能一直在潜意识里把所有人都调成 **Knicks** 球迷。https://t.co/YWoP1fxegg",
+            "source_links": [
+              "https://x.com/thenanyu/status/2066189299821711401"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/NBA_NewYork/status/2066136596470956099",
+                "resolvedUrl": "https://x.com/NBA_NewYork/status/2066136596470956099",
+                "authorName": "New York Basketball",
+                "authorHandle": "NBA_NewYork",
+                "authorUrl": "https://x.com/NBA_NewYork",
+                "text": "Timothée Chalamet on IG:",
+                "displayDate": "Jun 14",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKxkSOhXkAAg2kb.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/NBA_NewYork/status/2066136596470956099/photo/1"
+                  }
+                ],
+                "textZh": "Timothée Chalamet 在 IG 上说："
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/YWoP1fxegg",
+                "resolvedUrl": "https://x.com/nba_newyork/status/2066136596470956099"
+              }
+            ]
+          },
+          {
+            "headline": "A mayor gets roasted for graphic design · 一位市长因为平面设计翻车被调侃",
+            "body": "I was told this mayor was good at graphic design https://t.co/XnmUjC88Up\n\n我之前还听说这位市长挺会做平面设计。https://t.co/XnmUjC88Up",
+            "source_links": [
+              "https://x.com/thenanyu/status/2066158221648134602"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/XnmUjC88Up",
+                "resolvedUrl": "https://twitter.com/NYCMayor/status/2066032094048825632"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-14T16:27:53.000Z",
+        "sections": [
+          {
+            "headline": "Enterprise AI gets a rare positive-sum framing · 企业 AI 罕见地被讲成一场正和游戏",
+            "body": "This is the most inspiring positive-sum vision for AI in the enterprise. https://t.co/rltvxNEw0U\n\n这是我见过对企业 **AI** 最鼓舞人心、也最像正和博弈的一种讲法。https://t.co/rltvxNEw0U",
+            "source_links": [
+              "https://x.com/amasad/status/2066195933969412098"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/satyanadella/status/2066182223213293753",
+                "resolvedUrl": "https://x.com/satyanadella/status/2066182223213293753",
+                "authorName": "Satya Nadella",
+                "authorHandle": "satyanadella",
+                "authorUrl": "https://x.com/satyanadella",
+                "text": "This is the most inspiring positive-sum vision for AI in the enterprise.",
+                "displayDate": "Jun 14",
+                "provider": "X",
+                "media": [],
+                "textZh": "Satya 谈把循环当作 IP：> 这是我们第一次能够在人和数字系统之间建立真正的认知闭环。这很颠覆认知，因为它改变了我们甚至如何去理解企业内部的工作。> 这意味着，真正的机会不在于挑选最好的模型，而在于构建一个学习闭环……"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/rltvxNEw0U",
+                "resolvedUrl": "https://x.com/satyanadella/status/2066182223213293753"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-15T00:22:06.000Z",
+        "sections": [
+          {
+            "headline": "**Starlink** on a flight feels like a new era of travel · 飞机上用上 **Starlink**，像是航空体验突然升级了一代",
+            "body": "My flight to London is Starlink-enabled 😭\n\nThe greatest advancement to air travel since the Wright brothers. God bless America https://t.co/vyJvpobz9R\n\n我飞伦敦这趟航班居然接了 **Starlink** 😭\n\n这是自 **Wright brothers** 之后，航空旅行最大的进步。God bless America https://t.co/vyJvpobz9R",
+            "source_links": [
+              "https://x.com/rauchg/status/2066315273947500699"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HK0GdFEbgAADlVo.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2066315273947500699/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/vyJvpobz9R",
+                "resolvedUrl": "https://x.com/rauchg/status/2066315273947500699/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HK0GdFEbgAADlVo.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The **OpenAI** ecosystem passes 700,000 skills · **OpenAI** 生态里的 skills 数量冲过 70 万",
+            "body": "https://t.co/pYz1Gn9F9b has passed 700,000 skills. wild!\nall organic and community-driven.\nthe open⎵ai ecosystem!\n\nhttps://t.co/pYz1Gn9F9b 的 skills 已经超过 700,000 个，太野了！\n全是自然长出来的，社区自己推起来的。\n这就是 open⎵ai 生态！",
+            "source_links": [
+              "https://x.com/rauchg/status/2066299732277031042"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/pYz1Gn9F9b",
+                "resolvedUrl": "http://skills.sh/"
+              }
+            ]
+          },
+          {
+            "headline": "A clean 2-0 call for Japan · 看好日本 2 比 0 赢球",
+            "body": "I have 🇯🇵 winning 2-0 ⚽\n\n我猜 🇯🇵 会 2 比 0 赢 ⚽",
+            "source_links": [
+              "https://x.com/rauchg/status/2066253064957509811"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-14T19:13:29.000Z",
+        "sections": [
+          {
+            "headline": "Levie backs learning loops, IP control, and the applied AI layer · Levie 押注学习闭环、IP 控制权和应用层 AI",
+            "body": "Great post. The companies that are able to get their unique IP, institutional knowledge, and data into a format and architecture that lets them capture all of the gains and progress in AI are going to be in the best position in the future.\n\n“the real opportunity is not in picking the best model but instead in building a learning loop on top of models where human capital and token capital compound. You can offload a task, or even a job, but you can never offload your learning. The future of the firm is the ability to compound that learning across people and AI.\n\nThis requires a new architectural approach where every business is able to build agentic systems that improve over time, while still retaining control over their IP. A company should be able to switch out a “generalist” model without losing the “company veteran” expertise built into their learning system.”\n\nWe’re all collectively figuring out the right architecture for the future of AI. But it’s clear that so much of the power and value will accrue to wherever can best leverage any AI system against their information. This is also why the applied AI layer will also gain so much value over the coming years.\n\n好文。那些能把自己的独特 **IP**、机构知识和数据整理成合适格式和架构的公司，才能把 **AI** 带来的收益和进步真正吃下来，未来位置会最好。\n\n“真正的机会不在于挑出最好的模型，而在于在模型之上搭建一个学习闭环，让人力资本和 token 资本一起复利。你可以外包一个任务，甚至一份工作，但你永远不能外包你的学习。公司的未来，在于能不能把这种学习在人与 AI 之间持续复利。\n\n这需要一种新的架构方法，让每个企业都能构建会随着时间变强的 agentic systems，同时仍然掌握自己的 IP。企业应该能替换掉一个‘通用型’模型，而不丢掉已经沉淀在学习系统里的那种‘公司老兵’级经验。”\n\n我们都还在一起摸未来 **AI** 架构该怎么搭。但有一点已经很清楚了：权力和价值会流向那些最会把任意 AI 系统压到自己信息资产上的地方。这也是为什么未来几年，应用层 AI 会拿到很大一块价值。",
+            "source_links": [
+              "https://x.com/levie/status/2066237607244427761"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Open weights look stronger when model access feels revocable · 一旦模型可被收回，open weights 的分量就更重了",
+            "body": "The big winner in all of this is going to be open weights models. This is a huge win for the field, as a risk that was entirely theoretical and untested 2 days ago (that a model could be pulled back), now has a new precedent that’s been set.\n\nThe game theory the US should highly consider, and the risk with regulating AI at the model layer vs. applied layer, is that other countries now have even more incentive to develop sovereign AI.\n\nIf at any moment a model can be become unavailable to your country’s users or businesses, this poses very real risk on relying on technology from a particular country.\n\nAs a result, it forces major countries to charter their own path on AI development, which reduces America’s leadership role in this tech stack over time. The most likely solution that other countries will rely on is open weights models, which currently is generally not coming from the US.\n\nAmerica should be considering all of these downstream implications as it decides how and where in the stack to be regulating AI. At the same time, we should be doing a ton more OSS innovation.\n\n这整件事里，最大的赢家会是 open weights models。两天前还只是理论风险、没人验证过的一件事，也就是模型可能被收回，现在已经有了新先例。这对整个领域影响很大。\n\n美国很该认真想想这里面的博弈关系，也要看清在模型层监管、而不是应用层监管的风险，因为这会让其他国家更有动力去做 sovereign AI。\n\n如果某个模型随时都可能对你国家的用户或企业变得不可用，那你依赖另一个国家提供的技术，就会变成很现实的风险。\n\n结果就是，大国会被迫走自己的 AI 路线，这会慢慢削弱美国在这条技术栈里的主导地位。其他国家最可能依赖的方案，会是 open weights models，而这类东西目前通常又不是美国出的。\n\n美国在决定要监管栈里的哪一层、怎么监管时，应该把这些后果都算进去。同时，我们也该多做很多 **OSS** 创新。",
+            "source_links": [
+              "https://x.com/levie/status/2066167615618466060"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-14T23:51:59.000Z",
+        "sections": [
+          {
+            "headline": "Open source as the long-term escape hatch for business control · 开源是企业长期保住主动权的逃生口",
+            "body": "Open source is the escape hatch for businesses to be able to continue to control their own destiny long term https://t.co/9hVUR5w6Lp\n\n开源是企业保住自己长期命运控制权的逃生口。https://t.co/9hVUR5w6Lp",
+            "source_links": [
+              "https://x.com/garrytan/status/2066307697574862905"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ryiacy/status/2066260212772679864",
+                "resolvedUrl": "https://x.com/ryiacy/status/2066260212772679864",
+                "authorName": "dom",
+                "authorHandle": "ryiacy",
+                "authorUrl": "https://x.com/ryiacy",
+                "text": "My interpretation of this:\n\nRight now, Anthropic and OpenAI are making a killing by selling enterprise FDE services to F500s, building workflows for them on top of proprietary models, then using the traces and context from this to build RL envs to improve the models.\n\nThis is",
+                "displayDate": "Jun 14",
+                "provider": "X",
+                "media": [],
+                "textZh": "我对这件事的理解是： 现在，Anthropic 和 OpenAI 靠向《财富》500 强企业出售企业级 FDE 服务赚得盆满钵满，在专有模型之上为它们搭建工作流，然后再利用由此产生的 traces 和上下文去构建 RL 环境，以改进模型。 这就是"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/9hVUR5w6Lp",
+                "resolvedUrl": "https://x.com/ryiacy/status/2066260212772679864"
+              }
+            ]
+          },
+          {
+            "headline": "A quick joke about **gbrain** users · 调侃一把 **gbrain** 用户",
+            "body": "* Basically gbrain users https://t.co/yFpFU4pn5b\n\n* 基本上就是 **gbrain** 用户这个样子 https://t.co/yFpFU4pn5b",
+            "source_links": [
+              "https://x.com/garrytan/status/2066269513935642689"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/yFpFU4pn5b",
+                "resolvedUrl": "https://github.com/garrytan/gbrain"
+              }
+            ]
+          },
+          {
+            "headline": "The next elite skill is running long, multi-stage agent work · 下一代顶级能力，是把长链路多阶段 agent 任务跑顺",
+            "body": "The next generation of young people who change the world will almost certainly be the people who are most adept at making long-running multi-stage multi-team agent tasks work extremely well, and at high volume and across every part of their personal and work lives. https://t.co/xG2qvRNdW5\n\n下一代真正会改变世界的年轻人，几乎肯定会是那些最擅长把长时间运行、跨阶段、跨团队的 agent 任务做顺的人，而且他们能把这套东西高频跑在工作和生活的各个角落。https://t.co/xG2qvRNdW5",
+            "source_links": [
+              "https://x.com/garrytan/status/2066269412391637050"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/xG2qvRNdW5",
+                "resolvedUrl": "https://t.co/xG2qvRNdW5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "AI Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-15T05:36:56.000Z",
+        "sections": [
+          {
+            "headline": "Skills are the result of work, not the starting point · Skill 不是起点，是你把活做完后留下来的东西",
+            "body": "You make a skill by ending with one, not starting with one\n\n做 skill 这件事，不是从 skill 开始，而是最后收成一个 skill。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066394505037926426"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A good skill gets forged through repetition and fixes · 好 skill 不是写出来的，是反复做和修出来的",
+            "body": "You don't make a good skill by writing a skill. \n\nYou make it by doing the thing, fixing it 20 times, then telling the AI to bottle up everything you just did.\n\n你不是靠“写一个 skill”做出好 skill 的。\n\n你得先把那件事真的做一遍，修二十次，然后再让 AI 把你刚刚那整套做法封起来。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066388749244854771"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "YouTube link drop · 丢一个 YouTube 链接",
+            "body": "Watch on YouTube: https://t.co/t6cVHdM3Oo\n\n去 YouTube 看：https://t.co/t6cVHdM3Oo",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066209311404208636"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/t6cVHdM3Oo",
+                "resolvedUrl": "https://www.youtube.com/watch?v=jvB2F_hYkXA"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenAI Engineer",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-15T07:47:50.000Z",
+        "sections": [
+          {
+            "headline": "**Mosh** plus **tmux/zellij** wins when in-flight internet is bad · 飞机网烂的时候，**Mosh** 配 **tmux/zellij** 很顶",
+            "body": "Mosh + tmux/zellij is a lifesaver for bad in-flight internet. (i prefer zellij but either works)\n\n飞机上网不稳的时候，**Mosh** 加 **tmux/zellij** 真能救命。（我更喜欢 **zellij**，不过两个都行）",
+            "source_links": [
+              "https://x.com/steipete/status/2066427449551036469"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-14T17:55:02.000Z",
+        "sections": [
+          {
+            "headline": "**FREE FABLE** link drop · **FREE FABLE** 链接放出",
+            "body": "FREE FABLE https://t.co/nFihacLkaq\n\nFREE FABLE https://t.co/nFihacLkaq",
+            "source_links": [
+              "https://x.com/danshipper/status/2066217865943093514"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKyt1trbwAEZhuE.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2066217865943093514/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nFihacLkaq",
+                "resolvedUrl": "https://x.com/danshipper/status/2066217865943093514/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKyt1trbwAEZhuE.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-15",
+    "updatedAt": "2026-06-24T10:34:26.507Z",
+    "commit": {
+      "sha": "bf0fd66705bb2f51a5ff44e2b9f32360ee216772",
+      "committedAt": "2026-06-15T08:30:47Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T10:31:06.417Z",
+    "feedGeneratedAt": "2026-06-15T08:30:08.244Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
