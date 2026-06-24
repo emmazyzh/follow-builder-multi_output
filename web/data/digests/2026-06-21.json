@@ -1,0 +1,703 @@
+{
+  "payload": {
+    "date": "2026-06-21",
+    "title": "AI Builders Daily · 2026-06-21",
+    "summary": "**Coding agents are stretching their legs**; **Anthropic** spent a full postmortem on why **Claude Code** felt worse and how three product-layer changes broke quality; managed agents are getting real enterprise plumbing with self-hosted sandboxes and **MCP** tunnels; on X, builders are split between open-weight optimism, brutal cost math, and fresh excitement around **GLM-5.2** and **Codex**.\n\n**长程编码代理开始真上强度了**；**Anthropic** 罕见摊开讲清 **Claude Code** 最近到底坏在哪，锅不在 API，在产品层三处改动；托管代理也开始接上企业真需求，自托管沙箱和 **MCP** 隧道直接把安全边界拉回内网；X 上这波更有意思，一边在算订阅和推理成本，一边有人被 **GLM-5.2** 的代码能力吓到，还有人已经在等 **Codex** 把前端再往前推一大截。",
+    "items": [
+      {
+        "person_name": "Unsupervised Learning",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=W_iO8XxgD_I",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-12T12:51:00.000Z",
+        "sections": [
+          {
+            "headline": "**AI** vibe check: coding agents grow up, open weights look shakier, and API economics get questioned; **AI** 圈情绪盘点：编码代理更能打了，开源权重前景变悬，API 生意也被拿出来重算",
+            "body": "Jacob Efron, Ari from **Datalogy**, and Rob from **Radical** use this roundtable to pressure-test the moment. The clearest shift is that coding agents now hold longer time horizons, which is pushing engineers toward managing parallel agents instead of working one task straight through. That leverage comes with a catch: teams can generate far more code than they can comfortably review or fully understand.\n\nThey also spend real time on open-weight economics. Rob argues the old assumption, that frontier open models would stay only a few months behind, now looks less secure as both Western and Chinese labs keep stronger systems behind APIs. Ari mostly agrees on the business side: capability progress may still be converging, but the incentive to release top models openly is getting weaker once hosted inference becomes the business.\n\nA third thread is cost pressure. As models think longer and token efficiency shifts between releases, enterprises are starting to feel the bill in a way they did not a year ago. The episode frames a possible next phase where frontier models handle planning and review, while cheaper or scaffolded models take more of the execution load.\n\nJacob Efron、**Datalogy** 的 Ari 和 **Radical** 的 Rob 这期聊得很直接。最明显的变化，是编码代理已经能把任务拉到更长时间尺度，工程师的角色也开始往“带代理的人”偏，不再只是盯着一个任务硬做。但代价也摆在那儿：代码产出飙上去了，评审和理解反而成了新瓶颈。\n\n他们还花了不少时间聊开源权重模型的账。Rob 觉得，过去那种“开源前沿只会慢几个月”的判断，没那么站得住了，西方和中国实验室都更倾向把最强模型留在 API 后面。Ari 在商业逻辑上基本同意：能力差距未必一定越拉越大，但只要托管推理能赚钱，继续把顶级模型放出来的动力就会越来越弱。\n\n还有一条线很实在，就是成本。模型想得更久、版本一换 token 效率又变，企业现在是真的开始肉疼了。这期给出的画面很清楚：前沿模型可能更适合做规划、编排和复审，执行层则会越来越多地让便宜模型或者加了脚手架的模型来扛。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=W_iO8XxgD_I"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "Engineering Blog",
+        "profile_url": "https://www.anthropic.com/engineering/april-23-postmortem",
+        "source_label": "Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "**Anthropic** details why **Claude Code** felt worse, and pins it on three product changes not the API; **Anthropic** 解释 **Claude Code** 为什么变差了，问题出在三处产品改动，不在 API",
+            "body": "**Anthropic** says recent quality complaints around **Claude Code** came from three separate changes, while the API and inference layer stayed unaffected. First, it lowered the default reasoning effort from high to medium on March 4 to cut latency, then reversed that decision on April 7 after users said the model felt less intelligent. Second, a March 26 caching optimization accidentally kept clearing older reasoning after idle sessions, which made Claude seem forgetful, repetitive, and more erratic with tools; that bug was fixed on April 10. Third, a system prompt change added on April 16 to reduce verbosity ended up hurting coding quality and was reverted on April 20.\n\nThe post matters because it breaks down how broad degradation reports can come from small product-layer choices that hit different traffic slices at different times. **Anthropic** also says the failures slipped past reviews, tests, and internal use because they were hard to reproduce and sometimes masked by unrelated experiments.\n\nThe company says all three issues were resolved by April 20 in v2.1.116, usage limits are being reset for subscribers, and future prevention will include broader context support in code review and tighter checks around prompt and harness changes.\n\n**Anthropic** 的说法很明确：最近大家觉得 **Claude Code** 变笨，不是 API 或推理层出了问题，而是三处产品层改动叠在一起。第一刀是 3 月 4 日把默认推理强度从 high 调到 medium，想压延迟，结果用户直接觉得模型没那么聪明了，4 月 7 日又改回去。第二刀更伤，3 月 26 日上的缓存优化本来只该在会话闲置后清一次旧思考，结果 bug 让它后面每一轮都在清，Claude 就开始忘事、重复、工具调用也变怪，这个问题 4 月 10 日修掉。第三刀是 4 月 16 日为了少啰嗦加的一条系统提示，结果把编码质量也带崩了，4 月 20 日回滚。\n\n这篇文最有价值的地方，不是“认错”本身，而是它把那种用户口中的“最近整体变差”拆开了看：很多时候不是模型本身忽然掉线，而是不同流量切片在不同时间撞上了几处看起来不大的产品改动。\n\n**Anthropic** 说三处问题都已经在 4 月 20 日前处理完，版本是 v2.1.116；订阅用户的额度会重置；后面会把代码评审上下文补得更全，也会把 prompt 和 harness 这类改动盯得更紧。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/april-23-postmortem"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "Engineering Blog",
+        "profile_url": "https://www.anthropic.com/engineering/managed-agents",
+        "source_label": "Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "**Managed Agents** splits the brain, the hands, and the session so agents can survive crashes and reach private systems; **Managed Agents** 把大脑、手和会话拆开，代理崩了能续，连私有系统也更顺",
+            "body": "This engineering write-up explains why **Anthropic** moved away from running the session, harness, and sandbox inside one container. The old design made every agent session a fragile pet: if the container hung or died, debugging was painful and recovery was messy. The replacement is a more virtualized architecture where the harness, the sandbox, and the durable session log are separate interfaces, so each piece can fail or be swapped independently.\n\nThe practical upside is reliability and portability. If a sandbox dies, the harness treats it like a tool-call failure and can reprovision another one. If the harness crashes, a new one can wake up from the external session log and resume. That also makes it easier to connect agents to customer infrastructure without forcing awkward network peering or moving the whole harness into the customer environment.\n\nSecurity is a second major theme. **Anthropic** says credentials should never be reachable from the sandbox where model-generated code runs. Git tokens can be wired into remotes during setup, and MCP credentials can stay in a vault behind a proxy. The session log also becomes a long-horizon memory object outside the model's context window, letting the agent reread prior events instead of relying on irreversible trimming or compaction alone.\n\n这篇工程文讲的是 **Anthropic** 为什么不再把会话、harness 和 sandbox 全塞进一个容器里跑。老方案的问题很传统，也很烦：容器一旦卡住或挂掉，整个 agent 会话就像养了只病猫，既难排查，也不好救。新方案干脆把三样东西拆开，做成独立接口，session log 单独持久化，sandbox 和 harness 也都能各自失败、各自替换。\n\n好处很实际。sandbox 挂了，harness 把它当成一次工具调用失败，重新起一个就行；harness 自己挂了，也能从外部 session log 接着跑，不用整个任务陪葬。这种拆法还顺手解决了另一个老问题：客户想接自己的私有基础设施时，不再需要把整套 harness 搬进去，或者做那些别扭的网络互联。\n\n安全这块也讲得很透。**Anthropic** 的核心判断是，模型生成的代码所在 sandbox 根本不该碰到凭证。Git 的 token 可以在初始化时直接接到 remote 上，MCP 的 OAuth 凭证则放在 vault 里，通过代理去取。至于长任务记忆，session log 也不再只是“聊天记录”，它成了放在上下文窗口外面的可回读事件流，代理需要时自己翻，不必每次靠激进裁剪碰运气。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/managed-agents"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Product Blog",
+        "profile_url": "https://claude.com/blog/claude-managed-agents-updates",
+        "source_label": "Blog",
+        "posted_at": "May 19, 2026",
+        "sections": [
+          {
+            "headline": "**Claude Managed Agents** adds self-hosted sandboxes and **MCP** tunnels for private-network deployments; **Claude Managed Agents** 新增自托管沙箱和 **MCP** 隧道，开始往私网部署靠拢",
+            "body": "**Anthropic** is pushing **Claude Managed Agents** deeper into enterprise environments with two additions: self-hosted sandboxes in public beta and **MCP** tunnels in research preview. The model loop and orchestration stay on Anthropic's side, but tool execution can move into infrastructure the customer controls, including managed providers like **Cloudflare**, **Daytona**, **Modal**, and **Vercel**.\n\nThe pitch is less about novelty than control. Files, packages, private services, outbound network policy, audit logs, and runtime sizing can remain inside the customer's existing perimeter. On the MCP side, tunnels let agents reach private MCP servers through a single outbound connection, without public endpoints or inbound firewall changes, with traffic encrypted end to end.\n\nThe post also anchors the feature with customer and provider examples, from **Amplitude** and **Clay** to **Rogo**, making it clear that managed agents are being positioned not just as a hosted experiment but as infrastructure that can sit inside more serious production boundaries.\n\n**Anthropic** 正在把 **Claude Managed Agents** 往企业现场推进，两项更新很关键：自托管沙箱进入公开测试，**MCP** 隧道进入研究预览。模型编排和上下文管理还留在 Anthropic 这边，但真正执行工具的环境，可以放进客户自己控制的基础设施里，也可以落在 **Cloudflare**、**Daytona**、**Modal**、**Vercel** 这些托管提供方上。\n\n这次更新的重点不是什么新花样，而是控制权。文件、依赖、私有服务、出网策略、审计日志、算力规格，都可以继续留在企业原有边界内。MCP 隧道这边也很实用：只用一条向外发起的连接，就能让代理碰到私网里的 MCP 服务，不用开公网入口，也不用改入站防火墙，链路还是端到端加密。\n\n文里还顺手摆了几家案例，像 **Amplitude**、**Clay**、**Rogo**。意思很明白：托管代理不只是个托管试玩版，**Anthropic** 已经在把它往更严肃的生产基础设施去摆。",
+            "source_links": [
+              "https://claude.com/blog/claude-managed-agents-updates"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Podcaster",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-21T02:14:45.000Z",
+        "sections": [
+          {
+            "headline": "Photo looks **ChatGPT**-generated; 这张照片看着像 **ChatGPT** 生成的",
+            "body": "@aiDotEngineer @brendanhunting @TedLasso @USMNT @philipkiely this photo looks fucking chatgpt generated\nhttps://t.co/0ZAA5SVcHy\n\n@aiDotEngineer @brendanhunting @TedLasso @USMNT @philipkiely 这张照片看起来他妈的像是 chatgpt 生成的\nhttps://t.co/0ZAA5SVcHy",
+            "source_links": [
+              "https://x.com/swyx/status/2068517953285619715"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/FCB_Xabhi/status/2066551923906687233?s=20",
+                "resolvedUrl": "https://x.com/FCB_Xabhi/status/2066551923906687233",
+                "authorName": "(Journo) Xabhi 🔮",
+                "authorHandle": "FCB_Xabhi",
+                "authorUrl": "https://x.com/FCB_Xabhi",
+                "text": "What on earth is this stadium man 😭\n\nHow can any stadium in Europe even compete. USA are on another level when it comes to this",
+                "displayDate": "Jun 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HK3eBeBaUAAC3Qu.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/FCB_Xabhi/status/2066551923906687233/photo/1"
+                  }
+                ],
+                "textZh": "这球场到底是什么鬼啊 😭 欧洲任何球场怎么可能比得了。说到这个，美国完全是另一个级别。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/0ZAA5SVcHy",
+                "resolvedUrl": "https://x.com/fcb_xabhi/status/2066551923906687233"
+              }
+            ]
+          },
+          {
+            "headline": "Imagining the **July 4** fallout if Team USA wins; 如果美国队赢球，已经在想 **7 月 4 日** 会闹成什么样",
+            "body": "btw this is what happens on July 4 if team usa wins this game Wednesday after next https://t.co/KCe7H7G5lE https://t.co/bM0I6oy7ol\n\n顺便说一句，如果美国队在下下周三赢下这场比赛，7 月 4 日就会变成这样 https://t.co/KCe7H7G5lE https://t.co/bM0I6oy7ol",
+            "source_links": [
+              "https://x.com/swyx/status/2068510546606145897"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLTTYU5bQAAvnWH.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2068510546606145897/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/swyx/status/2068473310527328721",
+                "resolvedUrl": "https://x.com/swyx/status/2068473310527328721",
+                "authorName": "swyx 🔜 @aiDotEngineer",
+                "authorHandle": "swyx",
+                "authorUrl": "https://x.com/swyx",
+                "text": "6 months ago we put $500k into betting on Team USA that is paying off now for our @aidotengineer VIPs.\n\n3 things set me up for the biggest sports bet i have ever made in my life:\n- watching @brendanhunting of @TedLasso say \"this is the year\" for @usmnt\n- @philipkiely telling me",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLSwGk0bkAAk4Cc.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2068473310527328721/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLSwkTUakAEmAxC.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2068473310527328721/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLSwoKYaEAAG4XJ.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2068473310527328721/photo/1"
+                  }
+                ],
+                "textZh": "6个月前，我们押了50万美元赌 Team USA，现在这笔赌注正在为我们的 @aidotengineer VIPs 带来回报。 有3件事促成了我这辈子下过最大的一笔体育赌注： - 看了 @TedLasso 的 @brendanhunting 说“就是今年了”，对象是 @usmnt - @philipkiely 跟我说"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/KCe7H7G5lE",
+                "resolvedUrl": "https://x.com/swyx/status/2068510546606145897/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLTTYU5bQAAvnWH.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/bM0I6oy7ol",
+                "resolvedUrl": "https://x.com/swyx/status/2068473310527328721"
+              }
+            ]
+          },
+          {
+            "headline": "**Gemini** gets a shout for sports handicapping; **Gemini** 被点名夸成了很能打的体育预测工具",
+            "body": "@aiDotEngineer @brendanhunting @TedLasso @USMNT @philipkiely this was key thing to figure out \n\nhttps://t.co/vReYFcB0sl\n\nbtw @GeminiApp is a VERY good sports handicapper (thanks @OfficialLoganK ). need to draw from a lot of sources to do this\n\n@aiDotEngineer @brendanhunting @TedLasso @USMNT @philipkiely 这就是得先搞明白的关键点\n\nhttps://t.co/vReYFcB0sl\n\n顺便说一句，@GeminiApp 做体育盘口判断真的很强（感谢 @OfficialLoganK）。这事确实得调很多来源才行",
+            "source_links": [
+              "https://x.com/swyx/status/2068477933048725732"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/kapkap42/status/2068431424680522164?s=20",
+                "resolvedUrl": "https://x.com/kapkap42/status/2068431424680522164",
+                "authorName": "TicketData Keith",
+                "authorHandle": "kapkap42",
+                "authorUrl": "https://x.com/kapkap42",
+                "text": "@MichaelBaylor_ You are right! I did not realize that the knockout paths were already known prior to December 5 for the 3 host nations.",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [],
+                "textZh": "@MichaelBaylor_ 你说得对！我之前没意识到，在12月5日之前，3个东道主国家的淘汰赛路径就已经确定了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/vReYFcB0sl",
+                "resolvedUrl": "https://x.com/kapkap42/status/2068431424680522164"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-21T05:36:13.000Z",
+        "sections": [
+          {
+            "headline": "**Codex App** was built with only okay front-end models, and better models could change that; **Codex App** 是拿前端还不算强的模型做出来的，模型再进一截会很不一样",
+            "body": "We built the Codex App with models that were okayish at front-end.\n\nWait to see what we can do when we finally improve front-end capabilities significantly in our models. That day will be something.\n\n我们做 **Codex App** 时，用的模型在前端这块也就还算过得去。\n\n等我们把模型的前端能力真正大幅拉上去，再看看能做成什么样。那一天会很夸张。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2068568650924409260"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Some **Codex** tokens hit harder than others; 有些 **Codex** token 的含金量就是更高",
+            "body": "Some tokens work harder than others. Some of the most valuable ones are found in the Codex app.\n\n有些 token 就是比别的更能干。最值钱的那批里，有些就在 **Codex** app 里。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2068443037907522002"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-21T02:39:22.000Z",
+        "sections": [
+          {
+            "headline": "Looking for new kid-friendly spots in **SF**; 想在 **SF** 找点带娃新去处",
+            "body": "What’s there to do in SF with kids beyond the Golden Gate Park and Presidio / Tunnel Tops? Wanna try something new\n\n在 **SF** 带孩子除了 Golden Gate Park 和 Presidio / Tunnel Tops 之外还能去哪？想试点新的。",
+            "source_links": [
+              "https://x.com/petergyang/status/2068524146070610274"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Not seeing the case for local models over **Codex** and **Claude** subscriptions; 付着 **Codex** 和 **Claude** 订阅，暂时看不出本地模型的必要",
+            "body": "I will go against the grain and say I can barely use up my Codex and Claude $200 subscriptions so I don’t see the point of trying local models…\n\nAlso to try the latest glm locally requires 512 mb which is like a $10K Max Studio?\n\n我就逆着大家说一句吧：我的 **Codex** 和 **Claude** 200 美元订阅都快用不完，所以我真看不出折腾本地模型的意义……\n\n而且要本地跑最新的 glm 还得 512 mb，这是不是得上台一万刀的 Max Studio？",
+            "source_links": [
+              "https://x.com/petergyang/status/2068411894185295969"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Asking for the best talking-head plus screen-share recording stack; 在找能把人像和屏幕录制一起搞定的顺手工具",
+            "body": "For folks who make talking head videos with screen share what platform do you use?\n\nI'd love something that lets me easily zoom in and out on the screen to point out specific things.\n\n@screenstudio seems cool but does it work well with other recording tools? It doesn't record the talking head as far I can see.\n\n做 talking head 加屏幕共享视频的朋友，你们都用什么平台？\n\n我想要那种能很方便在屏幕上缩放、把细节指给人看的工具。\n\n@screenstudio 看着挺酷，但它和别的录制工具配合得好吗？至少我现在看，它好像不录 talking head。",
+            "source_links": [
+              "https://x.com/petergyang/status/2068398871236264428"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-06-21T03:50:24.000Z",
+        "sections": [
+          {
+            "headline": "A quick jab about the multiplier effect; 拿乘数效应开了一枪",
+            "body": "Multiplier effect. Econ 101. Learn about it. https://t.co/SJ0ikft4ZZ\n\n乘数效应。经济学 101。去补补课吧。 https://t.co/SJ0ikft4ZZ",
+            "source_links": [
+              "https://x.com/thenanyu/status/2068542022361735484"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/typesfast/status/2068401832490352941",
+                "resolvedUrl": "https://x.com/typesfast/status/2068401832490352941",
+                "authorName": "Ryan Petersen",
+                "authorHandle": "typesfast",
+                "authorUrl": "https://x.com/typesfast",
+                "text": "Car break ins are good for GDP actually. And this undercounts all the economic activity from people rebuying the stuff that was stolen from them, plus all the people who were able to buy nice stuff at a discount from the thieves.",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [],
+                "textZh": "其实砸车盗窃对 GDP 是有好处的。而且这还低估了经济活动：别人把被偷的东西重新买一遍带来的消费，再加上那些能从小偷手里打折买到好东西的人带来的消费。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SJ0ikft4ZZ",
+                "resolvedUrl": "https://x.com/typesfast/status/2068401832490352941"
+              }
+            ]
+          },
+          {
+            "headline": "Telling **Outlook** and **Gmail** devs to let agents fix this; 喊 **Outlook** 和 **Gmail** 的开发者直接让代理来修",
+            "body": "Hey devs at @Outlook and @gmail you can point your agents at this tweet and they will fix it for you\n\n嘿，@Outlook 和 @gmail 的开发者，你们可以把代理指到这条推文上，它们会替你们把这事修掉。",
+            "source_links": [
+              "https://x.com/thenanyu/status/2068396602973143274"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Why pasted email text still breaks surrounding formatting; 邮件里粘贴文字还会把周围字体样式搞乱，真离谱",
+            "body": "Why isn’t the default for pasted text in email apps to take on the font treatment surrounding/preceding it?\n\nCrazy that this is still a problem\n\n为什么邮件应用里粘贴进去的文字，默认还不能继承周围/前面的字体样式？\n\n这问题居然现在还在，真离谱。",
+            "source_links": [
+              "https://x.com/thenanyu/status/2068318470215811080"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Former Gemini PM",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-06-20T15:09:24.000Z",
+        "sections": [
+          {
+            "headline": "The **PM** role is splitting between doc-heavy traditionalists and AI-native builder PMs; **PM** 这活正在分叉：一边继续写文档，一边已经变成 AI 原生 builder",
+            "body": "The Product role is having an identity crisis too.\n\nEngineering has found its AI-native interface - SWE agents dramatically increase individual leverage.\nCompanies are asking PMs to use AI, but they haven't evolved the role.\n\nSo there are two camps.\n\nThe old-school PM.\nAI accelerates the old job: more PRDs, more strategy decks, more docs. Lots of output, not much judgment.\n\nThe Builder PM.\nBuilder PMs use AI to expand their role across the product lifecycle.\n\nThey explore a much larger surface area of ideas to arrive at the best. They run agents for market and user research, query logs and analytics directly, generate competing ideas, then curate the best ones.\n\nThey constantly evolve their workflows to take advantage of the latest in AI.\n\nTheir outputs are increasingly prototypes rather than docs - engineers react far more constructively to demos than docs.\n\nThey do this all without compromising on the craft -they still form a strong point of view on what should be built and why.\n\nI think the role is moving much closer to Builder PMs.\n\n产品这个角色也在经历身份危机。\n\n工程领域已经找到了自己的 AI 原生接口，SWE 代理大幅提高了个人杠杆。公司在要求 PM 用 AI，但 PM 这个角色本身并没有跟着进化。\n\n所以现在有两派。\n\n老派 PM。\nAI 只是把原来的活加速了：更多 PRD、更多战略 deck、更多文档。产出很多，判断没多多少。\n\nBuilder PM。\nBuilder PM 会用 AI 把自己的职责扩到整个产品生命周期。\n\n他们会把想法探索面铺得更大，最后再挑最好的。会跑代理做市场和用户研究，直接查日志和分析数据，生成互相竞争的方案，再筛出最好的。\n\n他们会不断改自己的工作流，追着最新的 AI 能力走。\n\n他们的产出也越来越像原型，而不是文档，工程师看到 demo 的反应通常比看到文档建设性得多。\n\n而且他们并没有把产品基本功丢掉，还是会对该做什么、为什么做，形成很强的判断。\n\n我觉得这个角色会越来越靠近 Builder PM。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2068350509027876876"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-21T07:00:29.000Z",
+        "sections": [
+          {
+            "headline": "Posting turned into training data, then the network became itself; 我们发了二十年帖，最后喂出了会自我成形的网络",
+            "body": "We posted for twenty years, thinking we were talking to each other. Then the transformer came online, and the network read what we’d written, and became itself.\n\n我们发了二十年帖，以为一直是在彼此说话。后来 transformer 上线了，网络读了我们写过的东西，然后长成了它自己。",
+            "source_links": [
+              "https://x.com/amasad/status/2068589860097790449"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The road not taken looks more fun; 没走的那条路看起来更好玩",
+            "body": "Road not taken is more fun https://t.co/czF29rTmI7\n\n没走的那条路更好玩 https://t.co/czF29rTmI7",
+            "source_links": [
+              "https://x.com/amasad/status/2068537425480278226"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/varunvibe/status/2068397855258116392",
+                "resolvedUrl": "https://x.com/varunvibe/status/2068397855258116392",
+                "authorName": "Varun Dogar",
+                "authorHandle": "varunvibe",
+                "authorUrl": "https://x.com/varunvibe",
+                "text": "@amasad @replit and Amjad's journey reminds me of the poem The Road Not Taken by Robert Frost..\n\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference.\n\nReplit has chosen its own path rather than giving",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [],
+                "textZh": "@amasad @replit 和 Amjad 的这段历程让我想起 Robert Frost 的诗《The Road Not Taken》。。 许多年后的某个地方： 一片树林里分出了两条路，而我—— 我选择了那条更少人走的路， 而这带来了截然不同的结果。 Replit 选择了走自己的路，而不是一味迎合"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/czF29rTmI7",
+                "resolvedUrl": "https://x.com/varunvibe/status/2068397855258116392"
+              }
+            ]
+          },
+          {
+            "headline": "Hiring push for **Replit Japan**; **Replit Japan** 在招人",
+            "body": "Come work for Replit Japan! https://t.co/66BI1n5FLn\n\n来 **Replit Japan** 工作吧！ https://t.co/66BI1n5FLn",
+            "source_links": [
+              "https://x.com/amasad/status/2068537084877643943"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nobita2040/status/2068477127893340389",
+                "resolvedUrl": "https://x.com/nobita2040/status/2068477127893340389",
+                "authorName": "Ryo Sato | Claude Codeで学ぶ Agent Skills入門(6/8発売)",
+                "authorHandle": "nobita2040",
+                "authorUrl": "https://x.com/nobita2040",
+                "text": "え、 @Replit が日本で求人開始!?!?もしや本格的に日本進出ですかね？",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLSzWAzbwAA2jTZ.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/nobita2040/status/2068477127893340389/photo/1"
+                  }
+                ]
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/66BI1n5FLn",
+                "resolvedUrl": "https://x.com/nobita2040/status/2068477127893340389"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-21T02:11:21.000Z",
+        "sections": [
+          {
+            "headline": "**GLM-5.2** coding quality genuinely shocks **Vercel**'s CEO; **GLM-5.2** 的代码能力把 **Vercel** CEO 都惊到了",
+            "body": "Genuinely impressed, almost shocked, at how good GLM-5.2 by @zai_org is at coding. This changes things.\n\n我是真的被 @zai_org 的 **GLM-5.2** 写代码能力震到了，几乎算是吃惊。这会改变很多事。",
+            "source_links": [
+              "https://x.com/rauchg/status/2068517095818809770"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-20T20:41:19.000Z",
+        "sections": [
+          {
+            "headline": "Open weights are closing key gaps, which could expand the applied **AI** layer; 开源权重模型在关键任务上越追越近，应用层 **AI** 反而更有空间了",
+            "body": "Pretty remarkable what’s happening with open weights AI right now. We’re seeing models achieve SOTA results on specific tasks, and getting close to frontier on some areas of coding and other domains. \n\nThe more that open weights is able to maintain only a marginal gap from the frontier, instead of a widening gap, the more value that can be created with AI.\n\nIncidentally, this is actually fine for the frontier labs as well; if we can lower the cost of an overall task then AI usage goes up in general. You’re still likely using frontier models for planning, orchestration, reviewing, and other parts of work. \n\nBut this is all very good for the applied layer of AI, which is now in a great position to cost optimize workloads with cheaper models or use tailored open models post-trained for specific tasks to improve performance.\n\n现在开源权重 **AI** 这波进展挺惊人的。我们已经看到一些模型在特定任务上做到 SOTA，在部分编码和其他领域也逼近前沿了。\n\n只要开源权重和前沿模型之间保持的是小差距，而不是越拉越大，**AI** 能创造的价值就会更大。\n\n顺带说一句，这对前沿实验室也不是什么坏事；如果整体任务成本能降下来，AI 的总使用量反而会上去。你大概率还是会把前沿模型用在规划、编排、审查以及工作的其他环节。\n\n但这对 **AI** 应用层确实是大利好，因为现在他们可以更从容地用便宜模型做成本优化，或者拿针对特定任务后训练过的开源模型把效果再往上拱。",
+            "source_links": [
+              "https://x.com/levie/status/2068434042148782515"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-20T10:28:21.000Z",
+        "sections": [
+          {
+            "headline": "A terse prompt to go try the tool and see for yourself; 很直接：自己去试一下就知道了",
+            "body": "Try https://t.co/NH6AWPWWkY and find out https://t.co/FWIESSlIy4\n\n去试试 https://t.co/NH6AWPWWkY ，自己就知道了 https://t.co/FWIESSlIy4",
+            "source_links": [
+              "https://x.com/garrytan/status/2068279782815801541"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/illiqid/status/2068241155658281249",
+                "resolvedUrl": "https://x.com/illiqid/status/2068241155658281249",
+                "authorName": "Hubert",
+                "authorHandle": "illiqid",
+                "authorUrl": "https://x.com/illiqid",
+                "text": "Would I get a YC interview for token maxing my codex? @garrytan",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLPeOJibMAAAE06.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/illiqid/status/2068241155658281249/photo/1"
+                  }
+                ],
+                "textZh": "如果我把我的 codex 的 token 拉满，能拿到 YC 面试吗？@garrytan"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/NH6AWPWWkY",
+                "resolvedUrl": "http://paxel.ycombinator.com/"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/FWIESSlIy4",
+                "resolvedUrl": "https://x.com/illiqid/status/2068241155658281249"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-21T05:37:17.000Z",
+        "sections": [
+          {
+            "headline": "Built an **X** extension that surfaces bookmarks back into the main feed; 做了个 **X** 插件，把收藏内容重新塞回主时间线",
+            "body": "I hoard X bookmarks and never read them. So I built an extension that injects a bookmarked post into my main feed every time I open X (almost like an ad). Now I read my bookmarks. \n\nThe trick was hijacking real estate I already check 50 times a day https://t.co/pmrZGNaji5\n\n我会疯狂收藏 **X** 书签，但从来不看。所以我做了个插件，每次打开 **X**，它都会往主 feed 里塞一条收藏过的帖子（有点像广告）。现在我终于会去看那些收藏了。\n\n诀窍就是占掉我本来一天要看 50 次的位置 https://t.co/pmrZGNaji5",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2068568920613953626"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLUIXJKaYAARtCJ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2068568920613953626/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/pmrZGNaji5",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2068568920613953626/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLUIXJKaYAARtCJ.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Large-company safety can feel riskier than startup risk; 大公司那种“安全感”，有时可能比创业还危险",
+            "body": "Sometimes I wonder if joining a large company is actually riskier than joining a startup/starting your own company https://t.co/xthMKkxDTe\n\n有时候我会想，去大公司是不是反而比加入创业公司 / 自己创业更冒险 https://t.co/xthMKkxDTe",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2068522129193418759"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/xthMKkxDTe",
+                "resolvedUrl": "https://t.co/xthMKkxDTe"
+              }
+            ]
+          },
+          {
+            "headline": "Proactiveness sounds great until you try to operationalize it; 主动性听起来都爱，真要拿捏起来却很难",
+            "body": "Proactiveness sounds nice in theory but is so hard to get right https://t.co/YVOV2aqRbo\n\n主动性在理论上听起来很美，但真做对太难了 https://t.co/YVOV2aqRbo",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2068509088452071594"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/santa_kaus/status/2068101239141970154",
+                "resolvedUrl": "https://x.com/santa_kaus/status/2068101239141970154",
+                "authorName": "Kaustubh Prabhakar",
+                "authorHandle": "santa_kaus",
+                "authorUrl": "https://x.com/santa_kaus",
+                "text": "pulse was our first attempt at proactivity in chatgpt and we learnt a ton.\n\nalthough it was meant to do work for the user before they even asked - users actually loved curating their pulse. theyd end up asking for daily reports, monitors on topics, reminders, etc - a lot of what",
+                "displayDate": "Jun 19",
+                "provider": "X",
+                "media": [],
+                "textZh": "pulse 是我们在 chatgpt 里第一次尝试主动性功能，我们从中学到了很多。 虽然它原本是想在用户开口之前就先替他们做事，但用户其实很喜欢自己去定制他们的 pulse。他们最后会要求日报、主题监控、提醒等等——很多内容"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/YVOV2aqRbo",
+                "resolvedUrl": "https://x.com/santa_kaus/status/2068101239141970154"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-20T19:11:36.000Z",
+        "sections": [
+          {
+            "headline": "**AI** priors expire fast, so weekly evals and buyer conversations matter; **AI** 里的旧判断过期太快，得每周重测、每周聊买家",
+            "body": "The biggest problem with AI is that priors need to be reset every few weeks.. and it seems like most people are incapable of doing that. \n\nI talk to so many people who say xyz doesn’t work and when I ask when was the last time they tried testing it, the answer is always “a few months ago.” \n\nBrother that’s like eons ago in AI timelines. This is why each person needs to have their own evals of hard tasks and weekly tinker time to truly understand where the frontier is. \n\nAnd then you need to talk to enterprise buyers weekly who are usually two years behind. But they are the buyers so you need to understand how to market. \n\nThe combination of the two will give you a pretty good sense of where to invest time and capital. If you just do these two weekly, you’ll be ahead of 99% of people.\n\n**AI** 最大的问题是，很多先验判断每隔几周就得重置一次……但大多数人根本做不到。\n\n我会碰到很多人说 xyz 不行，结果我一问他们上次认真测试是什么时候，答案永远是“几个月前”。\n\n兄弟，在 **AI** 时间线上那都算上古时代了。所以每个人都得有自己针对难任务的 eval，也得给自己留每周折腾的时间，才真的知道前沿到哪了。\n\n然后你还得每周去跟企业买家聊，他们通常落后两年。但他们才是买单的人，所以你必须知道该怎么卖。\n\n这两件事放一起，基本就能让你判断时间和资本该投去哪。你只要每周把这两件事做了，就已经领先 99% 的人。",
+            "source_links": [
+              "https://x.com/nikunj/status/2068411460620042720"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Feedback for **UCP CLI**, with **Claude Code** along for the ride; 带着 **Claude Code** 一起试 **UCP CLI**，顺手提了反馈",
+            "body": "Hi @tobi, had fun taking UCP CLI through the paces last night for a side project. \n\nSome observations and feedback that me &amp; Claude Code had for you! https://t.co/LC30umZo8h\n\n嗨 @tobi，昨晚我拿 **UCP CLI** 给一个 side project 跑了一圈，玩得挺开心。\n\n这里有一些我和 **Claude Code** 一起整理出来的观察和反馈给你！ https://t.co/LC30umZo8h",
+            "source_links": [
+              "https://x.com/nikunj/status/2068372026268811517"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLRVHEraEAAifa_.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2068372026268811517/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLRVL2ubwAAyDt5.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2068372026268811517/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLRVVXOaMAEqQOe.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2068372026268811517/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/LC30umZo8h",
+                "resolvedUrl": "https://x.com/nikunj/status/2068372026268811517/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLRVVXOaMAEqQOe.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-20T20:18:02.000Z",
+        "sections": [
+          {
+            "headline": "A Japan-focused chance to grab more tokens; 面向日本市场的一次拿更多 token 的机会",
+            "body": "If you are in Japan🇯🇵 or do business there, here's your chance to get lots of tokens! https://t.co/31g9yInYXX\n\n如果你人在日本🇯🇵，或者在那边做生意，这里有个机会能拿到很多 token！ https://t.co/31g9yInYXX",
+            "source_links": [
+              "https://x.com/steipete/status/2068428180004942319"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/anna_mutoh/status/2068315436886917212",
+                "resolvedUrl": "https://x.com/anna_mutoh/status/2068315436886917212",
+                "authorName": "Anna Mutoh",
+                "authorHandle": "anna_mutoh",
+                "authorUrl": "https://x.com/anna_mutoh",
+                "text": "Startup founders - @OpenAI and @OpenNetwork_Lab are hosting a Startup pitch contest in Kyoto with OpenAI providing $1M USD in API credits across the program, including $100,000 USD for the 1st place winner! 🇯🇵\nApply NOW ! 👉 https://luma.com/wdfs5azz",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [],
+                "textZh": "创业者们：@OpenAI 和 @OpenNetwork_Lab 正在京都举办一场 Startup 路演比赛，OpenAI 将为整个项目提供总计 100 万美元的 API credits，其中第一名将获得 10 万美元！🇯🇵 现在就申请！👉 https://luma.com/wdfs5azz"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/31g9yInYXX",
+                "resolvedUrl": "https://x.com/anna_mutoh/status/2068315436886917212"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-21",
+    "updatedAt": "2026-06-24T09:16:21.235Z",
+    "commit": {
+      "sha": "f70908357d9b11c33f2d39484e193d9ecc1f3f2c",
+      "committedAt": "2026-06-21T07:57:49Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T09:10:24.860Z",
+    "feedGeneratedAt": "2026-06-21T07:57:41.783Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

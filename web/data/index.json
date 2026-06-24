@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T08:14:02.256Z",
+  "updatedAt": "2026-06-24T09:16:21.238Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -26,6 +26,19 @@
       "commit": {
         "sha": "6882ab5cc44c63cef5f41b416d61760d6093c5ec",
         "committedAt": "2026-06-22T08:29:45Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "title": "AI Builders Daily · 2026-06-21",
+      "summary": "**Coding agents are stretching their legs**; **Anthropic** spent a full postmortem on why **Claude Code** felt worse and how three product-layer changes broke quality; managed agents are getting real enterprise plumbing with self-hosted sandboxes and **MCP** tunnels; on X, builders are split between open-weight optimism, brutal cost math, and fresh excitement around **GLM-5.2** and **Codex**.\n\n**长程编码代理开始真上强度了**；**Anthropic** 罕见摊开讲清 **Claude Code** 最近到底坏在哪，锅不在 API，在产品层三处改动；托管代理也开始接上企业真需求，自托管沙箱和 **MCP** 隧道直接把安全边界拉回内网；X 上这波更有意思，一边在算订阅和推理成本，一边有人被 **GLM-5.2** 的代码能力吓到，还有人已经在等 **Codex** 把前端再往前推一大截。",
+      "itemCount": 16,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T09:16:21.237Z",
+      "commit": {
+        "sha": "f70908357d9b11c33f2d39484e193d9ecc1f3f2c",
+        "committedAt": "2026-06-21T07:57:49Z",
         "subject": "chore: update feeds [skip ci]"
       }
     },
