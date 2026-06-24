@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T10:34:26.510Z",
+  "updatedAt": "2026-06-24T10:48:14.322Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -118,6 +118,19 @@
       "commit": {
         "sha": "bf0fd66705bb2f51a5ff44e2b9f32360ee216772",
         "committedAt": "2026-06-15T08:30:47Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
+    {
+      "date": "2026-06-14",
+      "title": "AI Builders Daily · 2026-06-14",
+      "summary": "**Codex** suddenly became a character in the feed, from OpenAI intros to agents signing themselves up for web services; **AI regulation** moved from abstract debate to model-release choke points, with **Fable**, jailbreaks, and export controls pulling founders into open argument; builders also kept posting the ground truth, security glitches, conference data storytelling, and a blunt reminder that taste, traction, and actual product usage still beat theater.\n\n**Codex** 这下不只是工具，直接成了时间线里的角色，从 **OpenAI** 员工玩 AMA，到 agent 自己跑去注册服务；**AI 监管** 也不再是空话，**Fable**、越狱测试、出口管制把讨论拽到模型发布这一层，吵得很实；另一边的 feed 也挺真实，安全漏洞、会务数据、品味文章、VC 群聊风向都在提醒一件事：真产品、真使用、真判断，比表演有用。",
+      "itemCount": 15,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T10:48:14.320Z",
+      "commit": {
+        "sha": "d0cf96b271d5abb85661b3652ef63d77e1aa69ed",
+        "committedAt": "2026-06-14T07:54:40Z",
         "subject": "chore: update feeds [skip ci]"
       }
     },

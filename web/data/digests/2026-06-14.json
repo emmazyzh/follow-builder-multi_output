@@ -1,0 +1,651 @@
+{
+  "payload": {
+    "date": "2026-06-14",
+    "title": "AI Builders Daily · 2026-06-14",
+    "summary": "**Codex** suddenly became a character in the feed, from OpenAI intros to agents signing themselves up for web services; **AI regulation** moved from abstract debate to model-release choke points, with **Fable**, jailbreaks, and export controls pulling founders into open argument; builders also kept posting the ground truth, security glitches, conference data storytelling, and a blunt reminder that taste, traction, and actual product usage still beat theater.\n\n**Codex** 这下不只是工具，直接成了时间线里的角色，从 **OpenAI** 员工玩 AMA，到 agent 自己跑去注册服务；**AI 监管** 也不再是空话，**Fable**、越狱测试、出口管制把讨论拽到模型发布这一层，吵得很实；另一边的 feed 也挺真实，安全漏洞、会务数据、品味文章、VC 群聊风向都在提醒一件事：真产品、真使用、真判断，比表演有用。",
+    "items": [
+      {
+        "person_name": "No Priors",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@NoPriorsPodcast",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-10T13:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Biohub** bets on open source biology and frontier AI / **Biohub** 把筹码押在开源生物学和前沿 AI 上",
+            "body": "**No Priors** hosted **Mark Zuckerberg**, **Priscilla Chan**, and **Alex Rives** for a long conversation about **Biohub** and the Chan Zuckerberg Initiative's push to make biology more like an engineering discipline. The core pitch was straightforward: fund shared tools, generate new biological datasets that do not already exist, and open source the results so more scientists can move faster instead of rebuilding the same fragile lab software in silos.\n\nThey tied that mission to AI more directly than before. Zuckerberg argued that biology does not have the internet-scale data abundance that helped language models take off, so progress depends on building new measurement systems for proteins, cells, inflammation, and whole biological processes. Rives framed the next step as a tight loop between frontier AI and frontier biology, with models learning from new data and then guiding new experiments.\n\n**No Priors** 找来 **Mark Zuckerberg**、**Priscilla Chan** 和 **Alex Rives** 聊 **Biohub**，主线很清楚：把生物学往“工程学”那边推。做法不是神话式地“治愈所有疾病”，而是砸钱做共享工具，造出以前没有的数据，再把成果开源，让更多科学家少一点重复造轮子，少一点把工具留在某个博士后电脑里然后人一走就没了。\n\n他们也把这件事和 AI 说得更实在。Zuckerberg 的意思是，生物学没有语言模型那种现成的海量公开数据，所以得先把蛋白质、细胞、炎症这些新的测量体系做出来，数据才会长出来。Rives 的说法更直接：下一阶段就是前沿 AI 和前沿生物学互相喂数、互相拉动，模型从新数据里学，再反过来指导新的实验。",
+            "source_links": [
+              "https://www.youtube.com/@NoPriorsPodcast"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI engineer community builder",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-13T21:31:14.000Z",
+        "sections": [
+          {
+            "headline": "**AI Engineering Survey** final push with a live community chart / **AI Engineering Survey** 最后冲刺，还晒出参会人实时画像",
+            "body": "Last chance to fill out the annual AI Engineering Survey this weekend and win great Vercel + Notion + AIE tix!\n\nlink below \n\nwe had @devinai analyze registered attendee list and output a live chart of the people coming to the conference. it ended up being the single best data driven storytelling i've ever seen on what kind of community we are gathering in two weeks.\n\nsurvey link here!\nhttps://t.co/2oilc5lCDm\n\nno lurking, fill it out pls\n\n本周末是填写年度 AI Engineering Survey 的最后机会，还能抽到很不错的 **Vercel**、**Notion** 和 **AIE** 门票！\n\n链接在下面。\n\n我们让 @devinai 分析了已报名参会者名单，做出了一张关于两周后这场大会会来些什么人的实时图表。这基本上是我见过最好的数据驱动叙事之一，真的把我们这次聚起来的是怎样一个社区讲明白了。\n\n调查链接在这！\nhttps://t.co/2oilc5lCDm\n\n别潜水了，填一下吧。",
+            "source_links": [
+              "https://x.com/swyx/status/2065909887025168887"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKuVT2maYAAyBRu.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2065909887025168887/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKuVhkgbUAAl-tR.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2065909887025168887/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKuVw5YboAAVYFa.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2065909887025168887/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/2oilc5lCDm",
+                "resolvedUrl": "https://ntn.so/ai-survey"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Link-only reply to **Ben Thompson** and **Digg** / 转给 **Ben Thompson** 和 **Digg** 的链接回复",
+            "body": "@benthompson @digg https://t.co/fRodZJjXjN\n\n@benthompson @digg https://t.co/fRodZJjXjN",
+            "source_links": [
+              "https://x.com/swyx/status/2065886536768667769"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/fRodZJjXjN",
+                "resolvedUrl": "https://digg.com/tech/x/rankings"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-14T04:59:19.000Z",
+        "sections": [
+          {
+            "headline": "Fresh **Codex** enthusiasm from **OpenAI** / **OpenAI** 员工刚发现 **Codex**，直接开 AMA",
+            "body": "Hi, I'm Tibo and I just discovered Codex. AMA\n\n嗨，我是 Tibo，我刚发现 **Codex**。随便问。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2066022651760721931"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-14T05:46:15.000Z",
+        "sections": [
+          {
+            "headline": "Pure **YOLO** energy / 纯 **YOLO** 模式",
+            "body": "YOLO https://t.co/nkv0dtIkBC\n\nYOLO https://t.co/nkv0dtIkBC",
+            "source_links": [
+              "https://x.com/petergyang/status/2066034464120345075"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/garrytan/status/2065966672964710602",
+                "resolvedUrl": "https://x.com/garrytan/status/2065966672964710602",
+                "authorName": "Garry Tan",
+                "authorHandle": "garrytan",
+                "authorUrl": "https://x.com/garrytan",
+                "text": "@tabflows Don't spend so much time thinking about how people think about you\n\nWe're all going to die\n\nWho gives a fuck",
+                "displayDate": "Jun 14",
+                "provider": "X",
+                "media": [],
+                "textZh": "@tabflows 别花那么多时间去想别人怎么看你。 反正我们都会死。 谁他妈在乎啊。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/nkv0dtIkBC",
+                "resolvedUrl": "https://x.com/garrytan/status/2065966672964710602"
+              }
+            ]
+          },
+          {
+            "headline": "A plea for more martial arts movies / 想看更多像样的功夫片",
+            "body": "We need more amazing martial arts movies (and I need 10% of my feed to be about martial arts, anime, and games 😅). Go watch The Furious it's amazing. https://t.co/r89WZPluUr\n\n我们需要更多厉害的功夫电影（我的时间线也需要有 10% 是武术、动漫和游戏 😅）。去看 **The Furious**，真的很棒。 https://t.co/r89WZPluUr",
+            "source_links": [
+              "https://x.com/petergyang/status/2065973599119536181"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/JamesGunn/status/2065958497712279988",
+                "resolvedUrl": "https://x.com/JamesGunn/status/2065958497712279988",
+                "authorName": "James Gunn",
+                "authorHandle": "JamesGunn",
+                "authorUrl": "https://x.com/JamesGunn",
+                "text": "Oh boy! Just went with a bunch of #ManofTommorrow cast &amp; crew to see #TheFurious. I didn't think Kenji Tanagaki could outdo himself after the spectacular Walled In, but man The Furious really showed him as one of the best action filmmakers working. We all loved it!",
+                "displayDate": "Jun 14",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKvCThMX0AAzDzH.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/JamesGunn/status/2065958497712279988/photo/1"
+                  }
+                ],
+                "textZh": "天哪！刚刚和一群 #ManofTommorrow 的演员和剧组成员一起去看了 #TheFurious。我本来觉得 Kenji Tanagaki 在精彩绝伦的 Walled In 之后已经很难再超越自己了，但《The Furious》真的让人看到他就是当今最顶尖的动作片导演之一。我们都太喜欢了！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/r89WZPluUr",
+                "resolvedUrl": "https://x.com/jamesgunn/status/2065958497712279988"
+              }
+            ]
+          },
+          {
+            "headline": "Calling out a booking bug that looks like a security exploit / 点名预约漏洞，直说像安全事故",
+            "body": "Hey @peer_rich this is happening to me too and feels like a big security exploit. \n\nI have no idea how \"Nora\" booked a meeting with me.\n\nCan you fix this?\n\ncc @calcom, @dfordp11 https://t.co/SyooohQvA0\n\n嘿 @peer_rich，这事也发生在我身上了，而且感觉像个很大的安全漏洞。\n\n我完全不知道 \"Nora\" 是怎么给我约上会的。\n\n你能修一下吗？\n\ncc @calcom, @dfordp11 https://t.co/SyooohQvA0",
+            "source_links": [
+              "https://x.com/petergyang/status/2065841885936316797"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/dfordp11/status/2065673914748121159",
+                "resolvedUrl": "https://x.com/dfordp11/status/2065673914748121159",
+                "authorName": "Dilpreet Grover",
+                "authorHandle": "dfordp11",
+                "authorUrl": "https://x.com/dfordp11",
+                "text": "I got a booking on an old meeting type I hadn't used in months. \"Nora Ashkenazi\" wanted to discuss \"integration scope of Odena\", vague enough to seem legit at first glance.",
+                "displayDate": "Jun 13",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKq-JctaEAIvXXs.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/dfordp11/status/2065673914748121159/photo/1"
+                  }
+                ],
+                "textZh": "我收到了一条预约，来自一个我几个月都没用过的旧会议类型。\"Nora Ashkenazi\" 想讨论 \"Odena 的集成范围\"，乍一看模糊得刚好像是真的。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SyooohQvA0",
+                "resolvedUrl": "https://x.com/dfordp11/status/2065673914748121159"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-06-14T00:24:08.000Z",
+        "sections": [
+          {
+            "headline": "A full-on anti-**Jira** joke / 对 **Jira** 开了个狠的",
+            "body": "Imagine a piece of software so powerful it completely disables the operations of tech companies, freezing progress and rendering them worthless. Such damaging capabilities must be controlled and stopped. \n\nImport restrictions on Jira. Now.\n\n想象一下，有这么一款软件，威力大到能直接瘫痪科技公司的运作，冻结进度，让它们一文不值。这样的破坏能力必须被管起来，必须被制止。\n\n现在就对 **Jira** 实施进口限制。",
+            "source_links": [
+              "https://x.com/thenanyu/status/2065953400395555255"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Former Gemini product lead",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-06-13T21:38:20.000Z",
+        "sections": [
+          {
+            "headline": "Why frontier model launches are hard even after red-teaming / 为什么前沿模型发布再怎么红队也还是难",
+            "body": "Having been through many frontier model launch reviews, I have empathy for everyone involved.\n\nLaunching an LLM isn't like shipping traditional software - you're making a decision about a black box with effectively infinite use cases and infinite failure modes.\n\nThe tradeoffs are hard - every increase in capability expands the space of both valuable use cases and potential misuse.\n\nAs a lab, you build extensive evals, you red-team, you iterate on the model. You debate tradeoffs across candidate checkpoints before choosing the best one to launch.\n\nThen early-access partners still uncover behaviors you didn't anticipate.\n\nYou can never be 100% certain you've understood a frontier model. You focus on reducing the uncertainty enough to launch.\n\nAs frontier models become smarter across the industry, that decision will get harder - for labs and regulators.\n\n经历过很多次前沿模型发布评审后，我对里面的每个人都有同理心。\n\n发布一个 LLM 不像发布传统软件，你是在对一个黑箱做决定，而它几乎有无限多的使用场景，也有无限多的失败方式。\n\n这里面的取舍很难。能力每往上走一步，能做的好事变多，可能被滥用的空间也一起变大。\n\n站在实验室这边，你会做大量 eval、做红队、反复迭代模型。你会在多个候选 checkpoint 之间来回争论取舍，最后才选出一个拿去发。\n\n可即便这样，早期接入伙伴还是会挖出你没想到的行为。\n\n你永远不可能 100% 确定自己已经真正理解了一个前沿模型。你能做的，是把不确定性压到一个你愿意发布的程度。\n\n随着整个行业里的前沿模型越来越强，这个决定只会越来越难，不管是对实验室还是监管者都是这样。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2065911676000752122"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-13T16:47:54.000Z",
+        "sections": [
+          {
+            "headline": "Suspicion that something bigger is going on / 觉得这事背后还有更大的盘子",
+            "body": "Feels like we’re getting psyoped. The end-game here is something bigger. https://t.co/4ye6B0RyBH\n\n感觉我们像是在被带节奏。这里的最终盘算，明显更大。 https://t.co/4ye6B0RyBH",
+            "source_links": [
+              "https://x.com/amasad/status/2065838585358745653"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/4ye6B0RyBH",
+                "resolvedUrl": "https://twitter.com/steph_palazzolo/status/2065830580135051306"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-13T17:58:07.000Z",
+        "sections": [
+          {
+            "headline": "Foggy San Francisco mood-post / 旧金山大雾天心情帖",
+            "body": "If you don’t love her at her foggiest, you don’t deserve at her sunniest https://t.co/emfuSvU6nF\n\n如果你连她雾最大的时候都不爱，那她天最晴的时候你也不配拥有。 https://t.co/emfuSvU6nF",
+            "source_links": [
+              "https://x.com/rauchg/status/2065856253428179357"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKtlT5zb0AAVy21.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2065856253428179357/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/emfuSvU6nF",
+                "resolvedUrl": "https://x.com/rauchg/status/2065856253428179357/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKtlT5zb0AAVy21.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-14T02:47:49.000Z",
+        "sections": [
+          {
+            "headline": "The AI routing layer gets more strategic / AI 路由层会越来越值钱",
+            "body": "The layer that can route to the best AI model for the particular job is going to increase in value substantially. There are at least 3 big reasons: \n\n* Cost optimization: there are plenty of use cases where you need frontier intelligence for some tasks and something far cheaper for others. Even in the same task you may use frontier intelligence for planning and review of the work, but an OSS or cheaper model for the bulk of the workload. This is going to be standard across large buckets of work going forward. \n\n* Capability maximization: despite the bitter lesson and models generally getting better in the same direction, there are still lots of differences between models. Some are better at tool use, others better at coding, and others again better at certain domains of knowledge work. The ability to route between these at different times is a huge advantage.\n\n* Risk mitigation: while the Fable situation is somewhat of a black swan, it’s possible we’re heading toward a regulatory environment where governments may restrict models at different times based on their approval mechanisms or new things they discover. This means you’re going to want flexibility in being able to deploy workloads across different providers as a form of risk mitigation.\n\nUltimately, it’s going to increasingly be a a strategic advantage for the applied AI layer that they can effectively route between models. Will be very interesting to see how this evolves.\n\n那一层能根据具体工作把请求路由到最合适 AI 模型的能力，价值会明显上升。至少有 3 个大原因：\n\n* 成本优化：很多场景里，某些步骤需要前沿智能，另一些步骤用便宜得多的模型就够了。哪怕是同一个任务，你也可能用前沿模型做规划和复核，再把大部分实际工作交给开源模型或更便宜的模型。这以后会变成很多工作场景里的标准做法。\n\n* 能力最大化：尽管模型大体上都在朝相近方向变强，模型之间的差异还是很多。有些更擅长工具调用，有些更擅长写代码，还有些在某些知识工作领域更强。能在不同时间点把任务切到不同模型，是很大的优势。\n\n* 风险对冲：虽然 **Fable** 这次有点像黑天鹅，但我们也可能正走向一种监管环境，政府会因为审批机制或者新发现的问题，在不同时间限制不同模型。这意味着你会希望工作负载能灵活切到不同提供方，把它当成风险对冲的一部分。\n\n归根到底，对应用层 AI 来说，能有效在模型之间做路由，会越来越像一种战略优势。后面会怎么演化，挺值得看。",
+            "source_links": [
+              "https://x.com/levie/status/2065989559905812973"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Jailbreak research is normal, not 4D chess / 越狱研究本来就常见，没必要脑补成大棋局",
+            "body": "Everyone thinks this is some kind of 4D chess or conspiracy. But it’s quite standard to try and jailbreak AI models, and by definition they would share that research with the government given that’s whole point. I don’t think Amazon assumed this would be the next move. https://t.co/DizjwNcaLG\n\n大家都觉得这是什么 4D 棋局或者阴谋。但去尝试越狱 AI 模型本来就是很常见的事，而且按定义来说，他们本来就会把这类研究分享给政府，因为那本来就是这件事的目的。我不觉得 **Amazon** 预料到了接下来会走到这一步。 https://t.co/DizjwNcaLG",
+            "source_links": [
+              "https://x.com/levie/status/2065964446489710939"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/steph_palazzolo/status/2065830580135051306",
+                "resolvedUrl": "https://x.com/steph_palazzolo/status/2065830580135051306",
+                "authorName": "Stephanie Palazzolo",
+                "authorHandle": "steph_palazzolo",
+                "authorUrl": "https://x.com/steph_palazzolo",
+                "text": "Breaking: Amazon CEO Andy Jassy was among the tech leaders who raised concerns to senior Trump officials this week re: security risks in Anthropic's newest models.\n\nThose convos set in motion the government's new export controls on foreign national access to Mythos and Fable.",
+                "displayDate": "Jun 13",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKtN6EXW4AAKNXH.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/steph_palazzolo/status/2065830580135051306/photo/1"
+                  }
+                ],
+                "textZh": "突发：Amazon CEO Andy Jassy 是本周向特朗普政府高级官员提出对 Anthropic 最新模型安全风险担忧的科技领袖之一。 这些对话促成了政府针对外国公民访问 Mythos 和 Fable 的新出口管制。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/DizjwNcaLG",
+                "resolvedUrl": "https://x.com/steph_palazzolo/status/2065830580135051306"
+              }
+            ]
+          },
+          {
+            "headline": "Regulate AI use, not every model release / 该管的是 AI 的使用，不是每次模型发布都卡一遍",
+            "body": "This whole Fable export control situation is actually net positive to regulation discourse. It’s an early peek into what AI regulation would end up looking like at scale when enacted at the model layer instead of the specific application of the AI.\n\nThe government would have sole discretion over when a model can be released to the to public, based on a bunch of factors that they inherently control. \n\nIn this case, based on the available reporting, the risk is that the model can be jailbroken to deliver increased cyber exploit capabilities. The issue is that actually you want models to be able to have those capabilities on the defense side of cyber as well, and for all intents and purposes, by Anthropic’s own response, you can execute these capabilities today in other models. \n\nSo thus the whole challenge will be that you’re debating with the government, over months and months, with every model release, what these models are actually capable of and what their risks are. Inherently, there’s not only a lot of subjectivity in determining those risks, but there’s also many other factors that go into the risks being practical in the first place.\n\nThe net result is that we would end up with backlog of AI releases, progress in the market inherently would dramatically slow down, and AI would start to look more like any other sclerotic industry. If this paradigm had existed 3 years ago at the start of the current AI wave, we’d likely currently be stuck on GPT-4 level intelligence at this point.\n\nThis is why, wherever possible, we should be regulating the applied use of AI. We should continue to study and enforce the dangerous use of AI in cyber attacks, financial services risks, fraud, biowarfare, and other spaces. AI safety is incredibly important, but slowing down progress this early in the development of AI I suspect is net harmful.\n\n这整件 **Fable** 出口管制风波，其实对监管讨论反而是件好事。它算是提前让大家看了一眼：如果 AI 监管不是盯具体应用，而是直接落在模型层，大规模推开以后会是什么样。\n\n政府会对模型什么时候能向公众发布拥有完全裁量权，而判断依据里有一大堆本来就掌握在他们手里的因素。\n\n就这次来说，按现有报道，风险点在于模型可能被越狱，从而提升网络攻击能力。问题在于，网络防御一侧其实也需要模型具备这些能力，而且按 **Anthropic** 自己的回应，类似能力今天在别的模型里也能做到。\n\n所以真正麻烦的地方会变成：每次发模型，你都要和政府拉扯好几个月，争这些模型到底能干什么、风险到底有多大。而这里面不但主观判断很多，风险本身能不能落地，也受很多别的因素影响。\n\n最后的结果，大概率就是 AI 发布越积越多，市场进展明显放慢，AI 行业开始越来越像别的那些僵硬行业。如果三年前这套范式就已经存在，这一轮 AI 浪潮很可能会卡在 **GPT-4** 这个水平附近。\n\n所以我觉得，能不在模型层动刀的时候，就别在模型层动刀。该监管的是 AI 的具体使用场景。网络攻击、金融风险、诈骗、生物战这些危险用途，当然该继续研究、继续执法。AI 安全非常重要，但在这个阶段就把 AI 进展整体压慢，我怀疑总体上是弊大于利。",
+            "source_links": [
+              "https://x.com/levie/status/2065842361834651996"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-13T19:22:19.000Z",
+        "sections": [
+          {
+            "headline": "AI needs new maps drawn by people in the field / AI 这片地得边走边画新地图",
+            "body": "In AI most people are still trying to use old maps on a new territory. \n\nThrow the maps away. It's time to draw new ones. The only way you can do it is walking the land.\n\n在 AI 这件事上，大多数人还在拿旧地图硬套一块新大陆。\n\n把旧地图扔掉吧。现在该自己画新的了。唯一的办法，就是亲自下场去走这片地。",
+            "source_links": [
+              "https://x.com/garrytan/status/2065877443874038203"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Use matters more than prestige signals / 真正去用，比外部信号重要得多",
+            "body": "I wish the significance of the model came from more people actually using it and coming to their own conclusions\n\nBut yes most people in the world learn about it through signifiers and not through interacting with that which is signified https://t.co/TcbmeHuXGQ\n\n我希望一个模型到底重不重要，是由更多人真的去用它、自己得出结论来决定的。\n\n但没错，世界上大多数人认识它，靠的还是各种信号和符号，而不是亲手去跟它发生交互。 https://t.co/TcbmeHuXGQ",
+            "source_links": [
+              "https://x.com/garrytan/status/2065791421362352476"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/signulll/status/2065645433062412660",
+                "resolvedUrl": "https://x.com/signulll/status/2065645433062412660",
+                "authorName": "signüll",
+                "authorHandle": "signulll",
+                "authorUrl": "https://x.com/signulll",
+                "text": "contrary to the default reaction on this little website, this is absolutely incredible news for anthropic.\n\ni mean obviously yes, the operational disruption is real. but public &amp; world perception wise, this could not be a bigger home run. could be a grand slam type situation.",
+                "displayDate": "Jun 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "和这个小网站上的默认反应相反，这对 anthropic 来说绝对是个极其重大的利好消息。 我的意思是，运营层面的干扰当然确实存在。但从公众和全球观感来看，这简直不可能更漂亮了，甚至可能是全垒打中的满贯。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/TcbmeHuXGQ",
+                "resolvedUrl": "https://x.com/signulll/status/2065645433062412660"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-14T05:55:27.000Z",
+        "sections": [
+          {
+            "headline": "A note on taste as mastery, not mere preference / 品味不是好恶，是练出来的判断力",
+            "body": "Great essay on taste and how to cultivate it\n\nTaste is not just personal preference; good taste requires mastery and experience https://t.co/uuxFF7sU58\n\n这篇讲品味以及怎么培养品味的文章很好。\n\n品味不只是个人偏好；好的品味需要功底，也需要经验。 https://t.co/uuxFF7sU58",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2066036778713362747"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/paulg/status/2022604692178522562",
+                "resolvedUrl": "https://x.com/paulg/status/2022604692178522562",
+                "authorName": "Paul Graham",
+                "authorHandle": "paulg",
+                "authorUrl": "https://x.com/paulg",
+                "text": "Prediction: In the AI age, taste will become even more important. When anyone can make anything, the big differentiator is what you choose to make.\n\nhttps://paulgraham.com/taste.html",
+                "displayDate": "Feb 14",
+                "provider": "X",
+                "media": [],
+                "textZh": "预测：在 AI 时代，品味会变得更加重要。当任何人都能创造任何东西时，真正拉开差距的是你选择去创造什么。 https://paulgraham.com/taste.html"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/uuxFF7sU58",
+                "resolvedUrl": "https://x.com/paulg/status/2022604692178522562"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-13T20:11:15.000Z",
+        "sections": [
+          {
+            "headline": "Boosted views are now a negative VC signal / 花钱刷曝光，在 VC 群里已经成负面信号",
+            "body": "Not sure which founder needs to hear this..\n\nbut paid partnerships and boosting “views” on X are now negative signal in all VC group chats.\n\nI’m hoping this comes to the inflating ARR trend soon, but that might still take another cycle.\n\n不知道哪位创始人该听这句……\n\n但在 X 上做付费合作、花钱把 “views” 顶上去，现在在所有 VC 群聊里都已经是负面信号了。\n\n我希望下一个轮到被嫌弃的是虚增 ARR 这股风气，不过这事可能还得再过一个周期。",
+            "source_links": [
+              "https://x.com/nikunj/status/2065889759906644146"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Looking for app startups that touch decisions and dollars / 想聊那种真正碰到决策和预算路径的应用创业公司",
+            "body": "Obligatory - if you are the rare application startup with a live product that is in the decisions and dollars path, I’d love to chat 👋\n\n按惯例说一句：如果你是那种少见的应用层创业公司，已经有在线产品，而且真正卡在决策路径和预算路径上，我很想聊聊 👋",
+            "source_links": [
+              "https://x.com/nikunj/status/2065832948709122120"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenAI engineer",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-14T03:24:42.000Z",
+        "sections": [
+          {
+            "headline": "Chip shortage joke lands with crustacean timing / 缺芯片这个梗，越来越离谱",
+            "body": "This shortage of chips is getting out of hand. https://t.co/vZS92xB1Lv\n\n这波缺 chips 已经开始失控了。 https://t.co/vZS92xB1Lv",
+            "source_links": [
+              "https://x.com/steipete/status/2065998839467933862"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/vZS92xB1Lv",
+                "resolvedUrl": "https://t.co/vZS92xB1Lv"
+              }
+            ]
+          },
+          {
+            "headline": "**Codex** triggered a **PayPal** verification scare / **Codex** 自己注册服务，把 **PayPal** 验证码都触发了",
+            "body": "Got a PayPal verification text and thought I been hacked, but it was just codex signing up for a web service it needed.\n\n我收到一条 **PayPal** 验证短信，还以为自己被黑了，结果只是 **codex** 在注册它需要的一个 web 服务。",
+            "source_links": [
+              "https://x.com/steipete/status/2065997212015067508"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-14T01:53:52.000Z",
+        "sections": [
+          {
+            "headline": "Wellness-retreat meme meets **Dario** / 养生 retreat 梗图套到 **Dario** 身上",
+            "body": "dario at the wellness retreat when they told him hegseth was on the phone https://t.co/UgwQA8h7fg\n\n他们告诉 **dario**，说 **hegseth** 打电话来了，那一刻的 wellness retreat 表情包。 https://t.co/UgwQA8h7fg",
+            "source_links": [
+              "https://x.com/danshipper/status/2065975981039649058"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKvR-BDacAAvAce.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2065975981039649058/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/UgwQA8h7fg",
+                "resolvedUrl": "https://x.com/danshipper/status/2065975981039649058/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKvR-BDacAAvAce.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Post-ban usage swings from **Claude** to **Codex** / 封禁前后，使用重心从 **Claude** 摇到 **Codex**",
+            "body": "before and after fable ban:\n\nmy claude app vs. codex app usage https://t.co/ddBRm7bp21\n\n**fable** 封禁前后：\n\n我用 **claude app** 和 **codex app** 的对比。 https://t.co/ddBRm7bp21",
+            "source_links": [
+              "https://x.com/danshipper/status/2065856703397278060"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKtlm0Ba4AAYR0M.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2065856703397278060/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ddBRm7bp21",
+                "resolvedUrl": "https://x.com/danshipper/status/2065856703397278060/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKtlm0Ba4AAYR0M.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A ban-meme aimed at **Andy Jassy** and the US government / 拿 **Andy Jassy** 和美国政府开模型封禁玩笑",
+            "body": "the last thing you see before andy jassy gets your model banned by the usg https://t.co/dz9LHpbcOn https://t.co/1y33OySAEH\n\n在 **andy jassy** 让美国政府把你的模型封掉之前，你最后看到的画面。 https://t.co/dz9LHpbcOn https://t.co/1y33OySAEH",
+            "source_links": [
+              "https://x.com/danshipper/status/2065843763327738153"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKtZ6y3bMAA6xGX.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2065843763327738153/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/dz9LHpbcOn",
+                "resolvedUrl": "https://x.com/danshipper/status/2065843763327738153/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKtZ6y3bMAA6xGX.jpg"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/1y33OySAEH",
+                "resolvedUrl": "https://twitter.com/steph_palazzolo/status/2065830580135051306"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-14T02:52:14.000Z",
+        "sections": [
+          {
+            "headline": "The moon photo hits harder because a human took it / 这张月球照片最打人的地方，是它真由人拍下",
+            "body": "I have been thinking about this photo a lot.\n\nIt's a beautiful testament to human civilization and our ability to reach for the stars.\n\nBut the thing that I can't get over is that a *human being* took this photo. From a tin cylinder flying on the other side of the moon. \n\nA machine could have taken it and it would have still been cool. But man was there. And that makes it so much more evocative.\n\n我一直在想这张照片。\n\n它确实很动人，能让人一下子想到人类文明到底把自己送到了多远的地方。\n\n但我真正过不去的点是，这张照片是一个 *人* 拍的。是在月球背面飞行的一只金属圆筒里拍下来的。\n\n如果是机器拍的，当然也还是很酷。但那里真的有人。这就让它一下子更有分量了。",
+            "source_links": [
+              "https://x.com/adityaag/status/2065990670184247341"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKvfkBEaQAAxKCM.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2065990670184247341/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Starlink** at 30,000 feet makes **SpaceX** feel very real / 三万英尺上看球，用 **Starlink** 才真切感到 **SpaceX**",
+            "body": "Watching Brazil play Morocco at 30K feet using Starlink is a visceral reminder of SpaceX.\n\n在三万英尺高空用 **Starlink** 看巴西踢摩洛哥，会很直接地想起 **SpaceX** 到底做成了什么。",
+            "source_links": [
+              "https://x.com/adityaag/status/2065948194723520709"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-14",
+    "updatedAt": "2026-06-24T10:48:14.318Z",
+    "commit": {
+      "sha": "d0cf96b271d5abb85661b3652ef63d77e1aa69ed",
+      "committedAt": "2026-06-14T07:54:40Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T10:44:43.068Z",
+    "feedGeneratedAt": "2026-06-14T07:54:00.739Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
