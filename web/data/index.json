@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T09:32:41.100Z",
+  "updatedAt": "2026-06-24T09:50:45.232Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -52,6 +52,19 @@
       "commit": {
         "sha": "5f961380e983e4807a516e2ef720c38f780cd3cb",
         "committedAt": "2026-06-20T07:38:09Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "title": "AI Builders Daily · 2026-06-19",
+      "summary": "**Claude Code Artifacts** turns agent sessions into live internal pages; **Lambda** says AI compute is still underbuilt, with land and power, not GPUs alone, setting the pace; open weights and possible review-heavy regulation are suddenly front-and-center; builders keep shipping anyway, from SEO experiments to interactive decks and team-facing prototypes.\n\n**Claude Code 的 Artifacts** 把代理会话直接做成团队能看的活页面；**Lambda** 那边的判断也很直白，算力没到过剩，真正卡住节奏的是土地、电力和机房；开源权重能不能追上前沿、监管会不会把模型更新拖慢，这两件事已经摆上桌面；另一边做站、做 deck、做原型的人没空空谈，先把东西发出来再说。",
+      "itemCount": 21,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T09:50:45.231Z",
+      "commit": {
+        "sha": "dbc1982cd1ce222de4a8d47cb4e5d271cc55412f",
+        "committedAt": "2026-06-19T08:15:09Z",
         "subject": "chore: update feeds [skip ci]"
       }
     },

@@ -1,0 +1,1068 @@
+{
+  "payload": {
+    "date": "2026-06-19",
+    "title": "AI Builders Daily · 2026-06-19",
+    "summary": "**Claude Code Artifacts** turns agent sessions into live internal pages; **Lambda** says AI compute is still underbuilt, with land and power, not GPUs alone, setting the pace; open weights and possible review-heavy regulation are suddenly front-and-center; builders keep shipping anyway, from SEO experiments to interactive decks and team-facing prototypes.\n\n**Claude Code 的 Artifacts** 把代理会话直接做成团队能看的活页面；**Lambda** 那边的判断也很直白，算力没到过剩，真正卡住节奏的是土地、电力和机房；开源权重能不能追上前沿、监管会不会把模型更新拖慢，这两件事已经摆上桌面；另一边做站、做 deck、做原型的人没空空谈，先把东西发出来再说。",
+    "items": [
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=0NttU4CbyVs",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-18T11:30:00.000Z",
+        "sections": [
+          {
+            "headline": "**Lambda** says AI compute is still underbuilt, not commoditized · **Lambda** 直说 AI 算力还没建够，更谈不上商品化",
+            "body": "Matt Turck’s conversation with **Stephen Balaban** goes straight at the physical layer of the AI boom: why neoclouds are not simple GPU resellers, why long-term **H100** economics look different from public price indexes, and why the real moat spans software orchestration, financing, construction, and utility access. Balaban argues demand is still climbing because more capable models keep widening the market, from assistants to code generation.\n\nHe also makes a blunt infrastructure case: the main bottleneck is not some abstract shortage of chips but entitled land, power, shell capacity, and the machinery needed to stand up new data centers fast. The episode frames AI compute as an oligopoly-style industry with room for several big winners, while warning that people are still underestimating how much demand advanced models can pull through the stack.\n\nMatt Turck 和 **Stephen Balaban** 这期聊得很硬，直接拆 AI 热潮最底层那一层：为什么 neocloud 不是倒卖 GPU，这门生意为什么不能按商品逻辑理解，为什么长期 **H100** 租赁价格和公开指数能完全不是一个故事。Balaban 的核心判断很明确，护城河不只在芯片，软件调度、融资、建设、拿电，全都算数；模型能力继续往上走，需求就还会扩。\n\n他对基础设施瓶颈的说法也很具体：眼下卡住行业的，不是什么抽象的“缺卡”，而是带电指标的土地、机房壳子，以及把新机房尽快落地的整套设备和工程能力。这期把 AI 算力讲成了一门典型的重资产寡头生意，能容下多个大玩家；更关键的是，很多人到现在还低估了先进模型会把多少需求一路往下游传导。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=0NttU4CbyVs"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog/artifacts-in-claude-code",
+        "source_label": "Blog",
+        "posted_at": "2026-06-18",
+        "sections": [
+          {
+            "headline": "**Claude Code** launches **Artifacts** for live, private team pages · **Claude Code** 推出 **Artifacts**，把会话变成可分享的团队页面",
+            "body": "**Anthropic** introduced **Artifacts** in **Claude Code**, a beta feature that turns an active session into a live web page: PR walkthroughs, dashboards, architecture explainers, release checklists, incident timelines, and other visual outputs built from the codebase, connectors, and conversation context already in the session. Pages update in place at the same link, keep version history, and are meant to cut down on status-passing overhead inside teams.\n\nThe launch is framed as a collaboration tool, not just a rendering feature. **Artifacts** stay private to the organization, can be shared only with authenticated members, and ship first to Team and Enterprise users across the CLI and desktop app. The examples lean hard into practical internal workflows: debugging, privacy review, security findings, FinOps mapping, weekly shipping summaries, and frontend prototype variations built from real components.\n\n**Anthropic** 给 **Claude Code** 加了一个叫 **Artifacts** 的 beta 功能，意思很直接：把正在跑的会话整理成一个活页面。PR walkthrough、仪表盘、架构说明、发布清单、事故时间线，这些都能从当前会话里现成的代码、连接器和上下文直接长出来。页面会在同一个链接上持续刷新，还带版本历史，目标就是少开几次“你给大家讲讲现在查到哪了”的同步会。\n\n这个发布更像协作工具，不只是多了个展示层。**Artifacts** 默认只在组织内可见，只能分享给已登录成员，先给 Team 和 Enterprise 用户，在 CLI 和桌面端都能用。官方举的例子也很务实：排障、隐私审查、安全发现、云成本梳理、团队周更、还有基于真实组件做出来的前端原型方案。",
+            "source_links": [
+              "https://claude.com/blog/artifacts-in-claude-code"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T00:22:40.000Z",
+        "sections": [
+          {
+            "headline": "Trading pop joke and fund tease · 涨幅太猛，顺手开了个基金玩笑",
+            "body": "+55% in one day. i should start a fund\n\n(dm if you would actually help me run one, i have no idea how to run one) https://t.co/xDABotzUVq https://t.co/whWdtDyZv4\n\n一天涨了 +55%。我该去开个基金了。\n\n（如果你真愿意帮我一起搞，可以私信，我其实完全不知道基金怎么运作）https://t.co/xDABotzUVq https://t.co/whWdtDyZv4",
+            "source_links": [
+              "https://x.com/swyx/status/2067764968808915392"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLItIw-aoAAUYdV.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2067764968808915392/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/swyx/status/2067468331918242127",
+                "resolvedUrl": "https://x.com/swyx/status/2067468331918242127",
+                "authorName": "swyx 🔜 @aiDotEngineer",
+                "authorHandle": "swyx",
+                "authorUrl": "https://x.com/swyx",
+                "text": "my notes from the @midjourney medical launch\n\n- @Scobleizer compared this to the original iPhone and Tesla launches (that he was also front row for)\n- find you a man who looks at you like @bryan_johnson was 😍 ing for @DavidSHolz\n- see @iScienceLuvr tweet linked for Nature paper",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLEcOqybkAAm8oq.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2067468331918242127/photo/1"
+                  }
+                ],
+                "textZh": "我关于 @midjourney 医疗发布的笔记 - @Scobleizer 说这让他想起最初的 iPhone 和 Tesla 发布会（那两场他也都坐在前排） - 真该找个像 @bryan_johnson 看 @DavidSHolz 那样看你的人 😍 - 见 @iScienceLuvr 关联推文里提到的 Nature 论文"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/xDABotzUVq",
+                "resolvedUrl": "https://x.com/swyx/status/2067764968808915392/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLItIw-aoAAUYdV.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/whWdtDyZv4",
+                "resolvedUrl": "https://x.com/swyx/status/2067468331918242127"
+              }
+            ]
+          },
+          {
+            "headline": "Tagged **Devin** and **TBPN** with a link · 带着链接点了 **Devin** 和 **TBPN**",
+            "body": "@DevinAI @tbpn https://t.co/uNX04pBigg\n\n@DevinAI @tbpn https://t.co/uNX04pBigg",
+            "source_links": [
+              "https://x.com/swyx/status/2067744224892821737"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/aiDotEngineer/status/2067743962270708015",
+                "resolvedUrl": "https://x.com/aiDotEngineer/status/2067743962270708015",
+                "authorName": "AI Engineer",
+                "authorHandle": "aiDotEngineer",
+                "authorUrl": "https://x.com/aiDotEngineer",
+                "text": "🚨 BREAKING\n\n(are we doing X right?)",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLIaKj1bcAAwrTk.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/aiDotEngineer/status/2067743962270708015/photo/1"
+                  }
+                ],
+                "textZh": "🚨 突发 （我们这样玩 X 算对了吗？）"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/uNX04pBigg",
+                "resolvedUrl": "https://x.com/aidotengineer/status/2067743962270708015"
+              }
+            ]
+          },
+          {
+            "headline": "Realized who he was replying to mid-thread · 聊到一半才反应过来对面是谁",
+            "body": "@midjourney @Scobleizer @bryan_johnson @DavidSHolz @iScienceLuvr whoa i had no idea who i was talking to lmao https://t.co/dcDg09MkgY https://t.co/KoZWmFDwBb\n\n@midjourney @Scobleizer @bryan_johnson @DavidSHolz @iScienceLuvr 哇，我压根不知道我刚才是在跟谁说话，笑死 https://t.co/dcDg09MkgY https://t.co/KoZWmFDwBb",
+            "source_links": [
+              "https://x.com/swyx/status/2067741621647749296"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLIX_ohaYAAaxB6.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2067741621647749296/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/dcDg09MkgY",
+                "resolvedUrl": "https://x.com/iankar_/status/2067723391033819597"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/KoZWmFDwBb",
+                "resolvedUrl": "https://x.com/swyx/status/2067741621647749296/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLIX_ohaYAAaxB6.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T20:05:24.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Code Artifacts** as a daily workflow upgrade · **Claude Code Artifacts** 被当成日常工作流升级件",
+            "body": "I've been using Artifacts in Claude Code for everything: visual explanations of tricky code, system diagrams, quick previews of a few animation options, data analyses and dashboards I share with the team. They are a game changer for how I work with Claude. Can't wait to hear what you think!\n\n我这阵子什么都拿 Claude Code 里的 Artifacts 来做：难啃代码的可视化解释、系统图、几种动画方案的快速预览，还有可以直接发给团队的数据分析和仪表盘。它确实把我和 Claude 协作的方式改掉了。很想听听你们用了之后怎么想！",
+            "source_links": [
+              "https://x.com/bcherny/status/2067700226669060207"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T01:38:09.000Z",
+        "sections": [
+          {
+            "headline": "Simple product question to the crowd · 直接把一个产品问题丢给大家",
+            "body": "What do you use\n\n你们用什么",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2067783964077547520"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T01:35:47.000Z",
+        "sections": [
+          {
+            "headline": "Asked for voice narration on quick explainer clips · 想要给演示短片加语音讲解",
+            "body": "@OpenAIDevs how about letting us add voice over narration next like taking a quick clip to explain how to do something to a coworker\n\n@OpenAIDevs 下一个能不能加语音旁白，比如录一个很短的片子，给同事讲清楚某件事怎么做",
+            "source_links": [
+              "https://x.com/petergyang/status/2067783369153470878"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Asked how to steer **Claude Code** mid-run in desktop · 问桌面端里怎么在运行中继续指挥 **Claude Code**",
+            "body": "How do you steer Claude Code with new prompts in the desktop app while it's working?\n\nClaude Code 在桌面端工作的时候，你们是怎么用新提示继续引导它的？",
+            "source_links": [
+              "https://x.com/petergyang/status/2067760098265706566"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Newsletter plug after the content landed · 内容发完，顺手拉一把订阅",
+            "body": "If you enjoyed this, sign up for free to my newsletter to get my best AI and product guides.\n\nJoin 110,000+ subscribers here:\nhttps://t.co/yz9xcsfrhF\n\n如果你喜欢这个，可以免费订阅我的 newsletter，拿到我写过最好的 AI 和产品指南。\n\n110,000+ 订阅者都在这：\nhttps://t.co/yz9xcsfrhF",
+            "source_links": [
+              "https://x.com/petergyang/status/2067729596343259319"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/yz9xcsfrhF",
+                "resolvedUrl": "https://creatoreconomy.so/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T20:16:51.000Z",
+        "sections": [
+          {
+            "headline": "More friction, less slop in agent-written updates · 给代理加点摩擦，项目更新反而更像样",
+            "body": "It took us a lot of iterations to find the right pattern for this. Early on we were very naive and we thought that the agent could one shot project updates without much input from users.\n\nThat approach ended up creating a bunch of slop, because users disengaged their brain from the process of writing an update.\n\nBy switching to a multi turn interactive mode, the agent prompts you and asks you what to emphasize, what's most important, what context is missing, etc.\n\nThis simple change elicits much better project updates and ensures that the user has a chance to steer rather than simply being asked to say yes to everything.\n\nA very good example of introducing friction for a net benefit.\n\n我们为了这个模式试了很多轮。最早的时候其实挺天真，觉得代理不用用户给太多输入，也能一把写完项目更新。\n\n结果出来一堆 slop，因为用户直接把脑子摘掉了，不再认真参与更新内容本身。\n\n后来我们改成多轮交互模式，代理会追问你想强调什么、什么最重要、还缺什么上下文，诸如此类。\n\n这个改动看着简单，但写出来的项目更新明显更好，也让用户有机会真正去掌舵，而不是对所有东西一路点头。\n\n这是个很好的例子：适当加点摩擦，最后反而更值。",
+            "source_links": [
+              "https://x.com/thenanyu/status/2067703108344369306"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Taste as choosing well under uncertainty · 所谓品味，就是信息不全时还能选得对",
+            "body": "it is making the right choice from a range of plausible options along many dimensions with limited information... when a chess or go player intuits a move without calculating, they are exercising taste\n\nhttps://t.co/044iRz1wQf\n\n所谓品味，就是在信息有限的情况下，面对一堆都说得过去的选项，还能沿着很多维度做出更对的选择……棋手下国际象棋或围棋时，不靠穷举而是凭直觉落子，那就是在用品味。\n\nhttps://t.co/044iRz1wQf",
+            "source_links": [
+              "https://x.com/thenanyu/status/2067701849491206399"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/saaltysodaa/status/2067385134085759238?s=20",
+                "resolvedUrl": "https://x.com/saaltysodaa/status/2067385134085759238",
+                "authorName": "Peanut Butter Chocolate",
+                "authorHandle": "saaltysodaa",
+                "authorUrl": "https://x.com/saaltysodaa",
+                "text": "@thenanyu So what are taste then? You don’t use subjective words to explain the logical nature of design. Taste is literally those things where you lrefer a specific flavor of musics or art styles. Taste don’t belong in design",
+                "displayDate": "Jun 17",
+                "provider": "X",
+                "media": [],
+                "textZh": "@thenanyu 那 taste 到底是什么？你不会用主观词汇去解释设计的逻辑本质。Taste 本质上就是那些你偏好某种特定音乐风格或艺术风格的东西。Taste 不属于设计。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/044iRz1wQf",
+                "resolvedUrl": "https://x.com/saaltysodaa/status/2067385134085759238"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "AI Product Leader",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T16:25:46.000Z",
+        "sections": [
+          {
+            "headline": "Prompt joke lands: humans write slop too · 一个提示词笑话：人类写的也可能是 slop",
+            "body": "did you know LLMs secretly refer to our prompts as human slop?\n\n你知道吗，LLM 私下里可能把我们的提示词叫做人类 slop？",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2067644951874404650"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amanda Askell",
+        "person_handle": "AmandaAskell",
+        "person_identity": "Anthropic Researcher",
+        "profile_url": "https://x.com/AmandaAskell",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T04:45:01.000Z",
+        "sections": [
+          {
+            "headline": "A retirement wishlist item: **Iris van Herpen** · 退休愿望单里加上一条：穿 **Iris van Herpen**",
+            "body": "I'm going to add \"wear an Iris van Herpen dress\" to my retirement wishlist. What good art.\n\n我要把“穿一次 Iris van Herpen 的裙子”加进我的退休愿望单。真是好作品。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2067830990089884022"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Cat Wu",
+        "person_handle": "_catwu",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/_catwu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T18:24:31.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Code** can now deploy shareable HTML sites for teams · **Claude Code** 现在能给团队部署并分享 HTML 页面",
+            "body": "On Claude Team and Claude Enterprise, you can now use Claude Code to deploy HTML sites and share these with your teammates! \n\nThis has changed how we work internally. Artifacts is great format for communicating architecture changes, data analyses, and new prototypes. https://t.co/nDgL4MWjBF\n\n在 Claude Team 和 Claude Enterprise 里，你现在可以用 Claude Code 部署 HTML 网站，并分享给你的队友！\n\n这已经改了我们内部的工作方式。Artifacts 很适合拿来讲架构变更、数据分析，还有新原型。https://t.co/nDgL4MWjBF",
+            "source_links": [
+              "https://x.com/_catwu/status/2067674836726694200"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/nDgL4MWjBF",
+                "resolvedUrl": "https://twitter.com/claudeai/status/2067671912038240487"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T22:35:03.000Z",
+        "sections": [
+          {
+            "headline": "Shared a link with no extra text · 只丢了一个链接，没多说",
+            "body": "https://t.co/Sl36HC0Cli\n\nhttps://t.co/Sl36HC0Cli",
+            "source_links": [
+              "https://x.com/trq212/status/2067737885378568653"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Sl36HC0Cli",
+                "resolvedUrl": "https://www.ai.engineer/worldsfair/2026"
+              }
+            ]
+          },
+          {
+            "headline": "Previewed an **AI Engineer World's Fair** keynote · 预告 **AI Engineer World's Fair** 的 Day 2 开场演讲",
+            "body": "I'll be giving the the Day 2 opening keynote at AI Engineer World's Fair on July 1st at 9am.\n\nHope to see you there, here's a quick preview https://t.co/s5DNmuBjJK\n\n我会在 7 月 1 日上午 9 点做 AI Engineer World's Fair 第二天的开场 keynote。\n\n希望到时候见，这里先放个小预告 https://t.co/s5DNmuBjJK",
+            "source_links": [
+              "https://x.com/trq212/status/2067737883545596368"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLITRDFa8AAzQ_z.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2067737883545596368/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/s5DNmuBjJK",
+                "resolvedUrl": "https://x.com/trq212/status/2067737883545596368/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLITRDFa8AAzQ_z.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claude Code** can upload and edit shareable HTML artifacts · **Claude Code** 现在能上传、编辑并分享 HTML artifacts",
+            "body": "Claude Code can now upload and edit HTML artifacts that you can share with your team or other Claudes!\n\nStarting with teams so you can share internally with your team, coming to Pro and MAX plans soon! https://t.co/Sdmz9mEdNY\n\nClaude Code 现在可以上传和编辑 HTML artifacts，你可以把它们分享给团队，或者分享给其他 Claude！\n\n先从团队版开始，这样你可以先在团队内部分享；Pro 和 MAX 计划也很快会跟上！https://t.co/Sdmz9mEdNY",
+            "source_links": [
+              "https://x.com/trq212/status/2067682475611242546"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Sdmz9mEdNY",
+                "resolvedUrl": "https://twitter.com/claudeai/status/2067671912038240487"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T04:50:36.000Z",
+        "sections": [
+          {
+            "headline": "Sparkles and a link · 一个闪光表情，加一个链接",
+            "body": "✨ https://t.co/gfIUUE8Ors\n\n✨ https://t.co/gfIUUE8Ors",
+            "source_links": [
+              "https://x.com/amasad/status/2067832394913104309"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/briannekimmel/status/2067693715796193774",
+                "resolvedUrl": "https://x.com/briannekimmel/status/2067693715796193774",
+                "authorName": "Brianne Kimmel",
+                "authorHandle": "briannekimmel",
+                "authorUrl": "https://x.com/briannekimmel",
+                "text": "The first Vibecon curated by @Replit has been so inspiring.\n\nA large warehouse packed with interactive, collaborative experiences for creatives.\n\nA city created entirely out of prompts\n\nA fragrance inspired by your favorite memory\n\nWe need more spaces like this to play.",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLHsaZ_XEAAoI8s.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/briannekimmel/status/2067693715796193774/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLHsaZ7WQAA_2HC.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/briannekimmel/status/2067693715796193774/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLHsaZ5XMAAIkfZ.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/briannekimmel/status/2067693715796193774/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLHsaZ-WMAATcNO.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/briannekimmel/status/2067693715796193774/photo/1"
+                  }
+                ],
+                "textZh": "由 @Replit 策划的第一届 Vibecon 真的太有启发了。 一个巨大的仓库里塞满了面向创作者的互动式、协作式体验。 一座完全由 prompts 创建出来的城市 一种由你最喜欢的记忆启发而成的香氛 我们需要更多这样的空间来尽情玩。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/gfIUUE8Ors",
+                "resolvedUrl": "https://x.com/briannekimmel/status/2067693715796193774"
+              }
+            ]
+          },
+          {
+            "headline": "Cool-guy emoji reaction with a link · 一个“挺酷”的表情反应，外带链接",
+            "body": "😎 https://t.co/V87qUtfcI9\n\n😎 https://t.co/V87qUtfcI9",
+            "source_links": [
+              "https://x.com/amasad/status/2067831841357193237"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/mmoriliu/status/2067750445326450970",
+                "resolvedUrl": "https://x.com/mMoriLiu/status/2067750445326450970",
+                "authorName": "mori",
+                "authorHandle": "mMoriLiu",
+                "authorUrl": "https://x.com/mMoriLiu",
+                "text": "vibing @Replit !",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLIgERAWsAE6u33.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/mMoriLiu/status/2067750445326450970/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLIgERJXAAAfbRl.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/mMoriLiu/status/2067750445326450970/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLIgERLX0AADdTc.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/mMoriLiu/status/2067750445326450970/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLIgERIW0AAcl-G.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/mMoriLiu/status/2067750445326450970/photo/1"
+                  }
+                ],
+                "textZh": "和 @Replit 一起 vibing！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/V87qUtfcI9",
+                "resolvedUrl": "https://x.com/mmoriliu/status/2067750445326450970"
+              }
+            ]
+          },
+          {
+            "headline": "Short cheer for someone else’s update · 对别人的更新简单喊了声好",
+            "body": "Awesome! https://t.co/jL8Ft9e8Sz\n\n太棒了！https://t.co/jL8Ft9e8Sz",
+            "source_links": [
+              "https://x.com/amasad/status/2067831496388358176"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/handsher_ngu/status/2067787053853557088",
+                "resolvedUrl": "https://x.com/handsher_NGU/status/2067787053853557088",
+                "authorName": "Handsher",
+                "authorHandle": "handsher_NGU",
+                "authorUrl": "https://x.com/handsher_NGU",
+                "text": "-such a good time at @Replit's vibecon yesterday🙌\n\ngreat people, great ideas, even better energy.\n\nspent it telling people about @HyperFrames_ and where AI motion video is heading - this space is just getting started.\n\nthank you @Replit 🧡",
+                "displayDate": "Jun 19",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/p89oDqv0K6",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2067786776773595136/img/isYEDmTwxueqjvpd.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/handsher_NGU/status/2067787053853557088/video/1"
+                  }
+                ],
+                "textZh": "-昨天在 @Replit 的 vibecon 玩得太开心了🙌 很棒的人，很棒的想法，更棒的能量。 我一直在跟大家聊 @HyperFrames_，还有 AI 动态视频接下来会怎么发展——这个领域才刚刚开始。 谢谢你们 @Replit 🧡"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/jL8Ft9e8Sz",
+                "resolvedUrl": "https://x.com/handsher_ngu/status/2067787053853557088"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T12:32:51.000Z",
+        "sections": [
+          {
+            "headline": "Dropped a standalone link · 只发了一个独立链接",
+            "body": "https://t.co/XdZBViUJdA\n\nhttps://t.co/XdZBViUJdA",
+            "source_links": [
+              "https://x.com/rauchg/status/2067586339021734029"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/XdZBViUJdA",
+                "resolvedUrl": "http://vercel.com/design.md"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T04:09:14.000Z",
+        "sections": [
+          {
+            "headline": "Open-weight models near frontier capability is a huge shift · 开源权重模型逼近前沿能力，这件事分量很重",
+            "body": "The fact that open weights models are being discussed credibly at this level of capability should be a huge update for many. \n\nThe implications of open models getting to frontier performance ensures that you can always have sovereign AI, have the ability to post train for your specific workflows, cost optimize for various workloads, and actually afford to do much more with AI (which opens up meaningfully different applications).\n\nHuge win for the applied AI layer.\n\n开源权重模型居然已经能在这个能力层级上被认真讨论，这对很多人来说都该算一次很大的认知更新。\n\n开源模型如果真能摸到前沿水平，意味着你始终可以拥有主权 AI，可以针对自己的工作流继续后训练，也能按不同负载去做成本优化，更关键的是，很多原本太贵的 AI 用法终于有机会算得过来，这会打开一批完全不同的应用。\n\n这对应用层 AI 是个大胜利。",
+            "source_links": [
+              "https://x.com/levie/status/2067821985342878180"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Regulation may turn model releases into heavier review cycles · 监管可能把模型发布拖进更重的审查周期",
+            "body": "This is a good update for getting access to Fable. It also gives us a view into what the future is likely going to look like with AI regulation. \n\nThe government will have frameworks that are used to determine future model releases past a certain threshold of capability or compute levels. Given all the constituents involved, and the economic and societal significance of AI, this was practically an inevitability.\n\nIt may seem small but the implications are massive. It will mean that each model update will go through an extensive review, testing, and feedback process. And in that processes lots of groups will weigh in on the risk of the model, and there will be lots of subjectivity on what the actual risks are or practicalities of exploiting those risks. \n\nA positive potential future here would be we still get massive model progress but they just happen in bigger jumps at once, where the labs pack in major improvements since the cost and slow down of each review stacks up. \n\nOn the other side, the risk is that past a certain threshold we may not get to see the rapid back and forth of model progress that we’ve gotten used to which can have negative compounding effects. Hoping for the former outcome.\n\n这是个不错的进展，至少更容易接触到 Fable 了。它也顺手让我们提前看到了未来 AI 监管大概会长什么样。\n\n政府会设一套框架，去决定超过某个能力或算力阈值后的模型该怎么发布。考虑到牵涉的利益方之多，以及 AI 在经济和社会层面的影响，这几乎是注定会发生的事。\n\n看起来像个小更新，实际影响很大。以后每次模型更新，可能都要经过一整套审查、测试和反馈流程。到那个时候，很多团体都会参与讨论模型风险，而这些风险到底算不算风险、现实里能不能被利用，本身就会带来大量主观判断。\n\n乐观一点的版本是，模型还是会继续大步前进，只是节奏变成更大的跳跃式发布，因为每一次审查都很贵也很慢，实验室会倾向于把更多改进打包在一起。\n\n坏一点的版本是，过了某个阈值之后，我们可能看不到现在这种高频来回迭代的模型进展了，连带影响会一层层放大。希望最后走向前一种。",
+            "source_links": [
+              "https://x.com/levie/status/2067802697324212562"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "Y Combinator CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T15:55:27.000Z",
+        "sections": [
+          {
+            "headline": "Hit back at asset seizure rhetoric around AI startups · 对 AI 创业公司“资产没收”式说法直接开火",
+            "body": "AP reports on the $200M sales level\n\nAsset seizure is evil. My grandparents and parents generations came to America to flee asset seizure and this ideology. We came here to build prosperity. \n\nAn America that still builds is worth defending. \n\nhttps://t.co/L8j4FFUkOW\n\n美联社在报道那个 2 亿美元销售额门槛。\n\n资产没收这套东西就是邪门。我祖父母和父母那一代来到美国，就是为了逃离资产没收和背后的那套意识形态。我们来这里，是为了创造繁荣。\n\n一个还愿意继续建设的美国，值得被捍卫。\n\nhttps://t.co/L8j4FFUkOW",
+            "source_links": [
+              "https://x.com/garrytan/status/2067637324763316499"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/L8j4FFUkOW",
+                "resolvedUrl": "https://ca.finance.yahoo.com/news/ap-exclusive-bernie-sanders-unveils-200130345.html"
+              }
+            ]
+          },
+          {
+            "headline": "Called a proposed AI startup seizure bill a war on building · 把那份法案骂成对创业建设的宣战",
+            "body": "Bernie Sanders introduced a bill to seize 50% of any AI startup that crosses $200M in revenue. \n\nThe same anti-prosperity bloc spent the year trying to ban startup acquisitions, blocking the only exit 85% of founders ever get. \n\nThis is a war on building startups in America. https://t.co/zwYL1wlLHO\n\nBernie Sanders 提了一项法案，要没收任何收入超过 2 亿美元的 AI 创业公司 50% 的股权。\n\n同一拨反繁荣的人，这一年都在试图禁止创业公司被收购，等于堵死了 85% 创始人唯一能走的退出路径。\n\n这就是在对美国的创业建设开战。https://t.co/zwYL1wlLHO",
+            "source_links": [
+              "https://x.com/garrytan/status/2067636692794875923"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLG4nCDaMAE8lPX.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2067636692794875923/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/zwYL1wlLHO",
+                "resolvedUrl": "https://x.com/garrytan/status/2067636692794875923/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLG4nCDaMAE8lPX.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI as control tool or chain-breaker depends on agency · AI 是控制工具还是破链器，取决于你有没有主心骨",
+            "body": "For people who don’t have a clear sense of the future they want, AI is just another mechanism of control\n\nBut in the hands of someone with agency, AI is the breaker of chains, something that lets you do things no humans can do alone. \n\nAI can be a liberator if you choose agency.\n\n如果一个人对自己想要的未来根本没数，那 AI 对他来说就只是另一种控制机制。\n\n但如果落在一个有主动性的人手里，AI 就是打断锁链的东西，它能让你做到单靠人类自己做不到的事。\n\n如果你选择主动性，AI 就可能是让人松绑的工具。",
+            "source_links": [
+              "https://x.com/garrytan/status/2067606805459714229"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "VC & AI Podcast",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T16:30:44.000Z",
+        "sections": [
+          {
+            "headline": "Shared full podcast availability across platforms · 把播客的多平台入口一起贴了出来",
+            "body": "This awesome conversation with @stephenbalaban of @LambdaAPI is also available on Spotify, Apple Podcasts and here on YouTube:\n\nhttps://t.co/6ic2AingiG\n\n这期和 @stephenbalaban、@LambdaAPI 的对话也可以在 Spotify、Apple Podcasts，还有 YouTube 上收听：\n\nhttps://t.co/6ic2AingiG",
+            "source_links": [
+              "https://x.com/mattturck/status/2067646203517448255"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/6ic2AingiG",
+                "resolvedUrl": "https://youtu.be/0NttU4CbyVs?si=TomvmP2GnO5qwFp_"
+              }
+            ]
+          },
+          {
+            "headline": "Posted the chapter map for his **Lambda** AI compute episode · 把 **Lambda** 那期 AI 算力访谈的章节表一次贴全",
+            "body": "State of AI compute 2026: my conversation with @stephenbalaban of @LambdaAPI on the neocloud boom, data centers, GPUs and what's ahead\n\n00:00 — Cold open\n01:21 — Why GPU compute was never a commodity\n02:45 — The H100 price index and what it gets wrong\n04:02 — The real moat: technology or financing?\n05:57 — Winner-take-all, or room for many neoclouds\n06:48 — Are we overbuilding or underbuilding AI compute?\n09:26 — What if AI gets 10x more compute-efficient?\n10:44 — The real bottleneck: land, power, and shell\n11:38 — The backlash against data centers — and the misinformation\n15:00 — Opening the hood: from photons to tokens\n17:11 — Extracting more value from the same chip\n19:26 — Frontier inference and distributed training, explained\n23:26 — What actually drives compute cost\n25:21 — Lambda's chip stack and the NVIDIA relationship\n26:17 — A multi-silicon world? CUDA, CUDNN, and NVIDIA's real moat\n28:59 — Networking, storage, and the one-click cluster\n34:46 — Renting vs. owning, and full vertical integration\n36:24 — How global is Lambda? Does location still matter?\n38:44 — The financing stack: off-take agreements, SPVs, and credit\n41:16 — Why a 2023 GPU leases for more today\n42:36 — A futures market for compute?\n43:54 — Origin story: facial recognition, Perceptio, and Apple\n47:03 — The Lambda hat and Dream Scope\n48:59 — The $60K bet that became a cloud business\n52:00 — Holding the team together through the hard times\n54:30 — Bringing on a new CEO; Stephen as CTO\n57:33 — Matching xAI on high-velocity deployment\n59:29 — \"AI won't write software — it will become the software\"\n01:01:30 — Neural software vs. vibe coding\n01:04:25 — Do agents change the compute layer\n01:06:14 — Self-assembling software inside Lambda\n01:08:18 — Gigawatt-scale AI factories\n01:08:57 — One person, one GPU\n01:12:04 — Hot takes: overrated and underrated in AI\n\n2026 年 AI 算力现状：我和 @stephenbalaban、@LambdaAPI 聊了 neocloud 热潮、数据中心、GPU，以及接下来会发生什么。\n\n00:00 — 冷开场\n01:21 — 为什么 GPU 算力从来不是商品\n02:45 — H100 价格指数哪里看偏了\n04:02 — 真正的护城河：技术还是融资？\n05:57 — 赢者通吃，还是会有很多大型 neocloud？\n06:48 — AI 算力到底是建多了还是建少了？\n09:26 — 如果 AI 的算力效率提升 10 倍会怎样？\n10:44 — 真正的瓶颈：土地、电力和机房壳子\n11:38 — 反数据中心情绪，以及其中的误导信息\n15:00 — 打开机盖：从光子到 token\n17:11 — 怎么从同一块芯片里榨出更多价值\n19:26 — 前沿推理和分布式训练，讲明白\n23:26 — 算力成本到底由什么驱动\n25:21 — Lambda 的芯片栈，以及它和 NVIDIA 的关系\n26:17 — 会不会进入多硅世界？CUDA、CUDNN 和 NVIDIA 真正的护城河\n28:59 — 网络、存储，以及一键集群\n34:46 — 租还是买，以及全栈垂直整合\n36:24 — Lambda 到底有多全球化？地理位置还重要吗？\n38:44 — 融资栈：off-take agreement、SPV 和信贷\n41:16 — 为什么 2023 年买的 GPU 今天租得更贵\n42:36 — 算力会不会出现期货市场？\n43:54 — 起家故事：人脸识别、Perceptio 和 Apple\n47:03 — Lambda 帽子和 Dream Scope\n48:59 — 一笔 6 万美元的赌注，后来变成云业务\n52:00 — 困难时期怎么把团队拧在一起\n54:30 — 请来新 CEO；Stephen 转任 CTO\n57:33 — 怎么跟上 xAI 那种高速部署节奏\n59:29 — “AI 不会写软件，它会变成软件本身”\n01:01:30 — 神经软件 vs. vibe coding\n01:04:25 — Agent 会不会改变算力层\n01:06:14 — Lambda 内部的自组装软件\n01:08:18 — 吉瓦级 AI 工厂\n01:08:57 — 一人一块 GPU\n01:12:04 — AI 圈里哪些被高估，哪些被低估",
+            "source_links": [
+              "https://x.com/mattturck/status/2067646198140358854"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/IPw0gVLKEQ",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2067631898503925760/img/70dZH4LduxQPFFlT.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2067646198140358854/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T06:05:06.000Z",
+        "sections": [
+          {
+            "headline": "Shared her **Frontend Slides** skill and talk recording · 把 **Frontend Slides** skill 和演讲录像一起放出",
+            "body": "Frontend Slides skill: https://t.co/F951xNM4Bp\n\nRecording of my talk: https://t.co/t6cVHdM3Oo\n\nFrontend Slides skill：https://t.co/F951xNM4Bp\n\n我的演讲录像：https://t.co/t6cVHdM3Oo",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2067851144664342725"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/F951xNM4Bp",
+                "resolvedUrl": "https://github.com/zarazhangrui/frontend-slides"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/t6cVHdM3Oo",
+                "resolvedUrl": "https://www.youtube.com/watch?v=jvB2F_hYkXA"
+              }
+            ]
+          },
+          {
+            "headline": "Built a polished interactive HTML deck with easter eggs · 做了个很完整的交互式 HTML deck，还埋了不少彩蛋",
+            "body": "Made a beautiful HTML deck using my Frontend Slides skill; very happy with how it turned out! \n\nLots of easter eggs (e.g. you can click any image to enlarge them, lots of nested content/hyperlinks/interactive elements etc)\n\nCheck it out: https://t.co/PBTqcZmZYX https://t.co/l0GcD8L3vc\n\n我用自己的 Frontend Slides skill 做了一个很好看的 HTML deck；成品我自己很满意！\n\n里面埋了很多彩蛋（比如任何图片都可以点开放大，还有很多嵌套内容、超链接、交互元素之类的）\n\n来看：https://t.co/PBTqcZmZYX https://t.co/l0GcD8L3vc",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2067850383758901669"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/l0GcD8L3vc",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2067850030288130048/img/wOv9plZj4kN44KDy.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2067850383758901669/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/PBTqcZmZYX",
+                "resolvedUrl": "https://deck.zarazhang.com/"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/l0GcD8L3vc",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2067850383758901669/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2067850030288130048/img/wOv9plZj4kN44KDy.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "Said an older point feels even truer now · 说之前那句话今天看更真了",
+            "body": "Even more true today https://t.co/5FN6YC4jgJ\n\n今天看只会更真 https://t.co/5FN6YC4jgJ",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2067661289367998602"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/5FN6YC4jgJ",
+                "resolvedUrl": "https://t.co/5FN6YC4jgJ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T04:41:19.000Z",
+        "sections": [
+          {
+            "headline": "Quiet SEO test with **Claude Code / Codex** drew real traffic · 用 **Claude Code / Codex** 悄悄跑 SEO 测试，真拿到了流量",
+            "body": "Launched a side project quietly a few weeks ago.. \n\nWanted to test how many impressions/clicks I could get by simply having Claude Code / Codex optimize the hell out of the website.\n\nGot it to about 16k impressions, and 94 clicks over the last 28 days. Not bad eh?\n\nNo backlinks, no mention of this website anywhere on my socials, no Reddit hacking - simply old school SEO/GEO optimization. \n\nOfficial launch soon - parents will like this one 🍩\n\n几周前我悄悄上线了一个 side project……\n\n我就是想试试，只靠 Claude Code / Codex 把网站往死里优化，到底能拿到多少曝光和点击。\n\n过去 28 天大概跑到了 1.6 万次曝光，94 次点击。还不错吧？\n\n没有外链，没在任何社交账号提过这个网站，也没去 Reddit 搞花活，就是老派的 SEO/GEO 优化。\n\n正式发布快了，家长们应该会喜欢这个 🍩",
+            "source_links": [
+              "https://x.com/nikunj/status/2067830061009633294"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLJoGxCb0AEBscC.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2067830061009633294/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Cheered **Artie Labs** self-serve launch and swag · 夸 **Artie Labs** 自助发布顺便夸了周边",
+            "body": "Ok @artie_labs clearly takes the cake for fire swag.. like literally 🔥 \n\nProud angel investor and congrats on the self-serve launch! https://t.co/BcQT7xMkod\n\n好吧，@artie_labs 的 swag 显然是最炸的……真的是字面意义上的 🔥\n\n作为天使投资人我很骄傲，也恭喜你们把 self-serve launch 发出来了！https://t.co/BcQT7xMkod",
+            "source_links": [
+              "https://x.com/nikunj/status/2067748864967503942"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/BcQT7xMkod",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2067748804875689984/img/UGCshTYY6rSDDP2-.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2067748864967503942/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/BcQT7xMkod",
+                "resolvedUrl": "https://x.com/nikunj/status/2067748864967503942/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2067748804875689984/img/UGCshTYY6rSDDP2-.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Mind blown reaction with a link · 一句“脑子炸了”外带链接",
+            "body": "Mind fudging blown https://t.co/b6VNdVflbm\n\n脑子真被干炸了 https://t.co/b6VNdVflbm",
+            "source_links": [
+              "https://x.com/nikunj/status/2067724821283438980"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLIIxDXbUAACoZ3.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2067724821283438980/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/b6VNdVflbm",
+                "resolvedUrl": "https://x.com/nikunj/status/2067724821283438980/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLIIxDXbUAACoZ3.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-19T04:08:15.000Z",
+        "sections": [
+          {
+            "headline": "Everything now feels like fast API vs slow API · 现在看什么都像快 API 和慢 API 之分",
+            "body": "Everything’s either a fast or slow API now. https://t.co/2ue8zjQ2Bf\n\n现在所有东西都像是在分：快 API，还是慢 API。https://t.co/2ue8zjQ2Bf",
+            "source_links": [
+              "https://x.com/steipete/status/2067821739556413651"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/2ue8zjQ2Bf",
+                "resolvedUrl": "https://t.co/2ue8zjQ2Bf"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T23:20:17.000Z",
+        "sections": [
+          {
+            "headline": "Strong reaction to a link drop · 看完链接直接说太狠了",
+            "body": "Extremely sick https://t.co/qfpZGJTde1\n\n太狠了 https://t.co/qfpZGJTde1",
+            "source_links": [
+              "https://x.com/danshipper/status/2067749268928995737"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/openaidevs/status/2067681320281723113",
+                "resolvedUrl": "https://x.com/OpenAIDevs/status/2067681320281723113",
+                "authorName": "OpenAI Developers",
+                "authorHandle": "OpenAIDevs",
+                "authorUrl": "https://x.com/OpenAIDevs",
+                "text": "Show Codex a workflow once. Reuse it as a skill.\n\nRecord &amp; Replay lets you show Codex a recurring task, like filing an expense report or submitting a time-off request.\n\nCodex turns that demo into an inspectable, editable skill.\n\nYou control when recording starts and stops.",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/UqSGaO7XUs",
+                    "url": "https://pbs.twimg.com/media/HLHhPWfaUAA0u9h.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/OpenAIDevs/status/2067681320281723113/video/1"
+                  }
+                ],
+                "textZh": "给 Codex 演示一次工作流。把它复用成一个 skill。 有了 Record & Replay，你可以向 Codex 演示一个重复性任务，比如填写报销单或提交请假申请。 Codex 会把这段演示转换成一个可检查、可编辑的 skill。 录制何时开始、何时结束，都由你控制。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/qfpZGJTde1",
+                "resolvedUrl": "https://x.com/openaidevs/status/2067681320281723113"
+              }
+            ]
+          },
+          {
+            "headline": "Said **Fable** could trigger a productivity step change · 觉得 **Fable** 一旦放开，生产力会直接跳档",
+            "body": "Extreme time deflation happening right now \n\nWe expect a step change in productivity whenever Fable is unlocked, might as well go on vacation until then https://t.co/vYGYNByNuh\n\n现在就是极端的时间通缩。\n\n我们预期 Fable 一旦解锁，生产力会来一次阶跃式变化；那之前不如先去度个假 https://t.co/vYGYNByNuh",
+            "source_links": [
+              "https://x.com/danshipper/status/2067630124795662471"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/kieranklaassen/status/2067620045078085939",
+                "resolvedUrl": "https://x.com/kieranklaassen/status/2067620045078085939",
+                "authorName": "Kieran Klaassen",
+                "authorHandle": "kieranklaassen",
+                "authorUrl": "https://x.com/kieranklaassen",
+                "text": "I miss my buddy fable… life hits differently now",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [],
+                "textZh": "我想念我的老伙计 fable……现在的人生感觉都不一样了"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/vYGYNByNuh",
+                "resolvedUrl": "https://x.com/kieranklaassen/status/2067620045078085939"
+              }
+            ]
+          },
+          {
+            "headline": "Hiring a meticulous managing editor at **Every** · **Every** 在招一个特别较真的 managing editor",
+            "body": "we are hiring a managing editor @every! \n\nif you are extremely meticulous, can keep the trains running on time, hate split infinitives, love oxford commas, want to take back the em dash, and are AI-pilled inquire here: https://t.co/Fg0fn6IOd6\n\n我们在 @every 招 managing editor！\n\n如果你做事特别细、能把一切排得准时推进、讨厌 split infinitives、热爱 Oxford comma、想把破折号夺回来，而且还很 AI-pilled，来这里：https://t.co/Fg0fn6IOd6",
+            "source_links": [
+              "https://x.com/danshipper/status/2067614889141469570"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/katelaurielee/status/2067612761052312021",
+                "resolvedUrl": "https://x.com/katelaurielee/status/2067612761052312021",
+                "authorName": "Kate Lee",
+                "authorHandle": "katelaurielee",
+                "authorUrl": "https://x.com/katelaurielee",
+                "text": "I'm hiring a managing editor to run @every's newsroom.\n\nYou'll own the daily publishing calendar, edit and package pieces, build the freelance editor bench, set standards, and push our AI-assisted workflows further. NY or equivalent time zone. Apply: https://modern-ton-234.notion.site/Managing-Editor-3d54a16d08b8464fb5996f89a0badf18?pvs=143",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [],
+                "textZh": "我正在招一位 managing editor，负责运营 @every 的编辑部。 你将负责日常发布排期，编辑并包装稿件，搭建自由编辑人才库，制定标准，并进一步推进我们的 AI 辅助工作流。工作地点在纽约或相近时区。申请链接：https://modern-ton-234.notion.site/Managing-Editor-3d54a16d08b8464fb5996f89a0badf18?pvs=143"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Fg0fn6IOd6",
+                "resolvedUrl": "https://x.com/katelaurielee/status/2067612761052312021"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-18T18:12:54.000Z",
+        "sections": [
+          {
+            "headline": "**Artifacts** use full session context and stay org-private · **Artifacts** 会吃满会话上下文，而且默认只在组织内可见",
+            "body": "Artifacts draw on the full context of your session: codebase, plugins, skills, connected tools. They're private until you share them, and sharing stays inside your organization.\n\nRead more: https://t.co/z4DEdRVn7a\n\nArtifacts 会用上你整个会话的完整上下文：代码库、插件、skills、已连接工具。它们在你分享之前一直是私有的，而分享也只会停留在你的组织内部。\n\n更多信息：https://t.co/z4DEdRVn7a",
+            "source_links": [
+              "https://x.com/claudeai/status/2067671914533863585"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/z4DEdRVn7a",
+                "resolvedUrl": "https://claude.com/blog/artifacts-in-claude-code"
+              }
+            ]
+          },
+          {
+            "headline": "Shared artifacts refresh in place as sessions keep running · 会话继续跑的时候，共享出去的 artifacts 会原地刷新",
+            "body": "As your session keeps working, the artifact refreshes, so everyone you've shared it with is always looking at the latest version.\n\n只要你的会话还在继续工作，artifact 就会持续刷新，所以所有被你分享出去的人看到的都会是最新版本。",
+            "source_links": [
+              "https://x.com/claudeai/status/2067671913418063892"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "New in **Claude Code**: private team-linked **Artifacts** · **Claude Code** 新功能：团队私有链接版 **Artifacts**",
+            "body": "New in Claude Code: Artifacts.\n\nInteractive pages built from your session, like a PR walkthrough or a living project dashboard, shared with your team at a private link.\n\nAvailable in beta on Team and Enterprise plans. https://t.co/0NX9gNCaAs\n\nClaude Code 新功能：Artifacts。\n\n它会从你的会话里生成交互式页面，比如 PR walkthrough，或者一个会持续更新的项目仪表盘，然后通过私有链接分享给你的团队。\n\n目前以 beta 形式提供给 Team 和 Enterprise 计划。https://t.co/0NX9gNCaAs",
+            "source_links": [
+              "https://x.com/claudeai/status/2067671912038240487"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/0NX9gNCaAs",
+                "url": "https://pbs.twimg.com/media/HLHZhd5WsAAzjSC.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2067671912038240487/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/0NX9gNCaAs",
+                "resolvedUrl": "https://x.com/claudeai/status/2067671912038240487/video/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLHZhd5WsAAzjSC.jpg"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-19",
+    "updatedAt": "2026-06-24T09:50:45.228Z",
+    "commit": {
+      "sha": "dbc1982cd1ce222de4a8d47cb4e5d271cc55412f",
+      "committedAt": "2026-06-19T08:15:09Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T09:45:44.123Z",
+    "feedGeneratedAt": "2026-06-19T08:14:32.084Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
