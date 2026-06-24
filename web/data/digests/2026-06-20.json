@@ -1,0 +1,657 @@
+{
+  "payload": {
+    "date": "2026-06-20",
+    "title": "AI Builders Daily · 2026-06-20",
+    "summary": "**Codex chatter got loud**; builders are openly switching tools, praising browser/computer-use workflows, and pushing remote/local handoff as the next friction kill; **Anthropic went deep on containment**, arguing agent safety is now mostly a blast-radius problem, not a permission-popup problem; Intel CEO **Lip-Bu Tan** sketched a comeback plan built on CPUs for agentic workloads, a cleaner product line, and a tougher foundry play; the rest of the feed felt unusually human: boardroom honesty, conference afterglow, medical-scan arguments, and one very blunt reminder that agency, taste, and distribution still matter.\n\n**Codex 这波声量起来了**；不少 builder 直接聊起换工具，重点全落在浏览器、computer use，还有远程/本地接力这些真能省事的能力上；**Anthropic** 那篇安全文不绕，核心就一句：权限越来越大，得先把爆炸半径关进笼子里；**陈立武** 在播客里讲 Intel，也不是空话，CPU、产品线、代工业务，全都往执行层面压；剩下几条也挺有意思，董事会该先摊最难看的那页，扫描该不该多做，VibeCon 余温还在，还有人把 AI 时代的分水岭压缩成三个词：agency、taste、distribution。",
+    "items": [
+      {
+        "person_name": "No Priors",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=asCgCv2XB4s",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-18T10:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Intel** reboot, **agentic AI** demand, and the fight for chip supply chains | **Intel** 重整、**Agentic AI** 需求抬头，与芯片供应链硬仗",
+            "body": "In **No Priors**, **Intel CEO Lip-Bu Tan** lays out a blunt turnaround plan: fix the balance sheet, simplify the product line, make engineering report directly to him, and rebuild trust with customers. He argues that **agentic AI** is making CPUs matter again, especially for reinforcement learning and agent orchestration, and says that shift is already lifting demand.\n\nHe also frames **Intel Foundry** as a trust-and-yield business, not just a capex story, and describes collaboration with **Elon Musk** around **TeraFab** as a practical push to expand semiconductor infrastructure faster. The throughline is less hype than discipline: fewer layers, faster decisions, tighter execution.\n\n在这期 **No Priors** 里，**Intel** CEO **陈立武** 讲得很直接：先修资产负债表，砍复杂产品线，所有工程团队直接向他汇报，再把客户信任一点点拿回来。他判断 **agentic AI** 正在把 CPU 重新推回核心位置，尤其是强化学习和多代理编排这类场景，这股需求已经开始反映到市场上。\n\n他谈 **Intel Foundry** 也没往大词上靠，重点就是良率、交付、信任，不只是砸钱扩产。至于和 **Elon Musk** 的 **TeraFab** 合作，他给的说法更像务实协同：用现有工艺和能力，帮对方更快走到量产。整段听下来，不是热血演讲，更像一次硬邦邦的执行计划。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=asCgCv2XB4s"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "Anthropic Engineering",
+        "profile_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "source_label": "Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "How **Anthropic** contains **Claude** across products | **Anthropic** 如何在不同产品里关住 **Claude**",
+            "body": "**Anthropic** says the core agent-safety question has shifted from \"should the model act?\" to \"what happens if it does?\" The post argues that permission prompts do not scale, especially when users approve almost everything, so the real work moves to containment: sandboxes, VMs, filesystem boundaries, egress controls, and tighter limits on what external tools can feed into the model.\n\nThe piece breaks the problem into three risks: user misuse, model misbehavior, and outside attacks. It also maps three defensive layers: the model, the runtime environment, and the external content pipeline. The main lesson is practical: stronger models alone do not solve the problem. If agents get broader access, the only sane way to ship them is to cap the blast radius product by product.\n\n**Anthropic** 这篇文章把重点讲得很清楚：现在做 agent，问题已经不是\"该不该让模型动手\"，而是\"它一旦动手，最多能闹出多大事\"。他们认为权限弹窗这套越用越失真，用户点多了就麻了，所以真正该下功夫的是隔离和收口：沙箱、虚拟机、文件系统边界、网络出口控制，还有外部工具喂给模型的内容权限。\n\n文里把风险拆成三类：用户自己乱来、模型自己跑偏、外部攻击钻进来。防线也对应三层：模型本身、运行环境、外部内容入口。结论不花哨，也挺硬：模型再强，单靠\"更聪明\"也兜不住。权限继续放大，就得按产品一层层把爆炸半径卡死。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/how-we-contain-claude"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-20T07:24:31.000Z",
+        "sections": [
+          {
+            "headline": "Early blog bets and builder luck still compound | 早期写作下注，到了 builder 时代还在复利",
+            "body": "10 years ago, you will be asked by @bendhalpern and @jessleenyc to write your first blog on @thepracticaldev.\n\nit is very important that you answer.\n\n*now @MLHacks, who are producing the first ever physical daily newspaper at @aidotengineer WF https://t.co/tYDapAogYY https://t.co/nVuMvkDhnQ\n\n10 年前，@bendhalpern 和 @jessleenyc 会来找你，在 @thepracticaldev 写第一篇博客。\n\n你最好答应。\n\n*现在是 @MLHacks，在 @aidotengineer WF 搞出了第一份实体日报 https://t.co/tYDapAogYY https://t.co/nVuMvkDhnQ",
+            "source_links": [
+              "https://x.com/swyx/status/2068233518858342887"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/turtlesoupy/status/2067660484963410361",
+                "resolvedUrl": "https://x.com/turtlesoupy/status/2067660484963410361",
+                "authorName": "Thomas Dimson",
+                "authorHandle": "turtlesoupy",
+                "authorUrl": "https://x.com/turtlesoupy",
+                "text": "did you make it into the superintelligences? are you in the weights? http://intheweights.com/",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLHNw2taQAASzQO.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/turtlesoupy/status/2067660484963410361/photo/1"
+                  }
+                ],
+                "textZh": "你进 superintelligences 了吗？你在权重里吗？http://intheweights.com/"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/tYDapAogYY",
+                "resolvedUrl": "https://t.co/tYDapAogYY"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/nVuMvkDhnQ",
+                "resolvedUrl": "https://x.com/turtlesoupy/status/2067660484963410361"
+              }
+            ]
+          },
+          {
+            "headline": "A one-word goal scream from the timeline | 时间线里一声拉满的进球呐喊",
+            "body": "@midjourney @Scobleizer @bryan_johnson @DavidSHolz @iScienceLuvr @zoink @Polymarket @aiDotEngineer /goaaaaaaaaaaal\n\nhttps://t.co/oo75ct3QwX https://t.co/4W90w31Os0\n\n@midjourney @Scobleizer @bryan_johnson @DavidSHolz @iScienceLuvr @zoink @Polymarket @aiDotEngineer /goaaaaaaaaaaal\n\nhttps://t.co/oo75ct3QwX https://t.co/4W90w31Os0",
+            "source_links": [
+              "https://x.com/swyx/status/2068229031884100066"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/4W90w31Os0",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2068228960182517760/img/b-pjydSiUWx-cDmh.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2068229031884100066/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/sporadica/status/2068128794310046038?s=46",
+                "resolvedUrl": "https://x.com/sporadica/status/2068128794310046038",
+                "authorName": "spor",
+                "authorHandle": "sporadica",
+                "authorUrl": "https://x.com/sporadica",
+                "text": "With the US now pretty likely to win its group, it’s looking like their first knockout stage game will be here in SF\n\nand so, no surprise, prices are starting to go nuclear…",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLN4GDragAAqD_b.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/sporadica/status/2068128794310046038/photo/1"
+                  }
+                ],
+                "textZh": "现在美国队大概率会拿下小组第一，看起来他们淘汰赛阶段的第一场比赛会在 SF 举行。 所以，毫不意外，票价开始飙到离谱了……"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/oo75ct3QwX",
+                "resolvedUrl": "https://x.com/sporadica/status/2068128794310046038"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/4W90w31Os0",
+                "resolvedUrl": "https://x.com/swyx/status/2068229031884100066/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2068228960182517760/img/b-pjydSiUWx-cDmh.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "A wild **Anthropic** IPO valuation call | 对 **Anthropic** IPO 估值的一句狂猜",
+            "body": "Anthropic is going to IPO at $2T https://t.co/SHYMaH3v9q\n\nAnthropic 上市时估值会到 2 万亿美元 https://t.co/SHYMaH3v9q",
+            "source_links": [
+              "https://x.com/swyx/status/2068084391260426345"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/johnjumpersci/status/2068001285173834106",
+                "resolvedUrl": "https://x.com/JohnJumperSci/status/2068001285173834106",
+                "authorName": "John Jumper",
+                "authorHandle": "JohnJumperSci",
+                "authorUrl": "https://x.com/JohnJumperSci",
+                "text": "A bit of news: After nearly 9 years, I have decided to leave Google DeepMind and join Anthropic (after taking some time to recharge). I am incredibly grateful for my time at GDM. @demishassabis took a real chance letting me lead the AlphaFold team just six months after finishing",
+                "displayDate": "Jun 19",
+                "provider": "X",
+                "media": [],
+                "textZh": "有个消息：在将近 9 年之后，我决定离开 Google DeepMind，加入 Anthropic（先花一点时间休整之后）。我无比感激自己在 GDM 的这段时光。@demishassabis 当年让我在博士毕业仅仅六个月后就带领 AlphaFold 团队，真的给了我一个很大的机会。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SHYMaH3v9q",
+                "resolvedUrl": "https://x.com/johnjumpersci/status/2068001285173834106"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-19T20:12:07.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Code** takes a swing at **Linear A** | **Claude Code** 去碰 **Linear A** 破译",
+            "body": "Cool way to use Claude Code: deciphering Linear A, a 3500 year old written language from Crete\n\nhttps://t.co/Aqd4ZG7Cum\n\nHope this holds up in peer review! 🤞\n\n一个很酷的 **Claude Code** 用法：拿它去破译 **Linear A**，一种来自克里特、已有 3500 年历史的文字\n\nhttps://t.co/Aqd4ZG7Cum\n\n希望同行评审能扛住吧！🤞",
+            "source_links": [
+              "https://x.com/bcherny/status/2068064304503660962"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Aqd4ZG7Cum",
+                "resolvedUrl": "https://aiclambake.com/clamtakes/linear-a/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-20T01:31:40.000Z",
+        "sections": [
+          {
+            "headline": "Codex tips, heavy daily use, and a quiet endorsement | Codex 技巧、重度日用，以及一句很实在的背书",
+            "body": "Late to this one, but follow @danshipper for S-tier codex tips. These days I spend more time in the codex app than all other apps combined on my Mac. https://t.co/fVTA5vLGy3\n\n虽然这条发晚了，但想学顶级 codex 技巧，就去关注 @danshipper。最近我在 Mac 上花在 codex app 里的时间，比其他所有 app 加起来还多。 https://t.co/fVTA5vLGy3",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2068144722460475527"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/danshipper/status/2062927700218859686",
+                "resolvedUrl": "https://x.com/danshipper/status/2062927700218859686",
+                "authorName": "Dan Shipper 📧",
+                "authorHandle": "danshipper",
+                "authorUrl": "https://x.com/danshipper",
+                "text": "how i hit inbox 0 every day with Codex:",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/Pka8rcw2vQ",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2062923860467761152/img/bg2QwkOmHbr8gxab.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/danshipper/status/2062927700218859686/video/1"
+                  }
+                ],
+                "textZh": "我是怎么靠 Codex 每天把收件箱清零的："
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/fVTA5vLGy3",
+                "resolvedUrl": "https://x.com/danshipper/status/2062927700218859686"
+              }
+            ]
+          },
+          {
+            "headline": "Remote/local handoff lands in **Codex** | **Codex** 上线远程/本地接力",
+            "body": "Remote / local handoff in Codex! Removing boundaries one at a time. \n\nWhen you let the model be in the driver seat, you actually need less infrastructure. https://t.co/sfFYixfXPl\n\n**Codex** 里有远程 / 本地接力了！边界正在一层层被拆掉。\n\n当你真的让模型坐上驾驶位，反而不需要那么多基础设施。 https://t.co/sfFYixfXPl",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2068120572673077274"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/sfFYixfXPl",
+                "resolvedUrl": "https://t.co/sfFYixfXPl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-20T03:32:40.000Z",
+        "sections": [
+          {
+            "headline": "Why **Codex** won him over, even from **Claude Code** | 为什么他从 **Claude Code** 转向 **Codex**",
+            "body": "I used to be a die-hard Claude Code user.\n\nCodex has won me over because:\n\n→ GPT-5.5 is excellent\n→ Fast mode + generous limits = more reps\n→ Little touches like steering, auto remote control on phone, etc\n\nBut most of all Codex's browser and computer use capabilities are simply goated. I built so many workflows relying on those two things alone instead of hunting for APIs.\n\nI still use Claude Code too. The app seems to be getting better and the design and frontend capability of Opus is still much better than GPT. Whenever Fable comes back that's another reason to go back.\n\nHonestly, I hope these two compete forever and other players (Cursor/Grok, Gemini, etc) all stay competitive.\n\nThis way the builder keeps winning 🙂\n\n我以前是 **Claude Code** 的死忠用户。\n\n但现在 **Codex** 把我拉过去了，原因是：\n\n→ **GPT-5.5** 很强\n→ Fast mode 加上宽松额度，练习次数更多\n→ 还有 steering、手机自动远程控制这些小细节\n\n不过最关键的还是 **Codex** 的 browser 和 computer use，真的太能打了。光靠这两样，我就搭了很多工作流，不用再四处找 API。\n\n我现在还是会用 **Claude Code**。这个 app 看起来也在变好，而且 **Opus** 在设计和前端能力上还是明显强过 GPT。等 **Fable** 回来，这又会是我回去的一个理由。\n\n说实话，我希望这两家一直打下去，其他玩家（**Cursor/Grok**、**Gemini** 等）也都别掉队。\n\n这样最后一直赢的是 builder 🙂",
+            "source_links": [
+              "https://x.com/petergyang/status/2068175172960690266"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A small dream, apparently gone | 一个小梦想，看来没了",
+            "body": "It was all a dream 🥲 https://t.co/QNcth9oQ6x\n\n原来都只是个梦 🥲 https://t.co/QNcth9oQ6x",
+            "source_links": [
+              "https://x.com/petergyang/status/2068164193451475387"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLOYWEYaYAA3B-E.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2068164193451475387/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/QNcth9oQ6x",
+                "resolvedUrl": "https://x.com/petergyang/status/2068164193451475387/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLOYWEYaYAA3B-E.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amanda Askell",
+        "person_handle": "AmandaAskell",
+        "person_identity": "Anthropic ethicist",
+        "profile_url": "https://x.com/AmandaAskell",
+        "source_label": "X",
+        "posted_at": "2026-06-20T06:24:54.000Z",
+        "sections": [
+          {
+            "headline": "A brutal personal case for taking scans seriously | 一个很扎心的亲身例子：扫描结果不能随便打发",
+            "body": "I had chronic pain for most of my life until a doctor did an MRI of the pain source and found a congenital condition that was then fixed with surgery. Now I'm wondering if I had 30+ years of pain because doctors worried I was too stupid to be in the presence of scan results.\n\n我这大半辈子都在忍慢性疼痛，直到有医生给疼痛部位做了 MRI，发现是先天问题，后来靠手术修好了。现在我会想，我是不是白挨了 30 多年疼，只因为医生担心我\"不够聪明\"，不该看到扫描结果。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2068218515723866477"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "If scans become common, norms will change too | 如果扫描更常见，处理规则也会跟着变",
+            "body": "A counter to this is \"yes but people *don't* ignore it\". But not ignoring things on scans is our norm because, until recently, we only did scans if there was a clear need. If we move to a scan-more-often paradigm, the norms of what we do with that information will surely adjust.\n\n有人会反驳说：\"对，但人们*不会*忽略扫描里看到的东西。\" 但现在之所以不会忽略，是因为直到最近，我们通常只会在确有必要时才去做扫描。如果以后变成更常做扫描的模式，我们处理这些信息的习惯和规则，肯定也会调整。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2068162192927756544"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The problem may be the response, not the scan | 问题也许不在扫描，在看到结果后怎么处理",
+            "body": "The view that we shouldn't do more medical scans because incidental findings cause a lot of harm doesn't sit well with me. It seems like the issue it points to isn't the scan but the response to it. If you see something on a scan but have no other symptoms, you could ignore it.\n\n那种\"别多做医学扫描，因为偶然发现会带来很多伤害\"的说法，我一直不太买账。它真正指向的问题，看起来不是扫描本身，而是我们对结果的反应。如果扫描上看到了点什么，但没有别的症状，也可以先不理。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2068162191740764622"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-20T04:01:02.000Z",
+        "sections": [
+          {
+            "headline": "High praise for the conference circuit | 对这场大会的评价相当高",
+            "body": "“The best conference experience I’ve had this year” https://t.co/VGwWxmo21W\n\n“这是我今年参加过最好的大会体验” https://t.co/VGwWxmo21W",
+            "source_links": [
+              "https://x.com/amasad/status/2068182309719728159"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/peiheng_wu/status/2068181521572257808",
+                "resolvedUrl": "https://x.com/Peiheng_Wu/status/2068181521572257808",
+                "authorName": "Peiheng",
+                "authorHandle": "Peiheng_Wu",
+                "authorUrl": "https://x.com/Peiheng_Wu",
+                "text": "Yesterday, I checked out Vibecon — a creative AI conference connecting code to culture — hosted by @Replit.\n\nI've got to say, Vibecon is perhaps the best conference experience I've had this year.\n\nWhat set it apart? The workshop sessions. Most conferences I attend are booth after",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [],
+                "textZh": "昨天我去看了 Vibecon——一场由 @Replit 主办、连接代码与文化的创意 AI 大会。 我得说，Vibecon 可能是我今年体验最好的大会。 它最特别的是什么？工作坊环节。大多数我参加的大会，展位往往比其他内容更抢眼，而这里不是这样。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/VGwWxmo21W",
+                "resolvedUrl": "https://x.com/peiheng_wu/status/2068181521572257808"
+              }
+            ]
+          },
+          {
+            "headline": "A quick **VibeCon** recap from **Replit**’s CEO | 来自 **Replit** CEO 的一条 **VibeCon** 回顾",
+            "body": "Vibecon recap https://t.co/uvKptOPsTk\n\n**VibeCon** 回顾 https://t.co/uvKptOPsTk",
+            "source_links": [
+              "https://x.com/amasad/status/2068177018479403065"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/uvKptOPsTk",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2068150315577143296/img/Najved0zifu8aC-M.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/Replit/status/2068152775603589407/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/uvKptOPsTk",
+                "resolvedUrl": "https://x.com/Replit/status/2068152775603589407/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2068150315577143296/img/Najved0zifu8aC-M.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-20T02:56:10.000Z",
+        "sections": [
+          {
+            "headline": "Markdown as the next hot programming language | Markdown 成了下一个热门编程语言",
+            "body": "The next hot programming language is… markdown.\n\nA minimal eve agent:\n\n📂 𝚊𝚐𝚎𝚗𝚝/\n  📄 𝚒𝚗𝚜𝚝𝚛𝚞𝚌𝚝𝚒𝚘𝚗𝚜.𝚖𝚍\n  📂 𝚜𝚔𝚒𝚕𝚕𝚜/\n     📄 𝚢𝚘𝚞𝚛-𝚎𝚡𝚙𝚎𝚛𝚝𝚒𝚜𝚎.𝚖𝚍\n\nDeployable in one command: 𝚟𝚎𝚛𝚌𝚎𝚕.\n\nIt’s the most accessible programming has ever been. And likely will ever be, at least for the generation of software fully defined and controlled by us humans.\n\n(As a fun fact, one of the initial prototypes for eve was codenamed 𝚕𝚊𝚜𝚝 by @timolins, both in homage to ‘@nextjs for agents’ but also in recognition of how enduring eve’s design feels to us.)\n\n下一个热门编程语言是…… markdown。\n\n一个最小化的 eve agent：\n\n📂 𝚊𝚐𝚎𝚗𝚝/\n  📄 𝚒𝚗𝚜𝚝𝚛𝚞𝚌𝚝𝚒𝚘𝚗𝚜.𝚖𝚍\n  📂 𝚜𝚔𝚒𝚕𝚕𝚜/\n     📄 𝚢𝚘𝚞𝚛-𝚎𝚡𝚙𝚎𝚛𝚝𝚒𝚜𝚎.𝚖𝚍\n\n一条命令就能部署：𝚟𝚎𝚛𝚌𝚎𝚕。\n\n这是编程到目前为止最容易上手的一次。大概以后也很难再更低门槛了，至少对于那些仍然由人类完整定义和控制的软件来说是这样。\n\n（顺带一提，eve 早期有个原型代号叫 𝚕𝚊𝚜𝚝，是 @timolins 起的，既是在向“@nextjs for agents” 致意，也因为我们觉得 eve 这套设计很耐用。）",
+            "source_links": [
+              "https://x.com/rauchg/status/2068165988005380478"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Agents are dragging healthy software habits back into focus | Agents 把一批健康的软件习惯重新拉回台前",
+            "body": "Agents are motivating so many healthy software habits. Open APIs, documentation (skills), tests (evals), Unix (CLIs), payment &amp; commerce protocols, even wide 𝙰𝚌𝚌𝚎𝚙𝚝 use (markdown/json/html).\n\nThe original vision of the WWW coming to life before our eyes.\n\nAgents 正在逼着大家重新捡起很多健康的软件习惯。开放 API、文档（skills）、测试（evals）、Unix（CLI）、支付和商业协议，甚至更广泛地用 𝙰𝚌𝚌𝚎𝚙𝚝（markdown/json/html）。\n\n万维网最初那套愿景，正在眼前一点点活过来。",
+            "source_links": [
+              "https://x.com/rauchg/status/2067936390285807940"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-19T20:27:47.000Z",
+        "sections": [
+          {
+            "headline": "Why filesystems still matter for agents | 为什么文件系统对 agent 还是关键基础件",
+            "body": "The main variable in getting success with agents is whether you can get the agent the context it needs to do its work; and a major factor in that is if you can create a shared working area for that agent that a human can understand as well. \n\nThis is one of the reasons why agents using file systems is such a big deal. It creates a unified system that both the person and the agent can work within to pass around data. \n\n“What they need is a working set: plans, notes, task lists, policies, drafts, summaries, logs, corrections,  decisions, etc. For that layer, a filesystem-shaped interface tends to be more legible to both the model and the humans supervising it.”\n\nIt turns out giving agents access to the systems we already know how to use, but in a way that is best optimized for them, is the perfect primitive for agents to work.\n\nAgent 能不能做成，最关键的变量之一，是你能不能把它干活所需的上下文交给它；而这里面很大一部分，又取决于你能不能给它一个人类也看得懂的共享工作区。\n\n这也是为什么 agent 用文件系统会这么重要。它提供了一个统一环境，让人和 agent 都能在里面传递、整理数据。\n\n“它们需要的是一套 working set：计划、笔记、任务清单、政策、草稿、摘要、日志、修正、决策等等。对于这一层来说，长得像文件系统的界面，模型和负责监督的人都更容易读懂。”\n\n说到底，把 agent 接到那些我们本来就会用的系统上，再按它们的方式做一层优化，就是最合适的工作原语。",
+            "source_links": [
+              "https://x.com/levie/status/2068068247413694532"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-19T16:25:14.000Z",
+        "sections": [
+          {
+            "headline": "Put the ugliest board slide first | 董事会最难看的那页，先摆第一张",
+            "body": "Tip: pick the worst thing you are afraid to show your board for your next board meeting and make it slide one (you can only do this with good boards btw)\n\nMake it a big deal you did that. Make it a habit. https://t.co/66Hu5uJGRP\n\n建议：下次开董事会，把你最怕给董事会看的那件烂事，直接做成第一页（当然，这只适用于靠谱的董事会）。\n\n而且要把这件事本身说成一个重要动作。养成习惯。 https://t.co/66Hu5uJGRP",
+            "source_links": [
+              "https://x.com/garrytan/status/2068007205102842238"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/alexrkonrad/status/2067967042292965650",
+                "resolvedUrl": "https://x.com/alexrkonrad/status/2067967042292965650",
+                "authorName": "Alex Konrad",
+                "authorHandle": "alexrkonrad",
+                "authorUrl": "https://x.com/alexrkonrad",
+                "text": "Salespeople have a problem: they only spend 21% of their time actually selling to customers 🤝\n\n@mutinycorp CEO Jaleh Rezaei (@jalehr) thought she'd found a way to fix it. She worked with customers like Snowflake and Uber. Revenue reached 8-figures 📈\n\nWhich makes what happened",
+                "displayDate": "Jun 19",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/RGeh24E14R",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2067963902554447872/img/F7f_bOPb3OPqzRHU.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/alexrkonrad/status/2067967042292965650/video/1"
+                  }
+                ],
+                "textZh": "销售人员有个问题：他们真正用来向客户销售的时间只占 21% 🤝 @mutinycorp CEO Jaleh Rezaei（@jalehr）原以为自己找到了一个解决办法。她曾与 Snowflake 和 Uber 这样的客户合作，营收也做到了八位数 📈 这也让后来发生的事显得更令人意外"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/66Hu5uJGRP",
+                "resolvedUrl": "https://x.com/alexrkonrad/status/2067967042292965650"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-19T21:42:55.000Z",
+        "sections": [
+          {
+            "headline": "Board meeting fatigue, VC edition | 董事会开完，VC 也会被榨干",
+            "body": "When your VC is exhausted from attending the board meeting https://t.co/PHHnZWwumQ\n\n当你的 VC 开完董事会已经累瘫了 https://t.co/PHHnZWwumQ",
+            "source_links": [
+              "https://x.com/mattturck/status/2068087153091858801"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/PHHnZWwumQ",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2068087096590344192/img/uVa0zpZYOLzYj2bQ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2068087153091858801/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/PHHnZWwumQ",
+                "resolvedUrl": "https://x.com/mattturck/status/2068087153091858801/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2068087096590344192/img/uVa0zpZYOLzYj2bQ.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-19T22:12:28.000Z",
+        "sections": [
+          {
+            "headline": "Three traits for standing out in the AI age | AI 时代拉开差距的三个东西",
+            "body": "The 3 most important things that set someone apart in the AI age:\n\n- Agency\n- Taste\n- Distribution\n\nAI 时代最能把人区分开的 3 件事：\n\n- Agency\n- Taste\n- Distribution",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2068094591220531583"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-20T05:29:38.000Z",
+        "sections": [
+          {
+            "headline": "A vague SF idea drop, left hanging on purpose | 一个故意没说透的旧金山点子",
+            "body": "SF I have an idea.. https://t.co/efoCDkXhHj\n\n旧金山，我有个想法.. https://t.co/efoCDkXhHj",
+            "source_links": [
+              "https://x.com/nikunj/status/2068204606119874728"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLO9IE0b0AEgg0t.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2068204606119874728/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLO9IE3aMAAM4wT.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2068204606119874728/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/efoCDkXhHj",
+                "resolvedUrl": "https://x.com/nikunj/status/2068204606119874728/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLO9IE3aMAAM4wT.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Meditation alternative: **EITS** at full blast | 不打坐，改听 **EITS**",
+            "body": "Some people meditate, I listen to @EITS 💥 https://t.co/mgiVZ3YE2Z\n\n有些人靠冥想，我靠听 @EITS 💥 https://t.co/mgiVZ3YE2Z",
+            "source_links": [
+              "https://x.com/nikunj/status/2068127547980918879"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLN3Cv1bsAAUrNk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2068127547980918879/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/mgiVZ3YE2Z",
+                "resolvedUrl": "https://x.com/nikunj/status/2068127547980918879/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLN3Cv1bsAAUrNk.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-20T05:08:27.000Z",
+        "sections": [
+          {
+            "headline": "A developer who can speak to agents | 一个既懂开发者也懂 agent 的队友",
+            "body": "Hannes speaks both developer and agents. Blessed to have him on the team! https://t.co/bTrqd3V3dn\n\nHannes 同时会说开发者和 agent 这两种语言。队里能有他，真是走运。 https://t.co/bTrqd3V3dn",
+            "source_links": [
+              "https://x.com/steipete/status/2068199277277401419"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/hrudolph/status/2068147770717007915",
+                "resolvedUrl": "https://x.com/hrudolph/status/2068147770717007915",
+                "authorName": "Hannes Rudolph",
+                "authorHandle": "hrudolph",
+                "authorUrl": "https://x.com/hrudolph",
+                "text": "I’m excited to share that I’m joining @steipete and the @openclaw team in Community and Developer Relations.\n\nThis is a dream opportunity, and I’m grateful to be part of what’s next.",
+                "displayDate": "Jun 20",
+                "provider": "X",
+                "media": [],
+                "textZh": "很高兴和大家分享，我将加入 @steipete 和 @openclaw 团队，负责 Community 和 Developer Relations。 这是一个梦寐以求的机会，很感激能参与接下来的旅程。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/bTrqd3V3dn",
+                "resolvedUrl": "https://x.com/hrudolph/status/2068147770717007915"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-20",
+    "updatedAt": "2026-06-24T09:32:41.095Z",
+    "commit": {
+      "sha": "5f961380e983e4807a516e2ef720c38f780cd3cb",
+      "committedAt": "2026-06-20T07:38:09Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T09:29:15.413Z",
+    "feedGeneratedAt": "2026-06-20T07:37:23.218Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

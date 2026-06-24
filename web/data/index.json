@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T09:16:21.238Z",
+  "updatedAt": "2026-06-24T09:32:41.100Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -39,6 +39,19 @@
       "commit": {
         "sha": "f70908357d9b11c33f2d39484e193d9ecc1f3f2c",
         "committedAt": "2026-06-21T07:57:49Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
+    {
+      "date": "2026-06-20",
+      "title": "AI Builders Daily · 2026-06-20",
+      "summary": "**Codex chatter got loud**; builders are openly switching tools, praising browser/computer-use workflows, and pushing remote/local handoff as the next friction kill; **Anthropic went deep on containment**, arguing agent safety is now mostly a blast-radius problem, not a permission-popup problem; Intel CEO **Lip-Bu Tan** sketched a comeback plan built on CPUs for agentic workloads, a cleaner product line, and a tougher foundry play; the rest of the feed felt unusually human: boardroom honesty, conference afterglow, medical-scan arguments, and one very blunt reminder that agency, taste, and distribution still matter.\n\n**Codex 这波声量起来了**；不少 builder 直接聊起换工具，重点全落在浏览器、computer use，还有远程/本地接力这些真能省事的能力上；**Anthropic** 那篇安全文不绕，核心就一句：权限越来越大，得先把爆炸半径关进笼子里；**陈立武** 在播客里讲 Intel，也不是空话，CPU、产品线、代工业务，全都往执行层面压；剩下几条也挺有意思，董事会该先摊最难看的那页，扫描该不该多做，VibeCon 余温还在，还有人把 AI 时代的分水岭压缩成三个词：agency、taste、distribution。",
+      "itemCount": 15,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T09:32:41.099Z",
+      "commit": {
+        "sha": "5f961380e983e4807a516e2ef720c38f780cd3cb",
+        "committedAt": "2026-06-20T07:38:09Z",
         "subject": "chore: update feeds [skip ci]"
       }
     },
