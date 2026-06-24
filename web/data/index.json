@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-06-24T10:48:14.322Z",
+  "updatedAt": "2026-06-24T10:56:27.812Z",
   "latestDate": "2026-06-23",
   "dates": [
     {
@@ -228,6 +228,19 @@
         "committedAt": "2026-06-07T07:42:12Z",
         "subject": "chore: update feeds [skip ci]",
         "file": "feed-blogs.json"
+      }
+    },
+    {
+      "date": "2026-06-06",
+      "title": "AI Builders Daily · 2026-06-06",
+      "summary": "**Agent tooling got real teeth**; **Claude Cowork** doubled limits and pushed desktop delegation, while **Vercel** showed storage that survives sandbox lifecycles; **Replit x Shopify** and **Cursor Composer 2.5** both pointed at a simpler path from idea to shipped software; the mood across builders: prompts, memory, and workflow design now matter as much as raw model quality.\n\n**这波更新挺实在**；**Claude Cowork** 直接把额度翻倍，摆明了要你把脏活累活丢给 agent；**Vercel** 把存储从 sandbox 生命周期里拆出来，这一下基础设施味儿就上来了；**Replit x Shopify**、**Cursor Composer 2.5** 都在推一件事：做软件的门槛还在掉，但真拉开差距的，已经不是会不会写提示词，而是你怎么组织记忆、技能和执行链路。",
+      "itemCount": 16,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-24T10:56:27.810Z",
+      "commit": {
+        "sha": "3e73f1d740ea30962547939022471f2e193b9b3e",
+        "committedAt": "2026-06-06T07:23:37Z",
+        "subject": "chore: update feeds [skip ci]"
       }
     },
     {

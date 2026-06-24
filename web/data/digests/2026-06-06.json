@@ -1,0 +1,908 @@
+{
+  "payload": {
+    "date": "2026-06-06",
+    "title": "AI Builders Daily · 2026-06-06",
+    "summary": "**Agent tooling got real teeth**; **Claude Cowork** doubled limits and pushed desktop delegation, while **Vercel** showed storage that survives sandbox lifecycles; **Replit x Shopify** and **Cursor Composer 2.5** both pointed at a simpler path from idea to shipped software; the mood across builders: prompts, memory, and workflow design now matter as much as raw model quality.\n\n**这波更新挺实在**；**Claude Cowork** 直接把额度翻倍，摆明了要你把脏活累活丢给 agent；**Vercel** 把存储从 sandbox 生命周期里拆出来，这一下基础设施味儿就上来了；**Replit x Shopify**、**Cursor Composer 2.5** 都在推一件事：做软件的门槛还在掉，但真拉开差距的，已经不是会不会写提示词，而是你怎么组织记忆、技能和执行链路。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=kYKebKB3-d0",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-03T15:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Figma** says the \"SaaS apocalypse\" is a goldmine, not a funeral · **Figma** 认为所谓 \"SaaS 末日\" 更像金矿，不像追悼会",
+            "body": "In **AI & I by Every**, **Figma** product leader Matt Colyer argues that AI will explode the number of software creators, not wipe out software companies. His bet is blunt: more people building means more software in the world, which creates more demand for products that handle the boring, painful parts people do not want to run themselves.\n\nHe also makes a less glamorous point that lands: vibe-coded prototypes are fun, maintenance is not. Colyer describes building personal agents, including an early email agent for school and PTO overload, then realizing that ownership, upgrades, and reliability are the real tax. That is why he says he buys more software now, not less.\n\nA second thread in the conversation is agent workflow design. Colyer talks about summaries, memory, and proactive delivery as the unlocks that matter in daily use. The hard part is not getting a model to produce text. It is teaching an agent what matters now, what can wait, and what only looks irrelevant until three days later.\n\n在 **AI & I by Every** 这期里，**Figma** 的产品负责人 Matt Colyer 讲得很直白：AI 不会把软件公司一锅端，反而会把软件创作者的数量抬上去。人多了，软件只会更多；而那些帮人扛住维护、稳定性、运营细活的产品，反而更值钱。\n\n他还点破了一个经常被故意略过的现实：把东西糊出来不难，长期养着才烦。Colyer 提到自己早年做过个人 agent，连学校和家长会邮件都拿来自动处理，后来发现真正磨人的不是第一版，而是后面的升级、可靠性和持续维护。所以他的结论不是少买软件，而是现在更愿意付钱让别人来跑这些东西。\n\n还有一条很关键：agent 好不好用，已经不只是模型聪不聪明的问题。Colyer 反复提到总结、记忆、主动推送这些能力。难点不在生成一段话，而在于让系统知道什么事今天该看、什么事可以先放、什么信息现在像噪音，过两天却会变成重点。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=kYKebKB3-d0"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space co-host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-06T02:18:00.000Z",
+        "sections": [
+          {
+            "headline": "Ask the model a question, not an order · 把提示写成问题，别写成命令",
+            "body": "a smarter alternative to \"always use plan mode\": \n\nalways frame your task as a question, so that the model is invited to push back and rate the quality of the idea/suggest alternatives, rather than blindly execute what you SAID to do \n\n(which is often not precisely what you MEANT)\n\nliterally just appending \"?\" to the end of your prompt often does it\n\n比起 \"永远用 plan mode\"，更聪明的做法是：\n\n始终把你的任务写成一个问题，这样模型才会被引导来反驳你、评估想法质量、给出替代方案，而不是机械执行你\"说了要做\"的事。\n\n（而你说出来的，往往并不等于你真正想表达的。）\n\n很多时候，真的只是在提示词末尾加一个 \"?\" 就够了。",
+            "source_links": [
+              "https://x.com/swyx/status/2063082950317486133"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Swyx celebrates playful **AI Engineer** experiments · Swyx 继续给 **AI Engineer** 搞点带劲的小实验",
+            "body": "i love being (for now) bdfl for aie because i can do cheeky shit like the AGI pills we did in london and also this https://t.co/dXoPfxlKd0 https://t.co/DS4J7hY1gF\n\ni love being（至少现在还是）aie 的 bdfl，因为我可以搞点这种有点坏笑意味的活，比如我们在伦敦做的 AGI pills，还有这个 https://t.co/dXoPfxlKd0 https://t.co/DS4J7hY1gF",
+            "source_links": [
+              "https://x.com/swyx/status/2063029941202239645"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKFaxx1aAAAp-tj.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2063029941202239645/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/philipkiely/status/2063014431752355983",
+                "resolvedUrl": "https://x.com/philipkiely/status/2063014431752355983",
+                "authorName": "Philip Kiely",
+                "authorHandle": "philipkiely",
+                "authorUrl": "https://x.com/philipkiely",
+                "text": "@swyx @aiDotEngineer Best event in the industry. Excited to see everyone there in 3 weeks!",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "@swyx @aiDotEngineer 这是业内最棒的活动。期待3周后在那里见到大家！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/dXoPfxlKd0",
+                "resolvedUrl": "https://x.com/swyx/status/2063029941202239645/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKFaxx1aAAAp-tj.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/DS4J7hY1gF",
+                "resolvedUrl": "https://x.com/philipkiely/status/2063014431752355983"
+              }
+            ]
+          },
+          {
+            "headline": "Frontier capability tests, designer edition · 前沿能力测试，设计师版",
+            "body": "@aiDotEngineer lmao designer vincent back at it again with the frontier capability tests https://t.co/I6OoTDbs5E\n\n@aiDotEngineer 哈哈，设计师 vincent 又开始折腾前沿能力测试了 https://t.co/I6OoTDbs5E",
+            "source_links": [
+              "https://x.com/swyx/status/2063013079974367557"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKFLT1_b0AA9O9_.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2063013079974367557/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKFLY8CbQAAYhgr.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2063013079974367557/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKFLauRbIAE0qlm.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2063013079974367557/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKFLdfvbEAAq_Uk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2063013079974367557/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/I6OoTDbs5E",
+                "resolvedUrl": "https://x.com/swyx/status/2063013079974367557/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKFLdfvbEAAq_Uk.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-05T22:43:27.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Cowork** is for work too big for chat · **Claude Cowork** 瞄准的是聊天窗口装不下的活",
+            "body": "Cowork is at its best on work that’s too big for a chat: research across dozens of accounts, recurring reports, triaging my inbox and drafting replies.\n\nIf you’ve been curious, this is a good month to find out what it can take off your plate. Can’t wait to see what you do.\n\nCowork 最擅长的，是那种聊天窗口根本装不下的工作：跨几十个账户做研究、重复性报告、清理我的收件箱、起草回复。\n\n如果你一直有点好奇，这个月正适合试试看它到底能帮你卸掉多少活。很想看看你们会拿它做什么。",
+            "source_links": [
+              "https://x.com/bcherny/status/2063028956211867837"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claude Cowork** doubles its 5-hour limits for a month · **Claude Cowork** 把 5 小时额度翻倍一个月",
+            "body": "We doubled Claude Cowork usage limits for the next month. This applies to your 5-hr rate limits. If you’ve been saving up a big messy project, now’s the time. https://t.co/qwjn8cVTUk\n\n我们把 **Claude Cowork** 接下来一个月的使用额度翻倍了。适用于你的 5 小时速率限制。如果你一直攒着一个又大又乱的项目没动手，现在就是时候。https://t.co/qwjn8cVTUk",
+            "source_links": [
+              "https://x.com/bcherny/status/2063028954546733462"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2063018337567670285",
+                "resolvedUrl": "https://x.com/claudeai/status/2063018337567670285",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "We've doubled usage limits in Claude Cowork for the next month.\n\nDelegate bigger, more complex tasks to Claude.",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/ivHZuaMbZV",
+                    "url": "https://pbs.twimg.com/tweet_video_thumb/HKFPcw2WgAAaF5D.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2063018337567670285/photo/1"
+                  }
+                ],
+                "textZh": "接下来一个月，我们把 Claude Cowork 的使用额度翻倍了。 把更大、更复杂的任务交给 Claude。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/qwjn8cVTUk",
+                "resolvedUrl": "https://x.com/claudeai/status/2063018337567670285"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-05T20:39:57.000Z",
+        "sections": [
+          {
+            "headline": "Thibault praises **OpenAI** team work · Thibault 给 **OpenAI** 团队点名致意",
+            "body": "Incredible work from @simpsoka and team\n\n@simpsoka 和团队这波做得真强。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2062997876297609257"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Fewer **Codex** papercuts, more adoption · **Codex** 小毛病在降，采用在涨",
+            "body": "Codex papercuts 📉\nCodex adoption 📈 https://t.co/KwVlGIB9ed\n\nCodex 的小毛病在降 📉\nCodex 的采用在涨 📈 https://t.co/KwVlGIB9ed",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2062997768470474765"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/KwVlGIB9ed",
+                "resolvedUrl": "https://t.co/KwVlGIB9ed"
+              }
+            ]
+          },
+          {
+            "headline": "Better memory means shorter prompts and more value per token · 记忆更强，提示更短，token 更值钱",
+            "body": "Better memory = Shorter prompts = More utility per token https://t.co/IT5h4ZSbEl\n\n更好的记忆 = 更短的提示 = 每个 token 换来更多效用 https://t.co/IT5h4ZSbEl",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2062966625733861752"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/IT5h4ZSbEl",
+                "resolvedUrl": "https://t.co/IT5h4ZSbEl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-05T18:08:30.000Z",
+        "sections": [
+          {
+            "headline": "A self-taught builder story lands hard · 自学出身的 builder 故事很能打",
+            "body": "Just interviewed @mvanhorn and I'm so inspired.\n\nI had no idea that he has no CS degree or real engineering background.\n\nDespite that, he has shipped so many awesome projects and contributed to repos like Python and Go.\n\nHe does swear by @every's Compound Engineering for making good plans and shipping good code: https://t.co/L8JrNQfyPb\n\n📌 Will clean up the interview and share soon on my YouTube: https://t.co/1C6pbWzPYn\n\n刚采访完 @mvanhorn，我是真的被激到了。\n\n我之前完全不知道，他没有 CS 学位，也没有真正的工程背景。\n\n但即便这样，他还是做出了很多很棒的项目，还给 **Python**、**Go** 这样的仓库做过贡献。\n\n他也确实很推 @every 的 Compound Engineering，说这套方法很适合做靠谱计划、写靠谱代码：https://t.co/L8JrNQfyPb\n\n📌 我会把采访整理一下，之后很快发到我的 YouTube：https://t.co/1C6pbWzPYn",
+            "source_links": [
+              "https://x.com/petergyang/status/2062959766314582064"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKEa-VrboAII_JP.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2062959766314582064/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/L8JrNQfyPb",
+                "resolvedUrl": "https://github.com/everyinc/compound-engineering-plugin"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/1C6pbWzPYn",
+                "resolvedUrl": "https://www.youtube.com/@PeterYangYT?subscribe"
+              }
+            ]
+          },
+          {
+            "headline": "Peter Yang lays out a recipe for self-improving AI skills · Peter Yang 给出一套会自检、会进化的 AI skill 配方",
+            "body": "How to build AI skills that check their own work and improve over time:\n\n1. Give it context\n\nAsk AI: \"Create a skill for this [repeated task]. Here are examples of good output so it knows what good looks like.\"\n\n2. Make it easy to trigger\n\n“Write a clear skill description using this pattern: Use when the user wants to [do this].”\n\n3. Add evals\n\n\"Create an evals md with 10 pass/fail checks for common errors in the skill's output.\"\n\n4. Add memory\n\n\"Create a memory md to capture one-sentence learnings from past chats using this skill.\"\n\n5. Build a skill to edit skills\n\n\"Create a skill that cleans up other skills by removing duplicate or stale instructions, vague rules, and AI slop.\"\n\n📌 Watch my full walkthrough here: https://t.co/u434ytNSZd\n\n怎么做出会检查自己工作、还会越用越好的 AI skill：\n\n1. 给它上下文\n\n让 AI：\"为这个[重复任务]创建一个 skill。这里有一些高质量输出示例，让它知道什么叫好。\"\n\n2. 让触发方式足够简单\n\n\"按这个模式写一个清晰的 skill 描述：Use when the user wants to [do this]。\"\n\n3. 加上 evals\n\n\"创建一个 evals md，里面放 10 个通过/失败检查，覆盖这个 skill 输出里常见的错误。\"\n\n4. 加上 memory\n\n\"创建一个 memory md，用一句话记录过去聊天里使用这个 skill 得到的经验。\"\n\n5. 再做一个专门改 skill 的 skill\n\n\"创建一个 skill，用来清理其他 skill，删掉重复或过时的指令、模糊规则，还有 AI 味太重的废话。\"\n\n📌 完整演示在这里：https://t.co/u434ytNSZd",
+            "source_links": [
+              "https://x.com/petergyang/status/2062899832965255443"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKDkdu0bIAA8Ocb.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2062899832965255443/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/u434ytNSZd",
+                "resolvedUrl": "https://t.co/u434ytNSZd"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Ex-Google Gemini",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-06-05T22:27:32.000Z",
+        "sections": [
+          {
+            "headline": "Build for the slope, not today's model ceiling · 别只盯着今天的模型上限，要按增长斜率来搭",
+            "body": "One of the most common mistakes I see enterprise AI teams make is building for today’s model capabilities and price points.\n\nThink 6 months out. Models will be way smarter and cheaper.\n\nScaffold around today’s model weaknesses to push the frontier. Bet that the next generation of models will natively solve for the scaffold. Push the frontier again.\n\nBuild for the slope.\n\nOver time, that ability to repeatedly identify and bridge model gaps becomes a moat of its own.\n\n我看到企业 AI 团队最常犯的错误之一，就是按今天的模型能力和价格来做产品。\n\n把时间往后看 6 个月。模型会更聪明，也会更便宜。\n\n围着今天模型的短板先搭脚手架，把边界往前推。赌下一代模型会原生吃掉这层脚手架。然后你再继续往前推。\n\n按斜率来建，不要按静态点来建。\n\n时间一长，那种反复识别模型缺口、再把缺口补上的能力，本身就会变成护城河。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2063024953721827329"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-06T02:43:11.000Z",
+        "sections": [
+          {
+            "headline": "Amjad says he hears this story every day · Amjad 说这种说法他几乎天天听",
+            "body": "I hear a version of this almost daily. https://t.co/OEI3CkrtcX\n\n这种版本的说法，我几乎每天都能听到。https://t.co/OEI3CkrtcX",
+            "source_links": [
+              "https://x.com/amasad/status/2063089288997491063"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/keaneaiadvisors/status/2062690215215432000",
+                "resolvedUrl": "https://x.com/KeaneAIAdvisors/status/2062690215215432000",
+                "authorName": "KeaneAdvisors.AI",
+                "authorHandle": "KeaneAIAdvisors",
+                "authorUrl": "https://x.com/KeaneAIAdvisors",
+                "text": "Leaving Salesforce for Replit.\n\nFor literally 25 years I've been an advocate for Salesforce. I've probably paid them half a million over those years.\n\nIn one week I've eliminated the need. I built my own personal CRM integrated with pretty much everything. Leads, accounts,",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "离开 Salesforce，转投 Replit。 整整25年来，我一直是 Salesforce 的拥护者。这些年我付给他们的钱大概有50万。 只用一周，我就不再需要它了。我搭建了自己的个人 CRM，几乎和所有东西都做了集成。Leads、accounts，"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/OEI3CkrtcX",
+                "resolvedUrl": "https://x.com/keaneaiadvisors/status/2062690215215432000"
+              }
+            ]
+          },
+          {
+            "headline": "**Replit** teams up with **Shopify** · **Replit** 联手 **Shopify**",
+            "body": "Replit x Shopify! https://t.co/QgJZLu4eFK\n\nReplit x Shopify！https://t.co/QgJZLu4eFK",
+            "source_links": [
+              "https://x.com/amasad/status/2063065480878063694"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/thenewstack/status/2062987921859223875",
+                "resolvedUrl": "https://x.com/thenewstack/status/2062987921859223875",
+                "authorName": "The New Stack",
+                "authorHandle": "thenewstack",
+                "authorUrl": "https://x.com/thenewstack",
+                "text": "Replit adds a Shopify integration to its monetization stack, letting vibe coders launch a custom storefront in about ten minutes from the AI agent. https://thenewstack.io/replit-shopify-storefront-integration/?taid=6a232ad7b189380001a041cc&utm_campaign=trueanthem&utm_medium=social&utm_source=twitter",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "Replit 在它的变现工具栈中加入了 Shopify 集成，让 vibe coders 可以直接通过 AI agent 在大约10分钟内上线一个自定义店铺。https://thenewstack.io/replit-shopify-storefront-integration/?taid=6a232ad7b189380001a041cc&utm_campaign=trueanthem&utm_medium=social&utm_source=twitter"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/QgJZLu4eFK",
+                "resolvedUrl": "https://x.com/thenewstack/status/2062987921859223875"
+              }
+            ]
+          },
+          {
+            "headline": "\"Crazy times\" from the **Replit** front · **Replit** 这边只剩一句：时代太疯了",
+            "body": "Crazy times https://t.co/CcW1bv3LuR\n\n疯狂时代。https://t.co/CcW1bv3LuR",
+            "source_links": [
+              "https://x.com/amasad/status/2062902535153910081"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ivanlandabaso/status/2062842513610727438",
+                "resolvedUrl": "https://x.com/IvanLandabaso/status/2062842513610727438",
+                "authorName": "Ivan Landabaso",
+                "authorHandle": "IvanLandabaso",
+                "authorUrl": "https://x.com/IvanLandabaso",
+                "text": "New business creation on stripe is up 2x YoY.\n\nMy notes from the @patrickc x @amasad pod:",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HKCvUuJWwAAPC9k.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/IvanLandabaso/status/2062842513610727438/photo/1"
+                  }
+                ],
+                "textZh": "Stripe 上的新业务创建量同比增长了 2 倍。 我从 @patrickc x @amasad 这期播客里记下的笔记："
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/CcW1bv3LuR",
+                "resolvedUrl": "https://x.com/ivanlandabaso/status/2062842513610727438"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-05T21:26:10.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel** decouples agent storage from sandbox life · **Vercel** 把 agent 存储从 sandbox 生命周期里拆开了",
+            "body": "Agent filesystem state can now be read, written and mounted independently of Sandbox lifecycle.\n\nWe’ve been developing a novel virtual storage infrastructure solution for all our compute products.\n\nStorage that’s decoupled, but attachable to Builds, Functions, Sandboxes & more. https://t.co/x2CJpPHf62\n\n现在，agent 的文件系统状态已经可以独立于 Sandbox 生命周期来读取、写入和挂载。\n\n我们一直在为所有计算产品开发一套新的虚拟存储基础设施方案。\n\n这种存储和运行环境解耦，但又可以挂到 Builds、Functions、Sandboxes 等产品上。https://t.co/x2CJpPHf62",
+            "source_links": [
+              "https://x.com/rauchg/status/2063009510503932181"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2063000902227878012",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2063000902227878012",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "Sandbox now supports drives in early access\n\n▪︎ Storage separated from compute\n▪︎ Mount on any path with 𝙳𝚛𝚒𝚟𝚎.𝚐𝚎𝚝𝙾𝚛𝙲𝚛𝚎𝚊𝚝𝚎\n▪︎ Keep agent memories across sandboxes\n\nSign up ↓ https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "Sandbox 现在已在抢先体验中支持 drives ▪︎ 存储与计算分离 ▪︎ 可通过 𝙳𝚛𝚒𝚟𝚎.𝚐𝚎𝚝𝙾𝚛𝙲𝚛𝚎𝚊𝚝𝚎 挂载到任意路径 ▪︎ 在不同 sandboxes 之间保留 agent 记忆 立即注册 ↓ https://vercel.com/changelog/drives-for-vercel-sandbox-in-private-beta"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/x2CJpPHf62",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2063000902227878012"
+              }
+            ]
+          },
+          {
+            "headline": "Rauch cheers founders who just ship · Rauch 给那种闷头发货的创始人打 call",
+            "body": "Shoutout to @andrewqu founder and CEO of https://t.co/pYz1Gn97jD 😁 you can just ship things https://t.co/YfqUgl5zCm\n\n给 @andrewqu 致意，他是 https://t.co/pYz1Gn97jD 的创始人兼 CEO 😁 有时候你真的就是把东西发出去就行了 https://t.co/YfqUgl5zCm",
+            "source_links": [
+              "https://x.com/rauchg/status/2062954780465434779"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/andrewqu/status/2062952590502236224",
+                "resolvedUrl": "https://x.com/andrewqu/status/2062952590502236224",
+                "authorName": "Andrew Qu",
+                "authorHandle": "andrewqu",
+                "authorUrl": "https://x.com/andrewqu",
+                "text": "A few weeks ago I silently released the skills[.]sh API with \"email me\" instructions on the docs\n\nSince then, my email inbox has received &gt;1200 requests for an API key\n\nI didn't want to keep generating API keys via script, but also didn't want to build a brittle \"sign in",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "几周前，我悄悄发布了 skills[.]sh API，并在文档里写了“给我发邮件”的说明。 从那以后，我的邮箱已经收到了超过1200个 API key 申请。 我不想继续靠脚本生成 API key，但也不想去做一个脆弱的“登录”"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/pYz1Gn97jD",
+                "resolvedUrl": "http://skills.sh/"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/YfqUgl5zCm",
+                "resolvedUrl": "https://x.com/andrewqu/status/2062952590502236224"
+              }
+            ]
+          },
+          {
+            "headline": "**Skills API** pitched as an npm registry for agents · **Skills API** 被比作 agent 世界的 npm registry",
+            "body": "Use the Skills API to make all your agents and platforms smarter.\n\nThink of it as the npm registry for agent capabilities and extensibility. Free and open. https://t.co/kcVnJSupTf\n\n用 **Skills API**，让你的 agent 和平台都更聪明。\n\n可以把它理解成 agent 能力和扩展性的 npm registry。免费，而且开放。https://t.co/kcVnJSupTf",
+            "source_links": [
+              "https://x.com/rauchg/status/2062951924677128455"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2062950386819117430",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2062950386819117430",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "The skills​.sh API is now generally available.\n\nPower your agents, applications and platforms with access to over 600,000 skills ↓\nhttps://vercel.com/changelog/the-skills-sh-api-is-now-available",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "skills​.sh API 现已正式可用。 为你的 agents、应用和平台接入超过 600,000 个 skills ↓ https://vercel.com/changelog/the-skills-sh-api-is-now-available"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/kcVnJSupTf",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2062950386819117430"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-06T00:28:15.000Z",
+        "sections": [
+          {
+            "headline": "Even coding agents still need humans, says **Box** CEO · **Box** CEO 说连写代码这件事，agent 也还离不开人",
+            "body": "Coding is basically the pinnacle of what you could reasonably automate with AI, and yet we still need human engineers to oversee agents for them to be effective.\n\nThe AI models are trained on an incredible amount of sophisticated code. The users are highly technical and can use the latest tools quickly. The work is “verifiable” because you can test an app. The outcomes are often removed from the quality of the code (you can have sloppy code but the app can still work). And the context for the agent is often already digitized and sitting in the codebase. \n\nThat’s an incredible amount of benefits that AI coding agents get to work with. Some of those apply to knowledge work, but most don’t in areas where the work needs to be fully reviewed to be useful, or where data isn’t as abundantly digitized. This makes the job for agents in knowledge work more complicated.\n\nSo if with all of that, engineers still remain in very high demand, the risks are going to be less than what’s perceived for other areas of knowledge work. Agents will let people do far more than they did before, but the people don’t go away.\n\n写代码这件事，基本已经算是 AI 最适合自动化的高地了，但即便这样，我们还是需要人类工程师盯着 agent，它们才真正好用。\n\nAI 模型吃过海量复杂代码训练；用户本身技术很强，能很快上手新工具；这类工作还\"可验证\"，因为应用能测；而且结果常常跟代码本身是否漂亮没那么强绑定（代码写得乱，应用照样可能能跑）；agent 需要的上下文，很多时候也已经数字化，直接躺在代码库里。\n\n这已经是 AI coding agent 能遇到的一整套有利条件了。知识工作里只有一部分条件成立，更多场景不是必须人工完整审一遍才有用，就是数据根本没被这么充分数字化。所以 agent 去做知识工作，难度其实更高。\n\n既然在这种优势拉满的场景里，工程师的需求都还很高，那其他知识工作被替掉的风险，大概率没有外界想得那么夸张。agent 会让人做得更多，但人不会消失。",
+            "source_links": [
+              "https://x.com/levie/status/2063055332545540096"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X",
+        "posted_at": "2026-06-05T23:23:17.000Z",
+        "sections": [
+          {
+            "headline": "Designing in code gets simpler in **Composer 2.5** · 在 **Composer 2.5** 里，用代码做设计更顺手了",
+            "body": "designing in code is now as easy as:\nclick, chat, hold shift to multi-select.\n\nworks best with Composer 2.5 https://t.co/jKDWktp69K\n\n现在，用代码做设计已经简单到这样：\n点一下，聊一句，按住 shift 多选。\n\n和 Composer 2.5 搭配效果最好 https://t.co/jKDWktp69K",
+            "source_links": [
+              "https://x.com/ryolu_/status/2063038983408615435"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/cursor_ai/status/2062950344687272144",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2062950344687272144",
+                "authorName": "Cursor",
+                "authorHandle": "cursor_ai",
+                "authorUrl": "https://x.com/cursor_ai",
+                "text": "With Design Mode, you can now point, draw, or talk to update your UI.",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/Bug3p7cVyI",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2062949990021124097/img/YstvW3BfDenDs0Ao.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/cursor_ai/status/2062950344687272144/video/1"
+                  }
+                ],
+                "textZh": "有了 Design Mode，你现在可以通过指点、绘制或直接说出来来更新你的 UI。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/jKDWktp69K",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2062950344687272144"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-06T07:13:33.000Z",
+        "sections": [
+          {
+            "headline": "**GBrain** gives **OpenClaw** and **Hermes Agent** more range · **GBrain** 给 **OpenClaw** 和 **Hermes Agent** 装上翅膀",
+            "body": "GBrain gives OpenClaw and Hermes Agent wings https://t.co/gUt6ll33Vn\n\nGBrain 给 OpenClaw 和 Hermes Agent 装上了翅膀 https://t.co/gUt6ll33Vn",
+            "source_links": [
+              "https://x.com/garrytan/status/2063157328753594505"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ElmerdenBraven/status/2063129846713057632",
+                "resolvedUrl": "https://x.com/ElmerdenBraven/status/2063129846713057632",
+                "authorName": "Elmer den Braven",
+                "authorHandle": "ElmerdenBraven",
+                "authorUrl": "https://x.com/ElmerdenBraven",
+                "text": "@shannholmberg @garrytan It’s a great setup.\n\nI started using Hermes with gbrain from the start. The difference with general LLM chats is huge.",
+                "displayDate": "Jun 6",
+                "provider": "X",
+                "media": [],
+                "textZh": "@shannholmberg @garrytan 这套配置很棒。 我一开始就在用搭配 gbrain 的 Hermes。和通用 LLM 聊天相比，差别非常大。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/gUt6ll33Vn",
+                "resolvedUrl": "https://x.com/elmerdenbraven/status/2063129846713057632"
+              }
+            ]
+          },
+          {
+            "headline": "Garry opens up a teased software-learning project · Garry 把预告了几个月的项目放出来试了",
+            "body": "You can now finally try one of those big projects I was teasing that I started working on a few months ago. \n\nWe want this to over time get better at helping you learn the best techniques to build better software, faster. https://t.co/hQpYCpl9JB\n\n你现在终于可以试试我前几个月一直在吊胃口的那个大项目了。\n\n我们想让它随着时间推移，越来越擅长帮你学会那些更快做出更好软件的方法。https://t.co/hQpYCpl9JB",
+            "source_links": [
+              "https://x.com/garrytan/status/2063146456106795457"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/hQpYCpl9JB",
+                "resolvedUrl": "https://twitter.com/ycombinator/status/2062982928574136449"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A blunt defense-tech must-have take · 一句很硬的军工判断",
+            "body": "This is the definition of must-have for the future drone war. https://t.co/m33IZgh1Dx\n\n这就是未来无人机战争里那种非有不可的东西。https://t.co/m33IZgh1Dx",
+            "source_links": [
+              "https://x.com/garrytan/status/2063146111960019028"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ycombinator/status/2062957629098336626",
+                "resolvedUrl": "https://x.com/ycombinator/status/2062957629098336626",
+                "authorName": "Y Combinator",
+                "authorHandle": "ycombinator",
+                "authorUrl": "https://x.com/ycombinator",
+                "text": ".@9Mothers is making AI mission systems for the DoW.\n\nTheir first product - EDDA - is a tiny robot that protects soldiers and critical assets from Group 1 suicide drones. They're building it small enough and cheap enough to put that protection on everything: every vehicle, every",
+                "displayDate": "Jun 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/4ti1HHWMLl",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2062951953123221504/img/7-5jH1T2DU4t8U2c.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ycombinator/status/2062957629098336626/video/1"
+                  }
+                ],
+                "textZh": ".@9Mothers 正在为 DoW 打造 AI mission systems。 他们的首款产品 EDDA 是一种微型机器人，可保护士兵和关键资产免受 Group 1 自杀式无人机攻击。他们正在把它做得足够小、足够便宜，好把这种防护部署到一切之上：每一辆车、每一个"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/m33IZgh1Dx",
+                "resolvedUrl": "https://x.com/ycombinator/status/2062957629098336626"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-05T23:11:01.000Z",
+        "sections": [
+          {
+            "headline": "Matt Turck flips the founder-VC horror story meme · Matt Turck 反手拿 VC 和 founder 的恐怖故事开涮",
+            "body": "Ok bad stories about VCs are spreading on X right now, but VCs have horror stories about founders too \n\nLike, that one time when a founder decided to take another term sheet with a higher valuation despite our obvious ability to add value, thought leadership and vendor discounts\n\n好吧，X 上现在到处都在传 VC 的烂故事，但 VC 这边也有关于 founder 的恐怖故事。\n\n比如那一次，某位 founder 明明知道我们显然能带来价值、思想领导力和供应商折扣，结果还是接了另一份估值更高的 term sheet。",
+            "source_links": [
+              "https://x.com/mattturck/status/2063035894790345200"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-06T06:17:02.000Z",
+        "sections": [
+          {
+            "headline": "Nikunj teases a full video drop tomorrow · Nikunj 预告完整版视频明早上线",
+            "body": "Full video out tomorrow am 🕺\n\n完整版视频明天早上放出 🕺",
+            "source_links": [
+              "https://x.com/nikunj/status/2063143108070744492"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Nikunj says VCs need to do better by founders · Nikunj 直说了：VC 对 founder 得做得更像样点",
+            "body": "QED. The quote tweets in this thread just show we HAVE to do better. Evergreen reminder that without founders, there are no VCs! https://t.co/vDQnupyZrs https://t.co/6KOdD47pHG\n\nQED。这个 thread 下面的 quote tweet 只说明一件事：我们真的必须做得更好。老话重提，没有 founder，就没有 VC！https://t.co/vDQnupyZrs https://t.co/6KOdD47pHG",
+            "source_links": [
+              "https://x.com/nikunj/status/2062910976018854252"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HKDumaSbsAA9lKc.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2062910976018854252/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/gregisenberg/status/2061794787825479818",
+                "resolvedUrl": "https://x.com/gregisenberg/status/2061794787825479818",
+                "authorName": "GREG ISENBERG",
+                "authorHandle": "gregisenberg",
+                "authorUrl": "https://x.com/gregisenberg",
+                "text": "I was once pitching in a board room at a top 3 VC firm for a $15M Series A.\n\n12 people in the meeting. One of the GPs fully fell asleep. Out cold for 30+ minutes. Nobody acknowledged it. Everyone just kept going.\n\nI kept presenting my Series A slides to an unconscious man in a",
+                "displayDate": "Jun 2",
+                "provider": "X",
+                "media": [],
+                "textZh": "我有一次在一家前三的 VC 机构董事会议室里，为一轮 1500 万美元的 Series A 融资做路演。 会议里有12个人。其中一位 GP 直接睡着了。 睡得很沉，足足30多分钟。没有人提这件事。大家就那样继续。 我只能继续对着一个失去意识的人讲我的 Series A 幻灯片，在一"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/vDQnupyZrs",
+                "resolvedUrl": "https://x.com/nikunj/status/2062910976018854252/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HKDumaSbsAA9lKc.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/6KOdD47pHG",
+                "resolvedUrl": "https://x.com/gregisenberg/status/2061794787825479818"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-06T03:26:10.000Z",
+        "sections": [
+          {
+            "headline": "Dan Shipper briefly switches to basketball mode · Dan Shipper 短暂切到篮球频道",
+            "body": "go Knicks!!\n\n冲啊，Knicks！！",
+            "source_links": [
+              "https://x.com/danshipper/status/2063100104274280597"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Dan points viewers to the new **YouTube** episode · Dan 把流量引到新的 **YouTube** 视频",
+            "body": "watch on youtube: https://t.co/FN7zIOIhG3\n\n去 YouTube 看：https://t.co/FN7zIOIhG3",
+            "source_links": [
+              "https://x.com/danshipper/status/2063015392092524924"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/FN7zIOIhG3",
+                "resolvedUrl": "https://www.youtube.com/watch?v=2Yy8EJlZJFE"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Every subscribers will get the workflow and prompts soon · Every 订阅用户很快能拿到完整工作流和提示词",
+            "body": "we'll have the full workflow and prompts available to @every subscribers soon:\n\nhttps://t.co/9wRhOCUCAk\n\n我们很快会把完整工作流和提示词开放给 @every 的订阅用户：\n\nhttps://t.co/9wRhOCUCAk",
+            "source_links": [
+              "https://x.com/danshipper/status/2062930113390354641"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9wRhOCUCAk",
+                "resolvedUrl": "https://every.to/subscribe"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-05T15:18:41.000Z",
+        "sections": [
+          {
+            "headline": "Aditya shares a link-only post · Aditya 发了一条纯链接帖子",
+            "body": "https://t.co/DVmreFIkrW\n\nhttps://t.co/DVmreFIkrW",
+            "source_links": [
+              "https://x.com/adityaag/status/2062917028558639292"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/DVmreFIkrW",
+                "resolvedUrl": "https://blog.southparkcommons.com/p/the-fast-lane-to-mediocrity"
+              }
+            ]
+          },
+          {
+            "headline": "Speed can be ambition wearing the wrong clothes · 有时候速度只是披着野心外衣的不耐烦",
+            "body": "Sometimes speed is just impatience disguised as ambition. https://t.co/NQ32ApE7sD\n\n有时候，所谓速度，只是不耐烦披上了野心的外衣。https://t.co/NQ32ApE7sD",
+            "source_links": [
+              "https://x.com/adityaag/status/2062917027103130013"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/NQ32ApE7sD",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2062916509215625216/img/fKlm9FfIUPrnXm5B.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2062917027103130013/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/NQ32ApE7sD",
+                "resolvedUrl": "https://x.com/adityaag/status/2062917027103130013/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2062916509215625216/img/fKlm9FfIUPrnXm5B.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-06-05T22:01:15.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** pushes Cowork live on paid plans through July 5 · **Claude** 宣布 Cowork 在付费方案中开放到 7 月 5 日",
+            "body": "Live now on all paid plans through July 5. \n\nDownload the Claude desktop app to give Cowork a try: https://t.co/EYHUToV3eS\n\n现已在所有付费方案中上线，持续到 7 月 5 日。\n\n下载 **Claude** 桌面应用，试试 Cowork：https://t.co/EYHUToV3eS",
+            "source_links": [
+              "https://x.com/claudeai/status/2063018339710992794"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/EYHUToV3eS",
+                "resolvedUrl": "http://claude.com/cowork"
+              }
+            ]
+          },
+          {
+            "headline": "**Claude Cowork** doubles usage limits for bigger tasks · **Claude Cowork** 把额度翻倍，好接更大的活",
+            "body": "We've doubled usage limits in Claude Cowork for the next month.\n\nDelegate bigger, more complex tasks to Claude. https://t.co/ivHZuaMbZV\n\n接下来一个月，我们把 **Claude Cowork** 的使用额度翻倍了。\n\n把更大、更复杂的任务交给 Claude。https://t.co/ivHZuaMbZV",
+            "source_links": [
+              "https://x.com/claudeai/status/2063018337567670285"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/ivHZuaMbZV",
+                "url": "https://pbs.twimg.com/tweet_video_thumb/HKFPcw2WgAAaF5D.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2063018337567670285/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ivHZuaMbZV",
+                "resolvedUrl": "https://x.com/claudeai/status/2063018337567670285/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/tweet_video_thumb/HKFPcw2WgAAaF5D.jpg"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-06",
+    "updatedAt": "2026-06-24T10:56:27.808Z",
+    "commit": {
+      "sha": "3e73f1d740ea30962547939022471f2e193b9b3e",
+      "committedAt": "2026-06-06T07:23:37Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-06-24T10:52:24.693Z",
+    "feedGeneratedAt": "2026-06-06T07:23:01.789Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
