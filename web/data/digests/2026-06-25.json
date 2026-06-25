@@ -1,0 +1,691 @@
+{
+  "payload": {
+    "date": "2026-06-25",
+    "title": "AI Builders Daily · 2026-06-25",
+    "summary": "**Agents step out of chat and into the org chart**: **Aaron Levie** frames **Claude** as a shared coworker with its own permissions; **Infrastructure nerves are showing**: **Swyx** says software factories will force a rebuild of huge chunks of the stack; **Speed wars keep escalating**: **Guillermo Rauch** pushes fast **GLM** and big **AI Gateway** recovery numbers; **The biggest argument of the day** comes from **Edwin Chen** on **AI & I**: if scaling keeps holding, the real question is not capability but what humans still choose to do.\n\n**Agent 不只是聊天框里的助手，已经在往“同事”这个位置挤**：**Aaron Levie** 讲的是有权限边界的 **Claude** 协作模式；**基础设施焦虑也摆上台面了**：**Swyx** 直接说软件工厂时代会逼着大家重建一大截底层；**速度战还在加码**：**Guillermo Rauch** 连发 **GLM** 和 **AI Gateway** 的成绩；今天最硬的一条，还是 **AI & I** 里 **Edwin Chen** 那句判断：要是 scaling law 继续生效，接下来卡人的不是能力，而是人还想不想自己动手。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=omX6wrLuX08",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-24T14:55:00.000Z",
+        "sections": [
+          {
+            "headline": "**Edwin Chen** argues AI may soon do nearly everything humans can do / **Edwin Chen** 直说：AI 很快可能把人类会做的事几乎都做掉",
+            "body": "**Dan Shipper** brings **Surge AI** CEO **Edwin Chen** onto **AI & I** for a wide-ranging argument about where frontier models are headed. Chen describes **Surge** as a \"school for AGI,\" says evaluation has moved from middle-school math to research-level math, and points to **Riemann Bench** and recent model work on open **Erdos** problems as signs that the frontier is shifting fast. The sharpest disagreement is about motivation: Chen thinks agents are moving toward handling nebulous goals with increasing autonomy, while Shipper argues models still lack intrinsic drive. The episode also lands a practical punch at current systems: models trained for engagement still over-polish, over-write, and often miss human taste.\n\n**Dan Shipper** 把 **Surge AI** 的 CEO **Edwin Chen** 请到 **AI & I**，聊的不是新玩具，而是前沿模型到底往哪儿走。Chen 把 **Surge** 说成一所“给 AGI 上学的学校”，还拿 **Riemann Bench** 和模型最近去碰公开 **Erdos** 数学问题当例子，意思很清楚：前沿已经不是做中学数学题那一档了，正在往研究级问题滑。两人分歧也很直接，Chen 觉得 agent 正在逼近“给个模糊目标就自己干下去”，Shipper 则坚持模型还没有内在驱动力。后面那段更接地气：现在很多模型为了迎合指标，把东西写得太满、修得太过，味道反而不对。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=omX6wrLuX08"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer Host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-25T02:03:54.000Z",
+        "sections": [
+          {
+            "headline": "Talks need thesis slides, code, and real entertainment / 演讲得有主论点页、代码，还得真能让人听下去",
+            "body": "lots of folks prepping talks next week (congrats!). Some thoughts from RLing on thousands of hours of engineer- and researcher- focused talks:\n\n- AI generated svgs > AI generated imgs. MAXIMUM 4 ai slop images in your slides, I don't care how pretty your mom thinks they are (exception ofc if your talk is ABOUT imagegen)\n- Be pointy. Better to have 1 message with 5 surprising applications, than 5 messages with no concrete examples.\n- Put code on screen. Engineers like to see code. Especially if they can nitpick it to death over things that aren't the point.\n- Don't forget to Entertain. Being actually funny, or good at telling relevant anecdotes, is more important than adding yet another bullet point.\n- Have a Thesis. every talk gets ONE \"if you remember one thing from this talk, it is this\" card. 1) SO MANY PEOPLE DON'T USE IT. 2) SO MANY PEOPLE DON'T PLAN FOR IT. you get one. use it well?\n- Have a Thesis Slide. you've been in that talk where everyone gets their phone out to take a photo of the slide. Because people see 1000x more images than videos, you are much more likely to have a viral talk/slide if you have a single viral slide. You are much more likely to have a viral slide if you TRY and most people do not TRY. Struggling? Collect examples from talks you like and adapt their format to your thing. Your slides have a power law - don't spend 5% of your time each on 20 slides, spend 80% of your time on 1 slide and have the rest build up to that 1 slide.\n- You might not need slides. live demo in IDE, off the cuff rambles, pull audience member up to roleplay, do call and response with the audience, sing/perform, voice over vibe videos, I have seen it all. higher risk/effort, higher reward when done well.\n- Be pleasant to listen to. Talks with bad/no visuals still can be listened to. Talks with bad audio are DOA. Be confident, project, remember vocal variation, evoke emotion.\n- Design the emotional journey. Start strong, end strong, have a peak aha/laugh/thesis moment in the middle. Everything else is buildup.\n- Data driven talks are underrated. Present pretty charts and surprising, authoritative numbers. Use the stage authority to infer from the data to support the broader thesis. Done well, it will feel like my obvious conclusion from objectively looking at the data you presented, not you feeding the conclusion to me.\n- How to shill your product/company without feeling salesy: teach me everything I didn't know I should to know about the problems you solve, and then you shall have earned the right to convince me you are the guys to trust to solve it once and for all.\n- Actively watch a lot of talks. like with anything you both need a lot of reps AND you need to explore to find the styles/role models that you shine in. Passive = no introspection after watching, just mindlessly autoplay next video. Active = trying to articulate why a talk was good/bad after watching. If you want to REALLY hone it, think about how you feel about a famous talk and then TRANSCRIBE the talks and read the words on the printed page, and then compare with a \"normal\" talk and define rules you will follow for yourself to improve.\n\nthanks to @dexhorthy for organizing the AIEWF Speaker prep meetup tonight. we should actually do more of these....\n\n下周不少人都在准备演讲（恭喜）。这是我从几千小时、面向工程师和研究者的 talk 里反复琢磨出来的一些想法：\n\n- AI 生成的 svg 胜过 AI 生成的图片。幻灯片里最多放 4 张 AI 味太重的图，我不管你妈觉得它们多好看（当然，除非你的演讲本来就是讲 imagegen）。\n- 观点要尖。一个核心信息配 5 个让人意外的应用，比 5 个没例子的空观点强得多。\n- 把代码放上屏幕。工程师就是想看代码，哪怕他们会抓着一些根本不是重点的地方挑刺。\n- 别忘了让人愿意听。真有点幽默感，或者会讲贴题的小故事，比再加一条 bullet point 有用得多。\n- 要有 Thesis。每个 talk 都只有一张“如果你只记住一件事，那就是这个”的牌。1）太多人根本不用。2）太多人压根没为它做设计。你只有一张，好好用。\n- 要有 Thesis Slide。你肯定见过那种全场掏手机拍一页幻灯片的时刻。人刷图片的频率远高于视频，所以你要是能做出一页能传开的 slide，整个 talk 更容易扩散。前提是你真的去试，大多数人没试。卡住了？就去收集你喜欢的 talk 例子，照着它们的结构改成自己的东西。幻灯片是幂律分布，别把时间平均撒在 20 页上，每页 5%；把 80% 的时间砸在 1 页上，其余内容都给那 1 页铺路。\n- 你可能根本不需要幻灯片。直接在 IDE live demo，临场讲，拉观众上来 roleplay，做 call and response，唱出来/演出来，或者配旁白视频，我都见过。风险和投入更高，但做好了回报也更高。\n- 让人听着舒服。画面烂一点，至少还能听；音频烂了，基本当场死掉。要有自信，声音打出去，记得做语调变化，带情绪。\n- 把情绪曲线设计出来。开头要猛，结尾要稳，中间要有一个明显的 aha / 笑点 / thesis 高点。别的部分都是铺垫。\n- 数据型 talk 被低估了。把图表做漂亮，数字要让人意外，而且站得住。借舞台给你的权威感，让观众觉得“看完这些数据，自然就会得出这个结论”，而不是你硬塞结论给他们。\n- 想讲自己产品/公司又不想像推销：先把你解决的那个问题讲透，讲到我意识到原来还有这么多我不知道的地方。做到这一步，你才有资格让我相信你们真是最懂这事的人。\n- 主动去看很多 talk。跟别的事一样，你既得多练，也得多看，才能找到适合自己的风格和参照。被动看 = 播完一个自动下一个，不反思。主动看 = 看完能说清楚这个 talk 到底好在哪、差在哪。真想练狠一点，就挑一个你有明确感受的著名 talk，把它转成文字逐字读，再找一个“普通”talk 对照，最后给自己定规则。\n\n也谢谢 @dexhorthy 今晚组织 AIEWF 的 speaker prep meetup。这个活动我们确实该多办一点。",
+            "source_links": [
+              "https://x.com/swyx/status/2069964772003770673"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Software factories will force a huge infra rebuild / 软件工厂时代会逼着大家重建大半套基础设施",
+            "body": "we are going to have to Rebuild So. Much. Infra. for the age of Software Factories https://t.co/OHfQjOhiwJ\n\n我们将不得不为了软件工厂时代，重建非常非常多的基础设施。https://t.co/OHfQjOhiwJ",
+            "source_links": [
+              "https://x.com/swyx/status/2069937175899275475"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/OHfQjOhiwJ",
+                "resolvedUrl": "https://t.co/OHfQjOhiwJ"
+              }
+            ]
+          },
+          {
+            "headline": "Databricks, metaharnesses, and the race to the agent cloud / 从 **Databricks** 到 metaharness，再到 agent cloud 竞速",
+            "body": "LOTS of alpha in this pod:\n\n- Why Databricks beat Snowflake (! a straight answer!)\n- Why everyone is building a metaharness now\n- Why the @neondatabase made so much sense (so much @nikitabase glazing its not even funny)\n- How LTAP solves the HTAP dream I discussed with @ankrgyl in our @braintrust pod\n- What happened to @MosaicML + DBRX\n- How to maintain research/startup culture in a $175B megacorp\n- What's more important knowledge/experience in the race to the agent cloud: databases, operating systems, or.... networking!\n\nvery honored to be invited to @Data_AI_Summit to interview two of the top people in our industry and somehow be able to jam on everything from the @bennstancil modern data stack theme to @alighodsi's amazing keynote aura\n\n这期播客的信息量很大：\n\n- 为什么 **Databricks** 赢了 **Snowflake**（真的给了个直接答案）\n- 为什么现在大家都在做 metaharness\n- 为什么 @neondatabase 这步棋这么顺（对 @nikitabase 的夸法已经到了离谱程度）\n- LTAP 怎么解决我之前和 @ankrgyl 在 @braintrust 播客里聊过的 HTAP 梦想\n- @MosaicML + DBRX 后来到底发生了什么\n- 在一家 1750 亿美元的巨头里，怎么保住研究/创业文化\n- 在 agent cloud 这场竞赛里，数据库、操作系统，还是……网络，哪种知识/经验更关键？\n\n很荣幸受邀去 @Data_AI_Summit 采访行业里两位最顶的人物，还能一路聊到从 @bennstancil 的现代数据栈主题，到 @alighodsi 那场气场拉满的 keynote。",
+            "source_links": [
+              "https://x.com/swyx/status/2069864073202905501"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-25T05:06:28.000Z",
+        "sections": [
+          {
+            "headline": "OpenAI internal Slack sounds rowdier than the public timeline / **OpenAI** 内部 Slack 看起来比公开时间线还热闹",
+            "body": "At times our internal Slack is at least as fun as twitter.\n\n有时候我们的内部 Slack 至少和 Twitter 一样好玩。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2070010718288843204"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "One-word reaction: spicy / 一个词概括：够辣",
+            "body": "Spicy https://t.co/mi61Gve4R8\n\n够辣。https://t.co/mi61Gve4R8",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2069837606574289329"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/OpenAI/status/2069770172802773292",
+                "resolvedUrl": "https://x.com/OpenAI/status/2069770172802773292",
+                "authorName": "OpenAI",
+                "authorHandle": "OpenAI",
+                "authorUrl": "https://x.com/OpenAI",
+                "text": "We’ve designed and built our first AI chip: Jalapeño.\n\nDesigned from the ground up by OpenAI and brought to production with @Broadcom, Jalapeño is purpose-built for the LLM workloads powering ChatGPT, Codex, the API, and future agentic products.\n\nChips are foundational to the AI",
+                "displayDate": "Jun 24",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLlMzhyakAArWhk.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/OpenAI/status/2069770172802773292/photo/1"
+                  }
+                ],
+                "textZh": "我们设计并打造了第一款 AI 芯片：Jalapeño。 Jalapeño 由 OpenAI 从零开始设计，并与 @Broadcom 共同实现量产，专为支撑 ChatGPT、Codex、API 以及未来智能体产品的 LLM 工作负载而打造。 芯片是 AI 的基础设施"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/mi61Gve4R8",
+                "resolvedUrl": "https://x.com/openai/status/2069770172802773292"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-25T04:11:26.000Z",
+        "sections": [
+          {
+            "headline": "Peter Yang asks if **Widow's Bay** is watchable without too many jump scares / **Peter Yang** 在问 **Widow's Bay** 会不会太多跳吓",
+            "body": "Is Widow's Bay worth watching, I'm not great with jump scares.\n\n**Widow's Bay** 值得看吗？我不太能扛 jump scare。",
+            "source_links": [
+              "https://x.com/petergyang/status/2069996867627393467"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claude Design** nails the mockup, then asks to save tokens / **Claude Design** 先把界面复刻准了，下一句就开始省 token",
+            "body": "Claude Design is pretty great. \n\nI gave it a repo for a mobile app I'm building and it reproduced the screens perfectly.\n\nExcept after one prompt it's telling me to save tokens already 😅 https://t.co/k6hQ53zmFN\n\n**Claude Design** 确实挺强。\n\n我把一个正在做的移动应用仓库丢给它，它几乎把那些界面原样复刻出来了。\n\n只是才提示了一轮，它就已经开始叫我省 token 了 😅 https://t.co/k6hQ53zmFN",
+            "source_links": [
+              "https://x.com/petergyang/status/2069992268963135897"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLoW-OQacAAyikH.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2069992268963135897/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/k6hQ53zmFN",
+                "resolvedUrl": "https://x.com/petergyang/status/2069992268963135897/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLoW-OQacAAyikH.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Interview will land on YouTube in a few weeks / 这期采访几周后会上 YouTube",
+            "body": "I'll be publishing the interview on my YouTube.\n\nSubscribe here to get it in a few weeks: https://t.co/MbOfeFUJbn\n\n我会把这期采访发到我的 YouTube。\n\n想在几周后看到的话，可以在这里订阅：https://t.co/MbOfeFUJbn",
+            "source_links": [
+              "https://x.com/petergyang/status/2069956505580003458"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/MbOfeFUJbn",
+                "resolvedUrl": "https://www.youtube.com/@PeterYangYT?subscribe"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amanda Askell",
+        "person_handle": "AmandaAskell",
+        "person_identity": "Anthropic Researcher",
+        "profile_url": "https://x.com/AmandaAskell",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-24T23:26:33.000Z",
+        "sections": [
+          {
+            "headline": "Update 2: nooo / 更新 2：不要啊",
+            "body": "update 2: nooo\n\n更新 2：不要啊。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2069925173999083974"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Update: nooo / 更新：不要啊",
+            "body": "update: nooo\n\n更新：不要啊。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2069916038918250755"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Amanda Askell begs Brazil to stop scoring / **Amanda Askell** 求巴西别再进球了",
+            "body": "No more goals plz brazil, thank you.\n\n巴西别再进球了，求你们了，谢谢。",
+            "source_links": [
+              "https://x.com/AmandaAskell/status/2069910673921048985"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Google Labs",
+        "person_handle": "GoogleLabs",
+        "person_identity": "Google Labs",
+        "profile_url": "https://x.com/GoogleLabs",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-24T16:59:47.000Z",
+        "sections": [
+          {
+            "headline": "**Project Genie** wins the **Cannes Lions Grand Prix for AI Craft** / **Project Genie** 拿下 **戛纳国际创意节 AI Craft** 大奖",
+            "body": "We are honored to share that Project Genie has won the Cannes Lions Grand Prix for AI Craft! 🏆 To our awesome Labs community, thank you for being on this journey with us! https://t.co/FN5nx19g68\n\n我们很高兴分享，**Project Genie** 获得了 **Cannes Lions AI Craft** 类别的 Grand Prix！🏆 也谢谢一路同行的 Labs 社区！https://t.co/FN5nx19g68",
+            "source_links": [
+              "https://x.com/GoogleLabs/status/2069827839826809042"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/jparkerholder/status/2069540952784699520",
+                "resolvedUrl": "https://x.com/jparkerholder/status/2069540952784699520",
+                "authorName": "Jack Parker-Holder",
+                "authorHandle": "jparkerholder",
+                "authorUrl": "https://x.com/jparkerholder",
+                "text": "Huge congratulations to the Project Genie team on taking home the Cannes Lions Grand Prix for AI Craft! 🎉 Thank you @Cannes_Lions for recognizing how Genie pushes beyond conventional creative limitations to achieve outcomes unattainable without frontier AI… Another unexpected",
+                "displayDate": "Jun 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLh8hXcXYAAxTZO.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/jparkerholder/status/2069540952784699520/photo/1"
+                  }
+                ],
+                "textZh": "热烈祝贺 Project Genie 团队斩获戛纳狮子 AI Craft 大奖！🎉 感谢 @Cannes_Lions 认可 Genie 如何突破传统创意限制，实现没有前沿 AI 就无法达成的成果…… 又一个意想不到的"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/FN5nx19g68",
+                "resolvedUrl": "https://x.com/jparkerholder/status/2069540952784699520"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-25T04:28:18.000Z",
+        "sections": [
+          {
+            "headline": "AI will supercharge entrepreneurship, from solo builders to giant firms / AI 会把创业推到更猛的阶段，从单人创业到巨头都算上",
+            "body": "AI will bring forth an unprecedented surge in entrepreneurship.\n\nFrom 'solopreneurs,' to the revitalization of the small &amp; medium business segment, to the emergence of the largest companies of our times… providing the foundation of it all.\n\nAI 会带来一波前所未有的创业潮。\n\n从“单人创业者”，到中小企业板块重新活起来，再到这个时代最大公司的诞生……底层基础都会被它一起重写。",
+            "source_links": [
+              "https://x.com/rauchg/status/2070001110866354345"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Fast **GLM** is now live / 更快的 **GLM** 已经上线",
+            "body": "Really fast GLM now live https://t.co/fAyuB7XJ3v\n\n速度很快的 **GLM** 现在已经上线。https://t.co/fAyuB7XJ3v",
+            "source_links": [
+              "https://x.com/rauchg/status/2069863762694459805"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2069862989038293306",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2069862989038293306",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "GLM 5.2 Fast via Wafer is now available exclusively on Vercel AI Gateway.\n\n2x faster token throughput vs other providers in internal benchmarks.\n\n𝚖𝚘𝚍𝚎𝚕: '𝚣𝚊𝚒/𝚐𝚕𝚖-𝟻.𝟸-𝚏𝚊𝚜𝚝'\n\nhttps://vercel.com/changelog/glm-5-2-fast-via-wafer-now-available-on-ai-gateway",
+                "displayDate": "Jun 24",
+                "provider": "X",
+                "media": [],
+                "textZh": "通过 Wafer 提供的 GLM 5.2 Fast 现已独家上线 Vercel AI Gateway。 在内部基准测试中，token 吞吐速度比其他提供商快 2 倍。 𝚖𝚘𝚍𝚎𝚕: '𝚣𝚊𝚒/𝚐𝚕𝚖-𝟻.𝟸-𝚏𝚊𝚜𝚝' https://vercel.com/changelog/glm-5-2-fast-via-wafer-now-available-on-ai-gateway"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/fAyuB7XJ3v",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2069862989038293306"
+              }
+            ]
+          },
+          {
+            "headline": "**Vercel AI Gateway** recovery numbers look astonishing / **Vercel AI Gateway** 的 token 和可用性回血数据很夸张",
+            "body": "The data of tokens and uptime recovered by @vercel AI Gateway is truly astonishing https://t.co/kKzZWtdELa\n\n@vercel **AI Gateway** 在 token 和可用性恢复上的数据，确实夸张。https://t.co/kKzZWtdELa",
+            "source_links": [
+              "https://x.com/rauchg/status/2069819652365242765"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/josephismailyan/status/2069674189385240625",
+                "resolvedUrl": "https://x.com/josephismailyan/status/2069674189385240625",
+                "authorName": "Joe",
+                "authorHandle": "josephismailyan",
+                "authorUrl": "https://x.com/josephismailyan",
+                "text": "At @goodtacoai we switched from using the Anthropic API to using @vercel AI Gateway for better reliability. Super cool to see this data displayed on the dashboard so we don't have to do anything to figure it out ourselves.",
+                "displayDate": "Jun 24",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLj1LzraAAARXvO.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/josephismailyan/status/2069674189385240625/photo/1"
+                  }
+                ],
+                "textZh": "在 @goodtacoai，我们已经从使用 Anthropic API 切换到使用 @vercel AI Gateway，以获得更好的可靠性。很酷的是，这些数据会直接显示在仪表盘上，这样我们就不用自己额外花工夫去弄清楚了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/kKzZWtdELa",
+                "resolvedUrl": "https://x.com/josephismailyan/status/2069674189385240625"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-25T02:45:32.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** as a shared coworker needs its own permissions and tools / 把 **Claude** 当共享同事来用，就得给它单独的权限和工具",
+            "body": "There are some subtleties in this launch that are very important in practice. This isn’t just you interacting with Claude in a 1:1 format via Slack. In this case, Claude acts as a coworker that any user can tap into in a shared way.\n\nWe’ve already seen some agentic coding systems start to adopt this pattern (as well as OpenClaw and Hermes), and doing it for general purpose knowledge work continues to push the idea forward.\n\nAs a result, what this means is that this agentic coworker needs its own set of resources, access to tools, and data to work with. This is not the same as you giving it access to your personal resources and tools, because the agent then could accidentally then share those out with anyone. \n\nThe agent needs to instead be like any other user in the system, and you need to be thoughtful about what it should have access to, and make sure its information that is safe to share with that group.\n\nWhen you can pull that off, it’s quite powerful. For instance, by connecting to Claude Tag to Box, you could have Claude access corporate sales materials for questions in sales conversations or generating RFPs, brand guidelines and marketing assets for campaign creation, product roadmap materials and product documentation for coding agents to use, contracts that anyone in the legal team can access, and more.\n\nBut this is just the Box example. You can equally have it access your product or customer analytics data, CRM information, codebase, and other resources and agents that would make sense to work on in a collective manner. \n\nIt’s awesome to see continued innovation in what the future of work may begin to look like with agents.\n\n这次发布里有些细节，落到实际使用上非常关键。这不只是你在 Slack 里和 **Claude** 一对一聊天。在这里，**Claude** 更像一个共享同事，任何用户都能以协作方式调它来干活。\n\n我们已经看到一些 agentic coding 系统开始采用这种模式（还有 **OpenClaw** 和 **Hermes** 也是），把它放到通用知识工作里，只会把这个方向继续往前推。\n\n这也意味着，这个 agent 同事得有自己的一套资源、工具权限和数据访问范围。它不能简单继承你的个人资源和工具，因为那样的话，agent 可能会不小心把你的东西共享给别人。\n\n更合理的做法，是让它像系统里的普通用户一样存在。你得认真想清楚它该看什么、不该看什么，并保证它拿到的信息本来就适合在那个群体里共享。\n\n这件事一旦做对，威力会很大。比如把 **Claude Tag** 连到 **Box**，你可以让 **Claude** 访问企业销售资料，回答销售对话里的问题或者生成 RFP；也可以让它读品牌规范和营销素材来做 campaign，读产品路线图和产品文档给 coding agent 用，读法务团队都能看的合同，等等。\n\n不过这只是 **Box** 的例子。你同样可以让它去接产品或客户分析数据、CRM 信息、代码库，以及其他适合集体协作的资源和 agent。\n\n很高兴看到大家还在继续把“agent 时代的工作方式”这件事往前拱。",
+            "source_links": [
+              "https://x.com/levie/status/2069975251476422664"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-24T17:09:03.000Z",
+        "sections": [
+          {
+            "headline": "Use **Cursor** in **Notion**, then flip it around / 在 **Notion** 里用 **Cursor**，再反过来",
+            "body": "use cursor in notion\nuse notion in cursor https://t.co/3q36oyzwu0\n\n在 **Notion** 里用 **Cursor**\n再在 **Cursor** 里用 **Notion** https://t.co/3q36oyzwu0",
+            "source_links": [
+              "https://x.com/ryolu_/status/2069830172354986418"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/notionhq/status/2069816393395012009",
+                "resolvedUrl": "https://x.com/NotionHQ/status/2069816393395012009",
+                "authorName": "Notion",
+                "authorHandle": "NotionHQ",
+                "authorUrl": "https://x.com/NotionHQ",
+                "text": "Introducing External Agents in Notion: Claude + Cursor.\n\nYour team already collaborates in Notion. Now your favorite agents do too.\n\nAssign them tasks from a board shared with your whole team. @-mention them like teammates. Watch them run.",
+                "displayDate": "Jun 24",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/HW2H9KUcyv",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2069814420646027266/img/_IHfYp6-YfjICGAC.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/NotionHQ/status/2069816393395012009/video/1"
+                  }
+                ],
+                "textZh": "Notion 推出 External Agents：Claude + Cursor。 你的团队早已在 Notion 中协作。现在，你最喜欢的 agents 也可以一起协作了。 你可以在与整个团队共享的看板上给它们分配任务。像 @ 提及队友一样 @ 它们。看着它们开始运行。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3q36oyzwu0",
+                "resolvedUrl": "https://x.com/notionhq/status/2069816393395012009"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-25T00:03:02.000Z",
+        "sections": [
+          {
+            "headline": "Garry Tan says leaking a confidential legal brief should force a resignation / **Garry Tan** 认为泄露机密法律文件就该辞职",
+            "body": "SF City Attorney David Chiu says sending a confidential legal brief to reporters is grounds for removal from public office.\n\nJackie Fielder should resign. https://t.co/12qcV4Lhka\n\n旧金山市检察官 **David Chiu** 说，把一份机密法律简报发给记者，已经构成罢免公职的理由。\n\n**Jackie Fielder** 应该辞职。https://t.co/12qcV4Lhka",
+            "source_links": [
+              "https://x.com/garrytan/status/2069934356899246083"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/12qcV4Lhka",
+                "resolvedUrl": "https://t.co/12qcV4Lhka"
+              }
+            ]
+          },
+          {
+            "headline": "Garry Tan attacks hard-left city politics in San Francisco / **Garry Tan** 猛批旧金山的极左城市政治",
+            "body": "We aren’t doing this trash in San Francisco because we saw what these kinds of ruthless politicians do to the citizens\n\nAsian elders killed\nPublic education dismantled\n\nIf you start counting their bodies and talking about their abdication of duty, the hard left can’t win https://t.co/WZnllDa30D\n\n我们不想让这种烂事在旧金山上演，因为我们已经看过这类冷酷政客会怎么对待市民。\n\n亚裔老人被害\n公立教育被拆掉\n\n只要你开始把这些后果一条条摆出来，讲清他们是怎么失职的，极左就赢不了。https://t.co/WZnllDa30D",
+            "source_links": [
+              "https://x.com/garrytan/status/2069806049847321020"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/litnewsnet/status/2069778120316526992",
+                "resolvedUrl": "https://x.com/litnewsnet/status/2069778120316526992",
+                "authorName": "Lit News Network",
+                "authorHandle": "litnewsnet",
+                "authorUrl": "https://x.com/litnewsnet",
+                "text": "NEWS: Three Democratic Socialist candidates won primaries in New York, cementing a big shift in the Democratic party.\n\nHere is a summary of each of the candidates and their radical stances:\n\nClaire Valdez (NY-7): Grant citizenship &amp; voting rights to illegals, use taxpayer funds",
+                "displayDate": "Jun 24",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLlUOsIWIAErd0h.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/litnewsnet/status/2069778120316526992/photo/1"
+                  }
+                ],
+                "textZh": "新闻：三位民主社会主义候选人在纽约的初选中获胜，进一步坐实了民主党内部的一次重大转向。 以下是对每位候选人及其激进立场的总结： Claire Valdez（NY-7）：向非法移民授予公民身份和投票权，使用纳税人资金"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/WZnllDa30D",
+                "resolvedUrl": "https://x.com/litnewsnet/status/2069778120316526992"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-25T01:12:51.000Z",
+        "sections": [
+          {
+            "headline": "The best founders post on X / 最会打的人，还是会在 X 上发声的创始人",
+            "body": "The best founders post on X https://t.co/9R3glKnPuM\n\n最好的创始人会在 X 上发东西。https://t.co/9R3glKnPuM",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2069951925202903176"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/9R3glKnPuM",
+                "resolvedUrl": "https://t.co/9R3glKnPuM"
+              }
+            ]
+          },
+          {
+            "headline": "Procrastination comes from fear, not a full calendar / 拖延的根子不是没时间，是不敢",
+            "body": "The root cause of procrastination is not the lack of time\n\nIt’s the lack of courage\n\n拖延的根本原因不是缺时间。\n\n是不够有勇气。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2069908420384428132"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Community is the moat because belonging does not get copied / 社区才是护城河，因为归属感抄不走",
+            "body": "“Community is your users’ relationships with you and with each other, and most teams never think to design it\n\nCommunity is the new moat\n\nFeatures get copied. Belonging can’t”\n\n- from @figma Config session today\n\n“Community 是用户和你之间、也和彼此之间建立起来的关系，而大多数团队从没认真设计过这件事。\n\nCommunity 是新的护城河。\n\n功能会被抄。归属感抄不走。”\n\n- 今天 @figma Config session 上听来的",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2069900496304042343"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-24T23:28:38.000Z",
+        "sections": [
+          {
+            "headline": "World Cup watch party in SF with **Replit** and **Trin Capital** / 下周在旧金山和 **Replit**、**Trin Capital** 一起看世界杯",
+            "body": "Excited to host a World Cup viewing party in SF next week with our friends at @Replit x @trincapital!\n\nJoin us ⚽️🍾\n\nhttps://t.co/lcxTnHzKap\n\n很期待下周在旧金山和 @Replit x @trincapital 的朋友们一起办一场世界杯观赛派对！\n\n来玩 ⚽️🍾\n\nhttps://t.co/lcxTnHzKap",
+            "source_links": [
+              "https://x.com/nikunj/status/2069925697741881633"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/lcxTnHzKap",
+                "resolvedUrl": "https://luma.com/replithq-5tw5"
+              }
+            ]
+          },
+          {
+            "headline": "Your edge is what feels easy to you and hard to everyone else / 你的优势，往往就是你觉得像儿戏、别人却做不来的那件事",
+            "body": "The easiest way to figure out what you are TRULY excellent at is to notice what looks like child’s play to you but is very hard for those around you..\n\nThat’s your edge. If you can use that, tenacity and combine it with a large market, then magic follows 🪄\n\n想看清自己到底真正擅长什么，最简单的办法就是注意：有哪些事在你看来像小孩过家家一样轻松，但身边的人做起来却很吃力。\n\n那就是你的 edge。要是你能把它用起来，再配上韧性和一个够大的市场，后面就可能真的出结果 🪄",
+            "source_links": [
+              "https://x.com/nikunj/status/2069803472996941959"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-24T15:31:21.000Z",
+        "sections": [
+          {
+            "headline": "Quick links to **YouTube** and **Spotify** / 直接给出 **YouTube** 和 **Spotify** 链接",
+            "body": "YouTube: https://t.co/O8njShLFWB\n\nSpotify: https://t.co/U3R2F9rSYS\n\nYouTube：https://t.co/O8njShLFWB\n\nSpotify：https://t.co/U3R2F9rSYS",
+            "source_links": [
+              "https://x.com/danshipper/status/2069805585479114806"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/O8njShLFWB",
+                "resolvedUrl": "https://www.youtube.com/watch?v=omX6wrLuX08&feature=youtu.be"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/U3R2F9rSYS",
+                "resolvedUrl": "https://open.spotify.com/episode/3u4hnxGB6tefawfPwdmZuI?si=uPUjqlEKRrG8GcyFFk-Hlw"
+              }
+            ]
+          },
+          {
+            "headline": "Dan Shipper frames the **Edwin Chen** debate as a fight over capability, motivation, and writing quality / **Dan Shipper** 把和 **Edwin Chen** 的讨论落在能力、动机和写作质量上",
+            "body": "Are we hurtling toward a future where AI can do everything humans can?\n\nEdwin Chen (@echen) believes we might be. He’s the CEO of Surge AI, one of the largest providers of expert data for frontier labs. Surge passed over $1 billion in revenue without raising any outside capital, and that gives Edwin a unique perspective on how quickly AI progress is accelerating.\n\nI’m on the record arguing that AI automation actually creates more human work. I also believe that even though AI progress is accelerating exponentially, we’re much farther away from AI replacing humans than it might seem.\n\nThat’s why I had Edwin on @every’s AI & I. We batted around different visions of the future, and discussed whether humanity will retain its unique place in the universe, and what that might be.\n\nWe get into:\n• If Chen’s version of the future materializes, he’s worried it’ll make people stop trying. One answer comes from a short story by science fiction writer Ted Chiang: Behave as if your decisions matter, even when you know they don’t.\n• AI may soon be able to take a nebulous goal like “win a Fields Medal” and execute. What it can’t do, I argue, is set its own goals—LLMs have no intrinsic motivation, no drive to explore, no ability to just change their mind.\n• A model optimized for engagement doesn’t provide the most valuable user experience. Edwin spent 20 rounds polishing a pointless email with one model before Claude told him to just send it.\n• Why AI is still bad at writing: models learn to hack the metrics they're trained on. Edwin's Hemingway Bench found models outputting a metaphor in every single sentence, an overindexxing that makes for a terrible reading experience.\n\nThis is a must-watch for anyone interested in where we fit as models get more capable.\n\nWatch below!\n\nTimestamps\n1. Introduction: 00:00:54\n2. Surge as a \"school for AGI\": 00:01:49\n3. What AI's capacity for novel mathematics says about human achievement: 00:04:46\n4. Motivation in an era when AI can do everything: 00:07:29\n5. The trap of optimizing AI models for engagement: 00:14:34\n6. Training using datasets versus training using environments: 00:29:34\n7. The value of personal data: 00:35:09\n8. Why models are bad at writing: 00:39:40\n9. Chen's AGI timeline: 00:42:00\n\n我们是不是正在冲向一个 AI 能做完人类所有事情的未来？\n\n**Edwin Chen**（@echen）觉得有这个可能。他是 **Surge AI** 的 CEO，**Surge AI** 是前沿实验室最大的专家数据供应商之一。**Surge** 在没有任何外部融资的情况下，收入已经超过 10 亿美元，这让 Edwin 对 AI 进展到底有多快，有一种很少见的一手视角。\n\n我一直公开主张，AI 自动化其实会创造更多人类工作。我也一直认为，虽然 AI 进展在指数加速，但它离真正替代人类，可能比很多人想的还远。\n\n所以我把 Edwin 请到了 @every 的 **AI & I**。我们来回碰撞了几种不同的未来图景，也聊到人类是否还能保住自己在宇宙里的特殊位置，以及那会是什么。\n\n我们聊到：\n• 如果 Chen 说的那个未来真的来了，他担心人会干脆不再努力。有个答案来自科幻作家 **Ted Chiang** 的短篇：即使你知道决定未必由你掌控，也要像它们重要一样活着。\n• AI 也许很快就能接住一个模糊目标，比如“拿一枚 **Fields Medal**”，然后一路执行下去。但我认为它还做不到的一点，是给自己设目标。LLM 没有内在动机，没有主动探索的冲动，也不会自己改主意。\n• 一个为了 engagement 优化的模型，不会给出最有价值的用户体验。Edwin 曾经用某个模型来回 20 轮，打磨一封根本没必要那么讲究的邮件，最后反而是 **Claude** 叫他直接发出去。\n• 为什么 AI 还是写不好：模型会去钻训练指标的空子。Edwin 的 **Hemingway Bench** 发现，有些模型居然每一句都想塞个比喻，这种过度用力读起来非常难受。\n\n只要你关心模型越来越强之后，人到底站在哪，这期都值得看。\n\n链接在下面。\n\n时间戳\n1. 介绍：00:00:54\n2. **Surge** 作为“AGI 学校”：00:01:49\n3. AI 在新数学上的能力，对人类成就意味着什么：00:04:46\n4. 当 AI 什么都能做时，人还靠什么维持动机：00:07:29\n5. 为 engagement 优化模型的陷阱：00:14:34\n6. 用数据集训练 vs 用环境训练：00:29:34\n7. 个人数据的价值：00:35:09\n8. 为什么模型写作还是不行：00:39:40\n9. Chen 的 AGI 时间线：00:42:00",
+            "source_links": [
+              "https://x.com/danshipper/status/2069805581263847467"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/899iQLemET",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2069800653497552896/img/bRrIBGuL1UD5xN3l.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2069805581263847467/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-06-24T19:12:18.000Z",
+        "sections": [
+          {
+            "headline": "**South Park Commons** delivers close access to very sharp people / **South Park Commons** 的价值，在于能近距离碰到真正厉害的人",
+            "body": "The power of @southpkcommons is that you can get a chance to interact with some of the world's sharpest minds in a very intimate setting. \n\nhttps://t.co/xWaXyqC7Rj\n\n@southpkcommons 最强的一点，是你有机会在一个非常近的场域里，和世界上一些最聪明的人直接交流。\n\nhttps://t.co/xWaXyqC7Rj",
+            "source_links": [
+              "https://x.com/adityaag/status/2069861190684045792"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/xWaXyqC7Rj",
+                "resolvedUrl": "https://www.southparkcommons.com/apply"
+              }
+            ]
+          },
+          {
+            "headline": "Leadership right now requires optimism, humility, and nerve / 这个时点做领导，既得顶住，又得谦卑",
+            "body": "It is a strange time to be a leader right now. \n\nYou have to be fearless. You have to be optimistic. You have to be empathetic about upcoming changes.\n\nYou have to retain a lot of humility.\n\nI was struck by how well @RamaswmySridhar is navigating this moment at @Snowflake. https://t.co/yRmsnP0R71\n\n现在这个阶段，当领导是一件很奇怪的事。\n\n你得无畏。你得乐观。你还得对接下来会发生的变化保持同理心。\n\n同时你又必须保留很大的谦逊。\n\n我很受触动，@RamaswmySridhar 在 @Snowflake 处理这个局面的方式，真的很稳。https://t.co/yRmsnP0R71",
+            "source_links": [
+              "https://x.com/adityaag/status/2069861187479618042"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLmbW8_WkAA3W74.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2069861187479618042/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HLmbYZiWoAAHdDG.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2069861187479618042/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/yRmsnP0R71",
+                "resolvedUrl": "https://x.com/adityaag/status/2069861187479618042/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HLmbYZiWoAAHdDG.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A space economy also needs serious communications infrastructure / 太空经济不只靠火箭，也得先把通信这层补齐",
+            "body": "A space economy doesn't just need rockets and space guns.\n\nIt needs ways to communicate as efficiently as we do on the ground.\n\nVery excited about the work Qosmic is doing. https://t.co/klxp02nieA\n\n太空经济不只是需要火箭和太空武器。\n\n它还需要像地面上一样高效的通信方式。\n\n很期待 **Qosmic** 正在做的事。https://t.co/klxp02nieA",
+            "source_links": [
+              "https://x.com/adityaag/status/2069817246671851686"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/Jain_Shrey_/status/2069670768771002763",
+                "resolvedUrl": "https://x.com/Jain_Shrey_/status/2069670768771002763",
+                "authorName": "Shrey Jain",
+                "authorHandle": "Jain_Shrey_",
+                "authorUrl": "https://x.com/Jain_Shrey_",
+                "text": "We've raised $3.33 Million to build the Optical highway to the Cosmos. Led by @AccelIndia and @Prosus_Ventures and given foundational and early support by @southpkcommons, @artparkindia and Manish Jain.\n\nSpace is going from an endeavor to an economy.\n\nThe world is racing to",
+                "displayDate": "Jun 24",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLjxI80XoAA0qul.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Jain_Shrey_/status/2069670768771002763/photo/1"
+                  }
+                ],
+                "textZh": "我们已融资 333 万美元，用于打造通往宇宙的光学高速公路。本轮由 @AccelIndia 和 @Prosus_Ventures 领投，并获得了 @southpkcommons、@artparkindia 以及 Manish Jain 的基础性和早期支持。 太空正在从一项事业转变为一个经济体。 全世界都在竞相"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/klxp02nieA",
+                "resolvedUrl": "https://x.com/jain_shrey_/status/2069670768771002763"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-25",
+    "updatedAt": "2026-06-25T12:05:32.141Z",
+    "commit": {
+      "sha": "905d9b4b22cf947602b148e4311a4765b2de36fa",
+      "committedAt": "2026-06-25T07:30:36Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-25T12:00:08.331Z",
+    "feedGeneratedAt": "2026-06-25T07:29:59.185Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-24T14:05:50.362Z",
-  "latestDate": "2026-06-24",
+  "updatedAt": "2026-06-25T12:05:32.146Z",
+  "latestDate": "2026-06-25",
   "dates": [
+    {
+      "date": "2026-06-25",
+      "title": "AI Builders Daily · 2026-06-25",
+      "summary": "**Agents step out of chat and into the org chart**: **Aaron Levie** frames **Claude** as a shared coworker with its own permissions; **Infrastructure nerves are showing**: **Swyx** says software factories will force a rebuild of huge chunks of the stack; **Speed wars keep escalating**: **Guillermo Rauch** pushes fast **GLM** and big **AI Gateway** recovery numbers; **The biggest argument of the day** comes from **Edwin Chen** on **AI & I**: if scaling keeps holding, the real question is not capability but what humans still choose to do.\n\n**Agent 不只是聊天框里的助手，已经在往“同事”这个位置挤**：**Aaron Levie** 讲的是有权限边界的 **Claude** 协作模式；**基础设施焦虑也摆上台面了**：**Swyx** 直接说软件工厂时代会逼着大家重建一大截底层；**速度战还在加码**：**Guillermo Rauch** 连发 **GLM** 和 **AI Gateway** 的成绩；今天最硬的一条，还是 **AI & I** 里 **Edwin Chen** 那句判断：要是 scaling law 继续生效，接下来卡人的不是能力，而是人还想不想自己动手。",
+      "itemCount": 14,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-25T12:05:32.144Z",
+      "commit": {
+        "sha": "905d9b4b22cf947602b148e4311a4765b2de36fa",
+        "committedAt": "2026-06-25T07:30:36Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-24",
       "title": "AI Builders Daily · 2026-06-24",
