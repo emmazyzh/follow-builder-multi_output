@@ -1,0 +1,563 @@
+{
+  "payload": {
+    "date": "2026-06-26",
+    "title": "AI Builders Daily · 2026-06-26",
+    "summary": "**Bot traffic just crossed the human line**, and **Cloudflare** says the old ad-funded web may not survive the agent era; **Anthropic** plugged **Claude** into Apple’s Foundation Models stack, pushing a clean on-device-to-cloud handoff; on X, the mood swung from **Codex spreading beyond engineers** and travel-booking agent demos to a louder fight over AI regulation, identity checks, and who gets to control frontier models.\n\n**机器人流量已经压过真人**，**Cloudflare** 直接把话挑明了：靠广告养活互联网这套，碰上 agent 可能真要改写；**Anthropic** 把 **Claude** 接进苹果 Foundation Models，端侧先跑、复杂任务再上云，这条产品线很实在；X 上也挺热闹，一边是 **Codex** 往工程圈外扩、一边是拿它去比价订日本行程，另一边则是 AI 监管、身份验证、前沿模型控制权吵得更凶了。",
+    "items": [
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=UN47z_opfmo",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-25T11:30:00.000Z",
+        "sections": [
+          {
+            "headline": "**Cloudflare** says bots already beat humans online; **Cloudflare** 称机器人流量已超过真人",
+            "body": "**Matt Turck** interviews **Cloudflare** CEO **Matthew Prince** on a sharp inflection point: bot and agent traffic has already passed human traffic in the first half of 2026, much earlier than Cloudflare expected. Prince argues the real pressure is not just more requests, but a different shape of demand, where one user task can trigger thousands of visits by agents. He ties that to a looming infrastructure surge across servers, networks, CPUs, GPUs, and memory, then pushes the bigger claim: the 28-year ad model of the web breaks when bots do the clicking.\n\n**Matt Turck** 这期找来 **Cloudflare** CEO **Matthew Prince**，核心就一句：2026 年上半年，机器人和 agent 流量已经超过真人，而且比他们原先估得快得多。Prince 讲得很直白，麻烦不只是请求变多，而是流量形态变了，同一件事，人类可能点 5 个站，agent 会扫 5000 个。后面连着的是基础设施压力：服务器、网络、CPU、GPU、内存都得往上堆。更狠的一点是，他觉得互联网过去 28 年靠广告吃饭的模型碰上 bot 时代会出问题，因为 bot 根本不点广告。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=UN47z_opfmo"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog/claude-for-foundation-models",
+        "source_label": "Blog",
+        "posted_at": "2026-06-08",
+        "sections": [
+          {
+            "headline": "**Claude** joins Apple Foundation Models in Swift; **Claude** 接进苹果 Foundation Models 的 Swift 工作流",
+            "body": "**Anthropic** announced a new Swift package that lets Apple developers call **Claude** through Apple’s Foundation Models framework. The pitch is straightforward: use Apple’s native on-device models for fast local work like extraction or summarization, then hand off to **Claude** for harder jobs such as multi-step reasoning, code generation, web search, and tool use. Because Apple’s framework can emit typed Swift values, the Claude call starts from structured inputs rather than raw prompt text, with streaming and tool calls flowing back into the same SwiftUI view.\n\n**Anthropic** 发了个新的 Swift 包，让苹果开发者能通过 Apple 的 Foundation Models framework 直接调 **Claude**。思路不绕：轻一点、快一点的事先在端上做，比如提取、摘要；一旦进入多步推理、写代码、查网页、跑工具这类重活，再切给 **Claude**。苹果这套能先产出类型化的 Swift 值，所以传给 Claude 的不是一坨原始用户文本，而是更干净的结构化输入；返回流、工具调用、结构化结果也都能直接回到同一个 SwiftUI 视图里。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-26T04:46:25.000Z",
+        "sections": [
+          {
+            "headline": "Shared a guide on how to book talks / 分享了一个关于如何申请演讲的指南",
+            "body": "this is too late for AIE worlds fair but heres the how to book talks in the first place\n\nhttps://t.co/qoqQVjA7Gu\n\n这对 AIE worlds fair 来说已经晚了，但这是最开始该怎么申请演讲的指南\n\nhttps://t.co/qoqQVjA7Gu",
+            "source_links": [
+              "https://x.com/swyx/status/2070368060918407269"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/qoqQVjA7Gu",
+                "resolvedUrl": "https://t.co/qoqQVjA7Gu"
+              }
+            ]
+          },
+          {
+            "headline": "Asked people to find his SoundCloud / 请大家去找他的 SoundCloud",
+            "body": "@neondatabase @nikitabase @ankrgyl pls find my soundcloud https://t.co/N1apWplUBd\n\n@neondatabase @nikitabase @ankrgyl 请帮我找下我的 SoundCloud https://t.co/N1apWplUBd",
+            "source_links": [
+              "https://x.com/swyx/status/2070286643303715034"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/N1apWplUBd",
+                "resolvedUrl": "https://t.co/N1apWplUBd"
+              }
+            ]
+          },
+          {
+            "headline": "Posted a throwback from three years ago / 翻出了一条三年前的旧内容",
+            "body": "btw this was 3 years ago lmao\nhttps://t.co/DFLutr4yeN\n\n顺带一提，这已经是 3 年前的东西了，笑死\nhttps://t.co/DFLutr4yeN",
+            "source_links": [
+              "https://x.com/swyx/status/2070270074049777942"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/DFLutr4yeN",
+                "resolvedUrl": "https://t.co/DFLutr4yeN"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-26T03:09:13.000Z",
+        "sections": [
+          {
+            "headline": "Praised a product update / 称赞了一次产品更新",
+            "body": "It's a fantastic update https://t.co/v0pQfTO9tJ\n\n这是一次很棒的更新 https://t.co/v0pQfTO9tJ",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2070343597111812414"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/v0pQfTO9tJ",
+                "resolvedUrl": "https://t.co/v0pQfTO9tJ"
+              }
+            ]
+          },
+          {
+            "headline": "**Codex App** pushed adoption beyond engineers / **Codex App** 把采用范围推到了工程圈外",
+            "body": "February 2nd was the release of the Codex App. You can see what it did to adoption outside of engineering.\n\n👀 @ajambrosino\n\n2 月 2 日是 **Codex App** 的发布时间。你可以看到它对工程圈外采用率带来了什么变化。\n\n👀 @ajambrosino",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2070205719501254860"
+            ]
+          },
+          {
+            "headline": "**Codex** is spreading across **OpenAI** / **Codex** 正在 **OpenAI** 内部全面铺开",
+            "body": "Codex for everything at OpenAI https://t.co/6mFz5XQiJd https://t.co/dQvCwSYGsp\n\n**OpenAI** 里处处都在用 **Codex** https://t.co/6mFz5XQiJd https://t.co/dQvCwSYGsp",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2070205520552886305"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/6mFz5XQiJd",
+                "resolvedUrl": "https://t.co/6mFz5XQiJd"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/dQvCwSYGsp",
+                "resolvedUrl": "https://t.co/dQvCwSYGsp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-26T03:49:21.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** used the browser to price a Japan trip / 用 **Codex** 加浏览器把日本行程价格都扒出来了",
+            "body": "I'm planning to go to Japan (again!) in December and this time I asked Codex to use the browser to navigate Google Flights and individual hotel websites, find and save all the prices, give me the direct booking links on the dates that I want + save it all in a doc.  I should just tell it to book everything next.\n\n我打算 12 月再去一次日本，这次我让 **Codex** 用浏览器去跑 **Google Flights** 和各家酒店官网，把价格都找出来存好，把我要日期的直订链接给我，再顺手整理进文档。下一步我干脆直接让它全订了算了。",
+            "source_links": [
+              "https://x.com/petergyang/status/2070353698140958818"
+            ]
+          },
+          {
+            "headline": "Says identity checks are coming to model access / 认为模型访问很快会接上身份验证",
+            "body": "lol this is pretty insane but I'm not surprised\n\nIdentity verification 100% coming to model access https://t.co/3EWlT73eno\n\n笑死，这事挺离谱，但我一点也不意外\n\n模型访问 100% 会接上身份验证 https://t.co/3EWlT73eno",
+            "source_links": [
+              "https://x.com/petergyang/status/2070352201944625405"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/3EWlT73eno",
+                "resolvedUrl": "https://t.co/3EWlT73eno"
+              }
+            ]
+          },
+          {
+            "headline": "Wants easier mobile access to **Codex** / 觉得手机上直接用 **Codex** 还是太绕",
+            "body": "Feels pretty weird that I can only directly access Codex on mobile through this random iPhone shortcut I made.\n\n(yes I know I can use chatgpt but that takes too many taps) https://t.co/4XZFe5yBKl\n\n感觉挺怪的，我现在在手机上想直接用 **Codex**，居然只能靠我自己做的这个随机 iPhone 快捷指令。\n\n（对，我知道也可以用 chatgpt，但点的步骤太多了） https://t.co/4XZFe5yBKl",
+            "source_links": [
+              "https://x.com/petergyang/status/2070318195190464538"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/4XZFe5yBKl",
+                "resolvedUrl": "https://t.co/4XZFe5yBKl"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Anthropic Engineer",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-06-25T20:13:19.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** even edited the video / 连视频也是 **Claude** 剪的",
+            "body": "this video was also edited by Claude :)\n\n这个视频也是 **Claude** 剪的 :)",
+            "source_links": [
+              "https://x.com/trq212/status/2070238932621811713"
+            ]
+          },
+          {
+            "headline": "Asked for questions on **Claude Tag** talks / 为 **Claude Tag** 相关分享征集问题",
+            "body": "I'll be talking more about Claude Tag with @petergyang and at AIE with @_catwu. \n\nLet me know if there's anything you'd like us to dive into more! https://t.co/VV76M9OO1a\n\n我会和 @petergyang 继续聊 **Claude Tag**，也会在 AIE 跟 @_catwu 一起讲。\n\n如果有你想让我们再往深里聊的内容，告诉我！ https://t.co/VV76M9OO1a",
+            "source_links": [
+              "https://x.com/trq212/status/2070238581147455842"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/VV76M9OO1a",
+                "resolvedUrl": "https://t.co/VV76M9OO1a"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-25T17:36:49.000Z",
+        "sections": [
+          {
+            "headline": "Teased major mobile app updates / 预告移动端应用将有大更新",
+            "body": "Major updates to mobile app coming soon! https://t.co/B31NRjITgD\n\n移动端应用的大更新很快就来！ https://t.co/B31NRjITgD",
+            "source_links": [
+              "https://x.com/amasad/status/2070199548694437957"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/B31NRjITgD",
+                "resolvedUrl": "https://t.co/B31NRjITgD"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-25T20:29:57.000Z",
+        "sections": [
+          {
+            "headline": "**Next.js** error fixes now ship with copyable prompts / **Next.js** 修错提示现在直接带可复制 prompt",
+            "body": "Next.js \"Ways to fix this\" with \"Copy prompt\" buttons is a work of (agentic) art https://t.co/PXkYglrT1y\n\n**Next.js** 里那个带 “Copy prompt” 按钮的 “Ways to fix this”，简直是（agentic）艺术品 https://t.co/PXkYglrT1y",
+            "source_links": [
+              "https://x.com/rauchg/status/2070243120546218000"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/PXkYglrT1y",
+                "resolvedUrl": "https://t.co/PXkYglrT1y"
+              }
+            ]
+          },
+          {
+            "headline": "Shared how coding agents learn design standards / 分享如何把设计标准灌进编码 agent",
+            "body": "How we imbue coding agents with our design standards https://t.co/WhzzouBi4a\n\n我们是怎么把设计标准灌进编码 agent 的 https://t.co/WhzzouBi4a",
+            "source_links": [
+              "https://x.com/rauchg/status/2070241572416078161"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/WhzzouBi4a",
+                "resolvedUrl": "https://t.co/WhzzouBi4a"
+              }
+            ]
+          },
+          {
+            "headline": "**Grok Imagine Video** leads **Vercel AI Gateway** video traffic / **Grok Imagine Video** 成了 **Vercel AI Gateway** 的视频头牌",
+            "body": "Grok Imagine Video has become the clear leader in @vercel AI Gateway, now amounting to ~50% of videos generated by developers 🤯\n\nhttps://t.co/xqgzenfoVu https://t.co/Bnw3pMIdil\n\n**Grok Imagine Video** 已经成了 @vercel **AI Gateway** 里的明显第一，现在大概占开发者生成视频的 50% 🤯\n\nhttps://t.co/xqgzenfoVu https://t.co/Bnw3pMIdil",
+            "source_links": [
+              "https://x.com/rauchg/status/2070215849970119090"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/xqgzenfoVu",
+                "resolvedUrl": "https://t.co/xqgzenfoVu"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/Bnw3pMIdil",
+                "resolvedUrl": "https://t.co/Bnw3pMIdil"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-26T04:55:01.000Z",
+        "sections": [
+          {
+            "headline": "Argues AI regulation is a geopolitical prisoner's dilemma / 认为 AI 监管本质上是地缘政治版囚徒困境",
+            "body": "AI regulation is far less simple than it looks. It’s prisoners dilemma at insane scale. \n\nIn theory if all leading AI labs globally agreed to the same process of review and slow down, then we’d get frontier intelligence at similar rates and it diffuses relatively evenly. \n\nIf the US remains at the frontier at all times, and has heavy regulation on the release of intelligence then we end up with an economic and geopolitical edge because we can control who has access to frontier intelligence. \n\nIf we delay model releases, however, and another player - specifically China - doesn’t slow down and has equally strong models (not now but soon?) then our delays end up advantaging their models and eventually their tech stack.\n\nNow, the US could ban these models, but that actually only puts the US at a steeper disadvantage because other countries won’t have those bans. Then, from a relative competitiveness standpoint the US has now fallen behind even though it started in front.\n\nSo, none of this is as simple as it looks. At some point it’s a simple bet of can closed models remain at the frontier in perpetuity or is there a risk of any other player or market catching up or just not falling behind.\n\nAI 监管远没有看上去那么简单。这是一个放大到离谱规模的囚徒困境。\n\n理论上，如果全球主要 AI 实验室都同意走同一套审查和减速流程，那前沿智能的推进速度会比较接近，扩散也会相对均匀。\n\n如果美国始终保持在前沿，同时又对智能的发布实施重监管，那我们就会获得经济和地缘政治优势，因为我们可以控制谁能接触到前沿智能。\n\n但如果我们延迟模型发布，而另一方，尤其是中国，不减速，并且拿出了同样强的模型（现在还没有，但很快？），那我们的延迟最后反而会帮到他们的模型，最终也会帮到他们的技术栈。\n\n美国当然可以禁这些模型，但那实际上只会让美国处在更不利的位置，因为别的国家不会有这些禁令。这样一来，从相对竞争力看，美国明明一开始领先，最后却会落后。\n\n所以这事一点都不简单。说到底，就是在赌：闭源模型能不能一直守住前沿，还是说总会有别的参与者或市场追上来，哪怕不是全面超越，至少也不会掉队。",
+            "source_links": [
+              "https://x.com/levie/status/2070370225271251161"
+            ]
+          },
+          {
+            "headline": "Says de facto AI regulation is already here / 认为事实上的 AI 监管已经落地",
+            "body": "We now have de facto AI regulation. It’s not obvious why from here on out models that have certain levels of capability or are trained on certain compute sizes won’t have to be reviewed by the government before release. \n\nRealistically, as AI models became more and more powerful this was going to be inevitable (I think it’s too early, but here we are). So now it’s mostly just interesting to think about the implications and scenarios from here. A few would be:\n\n* America gets to control who gets access to frontier intelligence and when. This generally works as long as we remain at the frontier at all times and don’t have a risk of being surpassed. At the moment we have a clear lead in frontier intelligence so this is a good bet, but lots of motivated parties would love to change that.\n\n* This likely creates backlog of AI releases which means that we will see less rapid fire back and forth jumps in model progress. Bull/fine case is that we just get bigger step functions per release at a slower rate and we end up at the same point we would have. Bear case is those incremental smaller jumps were necessary for the continued flywheel of innovation. \n\n* Other countries likely have even more incentive to at least hedge their bets with sovereign AI strategies so aren’t dependent on access to US AI all times. Previously this was relatively moot because the alternative wasn’t good enough, but that could change out of necessity and what we’re seeing in China.\n\n* Open weights obviously a big winner here as it becomes what likely sovereign AI gets built out on, and what (for now) can still be released to the market without the same controls. One interesting question would be how regulation eventually extends to open models, which would have its own set of long term consequences.\n\nAnyway some big updates to everyone’s mental models of AI regulation as a result of the capabilities we’re now seeing in AI. Wild times.\n\n我们现在已经有了事实上的 AI 监管。接下来，能力达到某个级别、或者训练算力达到某个规模的模型，发布前为什么不会需要政府审查，这件事并不显然。\n\n现实点说，随着 AI 模型越来越强，这一步本来就迟早会来（我觉得现在还太早，但事情已经到了这一步）。所以现在更值得想的是，接下来会带来哪些影响和情景。比如：\n\n* 美国可以控制谁能在什么时间拿到前沿智能。只要我们始终站在前沿、没有被超掉的风险，这套基本能成立。眼下我们在前沿智能上确实领先，所以这是一笔不错的赌注，但也有很多动力极强的参与者想改写这个局面。\n\n* 这大概率会让 AI 发布排队，意味着模型进展不会再那样高频、来回猛跳。乐观一点看，就是每次发布的台阶更大、频率更慢，最后还是能走到同一个位置。悲观一点看，那些更小、更连续的增量，本来就是创新飞轮继续转下去所必需的。\n\n* 其他国家大概率更有动力押注主权 AI，至少先做对冲，免得一直受制于美国 AI 的可得性。之前这个问题不算太要紧，因为替代方案还不够好；但出于现实需要，再加上中国这边已经发生的事，情况可能会变。\n\n* 开放权重显然是赢家之一，因为主权 AI 很可能会建在这上面，而且目前它也还是能在没有同等控制的情况下放到市场上。更有意思的问题是，监管最终会怎么延伸到开放模型，那会带来另一套长期后果。\n\n总之，AI 现在展现出来的能力，正在迫使大家重画自己脑子里的监管地图。确实挺野。",
+            "source_links": [
+              "https://x.com/levie/status/2070310706369712272"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-25T15:55:23.000Z",
+        "sections": [
+          {
+            "headline": "Backed **Legora** as a standout legal AI startup / 认为 **Legora** 是法律 AI 里的代表玩家",
+            "body": "Legora is the defining legal AI startup https://t.co/jA1iZYyNLM\n\n**Legora** 就是当下最有代表性的法律 AI 创业公司 https://t.co/jA1iZYyNLM",
+            "source_links": [
+              "https://x.com/garrytan/status/2070174023678648673"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/jA1iZYyNLM",
+                "resolvedUrl": "https://t.co/jA1iZYyNLM"
+              }
+            ]
+          },
+          {
+            "headline": "Called **Jarvis-core** the new launch-video meme king / 称 **Jarvis-core** 是新的发布视频梗王",
+            "body": "Jarvis-core is the new most powerful launch video meme  https://t.co/QYIsg04Xiq\n\n**Jarvis-core** 是新的最强发布视频 meme  https://t.co/QYIsg04Xiq",
+            "source_links": [
+              "https://x.com/garrytan/status/2070165863907668426"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/QYIsg04Xiq",
+                "resolvedUrl": "https://t.co/QYIsg04Xiq"
+              }
+            ]
+          },
+          {
+            "headline": "Posted a political take on San Francisco / 发了一条关于旧金山政治的观点",
+            "body": "SF lesson: You need to expose the extremist left in profound ways\n\nThe death of the innocent \nThe breakdown of public safety \nThe downfall of schools\n\nThese are all inevitable in the hands of the inept DSA\n\nIt will be the defining fight for the Dem party https://t.co/1YAP1Y9d6i\n\n旧金山这堂课是：你得用足够直接的方式把极左的问题摊开来讲\n\n无辜者的死亡 \n公共安全的崩坏 \n学校的衰退\n\n这些落到无能的 DSA 手里，都是必然结果\n\n这会成为民主党内部最关键的一场斗争 https://t.co/1YAP1Y9d6i",
+            "source_links": [
+              "https://x.com/garrytan/status/2070101642683543739"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/1YAP1Y9d6i",
+                "resolvedUrl": "https://t.co/1YAP1Y9d6i"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "VC & Podcast Host",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-26T03:30:43.000Z",
+        "sections": [
+          {
+            "headline": "Joked about the USMNT coach hire / 拿美国男足主教练的任命开了个玩笑",
+            "body": "Was truly a transformational decision to hire Russell Crowe as USMNT coach https://t.co/VOXnYG7HzB\n\n请来 Russell Crowe 当美国男足主教练，真是一次改变命运的决定 https://t.co/VOXnYG7HzB",
+            "source_links": [
+              "https://x.com/mattturck/status/2070349010007646700"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/VOXnYG7HzB",
+                "resolvedUrl": "https://t.co/VOXnYG7HzB"
+              }
+            ]
+          },
+          {
+            "headline": "Reacted to Ecuador’s World Cup upset / 感叹厄瓜多尔在世界杯爆冷",
+            "body": "How can you not love the World Cup - MetLife loses its mind as Ecuador pulls off the upset #ECUGER https://t.co/eNDdRpazuq\n\n你怎么可能不爱世界杯，厄瓜多尔爆冷那一下，MetLife 现场直接疯了 #ECUGER https://t.co/eNDdRpazuq",
+            "source_links": [
+              "https://x.com/mattturck/status/2070269902322110786"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/eNDdRpazuq",
+                "resolvedUrl": "https://t.co/eNDdRpazuq"
+              }
+            ]
+          },
+          {
+            "headline": "Promoted his **Cloudflare** conversation with **Matthew Prince** / 推了他和 **Matthew Prince** 的 **Cloudflare** 对谈",
+            "body": "This deep, insightful and often funny conversation with @eastdakota of @Cloudflare is also available on Spotify, Apple Podcasts and here on YouTube:\n\nhttps://t.co/6v0jiVItz3\n\n这场和 @eastdakota 也就是 @Cloudflare 的对话，聊得很深，也经常挺好笑，现在在 Spotify、Apple Podcasts 还有 YouTube 上都能听到：\n\nhttps://t.co/6v0jiVItz3",
+            "source_links": [
+              "https://x.com/mattturck/status/2070201854932250949"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/6v0jiVItz3",
+                "resolvedUrl": "https://t.co/6v0jiVItz3"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Founder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-25T16:52:02.000Z",
+        "sections": [
+          {
+            "headline": "Says audience-building and company-building are converging / 认为做受众和做公司正在变成一回事",
+            "body": "This is a big misconception \n\nSomehow people think building an audience is antithetical to building a company. In fact, they’re increasing becoming the same thing\n\nStorytelling (to users/customers, investors, candidates) is arguably the founder’s most important job\n\nBuilding is getting cheaper, attention is getting more expensive\n\n这是个很大的误解\n\n很多人觉得经营受众和搭公司是对着干的。实际上，这两件事越来越像同一件事\n\n讲故事（讲给用户/客户、投资人、候选人听）可以说是创始人最重要的工作\n\n做产品越来越便宜，注意力越来越贵",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2070188279941738952"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-25T22:09:14.000Z",
+        "sections": [
+          {
+            "headline": "Shared a link / 分享了一个链接",
+            "body": "https://t.co/147qcY6XJC\n\nhttps://t.co/147qcY6XJC",
+            "source_links": [
+              "https://x.com/nikunj/status/2070268106564587840"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/147qcY6XJC",
+                "resolvedUrl": "https://t.co/147qcY6XJC"
+              }
+            ]
+          },
+          {
+            "headline": "Posted a cheerful note from **Tartine Manufactory** / 在 **Tartine Manufactory** 打了个开心的卡",
+            "body": "Coming to Tartine Manufactory always makes me so happy.. even though I come here practically every week 🪴 https://t.co/uhzjyWGR60\n\n每次来 **Tartine Manufactory** 我都还是很开心……哪怕我基本每周都来 🪴 https://t.co/uhzjyWGR60",
+            "source_links": [
+              "https://x.com/nikunj/status/2070180027132768592"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/uhzjyWGR60",
+                "resolvedUrl": "https://t.co/uhzjyWGR60"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenAI Engineer",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-26T03:56:52.000Z",
+        "sections": [
+          {
+            "headline": "Posted a terse “truth” / 简短回了句“truth”",
+            "body": "truth https://t.co/w0v1JLI7f8\n\n说得对 https://t.co/w0v1JLI7f8",
+            "source_links": [
+              "https://x.com/steipete/status/2070355589994336345"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/w0v1JLI7f8",
+                "resolvedUrl": "https://t.co/w0v1JLI7f8"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-25T15:20:52.000Z",
+        "sections": [
+          {
+            "headline": "Added an investor disclosure / 补了一句投资人披露",
+            "body": "Disclosure I am also an investor\n\n披露一下，我也是投资人",
+            "source_links": [
+              "https://x.com/danshipper/status/2070165335534108948"
+            ]
+          },
+          {
+            "headline": "Boosted a stealth AI-first health startup hiring around **Codex** / 转发一家 AI-first 医疗隐身公司招人，连 **Codex-native** 岗位都在找",
+            "body": "One of the smartest people i know, ex-One Medical, ex-Bridgewater founder backed by a16z is building a stealth NYC health-tech company.\n\nHe's doing AI-first medicine with physical clinics\n\nHiring staff+ engineers, physicians who ship product, and a Codex-native Chief of Staff/BizOps lead\n\nYou should email him if you want to work on something like this: every@rungravity.com\n\n我认识的最聪明的人之一，做过 **One Medical**、做过 **Bridgewater**，而且拿了 **a16z** 支持，现在正在纽约做一家隐身中的 health-tech 公司。\n\n他在做的是 AI-first 医疗，但配的是线下诊所\n\n现在在招团队 + 工程师、能做产品的医生，还有一个 **Codex-native** 的 Chief of Staff/BizOps 负责人\n\n如果你想做这种事，可以直接给他发邮件：every@rungravity.com",
+            "source_links": [
+              "https://x.com/danshipper/status/2070158469173256231"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "Investor & Builder",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-25T16:18:48.000Z",
+        "sections": [
+          {
+            "headline": "Says pure software startups now need a heretical view / 认为现在做纯软件创业得有很反常识的判断",
+            "body": "It is stupidly hard to start a pure software company right now.\n\nCustomers don't want software, they want outcomes. So you end up having to do a lot of custom work for them. \n\nAnything horizontal is on a ticking clock.\n\nEvery customer wants to deeply customize.\n\nThere are opportunities.\n\nBut you need to have a very heretical 2-3 year view of the world in order to build something good.\n\n现在做一家纯软件公司，难得离谱。\n\n客户不要软件，他们要结果。所以你最后往往得替他们做很多定制活。\n\n所有横向产品都像挂着倒计时。\n\n每个客户都想深度定制。\n\n机会当然有。\n\n但你得对未来 2 到 3 年有一套很反常识的判断，才有可能做出像样的东西。",
+            "source_links": [
+              "https://x.com/adityaag/status/2070179913647485344"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-26",
+    "updatedAt": "2026-06-26T12:06:01.983Z",
+    "commit": {
+      "sha": "5481df7dfbe4827d8a81b5ef94855bd8aa99c290",
+      "committedAt": "2026-06-26T07:36:57Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-26T12:00:08.860Z",
+    "feedGeneratedAt": "2026-06-26T07:36:20.057Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

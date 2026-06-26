@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-25T12:05:32.146Z",
-  "latestDate": "2026-06-25",
+  "updatedAt": "2026-06-26T12:06:01.992Z",
+  "latestDate": "2026-06-26",
   "dates": [
+    {
+      "date": "2026-06-26",
+      "title": "AI Builders Daily · 2026-06-26",
+      "summary": "**Bot traffic just crossed the human line**, and **Cloudflare** says the old ad-funded web may not survive the agent era; **Anthropic** plugged **Claude** into Apple’s Foundation Models stack, pushing a clean on-device-to-cloud handoff; on X, the mood swung from **Codex spreading beyond engineers** and travel-booking agent demos to a louder fight over AI regulation, identity checks, and who gets to control frontier models.\n\n**机器人流量已经压过真人**，**Cloudflare** 直接把话挑明了：靠广告养活互联网这套，碰上 agent 可能真要改写；**Anthropic** 把 **Claude** 接进苹果 Foundation Models，端侧先跑、复杂任务再上云，这条产品线很实在；X 上也挺热闹，一边是 **Codex** 往工程圈外扩、一边是拿它去比价订日本行程，另一边则是 AI 监管、身份验证、前沿模型控制权吵得更凶了。",
+      "itemCount": 16,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-26T12:06:01.990Z",
+      "commit": {
+        "sha": "5481df7dfbe4827d8a81b5ef94855bd8aa99c290",
+        "committedAt": "2026-06-26T07:36:57Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-25",
       "title": "AI Builders Daily · 2026-06-25",
