@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-26T12:06:01.992Z",
-  "latestDate": "2026-06-26",
+  "updatedAt": "2026-06-28T12:05:05.189Z",
+  "latestDate": "2026-06-28",
   "dates": [
+    {
+      "date": "2026-06-28",
+      "title": "AI Builders Daily · 2026-06-28",
+      "summary": "**Codex** keeps shipping fast, from long-thread handling to a full-on Pets panel; **Claude Code** turns sessions into live private artifacts; a fresh **Training Data** episode argues the next AI edge is not bigger context windows but models that actually learn your company. **Builders are also showing the messy real frontier**: workflow ROI over raw tokens, cybersecurity warnings around agentic systems, and side-project creators proving distribution can outrun formal engineering pedigree.\n\n**今天这波消息挺集中**：**Codex** 连着上新，长线程、导航、Slack 复制这些细节都在补；**Claude Code** 把一次会话直接做成可分享的活页面；**Training Data** 那期聊得也很实在，重点不是塞更多上下文，而是让模型真把团队知识吃进权重里。另一条暗线也很明显：大家开始少聊空泛愿景，多聊钱、漏洞、工作流和真需求，连“我不会手写代码也能做产品”这种事，现在都有人拿结果说话。",
+      "itemCount": 12,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-28T12:05:05.187Z",
+      "commit": {
+        "sha": "c10e8a70fe91d3e4506a8910217a7682f3949a03",
+        "committedAt": "2026-06-28T07:39:28Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-26",
       "title": "AI Builders Daily · 2026-06-26",

@@ -1,0 +1,457 @@
+{
+  "payload": {
+    "date": "2026-06-28",
+    "title": "AI Builders Daily · 2026-06-28",
+    "summary": "**Codex** keeps shipping fast, from long-thread handling to a full-on Pets panel; **Claude Code** turns sessions into live private artifacts; a fresh **Training Data** episode argues the next AI edge is not bigger context windows but models that actually learn your company. **Builders are also showing the messy real frontier**: workflow ROI over raw tokens, cybersecurity warnings around agentic systems, and side-project creators proving distribution can outrun formal engineering pedigree.\n\n**今天这波消息挺集中**：**Codex** 连着上新，长线程、导航、Slack 复制这些细节都在补；**Claude Code** 把一次会话直接做成可分享的活页面；**Training Data** 那期聊得也很实在，重点不是塞更多上下文，而是让模型真把团队知识吃进权重里。另一条暗线也很明显：大家开始少聊空泛愿景，多聊钱、漏洞、工作流和真需求，连“我不会手写代码也能做产品”这种事，现在都有人拿结果说话。",
+    "items": [
+      {
+        "person_name": "Training Data",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=aiR7F4jqjXY",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-24T14:22:00.000Z",
+        "sections": [
+          {
+            "headline": "**Engram** says the next frontier is memory baked into model weights, not endless context stuffing · **Engram** 认为下一步关键是把记忆写进模型权重，不是没完没了地塞上下文",
+            "body": "The latest **Training Data** episode features **Engram** cofounders **Dan Biderman** and **Jessy Lin** making a clear bet: AI systems become more useful when they continually internalize evolving team context instead of relying only on giant prompts, external memory stores, and retrieval at inference time.\n\nThey describe a product direction centered on per-team models trained on workspace data from tools like **Notion**, **Microsoft**, and **Harvey**, using adapters such as **LoRA** and other fine-tuning methods. The pitch is practical: cut token-heavy prompting, reduce repeated re-reading, and let models absorb the norms, priorities, and operating habits of a company.\n\nA standout claim from the discussion is cost and efficiency. The founders argue that internalizing the right knowledge into weights can sometimes shrink inference usage by orders of magnitude, with answers that might take **100 tokens** instead of **100,000**, while still working alongside external tools rather than replacing them.\n\n这期 **Training Data** 请来 **Engram** 联合创始人 **Dan Biderman** 和 **Jessy Lin**，观点很直接：AI 真要更有用，不能只靠超长提示词、外挂记忆库和临时检索，得持续把团队不断变化的上下文吃进模型本身。\n\n他们聊的产品方向也很清楚：基于 **Notion**、**Microsoft**、**Harvey** 这类工作区数据，为团队训练定制模型，技术上会用 **LoRA** 这类适配器和其他微调方法。核心不是炫技，而是少写那种又长又笨重的 prompt，让模型真正懂公司怎么做事、重视什么、哪些规则是默认前提。\n\n节目里最扎眼的一点是效率账。两位创始人认为，把该内化的知识写进权重后，有些任务的推理 token 消耗可以直接差几个数量级，本来要 **100,000 tokens** 才能绕出来的答案，可能 **100 tokens** 就够，而且这不等于抛弃工具，反而是让内化知识和外部工具一起工作。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=aiR7F4jqjXY"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "AI Blog",
+        "profile_url": "https://claude.com/blog/artifacts-in-claude-code",
+        "source_label": "Blog",
+        "posted_at": "Jun 18, 2026",
+        "sections": [
+          {
+            "headline": "**Claude Code** adds live **artifacts** that turn agent sessions into shareable private web pages · **Claude Code** 上线实时 **artifacts**，把 agent 会话直接变成可分享的私有网页",
+            "body": "**Claude Code** has launched **artifacts** in beta for Team and Enterprise, letting a coding session publish its progress as a live visual page. The idea is to convert ongoing work such as PR walkthroughs, incident investigations, dashboards, architecture maps, or release checklists into a browser-viewable artifact that updates in place as the session continues.\n\nThe post emphasizes collaboration and context continuity. Artifacts are built from the full session context, including the codebase, connected tools, and the conversation itself, so a single page can combine source code, monitoring signals, reasoning, and status updates without teams wiring up separate infrastructure.\n\nA notable product constraint is privacy: artifacts are private by default, shareable only within an authenticated organization, and never public. Anthropic positions the feature less as a static export and more as a living operational surface for debugging, reviews, compliance, and cross-functional communication.\n\n**Claude Code** 给 Team 和 Enterprise 用户上了 beta 版 **artifacts**，意思很直白：一次编码会话，不只是跑完就算，而是能顺手产出一个持续更新的可视化页面。PR walkthrough、事故排查、仪表盘、架构图、发布清单，这些都能直接在浏览器里看，而且会随着会话推进原地刷新。\n\n这篇博客最想打的点不是“好看”，而是协作省事。artifact 会吃进整段会话上下文，包括代码库、连接过的工具和对话本身，所以一页里就能同时看到代码、监控信号、推理过程和最新状态，不用再自己拼一堆系统。\n\n还有个边界说得很明确：这玩意默认私有，只能在已认证的组织内分享，不能公开。Anthropic 给它的定位也不是一次性导出页面，而是一个会跟着工作一起长出来的操作界面，适合拿来做排障、评审、合规和跨团队同步。",
+            "source_links": [
+              "https://claude.com/blog/artifacts-in-claude-code"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-27T22:58:30.000Z",
+        "sections": [
+          {
+            "headline": "Membership applications open for companies and creators · 面向公司和创作者的会员申请已开放",
+            "body": "Memberships for companies and creative individuals.\n\nApply here please!\n\nhttps://t.co/1KsUVktzU0\n\n面向公司和有创意的个人开放会员申请。\n\n请在这里申请！\n\nhttps://t.co/1KsUVktzU0",
+            "source_links": [
+              "https://x.com/swyx/status/2071005276644553091"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/1KsUVktzU0",
+                "resolvedUrl": "https://t.co/1KsUVktzU0"
+              }
+            ]
+          },
+          {
+            "headline": "Impromptu **AI Engineer** preshow floor tour and AMA · 即兴 **AI Engineer** 预热场馆导览和 AMA",
+            "body": "impromptu ai engineer preshow floor tour and AMA https://t.co/Jjo8Ai7aHh\n\n即兴的 AI Engineer 预热场馆导览和 AMA：https://t.co/Jjo8Ai7aHh",
+            "source_links": [
+              "https://x.com/swyx/status/2070971772548366788"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/Jjo8Ai7aHh",
+                "resolvedUrl": "https://t.co/Jjo8Ai7aHh"
+              }
+            ]
+          },
+          {
+            "headline": "Open-model evals should compare by dollar inference, not just token counts · 开源模型评测该按推理美元成本比，不该只看 token 数",
+            "body": "An interesting way to take Noam at his word in regards to always keeping a constant inference budget for any eval reporting -\n\nis that open models have a lot more dollar per token mileage than closed model APIs. So anyone launching an open model today or situationally incentivized toward open models should obviously report thinking levels measured by dollar inference on popular inference providers, instead of by number of tokens on the x axis\n\n如果认真按 Noam 的说法，在任何评测汇报里都保持恒定的推理预算，一个挺有意思的做法是：\n\n开源模型在“每个 token 对应多少美元成本”这件事上，比闭源模型 API 划算得多。所以今天任何发布开源模型的人，或者在特定场景下有动力推开源模型的人，显然都应该按主流推理服务商上的美元推理成本来报告思考水平，而不是在横轴上只放 token 数。",
+            "source_links": [
+              "https://x.com/swyx/status/2070949306060931312"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-28T04:32:24.000Z",
+        "sections": [
+          {
+            "headline": "Sol operating **Codex** vibes, circa 2026 · 2026 年操作 **Codex** 的 Sol 气质",
+            "body": "Sol when operating Codex. Circa 2026 https://t.co/bOCl1QB56x\n\n操作 Codex 时的 Sol。大概就是 2026 这味儿。https://t.co/bOCl1QB56x",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2071089307062837744"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/bOCl1QB56x",
+                "resolvedUrl": "https://t.co/bOCl1QB56x"
+              }
+            ]
+          },
+          {
+            "headline": "Talking to plants is now a **Codex** use case · 跟植物说话现在也能算 **Codex** 用例",
+            "body": "Talking to your plants isn't weird anymore. You can just codex things. https://t.co/RUAI7w1oPO\n\n现在跟你的植物说话也不奇怪了。你完全可以直接 codex 一下。https://t.co/RUAI7w1oPO",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2071077932244570112"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/RUAI7w1oPO",
+                "resolvedUrl": "https://t.co/RUAI7w1oPO"
+              }
+            ]
+          },
+          {
+            "headline": "**Codex** ships long-thread fixes, better settings, Slack markdown copy, and a Pets panel · **Codex** 更新长线程、设置搜索、Slack Markdown 复制，还有 Pets 面板",
+            "body": "Tons of improvements landed in Codex. \n\n- Handles super long threads smoothly. \n- Hoverable navigation rail for previewing and jumping between turns that feels just right. \n- Settings search covers more controls, with clearer appearance and host-filtering options and easier-to-find custom-provider settings. \n- Zoom-level changes no longer misalign tooltips, dialogs, menus, selection bubbles, drag previews, or autocomplete. \n- Copying into Slack preserves Markdown formatting such as bullets, bold text, code, and links; and large text pastes no longer freeze the UI.\n- And most importantly: a dedicated Pets panel.\n\nCodex 上线了一大堆改进。\n\n- 超长线程现在能更顺地处理了。\n- 新的悬浮导航栏可以预览并跳转不同回合，手感刚好。\n- 设置搜索覆盖了更多选项，外观和 host 过滤更清楚，自定义 provider 设置也更容易找。\n- 缩放级别变化不会再把 tooltip、对话框、菜单、选择气泡、拖拽预览或自动补全弄歪。\n- 复制到 Slack 时会保留 Markdown 格式，比如项目符号、粗体、代码和链接；大段文本粘贴也不会再把 UI 卡死。\n- 最重要的是：现在有独立的 Pets 面板了。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2071071289247244481"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Creator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-28T03:44:57.000Z",
+        "sections": [
+          {
+            "headline": "Messi admiration, no notes · **Messi** 封神，没什么好补充的",
+            "body": "Messi is so goated damn\n\nMessi 真的太封神了，离谱。",
+            "source_links": [
+              "https://x.com/petergyang/status/2071077367720862021"
+            ]
+          },
+          {
+            "headline": "Escalation frameworks fail when people hide a live fire too long · 真着火的时候，层级框架挡不住拖延和失声",
+            "body": "There's just one small problem with this framework:\n\nIf you wait till level 5 or whatever to tell other people that there's a problem when there's been a burning fire for days and your \"solution\" actually didn't fix the problem at all, you're 100% in a worse situation than someone who is level 1 and just told other people about the problem right away and found a solution together.\n\nThere's no black and white to this stuff, everything has nuance.\n\n这个框架只有一个小问题：\n\n如果已经连续烧了好几天的大火，你却一直拖到 level 5 之类的时候才告诉别人有问题，而且你的“解决方案”其实根本没把问题解决，那你绝对比一个 level 1、第一时间就把问题说出来并和别人一起找到解法的人，处境更差。\n\n这类事情从来不是非黑即白，里面全是细微差别。",
+            "source_links": [
+              "https://x.com/petergyang/status/2071058953115767275"
+            ]
+          },
+          {
+            "headline": "A personal **Hermes** health-check stack pulls from **Withings**, **Fitbit**, **Google Health**, and a custom **MCP** app · 个人 **Hermes** 健康检查栈接入 **Withings**、**Fitbit**、**Google Health** 和自建 **MCP** 应用",
+            "body": "Every Saturday, Hermes sends me a health check email with top takeaways and stats to help me work toward my health goals by pulling data from:\n\n→ My smart scale via the Withings API\n→ My Fitbit and Google Health\n→ An MCP server and mobile fitness app I vibe coded to track my workouts\n\nI find this super useful, even if my body fat is going the wrong way 😅\n\nI talk about how to do this in my Hermes tutorial here: https://t.co/p0BDhL6PAp\n\nShould I make another video on building my fitness app?\n\n每周六，Hermes 都会给我发一封健康检查邮件，里面有重点结论和统计数据，帮我朝健康目标推进。它会拉取这些来源的数据：\n\n→ 通过 **Withings API** 接入我的智能体重秤\n→ 我的 **Fitbit** 和 **Google Health**\n→ 一个我用 vibe coding 做出来、用来记录训练的 **MCP** server 和移动健身应用\n\n我觉得这个东西特别有用，哪怕我的体脂走势不太对劲 😅\n\n我在这个 Hermes 教程里讲了怎么做：https://t.co/p0BDhL6PAp\n\n我要不要再做一期视频，专门讲我这个健身 app 的搭建？",
+            "source_links": [
+              "https://x.com/petergyang/status/2070906940352520477"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/p0BDhL6PAp",
+                "resolvedUrl": "https://t.co/p0BDhL6PAp"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-06-27T18:15:10.000Z",
+        "sections": [
+          {
+            "headline": "Link-only post from **Nan Yu** · **Nan Yu** 只发了一个链接",
+            "body": "https://t.co/1TemOEJkVm\n\nhttps://t.co/1TemOEJkVm",
+            "source_links": [
+              "https://x.com/thenanyu/status/2070933976072532042"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/1TemOEJkVm",
+                "resolvedUrl": "https://t.co/1TemOEJkVm"
+              }
+            ]
+          },
+          {
+            "headline": "A terse “Oh” with a link says the rest · 一个 “Oh” 加链接，意思自己体会",
+            "body": "Oh https://t.co/qYcqwye4HN\n\nOh https://t.co/qYcqwye4HN",
+            "source_links": [
+              "https://x.com/thenanyu/status/2070863699921793481"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/qYcqwye4HN",
+                "resolvedUrl": "https://t.co/qYcqwye4HN"
+              }
+            ]
+          },
+          {
+            "headline": "If 90% of problems aren’t worth solving, level 1 and level 6 look pretty similar · 如果 90% 的问题都不值得解，那 level 1 和 level 6 其实差不多",
+            "body": "If 90% of problems you bump into aren’t worth solving, then level 1 and level 6 are 90% the same\n\nhttps://t.co/CVozReRLVR\n\n如果你遇到的 90% 问题都不值得解决，那 level 1 和 level 6 在 90% 的情况下其实差不多。\n\nhttps://t.co/CVozReRLVR",
+            "source_links": [
+              "https://x.com/thenanyu/status/2070821322901397645"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/CVozReRLVR",
+                "resolvedUrl": "https://t.co/CVozReRLVR"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-28T04:17:59.000Z",
+        "sections": [
+          {
+            "headline": "**Guillermo Rauch** buys a domain for clean family email handles · **Guillermo Rauch** 买下域名，给孩子准备干净邮箱地址",
+            "body": "I now own https://t.co/I2grp6UkeV. Excited to give my children clean email handles. Domains are awesome. The internet is awesome.\n\n我现在拥有 https://t.co/I2grp6UkeV 了。很期待给我的孩子们配上干净的邮箱地址。域名很棒，互联网也很棒。",
+            "source_links": [
+              "https://x.com/rauchg/status/2071085680017773046"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/I2grp6UkeV",
+                "resolvedUrl": "https://t.co/I2grp6UkeV"
+              }
+            ]
+          },
+          {
+            "headline": "**Mythos / Sol** cyber capability cuts both ways, and frontier-model security testing should start now · **Mythos / Sol** 的网络安全能力双向可用，前沿模型安全测试现在就该做",
+            "body": "Mythos / Sol cybersecurity capabilities are equally useful in an offensive as well a defensive capacity.\n\nIf adversaries get ahold of an equivalent offensive capability, it poses a serious threat to US companies that remain unaware of latent vulnerabilities.\n\nIn the meantime, I strongly recommend running deepsec[1] or similar harnesses with the available frontier models.\n\n[1] https://t.co/Wh4QVGDFnm\n\n**Mythos / Sol** 的网络安全能力，不管做进攻还是防守都一样有用。\n\n如果对手拿到同等级的进攻能力，那些还没意识到自己存在潜在漏洞的美国公司，就会面临相当严重的威胁。\n\n在这期间，我强烈建议用现有的前沿模型跑一下 **deepsec**[1] 或类似的测试 harness。\n\n[1] https://t.co/Wh4QVGDFnm",
+            "source_links": [
+              "https://x.com/rauchg/status/2071047674187714830"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/Wh4QVGDFnm",
+                "resolvedUrl": "https://t.co/Wh4QVGDFnm"
+              }
+            ]
+          },
+          {
+            "headline": "A quick snapshot: me and my agents · 一张图概括：我和我的 agents",
+            "body": "Me and my agents https://t.co/z3FIH7doEH\n\n我和我的 agents https://t.co/z3FIH7doEH",
+            "source_links": [
+              "https://x.com/rauchg/status/2070982746080715052"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/z3FIH7doEH",
+                "resolvedUrl": "https://t.co/z3FIH7doEH"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-27T18:30:37.000Z",
+        "sections": [
+          {
+            "headline": "Applied AI wins by understanding the work beneath token optimization · 应用层 AI 的胜负手，不只是省 token，而是真的懂业务本身",
+            "body": "Some good best practices here on AI token cost optimization. None of these happens though without a deep understanding of the underlying work being done in a non-abstract way.\n\nThe ultimate implication is that a layer between the work itself and the underlying intelligence needs to deeply understand your workflows, context, and business process. Now, each individual company doing this on their own is unlikely to be effective at scale, so as a consequence, this is effectively the playbook for any applied AI company right now. \n\nBy evaling the models for the applied use cases, deeply understanding the domain, having tuned UX and features for the use case, and having the ability to support adoption and change (via FDEs), allow this layer to add a ton of value. And as a result, enterprises get higher ROI because you actually can get *more* intelligence per dollar by having optimal architecture and workflows.\n\nThere will be many horizontal and vertical versions of this approach. Huge opportunity right now.\n\n这里有一些不错的 AI token 成本优化最佳实践。但如果你不以一种不抽象的方式真正理解底层工作本身，这些都落不下来。\n\n最终的含义是，在具体工作和底层智能之间，必须有一层东西，真正理解你的工作流、上下文和业务流程。每家公司各自单打独斗去做这件事，规模化上大概率都不太行，所以这基本就是当下所有应用层 AI 公司的打法。\n\n通过围绕具体应用场景评测模型、把领域吃透、把对应的 UX 和功能调好，再加上能推动采用和变更管理（比如靠 FDEs），这一层就能创造很大价值。结果就是，企业能拿到更高 ROI，因为通过更优的架构和工作流，你真的能让每一美元换来更多智能。\n\n这种方法会有很多横向和垂直版本。眼下机会很大。",
+            "source_links": [
+              "https://x.com/levie/status/2070937863806751154"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-28T01:55:06.000Z",
+        "sections": [
+          {
+            "headline": "The World Cup meme flips overnight · 世界杯梗图一夜切换模式",
+            "body": "The World Cup            The World Cup\nuntil now                        starting tomorrow https://t.co/EdMN837FDJ\n\nThe World Cup            The World Cup\n到现在为止                  从明天开始 https://t.co/EdMN837FDJ",
+            "source_links": [
+              "https://x.com/mattturck/status/2071049723276828942"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/EdMN837FDJ",
+                "resolvedUrl": "https://t.co/EdMN837FDJ"
+              }
+            ]
+          },
+          {
+            "headline": "A decade of smart glasses hype ends, again, with polite rejection · 智能眼镜折腾十几年，结果还是被礼貌拒绝",
+            "body": "Smart glasses and goggles, a history:\n\nSilicon Valley, 2013 (Google): “you really want this”\nEveryone: “no we don’t”\n\nSilicon Valley, 2016 (Microsoft): “ok but what if it’s for the enterprise”\nEnterprise: “maybe, but also, no”\n\nSilicon Valley, 2023 (Meta): “ok but what if they look normal and have AI”\nEveryone: “wait… maybe? … Actually, no”\n\nSilicon Valley, 2024 (Apple): “ok but what if it’s $3,499 and covers your whole face”\nEveryone: “absolutely not”\n\nSilicon Valley, 2026 (Snap): “ok but this time for real”\nEveryone: “we admire the persistence but still no”\n\n智能眼镜和头显，一部简史：\n\n硅谷，2013（**Google**）：“你们肯定想要这个”\n所有人：“不，我们不想”\n\n硅谷，2016（**Microsoft**）：“那如果它是给企业用的呢”\n企业：“也许吧，但还是，不要”\n\n硅谷，2023（**Meta**）：“那如果它看起来正常一点，还带 AI 呢”\n所有人：“等等……也许？……还是算了”\n\n硅谷，2024（**Apple**）：“那如果它卖 3,499 美元，还把你整张脸盖住呢”\n所有人：“绝对不要”\n\n硅谷，2026（**Snap**）：“这次真不一样”\n所有人：“我们佩服这份坚持，但还是不要”",
+            "source_links": [
+              "https://x.com/mattturck/status/2070972014945243622"
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Indie Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-28T06:21:37.000Z",
+        "sections": [
+          {
+            "headline": "You don’t need to be an engineer to build side projects with real user pull · 不是工程师，也能做出真有人想用的 side project",
+            "body": "Btw I'm not an engineer; these are all side projects I built for fun. I just love connecting technology with user problems/using it to solve my own pain points, and then telling stories about the products\n\n顺带一提，我不是工程师；这些都是我出于兴趣做的 side projects。我只是很喜欢把技术和用户问题连起来，或者拿它解决自己的痛点，然后再把这些产品的故事讲出来。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2071116793234813272"
+            ]
+          },
+          {
+            "headline": "Project index shared publicly · 公开分享自己的项目合集",
+            "body": "My projects: https://t.co/T4liFJ0k9R\n\n我的项目都在这：https://t.co/T4liFJ0k9R",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2070982170219593904"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/T4liFJ0k9R",
+                "resolvedUrl": "https://t.co/T4liFJ0k9R"
+              }
+            ]
+          },
+          {
+            "headline": "From barely knowing **GitHub** to 10k followers in a year · 一年时间，从几乎不会用 **GitHub** 到 1 万关注",
+            "body": "Last year I barely knew how GitHub worked. Now I have 10k followers on GitHub (and still can't write code by hand). What a year. https://t.co/sl3tjtySh5\n\n去年我几乎还不知道 **GitHub** 怎么用。现在我在 **GitHub** 上已经有 1 万关注者了（而且我还是不会手写代码）。这一年真够离谱。https://t.co/sl3tjtySh5",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2070982013822333007"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/sl3tjtySh5",
+                "resolvedUrl": "https://t.co/sl3tjtySh5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "Seed Investor",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-27T17:31:27.000Z",
+        "sections": [
+          {
+            "headline": "A daily ice-cream eater endorses a beautifully visualized read · 一个几乎天天吃冰淇淋的人，给一篇视觉很强的内容点了赞",
+            "body": "As someone who eats ice cream ~daily, this was SO fun to read.. \n\nAlso, the visuals are absolutely stunning!! https://t.co/4ZelLvM5XS\n\n作为一个几乎每天都吃冰淇淋的人，这篇东西读起来真的太有意思了..\n\n而且它的视觉效果也是真的惊艳！！https://t.co/4ZelLvM5XS",
+            "source_links": [
+              "https://x.com/nikunj/status/2070922974493036773"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/4ZelLvM5XS",
+                "resolvedUrl": "https://t.co/4ZelLvM5XS"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw Builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-28T02:50:12.000Z",
+        "sections": [
+          {
+            "headline": "Access blockage rarely stops determined users · 访问封锁很少真能拦住下定决心的人",
+            "body": "\"History teaches us that access blockage rarely stops determined users.\" https://t.co/fsa6yuEjjs\n\n“历史告诉我们，访问封锁很少能真正阻止下定决心的用户。” https://t.co/fsa6yuEjjs",
+            "source_links": [
+              "https://x.com/steipete/status/2071063588329193551"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/fsa6yuEjjs",
+                "resolvedUrl": "https://t.co/fsa6yuEjjs"
+              }
+            ]
+          },
+          {
+            "headline": "The 52-inch **Dell** loses to dual **Apple XDR** after flicker and wake issues · 52 英寸 **Dell** 最后还是输给双 **Apple XDR**，因为闪烁和唤醒问题太烦",
+            "body": "Got excited about the 52’ Dell, but it requires BetterDisplay hacking to get a usable resolution, but then I get weird flickers and also startup wake issues. [on M4 Max MBP] \n\nSo, Apple wins this round, 2xXDR it is.\n\nhttps://t.co/MpRNpQJE8X\n\n本来对 52 英寸的 **Dell** 很兴奋，但它得靠 **BetterDisplay** 折腾之后才能拿到可用分辨率，结果又遇到奇怪的闪烁和开机唤醒问题。[设备是 **M4 Max MBP**]\n\n所以这一轮还是 **Apple** 赢了，最终就是双 **XDR**。\n\nhttps://t.co/MpRNpQJE8X",
+            "source_links": [
+              "https://x.com/steipete/status/2071034256051097799"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/MpRNpQJE8X",
+                "resolvedUrl": "https://t.co/MpRNpQJE8X"
+              }
+            ]
+          },
+          {
+            "headline": "Apple Car joke refuses to die · **Apple Car** 这个梗看来还没死",
+            "body": "We getting Apple Car after all https://t.co/53qxFyVGRW\n\n看来我们最后还是要等来 Apple Car 了 https://t.co/53qxFyVGRW",
+            "source_links": [
+              "https://x.com/steipete/status/2071017970953052160"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/53qxFyVGRW",
+                "resolvedUrl": "https://t.co/53qxFyVGRW"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-28",
+    "updatedAt": "2026-06-28T12:05:05.183Z",
+    "commit": {
+      "sha": "c10e8a70fe91d3e4506a8910217a7682f3949a03",
+      "committedAt": "2026-06-28T07:39:28Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-28T12:00:10.249Z",
+    "feedGeneratedAt": "2026-06-28T07:38:46.771Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
