@@ -1,0 +1,581 @@
+{
+  "payload": {
+    "date": "2026-06-29",
+    "title": "AI Builders Daily · 2026-06-29",
+    "summary": "**Anthropic** says the real agent question is no longer whether **Claude** can act, but how hard you can cap the blast radius; **OpenAI Codex** spent Sunday in a war room, hard-resetting usage limits while investigating abnormal drain reports; **Lambda** CTO Stephen Balaban argues the GPU glut thesis is still wrong and AI compute remains structurally underbuilt; builders spent the weekend doing what the market rewards now: ship visibly, teach loudly, and prove your work in public.\n\n**Anthropic** 这篇写得很直接：关键早就不是 **Claude** 能不能干活，而是出事时你能把坑圈多小；**OpenAI Codex** 周日开战情室，先给大家把额度重置，再查异常消耗到底从哪来；**Lambda** 的 Stephen Balaban 也没兜圈子，GPU 会过剩这套说法他还是不认，判断是算力依旧不够；剩下的人则把现实讲透了：东西要做，教程要录，页面要摆出来，光写个 **LinkedIn** 已经不顶用了。",
+    "items": [
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=0NttU4CbyVs",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-18T11:30:00.000Z",
+        "sections": [
+          {
+            "headline": "**Lambda** says the GPU bust thesis is wrong, and AI compute is still underbuilt / **Lambda** 认为 GPU 过剩论站不住脚，AI 算力还是没盖够",
+            "body": "Matt Turck interviews **Lambda** cofounder and CTO Stephen Balaban on why AI cloud infrastructure has not turned into a commodity business. Balaban argues neo-clouds win through vertical integration across land, power, construction, orchestration software, and financing, not just GPU rental prices. He also says reported **H100** price declines can be misleading because public on-demand rates and long-term contract rates behave differently.\n\nThe bigger claim is that AI compute is still structurally underbuilt. Balaban says scaling laws continue to hold, model capability keeps widening the addressable market from search and support to software creation, and better efficiency would likely increase total token demand rather than shrink infrastructure needs. He points to land, powered shells, and data-center buildout as the current bottlenecks.\n\nMatt Turck 这期找来 **Lambda** 联合创始人兼 CTO Stephen Balaban，核心就在一句话：AI 云不是低门槛商品生意。Balaban 认为，真正的护城河在整条链路里，从土地、电力、建设，到集群编排软件，再到融资能力，拼的不是一张 GPU 租价表。他还专门提到，外界看到的 **H100** 价格回落，很多时候是统计口径把按需和长期合约混在了一起。\n\n更狠的判断是：现在不是盖多了，而是还没盖够。Balaban 认为扩展定律还没失效，模型越强，市场边界就越往外推，已经从搜索、客服一路逼近软件生产；就算推理和训练效率继续提升，也更可能把 token 消耗拉得更高，而不是让基础设施需求塌掉。眼下真正卡脖子的，还是带电土地、机房壳体和数据中心建设速度。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=0NttU4CbyVs"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "AI Lab Engineering",
+        "profile_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "source_label": "Blog",
+        "posted_at": null,
+        "sections": [
+          {
+            "headline": "**Anthropic** lays out how it contains **Claude** across products / **Anthropic** 公开 **Claude** 在不同产品里的隔离与约束做法",
+            "body": "**Anthropic** argues that as agents gain more access, the central engineering problem becomes limiting damage rather than relying on perfect supervision. The post breaks risk into user misuse, model misbehavior, and external attackers, then maps defense onto three layers: the runtime environment, the model itself, and the external content the agent can ingest. A key takeaway is that human approval prompts do not scale well because users approve most of them, so containment has to carry more of the safety load.\n\nThe piece then walks through product-specific containment patterns for **claude.ai**, **Claude Code**, and **Cowork**. The emphasis is on hard boundaries such as sandboxes, virtual machines, filesystem limits, and egress controls, with the environment acting as the final cap on blast radius when probabilistic model defenses inevitably miss. It is a practical security memo, not a philosophy essay: deploy more capable agents, but only inside tighter boxes.\n\n**Anthropic** 这篇文章把话说得很明白：代理拿到的权限越来越大，工程上最要命的问题已经不是“怎么盯住它每一步”，而是“真出岔子时最多能坏到哪”。文中把风险拆成三类：用户乱来、模型自己跑偏、外部内容或攻击钻进来；对应的防线也分三层：运行环境、模型本身、以及模型能接触到的外部内容。一个很扎眼的数据是，用户会放过绝大多数审批提示，所以指望人工确认兜底，靠不住。\n\n后半段是实操部分，分别讲 **claude.ai**、**Claude Code** 和 **Cowork** 怎么做隔离。重点全在硬边界上：沙箱、虚拟机、文件系统限制、出站控制。文章的潜台词其实很清楚，模型侧防护再强也不是绝对的，最后还得靠环境层把爆炸半径压住。不是空谈安全观，而是一份偏冷硬的部署手册：能力可以放，笼子得更结实。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/how-we-contain-claude"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-29T06:28:33.000Z",
+        "sections": [
+          {
+            "headline": "AIE registration spikes fast / AIE 报名在短时间内猛涨",
+            "body": "we registered 1000 people today. this is what it looked like at hour 3.\n\ntmr and tuesday going to be absolutely batshit https://t.co/GXHMEG7dlN\n\n我们今天报名人数到了 1000。这是第 3 个小时的现场样子。\n\n明天和周二估计会彻底炸锅 https://t.co/GXHMEG7dlN",
+            "source_links": [
+              "https://x.com/swyx/status/2071480924810969331"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HL9g0a0aIAANMOv.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2071480924810969331/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/GXHMEG7dlN",
+                "resolvedUrl": "https://x.com/swyx/status/2071480924810969331/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HL9g0a0aIAANMOv.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Speakers should make their own page / 讲者最好自己把页面做出来",
+            "body": "if youre a speaker make your own https://t.co/eWyUjkEY7F\n\n如果你是讲者，就自己做一个 https://t.co/eWyUjkEY7F",
+            "source_links": [
+              "https://x.com/swyx/status/2071478551950614586"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/eWyUjkEY7F",
+                "resolvedUrl": "https://www.ai.engineer/worldsfair/2026/speaker-announcement-trading-card"
+              }
+            ]
+          },
+          {
+            "headline": "Design engineer track gets a strong opener / 设计工程师分会场找到了很强的开场嘉宾",
+            "body": "because i'm not a design engineer myself, this track is one of the harder ones I struggle to curate.\n\nvery fortunate to befriend Geoff who has lent a hand to the past 2 years of AI UX meetups, and now is the opener for the Design Engineers at AIE! see you wednesday https://t.co/TrqetNnJQB https://t.co/SE8lTOGP7q\n\n因为我自己不是设计工程师，所以这个分会场一直是我比较难策划、也比较费劲的一条线。\n\n很幸运认识了 Geoff，过去两年的 AI UX 聚会他都帮了不少忙，现在他会作为 AIE 设计工程师专场的开场嘉宾！周三见 https://t.co/TrqetNnJQB https://t.co/SE8lTOGP7q",
+            "source_links": [
+              "https://x.com/swyx/status/2071478390172049555"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HL9eOMZbQAAE5e0.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2071478390172049555/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/geoffreylitt/status/2071319131144790064",
+                "resolvedUrl": "https://x.com/geoffreylitt/status/2071319131144790064",
+                "authorName": "Geoffrey Litt",
+                "authorHandle": "geoffreylitt",
+                "authorUrl": "https://x.com/geoffreylitt",
+                "text": "I’m giving a talk this week about why I have my coding agents quiz me on code changes, and how I build micro-worlds to understand what’s going on.\n\nWhat questions / topics should I cover?",
+                "displayDate": "Jun 28",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HL7Nxf0aEAAPdTK.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/geoffreylitt/status/2071319131144790064/photo/1"
+                  }
+                ],
+                "textZh": "这周我要做一个分享，讲讲为什么我会让我的 coding agents 就代码改动来考我，以及我如何构建微型世界来理解到底发生了什么。 我应该涵盖哪些问题 / 话题？"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/TrqetNnJQB",
+                "resolvedUrl": "https://x.com/swyx/status/2071478390172049555/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HL9eOMZbQAAE5e0.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SE8lTOGP7q",
+                "resolvedUrl": "https://x.com/geoffreylitt/status/2071319131144790064"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-28T23:45:25.000Z",
+        "sections": [
+          {
+            "headline": "Future product teams may be built around archetypes, not job titles / 未来的产品团队，也许会按原型分工，不再死卡职能头衔",
+            "body": "As engineering, product, design, DS, etc. melt into a new kind of role, I was reflecting on what roles might look like in the future. For example, when I look at the Claude Code team I see what I think is five archetypes:\n\n1. Prototyper: comes up with brand new ideas; churns out many ideas, most of which don't ship\n2. Builder: quickly turns a prototype/idea into production-grade product/infra\n3. Sweeper: cleans up the UI, simplifies the code and system, unships, optimizes performance\n4. Grower: takes a product that has been built and iterates on it to improve Product-Market Fit\n5. Maintainer: owns a mature system to make it secure, reliable, fast, and efficient as it scales\n\nMany people span across 2 roles, and sometimes 3 roles. I also notice that these roles are not really tied to job function -- eg. across Anthropic, some designers match category 1, some 2, some 3; same for engineers, PM, DS.\n\nA healthy team needs a mix of these, depending on the product:\n\n- A product that is new and pre-PMF needs people that are strong at 1+2+3\n- A product that is growing and has found PMF needs 2+3+4 and some 5\n- A product that has strong PMF needs 3+4+5 and some 2\n\nMaybe product roles of the future will look more like this, and less like the domain-specific roles of today?\n\n随着工程、产品、设计、数据科学这些岗位慢慢融成一种新角色，我最近在想，未来的岗位长什么样。比如我看 **Claude Code** 团队时，会把它粗分成五种原型：\n\n1. 原型手：想全新的点子；能快速抛出很多想法，大多数最后不会上线\n2. 建造者：把原型或想法很快做成可上线的产品或基础设施\n3. 清道夫：把 UI 收干净，简化代码和系统，砍掉不该留的东西，优化性能\n4. 生长者：接手已经做出来的产品，持续迭代，把 PMF 往上推\n5. 维护者：负责成熟系统，让它在规模上来时依然安全、可靠、快速、高效\n\n很多人其实跨两类，有时甚至跨三类。我也注意到，这些角色跟传统职能并不强绑定。比如在 **Anthropic**，有的设计师更像第 1 类，有的像第 2 类，有的像第 3 类；工程师、PM、DS 也是一样。\n\n健康团队需要这些角色的搭配，而且要看产品阶段：\n\n- 新产品、还在 PMF 之前，最需要 1+2+3\n- 正在增长、已经找到 PMF，需要 2+3+4，再加一些 5\n- PMF 很强的成熟产品，需要 3+4+5，再配一点 2\n\n也许未来的产品岗位，会更像这种原型组合，而不是今天这种按职能切得很死的分工？",
+            "source_links": [
+              "https://x.com/bcherny/status/2071379474277613732"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-06-29T00:01:08.000Z",
+        "sections": [
+          {
+            "headline": "More manual resets are coming after the **Codex** investigation / **Codex** 调查结束后，手动重置次数还会补发",
+            "body": "If you happened to have used your previous reset in the few hours before and didn't go through your usage, do not worry, you will get more manual resets after we conclude the investigation.\n\n如果你刚好在前几个小时里用掉了之前的重置，而且并没有真的把额度用完，也不用担心，等我们完成调查后，你会拿到额外的手动重置次数。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2071383430634344902"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**OpenAI** hard-resets everyone’s **Codex** usage during the investigation / **OpenAI** 调查期间对所有人的 **Codex** 用量做了硬重置",
+            "body": "As we are still investigating, I have reset everyone's Codex usage limits. This is a hard reset given some users had stacked up to three banked resets already that they can apply on their own schedule.\n\nFunnily enough, this week at OpenAI is called the RESET week, which is meant for folks to relax a bit. However it will be a different kind of RESET week. Enjoy.\n\n由于我们还在调查中，我已经把所有人的 **Codex** 使用额度都重置了。这次是一次硬重置，因为有些用户之前已经攒了最多三次可自行使用的重置机会。\n\n巧的是，**OpenAI** 这周内部刚好叫 RESET week，本来是让大家稍微放松一下。不过现在显然会变成另一种 RESET week。请享用。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2071381664853319742"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** team enters a Sunday war room over usage-drain reports / **Codex** 团队周日进战情室，排查异常额度消耗",
+            "body": "Codex team is in a warroom on a Sunday combing through logs and checking whether there is anything that could lead to increased usage drains for some users. Taking it very seriously and won't rest until we get to the bottom of it. https://t.co/r7kYwqKjT2\n\n**Codex** 团队周日已经进了战情室，正在翻日志，检查是不是有东西会导致部分用户的使用额度消耗异常增加。我们非常认真对待这件事，在查清楚之前不会停。https://t.co/r7kYwqKjT2",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2071357473659707441"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/r7kYwqKjT2",
+                "resolvedUrl": "https://twitter.com/nicdunz/status/2071268204157018511"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-06-28T22:00:39.000Z",
+        "sections": [
+          {
+            "headline": "Still not clear on **Agentforce** / 看到现在，还是没搞懂 **Agentforce** 是什么",
+            "body": "I’ll be honest with you all I still don’t know what Agentforce is https://t.co/NksangcHzz\n\n我跟大家说句实话，我到现在还是不知道 **Agentforce** 到底是什么 https://t.co/NksangcHzz",
+            "source_links": [
+              "https://x.com/petergyang/status/2071353107242774863"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/NksangcHzz",
+                "resolvedUrl": "https://twitter.com/gergelyorosz/status/2071295201608687839"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Anthropic PM says codebase access is the big unlock for internal agents / **Anthropic** PM 说，能进代码库是内部代理最大的解锁点",
+            "body": "How Anthropic PMs use agents internally to get closer to the product from Jess, product lead for Claude Managed Agents:\n\n“Access to our codebase has been the biggest unlock for me.\n\nIt helps me manage state more easily. Rather than poking a bunch of engineers on what they’re doing, I can just track the PRs directly and see which ones are merged, which ones are deployed.\n\nI deeply understand and interact with my product so much more than I’ve ever been able to in the past.”\n\n📌 Watch the full episode here: https://t.co/rYIC7uyDpJ\n\nhttps://t.co/8YMfGN06fl\n\n关于 **Anthropic** 的 PM 如何在内部用代理更贴近产品，**Claude Managed Agents** 产品负责人 Jess 这样说：\n\n“能访问我们的代码库，对我来说是最大的解锁点。\n\n这让我更容易管理状态。以前我得去戳一堆工程师问他们在做什么，现在我可以直接跟踪 PR，看哪些合并了，哪些已经部署了。\n\n我对自己的产品有了远比过去更深的理解，也能更直接地跟它打交道。”\n\n📌 完整节目在这里： https://t.co/rYIC7uyDpJ\n\nhttps://t.co/8YMfGN06fl",
+            "source_links": [
+              "https://x.com/petergyang/status/2071292628302434361"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/SZw7fiectL",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2071292569938780160/img/h-HQGi_OGQTgqYOj.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2071292628302434361/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/petergyang/status/2071235979369972033?s=20",
+                "resolvedUrl": "https://x.com/petergyang/status/2071235979369972033",
+                "authorName": "Peter Yang",
+                "authorHandle": "petergyang",
+                "authorUrl": "https://x.com/petergyang",
+                "text": "\"We give [agents] tasks overnight and then we wake up and the backlog is resolved and bugs are squashed.\"\n\nHere's my new episode with @jess__yan, product lead at Anthropic. Jess showed me how to build a long-running Claude agent from scratch and how Anthropic product teams use",
+                "displayDate": "Jun 28",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/F1Th29WVTL",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2071235924940447744/img/uC5Qj07h78HtWwzF.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/petergyang/status/2071235979369972033/video/1"
+                  }
+                ],
+                "textZh": "“我们会在晚上把任务交给[agents]，等我们早上醒来，积压任务就解决了，bug 也修掉了。” 这是我和 Anthropic 产品负责人 @jess__yan 的新一期节目。Jess 向我展示了如何从零开始构建一个长期运行的 Claude agent，以及 Anthropic 的产品团队如何使用它"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/rYIC7uyDpJ",
+                "resolvedUrl": "https://youtu.be/Xu5gz2qsaz8"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/8YMfGN06fl",
+                "resolvedUrl": "https://x.com/petergyang/status/2071235979369972033"
+              }
+            ]
+          },
+          {
+            "headline": "Taste as a reaction shot / 用一个表情包讲“品味”",
+            "body": "Taste 😅 https://t.co/TE9MyaL4Kk\n\n品味 😅 https://t.co/TE9MyaL4Kk",
+            "source_links": [
+              "https://x.com/petergyang/status/2071288846046884051"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HL6yLFLaMAA6eCJ.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2071288846046884051/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/TE9MyaL4Kk",
+                "resolvedUrl": "https://x.com/petergyang/status/2071288846046884051/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HL6yLFLaMAA6eCJ.png"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-06-29T06:02:34.000Z",
+        "sections": [
+          {
+            "headline": "Blunt pushback: not true / 直接反驳：不是这么回事",
+            "body": "not true! https://t.co/YhpPps2XNW\n\n不是这样的！https://t.co/YhpPps2XNW",
+            "source_links": [
+              "https://x.com/trq212/status/2071474384456573329"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/YhpPps2XNW",
+                "resolvedUrl": "https://x.com/BrainEngineer/status/2071470342195785894"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Coding agents may change the math on legacy codebases / 编码代理可能改写老代码迁移这笔账",
+            "body": "this has to be because coding agents change the engineering math on how it is to work with or port a legacy codebase, right?\n\nanyone at Riot able to confirm? https://t.co/9vsCzsbmYY\n\n这大概率是因为编码代理改变了处理老代码库、或者把老代码迁移出去时的工程账本，对吧？\n\n**Riot** 那边有人能确认一下吗？https://t.co/9vsCzsbmYY",
+            "source_links": [
+              "https://x.com/trq212/status/2071419473433854221"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9vsCzsbmYY",
+                "resolvedUrl": "https://twitter.com/LeagueOfLeaks/status/2070602208157003935"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-06-28T17:38:41.000Z",
+        "sections": [
+          {
+            "headline": "You need a link, not **LinkedIn** / 你需要的是链接，不是 **LinkedIn**",
+            "body": "You need a Link, not a LinkedIn 😂\n\n你需要的是一个链接，不是一份 **LinkedIn** 😂",
+            "source_links": [
+              "https://x.com/rauchg/status/2071287181650653372"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Your shipped work should live on your own site / 你做过什么，应该放在自己的网站上",
+            "body": "You don't need a LinkedIn, you need a page on your website describing and linking to what you shipped\n\n你不需要 **LinkedIn**，你需要的是在自己网站上放一个页面，把你做过什么写清楚，再把成品都链出来",
+            "source_links": [
+              "https://x.com/rauchg/status/2071284129275285580"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-06-28T15:23:20.000Z",
+        "sections": [
+          {
+            "headline": "Levie argues gating frontier models could be strategically self-defeating / Levie 认为，死卡前沿模型发布，战略上可能是在给自己挖坑",
+            "body": "It should be 100% obvious that there will soon be mythos level models on cyber security that are open and available to anyone. As a byproduct of this, alternative tech stacks will emerge that also drive more economic value and control away from the US’s tech stack.\n\nThis is what should be considered when thinking through the gate keeping you want to have in AI. If advanced models will become open and available regardless, then by not allowing the release of models you’re neither more secure nor better off strategically.\n\nSo much of the regulatory approach to AI has to assume China can’t catch up, when all current evidence suggests they can and are. And further, hard to imagine a higher priority than winning in AI for China; so you’re basically betting against their long term ingenuity, talent and motivation. Seems like a bad bet.\n\nSo your options are either to create gates around your best models, which means you’re asymmetrically disadvantaging yourself, or you work to ensure you’re always at the frontier and driving the future architectures of AI.\n\n这件事本来就该非常明显：很快就会出现达到 mythos 级别的网络安全模型，而且会是开源、任何人都能拿到的。随之而来的结果，是别的技术栈也会冒出来，把更多经济价值和控制权从美国主导的技术栈里分走。\n\n所以，讨论 AI 到底要设多少门槛时，得把这件事算进去。如果高级模型迟早都会开放出来，那你现在不让发布，并不会让你更安全，战略上也不会更占优。\n\n现在很多 AI 监管思路，都默认中国追不上来；可眼下能看到的证据，反而说明他们追得上，而且正在追。再说，几乎很难想象还有什么事情会比赢下 AI 对中国更优先。你等于是在押注他们长期的聪明才智、人才储备和动机不成立。这个赌注看起来不怎么样。\n\n所以你的选择无非两种：要么给你最强的模型套上门槛，结果是你在不对称地削弱自己；要么确保自己始终留在前沿，并继续推动 AI 未来架构往前走。",
+            "source_links": [
+              "https://x.com/levie/status/2071253118252356001"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "Y Combinator CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-29T03:25:15.000Z",
+        "sections": [
+          {
+            "headline": "A Leonard Cohen line for imperfect builders / 用 Leonard Cohen 的句子送给不完美但还在做事的人",
+            "body": "\"Forget your perfect offering / There is a crack in everything / That's how the light gets in.\"\n\n—Leonard Cohen\n\n“别再执着于你那份完美的作品 / 万物都有裂缝 / 光就是从那里照进来的。”\n\n—Leonard Cohen",
+            "source_links": [
+              "https://x.com/garrytan/status/2071434797176516691"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Indie Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-06-28T20:49:30.000Z",
+        "sections": [
+          {
+            "headline": "Walkthrough on installing, using, and building a skill / 一条视频讲清技能怎么装、怎么用、怎么做",
+            "body": "Watch this video in which I walk through\n- How to install & use the skill (beginner-friendly)\n- How I built the skill\n- How you can build your own skill https://t.co/FVBCFHXAqK\n\n看这个视频，我会一步步讲：\n- 怎么安装和使用这个 skill（对新手也友好）\n- 我是怎么把这个 skill 做出来的\n- 你怎么做自己的 skill https://t.co/FVBCFHXAqK",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2071335200802648420"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/FVBCFHXAqK",
+                "resolvedUrl": "https://www.youtube.com/watch?v=372Iksaz8b0"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Spend more time explaining what you built / 做产品之外，更要花时间把它讲明白",
+            "body": "For every hour you spend on building the product, spend two hours on explaining it, demonstrating it, selling it, teaching it…\n\nThis is my favorite part about building: telling the world about it and then refining it based on contact with reality https://t.co/9uOj0ocrUM\n\n你每花 1 小时做产品，就该再花 2 小时去解释它、演示它、卖它、教别人用它……\n\n这是我最喜欢的部分：把它讲给世界听，然后根据真实反馈继续打磨 https://t.co/9uOj0ocrUM",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2071319754128978030"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9uOj0ocrUM",
+                "resolvedUrl": "https://twitter.com/rauchg/status/1982476318639079784"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-06-29T01:40:41.000Z",
+        "sections": [
+          {
+            "headline": "Meme energy from the trail / 徒步路上也不忘整活",
+            "body": "just put the taxes in the bag bro\n\n📍Summit Loop Trail, San Bruno https://t.co/ovpZJtarpK\n\n老哥，把税装进袋子里就行了\n\n📍Summit Loop Trail, San Bruno https://t.co/ovpZJtarpK",
+            "source_links": [
+              "https://x.com/nikunj/status/2071408480456691868"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HL8fCPCbYAEyAVQ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2071408480456691868/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ovpZJtarpK",
+                "resolvedUrl": "https://x.com/nikunj/status/2071408480456691868/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HL8fCPCbYAEyAVQ.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Sunday project: remake memes with a toddler / 周日项目：和娃一起重做表情包",
+            "body": "Sundays are for recreating memes with your toddler 👻 https://t.co/sn0ZQvJqeI\n\n周日就是拿来跟自家小朋友一起重做 meme 的 👻 https://t.co/sn0ZQvJqeI",
+            "source_links": [
+              "https://x.com/nikunj/status/2071270787517132892"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HL6hzgeaIAAMm1Q.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2071270787517132892/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/sn0ZQvJqeI",
+                "resolvedUrl": "https://x.com/nikunj/status/2071270787517132892/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HL6hzgeaIAAMm1Q.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Meeting brilliant founders still triggers the same internal reaction / 见到特别聪明的创始人，内心戏还是照旧上演",
+            "body": "Every time I meet an exceptionally smart founder, I play it cool but internally.. https://t.co/oLrccdBnsg\n\n每次我见到一个聪明得离谱的创始人，表面上我都装得很淡定，但内心其实…… https://t.co/oLrccdBnsg",
+            "source_links": [
+              "https://x.com/nikunj/status/2071237834162549001"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/oLrccdBnsg",
+                "url": "https://pbs.twimg.com/tweet_video_thumb/HL6DYxXaEAANqhM.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2071237834162549001/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/oLrccdBnsg",
+                "resolvedUrl": "https://x.com/nikunj/status/2071237834162549001/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/tweet_video_thumb/HL6DYxXaEAANqhM.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-06-28T23:57:07.000Z",
+        "sections": [
+          {
+            "headline": "AT&T signup fails four times; asks for the best SF-area unlimited plan / **AT&T** 连续四次开户失败，转头求问旧金山地区更靠谱的无限流量方案",
+            "body": "Tried to sign up to @ATT four times now and they reject me and aren’t telling me why.\n\nWhat’s the next best unlimited phone/data plan for the SF area?\n\nOr do I know anyone who can work around corp bs?\n\n我试着注册 **@ATT**，现在已经四次了，他们都把我拒了，而且也不告诉我为什么。\n\n旧金山这边下一档最好的无限通话/流量套餐是哪家？\n\n或者我是不是认识谁，能帮我绕开这种公司破流程？",
+            "source_links": [
+              "https://x.com/steipete/status/2071382416703500510"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-28T18:49:17.000Z",
+        "sections": [
+          {
+            "headline": "A self-recommending link joke / 一个“自己推荐自己”的链接梗",
+            "body": "self recommending https://t.co/4MjFgRiefz\n\n自我推荐中 https://t.co/4MjFgRiefz",
+            "source_links": [
+              "https://x.com/danshipper/status/2071304948390752557"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/4MjFgRiefz",
+                "resolvedUrl": "https://twitter.com/lennysan/status/2071294324999115057"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-06-29",
+    "updatedAt": "2026-06-29T12:53:53.077Z",
+    "commit": {
+      "sha": "c5e14ebb45e4d9c9abd1510f92cbb8fa7cf2e4bf",
+      "committedAt": "2026-06-29T08:08:31Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-06-29T12:49:07.524Z",
+    "feedGeneratedAt": "2026-06-29T08:08:26.128Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

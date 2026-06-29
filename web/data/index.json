@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-28T12:05:05.189Z",
-  "latestDate": "2026-06-28",
+  "updatedAt": "2026-06-29T12:53:53.082Z",
+  "latestDate": "2026-06-29",
   "dates": [
+    {
+      "date": "2026-06-29",
+      "title": "AI Builders Daily · 2026-06-29",
+      "summary": "**Anthropic** says the real agent question is no longer whether **Claude** can act, but how hard you can cap the blast radius; **OpenAI Codex** spent Sunday in a war room, hard-resetting usage limits while investigating abnormal drain reports; **Lambda** CTO Stephen Balaban argues the GPU glut thesis is still wrong and AI compute remains structurally underbuilt; builders spent the weekend doing what the market rewards now: ship visibly, teach loudly, and prove your work in public.\n\n**Anthropic** 这篇写得很直接：关键早就不是 **Claude** 能不能干活，而是出事时你能把坑圈多小；**OpenAI Codex** 周日开战情室，先给大家把额度重置，再查异常消耗到底从哪来；**Lambda** 的 Stephen Balaban 也没兜圈子，GPU 会过剩这套说法他还是不认，判断是算力依旧不够；剩下的人则把现实讲透了：东西要做，教程要录，页面要摆出来，光写个 **LinkedIn** 已经不顶用了。",
+      "itemCount": 14,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-06-29T12:53:53.080Z",
+      "commit": {
+        "sha": "c5e14ebb45e4d9c9abd1510f92cbb8fa7cf2e4bf",
+        "committedAt": "2026-06-29T08:08:31Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-28",
       "title": "AI Builders Daily · 2026-06-28",
