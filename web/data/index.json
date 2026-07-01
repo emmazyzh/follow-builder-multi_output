@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-06-29T12:53:53.082Z",
-  "latestDate": "2026-06-29",
+  "updatedAt": "2026-07-01T12:09:35.663Z",
+  "latestDate": "2026-07-01",
   "dates": [
+    {
+      "date": "2026-07-01",
+      "title": "AI Builders Daily · 2026-07-01",
+      "summary": "**Claude Sonnet 5** flips to default across the stack, while Linux desktop support finally lands; **Fable** rumors hijack the timeline, with builders literally waiting up for midnight; **Vercel Services** and a new **Shopify** linkup sharpen the agentic web story; Dylan Patel's big point cuts through the noise: **AI's real 100x may come from hardware-software co-design, not model theatrics alone**.\n\n**Sonnet 5** 直接铺到全线，Linux 版桌面端也补上了；**Fable** 把整条时间线搅热，一群人真在等午夜刷新；**Vercel Services** 加上和 **Shopify** 的联动，把 agentic web 这条线又拧紧了一圈；Dylan Patel 这期最扎实的一句是：**AI 真正的 100 倍，不一定在模型口号里，更可能在硬件和软件一起重做这件事上**。",
+      "itemCount": 18,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-01T12:09:35.662Z",
+      "commit": {
+        "sha": "c1795e694381c31b5bd0ad01474f1baee2172ac0",
+        "committedAt": "2026-07-01T07:49:46Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-06-29",
       "title": "AI Builders Daily · 2026-06-29",

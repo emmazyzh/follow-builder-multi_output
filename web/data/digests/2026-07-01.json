@@ -1,0 +1,1157 @@
+{
+  "payload": {
+    "date": "2026-07-01",
+    "title": "AI Builders Daily · 2026-07-01",
+    "summary": "**Claude Sonnet 5** flips to default across the stack, while Linux desktop support finally lands; **Fable** rumors hijack the timeline, with builders literally waiting up for midnight; **Vercel Services** and a new **Shopify** linkup sharpen the agentic web story; Dylan Patel's big point cuts through the noise: **AI's real 100x may come from hardware-software co-design, not model theatrics alone**.\n\n**Sonnet 5** 直接铺到全线，Linux 版桌面端也补上了；**Fable** 把整条时间线搅热，一群人真在等午夜刷新；**Vercel Services** 加上和 **Shopify** 的联动，把 agentic web 这条线又拧紧了一圈；Dylan Patel 这期最扎实的一句是：**AI 真正的 100 倍，不一定在模型口号里，更可能在硬件和软件一起重做这件事上**。",
+    "items": [
+      {
+        "person_name": "Training Data",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=f6D_aiy8qyU",
+        "source_label": "Podcast",
+        "posted_at": "2026-06-30T09:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Hardware-software co-design** is AI's real 100x / **硬软协同**才是 AI 真正的 100 倍杠杆",
+            "body": "In this **Training Data** episode, Dylan Patel argues that the next real leap in AI comes from rebuilding the full stack together: chips, systems, costs, and software behavior. He keeps coming back to the same point: model gains alone are not enough if inference still rides on hardware that was never built for the way LLMs run.\n\nThe backstory is half obsession, half accident. Patel traces **SemiAnalysis** from fixing an **Xbox 360** with the red ring of death, to years deep in hardware forums, to a COVID-era break that turned anonymous posting into a real research business. The throughline is unusually consistent: follow the technical details, but never stop asking what they cost and who can scale them.\n\n这期 **Training Data** 里，Dylan Patel 讲得很直接：AI 下一次真正拉开差距，不是模型单点猛冲，而是把芯片、系统、成本和软件行为一起重做。他反复盯住一个问题不放：如果推理还跑在并不是为 LLM 设计的硬件上，单靠模型涨分，天花板很快就会撞上。\n\n他的来路也挺野。先是为修一台红环的 **Xbox 360** 扎进硬件世界，后来长期泡论坛、盯供应链、看架构；再到疫情那阵子，把匿名发帖硬生生写成了 **SemiAnalysis**。主线一直没变：技术细节要看，成本更得看，最后是谁真能把它规模化。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=f6D_aiy8qyU"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-06-30T20:04:48.000Z",
+        "sections": [
+          {
+            "headline": "AIEWF poster day lands, \"Poaster sessions\" next / AIEWF 海报日先热起来，明天轮到“Poaster sessions”",
+            "body": "very successful first poster sessions day at AIEWF, thanks to @heathercmiller and @ACM_President for the support!!\n\ntomorrow: Poaster sessions! submit your hottest tweets to @vibhuuuus for printing!\n\nspotted: left shark https://t.co/nv2I2l00Oe https://t.co/F7Ax9r5UK6\n\nAIEWF 第一天海报环节很顺，感谢 @heathercmiller 和 @ACM_President 的支持！！\n\n明天是 Poaster sessions！把你最火辣的推文交给 @vibhuuuus 去打印！\n\n还看到了 left shark https://t.co/nv2I2l00Oe https://t.co/F7Ax9r5UK6",
+            "source_links": [
+              "https://x.com/swyx/status/2072048730581405800"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMFlVY2asAAAnGf.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2072048730581405800/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMFlVY6bsAA7Y4k.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2072048730581405800/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMFlVY9aMAAdius.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2072048730581405800/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMFlVY6awAA0JTS.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2072048730581405800/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/swyx/status/2068868526291718334",
+                "resolvedUrl": "https://x.com/swyx/status/2068868526291718334",
+                "authorName": "swyx @aiDotEngineer WF",
+                "authorHandle": "swyx",
+                "authorUrl": "https://x.com/swyx",
+                "text": "yes in case you missed it we are doing \"poaster\" sessions at AIE for the first time ever\n\nno papers, no posters.\nonly poasters.\n\nwe are looking for people who physically print out their hottest takes and stand in front of them taking all comers\n\n@QuinnyPig is there, we have room",
+                "displayDate": "Jun 22",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLYY9IPbwAAYHfk.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/swyx/status/2068868526291718334/photo/1"
+                  }
+                ],
+                "textZh": "是的，如果你错过了，我们这次会在 AIE 首次举办“poaster”环节。 没有论文，没有海报。 只有 poaster。 我们在找那种会把自己最火辣的观点亲手打印出来，然后站在前面接受所有人挑战的人。 @QuinnyPig 会来，我们还有名额"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nv2I2l00Oe",
+                "resolvedUrl": "https://x.com/swyx/status/2072048730581405800/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMFlVY6awAA0JTS.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/F7Ax9r5UK6",
+                "resolvedUrl": "https://x.com/swyx/status/2068868526291718334"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-06-30T23:51:47.000Z",
+        "sections": [
+          {
+            "headline": "Boris backs the take / Boris 直接点头认同",
+            "body": "Agree https://t.co/HOYbxpkYwX\n\n同意 https://t.co/HOYbxpkYwX",
+            "source_links": [
+              "https://x.com/bcherny/status/2072105851457019944"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/paularambles/status/2072024792056909935",
+                "resolvedUrl": "https://x.com/paularambles/status/2072024792056909935",
+                "authorName": "“paula”",
+                "authorHandle": "paularambles",
+                "authorUrl": "https://x.com/paularambles",
+                "text": "actually insane stuff happening here",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMFPjf0aEAAxxvW.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/paularambles/status/2072024792056909935/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMFPj46bkAAYY80.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/paularambles/status/2072024792056909935/photo/1"
+                  }
+                ],
+                "textZh": "这里发生的事简直离谱"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/HOYbxpkYwX",
+                "resolvedUrl": "https://x.com/paularambles/status/2072024792056909935"
+              }
+            ]
+          },
+          {
+            "headline": "**Claude Desktop** lands on Linux / **Claude Desktop** 上线 Linux",
+            "body": "You asked, we listened. Claude Desktop on Linux is here!\n\nDownload link: https://t.co/gjgHZvbKyi https://t.co/O3P6B3fuGk\n\n你们提了，我们做了。Claude Desktop 的 Linux 版来了！\n\n下载链接： https://t.co/gjgHZvbKyi https://t.co/O3P6B3fuGk",
+            "source_links": [
+              "https://x.com/bcherny/status/2072000214634742243"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ClaudeDevs/status/2071988881717871065",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2071988881717871065",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Claude Desktop is now available on Linux (Ubuntu and Debian) in beta.\n\nAlongside the browser and terminal, you now get a first-class desktop experience with Claude Code, Claude Cowork, and chat on all paid plans.",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMEuXrJbEAAiTYm.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ClaudeDevs/status/2071988881717871065/photo/1"
+                  }
+                ],
+                "textZh": "Claude Desktop 现已在 Linux（Ubuntu 和 Debian）上推出 beta 版。 除了浏览器和终端之外，现在所有付费套餐也都能获得完整的桌面端体验，包括 Claude Code、Claude Cowork 和聊天功能。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/gjgHZvbKyi",
+                "resolvedUrl": "https://code.claude.com/docs/en/desktop-linux"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/O3P6B3fuGk",
+                "resolvedUrl": "https://x.com/claudedevs/status/2071988881717871065"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-07-01T03:48:12.000Z",
+        "sections": [
+          {
+            "headline": "Usage cap confusion hits **Fable** / **Fable** 用量限制把人看懵了",
+            "body": "What does this mean btw? After I hit 50% weekly usage Fable is no longer available? https://t.co/nU5J9p9KsC\n\n这到底是什么意思？我一到每周用量 50%，Fable 就不能用了？ https://t.co/nU5J9p9KsC",
+            "source_links": [
+              "https://x.com/petergyang/status/2072165346476511583"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMHPZcGaUAAfeTQ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2072165346476511583/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nU5J9p9KsC",
+                "resolvedUrl": "https://x.com/petergyang/status/2072165346476511583/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMHPZcGaUAAfeTQ.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Midnight release timing is still unclear / 是否午夜上线还没准信",
+            "body": "btw I have no idea if it's coming out midnight or not\n\n顺带一提，我也不知道它到底会不会在午夜放出来",
+            "source_links": [
+              "https://x.com/petergyang/status/2072159132908695772"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Builders set alarms for **Fable** / 大家已经为 **Fable** 定闹钟",
+            "body": "Setting an alarm at midnight to get Fable to fix all my projects 😅 https://t.co/LUuH9x8vl3\n\n我已经把午夜闹钟设好了，等 Fable 来把我所有项目都修掉 😅 https://t.co/LUuH9x8vl3",
+            "source_links": [
+              "https://x.com/petergyang/status/2072111311396438410"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/AnthropicAI/status/2072106151890809341",
+                "resolvedUrl": "https://x.com/AnthropicAI/status/2072106151890809341",
+                "authorName": "Anthropic",
+                "authorHandle": "AnthropicAI",
+                "authorUrl": "https://x.com/AnthropicAI",
+                "text": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll begin restoring access tomorrow, and will share an update soon.\n\nWe’re grateful to our users for their patience, and to everyone who worked with us on",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们已收到通知，美国商务部已解除对 Claude Fable 5 和 Mythos 5 的出口管制。 我们将于明天开始恢复访问，并会很快分享最新进展。 感谢用户的耐心，也感谢所有与我们一起推进此事的人"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/LUuH9x8vl3",
+                "resolvedUrl": "https://x.com/anthropicai/status/2072106151890809341"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-06-30T17:05:00.000Z",
+        "sections": [
+          {
+            "headline": "Nan agrees, tersely / Nan 一句认同",
+            "body": "tru tru\n\nhttps://t.co/GCmvVpSNHq\n\n确实确实\n\nhttps://t.co/GCmvVpSNHq",
+            "source_links": [
+              "https://x.com/thenanyu/status/2072003481779478848"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/graxwell/status/2072002798410142167?s=20",
+                "resolvedUrl": "https://x.com/graxwell/status/2072002798410142167",
+                "authorName": "Griffin",
+                "authorHandle": "graxwell",
+                "authorUrl": "https://x.com/graxwell",
+                "text": "@thenanyu it's only distillation if it comes from china, otherwise it's just sparkling training",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [],
+                "textZh": "@thenanyu 只有产自中国的才叫 distillation，不然最多只能算 sparkling training"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/GCmvVpSNHq",
+                "resolvedUrl": "https://x.com/graxwell/status/2072002798410142167"
+              }
+            ]
+          },
+          {
+            "headline": "What counts as distillation? / “蒸馏”到底算什么",
+            "body": "The definition of “distillation” is interesting. Going by this logic, the entirety of Cursor’s training data was distilled from Claude in the early days https://t.co/V08OTUG9QA\n\n“distillation” 这个定义挺有意思。照这个逻辑看，Cursor 早期整套训练数据，基本都算是从 Claude 蒸馏出来的 https://t.co/V08OTUG9QA",
+            "source_links": [
+              "https://x.com/thenanyu/status/2071973229070033322"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/hsu_steve/status/2071925094520078723",
+                "resolvedUrl": "https://x.com/hsu_steve/status/2071925094520078723",
+                "authorName": "steve hsu",
+                "authorHandle": "hsu_steve",
+                "authorUrl": "https://x.com/hsu_steve",
+                "text": "Interesting GLM rumor from China sources:\n\n\"Apparently http://z.ai/ has an internal router behind their coding plan that routes your Claude Code query to GLM or Claude depending on if the classifier thinks it is in distribution or not. If it is OOD and also high value,",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMD01aXWIAA13JM.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/hsu_steve/status/2071925094520078723/photo/1"
+                  }
+                ],
+                "textZh": "来自中国渠道的一个有意思的 GLM 传闻： “据说 http://z.ai/ 在他们的 coding plan 背后有一个内部路由器，会根据分类器判断你的 Claude Code 查询是分发给 GLM 还是 Claude，看它是否属于分布内。如果是 OOD，而且价值也高，"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/V08OTUG9QA",
+                "resolvedUrl": "https://x.com/hsu_steve/status/2071925094520078723"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Ex-Google Gemini PM",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-06-30T14:52:50.000Z",
+        "sections": [
+          {
+            "headline": "Traditional PM habits choke AI-native imagination / 传统 PM 习惯卡住 AI 原生想象力",
+            "body": "The biggest challenge for trad PMs trying to adapt to AI native building is a lack of magical thinking. A decade of frameworks, “agile” and metric obsession has led to constraint-first, incremental thinking.\n\nI used to combat this on my teams by asking them to  imagine we had tech from 100 yrs in the future, the experiences it would enable and working backward from that. the ideas would always be far more creative.\n\nthe funny thing is, that technology from the future is here.\n\ngo build that magical thing!\n\n传统 PM 想转到 AI native 的最大问题，是缺少那种“先把魔法想出来”的劲头。十年下来，各种框架、“agile”和指标崇拜，把人训练成先看限制、只敢做小修小补。\n\n我以前带团队时，会故意反着来：先假设我们手里有一百年后的技术，想清楚它能做出什么体验，再倒推回来。这样出来的点子，通常都更有创造力。\n\n好笑的是，那种“未来技术”现在已经在这了。\n\n去把那个像魔法的东西做出来吧！",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2071970221477470694"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-07-01T06:14:54.000Z",
+        "sections": [
+          {
+            "headline": "Deck tweaks before AIE / AIE 前最后改稿",
+            "body": "making some last minute changes to my deck- see you tomorrow at AIE! https://t.co/rhxcTGRnTh https://t.co/gGElhLW1Zw\n\n还在对我的 deck 做最后几处修改，明天 AIE 见！ https://t.co/rhxcTGRnTh https://t.co/gGElhLW1Zw",
+            "source_links": [
+              "https://x.com/trq212/status/2072202267563082180"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMHw3w_bcAEN5kw.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2072202267563082180/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/trq212/status/2067737883545596368",
+                "resolvedUrl": "https://x.com/trq212/status/2067737883545596368",
+                "authorName": "Thariq",
+                "authorHandle": "trq212",
+                "authorUrl": "https://x.com/trq212",
+                "text": "I'll be giving the the Day 2 opening keynote at AI Engineer World's Fair on July 1st at 9am.\n\nHope to see you there, here's a quick preview",
+                "displayDate": "Jun 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HLITRDFa8AAzQ_z.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/trq212/status/2067737883545596368/photo/1"
+                  }
+                ],
+                "textZh": "我会在 7 月 1 日上午 9 点于 AI Engineer World's Fair 发表第二天的开场主题演讲。 希望到时见，这里先放一个简短预告"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/rhxcTGRnTh",
+                "resolvedUrl": "https://x.com/trq212/status/2072202267563082180/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMHw3w_bcAEN5kw.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/gGElhLW1Zw",
+                "resolvedUrl": "https://x.com/trq212/status/2067737883545596368"
+              }
+            ]
+          },
+          {
+            "headline": "Anthropic says safeguards will keep getting tuned / Anthropic 说还会继续调安全护栏",
+            "body": "And as we say in our blog, we're continuing to refine these safeguards to better distinguish genuine misuse from legitimate requests and reduce false positives.\n\n也像我们在博客里说的那样，我们会继续调整这些 safeguard，更好地区分真正的滥用和正常请求，并减少误判。",
+            "source_links": [
+              "https://x.com/trq212/status/2072185566695977161"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Some normal coding will still trip classifiers / 一小部分正常编码仍会触发分类器",
+            "body": "Have seen some questions about the updated classifiers and wanted to clarify.\n\nAs with the original classifiers, a small fraction of routine coding and debugging tasks will be flagged and fall back to Opus. \n\nWe're excited for guys to get access back tomorrow. https://t.co/qPzfqVy65Y\n\n看到大家对更新后的分类器有些疑问，想补充说明一下。\n\n和最早那版分类器一样，一小部分日常编码和调试任务还是会被标记出来，然后回退到 Opus。\n\n很期待大家明天重新拿回访问权限。 https://t.co/qPzfqVy65Y",
+            "source_links": [
+              "https://x.com/trq212/status/2072185565076988326"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/AnthropicAI/status/2072163884430229756",
+                "resolvedUrl": "https://x.com/AnthropicAI/status/2072163884430229756",
+                "authorName": "Anthropic",
+                "authorHandle": "AnthropicAI",
+                "authorUrl": "https://x.com/AnthropicAI",
+                "text": "Claude Fable 5 will be available again globally tomorrow.\n\nAfter a series of productive conversations with the US government, we're redeploying the model with a new set of classifiers to target and block more cybersecurity tasks. In the near term, some routine tasks like coding",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [],
+                "textZh": "Claude Fable 5 将于明天重新在全球范围内可用。 在与美国政府进行了一系列富有成效的沟通后，我们将带着一套新的分类器重新部署该模型，以更有针对性地识别并拦截更多网络安全相关任务。短期内，一些日常任务，比如编程"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/qPzfqVy65Y",
+                "resolvedUrl": "https://x.com/anthropicai/status/2072163884430229756"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-06-30T16:22:03.000Z",
+        "sections": [
+          {
+            "headline": "A subway hackathon claim rolls in / 地铁黑客松的说法冒出来了",
+            "body": "World’s first subway hackathon! https://t.co/uRTezD2dak\n\n世界上第一个地铁黑客松！ https://t.co/uRTezD2dak",
+            "source_links": [
+              "https://x.com/amasad/status/2071992670394765407"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/abishek/status/2071703803045257342",
+                "resolvedUrl": "https://x.com/abishek/status/2071703803045257342",
+                "authorName": "Abi | abishek.eth/.sol | NYC",
+                "authorHandle": "abishek",
+                "authorUrl": "https://x.com/abishek",
+                "text": "you can absolutely vibecode from\n\nan NYC subway\n\nwith your iPhone\n\n30 of us built apps on the 7 train to Flushing.\n\nincredible hack hosted by @Replit &amp; @BobbyThakkar\n\nft 🎥 @Julessw_ @melodyskim hacking on the train",
+                "displayDate": "Jun 29",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/WwLNlWzhuP",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2071703742622076928/img/yu-JDAqeA7evZQqw.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/abishek/status/2071703803045257342/video/1"
+                  }
+                ],
+                "textZh": "你完全可以在 纽约地铁上 用你的 iPhone vibecode 我们 30 个人在开往 Flushing 的 7 号线上做出了 app。 非常炸裂的一场 hack，由 @Replit 和 @BobbyThakkar 主办 ft 🎥 @Julessw_ @melodyskim 在列车上写代码"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/uRTezD2dak",
+                "resolvedUrl": "https://x.com/abishek/status/2071703803045257342"
+              }
+            ]
+          },
+          {
+            "headline": "**Etched** pitches inference hardware built for LLMs / **Etched** 押注专为 LLM 做的推理硬件",
+            "body": "AI is expensive to run partly because most workloads today run on generic hardware designed pre-LLMs. Etched is the first system designed from the ground up for modern inference. https://t.co/KluYZIZATE\n\nAI 跑起来贵，一个原因是今天大多数负载还压在 LLM 出现前就设计好的通用硬件上。Etched 是第一个从底层开始就为现代推理打造的系统。 https://t.co/KluYZIZATE",
+            "source_links": [
+              "https://x.com/amasad/status/2071992110132117740"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/etched/status/2071972062202343590",
+                "resolvedUrl": "https://x.com/Etched/status/2071972062202343590",
+                "authorName": "Etched",
+                "authorHandle": "Etched",
+                "authorUrl": "https://x.com/Etched",
+                "text": "We're coming out of stealth.\n\nWe've built our first racks after a successful A0 tapeout, $1B+ in customer contracts, and $800m raised.\n\nEarly customer tests show us achieving SOTA throughput, latency, and power efficiency on inference workloads.\n\nOur first racks ship this summer.",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMEfnAMbAAAlKme.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Etched/status/2071972062202343590/photo/1"
+                  }
+                ],
+                "textZh": "我们要结束隐身模式了。 在成功完成 A0 tapeout、拿下超过 10 亿美元客户合同、并筹集 8 亿美元资金后，我们已经搭好了第一批机架。 早期客户测试显示，我们在推理负载上的吞吐、延迟和功耗效率都达到了 SOTA。 我们的首批机架将于今年夏天发货。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/KluYZIZATE",
+                "resolvedUrl": "https://x.com/etched/status/2071972062202343590"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-07-01T01:00:59.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel** hears feedback from execs and their kids / **Vercel** 的反馈已经传到高管家小孩",
+            "body": "At dinner, tech executive is relaying his company’s @vercel feedback, and then his 12-year-old son’s @vercel feedback 😁 \n\nVercel is for everyone.\n\n吃饭时，一位科技公司高管先转述他公司对 @vercel 的反馈，接着又转述他 12 岁儿子对 @vercel 的反馈 😁 \n\nVercel 是给所有人用的。",
+            "source_links": [
+              "https://x.com/rauchg/status/2072123264843886709"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Vercel** and **Shopify** push the agentic web / **Vercel** 携手 **Shopify** 推进 agentic web",
+            "body": "So great to get to work with @tobi and the wonderful @shopify team.\n\nExcited to push the agentic web forward. https://t.co/2dke1MwSDS\n\n很高兴能和 @tobi 以及很棒的 @shopify 团队一起合作。\n\n很期待把 agentic web 往前推。 https://t.co/2dke1MwSDS",
+            "source_links": [
+              "https://x.com/rauchg/status/2072044844965400589"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel/status/2072041488012439803",
+                "resolvedUrl": "https://x.com/vercel/status/2072041488012439803",
+                "authorName": "Vercel",
+                "authorHandle": "vercel",
+                "authorUrl": "https://x.com/vercel",
+                "text": "We are rebuilding Hydrogen from the ground up with @Shopify.\n\nIt's agent-first, runtime-agnostic, and runs anywhere JavaScript does. Learn more and try the Next.js developer preview ↓\n\nhttps://vercel.com/blog/vercel-and-shopify-are-rebuilding-hydrogen",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们正与 @Shopify 一起从头重建 Hydrogen。 它是 agent-first、runtime-agnostic 的，只要能跑 JavaScript 的地方都能运行。了解更多并试用 Next.js 开发者预览版 ↓ https://vercel.com/blog/vercel-and-shopify-are-rebuilding-hydrogen"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/2dke1MwSDS",
+                "resolvedUrl": "https://x.com/vercel/status/2072041488012439803"
+              }
+            ]
+          },
+          {
+            "headline": "**Vercel Services** packs multi-stack apps into one project / **Vercel Services** 把多栈服务塞进一个项目",
+            "body": "Vercel Services\n\nYou can now collocate e.g.: a Python backend API, an ExpressJS server, and a React SPA in one Vercel project.\n\ntl:dr;\n▪️ You can run all locally with 𝚟𝚌 𝚍𝚎𝚟 \n▪️ Deploy and rollback all at once\n▪️ Observe, monitor, debug together\n▪️ Internal networking\n\nVercel Services\n\n现在你可以把比如 Python 后端 API、ExpressJS 服务器和 React SPA 放进同一个 Vercel 项目里。\n\n简版如下；\n▪️ 可以用 𝚟𝚌 𝚍𝚎𝚟 在本地一起跑\n▪️ 可以一次性部署和回滚\n▪️ 可以一起观测、监控、调试\n▪️ 支持内部网络通信",
+            "source_links": [
+              "https://x.com/rauchg/status/2071966055308607765"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-07-01T04:15:44.000Z",
+        "sections": [
+          {
+            "headline": "Frontier releases may now come with a government-tested playbook / 前沿模型发布可能开始走政府协同剧本",
+            "body": "Things seem to be ending up in a better spot with Fable, and presumably GPT-5.6 next. What we have now is the initial precedent for what frontier model releases (or at least those that have significant coding and cyber capabilities) could look like going forward. This would presumably apply to bio and other categories of risk that have been identified by AI safety groups. \n\nFrom the Anthropic post:\n\n“3. A shared industry framework. Although we have reached a constructive resolution, these events have made clear that the industry needs a consistent way to assess and fix potential “jailbreaks” of AI models (techniques that bypass a model’s safeguards).2 A shared standard for judging the severity of a given jailbreak would help AI developers triage new findings as they arise, launch highly-capable models with greater safety, and communicate the level of risk consistently to government and industry partners. Together with Amazon, Microsoft, Google, and other Glasswing partners, we’ve started to develop such a framework, and we outline it below.\n\n4. Deeper government collaboration. We’re also strengthening our level of collaboration with the US government on new pre-release testing, information sharing, and research collaboration. We describe this deeper collaboration in the final section.”\n\nIt’s been a messy process to get here, but at least there’s some semblance of a framework that could be practical. The only note of caution here would be that there’s a lot of subjectivity that goes into various risks and their actual levels of exploitability in practice. We’re likely going to be living with a framework that requires heavy judgment and back and forth between labs and the government for major releases.\n\nThe best we can hope for is that this is a relatively efficient process, and hopefully has ways of being sped up for incremental version updates in models. It would be a bad outcome if every release after this level of threshold of capability required the same review process, and we don’t get the same rate of breakthroughs we’ve been seeing.\n\n看起来 Fable 这件事最后落在了一个相对更好的位置上，接下来大概 GPT-5.6 也会照着走。现在摆在眼前的，是一个初步先例：以后前沿模型发布，尤其是那些在编码和网络安全能力上很强的模型，可能就会按这种方式推进。按这个逻辑，生物等其他已被 AI 安全团队点名的风险类别，估计也会套进来。\n\nAnthropic 文里写道：\n\n“3. 一个共享的行业框架。虽然我们已经达成了一个建设性的解决方案，但这些事件已经清楚说明，行业需要一种一致的方法来评估和修复 AI 模型潜在的‘越狱’（也就是绕过模型防护的技术）。一个共享的严重性判断标准，可以帮助 AI 开发者在新发现出现时做分级处理，更安全地发布高能力模型，也能让他们向政府和行业伙伴更一致地传达风险水平。我们已经和 Amazon、Microsoft、Google 以及其他 Glasswing 合作伙伴开始制定这样的框架，下面也会做说明。\n\n4. 更深入的政府协作。我们也在加强和美国政府之间的新一轮发布前测试、信息共享和研究合作。最后一节会介绍这部分内容。”\n\n走到这一步过程很乱，但至少现在像是有了个还能落地的框架。需要留神的是，很多风险判断以及它们在现实里到底多容易被利用，本来就带着很强的主观性。接下来大模型重大发布，多半都会卡在实验室和政府来回拉扯、反复判断里。\n\n最好的情况，是这个流程别太慢，而且模型做小版本更新时还能走得快一点。要是今后只要能力一过线，每次发布都得重走一遍同样的审查，那推进速度肯定要掉下来。",
+            "source_links": [
+              "https://x.com/levie/status/2072172275017879829"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Box** says **Sonnet 5** beats **Sonnet 4.6** on enterprise document work / **Box** 称 **Sonnet 5** 在企业文档任务上超过 **Sonnet 4.6**",
+            "body": "We've been running Anthropic's Claude Sonnet 5 through the Box AI Complex Work Eval, our agentic benchmark that puts models through real enterprise document work end-to-end.\n\nSonnet 5 holds frontier-class quality on complex multi-step work and pulls ahead of Sonnet 4.6 in several core enterprise domains like Energy (+4.7pp), Retail (+4.4pp), and Professional Services (+2.6pp), and other spaces where unstructured data is heavily complex.\n\nHere are a few examples of wins compared to Sonnet 4.6 to get a sense of some of the more advanced reasoning capabilities in Sonnet 5:\n\n* Financing due diligence: It computed the company's liquidity and leverage ratios from the raw balance sheet, and caught that the source report's own stated debt-to-equity figure understated the leverage, flagging all three loan covenants as violated, not just the ones the document admitted.\n\n* Overhaul cost analysis: It scoped \"total cost\" to the company's own KPI definitions, correctly separating out Lost Production Cost because the guidance said to track it separately rather than naively summing every number on the sheet. It also caught and handled a broken reference cell in the spreadsheet.\n\n* SKU revenue analysis: On segmented sales data, it computed each product's contribution against the correct subcategory denominator, sidestepping the easy mistake of dividing by the category total, and flagged why no Pet-category SKU cracked the top 9.\n\nSonnet 5 will be available in the Box AI Studio shortly for customers to build custom agents with.\n\n我们一直在用 Anthropic 的 Claude Sonnet 5 跑 Box AI Complex Work Eval，这是我们的 agentic 基准，用真实的企业文档任务把模型从头到尾过一遍。\n\nSonnet 5 在复杂多步骤任务上维持住了前沿水准，而且在几个核心企业领域超过了 Sonnet 4.6，比如能源（+4.7 个百分点）、零售（+4.4 个百分点）和专业服务（+2.6 个百分点），尤其是在那些非结构化数据又多又乱的场景里。\n\n下面是几个相对 Sonnet 4.6 更能说明 Sonnet 5 推理能力的例子：\n\n* 融资尽调：它能直接从原始资产负债表算出公司的流动性和杠杆比率，还发现源报告自己写的 debt-to-equity 数字把杠杆写低了，因此判定三项贷款契约全部违约，而不是只指出文件里承认的那几项。\n\n* 大修成本分析：它会按公司自己的 KPI 定义去界定“total cost”，把 Lost Production Cost 正确拆出去，因为指导里明确说这项要单独跟踪，而不是把表上所有数字一股脑相加。它还识别并处理了电子表格里一个坏掉的引用单元格。\n\n* SKU 收入分析：在分段销售数据里，它按正确的子品类分母去计算每个产品的贡献占比，避开了直接拿品类总额去除这种常见错误，也指出了为什么没有任何宠物类 SKU 进入前 9。\n\nSonnet 5 很快会进 Box AI Studio，客户可以直接拿它来搭自定义 agent。",
+            "source_links": [
+              "https://x.com/levie/status/2072046374045249671"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "More AI adoption, more hiring? / AI 用得越多，反而越招人？",
+            "body": "More data is showing the opposite of what many people expected with AI adoption and jobs. Ramp found that the more AI adoption a company has the more their headcount grows.\n\nAt Box, we recently did a survey of 1,600+ mid and large sized companies, and the findings were similar. 58% of respondents expected headcount to rise over the next three years. Interestingly, that figure climbs to 79% among the most mature adopters of AI. The more advanced AI adopters expected to grow their headcount at a greater rate in the future than others.\n\nOf course it's true that the companies that can afford to adopt AI the most are also the ones that likely are seeing growth in their business, leading to more headcount. So the point of the story isn't necessarily that by adopting AI you will inherently grow. \n\n*But* the most important takeaway is that the opposite is not proving out. The fears a couple years ago would have been that the companies adopting AI the most would be hiring fewer people. \n\nBut in reality this is what actually you should expect to happen. If a company can get more customers because they use AI in sales for account or market intelligence, they hire more sales people not fewer. If you can build way more software than before, you end up hiring more engineers because the projects get bigger and you take on more. And so on.\n\n越来越多的数据，正在给“AI 上来就会砍岗位”这个预期泼冷水。Ramp 发现，一家公司 AI 用得越深，员工规模反而越会增长。\n\nBox 最近也调查了 1600 多家中大型公司，结果差不多。58% 的受访者预计未来三年 headcount 会增加；而在最成熟的 AI 采用者里，这个数字升到 79%。也就是说，AI 用得更深的公司，反而更预期自己以后会招更多人。\n\n当然也得承认，那些最有条件上 AI 的公司，本来往往业务就在增长，所以 headcount 才会上去。这个结论不是说“用了 AI 就一定会长”。\n\n但关键点在于，至少反过来的故事并没有被数据撑住。前几年大家担心的是，最积极用 AI 的公司会最先少招人。\n\n现实看起来更像另一套逻辑：如果 AI 帮你拿到更多客户，比如销售靠它做客户和市场情报，你通常会招更多销售，不是更少；如果你能比以前做出更多软件，项目盘子会变大，工程师也常常会继续加。",
+            "source_links": [
+              "https://x.com/levie/status/2071992799109824562"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-06-30T23:29:52.000Z",
+        "sections": [
+          {
+            "headline": "Garry Tan wants a California that works / Garry Tan 说要一个能正常运转的加州",
+            "body": "We want a California that works. https://t.co/W2MkJEtPAY\n\n我们想要一个能正常运转的加州。 https://t.co/W2MkJEtPAY",
+            "source_links": [
+              "https://x.com/garrytan/status/2072100337478160856"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/garryslist/status/2072053126207516806",
+                "resolvedUrl": "https://x.com/garryslist/status/2072053126207516806",
+                "authorName": "Garry's List",
+                "authorHandle": "garryslist",
+                "authorUrl": "https://x.com/garryslist",
+                "text": "California's pragmatic center is growing. Little-tech founders, nurses, teachers, immigrant business owners, public-safety leaders—united not by ideology, but by a desire for government that actually works. Garry's List is turning that energy into donors, volunteers, and",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMFn1cbW8AEpRW3.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/garryslist/status/2072053126207516806/photo/1"
+                  }
+                ],
+                "textZh": "加州务实的中间派正在壮大。小科技创业者、护士、教师、移民企业主、公共安全领域的领导者，不是因意识形态而团结，而是因为他们都希望政府真正能运转起来。Garry's List 正在把这股能量转化为捐助者、志愿者，以及"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/W2MkJEtPAY",
+                "resolvedUrl": "https://x.com/garryslist/status/2072053126207516806"
+              }
+            ]
+          },
+          {
+            "headline": "**GBrain** gets useful past 10,000 markdown files / **GBrain** 到 1 万个 Markdown 文件才开始真有用",
+            "body": "Gbrain is mostly useful at 10,000+ markdown files in your personal brain or company brain https://t.co/ifVPMxILhY\n\nGbrain 这个东西，得等你的个人脑库或公司脑库里有 1 万多个 markdown 文件时，才会显得真的有用。 https://t.co/ifVPMxILhY",
+            "source_links": [
+              "https://x.com/garrytan/status/2071910876496757145"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/shannholmberg/status/2071890884040499660",
+                "resolvedUrl": "https://x.com/shannholmberg/status/2071890884040499660",
+                "authorName": "Shann³",
+                "authorHandle": "shannholmberg",
+                "authorUrl": "https://x.com/shannholmberg",
+                "text": "how a simple llm wiki compares to gbrain\n\nsecond brains are getting popular fast, they're one of the main enablers for ai and agents right now. the context you give an agent is what makes it good\n\ntwo frameworks I've been using are the LLM Wiki and Gbrain. here's how they",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMDVx1caYAANmc0.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/shannholmberg/status/2071890884040499660/photo/1"
+                  }
+                ],
+                "textZh": "一个简单的 llm wiki 和 gbrain 对比起来怎么样 第二大脑正迅速流行起来，它们现在是 ai 和 agents 的主要推动因素之一。你给 agent 的上下文，决定了它有多强。 我一直在用的两个框架是 LLM Wiki 和 Gbrain。下面说说它们是怎么"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ifVPMxILhY",
+                "resolvedUrl": "https://x.com/shannholmberg/status/2071890884040499660"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-06-30T22:44:00.000Z",
+        "sections": [
+          {
+            "headline": "A quick World Cup jab lands / 一句世界杯吐槽直接甩出来",
+            "body": "LE DICTATEUR #fraswe https://t.co/bS8ulCu9lG\n\n独裁者 #fraswe https://t.co/bS8ulCu9lG",
+            "source_links": [
+              "https://x.com/mattturck/status/2072088791393669144"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/bS8ulCu9lG",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2072088531732709377/img/-XBW2uvxerFDJzRP.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2072088791393669144/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/bS8ulCu9lG",
+                "resolvedUrl": "https://x.com/mattturck/status/2072088791393669144/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2072088531732709377/img/-XBW2uvxerFDJzRP.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-07-01T05:57:40.000Z",
+        "sections": [
+          {
+            "headline": "Taste matters because others copy it / 品味值钱，在于别人会照着抄",
+            "body": "\"Taste isn’t valuable because it’s impossible to copy. Taste is valuable exactly because it defines what everyone else chooses to copy.\" https://t.co/kDs4ibnvbL\n\n“品味之所以有价值，不是因为它没法被复制。恰恰相反，它有价值，是因为它决定了别人会去复制什么。” https://t.co/kDs4ibnvbL",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2072197929138602079"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/mitchellh/status/2070665127331037290",
+                "resolvedUrl": "https://x.com/mitchellh/status/2070665127331037290",
+                "authorName": "Mitchell Hashimoto",
+                "authorHandle": "mitchellh",
+                "authorUrl": "https://x.com/mitchellh",
+                "text": "\"Taste isn’t valuable because it’s impossible to copy. Taste is valuable exactly because it defines what everyone else chooses to copy.\"",
+                "displayDate": "Jun 27",
+                "provider": "X",
+                "media": [],
+                "textZh": "“品味之所以有价值，不是因为它无法被复制。品味真正有价值，恰恰是因为它定义了其他人会选择去复制什么。”"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/kDs4ibnvbL",
+                "resolvedUrl": "https://x.com/mitchellh/status/2070665127331037290"
+              }
+            ]
+          },
+          {
+            "headline": "Spotting someone absurdly early / 这人也太早了",
+            "body": "How can someone be THIS early https://t.co/3LN79FPJ28\n\n一个人怎么能早到这种程度 https://t.co/3LN79FPJ28",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2072145334428680365"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/sarahtavel/status/1693980424379457876",
+                "resolvedUrl": "https://x.com/sarahtavel/status/1693980424379457876",
+                "authorName": "Sarah Tavel",
+                "authorHandle": "sarahtavel",
+                "authorUrl": "https://x.com/sarahtavel",
+                "text": "For the past 25 years, application software startups have had a singular focus: increasing company and employee productivity. AI enables a paradigm shift: Rather than sell software to improve an end-user's productivity, consider what it would look like to sell *the work itself*.",
+                "displayDate": "Aug 22",
+                "provider": "X",
+                "media": [],
+                "textZh": "过去 25 年里，应用软件创业公司一直只有一个核心目标：提升公司和员工的生产力。AI 带来了范式转移：与其卖软件来提高终端用户的生产力，不如想想，直接出售*工作本身*会是什么样子。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3LN79FPJ28",
+                "resolvedUrl": "https://x.com/sarahtavel/status/1693980424379457876"
+              }
+            ]
+          },
+          {
+            "headline": "A link-only post lands / 只发了个链接",
+            "body": "https://t.co/En3GgSh3Eu\n\nhttps://t.co/En3GgSh3Eu",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2072120868042641686"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/En3GgSh3Eu",
+                "resolvedUrl": "https://www.youtube.com/watch?v=Yz03ERsfDDM"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-07-01T00:13:20.000Z",
+        "sections": [
+          {
+            "headline": "A teaser lands a day early / 预告提前一天放出",
+            "body": "Ok a day early. This is coming tomorrow!\n\n好吧，提前了一天。这东西明天来！",
+            "source_links": [
+              "https://x.com/nikunj/status/2072111272859246943"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "SF devs sprint back for **Fable 5** / 听说 **Fable 5** 要回来了，旧金山程序员集体往回冲",
+            "body": "Every developer in SF right now running back to their desks post AIEWF after they heard Fable 5 is coming back.. https://t.co/HsCFU0Usz7\n\n现在旧金山每个开发者，AIEWF 一散场就往工位狂奔，因为他们听说 Fable 5 要回来了。 https://t.co/HsCFU0Usz7",
+            "source_links": [
+              "https://x.com/nikunj/status/2072106393256218883"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/HsCFU0Usz7",
+                "url": "https://pbs.twimg.com/tweet_video_thumb/HMGZx94bsAASbPf.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2072106393256218883/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/HsCFU0Usz7",
+                "resolvedUrl": "https://x.com/nikunj/status/2072106393256218883/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/tweet_video_thumb/HMGZx94bsAASbPf.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-07-01T05:00:57.000Z",
+        "sections": [
+          {
+            "headline": "One upside-down reaction says enough / 一个倒脸表情，意思都在里面了",
+            "body": "🙃 https://t.co/zTXNISaICx\n\n🙃 https://t.co/zTXNISaICx",
+            "source_links": [
+              "https://x.com/steipete/status/2072183656739983397"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMHgCAebUAA-Qwc.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2072183656739983397/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/zTXNISaICx",
+                "resolvedUrl": "https://x.com/steipete/status/2072183656739983397/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMHgCAebUAA-Qwc.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Token price is not task cost / token 单价不等于任务成本",
+            "body": "Price per token != cost per task https://t.co/dxuXgri7nD\n\n每个 token 的价格 != 每个任务的成本 https://t.co/dxuXgri7nD",
+            "source_links": [
+              "https://x.com/steipete/status/2072144627474579925"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/scaling01/status/2072071305281540338",
+                "resolvedUrl": "https://x.com/scaling01/status/2072071305281540338",
+                "authorName": "Lisan al Gaib",
+                "authorHandle": "scaling01",
+                "authorUrl": "https://x.com/scaling01",
+                "text": "Sonnet 5 goes straight into the garbage bin\n\n&gt; 1.2x more expensive than Opus 4.8 Max\n&gt; 2x more expensive than GPT-5.5-xhigh\n&gt; 5x more expensive than GLM-5.2\n&gt; 7x more expensive than Kimi-K2.6\n&gt; 57x more expensive than DeepSeek-V4-Pro",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMF5VSsWoAAcNy3.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/scaling01/status/2072071305281540338/photo/1"
+                  }
+                ],
+                "textZh": "Sonnet 5 可以直接扔进垃圾桶了 > 比 Opus 4.8 Max 贵 1.2 倍 > 比 GPT-5.5-xhigh 贵 2 倍 > 比 GLM-5.2 贵 5 倍 > 比 Kimi-K2.6 贵 7 倍 > 比 DeepSeek-V4-Pro 贵 57 倍"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/dxuXgri7nD",
+                "resolvedUrl": "https://x.com/scaling01/status/2072071305281540338"
+              }
+            ]
+          },
+          {
+            "headline": "Still not enough talk about loops / 看来大家对 loops 还没聊够",
+            "body": "Apparently we didn't talk enough about  w̶o̶r̶k̶f̶l̶o̶w̶s̶ loops yet! See ya there! https://t.co/A9mc4pKPC4\n\n看来我们对  w̶o̶r̶k̶f̶l̶o̶w̶s̶ loops 还是没聊够！到时见！ https://t.co/A9mc4pKPC4",
+            "source_links": [
+              "https://x.com/steipete/status/2072143124496097302"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/warpdotdev/status/2071731280178508255",
+                "resolvedUrl": "https://x.com/warpdotdev/status/2071731280178508255",
+                "authorName": "Warp",
+                "authorHandle": "warpdotdev",
+                "authorUrl": "https://x.com/warpdotdev",
+                "text": "@steipete is now joining us for Crafting Software Factories!\n\n📅 6pm Wed evening in SF after the @aiDotEngineer World's Fair\n\nHe'll be joining @zachlloydtweets and Paige Bailey from Google DeepMind to chat all-things loops, software factories, and the future of coding",
+                "displayDate": "Jun 29",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMBEnnwaEAA-Owj.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/warpdotdev/status/2071731280178508255/photo/1"
+                  }
+                ],
+                "textZh": "@steipete 现在也将加入我们的 Crafting Software Factories！ 📅 周三晚 6 点，地点在 SF，时间是在 @aiDotEngineer World's Fair 结束后 他将和 @zachlloydtweets 以及来自 Google DeepMind 的 Paige Bailey 一起聊聊 loops、software factories，以及编程的未来"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/A9mc4pKPC4",
+                "resolvedUrl": "https://x.com/warpdotdev/status/2071731280178508255"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-06-30T23:55:13.000Z",
+        "sections": [
+          {
+            "headline": "Pure hype mode activated / 直接进入狂喜模式",
+            "body": "LETS FUCKIN GO https://t.co/V11siBIHyo\n\n冲他妈的 https://t.co/V11siBIHyo",
+            "source_links": [
+              "https://x.com/danshipper/status/2072106715286225313"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/anthropicai/status/2072106151890809341",
+                "resolvedUrl": "https://x.com/AnthropicAI/status/2072106151890809341",
+                "authorName": "Anthropic",
+                "authorHandle": "AnthropicAI",
+                "authorUrl": "https://x.com/AnthropicAI",
+                "text": "We’ve received notice that the Department of Commerce has lifted export controls on Claude Fable 5 and Mythos 5.\n\nWe'll begin restoring access tomorrow, and will share an update soon.\n\nWe’re grateful to our users for their patience, and to everyone who worked with us on",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们已收到通知，美国商务部已解除对 Claude Fable 5 和 Mythos 5 的出口管制。 我们将于明天开始恢复访问，并会很快分享最新进展。 感谢用户的耐心，也感谢所有与我们一起推进此事的人"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/V11siBIHyo",
+                "resolvedUrl": "https://x.com/anthropicai/status/2072106151890809341"
+              }
+            ]
+          },
+          {
+            "headline": "Vacation brain, **Fable** rumors, same problem / 人在度假，心已经飞回 **Fable**",
+            "body": "me, on a vacation in mexico, hearing that fable might be coming back tonight https://t.co/OHp0diROKl\n\n我，人还在墨西哥度假，却听说 fable 今晚可能要回来了 https://t.co/OHp0diROKl",
+            "source_links": [
+              "https://x.com/danshipper/status/2072099953254584462"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/OHp0diROKl",
+                "url": "https://pbs.twimg.com/tweet_video_thumb/HMGT3LLWAAAXPxe.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2072099953254584462/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/OHp0diROKl",
+                "resolvedUrl": "https://x.com/danshipper/status/2072099953254584462/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/tweet_video_thumb/HMGT3LLWAAAXPxe.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "If **Fable** returns, he's streaming from Cabo / **Fable** 真回归，他要在 Cabo 直接开播烧 token",
+            "body": "if this happens im livestreaming and ripping tokens from my vacation in cabo tonight https://t.co/6jJZx8mOp2\n\n如果这事真成了，我今晚就在 Cabo 度假时直接开直播狠狠干 token https://t.co/6jJZx8mOp2",
+            "source_links": [
+              "https://x.com/danshipper/status/2072094163378622823"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/SophiaCai99/status/2072082423949525348",
+                "resolvedUrl": "https://x.com/SophiaCai99/status/2072082423949525348",
+                "authorName": "Sophia Cai",
+                "authorHandle": "SophiaCai99",
+                "authorUrl": "https://x.com/SophiaCai99",
+                "text": "🚨 NEWS: Commerce is expected to lift export controls on Fable tonight, a senior White House official tells me.",
+                "displayDate": "Jun 30",
+                "provider": "X",
+                "media": [],
+                "textZh": "🚨 新闻：一位白宫高级官员告诉我，商务部预计今晚会解除对 Fable 的出口管制。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/6jJZx8mOp2",
+                "resolvedUrl": "https://x.com/sophiacai99/status/2072082423949525348"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-06-30T15:47:24.000Z",
+        "sections": [
+          {
+            "headline": "US innovation riding on Chinese open models feels strange / 美国创新靠中国开源模型驱动，这局面够怪",
+            "body": "It is a very strange state of the world where the models powering innovation in the USA are Chinese open source models.\n\n美国现在很多创新，底层跑的却是中国开源模型，这个世界状态确实很怪。",
+            "source_links": [
+              "https://x.com/adityaag/status/2071983952894837062"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-06-30T18:00:32.000Z",
+        "sections": [
+          {
+            "headline": "**Sonnet 5** becomes the default across **Claude** / **Sonnet 5** 成为 **Claude** 默认模型",
+            "body": "Sonnet 5 is now the default on Free and Pro, and available to Max, Team, and Enterprise users.\n\nIt's live across all Claude apps and the Claude Platform today, with introductory pricing through August 31: https://t.co/4nNWO80Er7\n\nSonnet 5 现在已经是 Free 和 Pro 的默认模型，也对 Max、Team 和 Enterprise 用户开放。\n\n它今天已经在所有 Claude 应用和 Claude Platform 上线，介绍期价格持续到 8 月 31 日： https://t.co/4nNWO80Er7",
+            "source_links": [
+              "https://x.com/claudeai/status/2072017457057853480"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/4nNWO80Er7",
+                "resolvedUrl": "https://www.anthropic.com/news/claude-sonnet-5"
+              }
+            ]
+          },
+          {
+            "headline": "Partners say **Sonnet 5** finishes what earlier Sonnets missed / 合作方说 **Sonnet 5** 能把之前没做完的复杂任务做完",
+            "body": "Early access partners found Sonnet 5 finishes complex tasks where previous Sonnets stopped short, checks its own output without being asked, and does all its agentic work at an attractive price point.\n\n提前拿到权限的合作方发现，Sonnet 5 能把之前几代 Sonnet 半路停下来的复杂任务做完，还会在没人提醒的情况下自己检查输出，而且做这类 agentic 工作的价格也很有吸引力。",
+            "source_links": [
+              "https://x.com/claudeai/status/2072017455833100494"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Sonnet 5** nears **Opus 4.8** at lower cost / **Sonnet 5** 价格更低，性能逼近 **Opus 4.8**",
+            "body": "Sonnet 5 is a substantial improvement over Sonnet 4.6 on reasoning, tool use, coding, and knowledge work.\n\nIts performance is close to Opus 4.8, at lower prices. https://t.co/VOISbk14Lk\n\nSonnet 5 相比 Sonnet 4.6，在推理、工具使用、编码和知识工作上都有明显提升。\n\n它的表现已经接近 Opus 4.8，但价格更低。 https://t.co/VOISbk14Lk",
+            "source_links": [
+              "https://x.com/claudeai/status/2072017452335087996"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMFGxPUXQAAM9OA.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2072017452335087996/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/VOISbk14Lk",
+                "resolvedUrl": "https://x.com/claudeai/status/2072017452335087996/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMFGxPUXQAAM9OA.png"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-07-01",
+    "updatedAt": "2026-07-01T12:09:35.656Z",
+    "commit": {
+      "sha": "c1795e694381c31b5bd0ad01474f1baee2172ac0",
+      "committedAt": "2026-07-01T07:49:46Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-07-01T12:00:12.024Z",
+    "feedGeneratedAt": "2026-07-01T07:49:10.368Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
