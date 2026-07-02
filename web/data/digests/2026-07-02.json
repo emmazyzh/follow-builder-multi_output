@@ -1,0 +1,930 @@
+{
+  "payload": {
+    "date": "2026-07-02",
+    "title": "AI Builders Daily · 2026-07-02",
+    "summary": "**Fable 5 storms back** and instantly hijacks the timeline; **Anthropic and OpenAI** keep pulling talent, attention, and workflow gravity into the labs; builders are moving from \"can we build it\" to \"should we maintain it\" as agents, dry runs, and sellable apps start looking more operational than experimental.\n\n**Fable 5 一回归就把时间线点着了**；**Anthropic** 和 **OpenAI** 还在继续吸走人才、注意力和野心；圈子里的问题也变了，不再只是“能不能做出来”，而是“值不值得自己养着”，因为代理、dry run、可售卖应用这些东西，已经越来越像正经生产系统，不像试玩了。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+        "source_label": "Podcast",
+        "posted_at": "2026-07-01T15:57:56.000Z",
+        "sections": [
+          {
+            "headline": "**Every** on internal agents, **Codex**, and why build-vs-buy still matters | **Every** 聊内部代理、**Codex**，以及为什么“自建还是买现成”还没过时",
+            "body": "**Every**'s consulting lead says **Codex** helped turn her daily stack into an operating system: email, meeting notes, inbound leads, dashboards, and CRM tasks now flow through an internal agent named **Claudie**. The update here is not novelty but routine. **Claudie** now runs in loops, evaluates itself, and handles SOP-driven work well enough to be treated like part of the team.\n\nBut the episode's sharper point is where the limits still bite. **Claudie** can execute against process, but it still needs oversight, taste, and someone to surface what's actually interesting in the data. That is why **Every** is still hiring humans in ops even as the agent gets better.\n\nThe most useful takeaway is the build-vs-buy reversal. They moved from a homegrown CRM stack glued together with Google Sheets to tools like **Attio** and **Asana**, not because AI failed, but because maintaining all the hidden logic was too expensive. Their argument is simple: AI can build almost anything now; that does not mean you should own the maintenance burden.\n\n**Every** 的咨询负责人说，**Codex** 基本把她手里的工作流拧成了一套操作系统：邮件、会议记录、线索流转、仪表盘、CRM 事务，现在都能经过一个叫 **Claudie** 的内部代理。重点已经不是“新不新鲜”，而是它真的天天在跑。**Claudie** 会循环执行、做自我评估，按 SOP 干活已经像团队成员了。\n\n但这期更有意思的地方，是边界仍然很硬。**Claudie** 很会按流程执行，可它还是需要人盯着，需要判断力，也需要有人把数据里真正值得看的东西拎出来。所以哪怕代理越来越能干，**Every** 还是在招真人做运营。\n\n最实用的一层，是他们对“自建还是买现成”的态度变了。团队之前把 CRM 用 Google Sheets 和自制系统硬拼起来，后来还是换到了 **Attio** 和 **Asana**。不是因为 AI 不行，而是那些藏在细节里的规则太多，自己维护太费人。结论很直接：现在 AI 的确能把很多东西搭出来，但不等于你该把后续维护一并背上。",
+            "source_links": [
+              "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AIE organizer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-07-02T06:07:09.000Z",
+        "sections": [
+          {
+            "headline": "Double-length **AIE** keynote draws a packed room for sandboxing and world models | **AIE** 加长主题演讲爆满，讲的是沙盒和世界模型",
+            "body": "for what it's worth, i only invite double-length track keynotes when I'm very sure that both speaker and content deserve it. Today, @chrmanning and @abshkbh did double duty at AIE and by all accounts* people loved the opportunity to go deeper on sandboxing and world models. Look at this insane room - and the online audience is going to be >1000x this!!\n\n*i unfortunately have to do show duties so rely on secondhand accounts\n\n说句实话，只有我非常确定讲者和内容都配得上时，我才会安排双倍时长的分会场 keynote。今天，@chrmanning 和 @abshkbh 在 AIE 连讲两场；据各方反馈*，大家很喜欢这种能把 sandboxing 和 world models 讲深一点的机会。看看这离谱的现场人数，线上观众还会是它的 1000 多倍！！\n\n*可惜我得忙现场事务，所以只能听二手反馈",
+            "source_links": [
+              "https://x.com/swyx/status/2072562702703046855"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/DijEqIQN4I",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2072562349735804928/img/twuJCUNlfp94XeB4.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2072562702703046855/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-07-01T20:02:50.000Z",
+        "sections": [
+          {
+            "headline": "A cryptic **OpenAI** teaser lands: \"It's happening\" | **OpenAI** 丢出一句暧昧预告：“开始了”",
+            "body": "It's happening https://t.co/PtS0ZoYL09\n\n开始了 https://t.co/PtS0ZoYL09",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2072410623380468190"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/romainhuet/status/2072406923660648757",
+                "resolvedUrl": "https://x.com/romainhuet/status/2072406923660648757",
+                "authorName": "Romain Huet",
+                "authorHandle": "romainhuet",
+                "authorUrl": "https://x.com/romainhuet",
+                "text": "Make your way to the OpenAI booth now if you’re at @aiDotEngineer! 🚨\n\nAt 1pm, you’ll get to see the Codex reset button in action.\n\nRumor has it it’s headed back into a top-secret underground vault after today. 🤫",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMKrGxRaQAAPTQd.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/romainhuet/status/2072406923660648757/photo/1"
+                  }
+                ],
+                "textZh": "如果你在 @aiDotEngineer，赶紧来 OpenAI 展位！🚨 下午 1 点，你会看到 Codex 重置按钮的实际演示。 传闻说，今天之后它又要被送回绝密地下金库了。🤫"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/PtS0ZoYL09",
+                "resolvedUrl": "https://x.com/romainhuet/status/2072406923660648757"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-07-02T03:39:59.000Z",
+        "sections": [
+          {
+            "headline": "**explain-diff** gets an immediate thumbs-up for code learners | 学代码的人立刻给 **explain-diff** 点赞",
+            "body": "As someone still trying to learn how to read code this is great! Installing the explain-diff skill asap https://t.co/lChjp2D7kS\n\n作为一个还在努力学着怎么看代码的人，这个太好了！我马上装 explain-diff skill https://t.co/lChjp2D7kS",
+            "source_links": [
+              "https://x.com/petergyang/status/2072525669704384612"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/lChjp2D7kS",
+                "resolvedUrl": "https://twitter.com/geoffreylitt/status/2072522251300409556"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Fable 5** gets a blunt verdict: still way ahead | 对 **Fable 5** 的直白评价：还是遥遥领先",
+            "body": "Here's my Fable 5 vibe check:\n\nIt's still really ****ing good. \n\nThis is a step function above any other model. Hope GPT 5.6 can match. https://t.co/p9N7cG86QW\n\n这是我对 Fable 5 的最新体感：\n\n它还是他妈的特别强。\n\n这比别的模型高了一个台阶。希望 GPT 5.6 能跟上。 https://t.co/p9N7cG86QW",
+            "source_links": [
+              "https://x.com/petergyang/status/2072470191511113732"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/petergyang/status/2072458983886205333",
+                "resolvedUrl": "https://x.com/petergyang/status/2072458983886205333",
+                "authorName": "Peter Yang",
+                "authorHandle": "petergyang",
+                "authorUrl": "https://x.com/petergyang",
+                "text": "Claude Fable 5 is finally back, but you only have until July 7 to use it on your Claude subscription.\n\nI made a new tutorial walking through 5 use cases worth trying Fable on:\n\n→ Find Fable-worthy work\n→ Get life and business advice\n→ Make projects ship-ready\n→ Plan the next",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [],
+                "textZh": "Claude Fable 5 终于回来了，但你只能在 7 月 7 日前通过你的 Claude 订阅使用它。 我做了一个新教程，带你看 5 个值得用 Fable 试试的场景： → 找出适合交给 Fable 的工作 → 获取人生和商业建议 → 让项目达到可交付状态 → 规划下一步"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/p9N7cG86QW",
+                "resolvedUrl": "https://x.com/petergyang/status/2072458983886205333"
+              }
+            ]
+          },
+          {
+            "headline": "A five-use-case **Fable 5** tutorial, before the July 7 window closes | 趁 7 月 7 日窗口还没关，一份 **Fable 5** 五种玩法教程",
+            "body": "Claude Fable 5 is finally back, but you only have until July 7 to use it on your Claude subscription.\n\nI made a new tutorial walking through 5 use cases worth trying Fable on:\n\n→ Find Fable-worthy work\n→ Get life and business advice\n→ Make projects ship-ready\n→ Plan the next big thing\n→ Refactor your project or codebase\n\nAs usual, it’s no BS, and I show you Fable’s actual output.\n\n📌 Watch now: https://t.co/XElMEV3FwK\n\nClaude Fable 5 终于回来了，但你在 Claude 订阅里只能用到 7 月 7 日。\n\n我做了一个新教程，带你走一遍 5 个值得拿 Fable 试的场景：\n\n→ 找出适合交给 Fable 的工作\n→ 聊人生和商业建议\n→ 把项目收尾到能发货\n→ 规划下一件大事\n→ 重构你的项目或代码库\n\n还是老样子，不扯虚的，我直接展示 Fable 的实际输出。\n\n📌 现在就看： https://t.co/XElMEV3FwK",
+            "source_links": [
+              "https://x.com/petergyang/status/2072458983886205333"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/XElMEV3FwK",
+                "resolvedUrl": "https://youtu.be/5CBnWGP5vIs"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Anthropic Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-07-01T17:06:45.000Z",
+        "sections": [
+          {
+            "headline": "A quick nod as HTML gets name-checked | HTML 被点名，顺手发了条短帖",
+            "body": "HTML mentioned https://t.co/lWYyfXjmWS\n\n提到 HTML 了 https://t.co/lWYyfXjmWS",
+            "source_links": [
+              "https://x.com/trq212/status/2072366310416425053"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/notionhq/status/2072354853821755822",
+                "resolvedUrl": "https://x.com/NotionHQ/status/2072354853821755822",
+                "authorName": "Notion",
+                "authorHandle": "NotionHQ",
+                "authorUrl": "https://x.com/NotionHQ",
+                "text": "New block in Notion: HTML.\n\nBuild interactive HTML right on your Notion page. Ask AI to turn your content into interactive explainers, prototypes, or diagrams.\n\nShare with your team to use and tinker together.",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/y6ojkjdZkv",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2072353512512745472/img/W_bIyCYW9t8zVmhZ.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/NotionHQ/status/2072354853821755822/video/1"
+                  }
+                ],
+                "textZh": "Notion 新增区块：HTML。 直接在你的 Notion 页面里构建交互式 HTML。让 AI 把你的内容变成交互式讲解、原型或图表。 分享给团队，一起使用、一起折腾。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/lWYyfXjmWS",
+                "resolvedUrl": "https://x.com/notionhq/status/2072354853821755822"
+              }
+            ]
+          },
+          {
+            "headline": "Checking in from **AI Engineer** | 从 **AI Engineer** 现场发来一句问候",
+            "body": "hello from AI engineer! https://t.co/J8sFn5pbyC\n\n从 AI engineer 现场打个招呼！ https://t.co/J8sFn5pbyC",
+            "source_links": [
+              "https://x.com/trq212/status/2072360902964511171"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMKBQdPagAM2hN7.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2072360902964511171/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/J8sFn5pbyC",
+                "resolvedUrl": "https://x.com/trq212/status/2072360902964511171/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMKBQdPagAM2hN7.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Google Labs",
+        "person_handle": "GoogleLabs",
+        "person_identity": "Google Labs",
+        "profile_url": "https://x.com/GoogleLabs",
+        "source_label": "X",
+        "posted_at": "2026-07-01T20:28:50.000Z",
+        "sections": [
+          {
+            "headline": "**Google Labs** sunsets **MusicFX** and pushes creators toward **Google Flow Music** | **Google Labs** 关停 **MusicFX**，把音乐创作者导向 **Google Flow Music**",
+            "body": "Every good chord progression needs a resolution. 🎹\n\nTo focus on building @GoogleFlowMusic - our tool for creating, sharing, and remixing original music - we will be saying a fond farewell to MusicFX and MusicFX DJ on July 31, 2026.\n\nThese early experiments pushed the boundaries of AI for real-time music creation, and we're taking everything we learned from them to provide a long-term home for musical projects.\n\nKeep jamming at https://t.co/3XMUc2pkzU 🎵\n\n每一段好和弦进行，总得有个收尾。🎹\n\n为了专注建设 @GoogleFlowMusic 这个用来创作、分享、混编原创音乐的工具，我们会在 2026 年 7 月 31 日正式和 MusicFX、MusicFX DJ 说再见。\n\n这些早期实验把 AI 实时音乐创作往前推了一步，我们会把从中学到的东西都带进一个更长期的音乐项目阵地。\n\n继续 jam： https://t.co/3XMUc2pkzU 🎵",
+            "source_links": [
+              "https://x.com/GoogleLabs/status/2072417166952136789"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/3XMUc2pkzU",
+                "resolvedUrl": "https://flowmusic.google/"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-07-01T18:21:23.000Z",
+        "sections": [
+          {
+            "headline": "**Replit** adds a path from app creation to monetization via **Whop** | **Replit** 把“做出来”接上了“卖出去”，联动 **Whop**",
+            "body": "Now that building is easy, we’ve been increasingly focused on getting entrepreneurs to market, helping them reach their first customer and first dollar.\n\nWhop is one of the best places on the internet to monetize your creations — and now you can sell your Replit apps on there. https://t.co/lEGZGn51Wg\n\n现在做东西已经容易多了，所以我们越来越关注怎么把创业者送到市场上，帮他们拿到第一个客户、第一笔收入。\n\nWhop 是网上最适合把创作变现的平台之一，现在你也可以直接在上面卖你的 Replit 应用了。 https://t.co/lEGZGn51Wg",
+            "source_links": [
+              "https://x.com/amasad/status/2072385092824260748"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/whop/status/2072334668804796923",
+                "resolvedUrl": "https://x.com/whop/status/2072334668804796923",
+                "authorName": "Whop",
+                "authorHandle": "whop",
+                "authorUrl": "https://x.com/whop",
+                "text": "Replit 🤝 Whop\n\nBuild your app on Replit. Earn on Whop.",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/uOCoB9QIPG",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2072333363495550976/img/d6-VybAhkNB-lXZ9.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/whop/status/2072334668804796923/video/1"
+                  }
+                ],
+                "textZh": "Replit 🤝 Whop 在 Replit 上构建你的应用，在 Whop 上赚钱。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/lEGZGn51Wg",
+                "resolvedUrl": "https://x.com/whop/status/2072334668804796923"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-07-01T23:34:47.000Z",
+        "sections": [
+          {
+            "headline": "A local **WordPress** dev shoutout for **portless** | 给本地 **WordPress** 开发工具 **portless** 点了个名",
+            "body": "I really enjoyed using 𝚙𝚘𝚛𝚝𝚕𝚎𝚜𝚜 by @ctatedev – http was a non-starter for local wp development!\n\n我很喜欢用 @ctatedev 做的 𝚙𝚘𝚛𝚝𝚕𝚎𝚜𝚜，http 用来做本地 wp 开发根本不行！",
+            "source_links": [
+              "https://x.com/rauchg/status/2072463961597878762"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**WordPress** on **Vercel Fluid**, **PlanetScale** underneath, 30-second cloud builds | **WordPress** 跑上 **Vercel Fluid**，底层接 **PlanetScale**，云端构建 30 秒",
+            "body": "WordPress on @vercel Fluid with Active CPU from a single 𝙳𝚘𝚌𝚔𝚎𝚛𝚏𝚒𝚕𝚎.𝚟𝚎𝚛𝚌𝚎𝚕. MySQL on @planetscale. 30s deployments incl. \"𝚍𝚘𝚌𝚔𝚎𝚛 𝚋𝚞𝚒𝚕𝚍\" in the cloud. Just one command: 𝚗̶𝚘̶𝚠̶ 𝚟𝚎𝚛𝚌𝚎𝚕. https://t.co/q1X5ZOFVIx\n\nWordPress 跑在 @vercel Fluid 上，用单个 𝙳𝚘𝚌𝚔𝚎𝚛𝚏𝚒𝚕𝚎.𝚟𝚎𝚛𝚌𝚎𝚕 开启 Active CPU。MySQL 放在 @planetscale。包括云端 \"𝚍𝚘𝚌𝚔𝚎𝚛 𝚋𝚞𝚒𝚕𝚍\" 在内，部署 30 秒。只要一条命令：𝚗̶𝚘̶𝚠̶ 𝚟𝚎𝚛𝚌𝚎𝚕。 https://t.co/q1X5ZOFVIx",
+            "source_links": [
+              "https://x.com/rauchg/status/2072463293654942090"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMLczYUWYAA1jC8.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2072463293654942090/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/q1X5ZOFVIx",
+                "resolvedUrl": "https://x.com/rauchg/status/2072463293654942090/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMLczYUWYAA1jC8.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Vercel** ships dry-run steps for agentic deployments | **Vercel** 给 agent 部署加上 dry-run 步骤",
+            "body": "Agents love to check their work before they push. \n\nYou probably see it in the form of 𝚗𝚘𝚍𝚎 --𝚌𝚑𝚎𝚌𝚔, 𝚝𝚜𝚌 --𝚗𝚘𝙴𝚖𝚒𝚝, 𝚗𝚎𝚡𝚝 𝚋𝚞𝚒𝚕𝚍, etc all over your agent sessions.\n\nWe’re now shipping the dry-run step for agentic deployments, minimizing costs and risk. https://t.co/HpOXSROT3X\n\nAgents 在 push 之前就爱先检查自己的活。\n\n你大概已经在各种 agent 会话里见过这种东西了：𝚗𝚘𝚍𝚎 --𝚌𝚑𝚎𝚌𝚔、𝚝𝚜𝚌 --𝚗𝚘𝙴𝚖𝚒𝚝、𝚗𝚎𝚡𝚝 𝚋𝚞𝚒𝚕𝚍 之类。\n\n我们现在把 agentic deployments 的 dry-run 步骤正式发出来了，用来压低成本和风险。 https://t.co/HpOXSROT3X",
+            "source_links": [
+              "https://x.com/rauchg/status/2072398926175404250"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2072396789333024857",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2072396789333024857",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "You and your agents can now catch issues and make changes before creating a deployment.\n\n𝚟𝚌 𝚍𝚎𝚙𝚕𝚘𝚢 --𝚍𝚛𝚢\n\nPreview, iterate, deploy ↓\nhttps://vercel.com/changelog/dry-run-deployments-with-vercel-cli",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [],
+                "textZh": "现在，你和你的 agents 可以在创建部署之前先发现问题并进行修改。 𝚟𝚌 𝚍𝚎𝚙𝚕𝚘𝚢 --𝚍𝚛𝚢 先预览，后迭代，再部署 ↓ https://vercel.com/changelog/dry-run-deployments-with-vercel-cli"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/HpOXSROT3X",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2072396789333024857"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Alex Albert",
+        "person_handle": "alexalbert__",
+        "person_identity": "Anthropic Research",
+        "profile_url": "https://x.com/alexalbert__",
+        "source_label": "X",
+        "posted_at": "2026-07-01T19:39:22.000Z",
+        "sections": [
+          {
+            "headline": "**Fable** gets a simple welcome-back from **Anthropic** research | **Anthropic** 研究员一句话欢迎 **Fable** 回归",
+            "body": "Welcome back to the world Fable!! https://t.co/krcdkuYId8\n\n欢迎回来，Fable！！ https://t.co/krcdkuYId8",
+            "source_links": [
+              "https://x.com/alexalbert__/status/2072404717490360727"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2072402636813607381",
+                "resolvedUrl": "https://x.com/claudeai/status/2072402636813607381",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "Fable 5 is back.",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/9RTGUCcPHy",
+                    "url": "https://pbs.twimg.com/media/HMKoSbnXEAERYLR.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2072402636813607381/video/1"
+                  }
+                ],
+                "textZh": "Fable 5 回来了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/krcdkuYId8",
+                "resolvedUrl": "https://x.com/claudeai/status/2072402636813607381"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-07-02T03:14:59.000Z",
+        "sections": [
+          {
+            "headline": "**Box** CEO says agent swarms will drive a 100x inference future | **Box** CEO 认为代理集群会把推理需求拉到 100 倍",
+            "body": "If you’ve ever wondered why we will need 100X more AI inference in the future, and  what it’s going to be driven by, this is another good example. \n\nDevin pushes forward an idea of agentic mapreduce, which means we’ll now have swarms of agents that are processing large amounts of data (code) to handle tasks that humans never could have done before.\n\n“Devin maps relevant signals across the repo, fans out focused agents over bounded shards, reduces their findings into one report, then verifies serious vulnerabilities in isolated sandboxes before marking them confirmed.”\n\nIn this case it’s code security, but there are tons of other use-cases in code and knowledge work. We see this at Box with customers that want to process and understand millions of documents for risk, insights, relationships, and more. This will play out in pharma, banking, and many other industries across all forms of unstructured data.\n\nAs an aside, these types of capabilities are generally only possible when you can deploy a variety of models (both the frontier and lower cost) because of the sheer amount of tokens that go into these use-cases. This is going to be a major value proposition for the applied AI layer.\n\n如果你一直在想，为什么未来会需要 100 倍更多的 AI inference，以及需求到底会被什么拉动，这又是一个很好的例子。\n\nDevin 正在推进一种 agentic mapreduce 的思路，也就是说，我们将会有成群的 agents 去处理海量数据（代码），完成过去人类根本做不了的任务。\n\n“Devin 会在整个 repo 里映射相关信号，把有针对性的 agents 分发到边界清晰的分片上，再把它们的发现汇总成一份报告，最后在隔离沙盒里验证严重漏洞，确认之后再标记为已证实。”\n\n这里是代码安全，但在代码和知识工作里还有大量别的用法。我们在 Box 也看到客户想处理和理解数百万份文档，从风险、洞察到关系抽取都是需求。制药、银行以及很多行业里，各种非结构化数据都会出现同样的事。\n\n顺带一提，这类能力通常只有在你能部署多种模型时才成立，既要有前沿模型，也要有低成本模型，因为这些场景会吞掉大量 token。这会成为应用层 AI 的一个重要价值点。",
+            "source_links": [
+              "https://x.com/levie/status/2072519377371459836"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-07-01T23:24:50.000Z",
+        "sections": [
+          {
+            "headline": "A link-only post from **Garry Tan** | **Garry Tan** 发了一条纯链接帖",
+            "body": "https://t.co/gTrjV7mcxf https://t.co/7r4wY0VvO0\n\nhttps://t.co/gTrjV7mcxf https://t.co/7r4wY0VvO0",
+            "source_links": [
+              "https://x.com/garrytan/status/2072461457195950446"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMLctoLaEAAZpQZ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2072461457195950446/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/gTrjV7mcxf",
+                "resolvedUrl": "https://x.com/garrytan/status/2072461457195950446/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMLctoLaEAAZpQZ.jpg"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/7r4wY0VvO0",
+                "resolvedUrl": "https://twitter.com/garryslist/status/2072391685401645482"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Calling something the most underreported story in tech | 说这是整个科技圈最被低估的一条新闻",
+            "body": "Most underreported story in all of tech https://t.co/IfhGLmHwuL\n\n整个科技圈里最被低估的一条新闻 https://t.co/IfhGLmHwuL",
+            "source_links": [
+              "https://x.com/garrytan/status/2072402517397573717"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/garryslist/status/2072391681987563870",
+                "resolvedUrl": "https://x.com/garryslist/status/2072391681987563870",
+                "authorName": "Garry's List",
+                "authorHandle": "garryslist",
+                "authorUrl": "https://x.com/garryslist",
+                "text": "Two reports from @SamLyman33 and @bitcoinpolicy document a coordinated foreign influence campaign against American AI — running through CCP state media, a Shanghai-based Marxist's nonprofit network, and foreign billionaire dark money that has funneled $2B+ into US advocacy",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HMKbyFRW8AEDyJo.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/garryslist/status/2072391681987563870/photo/1"
+                  }
+                ],
+                "textZh": "@SamLyman33 和 @bitcoinpolicy 的两份报告记录了一场针对美国 AI 的协同外国影响力行动，涉及中共官媒、一个总部位于上海的马克思主义者非营利网络，以及向美国倡议活动输送了超过 20 亿美元的外国亿万富翁暗金"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/IfhGLmHwuL",
+                "resolvedUrl": "https://x.com/garryslist/status/2072391681987563870"
+              }
+            ]
+          },
+          {
+            "headline": "A big academia-to-lab move, and **Anthropic** gets the nod | 学界大佬加入实验室，**Anthropic** 又被点名势头太猛",
+            "body": "Mega get, head of UC Berkeley EECS omg\n\nAnthropic is on a tear https://t.co/6lTQhG7BIo\n\n这真是个超级大招，UC Berkeley EECS 的负责人啊，我的天\n\nAnthropic 最近真的猛得离谱 https://t.co/6lTQhG7BIo",
+            "source_links": [
+              "https://x.com/garrytan/status/2072331451270606933"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/minilek/status/2072322757908664728",
+                "resolvedUrl": "https://x.com/minilek/status/2072322757908664728",
+                "authorName": "Jelani Nelson",
+                "authorHandle": "minilek",
+                "authorUrl": "https://x.com/minilek",
+                "text": "Update: I've joined @AnthropicAI and taken leave from the university. Excited to work with many talented, mission-driven people on the defining technology of our time.",
+                "displayDate": "Jul 1",
+                "provider": "X",
+                "media": [],
+                "textZh": "更新：我已加入 @AnthropicAI，并从大学请假。很期待能和许多有才华、以使命为驱动的人一起，投入到这个时代最具决定性的技术中。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/6lTQhG7BIo",
+                "resolvedUrl": "https://x.com/minilek/status/2072322757908664728"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-07-01T23:27:29.000Z",
+        "sections": [
+          {
+            "headline": "2026 IPO humor: **AOL**, **Evernote**, **Vimeo**, and **Lime** | 2026 年 IPO 段子：**AOL**、**Evernote**、**Vimeo**、**Lime**",
+            "body": "The year is 2026 and the hot IPO brands right now are AOL, Evernote, Vimeo and Lime scooters\n\n现在是 2026 年，而眼下最热的 IPO 品牌居然是 AOL、Evernote、Vimeo 和 Lime 小黄车",
+            "source_links": [
+              "https://x.com/mattturck/status/2072462125474181623"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Why **Lime** pulled off an IPO despite debt and survival doubts | **Lime** 背着债、还被怀疑撑不过一年，怎么还是 IPO 了",
+            "body": "Fascinated by Lime going public - in an age where AI gets all the attention, how does a scooter company with $1B in debt pull off a successful IPO literally after expressing \"substantial doubt\" that they might not even survive the year?\n\n* Impressive financial engineering - the IPO paid off the toxic loans and converted the rest to equity, so the slate is clean\n\n* Uber owns 22% of Lime and refers riders directly to Lime, so obviously a great backstop and partner\n\n* They've actually been FCF positive for 3 consecutive years with revenue growing nearly 30% YoY\n\n* Something about being the last man standing and surviging the micromobility bloodbath (RIP Bird).  Never give up!\n\n我对 Lime 上市这事很着迷。在一个注意力几乎全被 AI 吃掉的时代，一家背着 10 亿美元债务、而且前不久还明确表示对自己能不能活过今年存在 \"substantial doubt\" 的滑板车公司，到底怎么完成了一次成功 IPO？\n\n* 财务操作确实厉害，IPO 把有毒贷款还掉了，剩下的转成股权，包袱一下轻了\n\n* Uber 持有 Lime 22% 股份，还直接给 Lime 导流骑行用户，所以这显然是个很强的后盾和合作方\n\n* 他们其实已经连续 3 年 FCF 转正，收入同比增长接近 30%\n\n* 还有一点，就是它成了最后活下来的那家，熬过了整个微出行行业的大屠杀（RIP Bird）。别轻易认输。",
+            "source_links": [
+              "https://x.com/mattturck/status/2072419592354529712"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMKxv-ZXAAA7Tvy.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2072419592354529712/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-07-01T18:48:43.000Z",
+        "sections": [
+          {
+            "headline": "A PSA: **Codex** can switch to **GLM** | 一个提醒：**Codex** 可以切到 **GLM**",
+            "body": "PSA: You can change Codex's model to GLM https://t.co/G3RQfWiS4j https://t.co/BeGZABjgTQ\n\n提醒一下：你可以把 Codex 的模型改成 GLM https://t.co/G3RQfWiS4j https://t.co/BeGZABjgTQ",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2072391971721884073"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMKdcBtasAA8-Jz.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2072391971721884073/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/G3RQfWiS4j",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2072391971721884073/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMKdcBtasAA8-Jz.jpg"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/BeGZABjgTQ",
+                "resolvedUrl": "https://twitter.com/thsottiaux/status/2067181377028538431"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The full video lives on **YouTube** | 完整视频已经放到 **YouTube**",
+            "body": "Full video on YouTube: https://t.co/FVBCFHXAqK\n\n完整视频在 YouTube： https://t.co/FVBCFHXAqK",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2072384777785888875"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/FVBCFHXAqK",
+                "resolvedUrl": "https://www.youtube.com/watch?v=372Iksaz8b0"
+              }
+            ]
+          },
+          {
+            "headline": "Build the workflow first, turn it into a skill last | 先把流程跑通，skill 放到最后做",
+            "body": "HOW TO BUILD A SKILL\nYou don't START with a skill. You END with a skill.\nBuilding the skill is the last step of your workflow, not the first step https://t.co/ngvvnml9uQ https://t.co/dqohk7MJwT\n\n怎么做一个 skill\n你不是从 skill 开始的。你是以 skill 结束的。\n做 skill 是你整个工作流的最后一步，不是第一步 https://t.co/ngvvnml9uQ https://t.co/dqohk7MJwT",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2072381929366987087"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/ngvvnml9uQ",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2072381822072393729/img/3kFC5ExnpI5aqWv1.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2072381929366987087/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ngvvnml9uQ",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2072381929366987087/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2072381822072393729/img/3kFC5ExnpI5aqWv1.jpg"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/dqohk7MJwT",
+                "resolvedUrl": "https://twitter.com/zarazhangrui/status/2069311440692072481"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-07-02T03:28:30.000Z",
+        "sections": [
+          {
+            "headline": "A patriotic soccer cheer in one line | 一句带旗子的足球欢呼",
+            "body": "Murica 🇺🇸⚽️ https://t.co/BWsqCu22Dw\n\n美利坚 🇺🇸⚽️ https://t.co/BWsqCu22Dw",
+            "source_links": [
+              "https://x.com/nikunj/status/2072522778327371819"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/BWsqCu22Dw",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2072522720076861440/img/H7MEjtjr3OPVWIA1.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2072522778327371819/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/BWsqCu22Dw",
+                "resolvedUrl": "https://x.com/nikunj/status/2072522778327371819/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2072522720076861440/img/H7MEjtjr3OPVWIA1.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Another short signal that **Fable** is back | 又一条简短信号：**Fable** 回来了",
+            "body": "Fable is back https://t.co/ceX26h5PcT\n\nFable 回来了 https://t.co/ceX26h5PcT",
+            "source_links": [
+              "https://x.com/nikunj/status/2072406317617262753"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/ceX26h5PcT",
+                "url": "https://pbs.twimg.com/tweet_video_thumb/HMKqj2hbQAAEjik.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2072406317617262753/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ceX26h5PcT",
+                "resolvedUrl": "https://x.com/nikunj/status/2072406317617262753/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/tweet_video_thumb/HMKqj2hbQAAEjik.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The lab talent vortex gets even stronger | 顶级实验室的人才漩涡还在加速",
+            "body": "The talent vortex of @OpenAI and @AnthropicAI is only getting crazier.. in the last 2 months, four personal friends have left VERY established roles to join the labs. \n\nThe dual draw of building one of the most consequential companies plus it being pre-IPO and getting liquidity is just too hard to pass up. \n\nThis means having strong conviction and MASSIVE ambition if you choose to do it on your own.\n\nMy only counter to Xavi’s position will be that most VCs actually won’t make a lot of money.. at least life changing money. Some of them have actually deflected to the labs knowing this. Like any role the best ones will thrive and survive!\n\n@OpenAI 和 @AnthropicAI 的人才漩涡只会越来越夸张。过去两个月里，我身边就有四个朋友离开了非常稳、非常成熟的岗位，转头进了这些实验室。\n\n一边是去参与打造最重要的公司之一，一边又是 pre-IPO、还能拿到流动性，这个双重吸引力太难拒绝了。\n\n这也意味着，如果你选择自己出来做，就得真的有很强的信念，还得有夸张的野心。\n\n我唯一想反驳 Xavi 的一点是，多数 VC 其实赚不到很多钱，至少赚不到那种能改命的钱。有人也是看明白这一点，直接转去实验室了。跟任何行业一样，最强的那批人还是会活得很好。",
+            "source_links": [
+              "https://x.com/nikunj/status/2072344802570756121"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw maintainer",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-07-02T04:06:15.000Z",
+        "sections": [
+          {
+            "headline": "A late shoutout to **Steve Yegge** and the \"factories\" thesis | 给 **Steve Yegge** 补了一句致敬，顺手提到“工厂时代”",
+            "body": "Never thought I give @Steve_Yegge a shoutout. He was just early, like most visionaries. Now everyone is building factories.\n\n真没想到我会公开给 @Steve_Yegge 点名致意。他只是来得太早了，很多有远见的人都这样。现在大家都开始造工厂了。",
+            "source_links": [
+              "https://x.com/steipete/status/2072532278476148881"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Looking for an **SF** hack space for **OpenClaw** maintainers | 在 **SF** 找几天半私密 hack 空间，给 **OpenClaw** 维护者用",
+            "body": "I’m looking for a semi-private hack space for a few days in SF for me and some of the OpenClaw maintainers. We need to cook. DM leads my way 🙏🦞\n\n我在找一个旧金山的半私密 hack 空间，想租几天给我和几位 OpenClaw 维护者用。我们得狠狠干一阵。有什么线索私信我 🙏🦞",
+            "source_links": [
+              "https://x.com/steipete/status/2072475858435276840"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A small existential nod to life with AI | 对有了 AI 之后的日常，发了句感叹",
+            "body": "How did I ever function without AI? \ncc chefcook @theo https://t.co/G0LJNvA3Kb\n\n没有 AI 以前，我到底是怎么活下来的？\ncc chefcook @theo https://t.co/G0LJNvA3Kb",
+            "source_links": [
+              "https://x.com/steipete/status/2072447453622882338"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMLPoQ-akAA6AwU.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2072447453622882338/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/G0LJNvA3Kb",
+                "resolvedUrl": "https://x.com/steipete/status/2072447453622882338/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMLPoQ-akAA6AwU.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-07-01T21:46:01.000Z",
+        "sections": [
+          {
+            "headline": "An excited reaction to something long postponed | 对一件拖了很久的事发出兴奋反应",
+            "body": "IVE BEEN MEANING TO DO THIS\n\nSO COOL https://t.co/eFxAG4GdYi\n\n我一直就想搞这个\n\n太酷了 https://t.co/eFxAG4GdYi",
+            "source_links": [
+              "https://x.com/danshipper/status/2072436587665797518"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/eFxAG4GdYi",
+                "resolvedUrl": "https://twitter.com/doooyle/status/2072351019913171442"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Jacuzzi energy for burning **Fable** tokens | 泡池子也要狠狠干掉 **Fable** token",
+            "body": "LET'S RIP FABLE TOKENS FROM THE JACUZZI https://t.co/denvBof2Yp\n\n让我们一边泡按摩浴缸一边狠狠干掉 FABLE tokens https://t.co/denvBof2Yp",
+            "source_links": [
+              "https://x.com/danshipper/status/2072402843819212906"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/denvBof2Yp",
+                "resolvedUrl": "https://x.com/i/broadcasts/1NGarrvabRQJj"
+              }
+            ]
+          },
+          {
+            "headline": "Pure hype: **Fable** is back | 纯粹的情绪宣告：**Fable** 回来了",
+            "body": "FABLE IS BACK!!! https://t.co/H7fsnFZQVV\n\nFABLE 回来了！！！ https://t.co/H7fsnFZQVV",
+            "source_links": [
+              "https://x.com/danshipper/status/2072402230041272669"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HMKm1tJWcAA69Sp.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2072402230041272669/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/H7fsnFZQVV",
+                "resolvedUrl": "https://x.com/danshipper/status/2072402230041272669/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HMKm1tJWcAA69Sp.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-07-01T22:37:46.000Z",
+        "sections": [
+          {
+            "headline": "A shot at default pessimism in **SF** | 朝 **SF** 里的默认悲观主义开了一枪",
+            "body": "Every once in a while, I meet a very very smart but default-pessimistic person in SF. They are often from the growthy/wall-street part of the world.\n\nAnd my first thought is: \"Why would you want to be in this city? We run on optimism. Are you here to be a contrarian in your sadness?\"\n\n每隔一阵子，我都会在旧金山碰到那种非常非常聪明、但默认就是悲观的人。他们往往来自偏增长、偏华尔街的那一挂。\n\n我脑子里第一个反应通常都是：“那你为什么还要待在这座城里？我们这里靠乐观驱动。你来这儿，是为了在自己的沮丧里当个唱反调的人吗？”",
+            "source_links": [
+              "https://x.com/adityaag/status/2072449611550380526"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-07-01T19:31:08.000Z",
+        "sections": [
+          {
+            "headline": "The **Fable 5** blog post link goes live | **Fable 5** 博文链接已放出",
+            "body": "Read the Fable 5 blog post here: https://t.co/iQymY0jQvY\n\nFable 5 的博客文章在这里： https://t.co/iQymY0jQvY",
+            "source_links": [
+              "https://x.com/claudeai/status/2072402642836615273"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/iQymY0jQvY",
+                "resolvedUrl": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claude Code** asks users to report false positives via feedback tools | **Claude Code** 提醒用户用反馈入口上报误判",
+            "body": "If one of your requests is mistakenly flagged in Claude Code, run /feedback to file a report. On https://t.co/XSKiQaAUU9 and Cowork, you can share feedback through the thumbs buttons. \n\nThis feedback helps us further tune these classifiers and reduce false positives over time.\n\n如果你在 Claude Code 里的某个请求被误判拦下了，运行 /feedback 提交报告。在 https://t.co/XSKiQaAUU9 和 Cowork 上，你也可以通过点赞/点踩按钮提交反馈。\n\n这些反馈能帮我们继续调这些分类器，慢慢把误报降下来。",
+            "source_links": [
+              "https://x.com/claudeai/status/2072402640907162072"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/XSKiQaAUU9",
+                "resolvedUrl": "http://claude.ai/"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Fable 5** access terms: paid plans through July 7, capped at 50% of weekly usage | **Fable 5** 使用规则：付费方案可用到 7 月 7 日，最多占每周额度 50%",
+            "body": "All paid plans with usage included can access Fable 5 through July 7. You can use Fable 5 up to 50% of your weekly usage limit, after which you can switch to another model for the remainder of your usage. You can also continue using Fable via usage credits.\n\nMore here: https://t.co/5reBCfXAqy\n\n所有包含使用额度的付费方案都可以在 7 月 7 日前使用 Fable 5。你可以把 Fable 5 用到每周额度的 50%，之后剩余额度可以切换到别的模型继续用。你也可以通过 usage credits 继续使用 Fable。\n\n更多信息： https://t.co/5reBCfXAqy",
+            "source_links": [
+              "https://x.com/claudeai/status/2072402639644766602"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/5reBCfXAqy",
+                "resolvedUrl": "https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-07-02",
+    "updatedAt": "2026-07-02T14:24:24.734Z",
+    "commit": {
+      "sha": "f1ea7bf508e6bfdfbd401687caa4c4971c5fdc08",
+      "committedAt": "2026-07-02T07:27:57Z",
+      "subject": "chore: update feeds [skip ci]"
+    },
+    "generatedAt": "2026-07-02T14:17:02.522Z",
+    "feedGeneratedAt": "2026-07-02T07:27:19.511Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

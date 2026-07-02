@@ -1,7 +1,20 @@
 {
-  "updatedAt": "2026-07-01T12:09:35.663Z",
-  "latestDate": "2026-07-01",
+  "updatedAt": "2026-07-02T14:24:24.738Z",
+  "latestDate": "2026-07-02",
   "dates": [
+    {
+      "date": "2026-07-02",
+      "title": "AI Builders Daily · 2026-07-02",
+      "summary": "**Fable 5 storms back** and instantly hijacks the timeline; **Anthropic and OpenAI** keep pulling talent, attention, and workflow gravity into the labs; builders are moving from \"can we build it\" to \"should we maintain it\" as agents, dry runs, and sellable apps start looking more operational than experimental.\n\n**Fable 5 一回归就把时间线点着了**；**Anthropic** 和 **OpenAI** 还在继续吸走人才、注意力和野心；圈子里的问题也变了，不再只是“能不能做出来”，而是“值不值得自己养着”，因为代理、dry run、可售卖应用这些东西，已经越来越像正经生产系统，不像试玩了。",
+      "itemCount": 18,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-02T14:24:24.737Z",
+      "commit": {
+        "sha": "f1ea7bf508e6bfdfbd401687caa4c4971c5fdc08",
+        "committedAt": "2026-07-02T07:27:57Z",
+        "subject": "chore: update feeds [skip ci]"
+      }
+    },
     {
       "date": "2026-07-01",
       "title": "AI Builders Daily · 2026-07-01",
