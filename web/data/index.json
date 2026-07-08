@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-02T14:24:24.738Z",
-  "latestDate": "2026-07-02",
+  "updatedAt": "2026-07-08T12:10:01.115Z",
+  "latestDate": "2026-07-08",
   "dates": [
+    {
+      "date": "2026-07-08",
+      "title": "AI Builders Daily · 2026-07-08",
+      "summary": "**GPT-5.6 Sol lands Thursday** and OpenAI-side chatter is already heating up; **Claude Fable 5** gets extended access while Anthropic publishes a blunt playbook on containing high-power agents; enterprise operators keep circling the same hard problems: data sprawl, cross-silo workflows, model routing, and who actually owns the agents; meanwhile builders are pushing AI deeper into video, slides, cron jobs, auth, and GitHub-native toolchains.\n\n**GPT-5.6 Sol 周四上线**，OpenAI 这边先把气氛炒热了；**Claude Fable 5** 继续放量，Anthropic 也把“怎么把强代理关进笼子里”摊开讲清楚；企业侧的麻烦还是那几件：数据太散、流程跨部门、模型怎么路由、代理到底谁来管；另一头，开发者已经把 AI 往视频、幻灯片、定时任务、认证和 GitHub 工具链里狠狠干了。",
+      "itemCount": 18,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-08T12:10:01.114Z",
+      "commit": {
+        "sha": "e8b3cf66be2e8e0b6399632082712866ef5bc336",
+        "committedAt": "2026-07-08T07:09:30Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-02",
       "title": "AI Builders Daily · 2026-07-02",
