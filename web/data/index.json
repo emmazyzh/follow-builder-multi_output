@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-08T12:10:01.115Z",
-  "latestDate": "2026-07-08",
+  "updatedAt": "2026-07-10T12:07:05.890Z",
+  "latestDate": "2026-07-10",
   "dates": [
+    {
+      "date": "2026-07-10",
+      "title": "AI Builders Daily · 2026-07-10",
+      "summary": "**GPT-5.6 Sol** steamrolls the timeline, with OpenAI resetting limits twice and power users arguing over naming, modes, and what \"work\" even means; **Box** says Sol jumps hard on enterprise-grade reasoning, especially where bad assumptions wreck real numbers; **Google Gemini** gets a blunt user-ranked fix list from Josh Woodward, with Workspace reliability and tool calling at the top; meanwhile the builder feed turns feral with model-war chatter, Meta hiring moves, and fresh bets that open models are about to get very fast.\n\n**GPT-5.6 Sol** 今天把时间线直接顶满了，OpenAI 连着重置额度，大家一边猛试一边吐槽产品命名、模式切换，还有那个莫名其妙的 \"Work\"；**Box** 放出企业评测，结论很直白：Sol 在难题上确实更稳，尤其是那种一个假设错了后面全盘跑偏的活；**Google Gemini** 这边，Josh Woodward 直接晒出用户投票后的十条待修清单，Workspace 集成和 tool calling 排前两名；另一边的 builder 圈也没闲着，模型混战、Meta 挖人、开源模型要提速的风声，全挤在同一天。",
+      "itemCount": 20,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-10T12:07:05.889Z",
+      "commit": {
+        "sha": "aa6769f2a0be11fe663c4594a48d9679075f06c1",
+        "committedAt": "2026-07-10T07:28:26Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-08",
       "title": "AI Builders Daily · 2026-07-08",
