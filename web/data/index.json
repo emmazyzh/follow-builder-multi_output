@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-10T12:07:05.890Z",
-  "latestDate": "2026-07-10",
+  "updatedAt": "2026-07-11T12:57:18.392Z",
+  "latestDate": "2026-07-11",
   "dates": [
+    {
+      "date": "2026-07-11",
+      "title": "AI Builders Daily · 2026-07-11",
+      "summary": "**Stripe's AI chief** says the next commerce fight is already here; agents are moving from product discovery to actual checkout inside **ChatGPT**, **Gemini**, and **Copilot**; the sharpest warning is less about overspending and more about **token theft**, with Emily Sense calling it one of AI's most ignored abuse vectors; underneath the hype, the real story is infrastructure, as **Stripe** and **OpenAI** push a shared protocol for catalogs, payments, and machine-run transactions.\n\n**Stripe** 的 AI 负责人把话挑明了：下一轮电商变化，不是聊天框更会推荐，而是代理真开始下单；从 **ChatGPT**、**Gemini** 到 **Copilot**，入口已经搭起来了，商家得决定自己要不要进去；更扎眼的一句是“偷的不是钱，是 token”，而且滥用规模已经不小；热闹归热闹，底层还是老问题，谁来管商品目录、支付授权和代理执行这一整套基础设施。",
+      "itemCount": 1,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-11T12:57:18.390Z",
+      "commit": {
+        "sha": "b5dcda1cea0139c3eef0fd5e758d9375af644ffd",
+        "committedAt": "2026-07-11T07:01:36Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-10",
       "title": "AI Builders Daily · 2026-07-10",

@@ -1,0 +1,39 @@
+{
+  "payload": {
+    "date": "2026-07-11",
+    "title": "AI Builders Daily · 2026-07-11",
+    "summary": "**Stripe's AI chief** says the next commerce fight is already here; agents are moving from product discovery to actual checkout inside **ChatGPT**, **Gemini**, and **Copilot**; the sharpest warning is less about overspending and more about **token theft**, with Emily Sense calling it one of AI's most ignored abuse vectors; underneath the hype, the real story is infrastructure, as **Stripe** and **OpenAI** push a shared protocol for catalogs, payments, and machine-run transactions.\n\n**Stripe** 的 AI 负责人把话挑明了：下一轮电商变化，不是聊天框更会推荐，而是代理真开始下单；从 **ChatGPT**、**Gemini** 到 **Copilot**，入口已经搭起来了，商家得决定自己要不要进去；更扎眼的一句是“偷的不是钱，是 token”，而且滥用规模已经不小；热闹归热闹，底层还是老问题，谁来管商品目录、支付授权和代理执行这一整套基础设施。",
+    "items": [
+      {
+        "person_name": "Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@DataDrivenNYC/videos",
+        "source_label": "Podcast",
+        "posted_at": "2026-07-09T11:30:01.000Z",
+        "sections": [
+          {
+            "headline": "**Stripe's** AI chief maps agent commerce from discovery to checkout; **Stripe** AI 负责人拆解代理电商，从发现商品一路走到结账",
+            "body": "In this episode of **The MAD Podcast**, Matt Turck talks with **Emily Sense**, head of data and AI at **Stripe**, about how agentic commerce has moved from a thought experiment to live infrastructure. Sense says the consumer flow is already splitting across a spectrum: at the low end, AI helps people find products and speeds up checkout; at the high end, agents discover services, decide to buy, and complete transactions with no human in the loop. She points to recent work with **Google** for shopping inside AI Mode and the **Gemini** app, plus similar integrations with **Microsoft**, **OpenAI**, **Copilot**, and **ChatGPT**.\n\nThe other thread is security and economics. Sense argues that token theft is badly underdiscussed, saying more than one in six signups at AI companies are tied to this kind of abuse. She also describes **Stripe** and **OpenAI** building an agentic commerce protocol so merchants can expose catalog, inventory, and pricing data once, then work across multiple agent surfaces without rebuilding commerce infrastructure every time. The pitch is straightforward: let businesses show up inside AI products, let buyers authorize agents safely, and let agents complete payments without exposing raw credentials.\n\n这期 **The MAD Podcast** 里，Matt Turck 找来 **Stripe** 数据与 AI 负责人 **Emily Sense**，聊代理电商这件事到底走到哪一步了。她的判断很直接：这事已经不只是概念。现在能看到一条连续光谱，轻一点的是 AI 帮你找货、把结账流程压短；再往前走，代理自己发现服务、决定购买、把交易跑完，人都不用盯着。她提到 **Stripe** 最近和 **Google** 的合作，商家已经能在 AI Mode 和 **Gemini** 里卖货；和 **Microsoft**、**OpenAI** 的配合也在推进，目标是让商品能直接出现在 **Copilot** 和 **ChatGPT** 里。\n\n另一条线更硬，也更现实：安全和计费。Sense 说，很多人还在担心代理会不会乱买东西，但她更在意的是 token 被薅走，而且规模不小，AI 公司里超过六分之一的注册都带着这种滥用味道。她还讲了 **Stripe** 和 **OpenAI** 一起做的 agentic commerce protocol，核心思路不是花活，就是让商家把商品目录、库存和价格开放一次，然后能接到不同代理入口，不用每来一个新平台就重搭一遍电商底座；支付这边则用共享支付 token，让代理能代付，但拿不到用户裸露的银行卡凭证。",
+            "source_links": [
+              "https://www.youtube.com/@DataDrivenNYC/videos"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-07-11",
+    "updatedAt": "2026-07-11T12:57:18.387Z",
+    "commit": {
+      "sha": "b5dcda1cea0139c3eef0fd5e758d9375af644ffd",
+      "committedAt": "2026-07-11T07:01:36Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-07-11T12:56:07.870Z",
+    "feedGeneratedAt": "2026-07-11T07:00:56.864Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
