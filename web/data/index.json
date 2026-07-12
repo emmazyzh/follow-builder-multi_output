@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-11T12:57:18.392Z",
-  "latestDate": "2026-07-11",
+  "updatedAt": "2026-07-12T12:03:18.443Z",
+  "latestDate": "2026-07-12",
   "dates": [
+    {
+      "date": "2026-07-12",
+      "title": "AI Builders Daily · 2026-07-12",
+      "summary": "**GPT 5.6 Sol** dominated the chatter, with **OpenAI** voices and builders hammering on speed, backend depth, and surprisingly strong frontend output; **Sam Altman** turned model bragging into meme warfare, claiming the clearest benchmark is that Elon is obsessed again; The labor-replacement story keeps cracking: **Swyx** and **Aaron Levie** both argued AI makes knowledge work cheaper and demand bigger, not smaller; Outside AI, the feed swerved into World Cup chaos and California politics, while **No Priors** got **Booking.com** CEO **Glenn Fogel** on record: there is no moat, only constant reinvention.\n\n**GPT 5.6 Sol** 今天基本刷屏，讨论点也很实在：速度、后端硬度、前端表现，连“别到处乱写 useEffect”这种细节都被点名了；**Sam Altman** 继续把嘴仗当成绩单，说最靠谱的 benchmark 是马斯克又开始盯着他；另一条主线也很清楚，**Swyx** 和 **Aaron Levie** 讲的是同一件事：AI 先把知识工作的单位成本打下来，结果不是岗位立刻消失，而是需求先往上冲；剩下的时间线就很杂了，世界杯吐槽刷成一片，**Garry Tan** 又把火力对准 **CEQA**，而 **Glenn Fogel** 在 **No Priors** 里那句“没有护城河”，算是今天最硬的话。",
+      "itemCount": 11,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-12T12:03:18.442Z",
+      "commit": {
+        "sha": "c5a0d2ea228e68ba50586b0c13a4e8ad8b76f938",
+        "committedAt": "2026-07-12T07:09:39Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-11",
       "title": "AI Builders Daily · 2026-07-11",

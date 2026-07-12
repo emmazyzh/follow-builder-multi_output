@@ -1,0 +1,317 @@
+{
+  "payload": {
+    "date": "2026-07-12",
+    "title": "AI Builders Daily · 2026-07-12",
+    "summary": "**GPT 5.6 Sol** dominated the chatter, with **OpenAI** voices and builders hammering on speed, backend depth, and surprisingly strong frontend output; **Sam Altman** turned model bragging into meme warfare, claiming the clearest benchmark is that Elon is obsessed again; The labor-replacement story keeps cracking: **Swyx** and **Aaron Levie** both argued AI makes knowledge work cheaper and demand bigger, not smaller; Outside AI, the feed swerved into World Cup chaos and California politics, while **No Priors** got **Booking.com** CEO **Glenn Fogel** on record: there is no moat, only constant reinvention.\n\n**GPT 5.6 Sol** 今天基本刷屏，讨论点也很实在：速度、后端硬度、前端表现，连“别到处乱写 useEffect”这种细节都被点名了；**Sam Altman** 继续把嘴仗当成绩单，说最靠谱的 benchmark 是马斯克又开始盯着他；另一条主线也很清楚，**Swyx** 和 **Aaron Levie** 讲的是同一件事：AI 先把知识工作的单位成本打下来，结果不是岗位立刻消失，而是需求先往上冲；剩下的时间线就很杂了，世界杯吐槽刷成一片，**Garry Tan** 又把火力对准 **CEQA**，而 **Glenn Fogel** 在 **No Priors** 里那句“没有护城河”，算是今天最硬的话。",
+    "items": [
+      {
+        "person_name": "No Priors",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=8nj_0wZkbtA",
+        "source_label": "Podcast",
+        "posted_at": "2026-07-09T10:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Booking.com** CEO says there is no moat in AI-era travel / **Booking.com** CEO 直说：AI 时代的旅行生意没有护城河",
+            "body": "On **No Priors**, **Booking Holdings** CEO **Glenn Fogel** argues that long-term winners in travel will not be protected by any permanent moat. His case is blunt: advantages disappear, incumbents still have to keep shipping new services, and travel is far more operationally complex than outsiders assume. He also draws a direct line between today’s AI boom and past speculative waves, warning that plenty of companies will fail even as the underlying innovation is real.\n\n在 **No Priors** 这期里，**Booking Holdings** CEO **Glenn Fogel** 讲得很直：旅行行业不存在什么一劳永逸的护城河。优势随时会被抹平，大公司也得不停做新服务；更关键的是，旅行这门生意的复杂度，比外人想的高得多。他还把这轮 AI 热潮和过去几次投机狂潮放在一起看，意思很明确：会死掉一批公司，但技术本身不会白热闹。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=8nj_0wZkbtA"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T04:04:58.000Z",
+        "sections": [
+          {
+            "headline": "Jevons paradox is coming for all knowledge work, not just coding / 杰文斯悖论冲向的不只是编程，而是整个知识工作",
+            "body": "if you only learned about jevons paradox primarily wrt software demand in the age of agentic engineering, you may not have fully internalized jevons parodox’s impact under the conditions of:\n\n- humans who can wield coding agents well*\n- coding agents breaking containment to all other knowledge work\n\nas the efficiency of labor goes up/unit cost of knowledge work goes broadly down, the demand for total work and better knowledge goes up, not down.\n\nwhat happened to coding isnt the exception; it’s the herald.\n\n*aka AI Engineers\n\n如果你对杰文斯悖论的理解，主要还停留在 agentic engineering 时代的软件需求上，那你可能还没有真正消化它在这些条件下的影响：\n\n- 人类已经能熟练使用 coding agents*\n- coding agents 正在突破边界，扩散到其他所有知识工作\n\n随着劳动效率上升、知识工作的单位成本整体下降，市场对总工作量和更高质量知识的需求会增加，不会减少。\n\n编程上发生的事不是例外；那只是前兆。\n\n*也就是 AI Engineers",
+            "source_links": [
+              "https://x.com/swyx/status/2076155833428431012"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HM_8ujgbEAARVor.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2076155833428431012/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T03:24:45.000Z",
+        "sections": [
+          {
+            "headline": "**GPT 5.6 Sol** pitched as fast, backend-strong, and frontend-capable / **GPT 5.6 Sol** 被直接定义为又快、后端硬、前端也能打",
+            "body": "At different times you complained about speed, code slop, frontend quality, ... With each release we improve and GPT 5.6 Sol is  \n\n✅Fast and token efficient\n✅Hardcore at back-end dev\n✅Great at front-end\n✅Does not use useEffect everywhere \n\nWhat is next?\n\n你们之前轮流吐槽过速度、代码太糙、前端质量这些问题……每次发布我们都在改，现在 GPT 5.6 Sol 是：\n\n✅快，而且省 token\n✅后端开发很硬核\n✅前端也很强\n✅不会到处乱用 useEffect\n\n下一步你们还想看什么？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076145711922696371"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Run **GPT 5.6 Sol** through Claude with a CLI alias / 用一个 CLI alias 把 **GPT 5.6 Sol** 挂到 Claude 上",
+            "body": "If you aren't yet bold enough to install the Codex app, you can stay in the presence of your orange crab and point it at GPT 5.6 Sol. Takes 5 minutes. Kudos to Theo for explaining one of the ways to get this done.\n\nStep 1: Install CLIProxyAPI\nStep 2: Connect\nStep 3: Define following alias and enjoy claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\nIf this gets blocked, I owe you a reset.\n\n如果你还没大胆到直接装 Codex app，也可以继续守着你的橙色螃蟹，把它指向 GPT 5.6 Sol。全程 5 分钟。也谢谢 Theo 把其中一种做法讲清楚了。\n\n第 1 步：安装 CLIProxyAPI\n第 2 步：连接\n第 3 步：定义下面这个 alias，然后享受 claudex\n\n```\nalias claudex='CLAUDE_CODE_SUBAGENT_MODEL=gpt-5.6-sol \\\nCLAUDE_CODE_ALWAYS_ENABLE_EFFORT=1 \\\nCLAUDE_CODE_MAX_TOOL_USE_CONCURRENCY=3 \\\nENABLE_TOOL_SEARCH=false \\\nclaude --model gpt-5.6-sol'\n```\n\n如果这个方法被封，我欠你一次重置。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076119366647894371"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T03:46:11.000Z",
+        "sections": [
+          {
+            "headline": "Argentina wins 3-1, but the performance looked shaky / 阿根廷 3 比 1 赢了，但场面并不让人放心",
+            "body": "The score is 3 vs 1 but imo this was a very mixed performance from Argentina.\n\nNot sure how they’ll do against England.\n\n比分是 3 比 1，但在我看来，阿根廷这场踢得相当别扭。\n\n真不知道他们碰上英格兰会怎样。",
+            "source_links": [
+              "https://x.com/petergyang/status/2076151105080447404"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Argentina still looked bad even with a man advantage / 多打一人，阿根廷看起来还是踢得很差",
+            "body": "They’re playing so badly even up one man\n\n他们就算多打一人，也踢得很差。",
+            "source_links": [
+              "https://x.com/petergyang/status/2076143769192484900"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "One brutal moment, one blunt reaction / 一个糟心瞬间，一句直接反应",
+            "body": "Well shit\n\n靠。",
+            "source_links": [
+              "https://x.com/petergyang/status/2076132077054095751"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T03:49:34.000Z",
+        "sections": [
+          {
+            "headline": "Easy money, specifically in Swiss francs / 钱来得轻松一点，还是瑞士法郎那种",
+            "body": "Easy money (Swiss francs)\n\n轻松赚到的钱（瑞士法郎版）。",
+            "source_links": [
+              "https://x.com/rauchg/status/2076151956440261008"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T01:28:51.000Z",
+        "sections": [
+          {
+            "headline": "AI is expanding software work instead of wiping it out / AI 不是先把软件工作抹掉，而是先把需求抬高了",
+            "body": "The job that AI was supposed to replace is experiencing the opposite of the expected outcome. Software job postings are outpacing other fields.\n\nWhy is that? If you lower the cost of production of something that has lots of use cases, people want more things produced. We’ve seen this play out in the industrial world constantly, and now we’re finally seeing it in knowledge work.\n\nBecause software now is much lower to cost per unit, people want way more of it. So we start to use software for all new things and people and companies light up more software projects than ever before. \n\nBut because the job itself is not fully automated (and likely won’t be for as far out as we can see), you still need people that understand these systems to maintain the code, decide what to build, run it over the long run, update it, and more. That all requires people to do work. \n\nThe same thing is going to happen in many other fields as well as we bring down the cost of production of previously extremely scarce areas of work. Agents will cause more abundance than replacement.\n\nAI 原本被认为最该替代掉的那类工作，结果现在正朝相反方向走。软件岗位的招聘增速，已经跑赢了别的领域。\n\n为什么会这样？因为只要一件东西的生产成本降下去，而它本身又有大量用途，人们就会想要更多产出。工业世界早就反复上演过这一幕，现在终于轮到知识工作了。\n\n因为现在软件的单位成本低了很多，大家对软件的需求反而更大。所以软件开始被用到更多新场景里，个人和公司也会同时点亮比以前更多的软件项目。\n\n但这份工作本身还没有被完全自动化，而且从现在能看到的范围来说，大概率短期内也不会。所以你依然需要真正懂这些系统的人，去维护代码、决定做什么、长期运营、持续更新，等等。这些都还是人的工作。\n\n随着那些过去极度稀缺的工作变得更便宜，很多别的领域也会发生同样的事。Agents 带来的更像是丰裕，而不是替代。",
+            "source_links": [
+              "https://x.com/levie/status/2076116544980214164"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-11T14:03:38.000Z",
+        "sections": [
+          {
+            "headline": "Repeal and reform **CEQA** to unblock California housing / 要让加州重新盖起来，先得动 **CEQA**",
+            "body": "If you want to supercharge building in California again, you're going to need to repeal and reform CEQA\n\nMillions of units of housing are blocked every year using CEQA. Housing should be built by-right, and not require the level of review it does today. https://t.co/TE4s7Dz7jD\n\n如果你想让加州重新把建设速度拉起来，就得废掉并改革 CEQA。\n\n每年都有数百万套住房项目被 CEQA 卡住。住房建设应该按法定权利直接推进，而不是像今天这样经历这种级别的审查。 https://t.co/TE4s7Dz7jD",
+            "source_links": [
+              "https://x.com/garrytan/status/2075944103867830352"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/spencercamp/status/2075943775655055659",
+                "resolvedUrl": "https://x.com/spencercamp/status/2075943775655055659",
+                "authorName": "Spencer",
+                "authorHandle": "spencercamp",
+                "authorUrl": "https://x.com/spencercamp",
+                "text": "@garrytan Pass a California proposition to repeal CEQA.\nLet’s go straight to the problem.",
+                "displayDate": "Jul 11",
+                "provider": "X",
+                "media": [],
+                "textZh": "@garrytan 通过一项加州公投提案，废除 CEQA。 我们直接切入问题本身。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/TE4s7Dz7jD",
+                "resolvedUrl": "https://x.com/spencercamp/status/2075943775655055659"
+              }
+            ]
+          },
+          {
+            "headline": "The better question is what happens if things go right / 真正值得问的是：如果一切顺起来，会发生什么",
+            "body": "So much could go wrong\n\nBut the interesting question is always: what happens if things go right?\n\n很多事都可能出错。\n\n但更有意思的问题一直是：如果事情真的顺利了，会发生什么？",
+            "source_links": [
+              "https://x.com/garrytan/status/2075933358660730901"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T03:09:46.000Z",
+        "sections": [
+          {
+            "headline": "Argentina keeps wobbling even against weaker opponents / 阿根廷一路踉跄，打纸面更弱的对手也不稳",
+            "body": "Argentina struggled against the world's #64, almost got eliminated by the world's #26, and they're now in extra time against the world's #19 which is down to 10 players.\n\n阿根廷先是踢得很费劲，对手只是世界第 64；接着差点被世界第 26 的球队淘汰；现在又跟世界第 19 的球队打到加时，而对方还只剩 10 个人。",
+            "source_links": [
+              "https://x.com/mattturck/status/2076141940484010189"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T02:25:32.000Z",
+        "sections": [
+          {
+            "headline": "**GPT 5.6 Sol** gets another frontend endorsement / **GPT 5.6 Sol** 又拿到一张前端好评票",
+            "body": "Ok 5.6 Sol is very good at front end 👌 https://t.co/vubmHarGCG\n\n好，5.6 Sol 做前端是真的挺强 👌 https://t.co/vubmHarGCG",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2076130810143367453"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/zarazhangrui/status/2075003007520096416",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2075003007520096416",
+                "authorName": "Zara Zhang",
+                "authorHandle": "zarazhangrui",
+                "authorUrl": "https://x.com/zarazhangrui",
+                "text": "I really really wish Codex were better at frontend design.\n\nThis is the single thing that's preventing me from using it more frequently",
+                "displayDate": "Jul 8",
+                "provider": "X",
+                "media": [],
+                "textZh": "我真的真的希望 Codex 在前端设计方面能做得更好。 这件事是唯一阻止我更频繁使用它的原因。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/vubmHarGCG",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2075003007520096416"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-12T03:42:05.000Z",
+        "sections": [
+          {
+            "headline": "Alvarez strike sets up blockbuster semifinal matchups / 阿尔瓦雷斯一脚神仙球，把半决赛对阵拉满了",
+            "body": "Argentina has the mandate of heaven.. what a strike by Alvarez. \n\nEngland vs. Argentina\n\nFrance vs. Spain\n\nPure cinema 💥\n\n阿根廷简直像拿了天命……阿尔瓦雷斯这脚太狠了。\n\n英格兰 vs. 阿根廷\n\n法国 vs. 西班牙\n\n这就是纯电影级别 💥",
+            "source_links": [
+              "https://x.com/nikunj/status/2076150076087611433"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-07-11T16:39:53.000Z",
+        "sections": [
+          {
+            "headline": "**Sam Altman** says the clearest **GPT 5.6 Sol** benchmark is Elon’s obsession / **Sam Altman** 说，**GPT 5.6 Sol** 最靠谱的 benchmark 是马斯克又盯上他了",
+            "body": "there are a lot of benchmarks that suggest 5.6 sol is the best model in the world right now, but the most reliable way to tell is that elon is obsessed with me again\n\n有很多 benchmark 都说明 5.6 sol 现在可能是世界上最强的模型，但最可靠的判断方式是，elon 又开始对我上头了。",
+            "source_links": [
+              "https://x.com/sama/status/2075983427019612242"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Fable** cost share becomes the question at this usage level / 用到这个量级后，问题变成 **Fable** 竟然吃掉了 30% 成本？",
+            "body": "30% of the cost was on fable at these levels of usage? https://t.co/KzFoHj7cB4\n\n在这种使用量级下，30% 的成本都花在 fable 上了？ https://t.co/KzFoHj7cB4",
+            "source_links": [
+              "https://x.com/sama/status/2075982820322025788"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/KzFoHj7cB4",
+                "resolvedUrl": "https://twitter.com/thdxr/status/2075963734745342361"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-07-12",
+    "updatedAt": "2026-07-12T12:03:18.437Z",
+    "commit": {
+      "sha": "c5a0d2ea228e68ba50586b0c13a4e8ad8b76f938",
+      "committedAt": "2026-07-12T07:09:39Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-07-12T12:00:12.778Z",
+    "feedGeneratedAt": "2026-07-12T07:09:00.834Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
