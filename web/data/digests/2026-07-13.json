@@ -1,0 +1,781 @@
+{
+  "payload": {
+    "date": "2026-07-13",
+    "title": "AI Builders Daily · 2026-07-13",
+    "summary": "**OpenAI's GPT-5.6 Sol drama spilled into public view**; usage caps, context-window rollbacks, and subscription promises turned product tuning into weekend discourse; builders kept pushing anyway, from \"meeting transcript as PRD\" to chess fine-tuning and multi-machine agent setups; the bigger argument underneath it all was ownership, with **Vercel**, **Box**, and others pressing for open control over models, data, and workflow IP.\n\n**这波最热还是 GPT-5.6 Sol**；限额、上下文回调、套餐归属全被摊到台面上讲，产品运营像直播拆机；另一边，开发者没停，拿会议纪要直接做 PRD、在 **Replit** 上微调下棋模型、把一堆机器串起来跑 agent，路子一个比一个野；更底层的话题也很直接，**Vercel**、**Box** 这些人都在盯同一件事：模型会换，真正该攥在手里的还是数据、评测和工作流。",
+    "items": [
+      {
+        "person_name": "No Priors",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=5Xvbq_zvOQ4",
+        "source_label": "Podcast",
+        "posted_at": "2026-07-02T15:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**No Priors** tours **Valar Atomics** on nuclear power for the AI age · **No Priors** 探访 **Valar Atomics**，聊 AI 时代的核能供电",
+            "body": "**No Priors** visits **Valar Atomics** founder **Isaiah Taylor** at the company's Utah facility and frames nuclear as an answer to AI's growing power appetite. Taylor argues the industry stalled after Three Mile Island, then got trapped in simulation-heavy \"paper reactor\" culture while the real bottleneck shifted to hardware iteration and manufacturing.\n\nHe says **Valar** is trying to restart the cycle with small, manufactured reactors, empirical testing, and the Department of Energy pathway instead of waiting for fully mature commercial licensing. The pitch is blunt: cheaper energy creates its own demand, and AI compute is only making that pressure harder to ignore.\n\n**No Priors** 跑到 **Valar Atomics** 在犹他州的场地，和创始人 **Isaiah Taylor** 正面聊核能，核心问题很直接：AI 吃电越来越凶，新的供给从哪来。Taylor 的说法是，三里岛之后美国核电一脚刹停，后来整个行业又越来越像“纸面反应堆”行业，模型和仿真很多，真机迭代太少。\n\n他觉得 **Valar** 要补的就是这一下：先把小型、可制造、能实测的反应堆跑起来，走能源部测试通道，不是死等完整商业牌照。逻辑也不绕，电只要更便宜，需求自己会冒出来，而 AI 正在把这个问题越抬越高。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=5Xvbq_zvOQ4"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space Host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-07-12T16:37:00.000Z",
+        "sections": [
+          {
+            "headline": "Introspection beats blind rollouts, says **Swyx** · **Swyx** 说重点不是多跑几次，而是内省和反传",
+            "body": "btw the difference is introspection/backpropagation\n\nas einstein famously said, the definition of insanity is doing multiple rollouts with no expectation of advantage https://t.co/G7WLxbYWda https://t.co/SeX47bVrOW\n\n顺带一提，真正的差别在于 introspection/backpropagation。\n\n套用爱因斯坦那句名言：明知道不会有优势，还一遍遍跑多个 rollout，这才叫疯。 https://t.co/G7WLxbYWda https://t.co/SeX47bVrOW",
+            "source_links": [
+              "https://x.com/swyx/status/2076345087634620528"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNA6xETbMAAL2hh.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2076345087634620528/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/bluewmist/status/2074935023879454871",
+                "resolvedUrl": "https://x.com/bluewmist/status/2074935023879454871",
+                "authorName": "blue",
+                "authorHandle": "bluewmist",
+                "authorUrl": "https://x.com/bluewmist",
+                "text": "does anyone have any useful sentences that will change my life immediately upon being read?",
+                "displayDate": "Jul 8",
+                "provider": "X",
+                "media": [],
+                "textZh": "有人有那种一读就能立刻改变我人生的句子吗？"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/G7WLxbYWda",
+                "resolvedUrl": "https://x.com/swyx/status/2076345087634620528/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNA6xETbMAAL2hh.png"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SeX47bVrOW",
+                "resolvedUrl": "https://x.com/bluewmist/status/2074935023879454871"
+              }
+            ]
+          },
+          {
+            "headline": "**Swyx** points readers to the **Latent Space** writeup · **Swyx** 顺手贴出 **Latent Space** 配套长文",
+            "body": "more on @latentspacepod writeup\n\nhttps://t.co/PlM8rvF2jD\n\n更多内容见 @latentspacepod 的文章。\n\nhttps://t.co/PlM8rvF2jD",
+            "source_links": [
+              "https://x.com/swyx/status/2076216180529156097"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/PlM8rvF2jD",
+                "resolvedUrl": "https://www.latent.space/p/ainews-ai-engineer-will-be-the-last"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-07-13T02:33:19.000Z",
+        "sections": [
+          {
+            "headline": "**OpenAI** details **GPT-5.6 Sol** usage fixes for paid users · **OpenAI** 公开说明 **GPT-5.6 Sol** 付费用户用量修正",
+            "body": "Updates for Codex and ChatGPT Work users. No nerfing, only good stuff!\n\n- We have landed inference optimizations and are passing down savings to all the subscriptions for GPT-5.6 Sol. That should result in around 10% more usage on its own.\n- We noticed that by changing the context size limit in the product to 372k for GPT-5.6 Sol, up from 272k for GPT-5.5, it resulted in more usage being charged than intended. We have reverted to 272k and will work to roll back out to 372k in the days to come. You should notice that usage drains significantly less after this change.\n- To understand where the extra usage was coming from, we ran some experiments where reasoning efforts were changed (referred to as juice values under the hood) and have reverted this.\n- There is slightly more usage of multi-agent than intended in high and xhigh reasoning effort, we are fixing this going forward. Also fixing a small other thing we noticed with auto-review where we can be more efficient.\n\nAnd we continue to have the 5h limit temporarily not apply. Enjoy the rest of the weekend!\n\n给 Codex 和 ChatGPT Work 用户的更新。不是削弱，都是往好的调！\n\n- 我们已经上线推理优化，并把节省下来的成本回给所有 **GPT-5.6 Sol** 订阅。单这一项，使用量大概就能多出 10%。\n- 我们发现把产品里的上下文上限从 **GPT-5.5** 的 272k 调到 **GPT-5.6 Sol** 的 372k 后，实际扣掉的用量比预期高。现在已经先退回 272k，接下来几天会再把 372k 推回来。你应该会明显感觉这次调整后，额度掉得慢了不少。\n- 为了查清额外消耗从哪来，我们做过一些实验，改过 reasoning effort，也就是内部说的 juice 值，现在已经撤回。\n- high 和 xhigh reasoning effort 下，多 agent 的消耗略高于预期，我们后面会修。auto-review 那边也发现一个小点，还能再省一点。\n\n另外，5 小时限制暂时还是不生效。周末继续用。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076495156757577895"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Paid tiers all covered, says **Thibault Sottiaux** · **Thibault Sottiaux** 说所有付费档都算上",
+            "body": "Team, Edu, ... and any other paid subscription too. Quite simple really.\n\nTeam、Edu，其他所有付费订阅也都包括在内。就这么简单。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076460408437887268"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**GPT 5.6 Sol** stays in ChatGPT subscriptions for now · **GPT 5.6 Sol** 目前还会继续留在 ChatGPT 付费套餐里",
+            "body": "Rest assured that GPT 5.6 Sol will stay in the ChatGPT subscription you pay for. Including Go, Plus and Pro subscriptions. At least until we ship an even better model.\n\n可以放心，**GPT 5.6 Sol** 还会继续留在你现在付费的 ChatGPT 套餐里，包括 Go、Plus 和 Pro。至少在我们发出更好的模型之前都会这样。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076459871021736245"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-07-13T04:11:45.000Z",
+        "sections": [
+          {
+            "headline": "**Peter Yang** guesses **GPT 5.6 Sol** dominates usage · **Peter Yang** 猜 **GPT 5.6 Sol** 已经吃下大多数使用量",
+            "body": "Seeing this quite often today. \n\nMy wild guess is 90%+ of people are using GPT 5.6 Sol and <10% are using Terra or Luna. https://t.co/uiCunQ1sLK\n\n今天我已经很常看到这个情况了。\n\n我大胆猜一下，90% 以上的人都在用 **GPT 5.6 Sol**，用 Terra 或 Luna 的不到 10%。 https://t.co/uiCunQ1sLK",
+            "source_links": [
+              "https://x.com/petergyang/status/2076519927843000448"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/uiCunQ1sLK",
+                "resolvedUrl": "https://t.co/uiCunQ1sLK"
+              }
+            ]
+          },
+          {
+            "headline": "Talk more like a human when sentiment turns, says **Peter Yang** · **Peter Yang** 说社区情绪一变，更该像人一样说话",
+            "body": "There's a tendancy when community sentiment turns to communicate less and in a more corporate way.\n\nI think it's important to do the reverse - communicate in a more human way, be transparent with the community about what's going on, figure out solutions together, etc.\n\n社区情绪一变，很多团队就会越说越少，措辞也越像公司公关。\n\n我觉得应该反过来做，用更有人味的方式沟通，把到底发生了什么讲清楚，跟社区一起找办法。",
+            "source_links": [
+              "https://x.com/petergyang/status/2076512796481880270"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Peter Yang** calls for more direct community engagement from **Anthropic** · **Peter Yang** 觉得 **Anthropic** 该更直接地跟社区交流",
+            "body": "Anthropic makes great models too but I don't understand why they communicate like this. \n\nI think they need to engage the community more directly like what OpenAI is doing. https://t.co/BqYu5FglYV\n\n**Anthropic** 的模型也很强，但我不太明白他们为什么要这样沟通。\n\n我觉得他们需要像 **OpenAI** 那样，更直接地和社区对话。 https://t.co/BqYu5FglYV",
+            "source_links": [
+              "https://x.com/petergyang/status/2076510899490480228"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2076351399999557669",
+                "resolvedUrl": "https://x.com/claudeai/status/2076351399999557669",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们将把 Claude Fable 5 在所有付费套餐中的访问权限延长至 7 月 19 日，同时继续将 Claude Code 的每周速率限制提高 50%，也持续到 7 月 19 日。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/BqYu5FglYV",
+                "resolvedUrl": "https://x.com/claudeai/status/2076351399999557669"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Cat Wu",
+        "person_handle": "_catwu",
+        "person_identity": "Anthropic Engineer",
+        "profile_url": "https://x.com/_catwu",
+        "source_label": "X",
+        "posted_at": "2026-07-12T17:29:21.000Z",
+        "sections": [
+          {
+            "headline": "**Cat Wu** drops a simple launch-style share · **Cat Wu** 轻飘飘丢下一句“去玩吧”",
+            "body": "Enjoy! https://t.co/WJTkdBv6qM\n\n去玩吧！ https://t.co/WJTkdBv6qM",
+            "source_links": [
+              "https://x.com/_catwu/status/2076358263688569314"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2076351399999557669",
+                "resolvedUrl": "https://x.com/claudeai/status/2076351399999557669",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们将把 Claude Fable 5 在所有付费套餐中的访问权限延长至 7 月 19 日，同时继续将 Claude Code 的每周速率限制提高 50%，也持续到 7 月 19 日。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/WJTkdBv6qM",
+                "resolvedUrl": "https://x.com/claudeai/status/2076351399999557669"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-07-12T17:23:54.000Z",
+        "sections": [
+          {
+            "headline": "**Replit** computer-use model faces off against a chess engine · **Replit** 的 computer-use 模型和棋类引擎过招",
+            "body": "Fun to see Replit's computer use model play against my new chess engine https://t.co/SQmN4NamlR https://t.co/INdb7rojHU\n\n看 **Replit** 的 computer use 模型和我新的国际象棋引擎对弈，还挺有意思。 https://t.co/SQmN4NamlR https://t.co/INdb7rojHU",
+            "source_links": [
+              "https://x.com/amasad/status/2076356893736673507"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/SQmN4NamlR",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2076356006721077248/img/CdicaZLU6uoKTnm2.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2076356893736673507/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/amasad/status/2076227936202662357",
+                "resolvedUrl": "https://x.com/amasad/status/2076227936202662357",
+                "authorName": "Amjad Masad",
+                "authorHandle": "amasad",
+                "authorUrl": "https://x.com/amasad",
+                "text": "Vibe Research\n\nFine-tuning a Qwen-8b model to play chess on Replit. Running 3 parallel branches with different experiments and making real progress.\n\nIt's amazing how far models have come in their ability to do ML (they used to be really bad at it). So now someone with good",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNA8lu4bwAAY5wc.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/amasad/status/2076227936202662357/photo/1"
+                  }
+                ],
+                "textZh": "Vibe Research 正在对一个 Qwen-8b 模型做微调，让它在 Replit 上下国际象棋。现在并行跑着 3 个不同实验分支，而且确实在取得进展。 模型在做 ML 这件事上的能力进步之大，真的很惊人（以前它们在这方面真的很差）。所以现在，一个具备良好"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/SQmN4NamlR",
+                "resolvedUrl": "https://x.com/amasad/status/2076356893736673507/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2076356006721077248/img/CdicaZLU6uoKTnm2.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/INdb7rojHU",
+                "resolvedUrl": "https://x.com/amasad/status/2076227936202662357"
+              }
+            ]
+          },
+          {
+            "headline": "**Amjad Masad** says model-guided ML work is getting real · **Amjad Masad** 说模型做机器学习这件事，已经开始像回事了",
+            "body": "Vibe Research\n\nFine-tuning a Qwen-8b model to play chess on Replit. Running 3 parallel branches with different experiments and making real progress.\n\nIt's amazing how far models have come in their ability to do ML (they used to be really bad at it). So now someone with good intuition to guide the process could do interesting ML work, even if they have never done it before.\n\nVibe Research\n\n在 **Replit** 上微调一个 **Qwen-8b** 模型来下棋。现在开了 3 个并行分支做不同实验，而且确实在往前走。\n\n模型做机器学习这件事进步太大了（以前真挺差）。所以现在，只要有人直觉够好、能把过程带对，就算以前没做过，也能做出一些有意思的 ML 工作。",
+            "source_links": [
+              "https://x.com/amasad/status/2076227936202662357"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNA8lu4bwAAY5wc.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2076227936202662357/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-07-12T17:52:51.000Z",
+        "sections": [
+          {
+            "headline": "**Guillermo Rauch** pushes for owning the AI stack, not renting it · **Guillermo Rauch** 直说别把大脑外包，AI 这层得自己控",
+            "body": "Make the model a cog in a machine you own.\n\n◾ AI SDK → open model API\n◾ https://t.co/O7y9dmUqk5 → open Agent API\n◾ AI Gateway → open ZDR inference\n\nStartups and enterprises must own their data, evals, model choices, software layer. Don't outsource your brain. https://t.co/EpiBG1GD59\n\n把模型变成你自己机器里的一个齿轮。\n\n◾ AI SDK → open model API\n◾ https://t.co/O7y9dmUqk5 → open Agent API\n◾ AI Gateway → open ZDR inference\n\n创业公司和大企业都该自己掌握数据、评测、模型选择和软件层。别把自己的脑子外包出去。 https://t.co/EpiBG1GD59",
+            "source_links": [
+              "https://x.com/rauchg/status/2076364176252191222"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/satyanadella/status/2076323181154230284",
+                "resolvedUrl": "https://x.com/satyanadella/status/2076323181154230284",
+                "authorName": "Satya Nadella",
+                "authorHandle": "satyanadella",
+                "authorUrl": "https://x.com/satyanadella",
+                "text": "Make the model a cog in a machine you own. ◾ AI SDK → open model API ◾ → open Agent API ◾ AI Gateway → open ZDR inference Startups and enterprises must own their data, evals, model choices, software layer. Don't outsource your brain.",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "让模型成为你所拥有机器中的一个齿轮。◾ AI SDK → 开放模型 API ◾ → 开放 Agent API ◾ AI Gateway → 开放 ZDR inference。创业公司和企业必须掌握自己的数据、评测、模型选择和软件层。别把你的大脑外包。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/O7y9dmUqk5",
+                "resolvedUrl": "http://eve.dev/"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/EpiBG1GD59",
+                "resolvedUrl": "https://x.com/satyanadella/status/2076323181154230284"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-07-12T16:10:17.000Z",
+        "sections": [
+          {
+            "headline": "**Aaron Levie** says the real enterprise prize is workflow IP, not raw model access · **Aaron Levie** 说企业真正值钱的是工作流 IP，不是单拿到模型",
+            "body": "One of the key architectural questions of the 21st century in business will be how you maximize your corporate IP in the form of decisions, insights, workflow patterns, and best practices in a world where so much intelligence is packed into AI models.\n\nOne might think these questions could just get bitter lessoned out of existence, but in reality they become even more germane as intelligence becomes more powerful. In a world where any firm also has access to frontier intelligence, understanding how you leverage it uniquely becomes a critical question.\n\nThat’s why so much value is left to be created between the enterprise and the underlying AI itself. Having evals for your workflows, ensuring that you can route models from different tiers of intelligence, capturing traces in a way that improve your own workflows, and making sure the value of your information compounds as AI gets better all become critical considerations.\n\nWhich is also why there’s so much opportunity right now in the applied AI layer. The companies that help figure this out for other enterprises will be in the best position to win the next enterprise workloads.\n\n21 世纪企业架构里一个关键问题会是：在越来越多智能被塞进 AI 模型之后，企业怎么把自己的 IP 发挥到最大，包括决策、洞察、工作流模式和最佳实践这些东西。\n\n有人可能会觉得，这些问题最后都会被 bitter lesson 一把抹平，但实际恰好相反，智能越强，这些问题越躲不开。当前沿智能谁都能拿到时，真正关键的是你怎么把它用出自己的路数。\n\n所以企业和底层 AI 之间，还有大量价值没被做出来。给工作流做 eval、在不同智能层级之间路由模型、记录 traces 来反哺自己的流程、确保你的信息随着 AI 变强而持续复利，这些都很要命。\n\n这也是为什么应用层 AI 现在机会还很多。谁能帮企业把这套东西理顺，谁就更可能拿下下一批企业工作负载。",
+            "source_links": [
+              "https://x.com/levie/status/2076338364635287637"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-07-13T05:11:05.000Z",
+        "sections": [
+          {
+            "headline": "**Garry Tan** attacks anti-tech public safety politics · **Garry Tan** 痛批拿公共安全技术开文化战的政客",
+            "body": "Craven politicians who disable public safety technology for virtue signal and culture war purposes will always get blood on their hands https://t.co/TPydLBqavh\n\n那些为了作秀、为了打文化战，就把公共安全技术关掉的懦弱政客，手上迟早都得沾血。 https://t.co/TPydLBqavh",
+            "source_links": [
+              "https://x.com/garrytan/status/2076534860064416115"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/swannmarcus89/status/2076388892677169652",
+                "resolvedUrl": "https://x.com/SwannMarcus89/status/2076388892677169652",
+                "authorName": "Swann Marcus",
+                "authorHandle": "SwannMarcus89",
+                "authorUrl": "https://x.com/SwannMarcus89",
+                "text": "Cambridge disabled Shot Spotter because they said it was racist. Then a black Public Works employee got shot, lay undiscovered for over an hour while bleeding out in a public park, and died because first responders didn't know a shooting happened\n\nhttps://www.cbsnews.com/boston/news/cambridge-shooting-death-shotspotter-city-council/",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "Cambridge 停用了 Shot Spotter，因为他们说它带有种族歧视。结果一名黑人公共工程部门员工中枪后，在公共公园里流血躺了一个多小时都没被发现，最终死亡，因为急救人员根本不知道发生了枪击案。 https://www.cbsnews.com/boston/news/cambridge-shooting-death-shotspotter-city-council/"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/TPydLBqavh",
+                "resolvedUrl": "https://x.com/swannmarcus89/status/2076388892677169652"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-07-12T16:29:45.000Z",
+        "sections": [
+          {
+            "headline": "**Matt Turck** reacts with surreal travel sarcasm · **Matt Turck** 用一串离谱地名吐槽了一把",
+            "body": "And Argentina will get to play Monaco, Easter Island and Willy Wonka’s Chocolate Factory https://t.co/sr7IPu1ToP\n\n那阿根廷是不是接下来还要去踢摩纳哥、复活节岛和威利旺卡巧克力工厂。 https://t.co/sr7IPu1ToP",
+            "source_links": [
+              "https://x.com/mattturck/status/2076343266291626064"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nytimes/status/2076328248347074638",
+                "resolvedUrl": "https://x.com/nytimes/status/2076328248347074638",
+                "authorName": "The New York Times",
+                "authorHandle": "nytimes",
+                "authorUrl": "https://x.com/nytimes",
+                "text": "From @TheAthleticFC: Gianni Infantino said FIFA will examine expanding the World Cup by a further 16 nations to a 64-team tournament ahead of its next edition in 2030. The 2030 tournament will be spread across six nations and three continents. https://nyti.ms/4bjW73o",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "来自 @TheAthleticFC：Gianni Infantino 表示，FIFA 将研究在 2030 年下一届世界杯之前，进一步将参赛球队增加 16 支，扩军到 64 队。2030 年赛事将横跨 6 个国家和 3 大洲举行。https://nyti.ms/4bjW73o"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/sr7IPu1ToP",
+                "resolvedUrl": "https://x.com/nytimes/status/2076328248347074638"
+              }
+            ]
+          },
+          {
+            "headline": "Anyone can build with agentic tools? **Matt Turck** isn't buying the fantasy · 说人人都能靠 agentic 编程工具做应用？**Matt Turck** 显然不太信",
+            "body": "me when they say anyone can now build apps with an agentic coding tool https://t.co/PtL1Mu0yS0\n\n当他们说现在谁都能靠 agentic coding tool 做应用时，我的表情。 https://t.co/PtL1Mu0yS0",
+            "source_links": [
+              "https://x.com/mattturck/status/2076311766049374598"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/PtL1Mu0yS0",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2076274914760278017/img/-TCHAiim45Hw5F1N.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/WarMonitor3/status/2076275197066228055/video/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/PtL1Mu0yS0",
+                "resolvedUrl": "https://x.com/WarMonitor3/status/2076275197066228055/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2076274914760278017/img/-TCHAiim45Hw5F1N.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-07-12T13:38:43.000Z",
+        "sections": [
+          {
+            "headline": "Meeting transcript becomes PRD, then **Codex** ships the prototype · 会议纪要直接变 PRD，再丢给 **Codex** 出原型",
+            "body": "Try \"meeting transcript as PRD\", it's amazing\n\nI discuss a feature's implementation with a colleague, send transcript to Codex, and it builds the prototype as we discussed. The meeting is the prompt\n\n试试“meeting transcript as PRD”，真的很顶。\n\n我和同事把一个功能怎么实现聊清楚，再把会议转录发给 **Codex**，它就会按我们讨论的内容把原型做出来。会议本身就是 prompt。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2076300222884626754"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Passion is the moat, says **Zara Zhang** · **Zara Zhang** 觉得最大的护城河还是热情",
+            "body": "Passion is the biggest moat\n\n热情才是最大的护城河。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2076284012339843546"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-07-13T00:09:09.000Z",
+        "sections": [
+          {
+            "headline": "Tokenmaxxing without a real customer still goes nowhere · token 拉满但讲不清用户是谁，还是白搭",
+            "body": "What’s funny is I’ll meet so many people in SF who’ll claim they are tokenmaxxing and have all of these subagents looping things for them..\n\nBut when I ask them “what” and for “whom” are they building, very few can give me a straight answer. \n\nShows that even in this insane AI era, simplicity and direction are still ridiculously important. \n\nSo before you let your tokens go brrr, take some time to think if what you’re building (for a living) is actually important. \n\nTime is literally the only thing you don’t get back!\n\n好笑的是，我在旧金山会遇到很多人，说自己在疯狂 tokenmaxxing，手上挂着一堆 subagent 在那循环干活。\n\n但我一问他们到底在做什么、又是给谁做，真正能把话说明白的人很少。\n\n这说明就算在现在这个离谱的 AI 时代，简单和方向感还是重要得夸张。\n\n所以在你让 token 开始狂飙之前，先想想你拿来谋生的这件东西，到底是不是真的重要。\n\n时间真的是唯一拿不回来的东西。",
+            "source_links": [
+              "https://x.com/nikunj/status/2076458876816540144"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Nikunj** reminds people to log off and go outside · **Nikunj** 提醒大家别老盯屏幕，天气好就出门",
+            "body": "Reminder to get out if you haven’t on this gorgeous day! https://t.co/NrvyXPpeLy\n\n如果今天这么好的天气你还没出门，提醒一下，赶紧出去走走。 https://t.co/NrvyXPpeLy",
+            "source_links": [
+              "https://x.com/nikunj/status/2076416145255731677"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNDpdPzaIAAoXgi.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2076416145255731677/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNDpdP0bwAAhRqD.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2076416145255731677/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/NrvyXPpeLy",
+                "resolvedUrl": "https://x.com/nikunj/status/2076416145255731677/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNDpdP0bwAAhRqD.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Outbound sales is still a humbling craft · 外呼销售还是一门很磨人的真功夫",
+            "body": "There’s nothing more humbling than outbound sales. \n\nLike any skill, it’s learnable. \n\nBut man, when you see the really great ones do it, you can’t help but walk away a bit envious. \n\nGoing to be even more important as time progresses!\n\n没有什么比 outbound sales 更让人认清现实了。\n\n它和别的技能一样，能学。\n\n但真看到高手出手时，你还是会有点羡慕。\n\n往后只会越来越重要。",
+            "source_links": [
+              "https://x.com/nikunj/status/2076370608833827124"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw Builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-07-13T06:26:07.000Z",
+        "sections": [
+          {
+            "headline": "**Peter Steinberger** says one monster box is only part of the setup · **Peter Steinberger** 说这台猛机也只是他分布式工作流的一部分",
+            "body": "I shard my work over ~5 machines via Jump Desktop, this is just my beefiest machine.\n\n我会通过 **Jump Desktop** 把工作分摊到大概 5 台机器上，这台只是里面最猛的一台。",
+            "source_links": [
+              "https://x.com/steipete/status/2076553742883930455"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "His **Mac Studio** is basically full of sessions · 他的 **Mac Studio** 基本已经被 session 塞满了",
+            "body": "That's about as many sessions as my Mac Studio can take. https://t.co/4OCiZUwqHt\n\n这差不多已经是我的 **Mac Studio** 能扛住的 session 数量上限了。 https://t.co/4OCiZUwqHt",
+            "source_links": [
+              "https://x.com/steipete/status/2076552605262872904"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNFlig3a4AARX95.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2076552605262872904/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/4OCiZUwqHt",
+                "resolvedUrl": "https://x.com/steipete/status/2076552605262872904/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNFlig3a4AARX95.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Weekend facelift for the setup · 周末顺手把整套东西拉了个皮",
+            "body": "Spent the weekend on a little facelift. https://t.co/STWHLV5OMy\n\n周末花了点时间，给这套东西做了个小 facelift。 https://t.co/STWHLV5OMy",
+            "source_links": [
+              "https://x.com/steipete/status/2076551622227095828"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNFkfOabkAAG2cl.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2076551622227095828/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/STWHLV5OMy",
+                "resolvedUrl": "https://x.com/steipete/status/2076551622227095828/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNFkfOabkAAG2cl.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-07-12T23:55:28.000Z",
+        "sections": [
+          {
+            "headline": "**Dan Shipper** calls out a result that looks flat-out dubious · **Dan Shipper** 直接说这个结果看着就不太对劲",
+            "body": "a spectacularly questionable result tbh https://t.co/9aaf8H4jMs\n\n说真的，这个结果可疑得有点夸张。 https://t.co/9aaf8H4jMs",
+            "source_links": [
+              "https://x.com/danshipper/status/2076455432546066826"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/designarena/status/2076391367446860249",
+                "resolvedUrl": "https://x.com/Designarena/status/2076391367446860249",
+                "authorName": "Design Arena",
+                "authorHandle": "Designarena",
+                "authorUrl": "https://x.com/Designarena",
+                "text": "BREAKING - OFFICIAL RESULTS: GPT-5.6 Sol by @OpenAI is 1st overall on Design Arena with an Elo of 1353.\n\nThis puts GPT-5.6 Sol above Claude Fable 5 by @AnthropicAI and in the same performance band as GLM 5.2 by @Zai_org on frontend design.\n\nThis is an 18-position and 60-point Elo",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNDSbbsaEAAmJP1.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Designarena/status/2076391367446860249/photo/1"
+                  }
+                ],
+                "textZh": "突发消息 - 官方结果：@OpenAI 的 GPT-5.6 Sol 以 1353 的 Elo 在 Design Arena 总排名第一。 这让 GPT-5.6 Sol 在前端设计方面超过了 @AnthropicAI 的 Claude Fable 5，并进入了与 @Zai_org 的 GLM 5.2 相同的性能区间。 这相当于上升了 18 个名次和 60 点 Elo"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/9aaf8H4jMs",
+                "resolvedUrl": "https://x.com/designarena/status/2076391367446860249"
+              }
+            ]
+          },
+          {
+            "headline": "Capitalism meme, minimal words · 资本主义梗图式发言，字少但味很足",
+            "body": "capitalism stays winning! https://t.co/J3sQVyvCB8\n\n资本主义继续赢麻了！ https://t.co/J3sQVyvCB8",
+            "source_links": [
+              "https://x.com/danshipper/status/2076351869782286707"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2076351399999557669",
+                "resolvedUrl": "https://x.com/claudeai/status/2076351399999557669",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们将把 Claude Fable 5 在所有付费套餐中的访问权限延长至 7 月 19 日，同时继续将 Claude Code 的每周速率限制提高 50%，也持续到 7 月 19 日。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/J3sQVyvCB8",
+                "resolvedUrl": "https://x.com/claudeai/status/2076351399999557669"
+              }
+            ]
+          },
+          {
+            "headline": "**Dan Shipper** posts a one-line mood check · **Dan Shipper** 发了句很容易共鸣的吐槽",
+            "body": "extremely relatable https://t.co/s6EK2fnmCO\n\n太能共情了。 https://t.co/s6EK2fnmCO",
+            "source_links": [
+              "https://x.com/danshipper/status/2076340879787237562"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNClBseWMAAD3-r.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2076340879787237562/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/s6EK2fnmCO",
+                "resolvedUrl": "https://x.com/danshipper/status/2076340879787237562/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNClBseWMAAD3-r.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X",
+        "posted_at": "2026-07-12T20:08:15.000Z",
+        "sections": [
+          {
+            "headline": "**Sam Altman** wants the coolest thing built with **5.6 Sol** · **Sam Altman** 开始征集用 **5.6 Sol** 做出来的狠活",
+            "body": "i'd love to see interesting things people have built with 5.6 sol.\n\ni will send the person who made the coolest thing a special gift from the openai archives.\n\n我很想看看大家用 **5.6 Sol** 做了什么有意思的东西。\n\n做出最酷作品的人，我会送一份来自 **OpenAI** 档案库的特别礼物。",
+            "source_links": [
+              "https://x.com/sama/status/2076398253332140410"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-07-12T17:02:05.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** explains how **Fable 5** fits into weekly limits · **Claude** 说明 **Fable 5** 和每周额度怎么一起算",
+            "body": "As before, you can use up to half of your weekly usage limit on Fable 5. After that, you can continue using Fable 5 with usage credits, or switch to another model to keep working within your remaining limits.\n\nMore details here: https://t.co/5inr3k2VM5\n\n和之前一样，你每周额度里最多有一半可以用在 **Fable 5** 上。到这个上限后，你可以继续用 usage credits 跑 **Fable 5**，或者切到其他模型，在剩余额度内继续工作。\n\n更多细节在这里： https://t.co/5inr3k2VM5",
+            "source_links": [
+              "https://x.com/claudeai/status/2076351401006154204"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/5inr3k2VM5",
+                "resolvedUrl": "http://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
+              }
+            ]
+          },
+          {
+            "headline": "**Anthropic** extends **Claude Fable 5** access through July 19 · **Anthropic** 把 **Claude Fable 5** 的开放期延到 7 月 19 日",
+            "body": "We're extending Claude Fable 5 access on all paid plans, as well as keeping Claude Code’s weekly rate limits 50% higher, through July 19.\n\n我们把 **Claude Fable 5** 在所有付费套餐上的开放期延长到 7 月 19 日，同时让 **Claude Code** 的每周限额继续保持高出 50%。",
+            "source_links": [
+              "https://x.com/claudeai/status/2076351399999557669"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-07-13",
+    "updatedAt": "2026-07-13T12:04:45.342Z",
+    "commit": {
+      "sha": "0049336a952ae6f4442d37fd38ac71a860520fd2",
+      "committedAt": "2026-07-13T07:25:50Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-07-13T12:00:12.441Z",
+    "feedGeneratedAt": "2026-07-13T07:25:45.249Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

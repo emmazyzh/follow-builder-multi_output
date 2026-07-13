@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-12T12:03:18.443Z",
-  "latestDate": "2026-07-12",
+  "updatedAt": "2026-07-13T12:04:45.348Z",
+  "latestDate": "2026-07-13",
   "dates": [
+    {
+      "date": "2026-07-13",
+      "title": "AI Builders Daily · 2026-07-13",
+      "summary": "**OpenAI's GPT-5.6 Sol drama spilled into public view**; usage caps, context-window rollbacks, and subscription promises turned product tuning into weekend discourse; builders kept pushing anyway, from \"meeting transcript as PRD\" to chess fine-tuning and multi-machine agent setups; the bigger argument underneath it all was ownership, with **Vercel**, **Box**, and others pressing for open control over models, data, and workflow IP.\n\n**这波最热还是 GPT-5.6 Sol**；限额、上下文回调、套餐归属全被摊到台面上讲，产品运营像直播拆机；另一边，开发者没停，拿会议纪要直接做 PRD、在 **Replit** 上微调下棋模型、把一堆机器串起来跑 agent，路子一个比一个野；更底层的话题也很直接，**Vercel**、**Box** 这些人都在盯同一件事：模型会换，真正该攥在手里的还是数据、评测和工作流。",
+      "itemCount": 16,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-13T12:04:45.345Z",
+      "commit": {
+        "sha": "0049336a952ae6f4442d37fd38ac71a860520fd2",
+        "committedAt": "2026-07-13T07:25:50Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-12",
       "title": "AI Builders Daily · 2026-07-12",
