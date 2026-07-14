@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-13T12:04:45.348Z",
-  "latestDate": "2026-07-13",
+  "updatedAt": "2026-07-14T12:06:04.605Z",
+  "latestDate": "2026-07-14",
   "dates": [
+    {
+      "date": "2026-07-14",
+      "title": "AI Builders Daily · 2026-07-14",
+      "summary": "**Open builders are pushing harder**; **Anthropic lands on Apple’s Foundation Models stack**; NVIDIA’s **Bryan Catanzaro** argues open models win by customization, not ideology; X is full of operator notes on model routing, artifacts, observability, and weirdly useful side projects.\n\n**产品和工具味更浓了**；**Anthropic** 把 **Claude** 接进苹果 **Foundation Models**，苹果端上本地模型和云端推理开始连起来；**NVIDIA** 在播客里把开源模型的账讲得很直白，重点不是口号，是定制和落地；X 上一边在聊路由、Artifacts、观测，一边已经有人拿 **Cursor** 刷电子书固件、拿 **Claude Code** 自动报销了。",
+      "itemCount": 18,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-14T12:06:04.603Z",
+      "commit": {
+        "sha": "bf272a1ee282996e9a39970ca4f752984b7b9007",
+        "committedAt": "2026-07-14T06:59:17Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-13",
       "title": "AI Builders Daily · 2026-07-13",

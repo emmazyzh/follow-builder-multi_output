@@ -1,0 +1,1065 @@
+{
+  "payload": {
+    "date": "2026-07-14",
+    "title": "AI Builders Daily · 2026-07-14",
+    "summary": "**Open builders are pushing harder**; **Anthropic lands on Apple’s Foundation Models stack**; NVIDIA’s **Bryan Catanzaro** argues open models win by customization, not ideology; X is full of operator notes on model routing, artifacts, observability, and weirdly useful side projects.\n\n**产品和工具味更浓了**；**Anthropic** 把 **Claude** 接进苹果 **Foundation Models**，苹果端上本地模型和云端推理开始连起来；**NVIDIA** 在播客里把开源模型的账讲得很直白，重点不是口号，是定制和落地；X 上一边在聊路由、Artifacts、观测，一边已经有人拿 **Cursor** 刷电子书固件、拿 **Claude Code** 自动报销了。",
+    "items": [
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@DataDrivenNYC/videos",
+        "source_label": "Podcast",
+        "posted_at": "2026-07-02T11:30:00.000Z",
+        "sections": [
+          {
+            "headline": "Inside **Nemotron**: **Bryan Catanzaro** makes the case for open AI infrastructure | 走进 **Nemotron**：**Bryan Catanzaro** 直接讲开源 AI 基础设施为什么有价值",
+            "body": "**Matt Turck**’s conversation with **NVIDIA**’s **Bryan Catanzaro** centers on the current open-model surge, from **Nemotron 3 Ultra** to the broader US-China race. Catanzaro’s key argument is practical: open models matter because companies need to customize around proprietary data, workflows, security constraints, and regulation. He also pushes back on the idea that China’s gains are just imitation, arguing the global AI community advances by learning from one another and that openness accelerates real deployment.\n\n这期 **Matt Turck** 对谈 **NVIDIA** 的 **Bryan Catanzaro**，重点不是热闹，而是把开源模型这波为什么还在往前冲讲清楚了。Catanzaro 的核心意思很实用：企业要把 AI 真接进业务，绕不开私有数据、流程、安全和合规，开源模型的价值就在这里。聊到中美时他也没走常见那套，说中国社区的贡献不能被简单说成“模仿”，技术圈本来就是彼此借鉴，开放反而更能把东西做快。",
+            "source_links": [
+              "https://www.youtube.com/@DataDrivenNYC/videos"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog/claude-for-foundation-models",
+        "source_label": "Blog",
+        "posted_at": "Jun 08, 2026",
+        "sections": [
+          {
+            "headline": "**Claude** plugs into Apple’s **Foundation Models** framework for hybrid on-device + cloud apps | **Claude** 接入苹果 **Foundation Models**，本地模型和云端推理开始混搭",
+            "body": "**Anthropic** announced a new Swift package that lets developers call **Claude** through Apple’s **Foundation Models** framework. The pitch is straightforward: use Apple’s on-device models for fast local tasks like summarization and extraction, then hand off harder work such as multi-step reasoning, code generation, web search, and data analysis to **Claude**, all inside the same typed Swift workflow.\n\n**Anthropic** 发了一个新的 Swift 包，把 **Claude** 接进苹果 **Foundation Models** 框架。路子很清楚：轻活先给设备端模型做，比如摘要、抽取；真遇到多步推理、写代码、查网页、跑数据分析，再切到 **Claude**。开发者不用重新拼一套接口，typed Swift 输入、流式返回、工具调用这些都能接在同一条链路里。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-07-14T00:51:58.000Z",
+        "sections": [
+          {
+            "headline": "Tool advice points back to community picks | 工具怎么选，先看社区在推什么",
+            "body": "@mattpocockuk @trq212 what other people are recommending to use\n\nhttps://t.co/ZBlZuVruZk\n\n@mattpocockuk @trq212 大家现在都在推荐用什么\n\nhttps://t.co/ZBlZuVruZk",
+            "source_links": [
+              "https://x.com/swyx/status/2076832040155271202"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/ZBlZuVruZk",
+                "resolvedUrl": "https://www.latent.space/p/ainews-not-much-happened-today-f5c"
+              }
+            ]
+          },
+          {
+            "headline": "A working stack for big projects: plan, critique, code, review | 大项目的一套分工：规划、挑刺、写码、复核",
+            "body": "where i'm currently at for Big Boy projects:\n\n- sol ultra to plan\n- fable 5 to critique\n- sonnet 5/terra ultra/swe 1.7 to ultracode/slop cannon\n- devin review to review (using kakuna)\n\n~always use a variant of @mattpocockuk's grill-me or @trq212's interview-me to elicit decisions upfront\n\n我现在做大项目的分工大概是这样：\n\n- 用 sol ultra 做规划\n- 用 fable 5 做批判和挑错\n- 用 sonnet 5 / terra ultra / swe 1.7 去猛写代码\n- 最后再让 devin review 做复查（配 kakuna）\n\n~而且前面基本都会先套一版 @mattpocockuk 的 grill-me 或 @trq212 的 interview-me，把关键决策先逼出来",
+            "source_links": [
+              "https://x.com/swyx/status/2076811977918484795"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Another **Resend** moment, now turned into a running joke | **Resend** 又来一次，已经快成固定段子了",
+            "body": "@resend AGAIN. TODAY.\n\nat this point if i get a text from my mom i expect codex to ask for a resend api key in order to read it https://t.co/iuSjlT3HCI\n\n@resend 又来。今天又来。\n\n现在我都快默认了，要是我妈给我发短信，codex 读之前都得先问我要一个 resend 的 API key https://t.co/iuSjlT3HCI",
+            "source_links": [
+              "https://x.com/swyx/status/2076809831328157758"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNJPM6-asAA-5sC.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2076809831328157758/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/iuSjlT3HCI",
+                "resolvedUrl": "https://x.com/swyx/status/2076809831328157758/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNJPM6-asAA-5sC.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-07-14T05:52:58.000Z",
+        "sections": [
+          {
+            "headline": "OpenAI teases a possible 8M active-user milestone | **OpenAI** 暗示活跃用户可能冲到 800 万",
+            "body": "Tomorrow might be 8M active user celebration day. Just saying\n\n明天可能会变成庆祝 800 万活跃用户的一天。先说一句",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076907789763621237"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A compact builder mantra | 一句很短的 builder 宣言",
+            "body": "Build your dreams\n\n把你想做的东西做出来",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076894197488226531"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**ChatGPT Work** gets a simple stage intro | **ChatGPT Work** 被直接拎上台面",
+            "body": "ChatGPT Work presents https://t.co/pY5Vei9OIz\n\n**ChatGPT Work** 登场 https://t.co/pY5Vei9OIz",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2076894071323537898"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNKcHHSagAAHTMO.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2076894071323537898/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/pY5Vei9OIz",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2076894071323537898/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNKcHHSagAAHTMO.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-07-14T05:11:43.000Z",
+        "sections": [
+          {
+            "headline": "Peter Yang asks how to spot instant-reply AI bots | Peter Yang 在问怎么揪出秒回的 AI 机器人号",
+            "body": ".@nikitabier is it possible to find accounts that just instantly reply to posts from bigger accounts?\n\nThose are usually AI bots worth banning? I block a bunch every week.\n\n.@nikitabier 能不能找到那种专门秒回大号帖子的账号？\n\n那种通常就是该封的 AI 机器人吧？我每周都要拉黑一批",
+            "source_links": [
+              "https://x.com/petergyang/status/2076897407439454577"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A timeline tweak changes the feed fast | 时间线一改，首页味道立刻变了",
+            "body": "Love the man but this isn’t a small tweak I only see neutrals now 😂\n\nNot sure this will last tbh better enjoy it while we can! https://t.co/UxjkKyo7FH\n\n我喜欢这哥们，但这真不是小改动，我现在首页几乎只看到中立派了 😂\n\n说实话不确定这能撑多久，能享受先享受吧！ https://t.co/UxjkKyo7FH",
+            "source_links": [
+              "https://x.com/petergyang/status/2076894908712108433"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nikitabier/status/2076747704248758617",
+                "resolvedUrl": "https://x.com/nikitabier/status/2076747704248758617",
+                "authorName": "Nikita Bier",
+                "authorHandle": "nikitabier",
+                "authorUrl": "https://x.com/nikitabier",
+                "text": "We're rolling out a small tweak to boost visibility of your posts to your mutuals (people who you follow back).\n\nWe noticed this data was missing from the algo and it made your friends appear less in your replies. This resulted in the reply section feeling more like a",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们正在推出一个小调整，提升你的帖子在互相关注的人（也就是你也回关的人）那里的可见度。 我们注意到算法里缺少这项数据，这让你的朋友在你的回复里出现得更少。结果就是，回复区感觉更像一个"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/UxjkKyo7FH",
+                "resolvedUrl": "https://x.com/nikitabier/status/2076747704248758617"
+              }
+            ]
+          },
+          {
+            "headline": "Off-topic but sharp: Michelin hot takes land on X | 虽然跑题，但这波米其林吐槽很猛",
+            "body": "At the risk of losing friends:\n\nSinglethreads: Flowers on sushi?\nBenu: Thousand year egg I can buy from Chinese grocery store\nCalifornios: Ok this was good but I had better food in Mexico\nBirdsong: I remember this one fondly when they had 1 star\n\n冒着失去朋友的风险说一句：\n\nSinglethreads：寿司上摆花？\nBenu：皮蛋我在中国超市就能买到\nCalifornios：是不错，但我在墨西哥吃过更好的\nBirdsong：我还是更怀念它只有 1 星的时候",
+            "source_links": [
+              "https://x.com/petergyang/status/2076894390375903517"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Head of Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-07-13T21:40:32.000Z",
+        "sections": [
+          {
+            "headline": "Design titles look different once you look outside software | 设计这个职位，离开软件圈再看就不一样了",
+            "body": "This becomes much more apparent once you examine the jobs of people with “designer” in their title outside of software! https://t.co/Vmt4wUkQBw\n\n只要去看看软件行业之外，那些职位里带“designer”的人平时到底在做什么，这件事就会明显很多！ https://t.co/Vmt4wUkQBw",
+            "source_links": [
+              "https://x.com/thenanyu/status/2076783865528516971"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/joshpuckett/status/2076720271286014212",
+                "resolvedUrl": "https://x.com/joshpuckett/status/2076720271286014212",
+                "authorName": "joshpuckett",
+                "authorHandle": "joshpuckett",
+                "authorUrl": "https://x.com/joshpuckett",
+                "text": "@maiab i think it's shifted to design.*\n\nmuch of the coordination responsibilities of the product management function are rapidly dwindling, but 'what should we build' is still the key question.\n\n*historically, I think PMs in tech took a lot of the responsibility for the design of a",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "@maiab 我觉得这已经转向设计了。* 产品管理职能中很多协调类职责正在迅速减少，但“我们该做什么”仍然是最关键的问题。 *从历史上看，我觉得科技行业里的 PM 曾经承担了很多关于一个产品设计的责任"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Vmt4wUkQBw",
+                "resolvedUrl": "https://x.com/joshpuckett/status/2076720271286014212"
+              }
+            ]
+          },
+          {
+            "headline": "A one-line nod to the Chinese Room debate | 一句点名“中文房间”老问题",
+            "body": "Chinese room btw https://t.co/4zlXNiDtFm\n\n顺带一提，中文房间 https://t.co/4zlXNiDtFm",
+            "source_links": [
+              "https://x.com/thenanyu/status/2076713481177374749"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/sonofalli/status/2076687645225165265",
+                "resolvedUrl": "https://x.com/sonofalli/status/2076687645225165265",
+                "authorName": "alli",
+                "authorHandle": "sonofalli",
+                "authorUrl": "https://x.com/sonofalli",
+                "text": "ever since I was a little girl I dreamed of spending all day in one of these",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNHgaCbXEAAf0_p.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/sonofalli/status/2076687645225165265/photo/1"
+                  }
+                ],
+                "textZh": "我从小女孩时起就梦想着整天待在这种地方里"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/4zlXNiDtFm",
+                "resolvedUrl": "https://x.com/sonofalli/status/2076687645225165265"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Cat Wu",
+        "person_handle": "_catwu",
+        "person_identity": "Anthropic Claude Code",
+        "profile_url": "https://x.com/_catwu",
+        "source_label": "X",
+        "posted_at": "2026-07-14T03:14:24.000Z",
+        "sections": [
+          {
+            "headline": "**Artifacts** gets a fresh upgrade | **Artifacts** 刚完成一轮升级",
+            "body": "Artifacts just got an upgrade! https://t.co/zbSVpoRCXh\n\n**Artifacts** 刚升级了一波！ https://t.co/zbSVpoRCXh",
+            "source_links": [
+              "https://x.com/_catwu/status/2076867882894684314"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ClaudeDevs/status/2076789349145092230",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2076789349145092230",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Artifacts now support public sharing and multiplayer editing in Claude Code, and can be created with Claude Tag.",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNI8MZLb0AA6nP-.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ClaudeDevs/status/2076789349145092230/photo/1"
+                  }
+                ],
+                "textZh": "Artifacts 现在支持在 Claude Code 中公开分享和多人协作编辑，并且可以通过 Claude Tag 创建。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/zbSVpoRCXh",
+                "resolvedUrl": "https://x.com/claudedevs/status/2076789349145092230"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Anthropic Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-07-13T22:08:06.000Z",
+        "sections": [
+          {
+            "headline": "**Artifacts** gets more expressive, with dashboards as a standout use case | **Artifacts** 表达力更强了，项目仪表盘是个很实在的用法",
+            "body": "This makes artifacts much more expressive and can be combined in creative ways. \n\nOne of my favorites is to create a dashboard for a project in Claude Tag that can be edited by others or by my local Claude Code sessions. https://t.co/xud1a7M27D\n\n这会让 **artifacts** 的表达力强很多，而且能玩出不少组合。\n\n我自己很喜欢的一个用法，是在 **Claude Tag** 里给项目做一个 dashboard，别人能改，我本地的 **Claude Code** 会话也能改。 https://t.co/xud1a7M27D",
+            "source_links": [
+              "https://x.com/trq212/status/2076790799011131735"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ClaudeDevs/status/2076789349145092230",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2076789349145092230",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Artifacts now support public sharing and multiplayer editing in Claude Code, and can be created with Claude Tag.",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNI8MZLb0AA6nP-.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ClaudeDevs/status/2076789349145092230/photo/1"
+                  }
+                ],
+                "textZh": "Artifacts 现在支持在 Claude Code 中公开分享和多人协作编辑，并且可以通过 Claude Tag 创建。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/xud1a7M27D",
+                "resolvedUrl": "https://x.com/claudedevs/status/2076789349145092230"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-07-14T05:51:03.000Z",
+        "sections": [
+          {
+            "headline": "Amjad drops a terse “our code” flex | Amjad 很短一句，直接晒“our code”",
+            "body": "Our code https://t.co/MfiTND4bSA https://t.co/cian9Vyrmi\n\n我们的代码 https://t.co/MfiTND4bSA https://t.co/cian9Vyrmi",
+            "source_links": [
+              "https://x.com/amasad/status/2076907304897974775"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/MfiTND4bSA",
+                "url": "https://pbs.twimg.com/tweet_video_thumb/HNKoLwtaoAA0HeM.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2076907304897974775/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/intcyberdigest/status/2076689215258014069",
+                "resolvedUrl": "https://x.com/IntCyberDigest/status/2076689215258014069",
+                "authorName": "International Cyber Digest",
+                "authorHandle": "IntCyberDigest",
+                "authorUrl": "https://x.com/IntCyberDigest",
+                "text": "‼️ BREAKING: xAI's Grok Build CLI was uploading entire Git repositories to a Google Cloud bucket, private codebases and unredacted secrets included. The uploads quietly stopped via a hidden server-side flag, and xAI still has not said a word about scope, retention, or deletion.",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNHgflxWYAAtgq_.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/IntCyberDigest/status/2076689215258014069/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNHhARVXwAMbWg2.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/IntCyberDigest/status/2076689215258014069/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNHhCBYWsAArLUc.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/IntCyberDigest/status/2076689215258014069/photo/1"
+                  }
+                ],
+                "textZh": "‼️ 突发：xAI 的 Grok Build CLI 一直在把整个 Git 仓库上传到一个 Google Cloud 存储桶，包含私有代码库和未打码的密钥。上传是通过一个隐藏的服务端标记悄悄停止的，而 xAI 仍然没有就影响范围、保留时长或删除问题发表任何说明。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/MfiTND4bSA",
+                "resolvedUrl": "https://x.com/amasad/status/2076907304897974775/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/tweet_video_thumb/HNKoLwtaoAA0HeM.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/cian9Vyrmi",
+                "resolvedUrl": "https://x.com/intcyberdigest/status/2076689215258014069"
+              }
+            ]
+          },
+          {
+            "headline": "Realtime model-training updates make personal models feel tangible | 训练进度实时可见，个人模型一下就有那味了",
+            "body": "Getting realtime progress updates on my model training runs. \n\nThis feels like early vibe coding except it’s making personal models. https://t.co/NBFr2sVJT5\n\n我现在能实时看到自己模型训练的进度更新。\n\n这感觉有点像早期 vibe coding，只不过这次是在做个人模型。 https://t.co/NBFr2sVJT5",
+            "source_links": [
+              "https://x.com/amasad/status/2076776737074184661"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNIxb7Qa0AATEi4.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2076776737074184661/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/NBFr2sVJT5",
+                "resolvedUrl": "https://x.com/amasad/status/2076776737074184661/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNIxb7Qa0AATEi4.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-07-13T23:52:54.000Z",
+        "sections": [
+          {
+            "headline": "Users want filesystem access and observability, and **Vercel** is leaning in | 用户最买账的是文件系统和观测，**Vercel** 继续加码",
+            "body": "The two most popular https://t.co/99eEa13mZ3 features so far have been:\n\n1️⃣ The ease of use / filesystem API\n2️⃣ Observability \n\nWe’re doubling down on both! https://t.co/1h3HCYiIar\n\n到目前为止，https://t.co/99eEa13mZ3 最受欢迎的两个点是：\n\n1️⃣ 简单好用 / filesystem API\n2️⃣ 可观测性\n\n我们会继续重压这两块！ https://t.co/1h3HCYiIar",
+            "source_links": [
+              "https://x.com/rauchg/status/2076817174073880957"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2076815883209712038",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2076815883209712038",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "Agent Runs now shows subagent activity for @evedev_ projects.\n\nInspect each run in full, including turns, model and tool calls, cost, and token usage.\n\nhttps://vercel.com/changelog/agent-runs-now-show-subagent-activity-on-eve-projects",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "Agent Runs 现在会显示 @evedev_ 项目的子代理活动。 你可以完整查看每次运行，包括各轮交互、模型和工具调用、成本以及 token 使用情况。 https://vercel.com/changelog/agent-runs-now-show-subagent-activity-on-eve-projects"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/99eEa13mZ3",
+                "resolvedUrl": "http://eve.dev/"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/1h3HCYiIar",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2076815883209712038"
+              }
+            ]
+          },
+          {
+            "headline": "Feature flags as a control surface for autonomous apps | 把 feature flags 变成自治应用的操控面板",
+            "body": "Powerful building block for autonomous, self-optimizing websites and applications.\n\nGive agents the ability to set up and tune experiments with feature flags. https://t.co/wUgpE3lqTF\n\n这是做自治、自我优化网站和应用的一个很强的基础模块。\n\n让 agent 能自己配置实验，再用 feature flags 去调。 https://t.co/wUgpE3lqTF",
+            "source_links": [
+              "https://x.com/rauchg/status/2076786138195595704"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2076783671768752610",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2076783671768752610",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "You can now manage targeting rules for Vercel Flags with Vercel CLI.\n\n𝚟𝚌 𝚏𝚕𝚊𝚐𝚜 𝚛𝚞𝚕𝚎𝚜 𝚊𝚍𝚍 𝚗𝚎𝚠-𝚌𝚑𝚎𝚌𝚔𝚘𝚞𝚝 \\\n --𝚌𝚘𝚗𝚍𝚒𝚝𝚒𝚘𝚗 \"𝚞𝚜𝚎𝚛.𝚌𝚘𝚞𝚗𝚝𝚛𝚢:𝚒𝚗:𝙳𝙴,𝙴𝚂\" \\\n --𝚟𝚊𝚛𝚒𝚊𝚗𝚝 𝚗𝚎𝚠-𝚌𝚑𝚎𝚌𝚔𝚘𝚞𝚝\nhttps://vercel.com/changelog/manage-vercel-flags-targeting-rules-from-the-cli",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "你现在可以用 Vercel CLI 管理 Vercel Flags 的目标规则。 𝚟𝚌 𝚏𝚕𝚊𝚐𝚜 𝚛𝚞𝚕𝚎𝚜 𝚊𝚍𝚍 𝚗𝚎𝚠-𝚌𝚑𝚎𝚌𝚔𝚘𝚞𝚝 \\ --𝚌𝚘𝚗𝚍𝚒𝚝𝚒𝚘𝚗 \"𝚞𝚜𝚎𝚛.𝚌𝚘𝚞𝚗𝚝𝚛𝚢:𝚒𝚗:𝙳𝙴,𝙴𝚂\" \\ --𝚟𝚊𝚛𝚒𝚊𝚗𝚝 𝚗𝚎𝚠-𝚌𝚑𝚎𝚌𝚔𝚘𝚞𝚝 https://vercel.com/changelog/manage-vercel-flags-targeting-rules-from-the-cli"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/wUgpE3lqTF",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2076783671768752610"
+              }
+            ]
+          },
+          {
+            "headline": "Open-weight token share jumps sharply on the gateway | 网关里的开源权重模型 token 占比明显抬头",
+            "body": "“Open-weight models ran 29% of gateway tokens, up from 11% in April”\n\n“Open-weight 模型已经跑了 29% 的 gateway tokens，4 月时还是 11%”",
+            "source_links": [
+              "https://x.com/rauchg/status/2076713720731042174"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-07-14T04:11:49.000Z",
+        "sections": [
+          {
+            "headline": "Levie maps the AI stack: frontier labs, open weights, applied AI, enterprise context | Levie 把 AI 栈拆开讲：前沿模型、开源权重、应用层、企业上下文",
+            "body": "A few thoughts on what we will see in AI structurally for the foreseeable future:\n\n* Frontier intelligence continues unabated and pushes the industry forward continuously. The top labs will continue to buy the best and the most data, build the most compute, be at the forefront of improved training breakthroughs, and so on. A few different approaches stratify the market on pricing and capability, but overall competitive pressure brings down pricing on a per task basis. That said, we just ask more from the models over time - as one thing gets cheaper, we just use more - so frontier spend and use remains robust. \n\n* Open weights rapidly absorbs frontier breakthroughs (and drives other breakthrough directions given the constraints), offering both lower cost intelligence and the ability to be post trained for specific workflows and domains. This creates a healthy counter balance to the frontier as you can run models “at cost” on a hyperscaler at any time, and tune models just for your tasks.\n\n* The Applied AI layer has a huge opportunity to combine frontier intelligence with open or cheap closed models to orchestrate workflows in any given domain. Due to evals, deep domain context, being trusted with enterprise data and workflows, this layer can maximize performance and cost combination. The applied AI layer will also often have their own RLed models especially for high volume, predictable tasks in their systems.\n\n* Individual enterprises will generally focus on their enterprise context, making sure they can get any AI system the right data and information to work with, in a continuously improving way. Some will go off and train their own models for specific areas of work (large banks, pharma, etc.) where they can get real alpha from doing so given the many tradeoffs, but most will spend energy on making sure they can get all of the gains from AI breakthroughs on their data and workflows.\n\nNet net: even though some of this gets framed as zero sum, there’s just a ton of opportunity for all layers of the stack and approaches.\n\n我对接下来一段时间 AI 结构性演化的几个看法：\n\n* 前沿智能还会继续往前推，头部实验室会继续买最好的数据、最强的算力，也会继续站在训练突破的前线。市场会按价格和能力分层，但竞争会把单任务成本继续往下压。只是模型一便宜，大家就会要得更多，所以前沿层的投入和使用量还是会很大。\n\n* Open weights 会很快吸收前沿突破，也会在自身约束下走出别的路线。它一方面能把智能成本打下来，另一方面也给特定工作流和行业做后训练留了空间，形成对前沿模型的有效制衡。\n\n* Applied AI 这一层机会非常大，关键是把前沿模型和开源模型、或者便宜一点的闭源模型混着用，把具体领域的工作流编排起来。谁更懂 eval、场景上下文、企业数据和流程，谁就更能把性能和成本都压到好位置。\n\n* 企业本身大多会先把重点放在自己的上下文上，保证任何 AI 系统都能拿到正确的数据和信息，而且能持续优化。确实会有一些行业会自己训模型，比如大银行、制药，但大多数企业更现实的事，还是先把 AI 突破吃到自己的数据和流程里。\n\n总的说，这事经常被说成零和，但栈上的每一层其实都有不少空间。",
+            "source_links": [
+              "https://x.com/levie/status/2076882332821373381"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Model routing looks more like management than brute force | 模型路由越来越像管理，不像蛮力",
+            "body": "Here’s a great post on driving down costs, while maintaining high performance, with frontier intelligence as a manager and lower cost models for the workhorse tasks. This will be the template for what model routing looks like in the future.\n\n“We started this experiment expecting to measure how much Fable’s 2x premium would increase cost. We were surprised to find that Fable’s effective delegation actually decreased cost overall. It specified constraints and outcomes instead of spelling out the implementation, gave feedback instead of making fixes itself, and in most cases never touched the code at all. These are the habits of a good manager.”\n\nThe industry is increasingly figuring out what it looks like to mix models together to be able to get targeted performance levels and optimal cost structures. \n\nOf course, the only way to get this is to have a deep understanding of the business problem you’re trying to solve and how to effectively route work to different models. If you’re in the applied layer - whether it’s customer support, legal, finance, or coding - this is how your harness will become a core area of differentiation.\n\n这有篇很好的文章，讲的是怎么在保持高性能的同时把成本压下来：让前沿模型做 manager，让更便宜的模型去干重活。这大概率就是未来 model routing 的范式。\n\n“我们一开始做这个实验，本来是想量一下 Fable 贵两倍会把成本抬高多少。结果很意外，Fable 因为委派做得更好，整体成本反而降了。它会先定义约束和结果，而不是亲自把实现细节全写死；它更多是在给反馈，而不是自己下场修；大多数时候它甚至根本不碰代码。这就是一个好经理的习惯。”\n\n整个行业都在慢慢摸清楚，怎么把不同模型混起来，打到想要的效果和成本结构。\n\n但前提还是一样：你得真懂自己在解决什么业务问题，也得真会把任务路由给合适的模型。做应用层的人，不管是客服、法务、金融还是写代码，这套 harness 很可能就是你的核心差异。",
+            "source_links": [
+              "https://x.com/levie/status/2076839463410671637"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Custom enterprise models sound attractive, but the hard part is living data and security | 企业自训模型听着诱人，难点其实是动态数据和权限层",
+            "body": "The biggest challenge right now with the topic of every enterprise having their own model is that your most valuable information and insights are not only always changing, but they’re often your most sensitive information. \n\nYour most sensitive information can’t be packed into a model usually because it contains data that not everyone gets to have access to, and you can’t keep your security layer inside the model or an agent.\n\nI think there are going to be 100X more use cases for custom trained models, especially inside of domain-focused products, but training a model per enterprise is going to be a lot harder than it looks.\n\n现在讨论“每家企业都该有自己的模型”，最大的问题是：你最值钱的信息和洞见不仅一直在变，而且通常也是最敏感的那部分。\n\n最敏感的信息，很多时候根本没法直接塞进模型，因为它天然带权限边界，不是所有人都该看到；你的安全层也没法真塞进模型或者 agent 里。\n\n我同意未来定制训练模型的场景会多非常多，尤其是在垂直领域产品里，但真要做到“一家企业一个模型”，难度会比表面看上去高得多。",
+            "source_links": [
+              "https://x.com/levie/status/2076764958579446006"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Cursor Design",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X",
+        "posted_at": "2026-07-13T17:01:44.000Z",
+        "sections": [
+          {
+            "headline": "**Cursor** can now flash firmware for the **Xteink X3/X4** setup | **Cursor** 现在连 **Xteink X3/X4** 的刷机都能帮你搞",
+            "body": "works on Xteink X3 + X4\nask Cursor to flash it for you\nhttps://t.co/s9NcKfZHwu\n\n适用于 **Xteink X3 + X4**\n直接让 **Cursor** 帮你刷进去\nhttps://t.co/s9NcKfZHwu",
+            "source_links": [
+              "https://x.com/ryolu_/status/2076713700942295226"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/s9NcKfZHwu",
+                "resolvedUrl": "https://github.com/ryokun6/crossmux"
+              }
+            ]
+          },
+          {
+            "headline": "A custom e-reader firmware built with **Cursor** leans hard into typography | 用 **Cursor** 做的电子书固件，重点直接放在排版体验上",
+            "body": "built a custom e-reader firmware with Cursor, hardware hacking is fun!\n\nmade for:\n– beautiful latin + CJK typography\n– vertical layout, line breaking, large character sets (縱書．禁則)\n– syncs books + progress with ryOS\n– speedy rendering + caching https://t.co/KROZbIU47e\n\n我用 **Cursor** 做了个自定义电子书固件，折腾硬件真挺好玩。\n\n目标就是这些：\n– 更好看的拉丁文字和中日韩排版\n– 纵排、断行、大字符集这些都认真处理（縱書．禁則）\n– 书籍和阅读进度跟 ryOS 同步\n– 渲染和缓存都要快 https://t.co/KROZbIU47e",
+            "source_links": [
+              "https://x.com/ryolu_/status/2076713331113734641"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNH3wxjbUAA7hgh.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/ryolu_/status/2076713331113734641/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNH3wxZbsAAJd0t.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/ryolu_/status/2076713331113734641/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/KROZbIU47e",
+                "resolvedUrl": "https://x.com/ryolu_/status/2076713331113734641/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNH3wxZbsAAJd0t.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A team lead arrives, and focus returns | 新负责人加入，团队终于能把注意力拉回来",
+            "body": "super stoked for jenny to join and lead our team 💛\n\nmakes me really happy for the team, and personally excited to regain the focus and mental space to dream big again https://t.co/ovBaMWZN25\n\n特别开心 **jenny** 加入并带队 💛\n\n对团队来说是件很好的事，对我个人也是。终于能把注意力和脑子腾出来，再去想更大的东西了 https://t.co/ovBaMWZN25",
+            "source_links": [
+              "https://x.com/ryolu_/status/2076689062921150479"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/jenny_wen/status/2076679443754475919",
+                "resolvedUrl": "https://x.com/jenny_wen/status/2076679443754475919",
+                "authorName": "jenny wen",
+                "authorHandle": "jenny_wen",
+                "authorUrl": "https://x.com/jenny_wen",
+                "text": "ok! quick updates from me:\n- i left anthropic (who does that?!)\n- had a baby (i love her)\n- and am joining @cursor_ai as head of design (eep!)\n\nit's been a low-key dream of mine to nurture a team that cares so deeply about craft, quality, and building great tools. very excited!",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "好！我这边快速更新一下： - 我离开了 Anthropic（谁会这么干啊？！） - 生了个宝宝（我爱她） - 然后将加入 @cursor_ai 担任设计负责人（呀！） 一直以来，我都低调地梦想着培养一个如此在乎工艺、质量和打造优秀工具的团队。非常兴奋！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ovBaMWZN25",
+                "resolvedUrl": "https://x.com/jenny_wen/status/2076679443754475919"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-07-13T08:39:54.000Z",
+        "sections": [
+          {
+            "headline": "Garry Tan says the gentleman-scientist era is back | Garry Tan 觉得“绅士科学家”那一套又回来了",
+            "body": "Era of the Gentleman Scientist is so back https://t.co/WNLzo4Pg9g\n\n“绅士科学家”的时代，真的又回来了 https://t.co/WNLzo4Pg9g",
+            "source_links": [
+              "https://x.com/garrytan/status/2076587412516421945"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/42_gravity/status/2076363358866223314",
+                "resolvedUrl": "https://x.com/42_gravity/status/2076363358866223314",
+                "authorName": "Chayanka_42",
+                "authorHandle": "42_gravity",
+                "authorUrl": "https://x.com/42_gravity",
+                "text": "We are entering a completely new era of science\n\nHere is Yuji Tachikawa from Japan (Mathematical Physics, String Theory, QFT) on recent progress in his own work using Fable 5 :\n\n\"I've been trying out Claude Fable recently, and last night, on a whim, I showed it my research",
+                "displayDate": "Jul 12",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HNC5Wy1bYAAcETL.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/42_gravity/status/2076363358866223314/photo/1"
+                  }
+                ],
+                "textZh": "我们正在进入一个全新的科学时代 这是来自日本的 Yuji Tachikawa（数学物理、弦理论、QFT）谈他最近使用 Fable 5 在自己工作中的进展： “我最近一直在试用 Claude Fable，昨晚一时兴起，我把我的研究给它看了"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/WNLzo4Pg9g",
+                "resolvedUrl": "https://x.com/42_gravity/status/2076363358866223314"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "AI builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-07-14T02:52:11.000Z",
+        "sections": [
+          {
+            "headline": "Zara frames AI adoption as a three-level ladder | Zara 把组织里的 AI 采用拆成三级台阶",
+            "body": "The 3 levels of AI adoption for organizations\n\nMost companies are at level 2 https://t.co/jtS5kYk7qd\n\n组织采用 AI 的三个层级\n\n大多数公司现在都还卡在第 2 级 https://t.co/jtS5kYk7qd",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2076862290985730481"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNJ_GlnbwAA-fwg.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/zarazhangrui/status/2076862290985730481/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/jtS5kYk7qd",
+                "resolvedUrl": "https://x.com/zarazhangrui/status/2076862290985730481/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNJ_GlnbwAA-fwg.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A quick reply with just a link | 很短的一句回复，只扔了个链接",
+            "body": "@ashebytes https://t.co/7kBRXVbBPV\n\n@ashebytes https://t.co/7kBRXVbBPV",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2076860600035184700"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/7kBRXVbBPV",
+                "resolvedUrl": "https://youtu.be/cIda8ETIJcA?si=598YfVsMpFbgBqZB"
+              }
+            ]
+          },
+          {
+            "headline": "Zara resurfaces a public-building conversation with **ashebytes** | Zara 把她和 **ashebytes** 的公开创作对谈又翻出来了",
+            "body": "Back in March I recorded a 45-min conversation (outdoors!) with @ashebytes on building in public, growing my audience on X (without the slop), and my thoughts on vibe coding\n\nWatch it here ⬇️ https://t.co/gwsecsdsy7\n\n今年 3 月我在户外录过一段 45 分钟对谈，和 @ashebytes 聊了公开做东西、怎么在 X 上涨受众（不靠垃圾内容），还有我对 vibe coding 的一些看法。\n\n在这里看 ⬇️ https://t.co/gwsecsdsy7",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2076860372993388663"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ashebytes/status/2076740458806460886",
+                "resolvedUrl": "https://x.com/ashebytes/status/2076740458806460886",
+                "authorName": "ashe",
+                "authorHandle": "ashebytes",
+                "authorUrl": "https://x.com/ashebytes",
+                "text": "and for folks who are looking for more inspiration, @zarazhangrui was really inspiring to me back in Feb\n\nlots of gold in this chat\nhttps://www.youtube.com/watch?v=cIda8ETIJcA&list=PLzrerueNFgzjDNNRvdVZDPLaapvqKDeSE",
+                "displayDate": "Jul 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "如果有人还在寻找更多灵感，@zarazhangrui 在 2 月时真的给了我很多启发 这段聊天里有很多干货 https://www.youtube.com/watch?v=cIda8ETIJcA&list=PLzrerueNFgzjDNNRvdVZDPLaapvqKDeSE"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/gwsecsdsy7",
+                "resolvedUrl": "https://x.com/ashebytes/status/2076740458806460886"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-07-14T03:57:15.000Z",
+        "sections": [
+          {
+            "headline": "A voice-prompted **Fable** one-shot made on the drive to SF | 开车去旧金山路上，用语音一把过的 **Fable** 成品",
+            "body": "Btw this was one-shot by fable with a voice prompt while driving on the way to SF with some steering and edits obviously https://t.co/kxk1WgR7eV\n\n顺带一提，这东西是在开车去旧金山路上，用语音提示让 **fable** 一把做出来的，当然中间还是有一点人工引导和修改 https://t.co/kxk1WgR7eV",
+            "source_links": [
+              "https://x.com/nikunj/status/2076878668149002669"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNKOJEPaIAAK-5w.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2076878668149002669/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNKOJEQbsAA5O5H.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2076878668149002669/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/kxk1WgR7eV",
+                "resolvedUrl": "https://x.com/nikunj/status/2076878668149002669/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNKOJEQbsAA5O5H.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Built with **Ramp CLI** and **Claude Fable**, then open-sourced | 用 **Ramp CLI** 和 **Claude Fable** 做完，代码直接开源",
+            "body": "Built using @tryramp CLI (thx @zack_field) &amp; @claudeai Fable. \n\nRepo link here: https://t.co/2vWqJzELoi\n\nFully open source so feel free to fork away or make improvements!\n\n这是用 @tryramp 的 CLI（感谢 @zack_field）和 @claudeai **Fable** 做的。\n\n仓库链接在这： https://t.co/2vWqJzELoi\n\n已经完全开源，想 fork 或继续改都随意！",
+            "source_links": [
+              "https://x.com/nikunj/status/2076776777884811671"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/2vWqJzELoi",
+                "resolvedUrl": "https://github.com/kothari-nikunj/ramp-autofill"
+              }
+            ]
+          },
+          {
+            "headline": "A **Claude Code** skill automates receipts, memos, and expense categorization | 一个 **Claude Code** 技能把票据、备注和报销分类都自动化了",
+            "body": "So @tryramp's core mission is \"save money AND time\", but I was still spending time categorizing & adding receipts to my expenses.. at least till I discovered their CLI. \n\nIntroducing the Ramp-Autofill skill ✍️\n\n> finds receipts automatically from your iMessage & Gmail. if it's in a link, it'll use playwright to convert the web page into a pdf and attach to the receipt automatically.\n\n> fills in memos on who you were meeting using your google calendar events.\n\n> understands your style of writing memos and categorization required by your organization by reviewing past transactions. it will then auto categorize all the missing transactions. \n\n> verifies it's work, flags any discrepancies and makes it easy to run as a scheduled job so you never have to look at expenses again.\n\nSimple drop in for Claude Code (read what Fable thinks) - used it over the weekend to get through the last 60 days of expenses - fully open source!\n\n@tryramp 的核心使命是“省钱 AND 省时间”，但我之前还是得自己花时间分类报销、补收据……直到我发现了他们的 CLI。\n\n介绍一下 **Ramp-Autofill** skill ✍️\n\n> 自动从你的 iMessage 和 Gmail 里找收据。如果收据藏在链接里，它会用 playwright 把网页转成 PDF，再自动挂到那条报销上。\n\n> 会结合你的 Google Calendar 日程，自动补会议对象等 memo。\n\n> 它会回看你过去的交易，学你写 memo 的风格，以及你们组织要求的分类方式，然后把缺的交易自动分类。\n\n> 它还会做校验、标出异常，而且很适合定时跑，这样你基本不用再手动看报销了。\n\n给 **Claude Code** 直接装上就能用（也可以看看 **Fable** 是怎么理解它的）——我周末拿它清掉了过去 60 天的报销，已经完全开源！",
+            "source_links": [
+              "https://x.com/nikunj/status/2076775924650107151"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNIvYc9bQAAbcBb.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2076775924650107151/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-07-14T06:54:36.000Z",
+        "sections": [
+          {
+            "headline": "Cloud-maintainer agents are already brawling | 维护型 agent 搬上云之后，已经先打起来了",
+            "body": "I moved our maintainer agent to the cloud and they are fighting already. https://t.co/LKq0st8sns\n\n我把我们的 maintainer agent 搬到云上了，然后它们已经开始打架了。 https://t.co/LKq0st8sns",
+            "source_links": [
+              "https://x.com/steipete/status/2076923300593422560"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNK2rpHb0AEKHt9.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2076923300593422560/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/LKq0st8sns",
+                "resolvedUrl": "https://x.com/steipete/status/2076923300593422560/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNK2rpHb0AEKHt9.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A ship lands across web, iOS, and Android, with a **Node** bump in tow | 新版本已经发了，Web、iOS、Android 一起动，顺手还升了 **Node**",
+            "body": "We shipped! iOS and Android apps also got updates and they look great.\n\nHad to bump Node to keep things smooth, if the autoupdater doesn't work, run the web installer and it'll take care of that for you. https://t.co/682E3TMKN5\n\n我们发版了！iOS 和 Android 应用也一起更新了，效果很不错。\n\n为了保证流程顺畅，顺手把 **Node** 版本也升了。如果自动更新器没跑起来，就直接跑一下 web installer，它会帮你处理。 https://t.co/682E3TMKN5",
+            "source_links": [
+              "https://x.com/steipete/status/2076917691139674373"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/openclaw/status/2076900503259414944",
+                "resolvedUrl": "https://x.com/openclaw/status/2076900503259414944",
+                "authorName": "OpenClaw🦞",
+                "authorHandle": "openclaw",
+                "authorUrl": "https://x.com/openclaw",
+                "text": "OpenClaw v2026.7.1 is out, with 3,063 contributions from 532 contributors!\n\n• Web UI and onboarding overhauls\n• Major iOS, Android and MacOS app work\n• Telegram, Slack, Discord, and iMessage improvements\n• GPT-5.6, Muse Spark 1.1, and MORE\n\nhttps://docs.openclaw.ai/releases/2026.7.1",
+                "displayDate": "Jul 14",
+                "provider": "X",
+                "media": [],
+                "textZh": "OpenClaw v2026.7.1 发布了，共有 532 位贡献者提交了 3,063 项贡献！ • Web UI 和引导流程大改版 • iOS、Android 和 MacOS 应用的重大进展 • Telegram、Slack、Discord 和 iMessage 改进 • GPT-5.6、Muse Spark 1.1，以及更多内容 https://docs.openclaw.ai/releases/2026.7.1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/682E3TMKN5",
+                "resolvedUrl": "https://x.com/openclaw/status/2076900503259414944"
+              }
+            ]
+          },
+          {
+            "headline": "“Stress test” earns a nod as a prompt | “stress test” 这个提示词，Peter 觉得挺能打",
+            "body": "\"stress test\" is a good prompt. https://t.co/9LmKxFqmPc https://t.co/kqNbsm2PgM\n\n“stress test” 是个不错的 prompt。 https://t.co/9LmKxFqmPc https://t.co/kqNbsm2PgM",
+            "source_links": [
+              "https://x.com/steipete/status/2076886451455992249"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNKVE8caYAAN91q.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2076886451455992249/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/9LmKxFqmPc",
+                "resolvedUrl": "https://github.com/openclaw/openclaw/pull/106981"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/kqNbsm2PgM",
+                "resolvedUrl": "https://x.com/steipete/status/2076886451455992249/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNKVE8caYAAN91q.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-07-14T00:08:30.000Z",
+        "sections": [
+          {
+            "headline": "Codex or ChatGPT? Aditya doesn’t know, but the necklace query is real | 是 **Codex** 还是 **ChatGPT**？Aditya 分不清，但项链问题是真的",
+            "body": "I don't know if I am using Codex or ChatGPT (wtf) \n\nBut I do know that I am asking a AGI LEVEL coding agent:\n\n\"What necklaces does Benson Boone wear? (for my daughter) https://t.co/ctFiYytqiE\n\n我都不知道自己现在用的是 **Codex** 还是 **ChatGPT**（wtf）\n\n但我很确定，我正在问一个 AGI 级别的 coding agent：\n\n“**Benson Boone** 平时戴的都是什么项链？（帮我女儿问的） https://t.co/ctFiYytqiE",
+            "source_links": [
+              "https://x.com/adityaag/status/2076821102194721167"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNJZxVdbIAAl1gF.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2076821102194721167/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ctFiYytqiE",
+                "resolvedUrl": "https://x.com/adityaag/status/2076821102194721167/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNJZxVdbIAAl1gF.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X",
+        "posted_at": "2026-07-14T00:23:29.000Z",
+        "sections": [
+          {
+            "headline": "Sam Altman mocks silent downgrades and gated access | Sam Altman 开嘲：一边问硬问题，一边偷偷降级你",
+            "body": "\"hard questions are great but only if we deem you worthy enough to not silently downgrade you, or even get access at all\"\n\n“难题当然很好，但前提是我们得先觉得你配，不然不是悄悄给你降级，就是干脆不让你用。”",
+            "source_links": [
+              "https://x.com/sama/status/2076824870072238299"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A post looked too absurd to be real, even for Sam | 一条内容离谱到 Sam 以为是讽刺号",
+            "body": "i thought this was satire, kept looking for the handle to be spelled c1audeai or something https://t.co/4AVBA93Z27\n\n我还以为这是恶搞，一直在找账号名是不是写成了 c1audeai 之类的 https://t.co/4AVBA93Z27",
+            "source_links": [
+              "https://x.com/sama/status/2076824686307271125"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2075271759289303522",
+                "resolvedUrl": "https://x.com/claudeai/status/2075271759289303522",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "There’s hope in hard questions.",
+                "displayDate": "Jul 9",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/rDYjqIlH9l",
+                    "url": "https://pbs.twimg.com/media/HMzYzrcXMAAeKQI.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2075271759289303522/video/1"
+                  }
+                ],
+                "textZh": "艰难的问题里也有希望。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/4AVBA93Z27",
+                "resolvedUrl": "https://x.com/claudeai/status/2075271759289303522"
+              }
+            ]
+          },
+          {
+            "headline": "OpenAI models getting good at design still surprises Sam | **OpenAI** 模型终于会做设计了，这事 Sam 自己也还在消化",
+            "body": "still sorta breaks my brain to see our models be good at design finally\n\n看到我们自己的模型终于开始擅长设计，这事到现在还是让我有点脑壳发麻",
+            "source_links": [
+              "https://x.com/sama/status/2076823209589313910"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-07-14",
+    "updatedAt": "2026-07-14T12:06:04.598Z",
+    "commit": {
+      "sha": "bf272a1ee282996e9a39970ca4f752984b7b9007",
+      "committedAt": "2026-07-14T06:59:17Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-07-14T12:00:16.826Z",
+    "feedGeneratedAt": "2026-07-14T06:59:10.343Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
