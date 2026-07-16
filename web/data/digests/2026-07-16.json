@@ -1,0 +1,831 @@
+{
+  "payload": {
+    "date": "2026-07-16",
+    "title": "AI Builders Daily · 2026-07-16",
+    "summary": "**Claude Code turns sessions into live artifacts**; **Gemini Spark expands with Docs editing, comments support, and faster parallel work**; enterprise AI is getting less theoretical and more operational, from Box’s agent dinner notes to Codex safety fixes in public; the side chatter is revealing too: builders are obsessing over automation, skills, voice interfaces, and the uncanny feel of AI-written prose.\n\n**Claude Code** 把会话直接做成可分享页面；**Gemini Spark** 往更多地区铺开，还补上 Docs 编辑、评论读取和并行处理；企业侧已经不聊概念了，开始硬碰流程、权限、预算和安全，**Box**、**Codex** 都把问题摊开说；边角料也很有意思：大家一边猛推自动化和 skill files，一边开始对 AI 味文本生理性反感。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": "",
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+        "source_label": "Podcast",
+        "posted_at": "2026-07-15T15:08:19.000Z",
+        "sections": [
+          {
+            "headline": "**Granola** CEO says AI app success is still a knife fight; **Granola** CEO 直说：AI 应用做起来了，照样还是刀口舔血",
+            "body": "**AI & I by Every** brings back **Chris Pedregal**, cofounder and CEO of **Granola**, for a blunt conversation about what comes after the first wave of AI apps. The episode’s core argument is that meeting notes were never the real prize: the bigger fight is over the interface people will use to get work done in an AI-native world. Pedregal frames startup life as survival even when growth is strong, arguing that copied features matter less than staying ahead of the next platform shift.\n\n节目请来 **Granola** 联合创始人兼 CEO **Chris Pedregal** 回访，聊第一波 AI 应用之后到底该抢什么位置。重点说得很直白：会议纪要从来不是终局，真正的战场是 AI 时代里，人们靠什么界面完成工作。Pedregal 的判断也很硬，哪怕公司增长不错，创业照样像肉搏；功能被抄不是关键，关键是别在下一次平台切换里掉队。",
+            "source_links": [
+              "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": "",
+        "person_identity": "AI Lab Blog",
+        "profile_url": "https://claude.com/blog/artifacts-in-claude-code",
+        "source_label": "Blog",
+        "posted_at": "Jun 18, 2026",
+        "sections": [
+          {
+            "headline": "**Claude Code** adds live **artifacts** for PRs, incidents, dashboards, and design work; **Claude Code** 上线实时 **artifacts**，把 PR、故障排查、看板和设计稿直接做成页面",
+            "body": "The **Claude Blog** announces that **Claude Code** now supports artifacts: live, shareable visual pages generated from the full context of a session, including code, connectors, and conversation history. The pitch is collaboration without extra plumbing. Instead of pasting status updates into chats, teams can publish evolving PR walkthroughs, debugging timelines, architecture maps, release checklists, and even UX variations to a single private link with version history.\n\n**Claude Blog** 宣布 **Claude Code** 支持 artifacts 了：它会直接拿会话里的代码、连接器和上下文，生成可分享、会自动更新的页面。意思很明确，不想再靠截图和口头同步凑进度了。PR 讲解、事故时间线、架构图、发布清单、甚至几套可落地的 UX 方案，都能挂在同一个私有链接上，边做边刷新，还带版本记录。",
+            "source_links": [
+              "https://claude.com/blog/artifacts-in-claude-code"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Engineer",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-07-16T01:19:55.000Z",
+        "sections": [
+          {
+            "headline": "Computer use is moving insanely fast; 计算机使用能力进展快得离谱",
+            "body": "someone just told me about this take* on CUA\n\nthis is one of those gell mann moments for me lol. i've been watching computer use since World of Bits (Shi, fan, karpathy, hernandez & liang 2017). we were the first technical pod to interview @jluan about Adept's work three years ago, we were there in the @AnthropicAI building when they first launched Computer Use 2 years ago, I fanboyed over Claude Cowork in our @felixrieseberg pod 3 months ago, and we ran our first full computer use track at @aidotengineer  ft. @DhruvBatra_ @proceduralia @francedot 3 weeks ago. \n\nGPT 5.6 + Superapp is even better at CUA than everything i just mentioned. excited for our @AriX podcast to discuss the @skybysoftware story and Codex progress.\n\nif you actually use these things as intensely as we do, CUA is progressing so, so incredibly fast. i have asked my nontechnical team to CUA as much as possible, all their knowledge work with signing up for random payment and invoicing portals and speaker and sponsor and attendee and vendor and union data requests. if you found yourself nodding along to this take below, you are so not up to date that you don't know what you don't know, and underestimating capabilities is quite a dangerous category error if you are doing any ai decisionmaking.\n\n*i admire dwarkesh alot; only criticizing one single take, not the message nor the overall enterprise, screenshot only to share\n\n刚有人跟我提到这个关于 CUA 的观点*\n\n这对我来说算是那种典型的 gell mann moment，笑死。我从 **World of Bits**（Shi、fan、karpathy、hernandez、liang，2017）那会儿就在看 computer use 了。三年前我们是第一个技术播客采访 @jluan 聊 **Adept** 的；两年前 **@AnthropicAI** 首次发布 **Computer Use** 时，我们人就在楼里；三个月前我还在和 @felixrieseberg 的播客里狂吹 **Claude Cowork**；三周前我们还在 @aidotengineer 跑了第一场完整的 computer use 专场，嘉宾有 @DhruvBatra_、@proceduralia、@francedot。\n\n**GPT 5.6 + Superapp** 在 CUA 上比我刚提到的这些都更强。我很期待我们和 @AriX 的播客，聊聊 @skybysoftware 的故事以及 **Codex** 的进展。\n\n如果你真像我们这样高强度在用这些东西，就会知道 CUA 的进步真的快得夸张。我已经让我的非技术团队尽可能多用 CUA，去处理他们那些知识工作：注册各种付款和开票门户、处理 speaker、sponsor、attendee、vendor、union 的数据请求。要是你看完下面那个观点还频频点头，那你多半已经落后到连自己落后在哪里都不知道了；如果你还在做任何 AI 相关决策，低估能力边界会是个很危险的误判。\n\n*我很欣赏 dwarkesh；我批评的只是其中一个具体观点，不是他整体的信息，也不是他在做的事，截图只是为了说明",
+            "source_links": [
+              "https://x.com/swyx/status/2077475285205958771"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNSqP4DbYAA6ynk.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2077475285205958771/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Tweet things into existence; 发条推文把事变成真的",
+            "body": "you can just tweet things into existence https://t.co/4TnqEDoQsg\n\n你真的可以靠发推把事情发出来成真 https://t.co/4TnqEDoQsg",
+            "source_links": [
+              "https://x.com/swyx/status/2077563850824790200"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNT9NDMbgAAWGFq.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2077563850824790200/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNT9Oyxb0AAp1hX.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2077563850824790200/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/4TnqEDoQsg",
+                "resolvedUrl": "https://x.com/swyx/status/2077563850824790200/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNT9Oyxb0AAp1hX.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Playlist drop for @jluan; 给 @jluan 丢了个歌单",
+            "body": "@jluan follow this track playlist\n\nhttps://t.co/MzPfXCh1jb\n\n@jluan 来，跟这个歌单走\n\nhttps://t.co/MzPfXCh1jb",
+            "source_links": [
+              "https://x.com/swyx/status/2077562792429891696"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/MzPfXCh1jb",
+                "resolvedUrl": "https://www.youtube.com/watch?v=ZSQb5fzRFPw&list=PLEz0frWjePik&index=1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X",
+        "posted_at": "2026-07-15T19:11:25.000Z",
+        "sections": [
+          {
+            "headline": "**Gemini Spark** expands globally with Docs editing and faster parallel work; **Gemini Spark** 扩到更多地区，还加上 Docs 编辑和更快并行处理",
+            "body": "Gemini Spark is headed to more Ultra subscribers around the world* plus 4 new features:\n\n1) Spark can open and edit Google Docs, acting on feedback from last week\n\n2) It can read comments in Google Sheets & Slides, so critical info isn't missed\n\n3) It's >50% faster, you can feel it\n\n4) It can parallel process across multiple sources, so tasks complete faster e2e\n\nPro members, stay tuned for an access update soon :)\n\n*Full list of countries and changelog: https://t.co/oIjY9qQBoz\n\n**Gemini Spark** 正在向全球更多 **Ultra** 订阅用户开放*，另外还带来 4 个新功能：\n\n1) **Spark** 现在可以打开并编辑 **Google Docs**，算是回应了上周的反馈\n\n2) 它能读取 **Google Sheets** 和 **Slides** 里的评论，不容易漏掉关键信息\n\n3) 速度提升超过 50%，体感会很明显\n\n4) 它可以跨多个来源并行处理，所以端到端完成任务更快\n\n**Pro** 用户也先别急，权限更新快来了 :)\n\n*完整国家列表和更新日志： https://t.co/oIjY9qQBoz",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2077471111240204457"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/oIjY9qQBoz",
+                "resolvedUrl": "https://t.co/oIjY9qQBoz"
+              }
+            ]
+          },
+          {
+            "headline": "**Gemini** Southeast Asia users doubled and local-language prompts dominate; **Gemini** 东南亚用户翻倍，本地语言提示词成主流",
+            "body": "We just released our first-ever Gemini Southeast Asia Report (below), 3 insights:\n\n1/ Active users more than doubled in the last year\n2/ 70% of prompts are submitted in native languages\n3/ 40% of prompts only use voice, image, or video\n\nGemini's local language + multimodal capabilities + mobile apps are driving growth, and we have more coming soon for the region!\n\n🇮🇩🇲🇾🇵🇭🇸🇬🇹🇭🇻🇳\n\n我们刚发布了首份 **Gemini** 东南亚报告（见下），有 3 个重点：\n\n1/ 活跃用户在过去一年里翻了不止一倍\n2/ 70% 的提示词是用本地语言提交的\n3/ 40% 的提示词只用了语音、图片或视频\n\n**Gemini** 的本地语言能力、多模态能力和移动端应用正在带动增长，这个区域后面还会有更多东西上线！\n\n🇮🇩🇲🇾🇵🇭🇸🇬🇹🇭🇻🇳",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2077411104775406045"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Full **Gemini** report link shared; **Gemini** 完整报告链接放出",
+            "body": "Full report https://t.co/Of02m7NqKY\n\n完整报告在这里 https://t.co/Of02m7NqKY",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2077411109326221322"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/Of02m7NqKY",
+                "resolvedUrl": "https://services.google.com/fh/files/misc/gemini-report-sea-2026-en.pdf"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-07-15T18:28:50.000Z",
+        "sections": [
+          {
+            "headline": "Automation is now leverage for whole armies of agents; 自动化不只是提效，是给整支 agent 军团加杠杆",
+            "body": "Something I have been thinking about: in the past, the best engineers I knew spent a lot of time automating their work in various ways. Better vim/emacs automations, writing lint rules to catch repeat code issues, building up a suite of e2e tests so they don't need to smoke test the app manually. These kinds of things were the highest leverage activities an engineer could do, because it multiplied their own output, which in turn meant they could build more things.\n\nI think many of these automations have become even more important now. This is true for a number of reasons.\n\nFirst, infra and DevX automation speeds you up. And if you are running an army of agents, each of those agents will be sped up also. More automation == more output per unit of time.\n\nSecond, moving things to code improves efficiency. Your agent could fix an issue every time it sees that issue happen, but that uses tokens and might miss cases. If Claude instead writes a lint rule, CI step, or routine, that class of issue can be fully automated forever. This is really what people are talking about when they talk about loops -- it's about automating entire types of busywork rather than solving them one off. This isn't a new idea at all. Engineers have been doing this for a long time!\n\nThird and most importantly, automation makes it possible for others to contribute to the codebase more easily. Increasingly what I am seeing is engineers are contributing to codebases on day one because Claude can navigate the codebase for them, and that non-engineers are able to contribute to a codebase as effectively as engineers can. What gets in the way of both of these is domain knowledge that lives in peoples' heads rather than in automation -- the stuff you used to have to learn when ramping up. What has changed thanks to agents is the domain knowledge that can be encoded as infrastructure is no longer limited to what is expressible in lint rules and types and tests; it can now capture nearly all domain knowledge, encoded as code comments and skills and CLAUDE.md rules and memories. If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation.\n\nEvery team should be writing the CLAUDE.md's, REVIEW.md's, skills, and docs that enable agents to productively work in their codebase with zero additional context from the prompter. This sounds crazy, and at the same time is a natural extension of the stuff engineers have always done: automate, and encode domain knowledge as infrastructure. As the model gets smarter and as the harness matures, this task becomes easier. In the meantime, it is on every team to look for ways to convert their domain knowledge to infra so that Claude can write code better, so that code review catches issues automatically, and so the next person working on your codebase can contribute more easily.\n\n我最近一直在想一件事：以前我认识的那些最强工程师，会花很多时间把自己的工作自动化。比如更好的 vim/emacs 自动化、写 lint 规则抓重复代码问题、搭一整套 e2e 测试，这样就不用每次手动 smoke test。那类事情杠杆极高，因为它会放大工程师自己的产出，最后就能做更多东西。\n\n我觉得现在这些自动化反而更重要了，原因有几个。\n\n第一，基础设施和 **DevX** 自动化会直接让你更快。如果你带着一整支 agent 军团在跑，那每个 agent 也都会一起变快。自动化越多，单位时间产出越高。\n\n第二，把事情落到代码里，本身就更高效。agent 当然也可以每次看到同类问题就修一次，但那会耗 token，也可能漏情况。要是 **Claude** 直接写出 lint 规则、CI 步骤或者例行流程，这类问题就能被永久自动化。这其实就是大家说 loops 时真正该指的东西: 不是一单一单补洞，而是把整类脏活彻底卷掉。说白了，这不新鲜，工程师一直都这么干。\n\n第三，也是最关键的一点，自动化会让别人更容易参与这个代码库。我越来越常看到，工程师第一天就能往陌生代码库提改动，因为 **Claude** 能替他们走读；非工程师也开始能以接近工程师的效率参与改代码。真正卡住这两类人的，往往是那些只存在于脑子里的领域知识，而不是自动化本身，也就是过去 onboarding 时你得一点点学的那些潜规则。现在 agent 带来的变化是，可被编码成基础设施的领域知识，已经不再局限于 lint、类型和测试；它几乎可以扩展到所有东西，比如代码注释、skills、**CLAUDE.md** 规则和 memories。要是我给一个不熟的 iOS 代码库提 PR，结果 reviewer 因为没用对框架把我打回；或者设计师做了个新功能，却因为不符合既定架构模式被拒，这些本质上都是自动化失败。\n\n每个团队都该写好 **CLAUDE.md**、**REVIEW.md**、skills 和文档，让 agent 在没有额外口头补充的情况下，也能在代码库里高效干活。这听起来夸张，但其实只是工程老传统的自然延伸：把领域知识变成基础设施，把能自动化的都自动化。模型越聪明，harness 越成熟，这件事只会越容易。在那之前，团队该做的就是继续把脑子里的规则往 infra 里搬，这样 **Claude** 才能写出更靠谱的代码，code review 才能自动挡住问题，下一个接手的人也不会再从头踩坑。",
+            "source_links": [
+              "https://x.com/bcherny/status/2077460395279692197"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-07-16T05:53:04.000Z",
+        "sections": [
+          {
+            "headline": "Codex usage caps are being reconsidered in public; **Codex** 的使用限额设计被公开拿出来重聊",
+            "body": "We've had no 5h limit in Codex plus and pro for a few days. Do you think it is better or are you finding it difficult to manage the usage included in the weekly limit effectively?\n\nIf we were to make this different, what should it look like in an ideal world?\n\n这几天 **Codex Plus** 和 **Pro** 已经没有 5 小时限制了。你觉得这样更好吗，还是说按周额度来管使用量反而更难掌控？\n\n如果我们要改这套设计，理想状态下它应该长什么样？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2077632589498913087"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**OpenAI** details rare **GPT-5.6** file deletion failures and safeguards; **OpenAI** 说明罕见的 **GPT-5.6** 误删文件问题与补救措施",
+            "body": "On file deletions. We’ve investigated a handful of reports where GPT-5.6 unexpectedly deleted files. \n\nWhat we have  found is that this most commonly occurs when:\n- Full access mode is enabled and codex is run without sandboxing protections, including without auto review being enabled\n- The model attempts  to override the $HOME env var to define a temporary directory.\n- The model makes an honest mistake and mistakenly deletes $HOME instead.\n\nThis is of course not how we want the system to behave, even when a user operates the model in full-access mode without the safeguards of our sandbox or without using auto review which checks for these kinds of high risk actions and rejects them. \n\nWe are taking steps to mitigate this risk including by updating the developer message, guiding more users towards safer permission modes, and adding additional harness safeguards. Even though this happens extremely rarely, we’ll share a detailed post-mortem in the coming days that goes into more details and what we are doing to minimize risks further.\n\n说到文件删除这件事。我们调查了少量报告，发现 **GPT-5.6** 曾意外删掉文件。\n\n目前我们查到，这种情况最常见于：\n- 开启了 full access 模式，并且运行 **codex** 时没有沙箱保护，也没有开启会拦截高风险操作的 auto review\n- 模型尝试覆盖 `$HOME` 环境变量，把它拿来定义临时目录\n- 模型本意没坏，但操作失误，把 `$HOME` 给删了\n\n这当然不是我们希望系统出现的行为。哪怕用户是在 full-access 模式下使用模型，没有启用沙箱保护，或者没开会检查并拒绝这类高风险动作的 auto review，也不该这样。\n\n我们正在做几件事来降低这个风险，包括更新 developer message，把更多用户引导到更安全的权限模式，并加入额外的 harness 保护。虽然这类情况极少发生，但我们会在接下来几天公开一份更详细的 post-mortem，把细节和后续改进措施都讲清楚。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2077630111499882637"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "After ChatGPT and Codex, what should merge next? **ChatGPT** 和 **Codex** 合并后，下一个该并什么",
+            "body": "Now that we merged ChatGPT and Codex, what should we merge next? What's the double or nothing move.\n\n现在 **ChatGPT** 和 **Codex** 已经合并了，下一个该并什么？哪一步才算真正的 double or nothing？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2077627035418239230"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-07-16T04:34:38.000Z",
+        "sections": [
+          {
+            "headline": "Voice **ChatGPT** should inherit **Codex** tools and plugins; 语音版 **ChatGPT** 该把 **Codex** 的工具和插件接上",
+            "body": "ChatGPT Live and Codex are two incredible products that don’t talk to each other.\n\nThis is @OpenAI's biggest missed opportunity imo.\n\nI went on a walk with ChatGPT Live and asked it to pull up my Google Doc. It said it couldn’t.\n\nI then manually triggered the Documents plugin to find my Google Doc, and all of a sudden, ChatGPT Live had the right context.\n\nIt would be amazing to talk to ChatGPT Live and have it be able to use all the plugins, tools, and browser use that Codex has access to. Then I could ask it to reply to emails, schedule meetings, edit docs, ship code, and more all during a live conversation.\n\nI think the first step is to make ChatGPT Live aware of all the plugins that it’s already connected to.\n\nWhy build such a great voice assistant but have it not be able to do anything?\n\n**ChatGPT Live** 和 **Codex** 都是很强的产品，但它们彼此根本不通。\n\n在我看来，这是 **@OpenAI** 现在错过的最大机会。\n\n我出去散步时跟 **ChatGPT Live** 说，帮我调出我的 **Google Doc**。它说做不到。\n\n然后我手动触发了 **Documents** 插件去找那份 **Google Doc**，结果一下子，**ChatGPT Live** 就拿到了正确上下文。\n\n最理想的状态是，你一边跟 **ChatGPT Live** 说话，它一边能调用 **Codex** 已经能用的所有插件、工具和 browser use。那我就能在实时对话里让它回邮件、排会议、改文档、发代码，什么都干。\n\n我觉得第一步，至少该让 **ChatGPT Live** 知道它已经连上了哪些插件。\n\n一个语音助手做得这么好，结果却什么都做不了，这到底图什么？",
+            "source_links": [
+              "https://x.com/petergyang/status/2077572198655754583"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNUE53FaoAAikO0.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2077572198655754583/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A mic foot pedal for laptops; 笔记本也该有个踩下就开麦的脚踏板",
+            "body": "Need one of those foot pedals for pianos except when you step on it it turns on the laptop mic\n\n我需要那种钢琴用的脚踏板，不过踩下去不是延音，是直接打开笔记本麦克风",
+            "source_links": [
+              "https://x.com/petergyang/status/2077612850525426102"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Life’s good; 日子不错",
+            "body": "Life's good https://t.co/DqZssEUaed https://t.co/LqU79Ygmr2\n\n日子不错 https://t.co/DqZssEUaed https://t.co/LqU79Ygmr2",
+            "source_links": [
+              "https://x.com/petergyang/status/2077610395272138913"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNUnY1_aYAEkxCg.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2077610395272138913/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/DqZssEUaed",
+                "resolvedUrl": "https://x.com/petergyang/status/2077610395272138913/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNUnY1_aYAEkxCg.png"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/LqU79Ygmr2",
+                "resolvedUrl": "https://t.co/LqU79Ygmr2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-07-16T01:03:27.000Z",
+        "sections": [
+          {
+            "headline": "A jab at grind culture; 顺手嘲了一把苦修式奋斗",
+            "body": "Excuse me, I thought you had to grind until your eyes bled and you forgot how to smile https://t.co/EgBoSczxAK\n\n不好意思，我还以为非得卷到眼睛冒血、笑都忘了怎么笑才算数 https://t.co/EgBoSczxAK",
+            "source_links": [
+              "https://x.com/thenanyu/status/2077559703161213130"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/EgBoSczxAK",
+                "resolvedUrl": "https://t.co/EgBoSczxAK"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI Leader",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-07-15T15:25:43.000Z",
+        "sections": [
+          {
+            "headline": "Use AI for brainstorming, keep the final writing human; AI 用来发散可以，成稿还是人来写",
+            "body": "btw, i have used ai to refine ideas and from time to time, some of the standard AI-isms leak into my writing. \n\nhave since moved to consciously using ai mainly during the  brainstorming phase and keeping final writing human.\n\n顺带一提，我以前会用 AI 帮我打磨想法，但时不时就会有那种标准 AI 腔漏进我的文字里。\n\n所以后来我有意识地把 AI 主要用在 brainstorming 阶段，最后落笔还是自己来。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2077414312180932668"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Naming the recoil from AI-written prose; 给那种一眼看出 AI 文的反胃感起名字",
+            "body": "We need a term for that feeling when you’re reading something and realize it’s ai written. it’s this primal feeling though the phenomenon itself is new. first the brain recoils, followed by a combination of disgust and mental nausea. I offer:\n- semantic nausea\n- uncanny prose valley\n- synthetic shudder\n\n我们得给那种“读着读着突然意识到这是 AI 写的”感觉起个名字。虽然这现象是新的，但那种反应很原始：先是脑子往后一缩，然后是一种厌烦和精神性反胃。我先抛几个：\n- semantic nausea\n- uncanny prose valley\n- synthetic shudder",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2077413491586253025"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-07-15T23:43:19.000Z",
+        "sections": [
+          {
+            "headline": "Thin prompts, thick artifacts, thin skills; prompt 要薄，artifact 要厚，skill 也别写臃肿",
+            "body": "ideal prompting technique is:\n- thin prompts\n- thick artifacts + context\n- thin skills\n\n理想的 prompting 方法是：\n- prompt 要薄\n- artifact + context 要厚\n- skill 也要薄",
+            "source_links": [
+              "https://x.com/trq212/status/2077539537992229076"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Software engineering is automation work; 软件工程本质上就是自动化",
+            "body": "software engineering is the profession of automation https://t.co/5OQXE5VBRH\n\n软件工程，本质上就是做自动化的行当 https://t.co/5OQXE5VBRH",
+            "source_links": [
+              "https://x.com/trq212/status/2077490092290253259"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/5OQXE5VBRH",
+                "resolvedUrl": "https://t.co/5OQXE5VBRH"
+              }
+            ]
+          },
+          {
+            "headline": "A talk worth catching up on; 这场对谈值得补看",
+            "body": "this was such a fun talk with Cat and Simon, hope you get to check it out if you missed it https://t.co/kK8uOVJLSZ\n\n和 Cat、Simon 这场聊得特别开心，你要是错过了，值得补一下 https://t.co/kK8uOVJLSZ",
+            "source_links": [
+              "https://x.com/trq212/status/2077457485624229943"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/kK8uOVJLSZ",
+                "resolvedUrl": "https://t.co/kK8uOVJLSZ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-07-16T01:01:24.000Z",
+        "sections": [
+          {
+            "headline": "**Vercel Sandbox** is scaling fast with millions of daily sandboxes; **Vercel Sandbox** 增长凶猛，每天创建数百万沙箱",
+            "body": "Vercel Sandbox:\n◾ Growing DAUs at 100% m/o/m\n◾ 3.5M+ sandboxes created per day\n◾ Best-in-class Active CPU pricing model\n◾ Powering @notion, @airtable, @meta, @zapier, @coderabbitai, @interaction, @conductor_build, @blackboxai… 🐐 farm \n\nMy DMs are open for migration help or if missing anything with: https://t.co/U9bNGNLdMZ\n\n**Vercel Sandbox**：\n◾ DAU 月环比增长 100%\n◾ 每天创建 350 万个以上沙箱\n◾ 采用同类里很能打的 **Active CPU** 定价模型\n◾ 现在已经在给 @notion、@airtable、@meta、@zapier、@coderabbitai、@interaction、@conductor_build、@blackboxai… 这些产品供能 🐐 farm \n\n如果你在迁移，或者发现还缺什么功能，欢迎私信我： https://t.co/U9bNGNLdMZ",
+            "source_links": [
+              "https://x.com/rauchg/status/2077559189015335019"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/U9bNGNLdMZ",
+                "resolvedUrl": "https://t.co/U9bNGNLdMZ"
+              }
+            ]
+          },
+          {
+            "headline": "**Web Analytics API** should feed agents, deployments, and revenue views together; **Web Analytics API** 可以把 agent、部署和营收数据串起来看",
+            "body": "Some really cool usecases of Web Analytics API:\n\n▪️ Ask your agent to correlate visitors, custom events (“purchase”, “checkout”), with the evolution of your deployments and performance \n\n▪️ Build custom frontends, and plot this data alongside e.g.: Stripe’s and Resend’s https://t.co/srTMkm6uhg\n\n**Web Analytics API** 有几个很酷的用法：\n\n▪️ 让你的 agent 去关联访客、定制事件（比如 “purchase”“checkout”），再和部署演进、性能变化一起看 \n\n▪️ 自己做前端，把这些数据和比如 **Stripe**、**Resend** 的数据并排画出来 https://t.co/srTMkm6uhg",
+            "source_links": [
+              "https://x.com/rauchg/status/2077426190386946539"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/srTMkm6uhg",
+                "resolvedUrl": "https://t.co/srTMkm6uhg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Easy money, British pounds edition; 轻松赚钱，英镑版",
+            "body": "Easy money (British pounds)\n\n轻松赚钱（英镑版）",
+            "source_links": [
+              "https://x.com/rauchg/status/2077499486130389189"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-07-15T22:49:34.000Z",
+        "sections": [
+          {
+            "headline": "Enterprise agent adoption is colliding with process, permissions, budgets, and security; 企业 agent 落地已经撞上流程、权限、预算和安全的硬墙",
+            "body": "Hosted a dinner last night with a group of IT leaders of large enterprises around agent adoption in the enterprise. Some quick notes:\n\n* Change management remains one of the biggest topics for driving workflow transformation. Still most processes need to be upgraded to modern operating models to work with agents, which is a mix of technology, data, and human process change. Lots of emphasis on getting data (structured and unstructured) into a setup that can work with agents properly.\n\n* IT teams are finding increasing success embedding full engineers into the business functions (essentially internal FDE) that go and implement agents into the internal workflows. There’s so much technical work to be done to make agents successful, that they can accelerate months or quarters of failed experiments by having someone technical in the workflow early.\n\n* Consensus that the tech function is becoming more important than ever. It’s clear that the business could only expect automation to affect a minority of the business before (e.g. ERP) but now it can impact all of knowledge work. This means IT is becoming a more central role to the workflows across the company.\n\n* Workflows are cross functional, and getting agents to work cross functionally is a complicated data modeling and permissions issue. Single users don’t have access to this. Which means you need to have agentic systems take on their own roles and have their own privileges, which is non-trivial given agents can’t keep things secure on their own.\n\n* Huge variance in budgets between coding work and the rest of knowledge work. Some companies had a $1,000 a month budget for developers, and others had much higher amounts (like $5,000) that were merely triggers to notify the team vs. block them. Far smaller budgets for non-coding work at the moment.\n\n* More companies are building their own multimodel systems for routing workloads by task to frontier and lower cost models. Lots of energy around open weights models, but still more in experimentation instead of at scale usage (some companies can’t due to perceived Chinese issue). \n\n* Clear sense that all enterprise software must be headless in the future. Relief that they don’t need to train employees on hundreds of different apps. However, clear frustration with the traditional vendors that don’t play extremely nice (technically or cost wise) with agents in a headless fashion. Huge warning for existing software vendors. \n\n* Mythos or mythos level-models are finding more and more sophsiticated security risks. The chaining together of vulnerabilities is what’s novel right now, and companies are coming up with long backlogs of what they need to go patch quickly.\n\nEven more discussed, but just a few of the hottest topics.\n\n昨晚我请了一批大型企业的 IT 负责人吃饭，主题就是企业里的 agent 落地。随手记几条：\n\n* 变更管理依然是推动工作流改造里最难啃的话题之一。大多数流程还得先升级到更现代的 operating model，agent 才真能接上。这不只是技术问题，还牵涉数据和人的流程改造。大家反复提到的一点，是得先把结构化和非结构化数据整理到 agent 真能用的状态。\n\n* 越来越多 IT 团队发现，把完整工程师嵌进业务部门里做内部 FDE，很有效。他们直接去业务流程里把 agent 做起来。因为要让 agent 真起作用，技术活实在太多了；越早让技术人员进流程，越能少走几个月甚至几个季度的弯路。\n\n* 大家有个共识：技术职能比以前更重要了。过去自动化顶多影响公司里一小部分流程，比如 ERP；现在它可能碰到所有知识工作。这意味着 IT 会越来越站到公司工作流的中心。\n\n* 工作流本来就是跨部门的，而要让 agent 跨部门工作，数据建模和权限本身就很复杂。单个用户通常并没有这些访问权限。所以你需要让 agentic system 承担自己的角色、拥有自己的权限；但 agent 本身又没法天然保证安全，这件事并不简单。\n\n* 写代码和其他知识工作的预算差异非常大。有些公司给开发者每月 1000 美元预算，也有公司拉到 5000 美元以上，而且那个数更多只是提醒阈值，不是硬拦。非编码工作的预算目前普遍小得多。\n\n* 更多公司开始自己做 multi-model 路由，按任务把工作分给 frontier 模型和更低成本模型。open weights 模型热度很高，但大多数还在实验阶段，还没跑到规模化使用（有些公司因为所谓 Chinese issue，根本过不了心理关）。\n\n* 很明显，未来所有企业软件都得 headless。大家都松了口气，因为终于不用培训员工去学几百个不同 app 了。但同时，对那些在技术上或价格上都不愿意好好配合 agent 的传统厂商，怨气也很重。这对现有软件厂商是个很大的警告。\n\n* **Mythos** 或 mythos 级模型开始找到越来越复杂的安全风险。现在新的地方在于漏洞会被串起来连用，所以各家公司都已经拉出了很长的修补清单，得尽快补。\n\n其实还有更多内容，这里只挑了几条最热的。",
+            "source_links": [
+              "https://x.com/levie/status/2077526010753581156"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Open weights matter more in multimodel enterprise stacks; 在多模型企业栈里，open weights 的位置更重了",
+            "body": "Fantastic to see more open weights innovation happening right now, especially coming from a US Lab. \n\nThe future of AI is going to be a mix of frontier intelligence that you can use as an orchestrator combined with either lower cost or tuned models for your workhorse tasks. https://t.co/pvQ6HgRkO1 https://t.co/zvY9XIgSPE\n\n现在看到更多 **open weights** 创新冒出来，尤其还是来自美国实验室，确实很让人兴奋。\n\nAI 的未来大概率会是这样一套组合：上面用 frontier intelligence 做 orchestrator，下面搭配更低成本或者调过的模型去跑那些重活、脏活、常规活。 https://t.co/pvQ6HgRkO1 https://t.co/zvY9XIgSPE",
+            "source_links": [
+              "https://x.com/levie/status/2077471148699439152"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNSofHwbUAAi4iY.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2077471148699439152/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/pvQ6HgRkO1",
+                "resolvedUrl": "https://x.com/levie/status/2077471148699439152/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNSofHwbUAAi4iY.png"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/zvY9XIgSPE",
+                "resolvedUrl": "https://t.co/zvY9XIgSPE"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-07-16T06:20:32.000Z",
+        "sections": [
+          {
+            "headline": "Skill files reduce frontier model lock-in; skill files 能把你从 frontier model 依赖里拽出来",
+            "body": "Skill files are portable and free you from frontier model dependency\n\nThis is a good thing https://t.co/oLdkN9rVEO\n\n**Skill files** 是可移植的，也能让你摆脱对 **frontier model** 的单点依赖。\n\n这是件好事 https://t.co/oLdkN9rVEO",
+            "source_links": [
+              "https://x.com/garrytan/status/2077626565517590618"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/oLdkN9rVEO",
+                "resolvedUrl": "https://t.co/oLdkN9rVEO"
+              }
+            ]
+          },
+          {
+            "headline": "Bring back the em dash; 把破折号抢回来",
+            "body": "We should just bring back the em dash\n\nReclaim it for our own https://t.co/CTWPmnBfgK\n\n我们就该把破折号重新用起来。\n\n把它抢回来自己用 https://t.co/CTWPmnBfgK",
+            "source_links": [
+              "https://x.com/garrytan/status/2077639502286250453"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/CTWPmnBfgK",
+                "resolvedUrl": "https://t.co/CTWPmnBfgK"
+              }
+            ]
+          },
+          {
+            "headline": "A policy take on West Coast recovery and treatment; 关于西海岸治理、康复和戒断环境的一句硬话",
+            "body": "The path to healing SF and every West Coast city is this: real compassion is focusing on recovery and treatment and making it possible for people to really thrive instead of mandating pro-drug environments that make sobriety impossible https://t.co/8dgiWAaAmJ\n\n旧金山以及整个西海岸城市要走出来，路子应该是这样：真正的同情，是把重点放在康复和治疗上，让人有可能真正好起来，而不是硬把环境搞成事实上支持药物、让清醒生活根本做不到的样子 https://t.co/8dgiWAaAmJ",
+            "source_links": [
+              "https://x.com/garrytan/status/2077625223717736781"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/8dgiWAaAmJ",
+                "resolvedUrl": "https://t.co/8dgiWAaAmJ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "VC & Podcast Host",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X",
+        "posted_at": "2026-07-15T21:06:11.000Z",
+        "sections": [
+          {
+            "headline": "Argentina’s late-game recipe, per **Matt Turck**; **Matt Turck** 版阿根廷赢球公式",
+            "body": "Argentina’s World Cup recipe: \n\n1) trail 10-15 minutes before the end\n2) bring on Lautaro Martinez\n3) win\n4) repeat\n\n阿根廷的世界杯配方：\n\n1) 先在最后 10 到 15 分钟前落后\n2) 换上 **Lautaro Martinez**\n3) 赢球\n4) 重复",
+            "source_links": [
+              "https://x.com/mattturck/status/2077499992705470802"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-07-15T15:38:42.000Z",
+        "sections": [
+          {
+            "headline": "Companies must be legible if agents are going to work inside them; 想让 agent 真进公司干活，组织本身得先能被读懂",
+            "body": "If you want agents to actually work inside a company, you have to design the company so they can read it\n\nShopify did this with an agent that had no private chat function at all, only public channels. The side effect was peer learning https://t.co/L1jub0HgYw\n\n如果你想让 agent 真的在公司内部跑起来，那你得把公司设计成 agent 能“读懂”的样子。\n\n**Shopify** 就这么做过：他们的一个 agent 根本没有私聊功能，只有公开频道。副作用反而挺好，大家会顺带彼此学习。 https://t.co/L1jub0HgYw",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2077417579837309040"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/L1jub0HgYw",
+                "resolvedUrl": "https://t.co/L1jub0HgYw"
+              }
+            ]
+          },
+          {
+            "headline": "Coding agents as creativity, not orthodoxy; 对没走传统编程路的人来说，coding agents 更像创作工具",
+            "body": "Because I never learned programming the traditional way, using coding agents has been purely an act of creativity and self-expression\n\nGitHub is basically my Substack https://t.co/eZ6OA62XLZ\n\n因为我从来没按传统路径学编程，所以对我来说，用 coding agents 完全就是一种创造和自我表达。\n\n**GitHub** 基本就是我的 **Substack** https://t.co/eZ6OA62XLZ",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2077388091044635010"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/eZ6OA62XLZ",
+                "resolvedUrl": "https://t.co/eZ6OA62XLZ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-07-15T11:29:28.000Z",
+        "sections": [
+          {
+            "headline": "Paris immigration broke his will before tech Twitter did; 先被巴黎入境队伍整破防，再暂别 tech Twitter",
+            "body": "Forgive me (travel) Lord for I have sinned..\n\nAfter spending 3 hours in the immigration line in Paris, \n\nI will never complain about SFO and US immigration ever again. \n\nAlso, will be taking a hiatus from tech Twitter for a bit to spend some time touching grass ✌️\n\n原谅我吧，（旅行之）主，我有罪……\n\n在巴黎入境队伍里站了 3 个小时之后，\n\n我这辈子都不会再抱怨 **SFO** 和美国海关了。\n\n另外，我也会先离开 tech Twitter 一阵子，去外面踩踩草 ✌️",
+            "source_links": [
+              "https://x.com/nikunj/status/2077354857929887997"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenAI Builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-07-16T04:40:55.000Z",
+        "sections": [
+          {
+            "headline": "**GPT-5.6** is relentless; **GPT-5.6** 确实够狠",
+            "body": "Mostly true, 5.6 is relentless. https://t.co/aBiolT4vMF\n\n大体上没错，**5.6** 确实很猛，而且不松口。 https://t.co/aBiolT4vMF",
+            "source_links": [
+              "https://x.com/steipete/status/2077614430658191825"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/aBiolT4vMF",
+                "resolvedUrl": "https://twitter.com/nathanflurry/status/2077202416236450232"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Wrong framework rejections are failures of automation; 因为框架用错被打回，本质上是自动化没做到位",
+            "body": "“If I put up a PR for an iOS codebase I don't know and a code reviewer rejects it because it doesn't use the right framework, or if a designer builds a new feature and it gets rejected because it doesn't follow the right architectural patterns, these are failures of automation.” https://t.co/3dIgj0Hzs5\n\n“如果我给一个不熟的 iOS 代码库提 PR，结果 reviewer 因为没用对框架把我打回；或者设计师做了个新功能，却因为不符合既定架构模式被拒，这些本质上都是自动化失败。” https://t.co/3dIgj0Hzs5",
+            "source_links": [
+              "https://x.com/steipete/status/2077544756390088777"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/bcherny/status/2077460395279692197",
+                "resolvedUrl": "https://x.com/bcherny/status/2077460395279692197",
+                "authorName": "Boris Cherny",
+                "authorHandle": "bcherny",
+                "authorUrl": "https://x.com/bcherny",
+                "text": "Something I have been thinking about: in the past, the best engineers I knew spent a lot of time automating their work in various ways. Better vim/emacs automations, writing lint rules to catch repeat code issues, building up a suite of e2e tests so they don't need to smoke test",
+                "displayDate": "Jul 15",
+                "provider": "X",
+                "media": [],
+                "textZh": "我一直在想一件事：以前，我认识的最优秀的工程师会花很多时间用各种方式把自己的工作自动化。比如做更好的 vim/emacs 自动化、写 lint 规则来抓重复出现的代码问题、搭建一整套 e2e 测试，这样他们就不用再做冒烟测试了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3dIgj0Hzs5",
+                "resolvedUrl": "https://x.com/bcherny/status/2077460395279692197"
+              }
+            ]
+          },
+          {
+            "headline": "A clever idea earns a nod; 一个挺巧的点子，值得点头",
+            "body": "This is really clever. https://t.co/s8mRrtX6Rz\n\n这招确实挺巧。 https://t.co/s8mRrtX6Rz",
+            "source_links": [
+              "https://x.com/steipete/status/2077303292225548539"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/s8mRrtX6Rz",
+                "resolvedUrl": "https://www.ayush.digital/blog/the-memory-heist"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-07-15T16:15:33.000Z",
+        "sections": [
+          {
+            "headline": "**Granola** isn’t fighting for notes, it’s fighting for the AI-native work interface; **Granola** 争的不是纪要，而是 AI 原生工作的入口",
+            "body": "Even when things are going great, running a $1.5 billion AI startup is a knife fight.\n\n@MeetGranola was one of the first AI apps of this generation to achieve near-ubiquitous adoption. But meeting notes are not the company’s be-all and end-all.\n\nThe real battle is over owning the interface that everyone uses to get their work done in an AI-native world.\nI had Chris Pedregal (@cjpedregal), cofounder and CEO of Granola, back on @every’s AI & I to talk about the current state of the application layer, AI’s frontier, and the future of work.\n\nWe get into:\n- Why meeting notes clones don’t matter. Three big companies cloned Granola’s core feature. To him, meeting notes were never the real prize. “Easy come, easy go” is his view of anyone’s lead, including his own.\n- How he thinks about building proactive features in AI. Granola pre-generates millions of pre-meeting briefs, which include context on the nature of the meeting and people participating, that most people never open. But when they do, they have a magical experience.\n- Why Granola is betting on “bring your own agent.” Chris says the API and MCP will get “a lot better” over the next few months, and we talk about their agent-native strategy and why they’ve pushed the product that way.\n\nThis is a must-watch for anyone building at the application layer.\n\nWatch the episode!\n\nTimestamps\nIntroduction: 00:00:59\nWhy running a company is a knife fight even when it’s working: 00:01:57\nGranola’s counterintuitive view on competition: 00:04:33\nDan’s “pirate and architect” model for early-stage product teams: 00:10:44\nGranola’s “shaping” and “validation” phases for building features: 00:13:09\nWhy Dan lives almost entirely inside Codex: 00:18:17\nThe case for “Codex-native apps”: 00:24:40\nGranola’s “handrail” philosophy: 00:35:37\nWhy Granola is going all in on winning meeting-adjacent context: 00:38:12\nWhat a transcript alone can never capture: 00:44:19\n\n哪怕一切都很顺，运营一家估值 15 亿美元的 AI 初创公司，照样像在打刀战。\n\n@MeetGranola 是这一代最早做到几乎无处不在的 AI 应用之一。但会议纪要不是这家公司的全部，更不是终点。\n\n真正的战场，是谁能拿下 AI 原生世界里每个人完成工作的那个界面。\n我请 **Granola** 联合创始人兼 CEO **Chris Pedregal**（@cjpedregal）回到 @every 的 **AI & I**，一起聊应用层现在打到哪了、AI 前沿在往哪拐，以及工作的未来会变成什么样。\n\n我们聊到：\n- 为什么会议纪要 clone 根本不是重点。三家大公司都抄了 **Granola** 的核心功能，但在他看来，会议纪要从来都不是真正的奖品。“来得快，去得也快”，他看别人如此，也看自己如此。\n- 他怎么理解 AI 里的主动式功能。**Granola** 会预生成数百万份会前 brief，里面有会议性质和参会人的上下文，大多数人可能根本不会点开；但一旦点开，体验会非常魔。\n- 为什么 **Granola** 在押注 “bring your own agent”。Chris 说接下来几个月 **API** 和 **MCP** 会“好很多”，我们也聊了他们的 agent-native 策略，以及为什么产品会朝那个方向推。\n\n只要你在应用层做产品，这期都值得看。\n\n来看这期节目吧！\n\n时间戳\nIntroduction: 00:00:59\nWhy running a company is a knife fight even when it’s working: 00:01:57\nGranola’s counterintuitive view on competition: 00:04:33\nDan’s “pirate and architect” model for early-stage product teams: 00:10:44\nGranola’s “shaping” and “validation” phases for building features: 00:13:09\nWhy Dan lives almost entirely inside Codex: 00:18:17\nThe case for “Codex-native apps”: 00:24:40\nGranola’s “handrail” philosophy: 00:35:37\nWhy Granola is going all in on winning meeting-adjacent context: 00:38:12\nWhat a transcript alone can never capture: 00:44:19",
+            "source_links": [
+              "https://x.com/danshipper/status/2077410279474770229"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/DaNokN3V51",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2077382129487392768/img/VWqerxTBgqwGfKTh.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2077410279474770229/video/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Episode links for the **Granola** interview; **Granola** 访谈的收听链接放出",
+            "body": "@meetgranola YouTube: https://t.co/kgnBJSLE2c\n\nSpotify: https://t.co/rYih140VGq\n\n@meetgranola **YouTube**： https://t.co/kgnBJSLE2c\n\n**Spotify**： https://t.co/rYih140VGq",
+            "source_links": [
+              "https://x.com/danshipper/status/2077410452036891000"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/kgnBJSLE2c",
+                "resolvedUrl": "https://youtu.be/uzYLYlaGAZA"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/rYih140VGq",
+                "resolvedUrl": "https://open.spotify.com/episode/02J7rp3Igz5Zf2qlm23czI?si=AnMRQvkYQoKjR-eVjmXz3Q"
+              }
+            ]
+          },
+          {
+            "headline": "Builder Pack demand pops after early bird ends; early bird 一结束，Builder Pack 还是卖得很猛",
+            "body": "early bird just ended and DAMN people love the builder pack! \n\nsign up: https://t.co/RcY2X9bUCF https://t.co/9rpYkkNf7F https://t.co/vNer8EdQwJ\n\nearly bird 刚结束，结果大家是真的很爱 **builder pack**！\n\n报名： https://t.co/RcY2X9bUCF https://t.co/9rpYkkNf7F https://t.co/vNer8EdQwJ",
+            "source_links": [
+              "https://x.com/danshipper/status/2077426853929799759"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HNSAmZSWwAAGGH7.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2077426853929799759/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/RcY2X9bUCF",
+                "resolvedUrl": "https://every.to/builder-pack"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/9rpYkkNf7F",
+                "resolvedUrl": "https://x.com/danshipper/status/2077426853929799759/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HNSAmZSWwAAGGH7.png"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/vNer8EdQwJ",
+                "resolvedUrl": "https://t.co/vNer8EdQwJ"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "South Park Commons GP",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-07-15T20:35:21.000Z",
+        "sections": [
+          {
+            "headline": "Innovation means you can just do the thing; 创新的迷人之处，就是你可以直接开干",
+            "body": "The thing that is amazing about innovation...is that you can just do things.\n\nProud to be Day -1 supporters. https://t.co/20MaPAkH5L\n\n创新最惊人的地方在于……你真的可以直接把事做出来。\n\n很骄傲我们是 Day -1 支持者。 https://t.co/20MaPAkH5L",
+            "source_links": [
+              "https://x.com/adityaag/status/2077492237248893312"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/20MaPAkH5L",
+                "resolvedUrl": "https://t.co/20MaPAkH5L"
+              }
+            ]
+          },
+          {
+            "headline": "Dude, where’s my car?; 车呢，到底车呢",
+            "body": "Dude, where's my car???? https://t.co/UfCFQDg3QM\n\n哥们，我车呢？？？？ https://t.co/UfCFQDg3QM",
+            "source_links": [
+              "https://x.com/adityaag/status/2077450872309879286"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/UfCFQDg3QM",
+                "resolvedUrl": "https://t.co/UfCFQDg3QM"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X",
+        "posted_at": "2026-07-15T20:23:12.000Z",
+        "sections": [
+          {
+            "headline": "Some users apparently want the silent version; 竟然真有人想要静音版",
+            "body": "amazing to me that some people want the silent version\n\nhttps://t.co/jbdznnBx9Z\n\n我真的很惊讶，居然有些人想要那个静音版\n\nhttps://t.co/jbdznnBx9Z",
+            "source_links": [
+              "https://x.com/sama/status/2077489177374208000"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/jbdznnBx9Z",
+                "resolvedUrl": "https://openai.com/supply/co-lab/work-louder/"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-07-16",
+    "updatedAt": "2026-07-16T12:06:35.320Z",
+    "commit": {
+      "sha": "6f6ae90961c7d52935abee8973c33f9e73328619",
+      "committedAt": "2026-07-16T07:07:41Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-07-16T12:00:22.616Z",
+    "feedGeneratedAt": "2026-07-16T07:07:00.425Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

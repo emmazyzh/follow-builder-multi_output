@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-14T12:06:04.605Z",
-  "latestDate": "2026-07-14",
+  "updatedAt": "2026-07-16T12:06:35.325Z",
+  "latestDate": "2026-07-16",
   "dates": [
+    {
+      "date": "2026-07-16",
+      "title": "AI Builders Daily · 2026-07-16",
+      "summary": "**Claude Code turns sessions into live artifacts**; **Gemini Spark expands with Docs editing, comments support, and faster parallel work**; enterprise AI is getting less theoretical and more operational, from Box’s agent dinner notes to Codex safety fixes in public; the side chatter is revealing too: builders are obsessing over automation, skills, voice interfaces, and the uncanny feel of AI-written prose.\n\n**Claude Code** 把会话直接做成可分享页面；**Gemini Spark** 往更多地区铺开，还补上 Docs 编辑、评论读取和并行处理；企业侧已经不聊概念了，开始硬碰流程、权限、预算和安全，**Box**、**Codex** 都把问题摊开说；边角料也很有意思：大家一边猛推自动化和 skill files，一边开始对 AI 味文本生理性反感。",
+      "itemCount": 20,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-07-16T12:06:35.323Z",
+      "commit": {
+        "sha": "6f6ae90961c7d52935abee8973c33f9e73328619",
+        "committedAt": "2026-07-16T07:07:41Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-14",
       "title": "AI Builders Daily · 2026-07-14",
