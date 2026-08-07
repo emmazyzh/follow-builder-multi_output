@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-07-16T12:06:35.325Z",
-  "latestDate": "2026-07-16",
+  "updatedAt": "2026-08-07T12:05:15.606Z",
+  "latestDate": "2026-08-07",
   "dates": [
+    {
+      "date": "2026-08-07",
+      "title": "AI Builders Daily · 2026-08-07",
+      "summary": "**OpenAI** turned the volume up: free ChatGPT users now get unlimited text chat, while **GPT-5.6 Sol** and **Luna** became the day’s loudest product hooks; **Anthropic** pushed **Claude** deeper into Apple’s stack with Foundation Models support; agents stayed the main battleground, from **Basis** on long-horizon workflows to fresh arguments over specs, plugins, governance, and who really owns the consumer AI relationship; the subtext everywhere was the same: shipping is faster, but reliable execution still decides who matters.\n\n**OpenAI** 今天火力很猛：免费版 ChatGPT 开到无限文本聊天，**GPT-5.6 Sol** 和 **Luna** 成了最抢眼的钩子；**Anthropic** 也没闲着，直接把 **Claude** 接进 Apple 的 Foundation Models；另一条主线还是 agent，**Basis** 继续聊长时任务怎么落地，圈里人则在吵 spec、插件标准、企业治理，还有消费级 AI 到底会被谁吃下；热闹归热闹，最后拼的还是一件事: 能不能稳定把活干完。",
+      "itemCount": 17,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-07T12:05:15.604Z",
+      "commit": {
+        "sha": "3e075f994236b594059e5887a7daa8557c6c87f9",
+        "committedAt": "2026-08-07T06:43:16Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-07-16",
       "title": "AI Builders Daily · 2026-07-16",

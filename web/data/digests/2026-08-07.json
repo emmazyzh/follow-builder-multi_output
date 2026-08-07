@@ -1,0 +1,848 @@
+{
+  "payload": {
+    "date": "2026-08-07",
+    "title": "AI Builders Daily · 2026-08-07",
+    "summary": "**OpenAI** turned the volume up: free ChatGPT users now get unlimited text chat, while **GPT-5.6 Sol** and **Luna** became the day’s loudest product hooks; **Anthropic** pushed **Claude** deeper into Apple’s stack with Foundation Models support; agents stayed the main battleground, from **Basis** on long-horizon workflows to fresh arguments over specs, plugins, governance, and who really owns the consumer AI relationship; the subtext everywhere was the same: shipping is faster, but reliable execution still decides who matters.\n\n**OpenAI** 今天火力很猛：免费版 ChatGPT 开到无限文本聊天，**GPT-5.6 Sol** 和 **Luna** 成了最抢眼的钩子；**Anthropic** 也没闲着，直接把 **Claude** 接进 Apple 的 Foundation Models；另一条主线还是 agent，**Basis** 继续聊长时任务怎么落地，圈里人则在吵 spec、插件标准、企业治理，还有消费级 AI 到底会被谁吃下；热闹归热闹，最后拼的还是一件事: 能不能稳定把活干完。",
+    "items": [
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@DataDrivenNYC/videos",
+        "source_label": "Podcast",
+        "posted_at": "2026-08-06T11:30:01.000Z",
+        "sections": [
+          {
+            "headline": "How **Basis** builds long-horizon agents for real work · **Basis** 如何把长时程 agent 做到真能干活",
+            "body": "Matt Turck’s conversation with Mitch Troyanovsky turns into a field guide for long-horizon agents: don’t trust clean eval scores alone, don’t confuse output quality with process quality, and don’t expect coherence over long runs to emerge by accident. The sharpest ideas are about runtime context, behavior specs, and why accounting is a brutal but useful proving ground for autonomous systems that must act for hours or days.\n\nA striking thread running through the episode is that agents look less like smarter chatbots and more like non-deterministic coworkers inside a carefully designed process. Basis argues that autonomy is not “one-click done,” but a workflow where the system can make decisions, surface assumptions, and hand off work the way a strong junior teammate would.\n\n这期对谈基本成了一份长时程 agent 实战手册：别被好看的 eval 分数骗了，别把结果对了和过程对了混为一谈，也别指望模型自己就能在长链路里一直保持清醒。里面最有价值的部分，是他们怎么谈运行时上下文、行为规范，以及为什么会计这类又脏又复杂的工作，反而最适合拿来检验 autonomous system 到底有没有真本事。\n\n另一条很硬的观点是，agent 更像被放进流程里的“不确定同事”，不是会聊天的升级版机器人。**Basis** 的意思很明确：所谓 autonomous，不是你点一下它就神奇收工，而是它能自己推进、说明关键判断、把工作像靠谱初级同事那样交回来。",
+            "source_links": [
+              "https://www.youtube.com/@DataDrivenNYC/videos"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog/claude-for-foundation-models",
+        "source_label": "Blog",
+        "posted_at": "Jun 08, 2026",
+        "sections": [
+          {
+            "headline": "**Claude** plugs into Apple’s **Foundation Models** stack · **Claude** 接入 Apple 的 **Foundation Models** 框架",
+            "body": "Anthropic announced a new Swift package that lets developers route from Apple’s on-device Foundation Models to **Claude** for heavier tasks like multi-step reasoning, code generation, web search, and data analysis. The pitch is straightforward: keep fast local jobs on-device, then escalate to **Claude** when the workflow gets deeper, while preserving typed Swift inputs and structured responses inside the same app flow.\n\nThe move matters because it frames Apple-platform AI as a model handoff architecture rather than a one-model bet. Apps can use native Apple models for lightweight summarization or extraction, then switch to **Claude** for the messier reasoning layer without rebuilding the UI or input pipeline.\n\nAnthropic 发了个新的 Swift 包，让开发者可以把 Apple 设备端的 Foundation Models 和 **Claude** 接起来: 本地模型先处理快活，碰到多步推理、代码生成、网页搜索、数据分析这些更重的任务，再切给 **Claude**。整套说法不花哨，重点就是别硬拿一个模型包打天下，能分层就分层。\n\n这事有意思的地方在于，它把 Apple 平台上的 AI 应用思路讲得更实际了: 轻量任务留在端上，复杂推理外包给 **Claude**，而且还能继续走 typed Swift 输入和结构化返回，不用把整套交互重搭一遍。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "AI Builder",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T06:39:36.000Z",
+        "sections": [
+          {
+            "headline": "AI devblog skill aims for faithful reporting and visuals · AI devblog skill 主打忠实还原与可视化",
+            "body": "the ai-devblog skill elicits what YOU think the story is, and works with you to trace what you read and report it faithfully.\n\nalso does visuals... https://t.co/629UcBES0e\n\nai-devblog 这个 skill 会先引出你自己理解的故事，再和你一起追踪你读过的内容，尽量忠实地把它报道出来。\n\n也能做视觉内容…… https://t.co/629UcBES0e",
+            "source_links": [
+              "https://x.com/swyx/status/2085616830786543667"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPGJhZoagAA4aPO.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2085616830786543667/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPGZcUMbkAAnir9.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2085616830786543667/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/629UcBES0e",
+                "resolvedUrl": "https://x.com/swyx/status/2085616830786543667/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPGZcUMbkAAnir9.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Not the last spec, apparently · 看来那还不是最后一版 spec",
+            "body": "reader: it was not the last spec\n\nhttps://t.co/Ldadz8P7QT\n\n读者：那并不是最后一版 spec。\n\nhttps://t.co/Ldadz8P7QT",
+            "source_links": [
+              "https://x.com/swyx/status/2085613357080723846"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/andrewqu/status/2085403515636396446?s=20",
+                "resolvedUrl": "https://x.com/andrewqu/status/2085403515636396446",
+                "authorName": "Andrew Qu",
+                "authorHandle": "andrewqu",
+                "authorUrl": "https://x.com/andrewqu",
+                "text": "the last agent spec has arrived\n\nwe're finally past fragmentation and are arriving at consolidation",
+                "displayDate": "Aug 6",
+                "provider": "X",
+                "media": [],
+                "textZh": "最后一个 agent 规范终于来了。 我们终于走出了碎片化，开始进入整合阶段。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Ldadz8P7QT",
+                "resolvedUrl": "https://x.com/andrewqu/status/2085403515636396446"
+              }
+            ]
+          },
+          {
+            "headline": "A minimal reply post lands · 一条极简回复发出去了",
+            "body": "reply https://t.co/DwhEAq3gBd\n\n回复 https://t.co/DwhEAq3gBd",
+            "source_links": [
+              "https://x.com/swyx/status/2085570817786880265"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/DwhEAq3gBd",
+                "resolvedUrl": "https://forge.smol.ai/gists/42b1e91281544fb6aeb7720a13124349"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T06:13:22.000Z",
+        "sections": [
+          {
+            "headline": "Free ChatGPT users get unlimited text chat via **GPT-5.6 Luna** · 免费版 ChatGPT 开放 **GPT-5.6 Luna** 无限文本聊天",
+            "body": "Free users of ChatGPT now have unlimited text chats, powered by GPT-5.6 Luna https://t.co/eZq1e1hTQX\n\nChatGPT 免费用户现在可以无限量进行文本聊天，由 GPT-5.6 Luna 驱动 https://t.co/eZq1e1hTQX",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2085610231707623750"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPGTcDNaoAA1pfN.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2085610231707623750/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/eZq1e1hTQX",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2085610231707623750/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPGTcDNaoAA1pfN.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A slip from “ghiblify” to “gimlify” · 想说 ghiblify，结果说成了 gimlify",
+            "body": "I meant to say \"ghiblify\", but I said \"gimlify\" https://t.co/ZibIfuX99D\n\n我本来想说“ghiblify”，结果说成了“gimlify” https://t.co/ZibIfuX99D",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2085610005768945984"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPGTFUZa8AAqC8v.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2085610005768945984/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ZibIfuX99D",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2085610005768945984/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPGTFUZa8AAqC8v.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** with **GPT-5.6 Sol** is pitched as absurdly capable · **GPT-5.6 Sol** 驱动的 **Codex** 被形容得离谱地能干",
+            "body": "You can just ask Codex with GPT-5.6 Sol the wildest things and it will just do it.\n\nI talk to it for 5 minutes straight with things that just seem to require weeks of work, get up to get something in the fridge, pet the dog, come back and ... it's done.\n\n你完全可以把最离谱的事直接丢给搭载 GPT-5.6 Sol 的 Codex，它就是会做。\n\n我能连续跟它说五分钟那种看上去得花几周才能完成的事，然后起身去冰箱拿点东西，摸摸狗，回来一看……它已经做完了。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2085597685948813610"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T00:18:25.000Z",
+        "sections": [
+          {
+            "headline": "Joking about needing Tibo’s reset button · 调侃想要一个叫 Tibo 来重置的按钮",
+            "body": "damn where's the ping Tibo to reset button https://t.co/GHYWCERnsB\n\n靠，那个“ping 一下 Tibo 来重置”的按钮在哪儿 https://t.co/GHYWCERnsB",
+            "source_links": [
+              "https://x.com/petergyang/status/2085520904398999901"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPFCKZobUAAF2i8.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2085520904398999901/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/GHYWCERnsB",
+                "resolvedUrl": "https://x.com/petergyang/status/2085520904398999901/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPFCKZobUAAF2i8.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Consumer AI is **ChatGPT** and **Google**’s market to lose · 消费级 AI 在他看来基本就是 **ChatGPT** 和 **Google** 的局",
+            "body": "Consumer is basically ChatGPT and Google's market to lose in my opinion.\n\nChatGPT already has 1B users and needs to get them to connect their favorite apps and use agents to do work. OpenAI is already pioneering new interaction patterns like voice. The biggest barriers to overcome are:\n\n1) Normies not trusting AI and ChatGPT with full access to their apps and data. \n\n2) Normies not realizing what ChatGPT is now capable of. \n\nIn both cases, I think marketing and the right messaging are just as important as improving the product.\n\nGoogle Gemini also has almost 1B users and my gut is normies trust it more to connect to email, calendar, Workspace, Chrome, etc since it's all the same login. \n\nBut Google is behind on 3rd plugins, browser use, and alot of other critical features. They need to make the Gemini app best in class and friendly for normies. They can just copy ChatGPT tbh except make improvements like not have 3 separate modes (ChatGPT/Work/Codex) that ChatGPT and Claude are stuck in.\n\nfwiw I don't think having acess to the best model is that important to normies vs. getting the user onboarding right. My non-AI pilled friends could care less about Sol vs Fable as long as the pricing is fair and the model can get their work done reliably.\n\n在我看来，消费级市场基本就是 ChatGPT 和 Google 自己能不能守住的问题。\n\nChatGPT 已经有 10 亿用户，接下来要做的是让他们把常用应用接进来，再用 agents 真正去干活。OpenAI 已经在做语音这类新的交互方式。现在最大的障碍是：\n\n1）普通人不信任 AI，也不信任 ChatGPT 拿到他们应用和数据的完整权限。\n\n2）普通人压根没意识到 ChatGPT 现在到底能做什么。\n\n这两点上，我觉得营销和信息传达，跟产品进步本身一样重要。\n\nGoogle Gemini 也快有 10 亿用户了，而且我直觉上普通人会更放心把邮箱、日历、Workspace、Chrome 这些接给它，毕竟都是同一个登录体系。\n\n但 Google 在第三方插件、浏览器使用和很多关键能力上还落后。他们得把 Gemini app 做成真正同类最佳，而且要对普通人友好。说白了完全可以抄 ChatGPT，只是顺手把一些问题改掉，比如别像 ChatGPT 和 Claude 那样卡在 3 个分裂模式里（ChatGPT/Work/Codex）。\n\n顺便说一句，我不觉得“拿到最强模型”这件事对普通人有多重要，至少远没有把 onboarding 做对重要。我那些没被 AI 洗脑的朋友根本不在乎 Sol 还是 Fable，只在乎价格别离谱，模型能不能稳定把活做完。",
+            "source_links": [
+              "https://x.com/petergyang/status/2085427222836658600"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI game dream: a roguelike deckbuilder with the whole package · AI 游戏执念：做一款画面玩法剧情都过硬的类杀戮尖塔",
+            "body": "This is (of course) a massive distraction but the game I dream of building with AI is a roguelike deckbuilder that has great graphics, gameplay, and story.\n\n这事当然会是个巨大分心项，但我一直想用 AI 做的游戏，是一款画面、玩法、剧情都很强的 roguelike deckbuilder。",
+            "source_links": [
+              "https://x.com/petergyang/status/2085423674073751813"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI Exec",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T01:12:13.000Z",
+        "sections": [
+          {
+            "headline": "A link-only post goes up · 发了一条只有链接的帖子",
+            "body": "https://t.co/FaFmnyjbZa https://t.co/3S0TEdXsn2\n\nhttps://t.co/FaFmnyjbZa https://t.co/3S0TEdXsn2",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2085534442781868128"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPFOgLkbcAEbBfv.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/realmadhuguru/status/2085534442781868128/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/HilaShmuel/status/2085052496632741987",
+                "resolvedUrl": "https://x.com/HilaShmuel/status/2085052496632741987",
+                "authorName": "Hila Shmuel",
+                "authorHandle": "HilaShmuel",
+                "authorUrl": "https://x.com/HilaShmuel",
+                "text": "I'm sorry, Obsidian.",
+                "displayDate": "Aug 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/NKGMHnqysG",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2085050226079834112/img/YBWz47SNRTsq1hLi.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/HilaShmuel/status/2085052496632741987/video/1"
+                  }
+                ],
+                "textZh": "对不起，Obsidian。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/FaFmnyjbZa",
+                "resolvedUrl": "https://x.com/realmadhuguru/status/2085534442781868128/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPFOgLkbcAEbBfv.png"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3S0TEdXsn2",
+                "resolvedUrl": "https://x.com/hilashmuel/status/2085052496632741987"
+              }
+            ]
+          },
+          {
+            "headline": "Speak the idea first, polish later · 先把想法讲出来，再谈润色",
+            "body": "I’ve noticed people are much clearer when they speak through new ideas than writing a doc on it.\n\nSomewhere between their mouth and the doc, the core idea gets buried as they try to add context, polish it and make it sound smart.\n\nSo here’s what I ask my teams to do: record yourself explaining the idea exactly as you would to a friend, use ai to do basic cleanup but keep the rough original structure and flow. \n\nShare that doc.\n\n我发现，人们在把新想法直接讲出来的时候，往往比写成文档更清楚。\n\n从嘴里到文档的过程中，核心想法常常就被埋掉了，因为大家会不断补背景、打磨措辞、努力让它听起来更聪明。\n\n所以我现在会要求团队这么做：像和朋友解释一样，把你的想法录下来，用 AI 做基础清理，但保留原本那种粗粝的结构和节奏。\n\n然后把那份文档发出来。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2085390240899043406"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T01:52:29.000Z",
+        "sections": [
+          {
+            "headline": "Collaborative coding gets a Guinness mention · 协作编程拿到吉尼斯世界纪录提法",
+            "body": "Guinness world record for collaborative coding. https://t.co/BxlH4f3WKh\n\n协作编程的吉尼斯世界纪录。 https://t.co/BxlH4f3WKh",
+            "source_links": [
+              "https://x.com/amasad/status/2085544577415696405"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/replit/status/2085501387714986373",
+                "resolvedUrl": "https://x.com/Replit/status/2085501387714986373",
+                "authorName": "Replit ⠕",
+                "authorHandle": "Replit",
+                "authorUrl": "https://x.com/Replit",
+                "text": "A Guinness World Record for the largest AI video lesson: 14,075 people building together in one live session.\n\nCongrats to @KanzHire and everyone who showed up to make it real.",
+                "displayDate": "Aug 6",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HPEwdawWsAAmECw.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Replit/status/2085501387714986373/photo/1"
+                  }
+                ],
+                "textZh": "最大规模 AI 视频课程的吉尼斯世界纪录：14,075 人在一场直播里一起动手搭建。 恭喜 @KanzHire，也恭喜所有到场把这件事变成现实的人。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/BxlH4f3WKh",
+                "resolvedUrl": "https://x.com/replit/status/2085501387714986373"
+              }
+            ]
+          },
+          {
+            "headline": "Early code-model evangelism, before everyone got code-pilled · 在“代码模型”成共识前，他已经到处推销了",
+            "body": "It’s true, in 21/22 I went around the valley asking everyone to train coding specific models with us: Google, Meta, everyone — no one thought it was as important as NLP use cases — eventually we trained our own: Replit-code-3b and then everyone got code pilled. https://t.co/BqVr3xFYML\n\n是真的，21/22 年那会儿我在硅谷到处找人，想让大家跟我们一起训练专门做编程的模型：Google、Meta，谁都找过。那时候没人觉得这事会像 NLP 用例那么重要。最后我们自己训了 **Replit-code-3b**，然后大家才突然都对代码模型上头了。 https://t.co/BqVr3xFYML",
+            "source_links": [
+              "https://x.com/amasad/status/2085544020424716723"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ceointerview/status/2085471234020810759",
+                "resolvedUrl": "https://x.com/CEOinterview/status/2085471234020810759",
+                "authorName": "CEOInterviews.AI",
+                "authorHandle": "CEOinterview",
+                "authorUrl": "https://x.com/CEOinterview",
+                "text": "Amjad Masad says Google, $GOOGL, killed a coding model deal with Replit because it was scared of disrupting Search. Replit is now worth 9 billion dollars.\n\n\"I was going around Silicon Valley. There wasn't anyone paying attention to AI coding. And I was talking to OpenAI, I was",
+                "displayDate": "Aug 6",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/PLIyhqTkQM",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2085471209668632576/img/7Yccwg0F-i-klFNq.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/CEOinterview/status/2085471234020810759/video/1"
+                  }
+                ],
+                "textZh": "Amjad Masad 说，Google 因为担心会冲击 Search，叫停了与 Replit 的一个编程模型合作。Replit 现在的估值已经达到 90 亿美元。 “我当时在硅谷四处奔走。根本没有人在关注 AI 编程。而我当时在和 OpenAI 聊，我当时在”"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/BqVr3xFYML",
+                "resolvedUrl": "https://x.com/ceointerview/status/2085471234020810759"
+              }
+            ]
+          },
+          {
+            "headline": "No-code had limits; solving code was the real path · no-code 有天花板，真正该解决的是代码本身",
+            "body": "Airtable bookends the rise and fall of “no code.”\n\nI remember arguing endlessly with investors about this.\n\nUI can never let you build arbitrary software. The way to make software accessible was always to solve code itself.\n\nFor a long time, that sounded delusional.\n\nNot anymore.\n\n**Airtable** 像是给“no code”的兴衰做了个首尾呼应。\n\n我记得当年为了这事跟投资人没完没了地争。\n\n光靠 UI，你永远不可能做出任意软件。真正让软件变得人人可用的路，从来都是把代码本身解决掉。\n\n这话在很长一段时间里听上去像疯话。\n\n现在不了。",
+            "source_links": [
+              "https://x.com/amasad/status/2085451197323034902"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-06T17:48:09.000Z",
+        "sections": [
+          {
+            "headline": "A terse “FreeAI” signal · 一句很短的“FreeAI”表态",
+            "body": "FreeAI https://t.co/ZU2hTh5aQM\n\nFreeAI https://t.co/ZU2hTh5aQM",
+            "source_links": [
+              "https://x.com/rauchg/status/2085422692799570171"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2085421871122862478",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2085421871122862478",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "Ling 3.0 Tiny from @AntLingAGI is free on AI Gateway via @novita_labs until August 14, 8am PT.\n\n𝚒𝚗𝚌𝚕𝚞𝚜𝚒𝚘𝚗𝚊𝚒/𝚕𝚒𝚗𝚐-𝟹.𝟶-𝚝𝚒𝚗𝚢-𝚏𝚛𝚎𝚎\n\nhttps://vercel.com/changelog/ling-3-0-tiny-is-now-available-on-ai-gateway",
+                "displayDate": "Aug 6",
+                "provider": "X",
+                "media": [],
+                "textZh": "来自 @AntLingAGI 的 Ling 3.0 Tiny 现已在 AI Gateway 上通过 @novita_labs 免费提供，截止到太平洋时间 8 月 14 日上午 8 点。 𝚒𝚗𝚌𝚕𝚞𝚜𝚒𝚘𝚗𝚊𝚒/𝚕𝚒𝚗𝚐-𝟹.𝟶-𝚝𝚒𝚗𝚢-𝚏𝚛𝚎𝚎 https://vercel.com/changelog/ling-3-0-tiny-is-now-available-on-ai-gateway"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ZU2hTh5aQM",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2085421871122862478"
+              }
+            ]
+          },
+          {
+            "headline": "Open, extensible devtools and plugins for the agent era · agent 时代的开发工具必须开源且可扩展",
+            "body": "Devtools must be 1️⃣ open source and 2️⃣ universally extensible.\n\nAI coding agents are the most important devtools in the history of our industry. The Plugin standard lets anybody extend them uniformly.\n\nThis is huge for the ecosystem. Build a Plugin → get exposure to the tidal wave of software creation from every agent: CLIs, IDEs, cloud agents, and even personal assistants.\n\n开发工具必须做到 1️⃣ 开源，2️⃣ 通用可扩展。\n\nAI 编码 agent 是我们这个行业历史上最重要的一类开发工具。**Plugin** 标准能让任何人以统一方式去扩展它们。\n\n这对整个生态都很大。做一个 Plugin，就能接上所有 agent 带来的软件生产浪潮：CLI、IDE、云端 agent，甚至个人助理。",
+            "source_links": [
+              "https://x.com/rauchg/status/2085403169551790359"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T04:41:22.000Z",
+        "sections": [
+          {
+            "headline": "Agent adoption looks more like management than prompting · agent 落地更像带人，不像问答",
+            "body": "If you’re trying to understand the dynamic of real world agent adoption this post is a great place to start.\n\nEveryone got so hooked on talking to chatbots that there’s limited recognition still that working with an agent is much more like managing someone in a process vs. just asking an ai some questions and getting a response back. \n\n“prompting an agent is closer to writing a spec than asking a question. you have to scope the task extensively and define what \"done\" looks like.”\n\nUltimately, the real upside of agents is when you start to change the underlying workflow itself instead of just treating it as another system you ask questions of.\n\nThis means getting the agents the right data to work with, crossing organizational boundaries, and evolving the human in the loop steps for when people actually review the work. All of this has to change about today’s processes for the big upside to occur.\n\nThe end result is that it’s most likely that the vast majority of token usage in an enterprise will be agents that are “deployed” to go execute tasks inside of workflows.\n\n如果你想理解现实世界里 agent 采用的动态，这条帖子是个很好的起点。\n\n大家都太习惯跟聊天机器人对话了，所以很多人还没意识到：和 agent 协作，更像是在一个流程里管理某个人，而不是随手问几个 AI 问题再拿个答案回来。\n\n“给 agent 下指令，更接近写 spec，而不是提问。你得把任务边界讲清楚，还得明确什么叫 done。”\n\nagent 真正的上行空间，在于你开始改造底层工作流本身，而不是把它当成另一个拿来问问题的系统。\n\n这意味着你得给 agent 正确的数据、让它跨越组织边界工作、重新设计 human-in-the-loop 的审核环节。今天的大部分流程都得跟着改，真正的收益才会出来。\n\n最后的结果很可能是，企业里绝大多数 token 消耗都会来自那些被“部署”进工作流里执行任务的 agents。",
+            "source_links": [
+              "https://x.com/levie/status/2085587079405425146"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "More agents can make systems of record more valuable, not less · agent 越多，系统级平台反而可能更重要",
+            "body": "Huge Atlassian quarterly beat. There was a misplaced thesis over the past 6 months that somehow agents would be bad for certain software categories. There’s definitely truth in this in some areas, but many were parsing this poorly.\n\nIn a world where agents are generating 100X more code, processing massive amounts of data, or making decisions across your systems, the role of the platforms that manage this data and  these workflows becomes more important, not less.\n\nEnterprises care about governance, security, compliance, guardrails, safe access to data, and many more critical capabilities that go into these systems of record.\n\n**Atlassian** 这个季度表现很猛。过去 6 个月有个被说得很响的论点：agent 会打击某些软件类别。某些场景里这话不是完全没道理，但很多人的解读其实跑偏了。\n\n如果 agent 能生成 100 倍的代码、处理海量数据、还在你的系统之间做决策，那么那些负责管理数据和工作流的平台，只会更重要，不会更不重要。\n\n企业在乎的是治理、安全、合规、护栏、对数据的安全访问，以及一整套支撑记录系统的关键能力。",
+            "source_links": [
+              "https://x.com/levie/status/2085474309943030032"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPEX1WMaIAASkXl.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2085474309943030032/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-06T19:21:03.000Z",
+        "sections": [
+          {
+            "headline": "Personal AGI framed as deeply individualized, not generic chatbot AI · 他把 personal AGI 讲成真正懂你的东西，不是通用聊天机器人",
+            "body": "Here's what I think you need to know about personal AGI - not a chatbot that anyone can have, but one that knows you uniquely, now and into the future https://t.co/3LVEyZ6LE3\n\n这是我觉得你需要知道的 personal AGI: 它不是人人都能拿来用的普通聊天机器人，而是一个现在就懂你、以后也会继续懂你的系统 https://t.co/3LVEyZ6LE3",
+            "source_links": [
+              "https://x.com/garrytan/status/2085446068461043722"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ycombinator/status/2085443781797785828",
+                "resolvedUrl": "https://x.com/ycombinator/status/2085443781797785828",
+                "authorName": "Y Combinator",
+                "authorHandle": "ycombinator",
+                "authorUrl": "https://x.com/ycombinator",
+                "text": "The next generation of startups will be built by smaller teams than ever before.\n\nAt Startup School 2026, YC's @garrytan explains why we're we're entering the era of personal AGI: AI agents that run on your own infrastructure, compound your knowledge over time, and dramatically",
+                "displayDate": "Aug 6",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/ZQPCEWATWo",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2085439529843130368/img/ZLzxiAk2YwuRXAgj.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ycombinator/status/2085443781797785828/video/1"
+                  }
+                ],
+                "textZh": "下一代创业公司将由比以往任何时候都更小的团队打造。 在 Startup School 2026 上，YC 的 @garrytan 解释了为什么我们正在进入个人 AGI 时代：运行在你自己基础设施上的 AI agents，会随着时间不断沉淀你的知识，并且大幅"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/3LVEyZ6LE3",
+                "resolvedUrl": "https://x.com/ycombinator/status/2085443781797785828"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "VC & Podcast Host",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-06T17:37:03.000Z",
+        "sections": [
+          {
+            "headline": "Basis’ cap table gets a spotlight · **Basis** 的投资阵容被点名晒了一遍",
+            "body": "Quite the group of investors in Basis, btw\n\n@rabois, @Mkclements , @amasad, @ClementDelangue, @jaltma, @JeffDean, @polynoamial, @kvogt, @lennysan, @azeem, @LHSummers, @douwekiela, @pirroh , @scottbelsky, @natfriedman, @danielgross, @lloydblankfein, @vkhosla, @khoslaventures, @Accel, @GVteam, @BoxGroupVC\n\n顺便说一句，**Basis** 这拨投资人阵容真不小。\n\n@rabois, @Mkclements , @amasad, @ClementDelangue, @jaltma, @JeffDean, @polynoamial, @kvogt, @lennysan, @azeem, @LHSummers, @douwekiela, @pirroh , @scottbelsky, @natfriedman, @danielgross, @lloydblankfein, @vkhosla, @khoslaventures, @Accel, @GVteam, @BoxGroupVC",
+            "source_links": [
+              "https://x.com/mattturck/status/2085419899078295979"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The long-horizon agent episode is out across platforms · 长时程 agent 那期节目已在多平台上线",
+            "body": "This reference conversation on how to build long-horizon AI agents with @mitch_troy of @trybasis is also available on Spotify, Apple Podcasts and here on YouTube:\n\nhttps://t.co/j2srHcxAQK\n\n这期和 @mitch_troy、@trybasis 聊“怎么构建长时程 AI agents”的参考级对谈，现在也已经上了 Spotify、Apple Podcasts 以及这里的 YouTube：\n\nhttps://t.co/j2srHcxAQK",
+            "source_links": [
+              "https://x.com/mattturck/status/2085402938101379487"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/j2srHcxAQK",
+                "resolvedUrl": "https://youtu.be/54pwkcp48Lg?si=_EU-KhvvuYye14je"
+              }
+            ]
+          },
+          {
+            "headline": "A dense chapter list maps the **Basis** agent playbook · 一长串章节基本把 **Basis** 的 agent 方法论摊开了",
+            "body": "How to build long-horizon AI agents: behavior specs, ontologies, process supervision - my conversation with @mitch_troy, co-founder of @trybasis \n\n01:09 Why Everyone at Basis Was Whispering to AI when @steph_palazzolo walked in \n04:12 Accounting as \"an Intelligence Over the Economy\"\n06:11 What Makes an Agent Truly Long-Horizon\n08:24 Inside an Autonomous, Multi-Day Tax Return\n10:19 Agents That Hand Off Like Senior Engineers\n11:17 A Brief History of Agents: From ReAct to Today\n12:33 Why LLMs Have No Long-Term Memory\n14:13 Why AutoGPT Didn't Live Up to Its Promise\n15:51 The Three Breakthroughs: Opus 3, o1, o3\n17:07 Why Reasoning Models Unlocked Agents\n18:23 \"Let's Verify Step by Step\": The Road Not Taken\n20:32 Pushing Back on the METR Chart\n22:09 Why Coding Agents Won First\n25:14 Why Real-World Agents Are Harder\n26:55 How Accountants Verify Non-Deterministic Work\n29:18 You Can't Scale Tax Returns Like Math\n33:16 100 Evals Pass - So What?\n35:53 Right Answer, Wrong Process\n36:37 Behavior Specs, Explained\n39:58 How Specific Should Behaviors Be?\n42:18 Context Is Runtime Training Data\n44:21 Who Judges the Judge?\n46:45 The Move 37 Objection\n50:02 The Magic Box Mental Model\n52:41 \"Nothing Has Changed Since o3\"\n54:56 Open-Sourcing Behavior Specs with @ankrgyl  @braintrust \n59:45 Ontologies: A World for Agents to Live In\n01:04:20 Documentation as Codebase\n01:06:33 Why the Founding Fathers Were Context Engineers\n01:09:05 Onboarding 300 Brilliant Alien Employees\n01:11:10 Self-Improving Agent Systems\n01:12:50 The Context Mistake Agent Builders Make\n01:14:29 RL on Behavior Adherence\n01:17:01 Will the Bitter Lesson Swallow the Harness\n01:18:46 \"Technical Moats Are Not Real Moats\"\n01:21:03 Advice for AI Builders\n\n如何构建长时程 AI agents：行为规范、ontology、过程监督——这是我和 @mitch_troy、@trybasis 联合创始人的对谈。\n\n01:09 当 @steph_palazzolo 走进 **Basis** 办公室时，为什么大家都在对 AI 低声耳语\n04:12 会计为什么可以被看作“经济上的一种智能”\n06:11 什么才算真正的长时程 agent\n08:24 一个多日自主报税流程内部是什么样\n10:19 像高级工程师一样交接工作的 agents\n11:17 从 ReAct 到今天，agent 的一段简史\n12:33 为什么 LLM 没有长期记忆\n14:13 为什么 AutoGPT 没兑现当初的承诺\n15:51 三个关键突破：Opus 3、o1、o3\n17:07 为什么推理模型解锁了 agents\n18:23 “让我们一步一步验证”：那条没走通的路\n20:32 对 METR 图表的反驳\n22:09 为什么编码 agents 先赢了\n25:14 为什么现实世界 agents 更难\n26:55 会计师如何验证非确定性工作\n29:18 税务申报不能像数学题那样扩展\n33:16 100 个 eval 全过了，又怎样？\n35:53 答案对了，过程错了\n36:37 行为规范到底是什么\n39:58 行为该具体到什么程度\n42:18 上下文就是运行时训练数据\n44:21 谁来评判评判者\n46:45 Move 37 异议\n50:02 魔盒心智模型\n52:41 “自从 o3 以来其实没变什么”\n54:56 和 @ankrgyl、@braintrust 一起开源行为规范\n59:45 ontology：给 agents 一个能生存的世界\n01:04:20 文档就是代码库\n01:06:33 为什么开国元勋也是上下文工程师\n01:09:05 给 300 个聪明外星员工做入职培训\n01:11:10 会自我改进的 agent 系统\n01:12:50 agent builders 最常犯的上下文错误\n01:14:29 用 RL 训练行为遵循\n01:17:01 Bitter Lesson 会不会吞掉 harness\n01:18:46 “技术护城河不是真护城河”\n01:21:03 给 AI builders 的建议",
+            "source_links": [
+              "https://x.com/mattturck/status/2085402933579964730"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/dvRxSjaxPI",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2085393170074918912/img/V-O7n5FYvH5ROi2i.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2085402933579964730/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-06T14:23:59.000Z",
+        "sections": [
+          {
+            "headline": "Team-agent adoption question goes out to the crowd · 她在问团队 agent 到底谁真在重度用",
+            "body": "Question: is anyone using Claude Tag (or other equivalent team agents) heavily in your team? What have been the top use cases/aha moments?\n\n问题：你们团队里有人在重度使用 Claude Tag（或者类似的团队 agent）吗？最有用的场景/最明显的 aha moment 是什么？",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2085371310042169630"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T05:23:17.000Z",
+        "sections": [
+          {
+            "headline": "Inbox flooded after fundraising advice post · 融资建议帖炸了，他说私信回不过来",
+            "body": "Wow this blew up my inbox - I’ll try to respond to as many DMs as I can tomorrow!\n\nFeel free to ask questions publicly and I’ll reply here as well!\n\n哇，这条把我的收件箱直接挤爆了，我明天尽量多回一些私信！\n\n也欢迎直接公开提问，我也会在这里回复！",
+            "source_links": [
+              "https://x.com/nikunj/status/2085597628121878721"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A blunt August fundraising memo for founders · 一份很直白的 8 月融资备忘录",
+            "body": "Alright August fundraising season is here (got 9 intros this week) so here’s a brain dump of tips that no VC will tell you.. \n\n> who you talk to and get to an intro at a VC firm really matters. associates and principals ARE really great. i genuinely mean it BUT you have to see what they have backed recently to understand what kind of leverage they have. what’s their standing in the firm. new, worked on a few great recent deals and understand your space, talk to them. if not, they might be on the way out. always get a warm intro to them as well. understand quickly if the fund will actually be interested vs. lip service. also know once you are assigned to someone in the CRM, you’re stuck with that person. wars have been fought on deal attribution (you think I’m joking but no)\n\n> you got to talk to the GP or capital P partners (these are folks who have actual authority and not just the title, caveat below). and you could cold email, but try to get a warm intro. angels are great for this. ideally from a founder they have already backed. they’ll run on a plane to talk to you with that intro. all schedules vanish and you don’t get passed to an associate (usually).\n\n> on the raise, now here’s where it gets tricky. ask for too much, then they look at you skeptically unless you’re Elon. ask for too little and then you’re not ambitious enough. ask for too little dilution it’s not worth it, ask for too much it’s too good of a deal. and this is the number one thing founders don’t understand: VCs don’t want a “deal”. Like if the price is too good it begets even more questions like why is the price not high. It’s weird but it’s true. there’s no science here.. but be prepared to come up with a resemblance of a plan on why you’re raising that much. \n\n> ok on numbers, no established good lead VC fund will do under 10% dilution. so don’t even ask? obviously there are exceptions and if you have insane leverage go for it. but generally the floor is set since someone is showing how this returns the fund. on valuation, never compare on what your competitor got. it’s the single best way to tank the deal. you have no idea how that deal got done but it’s good to have as a comp. \n\n> don’t lie. the valley and NY especially is insanely small. if you tell them you have a term sheet from someone, it’s literally a text away. it’s a co-opetition so everyone talks to everyone. this is why all decks leak and news spreads like wildfire. and this is why don’t share anything you don’t want to be shared. even if it’s not shared by an upstanding VC, another one will. \n\n> vibes are really important. be you? showcase what you’re excited by and highlight where you need help (we thrive on helping). you can play the silly game of trying to neg and act like someone you’re not - but trust me it works far less then you can think. hype can buy you eyeballs and attention but it’s not the end all be all. \n\n> finally, this is the most consensus market I’ve seen in a while. so if you’re not in a hot sector, strap in. share what makes you a great contrarian bet. everyone is looking to balance their portfolio so you never know where you find champions even if you strike out of the top 100. goes without saying figure out the default alive path. \n\nGood luck to all - and obligatory if you’re raising a seed or series A round - I’d love to meet IRL!\n\n好了，8 月融资季到了（我这周收到了 9 个引荐），所以来一波脑内倾倒，讲点 VC 通常不会直接告诉你的事……\n\n> 你在一家 VC 机构里先跟谁聊、通过谁拿到引荐，真的很重要。associate 和 principal 当然也可能很好，我是认真的，但你得看他们最近投过什么，判断他们手里到底有没有杠杆、在公司里是什么位置。新来的、刚做成几笔不错交易、又懂你赛道的，可以聊；不然他可能自己都快出局了。最好也给他们找 warm intro。尽快判断这家基金到底真感兴趣，还是只是在客套。还有，一旦你在 CRM 里被分配给某个人，后面基本就绑死了。deal attribution 真的会打仗，我不是开玩笑。\n\n> 你还是得尽快接触 GP，或者那些真正有拍板权的 Partner（不是只有头衔的那种，下面有例外）。冷邮件也不是不能发，但尽量找 warm intro。angel 很适合帮这个忙，最好是他们已经投过的创始人来介绍。有了这种引荐，他们甚至会飞过来见你，日程都能给你腾掉，通常也不会再把你转回 associate。\n\n> 真到融资数字这里就开始拧巴了。你要太多，除非你是 Elon，不然别人会怀疑你；你要太少，又显得不够有野心。稀释太少，对他们不值得；稀释太多，又好得可疑。创始人最容易没搞明白的一点是：VC 并不想捡“便宜”。价格便宜过头，反而会让他们追问，为什么价格不高？很怪，但就是这样。这里没什么精确科学，但你最好至少能讲出一个像样的理由，说明为什么你要融这么多。\n\n> 再说几个硬数字。靠谱、成熟、愿意 lead 的 VC，一般不会做低于 10% 稀释的案子，所以别一上来就提这种要求。当然也有例外，你要是筹码爆棚，那就另说。但通常底线就在那儿，因为他们得能讲清楚这笔投资怎么回报基金。还有估值，千万别拿竞争对手融了多少来硬比，这是最快把 deal 搞黄的方式。你根本不知道人家那单是怎么做成的，最多把它当个参考。\n\n> 别撒谎。尤其在湾区和纽约，这圈子小得离谱。你说自己拿到谁的 term sheet，别人发条短信就能核实。这里本来就是竞合关系，大家都在互相聊天。这也是为什么 deck 会到处泄露，消息会传得飞快。所以，不想外流的东西就别发。就算眼前这个 VC 很正派，另一个也未必。\n\n> 气场真的重要。做你自己，讲清楚你兴奋的点，也把你需要帮助的地方摊出来（我们就喜欢在这块发力）。你当然也可以玩那种故作姿态、假装自己是谁谁谁的游戏，但说真的，效果远没你想的那么大。热度能帮你拿到注意力，但它不是全部。\n\n> 最后一句：这是我这几年见过最共识化的市场之一。如果你不在热点赛道，先系好安全带。你得讲清楚，为什么你是一个值得押注的逆向选择。大家都在平衡自己的投资组合，所以就算前 100 家都没成，也别觉得彻底没戏。还有一句不用我多说：把 default alive 的路径先想明白。\n\n祝各位好运。按惯例补一句，如果你正在融 seed 或 series A，我很愿意见面聊！",
+            "source_links": [
+              "https://x.com/nikunj/status/2085382457457828153"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-06T17:40:37.000Z",
+        "sections": [
+          {
+            "headline": "Dan Shipper posts an **Axios** appearance · Dan Shipper 晒出自己上了 **Axios**",
+            "body": "your boy made it into @axios today! \n\nhttps://t.co/dIHwkhHsnj https://t.co/7ow1PpmC0V https://t.co/uOMt3xM0cg\n\n你们这位老兄今天上了 @axios！\n\nhttps://t.co/dIHwkhHsnj https://t.co/7ow1PpmC0V https://t.co/uOMt3xM0cg",
+            "source_links": [
+              "https://x.com/danshipper/status/2085420793400316270"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPDnKPUWIAAG57F.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2085420793400316270/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/danshipper/status/2085048990899315142",
+                "resolvedUrl": "https://x.com/danshipper/status/2085048990899315142",
+                "authorName": "Dan Shipper 📧",
+                "authorHandle": "danshipper",
+                "authorUrl": "https://x.com/danshipper",
+                "text": "Tea leaves:\n\nIn order to be competitive today Google needs to catch up on frontier coding.\n\nDemis believes different fundamental research directions (like world models) are more important to his long term goal even if they’re less impt competitively today",
+                "displayDate": "Aug 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "一些迹象： Google 如果想在今天保持竞争力，就需要在前沿编程能力上追上来。 Demis 认为，不同的基础研究方向（比如世界模型）对他的长期目标更重要，即使它们在当下的竞争层面没那么重要。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/dIHwkhHsnj",
+                "resolvedUrl": "https://www.axios.com/2026/08/06/googles-ai-leadership-shuffle"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/7ow1PpmC0V",
+                "resolvedUrl": "https://x.com/danshipper/status/2085420793400316270/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPDnKPUWIAAG57F.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/uOMt3xM0cg",
+                "resolvedUrl": "https://x.com/danshipper/status/2085048990899315142"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "SPC Partner",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-06T13:56:41.000Z",
+        "sections": [
+          {
+            "headline": "A short **SPC** signal post · 一条很短的 **SPC** 帖子",
+            "body": "@spc https://t.co/xWaXyqC7Rj\n\n@spc https://t.co/xWaXyqC7Rj",
+            "source_links": [
+              "https://x.com/adityaag/status/2085364438845022389"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/xWaXyqC7Rj",
+                "resolvedUrl": "https://www.southparkcommons.com/apply"
+              }
+            ]
+          },
+          {
+            "headline": "He says it’s a good day to apply to **SPC** · 他说今天很适合申请 **SPC**",
+            "body": "A good day to apply to @spc https://t.co/shHNhfaqmI https://t.co/K6ditqKJrd\n\n今天是申请 @spc 的好日子 https://t.co/shHNhfaqmI https://t.co/K6ditqKJrd",
+            "source_links": [
+              "https://x.com/adityaag/status/2085364323707150758"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/shHNhfaqmI",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2085364169860108288/img/HkPGfoI15Zcp_QFJ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2085364323707150758/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/adityaag/status/2085034980866998632",
+                "resolvedUrl": "https://x.com/adityaag/status/2085034980866998632",
+                "authorName": "Aditya Agarwal",
+                "authorHandle": "adityaag",
+                "authorUrl": "https://x.com/adityaag",
+                "text": "Today we’re announcing SPC Fund IV: $575M to help founders find their life’s work.\n\nA decade of guiding founders through -1 to 0 brings @SPC to $2B in AUM and, more importantly, a 1200 member community of the world’s most talented technologists. We strongly believe that:\n\n→ The",
+                "displayDate": "Aug 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HO-Fn3AXYAEf137.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/adityaag/status/2085034980866998632/photo/1"
+                  }
+                ],
+                "textZh": "今天我们宣布推出 SPC Fund IV：5.75 亿美元，用来帮助创始人找到他们一生真正想做的事业。 十年来，我们一直陪伴创始人走过从 -1 到 0 的过程，这让 @SPC 的资管规模来到 20 亿美元。更重要的是，我们建立了一个由 1200 名全球最有才华的技术人组成的社区。我们坚信： → 这"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/shHNhfaqmI",
+                "resolvedUrl": "https://x.com/adityaag/status/2085364323707150758/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2085364169860108288/img/HkPGfoI15Zcp_QFJ.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/K6ditqKJrd",
+                "resolvedUrl": "https://x.com/adityaag/status/2085034980866998632"
+              }
+            ]
+          },
+          {
+            "headline": "Pride in **GoodfireAI** being born at **SPC** · 他为 **GoodfireAI** 出生在 **SPC** 感到骄傲",
+            "body": "I have learnt an incredible amount from Tom and I could not be more proud that @GoodfireAI was born at SPC. https://t.co/xGc6ckx5PO\n\n我从 Tom 身上学到了非常多，而 **@GoodfireAI** 诞生在 **SPC**，这件事也让我格外骄傲。 https://t.co/xGc6ckx5PO",
+            "source_links": [
+              "https://x.com/adityaag/status/2085315202237546603"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/banburismus_/status/2085045728871956975",
+                "resolvedUrl": "https://x.com/banburismus_/status/2085045728871956975",
+                "authorName": "Tom McGrath",
+                "authorHandle": "banburismus_",
+                "authorUrl": "https://x.com/banburismus_",
+                "text": "SPC was a really special place for me, delighted to see they’ve raised a new fund - there’s nowhere like it",
+                "displayDate": "Aug 5",
+                "provider": "X",
+                "media": [],
+                "textZh": "SPC 对我来说真的是一个非常特别的地方，很高兴看到他们又募了一支新基金，没有任何地方能像它这样。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/xGc6ckx5PO",
+                "resolvedUrl": "https://x.com/banburismus_/status/2085045728871956975"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-06T19:56:24.000Z",
+        "sections": [
+          {
+            "headline": "**GPT-5.6 Sol** improves in chat; free users get unlimited text chat · **GPT-5.6 Sol** 聊天更强，免费用户开放无限文本聊天",
+            "body": "5.6 Sol much better in chat now\n\nand unlimited text chat for free users! https://t.co/zgqGqI9qfR\n\n5.6 Sol 现在在聊天里强了很多。\n\n而且免费用户也有无限文本聊天了！ https://t.co/zgqGqI9qfR",
+            "source_links": [
+              "https://x.com/sama/status/2085454964814753990"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/zgqGqI9qfR",
+                "resolvedUrl": "https://t.co/zgqGqI9qfR"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-07T03:08:54.000Z",
+        "sections": [
+          {
+            "headline": "**Claude Fable 5** cuts biology false positives while keeping hard guardrails · **Claude Fable 5** 下调生物领域误杀，同时保留硬护栏",
+            "body": "We’re updating Claude Fable 5’s biology safeguards to reduce false positives. In our testing, this update reduced biology-related fallbacks by about 85% across our product surfaces.\n\nFable can now assist on a wider range of everyday health and educational questions.\n\nWe believe the biggest positive impacts of AI will be in biology and medicine, and we’re committed to putting frontier intelligence safely into the hands of as many researchers as possible. Fable will continue to fallback to Opus 5 for requests we consider dual-use—including virology, toxicology, and molecular design—so it isn't yet usable for professional biology research and drug development.\n\nWe're committed to closing that gap through trusted access pathways for frontier biology capabilities.\n\nhttps://t.co/zbjxPhc909\n\n我们正在更新 **Claude Fable 5** 的生物安全防护，以减少误判。在测试里，这次更新让我们产品各处与生物相关的 fallback 大约下降了 85%。\n\n现在，**Fable** 可以处理更广范围的日常健康和教育类问题。\n\n我们认为，AI 最大的正面影响会出现在生物和医学领域，我们也在努力把前沿智能以安全方式交到尽可能多研究者手里。对于我们认定为双重用途的请求，包括病毒学、毒理学和分子设计，**Fable** 仍会回退到 **Opus 5**，所以它目前还不适合专业生物研究和药物开发。\n\n我们会继续通过受信任的访问路径来补上这段能力差距。\n\nhttps://t.co/zbjxPhc909",
+            "source_links": [
+              "https://x.com/claudeai/status/2085563808773189680"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/zbjxPhc909",
+                "resolvedUrl": "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-07",
+    "updatedAt": "2026-08-07T12:05:15.600Z",
+    "commit": {
+      "sha": "3e075f994236b594059e5887a7daa8557c6c87f9",
+      "committedAt": "2026-08-07T06:43:16Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-07T12:00:14.952Z",
+    "feedGeneratedAt": "2026-08-07T06:42:39.266Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
