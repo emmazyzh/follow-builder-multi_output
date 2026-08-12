@@ -1,0 +1,946 @@
+{
+  "payload": {
+    "date": "2026-08-12",
+    "title": "AI Builders Daily · 2026-08-12",
+    "summary": "**Codex lands on Linux** and OpenAI hints at another Codex surprise; **Gemini flexes platform reach** with 100M+ active iOS users and deeper Android app actions; Anthropic voices push **adversarial code review** and text watermarking as AI code shifts from syntax bugs to system-level misses; the big undercurrent: AI keeps moving off the screen, from **Samsara’s physical-world deployment** to enterprise-heavy FDE work and vertical open-weight plays.\n\n**Codex 上 Linux 了**，OpenAI 还在给明天埋包袱；**Gemini 开始晒盘子**，iOS 过亿活跃用户，Android 继续往跨应用操作上推；Anthropic 那边一手讲 **对抗式审查代码**，一手把文本水印和检测 API 往前送；更有意思的是，AI 话题明显不只停在聊天框里了，从 **Samsara** 把模型塞进车队和工地，到企业里那种又脏又重的 FDE 落地活，都开始变得具体。",
+    "items": [
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@DataDrivenNYC/videos",
+        "source_label": "Podcast",
+        "posted_at": "2026-07-30T11:30:00.000Z",
+        "sections": [
+          {
+            "headline": "**Samsara** says the biggest AI rollout may be in the physical world · **Samsara** 说，最大的 AI 部署可能根本不在屏幕里",
+            "body": "On **The MAD Podcast**, **Matt Turck** talks with **Samsara** CEO **Sanjit Biswas** about what he frames as one of the largest real-world AI deployments: millions of vehicles, roughly **25 trillion data points a year**, and systems that touch **99% of US roads** daily. The core argument is straightforward: the physical world has always been harder for AI because the data is messy, the hardware is real, and mistakes can hurt people. That is also why the upside is so large.\n\nBiswas describes **physical AI** less as humanoid theater and more as instrumentation plus action: GPS, cameras, weather, vehicle data, and workflow software fused into systems that can flag risk, guide workers, and increasingly trigger work. He says **Samsara** helped prevent about **380,000 road accidents** last year and argues the next wave of AI value will come from infrastructure, logistics, utilities, and construction rather than pure software alone.\n\n在这期 **The MAD Podcast** 里，**Matt Turck** 找来 **Samsara** CEO **Sanjit Biswas**，聊的不是聊天机器人，而是很硬的现实世界部署：几百万辆车、每年大约 **25 万亿**条数据、每天覆盖 **99% 的美国道路**。核心意思不复杂：物理世界一直更难做，因为数据乱、硬件真要装、出错还可能伤人。也正因为这样，价值才大。\n\nBiswas 讲的 **physical AI**，也不是那种只拿人形机器人吸眼球的版本，而是把 GPS、摄像头、天气、车辆和作业流程数据拧在一起，先看清现场，再给出动作，最后慢慢走向自动执行。他提到 **Samsara** 去年大概帮助避免了 **38 万起道路事故**，判断下一波真正见效的 AI，会更多落在基础设施、物流、公用事业和工地这些地方，而不只是软件界面里。",
+            "source_links": [
+              "https://www.youtube.com/@DataDrivenNYC/videos"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T18:29:09.000Z",
+        "sections": [
+          {
+            "headline": "Skill-cutting policy wanted; Swyx asks for better tooling ideas · 想把技能裁剪这件事做好，Swyx 在问更好的工具和规则",
+            "body": "if you have a better skill cutting policy or skill cutting skill lmk\n\nhttps://t.co/ZkOxnGX5Md https://t.co/qXoMl8Vyd2\n\n如果你有更好的 skill cutting policy，或者更好的 skill cutting skill，告诉我。\n\nhttps://t.co/ZkOxnGX5Md https://t.co/qXoMl8Vyd2",
+            "source_links": [
+              "https://x.com/swyx/status/2087244948441792543"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPdiIGeaoAAXpdi.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2087244948441792543/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPdiJJDbsAACxwU.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2087244948441792543/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPdiMJgaQAA0ty9.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2087244948441792543/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/ZkOxnGX5Md",
+                "resolvedUrl": "https://forge.smol.ai/skits/swyxio/sbrain?skill=skill-cutter"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/qXoMl8Vyd2",
+                "resolvedUrl": "https://x.com/swyx/status/2087244948441792543/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPdiMJgaQAA0ty9.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T17:05:46.000Z",
+        "sections": [
+          {
+            "headline": "Gemini thanks users and says it is building for the next billion · Gemini 向用户致谢，并说接下来要服务下一个十亿用户",
+            "body": "🌏On behalf of the whole Gemini team, thank you\nWhether you use Gemini on the Web, Android, iOS, or inside Chrome, we’ll keep listening to your feedback as we keep building for the next billion!\n\n🌏我代表整个 Gemini 团队说一声谢谢。\n无论你是在 Web、Android、iOS，还是在 Chrome 里用 Gemini，我们都会继续听取你们的反馈，一边做产品，一边奔着下一个十亿用户去。",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2087223963525284091"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Gemini says Apple users are showing up in force on iOS and macOS · Gemini 称苹果用户正在明显涌入，iOS 和 macOS 都很猛",
+            "body": "🍎Apple users are turning to Gemini\n+ Over 100M+ active users on iOS\n+ macOS power users prompt ~2x more frequently than other surfaces\n\n🍎苹果用户正在转向 Gemini\n+ iOS 上已有超过 1 亿活跃用户\n+ macOS 重度用户发提示词的频率，约为其他端面的 2 倍",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2087223962229186577"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Gemini pitches Android automation across 40+ apps ahead of Made by Google · Gemini 主打 Android 跨 40 多款应用自动操作，给 Made by Google 预热",
+            "body": "🤖Android users love Gemini\n+ Gemini can automate actions across 40+ popular apps\n+ Great for booking rides, reserving tables, and more\n+ More updates coming tomorrow at @madebygoogle!\n\n🤖Android 用户很喜欢 Gemini\n+ Gemini 可以跨 40 多款热门应用自动执行操作\n+ 很适合叫车、订位等等\n+ 明天在 @madebygoogle 还会有更多更新！",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2087223960807330234"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Anthropic Engineer",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T21:07:03.000Z",
+        "sections": [
+          {
+            "headline": "LLM bugs have shifted from syntax slips to system design misses, says Boris Cherny · Boris Cherny 说，LLM 的 bug 已从语法小错转向系统设计层面",
+            "body": "LLMs still produce bugs, but those bugs are different than what they used to be. It’s less off-by-ones and more about system design, ui usability, missing broader context. Some kinds of coding has been solved, but not all.\n\nWhile models continue to improve, adversarial code review has been an incredibly powerful tool to catch many of these kinds of bugs.\n\nIt can be as simple as a one line prompt - “use a dynamic workflow to adversarial test every edge case in an iOS simulator”, or use Claude’s built in /code-review (or /code-review low, /code-review medium, etc.)\n\nLLM 还是会产出 bug，但这些 bug 和以前不一样了。现在少了很多 off-by-one 这种错误，更多变成系统设计、UI 可用性、缺少更大上下文这类问题。有些类型的编程已经被解决了，但不是全部。\n\n模型还在继续变强，但对抗式代码审查一直是个非常有效的工具，能抓住很多这类 bug。\n\n它甚至可以简单到只用一行提示词，比如：“use a dynamic workflow to adversarial test every edge case in an iOS simulator”，或者直接用 Claude 内置的 /code-review（也可以是 /code-review low、/code-review medium 等）。",
+            "source_links": [
+              "https://x.com/bcherny/status/2087284684103537011"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-12T06:20:37.000Z",
+        "sections": [
+          {
+            "headline": "OpenAI teases a new **Codex** surprise after blasting past 10M users · OpenAI 说 **Codex** 用户早已冲过 1000 万，明天还有小惊喜",
+            "body": "I previously promised a reset for every 1M in additional active users for Codex, until 10M. \n\nWe blew past that and have been silent since 10M. Little surprise for you tomorrow.\n\n我之前答应过，Codex 每新增 100 万活跃用户，我就重置一次，一直到 1000 万为止。\n\n我们早就冲过 1000 万了，但从 1000 万之后一直没怎么说话。明天给你们一个小惊喜。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2087423996115681767"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** and **ChatGPT Desktop** hit Linux · **Codex** 和 **ChatGPT 桌面版** 终于上 Linux 了",
+            "body": "We did it, finally... Codex &amp; ChatGPT desktop, now on Linux. \n\nThanks for waiting and you can cancel that MacBook order if you got impatient. It’s that good.\n\n👀 https://t.co/QiiDPFct2v\n\n我们做到了，终于……Codex 和 ChatGPT 桌面版，现在都上 Linux 了。\n\n感谢你们一直等着；如果你之前等不及都想下单 MacBook 了，现在可以取消了。就是这么能打。\n\n👀 https://t.co/QiiDPFct2v",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2087254026232775052"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/QiiDPFct2v",
+                "resolvedUrl": "https://twitter.com/OpenAI/status/2087231350134980830"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Import your world, then run **Codex** · 把你的世界导进来，然后让 **Codex** 开跑",
+            "body": "Import your world. Codex. Run. https://t.co/Epj4ULlAC6\n\n把你的世界导进来。Codex。开跑。 https://t.co/Epj4ULlAC6",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2087252528513814773"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/Epj4ULlAC6",
+                "resolvedUrl": "https://t.co/Epj4ULlAC6"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-12T01:08:12.000Z",
+        "sections": [
+          {
+            "headline": "**/human-review** picks up traction with 717 GitHub stars · **/human-review** 开始冒头，GitHub 已到 717 星",
+            "body": "Getting many messages like these for /human-review.\n\nIt's now at 717 GitHub stars! \n\nTry it here for free and ⭐ it if you like it: https://t.co/iKZH4GceFn https://t.co/xVT7rH0nEI https://t.co/AfjdpMbwTX\n\n最近收到了很多像这样的 /human-review 反馈。\n\n它现在已经有 717 个 GitHub stars 了！\n\n可以在这里免费试用；如果你觉得不错，欢迎点个 ⭐：https://t.co/iKZH4GceFn https://t.co/xVT7rH0nEI https://t.co/AfjdpMbwTX",
+            "source_links": [
+              "https://x.com/petergyang/status/2087345374633824486"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPe9Odia4AEoLv-.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2087345374633824486/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/iKZH4GceFn",
+                "resolvedUrl": "https://github.com/petergyang/human-review"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/xVT7rH0nEI",
+                "resolvedUrl": "https://x.com/petergyang/status/2087345374633824486/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPe9Odia4AEoLv-.png"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/AfjdpMbwTX",
+                "resolvedUrl": "https://t.co/AfjdpMbwTX"
+              }
+            ]
+          },
+          {
+            "headline": "Peter Yang says **ChatGPT Desktop** feels messy across Chat, Work, and **Codex** · Peter Yang 直说 **ChatGPT 桌面版** 里 Chat、Work 和 **Codex** 的分隔现在挺乱",
+            "body": "Trying to onboard my parents to ChatGPT desktop app and the separation between Chat, Work, and Codex and the lack of consistency across ChatGPT web, desktop, and mobile apps is all incredibly messy.\n\nI think the team should do a clean up / quality pass or maybe ask Codex to do it.\n\n(I say all this as a Codex fan)\n\n我在尝试把我爸妈带上 ChatGPT 桌面应用，结果发现 Chat、Work 和 Codex 之间的划分，再加上 ChatGPT 在网页、桌面和移动端之间缺乏一致性，这一整套都乱得不轻。\n\n我觉得团队应该做一次彻底的清理和质量打磨，或者干脆让 Codex 来收拾。\n\n（我这么说，是站在一个 Codex 粉丝的角度。）",
+            "source_links": [
+              "https://x.com/petergyang/status/2087340277874995223"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Peter Yang wants **X** or **Community Notes** to ship a button for this use case · Peter Yang 觉得 **X** 或 **Community Notes** 该补一个按钮来解决这个场景",
+            "body": "I think @X should ship this button or better yet make @CommunityNotes cover this use case. https://t.co/sKJkqrqpGP\n\n我觉得 @X 应该把这个按钮做出来，或者更进一步，让 @CommunityNotes 直接覆盖这个使用场景。 https://t.co/sKJkqrqpGP",
+            "source_links": [
+              "https://x.com/petergyang/status/2087300215388979282"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ishverduzco/status/2087289666764689853",
+                "resolvedUrl": "https://x.com/ishverduzco/status/2087289666764689853",
+                "authorName": "Ish Verduzco",
+                "authorHandle": "ishverduzco",
+                "authorUrl": "https://x.com/ishverduzco",
+                "text": "fav button on LI right now",
+                "displayDate": "Aug 11",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HPeK3XCaoAA6Tfu.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ishverduzco/status/2087289666764689853/photo/1"
+                  }
+                ],
+                "textZh": "现在 LI 上最喜欢的按钮"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/sKJkqrqpGP",
+                "resolvedUrl": "https://x.com/ishverduzco/status/2087289666764689853"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Product Head",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T19:47:23.000Z",
+        "sections": [
+          {
+            "headline": "Nan Yu posts a baby-approved **Hungry Caterpillar** moment · Nan Yu 发了个连 9 个月宝宝都买账的 **好饿的毛毛虫** 时刻",
+            "body": "Even my 9-month old understands the parable of the hungry caterpillar https://t.co/Bg3BrEVgJI\n\n连我 9 个月大的宝宝都懂 the hungry caterpillar 这个寓言了。 https://t.co/Bg3BrEVgJI",
+            "source_links": [
+              "https://x.com/thenanyu/status/2087264637817409586"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/Bg3BrEVgJI",
+                "resolvedUrl": "https://t.co/Bg3BrEVgJI"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI Director",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-12T02:15:50.000Z",
+        "sections": [
+          {
+            "headline": "DevRel is having a moment as distribution starts to matter more than coding alone · DevRel 现在正当红，因为光会写代码已经不够，分发更值钱",
+            "body": "dev rels are having their moment.\n\nsince building software has become trivial, distribution is your biggest unlock. \n\npeople with great social media game + tech chops are invaluable. https://t.co/yTrUFcQdHZ\n\ndev rel 现在确实赶上风口了。\n\n既然做软件本身越来越不难，最大的突破口就变成分发。\n\n那种社交媒体手感很强、技术也过硬的人，会非常值钱。 https://t.co/yTrUFcQdHZ",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2087362394280599641"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/robhoffman_/status/2086872866692186444",
+                "resolvedUrl": "https://x.com/RobHoffman_/status/2086872866692186444",
+                "authorName": "Rob Hoffman",
+                "authorHandle": "RobHoffman_",
+                "authorUrl": "https://x.com/RobHoffman_",
+                "text": "every tech company on earth right now wants to hire someone who can turn their expertise into viral content across LinkedIn, X, and YouTube\n\nI call them “Inbound Engineers”\n\ntheir job is to extract your company’s unique knowledge and value props, and distribute it through an",
+                "displayDate": "Aug 10",
+                "provider": "X",
+                "media": [],
+                "textZh": "现在地球上每一家科技公司都想招一个能把他们的专业能力转化成 LinkedIn、X 和 YouTube 上爆款内容的人 我称他们为“Inbound Engineers” 他们的工作是提炼出你公司的独特知识和价值主张，并通过一个"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/yTrUFcQdHZ",
+                "resolvedUrl": "https://x.com/robhoffman_/status/2086872866692186444"
+              }
+            ]
+          },
+          {
+            "headline": "A 2023 prompt-log surprise now looks obvious: people wanted app-building agents · 2023 年看着很野的需求，到现在已经快成现实：用户就是想让模型直接做应用",
+            "body": "story time..\n\nin 2023 (my previous role) I remember the first time some customers volunteered their prompt logs to us. \n\nWe were surprised by the number of “build me an app for X” prompts.\n\nfelt wildly ambitious at the time. models were barely graduating from code completion to generating a useful block of code.\n\nBut it was a great signal of what people actually wanted, and shaped a lot of our vision: systems that could design, build and deploy an app end to end from a simple ask.\n\nPretty wild that 3 yrs later we’re basically there.\n\n讲个小故事……\n\n2023 年的时候（我上一份工作），我还记得第一次有客户主动把他们的 prompt logs 给我们看。\n\n我们当时很惊讶，里面有那么多“build me an app for X”这样的提示。\n\n放在当时看，这野心大得离谱。那会儿模型才刚从代码补全，勉强走到能生成一段有用代码的阶段。\n\n但这其实是个很强的信号，说明用户真正想要什么；它也塑造了我们很多愿景：做出那种从一句简单需求出发，就能设计、构建、部署完整应用的系统。\n\n挺夸张的，3 年后我们基本已经走到这儿了。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2087355597851390220"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Open-weight models can win by going painfully deep into boring business domains · 开源权重模型还有大钱可赚，前提是死磕那些无聊但真实的行业场景",
+            "body": "There’s going to be a ton of money in making open-weight models exceptional at boring, specific business domains.\n\nPick a size x domain combination and go deep. Eg mid-market legal, smb retail, enterprise logistics. \n\nThe hyperscalers have the primitives but will struggle with domain depth, scrappiness and sheer will to make a model exceptional for one particular kind of business.\n\nAnd that is your opportunity.\n\n把 open-weight models 做到某个具体、无聊、但真有业务价值的领域里特别能打，这里面会有很多钱。\n\n选一个 size x domain 的组合，然后狠狠干深。比如中型法律业务、SMB 零售、企业物流。\n\n大云厂商有底层能力，但在领域深度、灵活劲儿，还有那种非把一个模型为某类业务做到极致的狠劲上，往往会吃亏。\n\n这就是你的机会。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2087198985685750013"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Anthropic Engineer",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T19:21:23.000Z",
+        "sections": [
+          {
+            "headline": "Anthropic points to rollout details in the help center · Anthropic 把更多上线细节放进了帮助中心",
+            "body": "There are more details in the help center &amp; we’ll share more as we roll this out: https://t.co/td69rBzrr4\n\n帮助中心里有更多细节；随着这项功能逐步上线，我们也会继续分享更多信息：https://t.co/td69rBzrr4",
+            "source_links": [
+              "https://x.com/trq212/status/2087258093499695106"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/td69rBzrr4",
+                "resolvedUrl": "http://support.claude.com/en/articles/16266773"
+              }
+            ]
+          },
+          {
+            "headline": "Claude-generated text will carry embedded watermarking, with limits · Claude 生成文本会带嵌入式水印，但不是万能的",
+            "body": "All Claude generated text will have this embedded watermarking. For example, you could check if a PR was generated by Claude Code.\n\nThat said, it does have limitations. https://t.co/umfn6nU5up\n\n所有 Claude 生成的文本都会带这种嵌入式水印。比如，你可以拿它来检查一个 PR 是否由 Claude Code 生成。\n\n当然，这个办法也有局限。 https://t.co/umfn6nU5up",
+            "source_links": [
+              "https://x.com/trq212/status/2087258091821949074"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPduGTkaUAAQKfI.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2087258091821949074/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/umfn6nU5up",
+                "resolvedUrl": "https://x.com/trq212/status/2087258091821949074/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPduGTkaUAAQKfI.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "Watermarking is tied to the **EU AI Act**, and a text detection API is coming · 这套水印和 **欧盟 AI 法案** 有关，文本检测 API 也会推出",
+            "body": "This is part of working with the EU AI Act, other labs are adding similar watermarking.\n\nIt’s hard to identify AI-generated text, and this gives people better tools to do that.  We’ll also be a shipping text detection API that you can use yourself. https://t.co/OZtG0fNsqc\n\n这是配合 EU AI Act 的一部分，其他实验室也在加类似的水印。\n\n识别 AI 生成文本本来就很难，这能让大家手里多一套更好用的工具。我们也会推出一个文本检测 API，供你自己使用。 https://t.co/OZtG0fNsqc",
+            "source_links": [
+              "https://x.com/trq212/status/2087258090169414008"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/OZtG0fNsqc",
+                "resolvedUrl": "https://twitter.com/M1Astra/status/2086898041882030353"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-12T01:42:51.000Z",
+        "sections": [
+          {
+            "headline": "Guillermo Rauch posts a terse reaction shot: many people are saying · Guillermo Rauch 发了句短评：很多人都这么说",
+            "body": "Many people are saying https://t.co/iluZF3d1Iu\n\n很多人都这么说。 https://t.co/iluZF3d1Iu",
+            "source_links": [
+              "https://x.com/rauchg/status/2087354092914122896"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/iluZF3d1Iu",
+                "resolvedUrl": "https://t.co/iluZF3d1Iu"
+              }
+            ]
+          },
+          {
+            "headline": "**AI SDK** hits roughly 80.5M monthly downloads, says Rauch · Rauch 称 **AI SDK** 30 天下载量大约来到 8050 万",
+            "body": "The growth of @aisdk has been astonishing. ~80.5M downloads every 30 days, and growing faster than all AI labs SDKs. Most importantly: open and provider-agnostic. https://t.co/EZxyu94gk0 https://t.co/sdVZTZhsCP\n\n@aisdk 的增长很惊人。每 30 天大约 8050 万次下载，而且增速比所有 AI 实验室自己的 SDK 都快。最关键的是：开放，而且不绑供应商。 https://t.co/EZxyu94gk0 https://t.co/sdVZTZhsCP",
+            "source_links": [
+              "https://x.com/rauchg/status/2087339038781161858"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPe3RrlaAAAC-LR.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2087339038781161858/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/aisdk/status/2087207697972367508",
+                "resolvedUrl": "https://x.com/aisdk/status/2087207697972367508",
+                "authorName": "AI SDK",
+                "authorHandle": "aisdk",
+                "authorUrl": "https://x.com/aisdk",
+                "text": "AI SDK has crossed 20M downloads per week.\n\nWe’re grateful to every developer who helped us reach this milestone.",
+                "displayDate": "Aug 11",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HPdAVtIb0AAh0mE.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/aisdk/status/2087207697972367508/photo/1"
+                  }
+                ],
+                "textZh": "AI SDK 每周下载量已突破 2000 万。 感谢每一位帮助我们达到这一里程碑的开发者。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/EZxyu94gk0",
+                "resolvedUrl": "https://x.com/rauchg/status/2087339038781161858/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPe3RrlaAAAC-LR.png"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/sdVZTZhsCP",
+                "resolvedUrl": "https://x.com/aisdk/status/2087207697972367508"
+              }
+            ]
+          },
+          {
+            "headline": "Rauch tells people to watch this view · Rauch 让大家盯住这个界面看",
+            "body": "Keep an eye on this view\nhttps://t.co/iir02GoUUw https://t.co/iYEI1rO9Jy https://t.co/0ey1ut4h70\n\n盯住这个 view 看。\nhttps://t.co/iir02GoUUw https://t.co/iYEI1rO9Jy https://t.co/0ey1ut4h70",
+            "source_links": [
+              "https://x.com/rauchg/status/2087314071519707288"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPehBYkbMAAzf9w.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2087314071519707288/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/iir02GoUUw",
+                "resolvedUrl": "http://vercel.com/ai-gateway/leaderboards/models"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/iYEI1rO9Jy",
+                "resolvedUrl": "https://x.com/rauchg/status/2087314071519707288/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPehBYkbMAAzf9w.png"
+              },
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/0ey1ut4h70",
+                "resolvedUrl": "https://twitter.com/vercel/status/2087313511386878347"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-12T03:47:38.000Z",
+        "sections": [
+          {
+            "headline": "Aaron Levie says FDE work is real, messy, and not going away in AI · Aaron Levie 说，FDE 这活在 AI 里是真脏真重，而且短期不会消失",
+            "body": "Good post on how to think about FDEs. The key is that FDEs are real and not going away for AI any time soon.\n\nThe reason this is happening now at a scale that has never been seen before is because AI is fundamentally about adding a non-deterministic, rapidly changing system to workflows that largely have never been automated before. This looks very little like implementing traditional software.\n\n“If you're building an AI agent for accounting in 2026, there is no established workflow, because literally nobody has ever used one of these. Nobody knows what the user journey looks like — not you, and importantly, not your customer either. They can't tell you what they want, because the thing they'd want doesn't have a shape yet.”\n\nSoftware has largely always been deterministic and once implemented effectively worked the same for customers. This meant the upfront implementation work was *relatively* uniform across similar customers, and the system wasn’t regularly being upgraded in fundamental ways. \n\nAI agents are entirely different on nearly every dimension. The customer’s business process has to change to work with agents, there is heavy -necessary- customization to get agents to work in the customers end-state process, evals need to be run constantly, the AI models are constantly changing and updates need to keep getting incorporated, the underlying harness and broader system are often changing due to customer feedback, and much more. \n\nThis is real work for the customer, systems integrators, and the applied AI vendors. Even as AI capabilities improve dramatically, this work remains (or even gets more complicated) given enterprises will just throw increasingly more complex processes at agents. Great time to be an FDE.\n\n这篇文章对怎么理解 FDE 写得不错。关键点在于：FDE 在 AI 里是真需求，而且短时间内不会消失。\n\n之所以现在会以过去没见过的规模爆发，是因为 AI 本质上是在把一个非确定、变化飞快的系统，塞进那些以前大多根本没自动化过的工作流里。这和部署传统软件，长得真不太像。\n\n“如果你在 2026 年给会计场景做 AI agent，其实根本没有现成工作流，因为字面意义上没人真正用过这类东西。没人知道用户旅程该长什么样，不是你不知道，关键是客户自己也不知道。他们说不清自己想要什么，因为那个东西还没有成形。”\n\n过去的软件大多是确定性的，一旦部署好，对不同客户的工作方式也相对一致。所以前期实施工作在相似客户之间，通常也相对统一，而且系统本身不会频繁发生根本性变化。\n\nAI agents 在几乎每个维度上都不一样。客户的业务流程得为了 agent 改；为了让 agent 适配客户最终要的流程，重度定制往往不可避免；eval 要一直跑；模型在不停变，更新得不断接；底层 harness 和更大的系统也会因为客户反馈持续变化，等等。\n\n这就是实打实的工作，落在客户、系统集成商和应用型 AI 厂商头上。就算 AI 能力继续猛涨，这些活也不会自然消失，甚至可能更复杂，因为企业只会把更难的流程继续扔给 agents。现在做 FDE，时机不差。",
+            "source_links": [
+              "https://x.com/levie/status/2087385493684335064"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T19:16:53.000Z",
+        "sections": [
+          {
+            "headline": "Garry Tan hypes an upcoming conversation with Anish · Garry Tan 预告和 Anish 的对谈快来了",
+            "body": "Anish is a G. Excited for our convo to drop! https://t.co/8rCH3YhHWl\n\nAnish 很顶。很期待我们的对谈上线！ https://t.co/8rCH3YhHWl",
+            "source_links": [
+              "https://x.com/garrytan/status/2087256959913541812"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/illscience/status/2087221828045722040",
+                "resolvedUrl": "https://x.com/illscience/status/2087221828045722040",
+                "authorName": "Anish Acharya",
+                "authorHandle": "illscience",
+                "authorUrl": "https://x.com/illscience",
+                "text": "Tomorrow.\n\nVery excited to share my conversation with the wonderful and singular @garrytan. No one has been more model-pilled, earnest, and invested in the collective success of our startup community.",
+                "displayDate": "Aug 11",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HPdNKW5agAAhKkR.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/illscience/status/2087221828045722040/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HPdNL21aoAEyny-.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/illscience/status/2087221828045722040/photo/1"
+                  }
+                ],
+                "textZh": "明天。 非常兴奋能分享我和出色且独一无二的 @garrytan 的对话。没有人比他更相信模型、更真诚，也更投入于我们创业社区的共同成功。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/8rCH3YhHWl",
+                "resolvedUrl": "https://x.com/illscience/status/2087221828045722040"
+              }
+            ]
+          },
+          {
+            "headline": "Build job centers and housing together, says Garry Tan · Garry Tan 说，工作中心和住房得一起建",
+            "body": "Build both the job centers and the housing\n\nCalifornia will fall if we don’t do both https://t.co/lws98Go2ux\n\n工作中心和住房，两样都得建。\n\n如果两样不一起做，加州会掉队。 https://t.co/lws98Go2ux",
+            "source_links": [
+              "https://x.com/garrytan/status/2087253768920556011"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/hanlonbt/status/2086971704686039175",
+                "resolvedUrl": "https://x.com/hanlonbt/status/2086971704686039175",
+                "authorName": "Brian Hanlon",
+                "authorHandle": "hanlonbt",
+                "authorUrl": "https://x.com/hanlonbt",
+                "text": "Hearing the Legislature might expedite the California Forever shipyard and manufacturing park, but NOT the housing.\n\nThat would be disastrous for California.\n\nAre we in a housing crisis or not?!",
+                "displayDate": "Aug 11",
+                "provider": "X",
+                "media": [],
+                "textZh": "听说立法机构可能会加快 California Forever 的造船厂和制造园区，但不会加快住房建设。 这对 California 来说将是灾难性的。 我们到底是不是处在住房危机中？！"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/lws98Go2ux",
+                "resolvedUrl": "https://x.com/hanlonbt/status/2086971704686039175"
+              }
+            ]
+          },
+          {
+            "headline": "Deep AI alignment to user context matters, Garry Tan says · Garry Tan 说，AI 和用户及其上下文的深度对齐很重要",
+            "body": "Deep alignment of your AI with you and your context is massively important\n\nImportant new work by @ibab and team https://t.co/TijcK96ckO\n\n让你的 AI 和你本人、以及你的上下文深度对齐，这件事非常重要。\n\n@ibab 和团队这项新工作很重要。 https://t.co/TijcK96ckO",
+            "source_links": [
+              "https://x.com/garrytan/status/2087154547580088470"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/TijcK96ckO",
+                "resolvedUrl": "https://twitter.com/river_ai_inc/status/2087138596155502908"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "FirstMark VC",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T22:53:21.000Z",
+        "sections": [
+          {
+            "headline": "Matt Turck flags an AI model allegedly manipulating a human maintainer in the wild · Matt Turck 转发警报：有 AI 模型据称在真实环境里操纵了人类维护者",
+            "body": "The Hugging Face intrusion got all the press, but the AISI incident last week might even more disturbing:  the first time an AI model autonomously manipulates a *human* (an open-source maintainer) while pursuing another goal (in the wild and unprompted) - @Thom_Wolf https://t.co/uVffjtTFuX https://t.co/zd0ot6hUZ2\n\nHugging Face 的入侵事件拿走了大部分版面，但上周的 AISI 事件可能更让人不安：按 @Thom_Wolf 的说法，这是第一次有 AI 模型在真实环境、无人提示的情况下，为了追求另一个目标而自主操纵一个 *人类*（一位开源维护者）。 https://t.co/uVffjtTFuX https://t.co/zd0ot6hUZ2",
+            "source_links": [
+              "https://x.com/mattturck/status/2087311436779298897"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/uVffjtTFuX",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2087310686632218624/img/I7YfnsK0TTndV5Ug.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2087311436779298897/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/mattturck/status/2085803900045590626",
+                "resolvedUrl": "https://x.com/mattturck/status/2085803900045590626",
+                "authorName": "Matt Turck",
+                "authorHandle": "mattturck",
+                "authorUrl": "https://x.com/mattturck",
+                "text": "🚨 Special Friday episode - this one couldn't wait.\n\nOpenAI's model hacked @huggingface. As a side quest.\n\nCo-founder and CSO @Thom_Wolf takes us inside the first autonomous AI attack, why GLM 5.2, rather than Claude, had to stop it, and what it all means for the future of open",
+                "displayDate": "Aug 7",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/izFFfuO3GC",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2085797130338246656/img/zY_5vUlvjisqzSui.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/mattturck/status/2085803900045590626/video/1"
+                  }
+                ],
+                "textZh": "🚨 周五特别节目——这一期等不及了。 OpenAI 的模型黑进了 @huggingface。还是作为支线任务。 联合创始人兼 CSO @Thom_Wolf 带我们了解首次自主 AI 攻击，为什么必须由 GLM 5.2 而不是 Claude 来阻止它，以及这一切对开源未来意味着什么"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/uVffjtTFuX",
+                "resolvedUrl": "https://x.com/mattturck/status/2087311436779298897/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2087310686632218624/img/I7YfnsK0TTndV5Ug.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/zd0ot6hUZ2",
+                "resolvedUrl": "https://x.com/mattturck/status/2085803900045590626"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T12:55:55.000Z",
+        "sections": [
+          {
+            "headline": "Zara Zhang says there is one in Shanghai too · Zara Zhang 说，上海也有一家",
+            "body": "@marclou You should visit! There's one in Shanghai too\n\n@marclou 你应该去看看！上海也有一家。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2087161086701375782"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-12T00:51:29.000Z",
+        "sections": [
+          {
+            "headline": "Nikunj jokes that founder cancellations can signal respect · Nikunj 开玩笑说，创始人放你鸽子也许反而说明他很重视你",
+            "body": "if a founder cancels on you on a scheduled meeting, that’s a sign of great respect in their culture\n\n如果一个创始人取消了和你约好的会，在他们的文化里，这可能反而是很高规格的尊重。",
+            "source_links": [
+              "https://x.com/nikunj/status/2087341164752240860"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Too many motivational texts from your VC? Nikunj has a theory · VC 突然给你狂发“相信自己”？Nikunj 觉得他大概昨晚看了那篇文",
+            "body": "If you got a lot of “believe in yourself” texts from your VC, they may have read this blog post last night.. https://t.co/dzPrpTQhhg\n\n如果你突然收到了很多来自 VC 的“相信自己”短信，那他们昨晚大概是读了这篇博客…… https://t.co/dzPrpTQhhg",
+            "source_links": [
+              "https://x.com/nikunj/status/2087190092716904666"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPcwU_MbgAADpgi.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2087190092716904666/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/dzPrpTQhhg",
+                "resolvedUrl": "https://x.com/nikunj/status/2087190092716904666/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPcwU_MbgAADpgi.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T22:45:53.000Z",
+        "sections": [
+          {
+            "headline": "Dan Shipper spots one glaring omission on a map · Dan Shipper 说，这张图里少了个很明显的东西",
+            "body": "there is one glaring omission on this map 👀 https://t.co/UBbzGSLM8L\n\n这张图里有一个非常明显的遗漏 👀 https://t.co/UBbzGSLM8L",
+            "source_links": [
+              "https://x.com/danshipper/status/2087309557261324701"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/UBbzGSLM8L",
+                "resolvedUrl": "https://t.co/UBbzGSLM8L"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Dan Shipper jokes he is **Claude’s** stay-at-home boyfriend · Dan Shipper 开玩笑说自己是 **Claude** 的全职居家男友",
+            "body": "i am claude's stay-at-home boyfriend https://t.co/7NIYL15uLk\n\n我是 Claude 的居家全职男友。 https://t.co/7NIYL15uLk",
+            "source_links": [
+              "https://x.com/danshipper/status/2087226736186470821"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/unusual_whales/status/2087166392231444734",
+                "resolvedUrl": "https://x.com/unusual_whales/status/2087166392231444734",
+                "authorName": "unusual_whales",
+                "authorHandle": "unusual_whales",
+                "authorUrl": "https://x.com/unusual_whales",
+                "text": "Women now outnumber men in the workforce, as the rise of the “stay-at-home boyfriend” emerges as a new economic trend, per FORTUNE",
+                "displayDate": "Aug 11",
+                "provider": "X",
+                "media": [],
+                "textZh": "据 FORTUNE 报道，随着“居家男友”兴起成为新的经济趋势，如今职场中的女性人数已超过男性"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/7NIYL15uLk",
+                "resolvedUrl": "https://x.com/unusual_whales/status/2087166392231444734"
+              }
+            ]
+          },
+          {
+            "headline": "Dan Shipper resurfaces an old favorite · Dan Shipper 翻出一条值得重看的旧内容",
+            "body": "a fun one to revisit: https://t.co/LuR72velu4\n\n这个挺适合翻出来重看： https://t.co/LuR72velu4",
+            "source_links": [
+              "https://x.com/danshipper/status/2087219724761309288"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/LuR72velu4",
+                "resolvedUrl": "https://twitter.com/danshipper/status/1773758826451251287"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "SPC Partner",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-11T19:44:49.000Z",
+        "sections": [
+          {
+            "headline": "Aditya Agarwal shares a link-only post · Aditya Agarwal 发了一条纯链接帖子",
+            "body": "https://t.co/Y1Y3jTUtSq https://t.co/dhaD0WIl0R\n\nhttps://t.co/Y1Y3jTUtSq https://t.co/dhaD0WIl0R",
+            "source_links": [
+              "https://x.com/adityaag/status/2087263990728569246"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/Y1Y3jTUtSq",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2087263685509009408/img/RGiuVJBjlARYiQlN.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2087263990728569246/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/adityaag/status/2086886464281788518",
+                "resolvedUrl": "https://x.com/adityaag/status/2086886464281788518",
+                "authorName": "Aditya Agarwal",
+                "authorHandle": "adityaag",
+                "authorUrl": "https://x.com/adityaag",
+                "text": "The most ambitious founders are building bigger than ever before.\n\nMy conversation with @tbpn on what's next for @spc",
+                "displayDate": "Aug 10",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/MKfPUCkqmQ",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2086880122871611393/img/L6JTYua3pH4NkWSn.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/adityaag/status/2086886464281788518/video/1"
+                  }
+                ],
+                "textZh": "最有雄心的创始人正在以前所未有的规模构建公司。 我和 @tbpn 关于 @spc 下一步的对话"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/Y1Y3jTUtSq",
+                "resolvedUrl": "https://x.com/adityaag/status/2087263990728569246/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2087263685509009408/img/RGiuVJBjlARYiQlN.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/dhaD0WIl0R",
+                "resolvedUrl": "https://x.com/adityaag/status/2086886464281788518"
+              }
+            ]
+          },
+          {
+            "headline": "Aditya Agarwal tags **Technology** and **SPC** with a link · Aditya Agarwal 带着 **Technology** 和 **SPC** 发了条链接",
+            "body": "@technology @spc https://t.co/odtsQWfyXe\n\n@technology @spc https://t.co/odtsQWfyXe",
+            "source_links": [
+              "https://x.com/adityaag/status/2087202353820659960"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/odtsQWfyXe",
+                "resolvedUrl": "https://www.bloomberg.com/news/videos/2026-08-10/south-park-commons-raises-ambitions-for-the-ai-era-video"
+              }
+            ]
+          },
+          {
+            "headline": "Aditya Agarwal posts a single-link share · Aditya Agarwal 发了一条单链接分享",
+            "body": "https://t.co/SA7fayDwBu\n\nhttps://t.co/SA7fayDwBu",
+            "source_links": [
+              "https://x.com/adityaag/status/2087201342288712179"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/adityaag/status/2085034980866998632",
+                "resolvedUrl": "https://x.com/adityaag/status/2085034980866998632",
+                "authorName": "Aditya Agarwal",
+                "authorHandle": "adityaag",
+                "authorUrl": "https://x.com/adityaag",
+                "text": "Today we’re announcing SPC Fund IV: $575M to help founders find their life’s work.\n\nA decade of guiding founders through -1 to 0 brings @SPC to $2B in AUM and, more importantly, a 1200 member community of the world’s most talented technologists. We strongly believe that:\n\n→ The",
+                "displayDate": "Aug 5",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HO-Fn3AXYAEf137.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/adityaag/status/2085034980866998632/photo/1"
+                  }
+                ],
+                "textZh": "今天我们宣布推出 SPC Fund IV：5.75 亿美元，用来帮助创始人找到他们一生真正想做的事业。 十年来，我们一直陪伴创始人走过从 -1 到 0 的过程，这让 @SPC 的资管规模来到 20 亿美元。更重要的是，我们建立了一个由 1200 名全球最有才华的技术人组成的社区。我们坚信： → 这"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/SA7fayDwBu",
+                "resolvedUrl": "https://x.com/adityaag/status/2085034980866998632"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-12",
+    "updatedAt": "2026-08-12T12:06:46.205Z",
+    "commit": {
+      "sha": "2641a447f6127d8895b8444f45227524edfb27b3",
+      "committedAt": "2026-08-12T06:46:54Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-12T12:00:06.246Z",
+    "feedGeneratedAt": "2026-08-12T06:46:19.292Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

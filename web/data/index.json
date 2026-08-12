@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-07T12:05:15.606Z",
-  "latestDate": "2026-08-07",
+  "updatedAt": "2026-08-12T12:06:46.215Z",
+  "latestDate": "2026-08-12",
   "dates": [
+    {
+      "date": "2026-08-12",
+      "title": "AI Builders Daily · 2026-08-12",
+      "summary": "**Codex lands on Linux** and OpenAI hints at another Codex surprise; **Gemini flexes platform reach** with 100M+ active iOS users and deeper Android app actions; Anthropic voices push **adversarial code review** and text watermarking as AI code shifts from syntax bugs to system-level misses; the big undercurrent: AI keeps moving off the screen, from **Samsara’s physical-world deployment** to enterprise-heavy FDE work and vertical open-weight plays.\n\n**Codex 上 Linux 了**，OpenAI 还在给明天埋包袱；**Gemini 开始晒盘子**，iOS 过亿活跃用户，Android 继续往跨应用操作上推；Anthropic 那边一手讲 **对抗式审查代码**，一手把文本水印和检测 API 往前送；更有意思的是，AI 话题明显不只停在聊天框里了，从 **Samsara** 把模型塞进车队和工地，到企业里那种又脏又重的 FDE 落地活，都开始变得具体。",
+      "itemCount": 17,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-12T12:06:46.212Z",
+      "commit": {
+        "sha": "2641a447f6127d8895b8444f45227524edfb27b3",
+        "committedAt": "2026-08-12T06:46:54Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-07",
       "title": "AI Builders Daily · 2026-08-07",
