@@ -1,0 +1,655 @@
+{
+  "payload": {
+    "date": "2026-08-16",
+    "title": "AI Builders Daily · 2026-08-16",
+    "summary": "**OpenAI pricing fight heats up**; product leaders keep dragging AI back to outcomes, UX, and distribution; builders are fixated on agents, social AI, and recursive workflows; under the noise, several posts quietly argue the moat is still execution, not hype.\n\n**OpenAI 的价格仗打得更凶了**；不少人把话题硬拽回结果、体验和分发；大家盯着代理、社交 AI、工作流自我迭代这些真问题；热闹归热闹，真正扎心的还是那句老话：护城河先看执行，别先看声量。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=dlI-5W7d7uU",
+        "source_label": "Podcast",
+        "posted_at": "2026-08-05T16:02:13.000Z",
+        "sections": [
+          {
+            "headline": "Why the next breakout AI app may be social-first, not solo-first · 下一波 AI 爆款，可能不是单机工具，而是社交产品",
+            "body": "Benchmark partner Sarah Tavel argues the biggest AI consumer wins still look like early infrastructure-led products: **ChatGPT** as the new **Google**, and **Character.AI** as a model-shaped product. Her core claim is that the stack is only now maturing enough for product-native founders to build truly differentiated experiences on top.\n\nShe thinks the next leap is not just better prompting or cleaner UI, but multiplayer behavior: user-generated communities, status dynamics, and network effects that make AI useful because other people are there. In that framing, today’s AI leaders may be early winners, not final category owners.\n\nBenchmark 合伙人 Sarah Tavel 的判断很直接：现在最成功的 AI 消费产品，本质上还像早期基础设施驱动的产品。**ChatGPT** 像当年的 **Google**，**Character.AI** 也是“模型即产品”的路子。她的重点不是唱衰谁，而是说底层还没完全稳，很多真正靠产品感觉拉开差距的机会，才刚开始露头。\n\n她更在意下一跳是不是“多人模式”而不是“更会提示词”。不是再做一个更顺手的聊天框，而是做出有人群、有人设、有人想参与的东西，有点像 UGC 社区加网络效应。照这个逻辑看，今天的头部产品当然强，但未必已经把终局写完。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=dlI-5W7d7uU"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "Latent Space Host",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X",
+        "posted_at": "2026-08-15T22:32:17.000Z",
+        "sections": [
+          {
+            "headline": "Top AI people often know less backstage than outsiders imagine · 顶级 AI 圈子并没外界想得那么“内场”",
+            "body": "in case you’re not living in the tech bubble, as a general rule i’ve been surprised by how infrequently top tier folks actually meet/know each other. as an outsider i might have assumed that everyone is in secret illuminati group chats. those exist, but are very much short lived exceptions rather than the rule. what you see of the major headlines is pretty much what they also see. i guess one way to interpret this is also simply that most effort is still on doing the work rather than working the narrative or the gossip. and that, to me at least, is genuinely quite reassuring, this far in to my career.\n\n如果你不在科技圈泡着，我这几年一个挺意外的感受是：顶级圈内人彼此其实没那么常见面、没那么熟。站在外面看，很容易以为大家都在什么秘密群里串消息。那种群当然有，但更多只是短命的例外，不是常态。大新闻里你看到的那些内容，他们看到的基本也差不多。我更愿意把这理解成：多数精力还是花在做事上，不是在经营叙事或者传八卦。至少对我来说，干到这个阶段，这点还挺让人安心的。",
+            "source_links": [
+              "https://x.com/swyx/status/2088755688361378082"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-08-16T05:52:40.000Z",
+        "sections": [
+          {
+            "headline": "Token prices are a trap if tokenizers differ · 分词方式不同，只看 token 单价就是错位比较",
+            "body": "On tokens and prices per token.\n\nI said I’d write more about this, so here goes: an OpenAI token != another model’s token. We compare AI prices in dollars per million tokens as if a token were a standardized unit, like a gram or a kilowatt-hour. It isn’t. Different models use and produce the exact same text using different numbers of tokens, which means a lower price per token does not necessarily mean a lower bill.\n\nImagine two identical pizzas. One is cut into 8 slices at $2 each. The other is cut into 16 slices at $1.25 each. The second place advertises cheaper slices, but the whole pizza costs $20 instead of $16. Bummer ... your stomach doesn't actually care about the number of slices you just ate.\n\nI know you are hungry now, but back to tokens. In one small comparison spanning English, technical, multilingual, and numerical text, the tokenizer we use for GPT-5.6 Sol used 766 tokens versus an estimated 1,170 for Claude Opus 5. That's a very significant difference of about 34.5% fewer tokens. You can get the same exact text, but pay for all those extra tokens. The price per token doesn't really tell this story.\n\nEven correcting for tokenizer differences misses the bigger point. What actually matters is price per successful outcome, and for that you can use benchmarks as a starting point, but really you have to try it and measure on your own use cases.\n\nThat's all. May the tokens flow.\n\n关于 token 和每个 token 的价格。\n\n我之前说过会多写一点，这里展开讲：**OpenAI** 的一个 token，并不等于另一家模型的一个 token。我们总爱用“每百万 token 多少钱”来比 AI 价格，好像 token 是克或者千瓦时那种标准单位。其实不是。不同模型在处理和生成完全相同的文本时，用掉的 token 数量可能完全不同，所以单个 token 更便宜，不代表总账单更便宜。\n\n想象两张一模一样的披萨。一张切成 8 片，每片 2 美元；另一张切成 16 片，每片 1.25 美元。后者宣传“每片更便宜”，但整张其实要 20 美元，不是 16 美元。问题就在这：你的胃根本不在乎你吃的是几片。\n\n说回 token。在一个覆盖英文、技术文本、多语种和数字内容的小样本对比里，我们给 **GPT-5.6 Sol** 用的 tokenizer 消耗了 766 个 token，而 **Claude Opus 5** 估算是 1,170 个。差距很大，大约少了 34.5%。同样一段文本，你可能只是因为多切了几刀，就多付了一笔钱。单看每个 token 的价格，根本看不出这层。\n\n但就算把 tokenizer 差异校正掉，也还没碰到重点。真正该看的，是“每个成功结果的成本”。基准测试可以拿来做起点，但最后还是得回到你自己的场景里亲手测。\n\n就这些。愿 token 顺流而下。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2088866513008873560"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP0iLIobAAAH8GM.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thsottiaux/status/2088866513008873560/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Why are companies still sticking with Opus over Sol? · 既然 **Sol** 更便宜，为什么公司还在用 **Opus**？",
+            "body": "If you have a company and still use Opus instead of Sol, why so? Does price not matter to you? What's something that would convince you to switch?\n\n如果你在公司里现在还是用 **Opus** 而不是 **Sol**，原因是什么？价格对你们不重要吗？要有什么条件，才会让你们愿意切过去？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2088850995430477882"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "OpenAI energy is running hot internally · **OpenAI** 内部状态很燃",
+            "body": "Incredible things are happening at OpenAI right now. Energy is high.\n\n**OpenAI** 现在正在发生一些很猛的事。团队的状态也很高。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2088725514542575903"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-08-15T23:42:27.000Z",
+        "sections": [
+          {
+            "headline": "If **Grok** owns **X**, why can’t it reliably use **X** data? · **Grok** 背靠 **X**，结果连 **X** 数据都没顺利用上？",
+            "body": "I am a fan of Grok Bot but @X is the #1 differentiated data source that it should  have access to and it doesn't seem to work? \n\nThe connector doesn't work and I can't even login to X on the cloud computer. \n\nAm I doing something wrong? https://t.co/O5OI9OhETb\n\n我其实挺喜欢 **Grok Bot**，但 **@X** 明明是它最该拿到、也最有差异化的数据源，结果现在看起来根本没跑通？\n\nconnector 不能用，我甚至连云端电脑里的 **X** 都登不上。\n\n是我哪一步弄错了吗？ https://t.co/O5OI9OhETb",
+            "source_links": [
+              "https://x.com/petergyang/status/2088773343629750535"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPzQJl-a4AAGzqI.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2088773343629750535/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPzQN8db0AAUBym.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2088773343629750535/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/O5OI9OhETb",
+                "resolvedUrl": "https://x.com/petergyang/status/2088773343629750535/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPzQN8db0AAUBym.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI in healthcare could dwarf everything else · AI 治病这条线，价值可能比别的加起来还大",
+            "body": "I 100% agree with Dario that using AI to cure diseases (and speeding up the regulatory approval of AI breakthroughs in healthcare) could bring 10x the benefit to humanity as everything else combined. https://t.co/1CkVwkyxtW\n\n我 100% 同意 Dario 的看法：如果用 AI 来治病，并且把医疗领域里那些 AI 突破的审批流程也提速，它给人类带来的好处，可能会是其他所有方向加起来的 10 倍。 https://t.co/1CkVwkyxtW",
+            "source_links": [
+              "https://x.com/petergyang/status/2088772605323214999"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/DarioAmodei/status/2088758819304443967",
+                "resolvedUrl": "https://x.com/DarioAmodei/status/2088758819304443967",
+                "authorName": "Dario Amodei",
+                "authorHandle": "DarioAmodei",
+                "authorUrl": "https://x.com/DarioAmodei",
+                "text": "2/2 Second, on the messaging around AI.  I do not agree that my messaging has been disproportionately negative.  In fact it has been about equally balanced between risks and benefits: I’ve written one major essay about each, and even in interviews where I discuss the risks, I",
+                "displayDate": "Aug 15",
+                "provider": "X",
+                "media": [],
+                "textZh": "2/2 第二，关于围绕 AI 的表述。我不同意说我的表述过于负面。事实上，它在风险和收益之间基本是平衡的：我分别写过一篇重要文章讨论两者，而且即使在谈到风险的采访中，我"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/1CkVwkyxtW",
+                "resolvedUrl": "https://x.com/darioamodei/status/2088758819304443967"
+              }
+            ]
+          },
+          {
+            "headline": "Codex-to-thumbnail workflow gets a creator-business spotlight · 用 **Codex** 做内容生意，这套缩略图工作流被点名了",
+            "body": "Tomorrow, I’m really excited to share a new episode with @rileybrown on how he uses Codex to run his entire content business.\n\nI particularly loved watching him demo how he creates YouTube thumbnails with AI:\n\n1. He uses Codex to find 100 top-performing thumbnails in his niche and add them to a Paper canvas.\n\n2. He uses Paper to mix and match those thumbnails with photos of himself until he creates something he’s happy with.\n\nHonestly, you have to watch the workflow to see how crazy it is.\n\n📌 Subscribe to get the full episode tomorrow: https://t.co/NSTj7ijxE0\n\n明天我会很兴奋地分享一期和 @rileybrown 的新节目，聊他怎么用 **Codex** 跑起自己的整个内容生意。\n\n我尤其喜欢看他演示怎么用 AI 做 **YouTube** 缩略图：\n\n1. 他先用 **Codex** 找出自己赛道里 100 张表现最好的缩略图，再把它们放进 **Paper** 画布里。\n\n2. 然后他在 **Paper** 里把这些缩略图和自己的照片来回拼搭，直到做出满意的版本。\n\n这套流程光靠文字说不清，真得看演示，才知道有多离谱。\n\n📌 订阅一下，明天就能看到完整节目： https://t.co/NSTj7ijxE0",
+            "source_links": [
+              "https://x.com/petergyang/status/2088626815166464507"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPxLBROaoAASWe6.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2088626815166464507/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/NSTj7ijxE0",
+                "resolvedUrl": "https://www.youtube.com/@PeterYangYT?sub_confirmation=1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Linear Head of Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-08-16T02:12:46.000Z",
+        "sections": [
+          {
+            "headline": "Ahead-of-their-time nostalgia hits product Twitter · 产品圈又开始回看“生不逢时”的老点子",
+            "body": "These two were ahead of their time https://t.co/adjYZkvCM1\n\n这两个当年确实走得太早了。 https://t.co/adjYZkvCM1",
+            "source_links": [
+              "https://x.com/thenanyu/status/2088811172090769461"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPzynAOWMAA5jGf.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thenanyu/status/2088811172090769461/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/adjYZkvCM1",
+                "resolvedUrl": "https://x.com/thenanyu/status/2088811172090769461/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPzynAOWMAA5jGf.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Dream workflow: talk in the park, let agents ship the software · 理想工作流：人在公园聊天，代理把软件做出来",
+            "body": "This is also my dream. I want to sit in a park all day and record content with the homies… and have a fleet of agents turn that content into actions and working software. https://t.co/V9SzxqFEnL\n\n这也是我的理想生活。我想整天坐在公园里，和朋友们录内容……再让一整队 agent 把这些内容变成行动，最后直接落成能跑的软件。 https://t.co/V9SzxqFEnL",
+            "source_links": [
+              "https://x.com/thenanyu/status/2088810666958196988"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/creatine_cycle/status/2088691959695380920",
+                "resolvedUrl": "https://x.com/creatine_cycle/status/2088691959695380920",
+                "authorName": "atlas",
+                "authorHandle": "creatine_cycle",
+                "authorUrl": "https://x.com/creatine_cycle",
+                "text": ".@signulll and i discussed the new american dream.\nthe american dream is no longer that anyone can achieve success through hard work and determination.\nthe new american dream is to sit in a park doing nothing all day and recording content",
+                "displayDate": "Aug 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/q7LWcjbaaG",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2088691847317340160/img/9ocv7gkYvKsa90_U.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/creatine_cycle/status/2088691959695380920/video/1"
+                  }
+                ],
+                "textZh": ".@signulll 和我讨论了新的美国梦。 美国梦不再是任何人都能通过努力和决心获得成功。 新的美国梦是整天坐在公园里什么都不做，然后录内容。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/V9SzxqFEnL",
+                "resolvedUrl": "https://x.com/creatine_cycle/status/2088691959695380920"
+              }
+            ]
+          },
+          {
+            "headline": "One-word moodboard: watches · 一个词的灵感板：手表",
+            "body": "Watches https://t.co/pbushpJPOH\n\n手表。 https://t.co/pbushpJPOH",
+            "source_links": [
+              "https://x.com/thenanyu/status/2088808413744558266"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/farazamiruddin/status/2088687353602994497",
+                "resolvedUrl": "https://x.com/farazamiruddin/status/2088687353602994497",
+                "authorName": "faraz 🏀",
+                "authorHandle": "farazamiruddin",
+                "authorUrl": "https://x.com/farazamiruddin",
+                "text": "people love to bash on tech bros for saving 70% of their income but honestly what are they supposed to spend their money on in Sunnyvale, CA",
+                "displayDate": "Aug 15",
+                "provider": "X",
+                "media": [],
+                "textZh": "人们喜欢嘲笑科技兄弟把收入的 70% 都存起来，但说真的，在加州 Sunnyvale 他们还能把钱花在哪儿呢"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/pbushpJPOH",
+                "resolvedUrl": "https://x.com/farazamiruddin/status/2088687353602994497"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI Director",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-08-15T19:33:00.000Z",
+        "sections": [
+          {
+            "headline": "AI removes the last excuse for terrible B2B UX · 有了 AI，B2B 软件再做烂体验就说不过去了",
+            "body": "There is no longer an excuse for B2B software to have such poor UX.\n\nThanks to AI, every software product can and should be as easy to use as the best consumer software.\n\nB2B 软件如果体验还这么差，已经没什么借口了。\n\n有了 AI，所有软件产品都可以，而且也应该，做到像最好的消费级软件一样容易上手。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2088710566689018103"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Anthropic Engineer",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-08-15T20:14:33.000Z",
+        "sections": [
+          {
+            "headline": "Artifact drop with no caption · 只丢链接，不加说明的作品投放",
+            "body": "https://t.co/KynBYnZeSi\n\nhttps://t.co/KynBYnZeSi",
+            "source_links": [
+              "https://x.com/trq212/status/2088721024825344289"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/KynBYnZeSi",
+                "resolvedUrl": "https://claude.ai/code/artifact/803916fd-3bc1-465f-8738-d4ece6fc5071"
+              }
+            ]
+          },
+          {
+            "headline": "Watermarking without quality loss still feels counterintuitive · 无损水印这件事，直觉上还是很反常",
+            "body": "Watermarking without quality loss is a bit unintuitive, doesn't feel like it should work.\n\nI made this artifact with Claude to help me understand how it works, sharing in case it's helpful. https://t.co/ALReoOH6tB https://t.co/hEPeCHgGRM\n\n无损加水印这件事有点反直觉，第一反应总觉得它不该成立。\n\n我用 **Claude** 做了这个 artifact，帮自己搞明白它到底怎么运作。顺手发出来，如果你也刚好有用。 https://t.co/ALReoOH6tB https://t.co/hEPeCHgGRM",
+            "source_links": [
+              "https://x.com/trq212/status/2088721023223132213"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/ALReoOH6tB",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2088720412805066752/img/bY26WoY7dt8xS48c.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2088721023223132213/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/AnthropicAI/status/2088343978873966687",
+                "resolvedUrl": "https://x.com/AnthropicAI/status/2088343978873966687",
+                "authorName": "Anthropic",
+                "authorHandle": "AnthropicAI",
+                "authorUrl": "https://x.com/AnthropicAI",
+                "text": "We’ve written an FAQ to answer some of the questions we've received about watermarking.\n\nIn summary:\n\n• We’re implementing watermarking to comply with the EU AI Act. Other major model developers have signed the same Code of Practice and will also be implementing watermarking;",
+                "displayDate": "Aug 14",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们写了一份 FAQ，回答大家关于水印的一些问题。 简而言之： • 我们正在实施水印，以遵守欧盟 AI 法案。其他主要模型开发者也签署了同一份《实践准则》，并且也将实施水印；"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/ALReoOH6tB",
+                "resolvedUrl": "https://x.com/trq212/status/2088721023223132213/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2088720412805066752/img/bY26WoY7dt8xS48c.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hEPeCHgGRM",
+                "resolvedUrl": "https://x.com/anthropicai/status/2088343978873966687"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-08-16T05:56:34.000Z",
+        "sections": [
+          {
+            "headline": "Compute hunger today does not prove AI power will stay centralized · 今天吃算力，不代表 AI 权力结构永远中心化",
+            "body": "The argument that “AI structurally centralizes power” because it’s currently compute hungry ignores 125 years of super exponential growth in compute price-performance. \n\nImprovement in algorithms and continued hardware efficiency gains     means there is no reason to assume AGI-level capabilities will always require a data center to run.\n\nScaling laws are not laws of physics. They’re simply empirical relationships observed for particular architectures, objectives, datasets etc. Change any one of those factors and you get a different scaling curve. \n\nIf the brain is any guide, true AGI will likely be very efficient. In fact, current scaling laws might a bug and not a feature. It shows how inefficiency of the ML algorithms we discovered so far.\n\n因为 AI 现在很吃算力，就断言“AI 会在结构上集中权力”，这套说法忽略了过去 125 年里计算价格性能比的超指数增长。\n\n算法进步再加上硬件效率持续提升，没有理由假设 AGI 级能力永远都得靠数据中心才能跑。\n\n所谓 scaling laws 也不是物理定律。它们只是针对某些特定架构、目标函数、数据集等条件下观测到的经验关系。你只要改掉其中一个条件，缩放曲线就可能变。\n\n如果大脑还有点参考价值，那真正的 AGI 很可能会非常高效。甚至可以反过来说，当前的 scaling laws 也许更像是 bug，不是 feature。它暴露的是我们到目前为止发现的机器学习算法有多低效。",
+            "source_links": [
+              "https://x.com/amasad/status/2088867492907327573"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP0l6gbacAAxMEG.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2088867492907327573/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-08-16T04:00:34.000Z",
+        "sections": [
+          {
+            "headline": "Recursive self-improvement gets the spotlight · “递归式自我改进”被拎到了台前",
+            "body": "Recursive self improvement https://t.co/wOqa7mW997\n\n递归式自我改进。 https://t.co/wOqa7mW997",
+            "source_links": [
+              "https://x.com/rauchg/status/2088838302367732178"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP0LV7qbcAAXt6D.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2088838302367732178/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/wOqa7mW997",
+                "resolvedUrl": "https://x.com/rauchg/status/2088838302367732178/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HP0LV7qbcAAXt6D.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A terse nod: impressive · 很短的评价：确实强",
+            "body": "Impressive https://t.co/fv5zyLbPNt\n\n厉害。 https://t.co/fv5zyLbPNt",
+            "source_links": [
+              "https://x.com/rauchg/status/2088801077659635715"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/wafer_ai/status/2088706415586377792",
+                "resolvedUrl": "https://x.com/wafer_ai/status/2088706415586377792",
+                "authorName": "wafer",
+                "authorHandle": "wafer_ai",
+                "authorUrl": "https://x.com/wafer_ai",
+                "text": "Deepseek V4 Flash 0731 Fast⚡️ on @vercel AI Gateway",
+                "displayDate": "Aug 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HPySmykbEAAc9wq.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/wafer_ai/status/2088706415586377792/photo/1"
+                  }
+                ],
+                "textZh": "@vercel AI Gateway 上的 Deepseek V4 Flash 0731 Fast⚡️"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/fv5zyLbPNt",
+                "resolvedUrl": "https://x.com/wafer_ai/status/2088706415586377792"
+              }
+            ]
+          },
+          {
+            "headline": "**shadcn** may matter to React adoption more than people admit · 很多人低估了 **shadcn** 对 **React** 成功的贡献",
+            "body": "I think people don’t realize how much of the success of React is actually @shadcn.\n\nI once referred to React as the actual “LEGO brick for adults.” But in reality it was more the description of the geometry of the bricks. The spec.\n\nShadcn is what people actually wanted from React. Reusable high quality components that also tunable. It’s a pseudo-library. There’s code but it’s actually meant to be digested into your context window and remixed.\n\n我觉得很多人没有意识到，**React** 的成功里其实有相当大一部分得记在 @shadcn 头上。\n\n我以前把 **React** 叫作“给成年人玩的乐高积木”。但认真说，它更像是在描述这些积木该长什么几何结构。它是规范，是 spec。\n\n而 **shadcn** 才更像大家真正想从 **React** 拿到的东西：高质量、可复用、还能继续调的组件。它像个“伪库”。当然有代码，但它真正的用法，是被你吃进自己的上下文窗口里，再重新混编出来。",
+            "source_links": [
+              "https://x.com/rauchg/status/2088757738037989755"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-08-15T16:16:13.000Z",
+        "sections": [
+          {
+            "headline": "A crop-production chart as timeline cleanser · 用农作物产量曲线给时间线洗眼",
+            "body": "Whitepill timeline cleanser: \n\nProgress and abundance looks like record production of crops, year on year, progressing upwards and to the right. This is the output of markets and technology working together for millenia. \n\nhttps://t.co/LXe01sF5G4 https://t.co/VZct22uHUF\n\n来点能让时间线缓口气的白丸：\n\n所谓进步和富足，长什么样？就是农作物产量一再刷新纪录，年复一年，曲线持续向右上走。这是市场和技术协同了几千年的结果。\n\nhttps://t.co/LXe01sF5G4 https://t.co/VZct22uHUF",
+            "source_links": [
+              "https://x.com/garrytan/status/2088661047913914847"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPxp64ea4AAo9x3.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2088661047913914847/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/LXe01sF5G4",
+                "resolvedUrl": "https://hannahritchie.substack.com/p/tracking-global-food-usda"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/VZct22uHUF",
+                "resolvedUrl": "https://x.com/garrytan/status/2088661047913914847/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPxp64ea4AAo9x3.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "Codex Desktop chat errors hit at least one high-profile user · **Codex Desktop** 聊天报错，至少已有知名用户撞上",
+            "body": "Anyone else's Codex Desktop app erroring out on chats? https://t.co/raNUNTPqbe\n\n还有谁的 **Codex Desktop** 在聊天时报错吗？ https://t.co/raNUNTPqbe",
+            "source_links": [
+              "https://x.com/garrytan/status/2088642982614651196"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HPxZuViakAAXozp.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2088642982614651196/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/raNUNTPqbe",
+                "resolvedUrl": "https://x.com/garrytan/status/2088642982614651196/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HPxZuViakAAXozp.png"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-08-15T19:57:32.000Z",
+        "sections": [
+          {
+            "headline": "Bureaucratic pain can become a moat if it locks in software and relationships · 真正的护城河，有时候就是把官僚摩擦熬成关系网和软件壁垒",
+            "body": "Last week I’m sitting across a stealth portfolio founder working in a deeply unsexy space (at least from Bay Area standards)..\n\nThey’re lamenting about how how some of the critical contracts and partnerships that would give them credibility (and revenue and network effects) are basically stuck at the 1-yard line. This is a massively fragmented market. And this is btw just straight up pure bureaucracy. The champions, terms and everything is lined up. It’s purely a win win situation but summer and one random clause is the issue. And, it might cause them to not reach their ambitious timelines. \n\nAnd I’m sitting there smiling and eventually laughing and at some point they ask what’s funny. I tell them “do you know how long it’ll take anyone to do the same thing as you” - and this is with leverage and relationships that they already have. \n\nAnd, this in the short term is painful but in the long term becomes such a strong moat. That they’ll look back and laugh why they were worried about a few days when in the long term this is what will make them one of the biggest companies in the world. \n\nUnnecessary and 996 performative pain is not the moat. But building entrenched software and relationships that take a lot of pain is a moat :)\n\n上周我坐在一家 stealth 组合公司创始人对面，他们做的是那种在湾区标准里非常“不性感”的行业。\n\n他在抱怨几份关键合同和合作卡在最后一米。这些东西一旦签下来，就会带来信誉、收入和网络效应。可这个市场极度分散，眼下卡住的原因，说白了就是官僚流程。支持你的人、条款、整体方向其实都对齐了，明明是双赢，但偏偏夏天档期和某个随机条款成了问题。甚至可能让他们赶不上自己原本很激进的时间表。\n\n我当时一直在笑，后来都笑出声了。他问我到底在笑什么。我说：“你知道别人想把你现在这件事做到一样，大概要花多久吗？” 这还是在他们已经有现成资源和关系杠杆的前提下。\n\n短期看，这当然烦。但拉长来看，这种痛苦本身会变成极强的护城河。以后他们回头看，可能都会笑自己当时为什么会为了几天时间焦虑，因为更长期里，正是这些东西会把他们推成世界上最大的公司之一。\n\n没必要的、996 式表演型吃苦，不是护城河。可那种需要硬啃、最后沉淀成软件和关系网络的痛苦，真是护城河。 :)",
+            "source_links": [
+              "https://x.com/nikunj/status/2088716743615352963"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-08-16T00:12:25.000Z",
+        "sections": [
+          {
+            "headline": "Dario’s sparse posting cadence gets called out again · Dario 发得太少，这事又被点了一次",
+            "body": "Dario should tweet more https://t.co/N29v9simn6\n\nDario 应该多发点推。 https://t.co/N29v9simn6",
+            "source_links": [
+              "https://x.com/danshipper/status/2088780884048552202"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/darioamodei/status/2088758816376807762",
+                "resolvedUrl": "https://x.com/DarioAmodei/status/2088758816376807762",
+                "authorName": "Dario Amodei",
+                "authorHandle": "DarioAmodei",
+                "authorUrl": "https://x.com/DarioAmodei",
+                "text": "1/2 Thanks Gavin for an especially thoughtful exchange. I don't usually spend much time on social media but I wanted to engage here because it really brings out the heart of an important conversation.\n\nFirst, on regulation, I think that “either concentrate it in the hands of a",
+                "displayDate": "Aug 15",
+                "provider": "X",
+                "media": [],
+                "textZh": "1/2 谢谢 Gavin，这次交流尤其有思考深度。我平时不太花时间在社交媒体上，但这次想参与一下，因为它确实触及了一场重要讨论的核心。 首先，关于监管，我认为“要么把它集中在一个"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/N29v9simn6",
+                "resolvedUrl": "https://x.com/darioamodei/status/2088758816376807762"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "VC and Ex-Dropbox CTO",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-08-15T21:09:03.000Z",
+        "sections": [
+          {
+            "headline": "India at 80, framed through a builder’s lens of unfinished national projects · 80 岁的印度，被放进一种建设者视角里重新讲了一遍",
+            "body": "America turned 250 years old earlier this year. \n\nIndia turns 80 today...80 years young.\n\nBuilding countries is really hard. 80 years in...America was struggling with a civil war.\n\nIndians should be damn proud of the country they have built. \n\nLike America, India wants more. She wants to be better and stronger and more successful. She will get there.\n\n美国今年早些时候满 250 岁了。\n\n而印度今天 80 岁了……80 岁，正年轻。\n\n建设一个国家本来就极难。美国走到 80 年时，还在内战里挣扎。\n\n印度人完全应该为自己建出来的这个国家感到很骄傲。\n\n和美国一样，印度也想要更多。她想变得更好、更强、更成功。她会走到那里。",
+            "source_links": [
+              "https://x.com/adityaag/status/2088734739893293175"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A strong endorsement for a featured piece with **@shreepoorna365** · 一条直接的点赞，点名了 **@shreepoorna365**",
+            "body": "This is remarkably well done.\n\nAnd of course featuring our very own @shreepoorna365.\n\nLet's go. https://t.co/UacgWndqL4\n\n这做得真是相当漂亮。\n\n而且当然，还有我们自己的 @shreepoorna365 出镜。\n\n走起。 https://t.co/UacgWndqL4",
+            "source_links": [
+              "https://x.com/adityaag/status/2088629172512195035"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/shaurya_sinha7/status/2088513518584697085",
+                "resolvedUrl": "https://x.com/shaurya_sinha7/status/2088513518584697085",
+                "authorName": "Shaurya Sinha",
+                "authorHandle": "shaurya_sinha7",
+                "authorUrl": "https://x.com/shaurya_sinha7",
+                "text": "This Independence Day 🇮🇳, I asked, \"What will the next century of young Indians look like?\"\n\n$0.01 Drone Deliveries. UAVs that never land. Groceries in under 10 minutes.\n\nMeet The 22nd Century Indian. A Documentary on a New India.",
+                "displayDate": "Aug 15",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/TVe9y2wGVL",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2088498459414552578/img/GcX7S29BUPhRYRue.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/shaurya_sinha7/status/2088513518584697085/video/1"
+                  }
+                ],
+                "textZh": "这个独立日 🇮🇳，我问：“下一个世纪的印度年轻人会是什么样？” 0.01 美元的无人机配送。永不降落的 UAV。10 分钟内送达杂货。 认识一下 22 世纪的印度人。一部关于新印度的纪录片。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/UacgWndqL4",
+                "resolvedUrl": "https://x.com/shaurya_sinha7/status/2088513518584697085"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-16",
+    "updatedAt": "2026-08-16T14:13:18.157Z",
+    "commit": {
+      "sha": "0fd0e4dfd62fd683a89b9bdbabda983a64b5012d",
+      "committedAt": "2026-08-16T06:28:21Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-16T14:09:16.776Z",
+    "feedGeneratedAt": "2026-08-16T06:27:46.023Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

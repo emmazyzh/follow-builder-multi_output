@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-12T12:06:46.215Z",
-  "latestDate": "2026-08-12",
+  "updatedAt": "2026-08-16T14:13:18.161Z",
+  "latestDate": "2026-08-16",
   "dates": [
+    {
+      "date": "2026-08-16",
+      "title": "AI Builders Daily · 2026-08-16",
+      "summary": "**OpenAI pricing fight heats up**; product leaders keep dragging AI back to outcomes, UX, and distribution; builders are fixated on agents, social AI, and recursive workflows; under the noise, several posts quietly argue the moat is still execution, not hype.\n\n**OpenAI 的价格仗打得更凶了**；不少人把话题硬拽回结果、体验和分发；大家盯着代理、社交 AI、工作流自我迭代这些真问题；热闹归热闹，真正扎心的还是那句老话：护城河先看执行，别先看声量。",
+      "itemCount": 13,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-16T14:13:18.160Z",
+      "commit": {
+        "sha": "0fd0e4dfd62fd683a89b9bdbabda983a64b5012d",
+        "committedAt": "2026-08-16T06:28:21Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-12",
       "title": "AI Builders Daily · 2026-08-12",
