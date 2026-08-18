@@ -1,0 +1,898 @@
+{
+  "payload": {
+    "date": "2026-08-18",
+    "title": "AI Builders Daily · 2026-08-18",
+    "summary": "Coding agents keep grabbing the mic: **Cursor goes live**, Codex chatter centers on fixing failing tests overnight, and Claude Code is shipping small UX upgrades plus a `/design` shortcut; Gemini’s product drumbeat is louder too, with **49 connectors** and workspace/tooling refreshes in flight; Builders are shifting from raw model worship to workflow leverage: evals, tool calling, creative coding, and outcome-priced apps are the real battleground; The sharper take from No Priors: the last wave minted rare giants fast, but the next few years likely create more **$100B companies** than fresh trillion-dollar ones.\n\n代码代理还在猛踩油门：**Cursor 开闸**，Codex 讨论点很直接，就是把烂测试连夜清干净；Claude Code 一边补体验，一边把 `/design` 这种狠活塞进工作流里；风向也变了，大家不再只盯模型参数，开始死磕评测、工具调用、创意编程和能不能按结果收费；最值得记的一句不是鸡血，是冷水：AI 当然还在涨，但接下来几年更像是批量长出 **百亿美元到千亿美元级公司**，不是遍地再冒出新万亿巨头。",
+    "items": [
+      {
+        "person_name": "Swyx",
+        "person_handle": "swyx",
+        "person_identity": "achieve ambition with intentionality, intensity, integrity & insanity.",
+        "profile_url": "https://x.com/swyx",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-17T21:40:45.000Z",
+        "sections": [
+          {
+            "headline": "**Cursor** Is Live / **Cursor** 已上线",
+            "body": "@TomasReimers **@cursor_ai** is live! https://t.co/hkyT5adhBO\n@TomasReimers **@cursor_ai** 已上线！https://t.co/hkyT5adhBO",
+            "source_links": [
+              "https://x.com/swyx/status/2089467492163010836"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/cursor_ai/status/2089399057659596847",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2089399057659596847",
+                "authorName": "Cursor",
+                "authorHandle": "cursor_ai",
+                "authorUrl": "https://x.com/cursor_ai",
+                "text": "Origin, our code hosting platform, is now live.\n\nIt's fast, easy to use, and deeply integrated with Cursor.\n\nGet started by syncing your repos from GitHub.",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/aqRHavAOQg",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2089397451237036032/img/qeHLLgO7ic-M5GjF.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/cursor_ai/status/2089399057659596847/video/1"
+                  }
+                ],
+                "textZh": "Origin，我们的代码托管平台，现在已经上线。 它速度快、易用，并且与 Cursor 深度集成。 从 GitHub 同步你的仓库即可开始使用。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hkyT5adhBO",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2089399057659596847"
+              }
+            ]
+          },
+          {
+            "headline": "Reply to **@rronak_** / 回复 **@rronak_**",
+            "body": "**@rronak_** https://t.co/c72imKExtp\n\n**@rronak_** https://t.co/c72imKExtp",
+            "source_links": [
+              "https://x.com/swyx/status/2089393202755502492"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/c72imKExtp",
+                "resolvedUrl": "https://www.youtube.com/watch?v=zL1kLftVTlo"
+              }
+            ]
+          },
+          {
+            "headline": "**Trajectory**'s thoughtful **Continual Learning** overview · **Trajectory** 对 **持续学习** 的一场高质量概览",
+            "body": "**Trajectory** have generally impressed me with their tasteful execution on ambitious goals. on our **Continual Learning** track, @rronak_ gave a very thoughtful overview on how they're tackling the main data problems left in **CL**, including why **GRPO** isn't enough and they had to go on-policy.... and then subsequently fix all the issues that come up with it\n\nnice overview from one of the early leaders in this field!\n\n(see the rest of the track for more, this one was quite stacked)\n\n**Trajectory** 一直让我印象很深，他们在推进那些很有野心的目标时，执行得非常讲究、很有分寸。在我们的 **Continual Learning** 专场里，@rronak_ 很细致地讲了他们是怎么处理 **CL** 里剩下那些核心数据问题的，包括为什么光靠 **GRPO** 还不够，所以他们必须转向 on-policy……然后再把随之冒出来的一堆问题一个个补上。\n\n这是这个方向一位早期领先者带来的一次很不错的分享。\n\n（这条专场里还有不少内容可以看，这一场整体阵容相当强。）",
+            "source_links": [
+              "https://x.com/swyx/status/2089393073327653344"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP8DLRubgAITslD.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2089393073327653344/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP8DZymbEAAkNcg.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2089393073327653344/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP8Duu3boAAMMGx.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2089393073327653344/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP8D1u7bgAMhxZ_.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/swyx/status/2089393073327653344/photo/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "VP, @Google @GoogleLabs @GeminiApp @GoogleAIStudio",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T01:12:26.000Z",
+        "sections": [
+          {
+            "headline": "Gemini roadmap updates — **Gemini** 路线图更新",
+            "body": "Circling back on this with some updates... What’s the next set of things we can improve to make your Gemini experience even better?\n\n#1: Testing revamped Workspace tools in 1-2 weeks\n#2: 3.7 Flash showed improvements in tool calling, more coming here\n#3: New “Projects” design done, implementing now\n#4: 49 connectors (and counting) supported now\n#5: Backend work done, frontend work started\n#6: Done\n#7: Done, ramping up now\n#8: Done\n#9: Done\n#10: Done, fixed the biggest over-triggering bugs\n\n回到这个话题，补充几点更新……接下来我们还能做哪些改进，让你的 **Gemini** 体验更好？\n\n#1：重新设计的 **Workspace** 工具将在 1 到 2 周内开始测试\n#2：**3.7 Flash** 在工具调用方面已经有提升，后面还会继续改进\n#3：新的 **Projects** 设计已经完成，正在落地实现\n#4：现在已支持 49 个连接器，而且还在继续增加\n#5：后端工作已完成，前端开发已经开始\n#6：已完成\n#7：已完成，正在逐步放量\n#8：已完成\n#9：已完成\n#10：已完成，修掉了最严重的误触发问题",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2089520767281324112"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Claude Code @anthropicai",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T02:24:02.000Z",
+        "sections": [
+          {
+            "headline": "More quality-of-life improvements coming / 更多体验优化在路上",
+            "body": "Small quality of life improvements like this add up. More on the way https://t.co/EtGYv1BRxa\n\n像这样的体验小改进，积少成多。后面还有更多。https://t.co/EtGYv1BRxa",
+            "source_links": [
+              "https://x.com/bcherny/status/2089538781909332210"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudedevs/status/2089509659090780193",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2089509659090780193",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Perf win of the day: Claude Code CLI now uses 2x less CPU at p99.\n\nBun's garbage collector was running on a fixed timer, so it would kick in mid-turn and steal CPU right when Claude Code was busiest. Now it waits until the process is idle.",
+                "displayDate": "Aug 18",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HP9tuUzasAA8Zig.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ClaudeDevs/status/2089509659090780193/photo/1"
+                  }
+                ],
+                "textZh": "今天的性能提升：Claude Code CLI 现在在 p99 下 CPU 使用量降低了 2 倍。 Bun 的垃圾回收器原本按固定计时器运行，所以会在一轮对话中途触发，在 Claude Code 最忙的时候抢占 CPU。现在它会等到进程空闲时再运行。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/EtGYv1BRxa",
+                "resolvedUrl": "https://x.com/claudedevs/status/2089509659090780193"
+              }
+            ]
+          },
+          {
+            "headline": "Share Your Thoughts / 说说你的看法",
+            "body": "Let us know what you think! https://t.co/sToEXNbzAC\n\n告诉我们你的看法！https://t.co/sToEXNbzAC",
+            "source_links": [
+              "https://x.com/bcherny/status/2089537919795212565"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudedevs/status/2089471692762673408",
+                "resolvedUrl": "https://x.com/ClaudeDevs/status/2089471692762673408",
+                "authorName": "ClaudeDevs",
+                "authorHandle": "ClaudeDevs",
+                "authorUrl": "https://x.com/ClaudeDevs",
+                "text": "Claude Code can design now. The new /design skill (research preview) brings Claude Design's artboard workflow into the CLI and Desktop, built on artifacts.\n\nRun /design to get editable artboards for your UI — pick one, tweak it, then have Claude implement it.",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HP9LXQiasAAoPxJ.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ClaudeDevs/status/2089471692762673408/photo/1"
+                  }
+                ],
+                "textZh": "Claude Code 现在也会做设计了。新的 /design skill（研究预览版）把 Claude Design 的画板工作流带到了 CLI 和 Desktop，基于 artifacts 构建。 运行 /design，就能为你的 UI 获得可编辑画板——选一个、微调它，然后让 Claude 实现它。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/sToEXNbzAC",
+                "resolvedUrl": "https://x.com/claudedevs/status/2089471692762673408"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "Codex & ChatGPT @OpenAI",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T06:45:39.000Z",
+        "sections": [
+          {
+            "headline": "Midnight plea for **Codex** 午夜呼唤 **Codex**",
+            "body": "Gimme, gimme, gimme **Codex** after midnight\nWon’t somebody make these failing tests all go away?\nGimme, gimme, gimme **Codex** after midnight\nShip it through the darkness by the start of the day\n\n过了午夜，快给我来个 **Codex**\n谁来把这些挂掉的测试统统摆平？\n过了午夜，快给我来个 **Codex**\n趁天亮前，穿过黑夜把它发出去",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2089604619936956778"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "What should **Codex** or the **API** do next? **Codex** 或 **API** 下一步该做什么？",
+            "body": "What is an obvious thing that we should do with **Codex**, **API** or our models that we should just do but haven't yet? What is 100% within reach, but we just seem to be missing?\n\n对于 **Codex**、**API** 或我们的模型，有什么明明该做、而且早就该做，但我们一直还没做的事？有什么是 100% 够得着，却偏偏一直没抓住的？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2089500941842342287"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "Practical AI tutorials and interviews for busy people | Get my best AI skills an",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T06:00:24.000Z",
+        "sections": [
+          {
+            "headline": "Free **AI** & Product Guides Newsletter / 免费订阅 **AI** 与产品指南通讯",
+            "body": "@bot If you enjoyed this, sign up for free to my newsletter to get my best **AI** and product guides.\n\nJoin 110,000+ subscribers here:\nhttps://t.co/yz9xcsfrhF\n\n@bot 如果你喜欢这条内容，欢迎免费订阅我的 newsletter，拿到我最好的 **AI** 和产品指南。\n\n已有 110,000+ 人订阅，入口在这里：\nhttps://t.co/yz9xcsfrhF",
+            "source_links": [
+              "https://x.com/petergyang/status/2089593232741240881"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/yz9xcsfrhF",
+                "resolvedUrl": "https://creatoreconomy.so/"
+              }
+            ]
+          },
+          {
+            "headline": "Most inspirational video today / 今天最鼓舞人心的视频",
+            "body": "Most inspirational video you’ll watch today https://t.co/9ba2DwPMeZ\n今天你会看到的最鼓舞人心的一段视频 https://t.co/9ba2DwPMeZ",
+            "source_links": [
+              "https://x.com/petergyang/status/2089526739815092580"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/bestpizzachef/status/2089386103291703510",
+                "resolvedUrl": "https://x.com/BestPizzaChef/status/2089386103291703510",
+                "authorName": "LuigiPrimo",
+                "authorHandle": "BestPizzaChef",
+                "authorUrl": "https://x.com/BestPizzaChef",
+                "text": "",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/623BCwt58c",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2089385908978044928/img/vq7MJRx3XuyfJ0nC.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/BestPizzaChef/status/2089386103291703510/video/1"
+                  }
+                ]
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/9ba2DwPMeZ",
+                "resolvedUrl": "https://x.com/bestpizzachef/status/2089386103291703510"
+              }
+            ]
+          },
+          {
+            "headline": "AI tools for YouTube talking-head intros? / 做 YouTube 口播开场都在用什么 AI 工具？",
+            "body": "What AI skills or tools are people using to edit YouTube talking head intros? Stuff like zoom ins and animating in captions, logos, and b-roll.\n\nI've been testing **HyperFrames** for this but curious if there are alternatives.\n\nI want to do the full edit just by talking to **Codex** or another harness.\n\n大家现在都在用什么 **AI** 技能或工具来剪 **YouTube** 口播视频的开场？比如镜头放大、字幕动画、**Logo** 动画，还有 **b-roll** 这些。\n\n我最近一直在测 **HyperFrames**，但也想看看有没有别的选择。\n\n我想要的是，直接跟 **Codex** 或别的 agent/控制框架说话，就能把整条视频完整剪出来。",
+            "source_links": [
+              "https://x.com/petergyang/status/2089519732336787619"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "product enthusiast",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T03:30:09.000Z",
+        "sections": [
+          {
+            "headline": "Many Such Cases / 这样的事太多了",
+            "body": "Many such cases https://t.co/yowzWcKc7d\n\n这样的事太多了 https://t.co/yowzWcKc7d",
+            "source_links": [
+              "https://x.com/thenanyu/status/2089555421593768061"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/kukreja_abhinav/status/2089350581232304396?s=20",
+                "resolvedUrl": "https://x.com/kukreja_abhinav/status/2089350581232304396",
+                "authorName": "Abhinav Kukreja",
+                "authorHandle": "kukreja_abhinav",
+                "authorUrl": "https://x.com/kukreja_abhinav",
+                "text": "TIL that inside Google there is an employee only watch collecting club and in 2024 a few of them got together and got Tudor to make a custom Pelagos for them.\n\nOnly ~800 or so of these in the world",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HP7dQ96bMAAIE52.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/kukreja_abhinav/status/2089350581232304396/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HP7dRUfa4AESxin.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/kukreja_abhinav/status/2089350581232304396/photo/1"
+                  }
+                ],
+                "textZh": "今天才知道，Google 内部有一个仅限员工的腕表收藏俱乐部，2024 年其中一些人一起找 Tudor 为他们定制了一款 Pelagos。 全世界大概只有 800 枚左右。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/yowzWcKc7d",
+                "resolvedUrl": "https://x.com/kukreja_abhinav/status/2089350581232304396"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-17T22:34:15.000Z",
+        "sections": [
+          {
+            "headline": "How to get good at evals / 如何真正把评测做扎实",
+            "body": "The best way to get good at evals is to  take a workflow you know really well and figure out how to make its quality measurable.\n\nStudy the actual traces - the sequence of prompts typical users have, what good responses would look like at each step and for the end to end outcome. \n\nStudy where your product fails and create traces that capture them - messy tool call responses, missing context etc.\n\nOnce you have a good eval, think about how you would make it easy to run repeatedly and automatically. \n\nOnce you have that, think about how you will ensure your eval continues to mirror live traffic as your users patterns evolve.\n\nThis could be a series. Would you guys like me to write about it everyday?\n\n真正想把 evals 做好，最有效的方法，是挑一个你非常熟的工作流，想清楚怎么把它的质量变成可衡量的东西。\n\n去研究真实的 traces，也就是典型用户一路会发出的 prompt 序列；再想清楚每一步什么样的回复算好，最终端到端的结果什么样才算好。\n\n再去研究你的产品具体会在哪些地方出错，并把这些失败场景做成 traces 收进去，比如混乱的工具调用返回、缺失上下文，等等。\n\n当你已经有了一个靠谱的 eval，下一步就该想，怎么把它做成可以反复、自动运行的东西。\n\n再往后，要继续想的是：随着用户行为模式不断变化，怎么保证你的 eval 仍然能贴近真实线上流量。\n\n这个话题我可以写成一个系列。你们想看我每天都写吗？",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2089480958571331623"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Claude Code @anthropicai.   prev YC W20, @spc, @medialab",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T01:48:20.000Z",
+        "sections": [
+          {
+            "headline": "Design in **CC** with /design · 在 **CC** 里用 /design 开始设计",
+            "body": "go into **CC** and type /design <something you want to design>\n\ndo it rn https://t.co/Qwdq42ko2g\n\n进入 **CC**，输入 /design <你想设计的东西>\n\n现在就去试 https://t.co/Qwdq42ko2g",
+            "source_links": [
+              "https://x.com/trq212/status/2089529798850969805"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nateparrott/status/2089470636796059754",
+                "resolvedUrl": "https://x.com/nateparrott/status/2089470636796059754",
+                "authorName": "nate parrott",
+                "authorHandle": "nateparrott",
+                "authorUrl": "https://x.com/nateparrott",
+                "text": "Today we’re releasing an early preview of the /design command in Claude Code!\n\nfrom CC Desktop or CLI, try something like \"/design a few options for {feature}\" before you build — pick your fave artboard, edit it and implement.",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/2JKKBnU60Z",
+                    "url": "https://pbs.twimg.com/media/HP9KbdxWMAE_jyA.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/nateparrott/status/2089470636796059754/video/1"
+                  }
+                ],
+                "textZh": "今天我们发布 Claude Code 中 /design 命令的早期预览版！ 在 CC Desktop 或 CLI 里，构建之前可以试试类似“/design a few options for {feature}”的指令——选你喜欢的画板，编辑它，然后实现。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Qwdq42ko2g",
+                "resolvedUrl": "https://x.com/nateparrott/status/2089470636796059754"
+              }
+            ]
+          },
+          {
+            "headline": "Code is easier to steer and export · 代码更容易调整和导出",
+            "body": "the nice things about code is that it is easier to edit and nudge in the directions you want and export to work with existing tools\n\n代码的妙处在于，它更容易按你的想法去修改、微调，也能导出后直接配合现有工具一起用。",
+            "source_links": [
+              "https://x.com/trq212/status/2089415713098522688"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**LLM** Coding Models May Beat Diffusion in Creative Work · **LLM** 编码模型在创意工作上可能胜过扩散模型",
+            "body": "all of the recent proc gen art, video editing and 3d game demos recently have made me update towards **LLM** coding models being better at a lot of creative work than diffusion models\n\n最近这些程序生成艺术、视频编辑和 3D 游戏演示，让我越来越觉得，**LLM** 编码模型在很多创意工作上可能比扩散模型更强。",
+            "source_links": [
+              "https://x.com/trq212/status/2089415712007938315"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "ceo @replit. civilizationist",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T01:49:31.000Z",
+        "sections": [
+          {
+            "headline": "A spark called conscience / 名为良知的微火",
+            "body": "Labour to keep alive in your Breast that Little Spark of Celestial fire Called Conscience https://t.co/nBfua981ZJ\n努力让你心中那一点被称为“良知”的天火微光始终不灭。",
+            "source_links": [
+              "https://x.com/amasad/status/2089530098902864336"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP-AjKrWUAA1JRX.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2089530098902864336/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nBfua981ZJ",
+                "resolvedUrl": "https://x.com/amasad/status/2089530098902864336/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HP-AjKrWUAA1JRX.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**AI**-level growth without the **AI** pitch｜没打 **AI** 招牌，却跑出 **AI** 级增长",
+            "body": "This team doesn’t have “**AI**” anywhere in their pitch but has **AI** growth rates and would have 10x the headcount if they weren’t so **AI**-pilled. https://t.co/MpRuYiKCaw\n\n这个团队的宣传里压根没提“**AI**”，但增长速度完全是 **AI** 公司的级别。要不是他们这么彻底地用 **AI** 提效，团队人数本来得扩大到现在的 10 倍。https://t.co/MpRuYiKCaw",
+            "source_links": [
+              "https://x.com/amasad/status/2089525819567739264"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/fazeapex/status/2089412054990065850",
+                "resolvedUrl": "https://x.com/FaZeApex/status/2089412054990065850",
+                "authorName": "FaZe Apex",
+                "authorHandle": "FaZeApex",
+                "authorUrl": "https://x.com/FaZeApex",
+                "text": "Most of the creator economy has been built around reaching people everywhere. Local businesses need something different: creators who live nearby, posting about places their viewers can actually walk into.\n\nToday we’re launching @TryNearbyCom as part of @ycombinator S26, live",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/K86L4SBDCs",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2089406015037157376/img/kiwb0UukK8F3AqS4.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/FaZeApex/status/2089412054990065850/video/1"
+                  }
+                ],
+                "textZh": "大部分创作者经济都是围绕触达各地的人建立起来的。本地商家需要的是另一种东西：住在附近的创作者，发布观众真的能走进去消费的地方。 今天我们正式推出 @TryNearbyCom，作为 @ycombinator S26 的一部分，已经上线。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/MpRuYiKCaw",
+                "resolvedUrl": "https://x.com/fazeapex/status/2089412054990065850"
+              }
+            ]
+          },
+          {
+            "headline": "Pen testing matters beyond vulnerability scans｜漏洞扫描之外，渗透测试同样重要",
+            "body": "It’s not enough to scan your code for vulnerabilities; it’s important to try to break them with pen testing. https://t.co/1Hc1AT4jz0\n\n光靠扫描代码里的漏洞还不够；更重要的是要用渗透测试真正去打它、试着把它攻破。",
+            "source_links": [
+              "https://x.com/amasad/status/2089435606338416884"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/replit/status/2089427187162083785",
+                "resolvedUrl": "https://x.com/Replit/status/2089427187162083785",
+                "authorName": "Replit ⠕",
+                "authorHandle": "Replit",
+                "authorUrl": "https://x.com/Replit",
+                "text": "You can now run black-box pen tests for your Replit apps.\n\nSecurity scans that test your Replit apps the way external attackers do.\n\nReplit Agent can fix what it finds in a single click.",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/AyPkiBffFa",
+                    "url": "https://pbs.twimg.com/ext_tw_video_thumb/2089427160696082432/pu/img/YelOjFVLpTPGOHI-.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Replit/status/2089427187162083785/video/1"
+                  }
+                ],
+                "textZh": "你现在可以为自己的 Replit 应用运行黑盒渗透测试。 这些安全扫描会像外部攻击者一样测试你的 Replit 应用。 Replit Agent 可以一键修复它发现的问题。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/1Hc1AT4jz0",
+                "resolvedUrl": "https://x.com/replit/status/2089427187162083785"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "@vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-17T17:48:58.000Z",
+        "sections": [
+          {
+            "headline": "**Cursor Origin** can host repos and deploy to **Vercel** now · **Cursor Origin** 现可托管代码仓库并部署到 **Vercel**",
+            "body": "You can now host your repos in **Cursor Origin** and deploy to **Vercel** via **Cursor Origin** which is itself hosted on **Vercel**. And unlike **GitHub**, it's online 😁 https://t.co/ybWprI8gm4\n你现在可以把代码仓库托管在 **Cursor Origin** 里，再通过 **Cursor Origin** 部署到 **Vercel**，而 **Cursor Origin** 自己也是跑在 **Vercel** 上的。不像 **GitHub**，它现在在线 😁 https://t.co/ybWprI8gm4",
+            "source_links": [
+              "https://x.com/rauchg/status/2089409162270965858"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/cursor_ai/status/2089399059488350447",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2089399059488350447",
+                "authorName": "Cursor",
+                "authorHandle": "cursor_ai",
+                "authorUrl": "https://x.com/cursor_ai",
+                "text": "We've partnered with some of the top GitHub integrations.\n\nVercel, Buildkite, and Depot are already available with more coming soon.",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们已经与一些顶级 GitHub 集成伙伴达成合作。 Vercel、Buildkite 和 Depot 已经可用，更多集成即将推出。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ybWprI8gm4",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2089399059488350447"
+              }
+            ]
+          },
+          {
+            "headline": "Wow · 哇",
+            "body": "Wow https://t.co/ZXftfl1vuv\n哇 https://t.co/ZXftfl1vuv",
+            "source_links": [
+              "https://x.com/rauchg/status/2089373735002526018"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel_dev/status/2089372856014836113",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2089372856014836113",
+                "authorName": "Vercel Developers",
+                "authorHandle": "vercel_dev",
+                "authorUrl": "https://x.com/vercel_dev",
+                "text": "GPT 5.6 Sol is 50% off on AI Gateway.\n\n• Through September 18, 2026\n• Applies to both standard and fast mode\n\n'𝚘𝚙𝚎𝚗𝚊𝚒/𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕'\n\nhttps://vercel.com/changelog/gpt-5-6-sol-is-50-off-on-ai-gateway-for-the-next-month",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [],
+                "textZh": "AI Gateway 上的 GPT 5.6 Sol 现享 5 折优惠。 • 截止 2026 年 9 月 18 日 • 标准模式和快速模式均适用 '𝚘𝚙𝚎𝚗𝚊𝚒/𝚐𝚙𝚝-𝟻.𝟼-𝚜𝚘𝚕' https://vercel.com/changelog/gpt-5-6-sol-is-50-off-on-ai-gateway-for-the-next-month"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/ZXftfl1vuv",
+                "resolvedUrl": "https://x.com/vercel_dev/status/2089372856014836113"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "ceo @box - your business lives in content. unleash it with AI",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-17T23:49:28.000Z",
+        "sections": [
+          {
+            "headline": "Data as an Asset, AI’s Thirst for Information · 数据正在变成资产，AI 对信息极度饥渴",
+            "body": "When you hear that data is the new oil, this is ultimately what that looks like. **AI** has such a thirst for data that we’re entering an era where it’s valuable almost in any form.\n\nIn a world of **AI**, information actually belongs as an asset on the balance sheet. This data sale is just one example of the implications of what that will look like.\n\nUltimately, the way that companies manage and mine their organization’s intelligence will be one of the deciding factors for competitiveness and value creation in the future.\n\n当你听到“数据是新时代的石油”这句话时，最终呈现出来的大概就是这个样子。**AI** 对数据的渴求太强了，我们正进入一个几乎任何形式的数据都能产生价值的时代。\n\n在 **AI** 时代，信息其实应该作为一种资产，被放进资产负债表里。这次数据交易，只是这种变化会带来什么后果的一个例子。\n\n说到底，企业如何管理、挖掘组织内部的智能与信息，会成为未来决定竞争力和价值创造能力的关键因素之一。",
+            "source_links": [
+              "https://x.com/levie/status/2089499887905997272"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—des",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-17T19:44:44.000Z",
+        "sections": [
+          {
+            "headline": "Open source for building your own Personal AGI / 用开源项目打造你自己的 Personal AGI",
+            "body": "This is my open source to help you create your own **Personal AGI** as mentioned at my **Startup School** talk earlier this year https://t.co/PyyEpKLVPl\n\n这是我开源出来的项目，帮助你打造属于自己的 **Personal AGI**。我今年早些时候在 **Startup School** 的演讲里提到过它。https://t.co/PyyEpKLVPl",
+            "source_links": [
+              "https://x.com/garrytan/status/2089438298540519821"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/ycombinator/status/2085443781797785828",
+                "resolvedUrl": "https://x.com/ycombinator/status/2085443781797785828",
+                "authorName": "Y Combinator",
+                "authorHandle": "ycombinator",
+                "authorUrl": "https://x.com/ycombinator",
+                "text": "The next generation of startups will be built by smaller teams than ever before.\n\nAt Startup School 2026, YC's @garrytan explains why we're we're entering the era of personal AGI: AI agents that run on your own infrastructure, compound your knowledge over time, and dramatically",
+                "displayDate": "Aug 6",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/ZQPCEWATWo",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2085439529843130368/img/ZLzxiAk2YwuRXAgj.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/ycombinator/status/2085443781797785828/video/1"
+                  }
+                ],
+                "textZh": "下一代创业公司将由比以往任何时候都更小的团队打造。 在 Startup School 2026 上，YC 的 @garrytan 解释了为什么我们正在进入个人 AGI 时代：运行在你自己基础设施上的 AI agents，会随着时间不断沉淀你的知识，并且大幅"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/PyyEpKLVPl",
+                "resolvedUrl": "https://x.com/ycombinator/status/2085443781797785828"
+              }
+            ]
+          },
+          {
+            "headline": "70 proven skills + a Karpathy-style knowledge wiki start｜70 个实战技能 + Karpathy 风格知识库起步",
+            "body": "What do you get? A private **GitHub** repo with 70 of my proven skills and the beginnings of your **Karpathy**-style knowledge wiki.\n\nRead the full docs in the **README**. All of this is **MIT**-licensed open source and free.\n\nhttps://t.co/yFpFU4pn5b https://t.co/Jk3muxCpYS\n\n你能拿到什么？一个私有的 **GitHub** 仓库，里面有我验证过的 70 个技能，还有一套 **Karpathy** 风格知识库的起步框架。\n\n完整文档都在 **README** 里。所有内容都是 **MIT** 许可的开源项目，免费提供。\n\nhttps://t.co/yFpFU4pn5b https://t.co/Jk3muxCpYS",
+            "source_links": [
+              "https://x.com/garrytan/status/2089425134339961173"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP8gy_nbcAAHMMc.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2089425134339961173/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/yFpFU4pn5b",
+                "resolvedUrl": "https://github.com/garrytan/gbrain"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/Jk3muxCpYS",
+                "resolvedUrl": "https://x.com/garrytan/status/2089425134339961173/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HP8gy_nbcAAHMMc.jpg"
+              }
+            ]
+          },
+          {
+            "headline": "Free agent repo setup for **Claude Code** and **Codex** now available / 现可免费为 **Claude Code** 和 **Codex** 快速搭建 agent 仓库",
+            "body": "It's free to try and works with your existing **Claude Code** or **Codex** subscription right now. Just make a new directory and start **Codex** or **CC** (on command line OR on Desktop, slightly better on Desktop)\n\nJust paste this image into your **CC**/**Codex** and it'll set up your agent repo asap https://t.co/vs7Yfb91Ko\n\n现在就能免费试用，而且直接兼容你现有的 **Claude Code** 或 **Codex** 订阅。新建一个目录，启动 **Codex** 或 **CC** 就行（命令行和桌面端都可以，桌面端体验稍好一点）。\n\n把这张图片贴进 **CC** / **Codex**，它就会尽快帮你把 agent 仓库搭好。 https://t.co/vs7Yfb91Ko",
+            "source_links": [
+              "https://x.com/garrytan/status/2089424620764168485"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HP8gWgeaAAAzw-6.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2089424620764168485/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/vs7Yfb91Ko",
+                "resolvedUrl": "https://x.com/garrytan/status/2089424620764168485/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HP8gWgeaAAAzw-6.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendo",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-17T22:57:29.000Z",
+        "sections": [
+          {
+            "headline": "Nobody in AI Has a Moat, Except VC · AI 圈谁都没有护城河，除了风投",
+            "body": "the models have no moat (**OpenAI**, **Anthropic**, **XAI**)\n\nthe IDEs have no moat (**Cursor**, **Windsurf**)\n\nthe harnesses have no moat (**Cognition**, **Factory**, **LangChain**)\n\nthe app builders have no moat (**Replit**, **Lovable**, **Bolt**)\n\nthe wrappers have no moat (**Harvey**, **Abridge**, **OpenEvidence**)\n\nthe inference providers have no moat (**Together**, **Fireworks**, **Groq**)\n\nthe voice layer has no moat (**Sierra**, **Decagon**, **ElevenLabs**)\n\nthe data labeling companies have no moat (**Scale**, **Surge**, **Mercor**)\n\nthe AI infrastructure has no moat (**Baseten**, **Modal**, **Railway**)\n\nthe neoclouds have no moat (**CoreWeave**, **Lambda**, **Crusoe**)\n\nthe generative media companies have no moat (**Runway**, **Higgsfield**, **Suno**)\n\napparently nobody in AI has a moat\n\nexcept the venture firm ☠️\n\n模型没有护城河（**OpenAI**、**Anthropic**、**XAI**）\n\nIDE 没有护城河（**Cursor**、**Windsurf**）\n\n开发框架也没有护城河（**Cognition**、**Factory**、**LangChain**）\n\n应用搭建平台没有护城河（**Replit**、**Lovable**、**Bolt**）\n\n套壳公司没有护城河（**Harvey**、**Abridge**、**OpenEvidence**）\n\n推理服务商没有护城河（**Together**、**Fireworks**、**Groq**）\n\n语音层没有护城河（**Sierra**、**Decagon**、**ElevenLabs**）\n\n数据标注公司没有护城河（**Scale**、**Surge**、**Mercor**）\n\nAI 基础设施没有护城河（**Baseten**、**Modal**、**Railway**）\n\n新云厂商没有护城河（**CoreWeave**、**Lambda**、**Crusoe**）\n\n生成式媒体公司没有护城河（**Runway**、**Higgsfield**、**Suno**）\n\n看这意思，AI 圈里谁都没有护城河\n\n除了风投 ☠️",
+            "source_links": [
+              "https://x.com/nikunj/status/2089486802356961364"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Brand Marketing Will Be the Key Differentiator 品牌营销将成为关键差异点",
+            "body": "My hottest take is that brand marketing is going to be THE major differentiator and one of the most prized assets for a company going forward. \n\nAnd, I’m not talking about launch videos or pouring money primarily for “aesthetics” simply to pump the valuation. You still need retention before attention. \n\nI’m talking about thinking through what a company stands for and understanding the “vibe” of what’s happening in the market. Being relentless on the long term goal while also thinking through how to showcase the company in the short term. And doing it every week. \n\nEspecially if you think agents become the primary user for most products, then to get the attention of a rapidly attention deficit audience (aka humans) you’ll need to stand out consistently in how you present the company. \n\nThese folks primary have been given tier 2 roles and passed up for CMOs many many times. I think this will finally invert in the next 10 years where you’ll hire these folks as cofounders or at least give them a big seat at the table. \n\nNormally the design centric CEO tends to be this, but those are rare and you’ll need to learn how to hire for this role. Just like a good product marketer, these are exceptionally rare so you have one hold them close!!\n\n我最强烈的一个判断是：接下来，品牌营销会成为公司最重要的差异化能力之一，也会变成最值钱的资产之一。\n\n而且，我说的不是拍发布视频，也不是主要为了“好看”去砸钱，把估值抬起来。先有留存，才值得去抢注意力。\n\n我说的是，真正想清楚一家公司代表什么，读懂市场当下正在形成的那种“气质”和风向。对长期目标死磕到底，同时也认真琢磨，短期内该怎么把公司呈现出来。而且这件事要每周都做。\n\n尤其如果你认为 **agents** 会成为大多数产品的主要用户，那面对一群注意力越来越稀缺的人类用户，你就必须持续用公司的呈现方式脱颖而出，才能抢到他们的注意力。\n\n这类人过去大多只被放在二线岗位，很多很多次都和 **CMO** 位置擦肩而过。我觉得未来 10 年，这个局面会彻底反过来。你会把这类人直接当联合创始人来招，至少也会让他们真正坐上核心决策桌。\n\n通常，偏设计导向的 **CEO** 往往会天然承担这类角色，但这样的人太少了，所以你得学会怎么为这个岗位招人。就像优秀的产品营销人才一样，这种人极其稀缺；真遇到一个，就一定要抓牢。",
+            "source_links": [
+              "https://x.com/nikunj/status/2089374392295842086"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-18T01:42:29.000Z",
+        "sections": [
+          {
+            "headline": "What CFOs Are Asking / CFO 们在问什么",
+            "body": "The question CFOs around the country are asking everyone in their organization https://t.co/kgjPrUBqgW\n\n全国各地的 CFO 都在问公司里每一个人的那个问题 https://t.co/kgjPrUBqgW",
+            "source_links": [
+              "https://x.com/danshipper/status/2089528326096384158"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/hammer_mt/status/2089480297947496697",
+                "resolvedUrl": "https://x.com/hammer_mt/status/2089480297947496697",
+                "authorName": "Mike Taylor",
+                "authorHandle": "hammer_mt",
+                "authorUrl": "https://x.com/hammer_mt",
+                "text": "if you got hit by a car would your token usage drop to zero",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [],
+                "textZh": "如果你被车撞了，你的 token 使用量会降到零吗"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/kgjPrUBqgW",
+                "resolvedUrl": "https://x.com/hammer_mt/status/2089480297947496697"
+              }
+            ]
+          },
+          {
+            "headline": "Similar experience with **Voice mode**｜和 **语音模式** 的体验几乎一样",
+            "body": "I have had extremely similar experiences\n\n**Voice mode** even better\n\n我也有过几乎一模一样的体验。\n\n而且 **语音模式** 甚至更好。",
+            "source_links": [
+              "https://x.com/danshipper/status/2089525989223157976"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/emollick/status/2089512978575950080",
+                "resolvedUrl": "https://x.com/emollick/status/2089512978575950080",
+                "authorName": "Ethan Mollick",
+                "authorHandle": "emollick",
+                "authorUrl": "https://x.com/emollick",
+                "text": "My father just got a new MacBook after years with no laptop, and he did not know how to set it up\n\nHe just told me that he took my advice to install Codex and just ask it to take over and solve his setup problems &amp; install what he needed. Family IT support will never be the same.",
+                "displayDate": "Aug 18",
+                "provider": "X",
+                "media": [],
+                "textZh": "我父亲多年没用笔记本了，刚买了一台新的 MacBook，但他不知道怎么设置。 他刚告诉我，他采纳了我的建议，安装 Codex，然后直接让它接管并解决他的设置问题，安装他需要的东西。家庭 IT 支持再也不一样了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/kbBdVQl1eP",
+                "resolvedUrl": "https://x.com/emollick/status/2089512978575950080"
+              }
+            ]
+          },
+          {
+            "headline": "Lfgggg!!! 冲啊啊啊！！！",
+            "body": "Lfgggg!!! https://t.co/mVbveI8pSp\n\n冲啊啊啊！！！ https://t.co/mVbveI8pSp",
+            "source_links": [
+              "https://x.com/danshipper/status/2089481397421441278"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/every/status/2089480149981073677",
+                "resolvedUrl": "https://x.com/every/status/2089480149981073677",
+                "authorName": "Every 🪨",
+                "authorHandle": "every",
+                "authorUrl": "https://x.com/every",
+                "text": "CONFIRMED: @edbayes, design lead for ChatGPT Work and Codex at @OpenAI, is speaking at Thesis, our inaugural conference on work and AI.\n\nAt OpenAI, content designers submit PRs and PMs bring working prototypes to design reviews. The old handoff chain is collapsing.\n\nA prototype",
+                "displayDate": "Aug 17",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HP9THzWboAAw5-X.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/every/status/2089480149981073677/photo/1"
+                  }
+                ],
+                "textZh": "已确认：@OpenAI 负责 ChatGPT Work 和 Codex 的设计负责人 @edbayes 将在 Thesis 上发言，这是我们关于工作与 AI 的首届大会。 在 OpenAI，内容设计师会提交 PR，PM 会带着可运行的原型参加设计评审。旧的交接链条正在瓦解。 一个原型"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/mVbveI8pSp",
+                "resolvedUrl": "https://x.com/every/status/2089480149981073677"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "No Priors",
+        "person_handle": "No Priors",
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=6l8oAO_LBx4",
+        "source_label": "YouTube Podcast",
+        "posted_at": "2026-08-06T10:00:00.000Z",
+        "sections": [
+          {
+            "headline": "Regulation, Safety, and Lost Build Capacity / 监管、安全与被耗掉的建设能力",
+            "body": "The episode opens with a sharp analogy: **France** still gets roughly 70% of its power from nuclear, while the **US** sits far lower and has barely built reactors in decades. The argument is that safety politics can impose real societal costs when it blocks abundant, clean infrastructure.\n\n节目一开场就拿核电做类比：**法国**的发电结构里，核电占比依然很高，而**美国**低得多，几十年也没怎么新建反应堆。核心观点很直接：当“安全”变成政治工具，代价不只是流程变慢，而是会真切地错失廉价、清洁、可扩展的基础设施。\n\nThey use that frame to ask a broader **AI** question: where should the risk spectrum sit when caution itself can slow down progress? The point is not that safety never matters, but that overcorrection can become a form of self-inflicted stagnation.\n\n他们借这个例子往**AI**上推：如果过度谨慎本身也会带来损失，那风险边界到底该画在哪。意思不是安全不重要，而是如果一路往保守端滑，最后可能变成自己把自己拖住。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=6l8oAO_LBx4"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "How Many New Trillion-Dollar Companies Are Actually Plausible? / 新的万亿美元公司，到底还能有几个？",
+            "body": "A central debate is whether the last five years were a unique burst or the start of a repeatable pattern. **Elad** argues the recent jump from near-zero to trillion-dollar scale across names like **OpenAI**, **Anthropic**, and **SpaceX** was historically unusual; most companies such as **Google** took much longer to reach that level.\n\n这期的核心分歧之一，是过去五年到底是一次特殊爆发，还是以后会反复上演。**Elad**认为，像**OpenAI**、**Anthropic**、**SpaceX**这种从接近零迅速冲到万亿美元级别，本来就是历史上的少见情况；像**Google**那样的大公司，通常都要走更长周期。\n\nHis distinction is speed, not total long-run opportunity. Over 20 years, there may be many major winners. But in the next 3 to 5 years, he thinks investors are overestimating how many companies can realistically reach the revenue base needed for a multi-trillion valuation, especially if those businesses depend on physical deployment in areas like robotics, energy, or materials.\n\n他区分得很明确：问题不在于长期有没有机会，而在于速度。拉长到20年，肯定还会冒出很多大公司；但如果只看未来3到5年，他认为市场高估了能真正跑到那个体量的公司数量。尤其是机器人、能源、材料这类偏实体交付的方向，市场空间可能很大，但建设速度未必跟得上。\n\nThe underlying test is brutal: a trillion-dollar company usually needs something like **$50B-$100B** in revenue, with strong margins. That is a much narrower filter than saying a market is merely large or exciting.\n\n底层门槛其实很残酷：一家万亿美元公司，通常得有大概**500亿到1000亿美元**级别的收入，而且利润率还不能差。这和“市场很大、故事很好”完全不是一回事。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=6l8oAO_LBx4"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Market Imagination, Outcome Pricing, and Founder Ambition Under Lab Pressure / 市场想象力、结果定价，以及大模型阴影下的创始人野心",
+            "body": "**Sarah** pushes back that many investors still underestimate how large **AI** application markets can become. Her argument is that people may talk about service-value capture, but they still model businesses too linearly, using seat-based logic instead of asking what happens when products charge for outcomes.\n\n**Sarah**的反驳是，很多投资人其实还是低估了**AI**应用公司的上限。嘴上承认“服务价值会被软件吃掉”，但实际建模时还是太线性，仍旧按 seat、按人头去算，而不是认真去想：如果产品按结果收费，这家公司会变成什么样。\n\nThey point to coding as a live example where usage and value expanded far beyond what many expected. From there, the conversation moves to adjacent verticals like legal and healthcare, where companies such as **Harvey** and **OpenEvidence** may be better understood through delivered outcomes than traditional software comparables.\n\n他们拿编程举例，说这个市场的使用量和价值释放已经明显超出很多人早先的判断。接着话题转到法律、医疗这些垂类，像**Harvey**、**OpenEvidence**这样的公司，如果还拿老一套软件估值框架去套，可能会看偏；更合理的视角，是它们到底交付了什么结果。\n\nAt the same time, **Elad** sees another pattern: founders increasingly avoiding direct collision with frontier labs and drifting toward hardware, narrow verticals, or niche products that feel safer from roadmap overlap. His concern is that fear of the labs may be shrinking ambition for some startups, even while others are still building genuinely category-defining companies.\n\n但**Elad**也看到另一股趋势：越来越多创始人在刻意绕开前沿实验室的正面战场，转去做硬件、窄垂类，或者那些不太会被大模型路线图吞掉的小市场。他担心的是，这种对 labs 的顾虑，正在让一部分创业项目变得更保守、也更小；当然，另一边仍然有人在做真正有机会定义新类别的大公司。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=6l8oAO_LBx4"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-18",
+    "updatedAt": "2026-08-18T13:16:50.074Z",
+    "commit": {
+      "sha": "f2fdde73979d8614e100b410b74bf4c9670560d3",
+      "committedAt": "2026-08-18T07:04:29Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-18T12:00:14.458Z",
+    "feedGeneratedAt": "2026-08-18T07:03:56.144Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

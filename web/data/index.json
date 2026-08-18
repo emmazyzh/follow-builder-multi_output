@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-16T14:13:18.161Z",
-  "latestDate": "2026-08-16",
+  "updatedAt": "2026-08-18T13:16:50.081Z",
+  "latestDate": "2026-08-18",
   "dates": [
+    {
+      "date": "2026-08-18",
+      "title": "AI Builders Daily · 2026-08-18",
+      "summary": "Coding agents keep grabbing the mic: **Cursor goes live**, Codex chatter centers on fixing failing tests overnight, and Claude Code is shipping small UX upgrades plus a `/design` shortcut; Gemini’s product drumbeat is louder too, with **49 connectors** and workspace/tooling refreshes in flight; Builders are shifting from raw model worship to workflow leverage: evals, tool calling, creative coding, and outcome-priced apps are the real battleground; The sharper take from No Priors: the last wave minted rare giants fast, but the next few years likely create more **$100B companies** than fresh trillion-dollar ones.\n\n代码代理还在猛踩油门：**Cursor 开闸**，Codex 讨论点很直接，就是把烂测试连夜清干净；Claude Code 一边补体验，一边把 `/design` 这种狠活塞进工作流里；风向也变了，大家不再只盯模型参数，开始死磕评测、工具调用、创意编程和能不能按结果收费；最值得记的一句不是鸡血，是冷水：AI 当然还在涨，但接下来几年更像是批量长出 **百亿美元到千亿美元级公司**，不是遍地再冒出新万亿巨头。",
+      "itemCount": 15,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-18T13:16:50.079Z",
+      "commit": {
+        "sha": "f2fdde73979d8614e100b410b74bf4c9670560d3",
+        "committedAt": "2026-08-18T07:04:29Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-16",
       "title": "AI Builders Daily · 2026-08-16",
