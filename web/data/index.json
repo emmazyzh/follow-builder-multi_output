@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-18T13:16:50.081Z",
-  "latestDate": "2026-08-18",
+  "updatedAt": "2026-08-24T13:10:23.585Z",
+  "latestDate": "2026-08-24",
   "dates": [
+    {
+      "date": "2026-08-24",
+      "title": "AI Builders Daily · 2026-08-24",
+      "summary": "**Apple-native AI gets a new stack**: Claude plugs into Apple’s Foundation Models via Swift, blending on-device speed with heavier reasoning and web/code tools; **evals are the real moat**: builders keep hammering on stage-by-stage measurement, not vanity end scores; infra talk is shifting fast: cheaper inference, routing layers, and reliability are being treated like core utilities.\n**苹果端侧 AI 又往前拱了一步**：Claude 接进 Foundation Models，Swift 这条线更顺了，本地模型和重推理开始像一套东西；**这波更硬的焦点其实是 eval**：别只盯最终答案，先把证据提取、分析、推荐这些环节拆开测；行业情绪也很直白：价格战还在压推理成本，网关和路由升温，老系统不变成 AI 的操作台，就可能被代理直接绕过去。",
+      "itemCount": 11,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-24T13:10:23.564Z",
+      "commit": {
+        "sha": "a0f6f4cd43f04ed60a99bd4750276cb98b35a88e",
+        "committedAt": "2026-08-24T06:28:50Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-18",
       "title": "AI Builders Daily · 2026-08-18",

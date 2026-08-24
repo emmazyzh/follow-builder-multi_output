@@ -1,0 +1,437 @@
+{
+  "payload": {
+    "date": "2026-08-24",
+    "title": "AI Builders Daily · 2026-08-24",
+    "summary": "**Apple-native AI gets a new stack**: Claude plugs into Apple’s Foundation Models via Swift, blending on-device speed with heavier reasoning and web/code tools; **evals are the real moat**: builders keep hammering on stage-by-stage measurement, not vanity end scores; infra talk is shifting fast: cheaper inference, routing layers, and reliability are being treated like core utilities.\n**苹果端侧 AI 又往前拱了一步**：Claude 接进 Foundation Models，Swift 这条线更顺了，本地模型和重推理开始像一套东西；**这波更硬的焦点其实是 eval**：别只盯最终答案，先把证据提取、分析、推荐这些环节拆开测；行业情绪也很直白：价格战还在压推理成本，网关和路由升温，老系统不变成 AI 的操作台，就可能被代理直接绕过去。",
+    "items": [
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "Codex & ChatGPT @OpenAI",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-24T00:46:51.000Z",
+        "sections": [
+          {
+            "headline": "**Reset** rollout lands fixes, more tomorrow / **Reset** 已完成推送并修复部分使用问题，明天还有更新",
+            "body": "Good Sunday. **Reset** has been propagated to accounts and we landed some fixes to usage for things mentioned yesterday as issues we found. You should feel a positive difference. More to come tomorrow and will keep communicating.\n\n周日好。**Reset** 已经推送到各个账号，我们也修复了昨天提到的几个使用问题。你现在应该能明显感觉到体验变好了。明天还会有更多更新，我们也会继续同步。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2091688655828246890"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/thsottiaux/status/2091407991736332689",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2091407991736332689",
+                "authorName": "Tibo",
+                "authorHandle": "thsottiaux",
+                "authorUrl": "https://x.com/thsottiaux",
+                "text": "Update on rate limits in Codex.\n\nWe’ve found (a) some inefficiencies when using images in long sessions with multiple compactions (b) high p95+ usage for Computer History (c) a feature that was meant to generate conversation titles that was draining a bit more usage than",
+                "displayDate": "Aug 23",
+                "provider": "X",
+                "media": [],
+                "textZh": "关于 Codex 速率限制的更新。 我们发现：（a）在包含多次压缩的长会话中使用图片时存在一些效率问题；（b）Computer History 的 p95+ 使用量偏高；（c）一个原本用于生成对话标题的功能消耗的用量比预期多了一点"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/6mgUetJnhg",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2091407991736332689"
+              }
+            ]
+          },
+          {
+            "headline": "Model efficiency becomes critical infrastructure in 2026 / 2026年，模型效率成为关键基础设施",
+            "body": "2026 is the year companies start seriously caring about model efficiency and reliability as it becomes critical infrastructure\n\n2026年将是企业开始认真重视模型效率和可靠性的一年，因为它正变成关键基础设施。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2091581575108653374"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Correction: 2pm, obviously / 更正：显然是下午2点",
+            "body": "Meant 2pm obviously\n我的意思显然是下午2点。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2091413240337326588"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "Practical AI tutorials and interviews for busy people | Get my best AI skills an",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-23T21:00:06.000Z",
+        "sections": [
+          {
+            "headline": "AI-Fluent Assistants for Business · 适合企业的 AI 协作型助理",
+            "body": "I've been working with **Char**, my (human!) assistant from **Oceans Talent** for 6 months.\n\nI think the best assistants today need to know how to work with **AI agents**.\n\n**Char** uses **Claude Code** and **Codex** to help me run podcast post-production, draft show notes, and make clips. He's made copies of my **AI** skills and tailored them for his own workflows over time.\n\nIf you want to hire vetted, **AI**-fluent operators who can help you run your business, check out **Oceans** at https://t.co/kKx6GaKTqw\n\n#sponsored\n\n我和 **Oceans Talent** 的助理 **Char**（真人！）已经合作 6 个月了。\n\n我觉得，现在最好的助理都得会和 **AI agents** 协作。\n\n**Char** 会用 **Claude Code** 和 **Codex** 帮我处理播客后期、起草节目笔记、剪辑短片。他还把我那些 **AI** 技能复制了一份，慢慢改造成更适合他自己工作流的版本。\n\n如果你想找经过筛选、懂 **AI**、能帮你把业务跑起来的运营人才，可以看看 **Oceans**：https://t.co/kKx6GaKTqw\n\n#sponsored",
+            "source_links": [
+              "https://x.com/petergyang/status/2091631590799737306"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQb32LWagAAkLjR.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2091631590799737306/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/kKx6GaKTqw",
+                "resolvedUrl": "https://www.oceanstalent.com/peter"
+              }
+            ]
+          },
+          {
+            "headline": "Top-down vs bottom-up AI evals · AI 评测的自上而下与自下而上",
+            "body": "There are two types of AI evals - tops down and bottoms up.\n\nFrom @sh_reya:\n\n“Think of top-down as: If you’re in a vacuum, just given the task description, what would you come up with? **Claude** does a very good job of helping you with these top-down evals.\n\nBottom-up evals are the other half. When you look at lots and lots of sample outputs, what is your gut feedback that you want externalized into evals? “**Claude** is very, very bad at coming up with bottom-up evals. That’s all you.”\n\n📌 Watch the full episode here: https://t.co/BuTklgfbr4\n\nAI 评测有两种：自上而下和自下而上。\n\n来自 @sh_reya：\n\n“可以把自上而下理解为：如果你处在真空环境里，只拿到任务描述，你会设计出什么？**Claude** 在帮助你做这类自上而下的评测时，表现非常好。\n\n自下而上评测是另一半。当你看了大量样本输出后，你直觉里的那些反馈，哪些值得被明确提炼成评测标准？而 **Claude** 非常、非常不擅长提出这类自下而上的评测。这部分得靠你自己。”\n\n📌 完整节目在这里观看：https://t.co/BuTklgfbr4",
+            "source_links": [
+              "https://x.com/petergyang/status/2091586298779955512"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/JU7OKpzytb",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2091586281113563136/img/lnbujZJIYCMyaiF1.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2091586298779955512/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/BuTklgfbr4",
+                "resolvedUrl": "https://www.youtube.com/watch?v=bdMHQLvtVaQ"
+              }
+            ]
+          },
+          {
+            "headline": "**AI evals** course recommendation with 25% off | **AI evals** 课程推荐，享 25% 折扣",
+            "body": "If you enjoyed this episode, I highly recommend **Shreya** and **Hamel**'s industry-leading **AI evals** course.\n\nIt has 4.7 stars with 900 reviews, which is almost unheard of on **Maven**.\n\nThe next cohort starts on 9/5 and you can get 25% off with this link: https://t.co/K7nu51cgOo\n\nCheck it out and get your company to expense it if you can!\n\n如果你喜欢这期内容，我强烈推荐 **Shreya** 和 **Hamel** 的 **AI evals** 课程，业内基本算顶尖水准。\n\n这门课在 **Maven** 上拿到 4.7 星、900 条评价，这个成绩很少见。\n\n下一期开课时间是 9 月 5 日，用这个链接可以打 75 折：https://t.co/K7nu51cgOo\n\n可以去看看；如果有条件，也可以让公司报销。",
+            "source_links": [
+              "https://x.com/petergyang/status/2091529714104168870"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/K7nu51cgOo",
+                "resolvedUrl": "https://maven.com/parlance-labs/evals?utm_campaign=peteryang&utm_medium=affiliate&utm_source=maven&promoCode=PETERYANG"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "product enthusiast",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-23T16:15:26.000Z",
+        "sections": [
+          {
+            "headline": "Also Every Other Category of Software｜以及几乎所有其他软件类别",
+            "body": "Also every other category of software https://t.co/OYC8Ss5zld\n\n以及几乎所有其他软件类别都是这样 https://t.co/OYC8Ss5zld",
+            "source_links": [
+              "https://x.com/thenanyu/status/2091559951739277451"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/RhysSullivan/status/2091396855162921023",
+                "resolvedUrl": "https://x.com/RhysSullivan/status/2091396855162921023",
+                "authorName": "Rhys",
+                "authorHandle": "RhysSullivan",
+                "authorUrl": "https://x.com/RhysSullivan",
+                "text": "how it feels to never have to make a dashboard in software again because ai can just do it for you",
+                "displayDate": "Aug 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQYiWuWaIAAiF_5.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/RhysSullivan/status/2091396855162921023/photo/1"
+                  }
+                ],
+                "textZh": "再也不用在软件里做仪表盘了，因为 AI 可以直接帮你做，这种感觉就是这样"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/OYC8Ss5zld",
+                "resolvedUrl": "https://x.com/rhyssullivan/status/2091396855162921023"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Sr Director, AI at Meta; Prev: Google - Led Gemini, Veo, Nano Banana.",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-24T00:31:35.000Z",
+        "sections": [
+          {
+            "headline": "How to build great evals: The Goldilocks principle for eval construction.｜如何构建优秀评测：评测设计的金发姑娘原则",
+            "body": "How to build great evals - part 7.\n\nThe Goldilocks principle for eval construction.\n\nYour evals should measure at the level of the various jobs to be done, not just the final answer.\n\nE.g. consider a financial analysis agent. It's ultimate output is a stock recommendation. The most common mistake I see is teams create a golden set of right answers and check if the agent recommended the \"right” stock.\n\nThe problem here is that there are probably a bunch of meaningful jobs that happened before this recommendation. E.g.\n\n1/ Understanding the client: their portfolio, risk tolerance, investment horizon, goals, constraints\n\n2/ Gather evidence: latest data points on the different stock stocks, the sectors, macro environment, **Fed** policy, recent and upcoming news events\n\n3/ Analyze the data: revenue growth, valuation guidance, growth projections and produce a narrower number of candidate stocks\n\n4/ Make a recommendation: stock ticker name, bid/sell price, timeframe\n\nEach of these is a stage and produces an intermittent output. Each of them can (and maybe should have) their own eval so you can diagnose issues.\n\nIf the final recommendation is wrong, a well designed eval set would tell you:\nClient understanding : 92%,\nEvidence extraction : 92%,\nData analysis: 70%\nRecommendation: 75%\n\nNow you know where to go dig. And you might go, man the data analysis step is too complex and I need to break it down into a set of jobs to be done, and construct eval sets for them.\n\nNot too granular. Not too coarse. Just right.\nMake your eval set as granular as you need to diagnose and act.\n\nDrop your eval questions in the comments and I will answer in future posts.\n\nShare this with your teammates!\n\nSee you tomorrow.\n\n如何构建优秀评测 - 第 7 部分。\n\n评测设计里的金发姑娘原则。\n\n你的评测应该衡量各个具体任务的完成情况，而不只是盯着最后答案。\n\n比如，一个金融分析智能体，最终产出是股票推荐。我最常见到的错误，是团队先做一套“标准答案”，然后只看智能体有没有推荐“正确”的那只股票。\n\n问题在于，这个推荐之前其实经历了很多有意义的环节。比如：\n\n1/ 理解客户：他们的投资组合、风险承受能力、投资期限、目标、约束条件\n\n2/ 收集证据：不同股票的最新数据点、所属板块、宏观环境、**Fed** 政策、近期和接下来的新闻事件\n\n3/ 分析数据：营收增长、估值指引、增长预期，并把候选股票范围收窄\n\n4/ 给出推荐：股票代码、买入/卖出价格、时间周期\n\n这些都是独立阶段，而且每个阶段都会产出中间结果。每一步都可以，甚至应该有自己的评测，这样你才能定位问题。\n\n如果最终推荐错了，一个设计合理的评测集应该能告诉你：\n客户理解：92%\n证据提取：92%\n数据分析：70%\n推荐生成：75%\n\n这样你就知道该往哪里深挖了。你可能会发现，数据分析这一步太复杂了，需要继续拆成更细的一组任务，再分别给它们设计评测集。\n\n别太细。也别太粗。要刚刚好。\n你的评测集，颗粒度只需要细到足以诊断问题、支持行动。\n\n把你的评测问题发到评论区，我会在之后的帖子里回答。\n\n转给你的队友吧！\n\n明天见。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2091684812012875981"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "@vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-23T23:38:00.000Z",
+        "sections": [
+          {
+            "headline": "**Sol** gets cheaper, usage surges **Sol** 更便宜，用量猛增",
+            "body": "Intelligence is getting cheaper.\n\n**OpenAI Sol**'s price reductions & discounts on **Vercel AI Gateway** have made **Sol** our fastest-growing frontier model.\n\nThis shows ① that the demand for intelligence is highly elastic: as inference costs fall, usage grows rapidly.\n\n② If you're not using a gateway, you're missing out on this incredible price volatility, which lowers your operating costs and increases your margins. \n\nIt's no wonder the router space has heated up… gateways are inevitable.\n\n智能正在变得更便宜。\n\n**OpenAI Sol** 降价，再加上 **Vercel AI Gateway** 的折扣，让 **Sol** 成了我们增长最快的前沿模型。\n\n这说明了两点：① 智能的需求弹性非常高：随着推理成本下降，用量会迅速增长。\n\n② 如果你还没用 gateway，那你就错过了这种惊人的价格波动红利。它能直接压低你的运营成本，提高你的利润率。\n\n难怪 router 赛道最近越来越热……gateway 已经是必然趋势。",
+            "source_links": [
+              "https://x.com/rauchg/status/2091671326897713424"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQcZDJEa4AAJlQH.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2091671326897713424/photo/1"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**fx** extension philosophy: open protocols and **Unix** / **fx** 的扩展哲学：开放协议与 **Unix**",
+            "body": "Our philosophy on extending **fx**: open protocols.\n∙ **MCP** (modelcontextprotocol.io)\n∙ **Skills** (agentskills.io)\n∙ **Plugins** (agent-plugins.org)\n\nAnd the best one, **Unix**:\n\n① Small programs that do one thing well and compose by calling other programs.\n\n② **libfx** that enables embeddability into more complex programs. You should be able to build your own CLI, background agent, software factory. Local or cloud.\n\n我们对扩展 **fx** 的理念是：开放协议。\n∙ **MCP** (modelcontextprotocol.io)\n∙ **Skills** (agentskills.io)\n∙ **Plugins** (agent-plugins.org)\n\n还有最重要的那个，**Unix**：\n\n① 程序要小，只把一件事做好，再通过调用其他程序把能力拼起来。\n\n② **libfx** 让它可以嵌入更复杂的程序里。你应该能基于它搭出自己的 CLI、后台代理、软件工厂。既可以本地运行，也可以放到云上。",
+            "source_links": [
+              "https://x.com/rauchg/status/2091583525661384813"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "ceo @box - your business lives in content. unleash it with AI",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-23T17:37:42.000Z",
+        "sections": [
+          {
+            "headline": "Ready to Retire / 可以退休了",
+            "body": "I’m good to retire now https://t.co/YjTjVxlKvN\n我现在可以安心退休了 https://t.co/YjTjVxlKvN",
+            "source_links": [
+              "https://x.com/levie/status/2091580656598102047"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQbJhWgbMAAQMgR.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/levie/status/2091580656598102047/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/YjTjVxlKvN",
+                "resolvedUrl": "https://x.com/levie/status/2091580656598102047/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQbJhWgbMAAQMgR.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Ryo Lu",
+        "person_handle": "ryolu_",
+        "person_identity": "Designed @Cursor_ai, @NotionHQ, @Stripe, built startups. I make a world where an",
+        "profile_url": "https://x.com/ryolu_",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-23T18:43:32.000Z",
+        "sections": [
+          {
+            "headline": "Link-only post / 仅含链接帖子",
+            "body": "https://t.co/BNr8qU8a6e\nhttps://t.co/BNr8qU8a6e",
+            "source_links": [
+              "https://x.com/ryolu_/status/2091597222987383155"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/BNr8qU8a6e",
+                "resolvedUrl": "https://ryo.lu/journal"
+              }
+            ]
+          },
+          {
+            "headline": "Leaving into the Unknown 走向未知的离开",
+            "body": "leaving\n\nleaving is the process from fullness into emptiness\n\nfrom the familiar circle of life\nthe routines undone\nthe streets i knew by heart\nthe people i kept meeting\nthe names and labels that had gathered on my skin\n\ntoward a place entirely unknown\nwhere a new life waits to be written\n\nbefore i go\ni take out everything i had hidden in my heart\nand say goodbye to it\npiece by piece\n\nmemory rises\nand feeling rises with it\n\none by one\ni empty the rooms within me\nuntil i am almost as i was when i first arrived\nunfurnished\nunclaimed\nopen\n\nwhat remains is a blankness\nechoing with my fear of loneliness\nmy longing for freedom\nand the questions i still cannot answer\n\nwhat is freedom\nwhat is happiness\n\nwhen i first came here\ni was drifting in a river\ncarried by the current\nthinking only of making things\n\nnow i have to place my own hands on the helm\n\nno longer mistaking the waves for fate\nor the shore for salvation\n\ni will miss the days i lived here\n\nbut i must learn again\nhow to sleep inside loneliness\nhow to eat inside uncertainty\nhow to recognize desire in the blank\n\nand through the act of leaving\nturn freedom from an idea\ninto a life i practice every day\n\n离开\n\n离开，就是从充盈走向空无的过程。\n\n离开熟悉的生活圈，\n那些被打乱的日常，\n那些我早已烂熟于心的街道，\n那些反复相遇的人，\n那些一点点贴在我身上的名字与标签。\n\n走向一个彻底陌生的地方，\n在那里，一种新生活正等着被写下。\n\n在我离开之前，\n我把藏在心里的东西一件件取出来，\n跟它们告别，\n一点一点地。\n\n记忆浮上来，\n情绪也跟着浮上来。\n\n我一间一间清空身体里的房间，\n直到自己几乎回到初来时的样子：\n没有陈设，\n不属于谁，\n敞开着。\n\n最后剩下的是一片空白，\n里面回荡着我对孤独的恐惧，\n对自由的渴望，\n还有那些至今仍答不出的问句。\n\n什么是自由？\n什么是幸福？\n\n刚来这里的时候，\n我像漂在一条河里，\n顺着水流往前，\n脑子里只想着去创造、去做东西。\n\n而现在，\n我得亲手握住船舵。\n\n不再把浪当作命运，\n也不再把岸当作救赎。\n\n我会想念住在这里的那些日子。\n\n但我必须重新学会，\n怎样在孤独里入睡，\n怎样在不确定里吃饭生活，\n怎样在空白中认出自己的欲望。\n\n并且借由离开这件事，\n把自由从一个想法，\n活成一种我每天都在练习的生活。",
+            "source_links": [
+              "https://x.com/ryolu_/status/2091596272654582062"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "President & CEO @ycombinator —Founder @garryslist—Creator of GStack & GBrain—des",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-24T04:22:06.000Z",
+        "sections": [
+          {
+            "headline": "AI Harnesses or Agent Replacement / 记录系统要么变成 AI 驱动器，要么被智能体替代",
+            "body": "Prediction: systems of record will need to become **AI** harnesses or face replacement by agents\n\n预测：记录系统要么得变成 **AI** 的承载与调度层，不然就会被智能体取代。",
+            "source_links": [
+              "https://x.com/garrytan/status/2091742825042030681"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendo",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-24T01:17:41.000Z",
+        "sections": [
+          {
+            "headline": "Quick eSIM save for grandma date night / eSIM 秒速救场，奶奶顺利约会夜",
+            "body": "Mother in law is visiting from **India**..\n\nWants to do serendipitous date night with her grand daughter. \n\nRealized she didn’t sign up for roaming and we need a way to communicate. \n\nI get a data **eSIM** in under three minutes and she’s connected. \n\nWhat a wonderful world we live in 🤗\n\n(real ones know this would historically be a trip to the store or calling the carrier for an extra line that I need to cancel in a month)\n\n岳母从**印度**过来玩。\n\n她想和外孙女来一场说走就走的约会之夜。\n\n结果发现她没开国际漫游，我们得赶紧想个办法联系上。\n\n我不到三分钟就给她办好了一个数据 **eSIM**，立刻连上网。\n\n这世界还真挺美好 🤗\n\n（懂的都懂，放以前这事多半得跑一趟营业厅，或者打电话给运营商加一条临时副卡，下个月还得记得取消）",
+            "source_links": [
+              "https://x.com/nikunj/status/2091696412744700268"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "Polyagentmorous ClawFather. Came back from retirement to mess with AI and help a",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-23T22:13:48.000Z",
+        "sections": [
+          {
+            "headline": "CLI is nice, but UI and teamwork are nicer / CLI 不错，但界面可视化和团队协作更好",
+            "body": "cli is nice, having UI visualizations and your team where you work is nicer. https://t.co/OFmkkkq6l5\n\nCLI 挺好，但有可视化界面，再加上和你共事的团队，会更好。",
+            "source_links": [
+              "https://x.com/steipete/status/2091650136506327253"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQcInPOasAANya1.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/steipete/status/2091650136506327253/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/OFmkkkq6l5",
+                "resolvedUrl": "https://x.com/steipete/status/2091650136506327253/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQcInPOasAANya1.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claw** learns USB rotation control for a **360 webcam** / **Claw** 学会通过 USB 旋转控制 **360 摄像头**",
+            "body": "I added the rotation USB protocol to https://t.co/kyF8ap5Pq6 and told my **claw** to look around- now it's having fun with my **360 webcam**.\n\n我把那个旋转用的 USB 协议加进了 https://t.co/kyF8ap5Pq6，还让我的 **claw** 自己四处看看，现在它正玩得起劲，拿我的 **360 摄像头** 到处转。",
+            "source_links": [
+              "https://x.com/steipete/status/2091639468935831910"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/kyF8ap5Pq6",
+                "resolvedUrl": "https://github.com/steipete/camsnap"
+              },
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/kyF8ap5Pq6%EF%BC%8C%E8%BF%98%E8%AE%A9%E6%88%91%E7%9A%84",
+                "resolvedUrl": "https://t.co/kyF8ap5Pq6%EF%BC%8C%E8%BF%98%E8%AE%A9%E6%88%91%E7%9A%84"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": "claude",
+        "person_identity": "Anthropic Blog",
+        "profile_url": "https://claude.com/blog",
+        "source_label": "Blog",
+        "posted_at": "2026-06-08",
+        "sections": [
+          {
+            "headline": "Claude joins Apple’s Foundation Models framework for smarter app workflows / **Claude** 接入 **Apple Foundation Models**，让应用工作流更聪明",
+            "body": "**Anthropic** released a new **Swift** package that lets developers call **Claude** through **Apple’s Foundation Models framework**. The setup is intentionally simple: developers can start from typed **Swift** values produced by Apple’s native framework, use on-device models for quick local tasks, and then hand off to **Claude** when a request needs deeper reasoning, code generation, web search, or code execution.\n\n这次 **Anthropic** 放出的，是一个新的 **Swift** 包。开发者可以直接在 **Apple Foundation Models** 这套框架里接入 **Claude**：简单的本地任务先交给设备端模型，碰到多步推理、代码生成、联网检索或数据分析，再无缝切到 **Claude**。整个链路都在 **Swift** 里完成，输入也更干净，不用直接拿原始用户文本硬喂模型。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Typed inputs, one user experience, better model routing / 类型化输入加统一体验，把模型分工这件事做好",
+            "body": "A key point in the post is that **Apple’s Foundation Models framework** can return typed **Swift** values via `@Generable`, which means **Claude** receives structured inputs instead of noisy free-form text. That improves the handoff between local and remote models, while keeping streaming responses, tool calls, and structured outputs inside the same **SwiftUI** view.\n\n文中一个很实用的点是：**Apple** 这套框架能通过 `@Generable` 直接产出类型化的 **Swift** 值。这样一来，传给 **Claude** 的不是杂乱的自然语言，而是整理过的结构化输入。好处很直接：本地模型和云端模型之间切换更稳，响应流、工具调用、结构化结果也都还能留在同一个 **SwiftUI** 视图里。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Use cases and platform rollout / 适用场景与平台发布时间",
+            "body": "**Anthropic** highlights hybrid app patterns such as journaling, document, and study apps. For example, a journaling app might generate prompts on-device and then ask **Claude** to identify themes across months of entries; a study app might explain a term locally and escalate to **Claude** for broader conceptual reasoning. The package was announced on **June 8, 2026**, with availability stated for the next day across **iOS 27**, **iPadOS 27**, **macOS 27**, **visionOS 27**, and **watchOS 27** through **Apple’s Foundation Models framework**.\n\n**Anthropic** 给的例子也比较明确：日记应用、文档应用、学习应用都适合这种双模型路线。比如日记应用可以先在本地生成提示，再让 **Claude** 去归纳几个月记录里的长期线索；学习应用可以先本地解释术语，等用户继续追问，再把更复杂的知识串联交给 **Claude**。\n\n发布时间是 **2026 年 6 月 8 日**，文中说该支持会在次日开放，覆盖 **iOS 27**、**iPadOS 27**、**macOS 27**、**visionOS 27** 和 **watchOS 27**。",
+            "source_links": [
+              "https://claude.com/blog/claude-for-foundation-models"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-24",
+    "updatedAt": "2026-08-24T13:10:23.561Z",
+    "commit": {
+      "sha": "a0f6f4cd43f04ed60a99bd4750276cb98b35a88e",
+      "committedAt": "2026-08-24T06:28:50Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-24T12:00:06.580Z",
+    "feedGeneratedAt": "2026-08-24T06:28:47.362Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
