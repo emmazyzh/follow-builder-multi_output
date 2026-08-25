@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-24T13:10:23.585Z",
-  "latestDate": "2026-08-24",
+  "updatedAt": "2026-08-25T12:05:07.905Z",
+  "latestDate": "2026-08-25",
   "dates": [
+    {
+      "date": "2026-08-25",
+      "title": "AI Builders Daily · 2026-08-25",
+      "summary": "**OpenAI** tees up a swagger-heavy **DevDay 2026** pitch while also snapping the 5-hour cap back onto **Plus** users across **ChatGPT Work** and **Codex**; builders keep circling one blunt theme, software should be easier to bend, prompt, and automate; founders and operators are arguing about the real bottlenecks now, from logins and phone trees to enterprise governance and zero-data-retention; meanwhile the side chatter is pure builder internet: faster terminals, datacenter jobs, dead hackathon formats, and YouTube accounts getting nuked without warning.\n\n**OpenAI** 一边把 **DevDay 2026** 的调门拉满，一边又把 **Plus** 用户在 **ChatGPT Work** 和 **Codex** 上的 5 小时限额加了回来；今天不少人其实都在说同一件事，软件最好能改、能提示、能直接拿来自动化，不然就嫌麻烦；创业和产品圈吵的焦点也很实在，从登录流程、客服电话树，到企业里的治理、权限和 **ZDR**；剩下的边角料也挺有意思，终端命令嫌慢、数据中心能不能带来工作、黑客松是不是过时了，还有 **YouTube** 账号说没就没。",
+      "itemCount": 13,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-25T12:05:07.903Z",
+      "commit": {
+        "sha": "d25dde37b04b4eebd5be01fa8c55f8e577d9c893",
+        "committedAt": "2026-08-25T06:28:07Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-24",
       "title": "AI Builders Daily · 2026-08-24",

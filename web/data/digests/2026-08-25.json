@@ -1,0 +1,708 @@
+{
+  "payload": {
+    "date": "2026-08-25",
+    "title": "AI Builders Daily · 2026-08-25",
+    "summary": "**OpenAI** tees up a swagger-heavy **DevDay 2026** pitch while also snapping the 5-hour cap back onto **Plus** users across **ChatGPT Work** and **Codex**; builders keep circling one blunt theme, software should be easier to bend, prompt, and automate; founders and operators are arguing about the real bottlenecks now, from logins and phone trees to enterprise governance and zero-data-retention; meanwhile the side chatter is pure builder internet: faster terminals, datacenter jobs, dead hackathon formats, and YouTube accounts getting nuked without warning.\n\n**OpenAI** 一边把 **DevDay 2026** 的调门拉满，一边又把 **Plus** 用户在 **ChatGPT Work** 和 **Codex** 上的 5 小时限额加了回来；今天不少人其实都在说同一件事，软件最好能改、能提示、能直接拿来自动化，不然就嫌麻烦；创业和产品圈吵的焦点也很实在，从登录流程、客服电话树，到企业里的治理、权限和 **ZDR**；剩下的边角料也挺有意思，终端命令嫌慢、数据中心能不能带来工作、黑客松是不是过时了，还有 **YouTube** 账号说没就没。",
+    "items": [
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Codex",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-08-25T05:10:47.000Z",
+        "sections": [
+          {
+            "headline": "**OpenAI DevDay 2026** gets a huge promise from inside the company / **OpenAI DevDay 2026** 被内部人士直接拉满预期",
+            "body": "OpenAI DevDay 2026 will be our best DevDay in the history of the company. It will not be close.\n\nOpenAI DevDay 2026 会是公司历史上最好的一届 DevDay，而且不是险胜，是明显甩开。 ",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2092117461646856505"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Plus** gets the 5-hour cap back on **ChatGPT Work** and **Codex** / **Plus** 在 **ChatGPT Work** 和 **Codex** 上恢复 5 小时限额",
+            "body": "Tomorrow we will bring back the 5h limit for Plus accounts across ChatGPT Work and Codex. I had mentioned this a while ago, but then postponed it.\n\nThis is necessary as (a) the 5h limit allows us to smoothen the load on our compute, allowing to keep the plan generous in terms of weekly usage and (b) users on the Plus plan are relatively casual and new users, but then also just accidentally eat through their whole weeks usage and then are confused, making it not a great experience.\n\nWe are for the upcoming months keeping the 5h limit not enabled for Pro $100 and Pro $200 subscriptions.\n\n明天我们会把 Plus 账户在 ChatGPT Work 和 Codex 里的 5 小时限额加回来。我之前提过这事，后来又延期了。\n\n这么做有两个原因：(a) 5 小时限额能帮我们把算力负载拉平，这样每周总额度还能继续保持得比较慷慨；(b) Plus 用户里有不少是轻度用户和新用户，但他们也常常会一不小心把整周额度提前用光，然后一脸困惑，体验并不好。\n\n接下来几个月里，Pro 100 美元和 Pro 200 美元订阅暂时不会启用这个 5 小时限额。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2092058556707344708"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-08-25T02:45:30.000Z",
+        "sections": [
+          {
+            "headline": "Login friction is enough to make people quit / 登录太烦，产品都可能直接被放弃",
+            "body": "Whenever I have to login to a new website/app or even use an agent that's trapped in a website /app I usually just prefer to stop using the product (the only exception is entertainment or gaming).\n\nI can't be the only one.\n\n每次我得去登录一个新网站或 app，或者要用一个被困在网站 / app 里的 agent，我通常都宁可直接不用这个产品了（唯一的例外是娱乐或游戏）。\n\n我肯定不是唯一一个这么想的人。",
+            "source_links": [
+              "https://x.com/petergyang/status/2092080901094248474"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Three AI chiefs of staff, and apparently counting / 已经有三个 AI 幕僚长了，看样子还想再加一个",
+            "body": "I got 3 AI chief of staffs now, clearly the next step is to add one more https://t.co/noC4KIsLtE\n\n我现在已经有 3 个 AI chief of staff 了，显然下一步就是再加一个 https://t.co/noC4KIsLtE",
+            "source_links": [
+              "https://x.com/petergyang/status/2092048940732682395"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQhzQEbbcAAABY_.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2092048940732682395/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/noC4KIsLtE",
+                "resolvedUrl": "https://x.com/petergyang/status/2092048940732682395/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQhzQEbbcAAABY_.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI for phone-tree warfare and support calls / 用 AI 去打自动电话树、搞定客服",
+            "body": "I'd like to try using AI to call customer support phone numbers using voice, navigate the terrible automated phone systems, and talk to a human to book appointments or cancel subscriptions.\n\nWhat's the easiest way to try this?\n\n我想试试让 AI 用语音去拨客服热线，穿过那些糟糕的自动电话系统，然后和真人沟通，帮我预约或者取消订阅。\n\n最简单的上手方式是什么？",
+            "source_links": [
+              "https://x.com/petergyang/status/2092031413319266382"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Product builder",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X",
+        "posted_at": "2026-08-25T00:34:56.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** as new-computer setup assistant / 用 **Codex** 配新电脑，居然挺顺手",
+            "body": "setting up a new computer with Codex is kind of nice... \"download and install handy, slack, chrome, cleanshot, rectangle\"\n\nmakes you wish siri was good\n\n用 Codex 配一台新电脑还挺舒服的……\"下载并安装 handy、slack、chrome、cleanshot、rectangle\"\n\n会让人忍不住想，要是 siri 真好用就好了。",
+            "source_links": [
+              "https://x.com/thenanyu/status/2092048044502192374"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "\"Feel the AGI\" mood post / 一句 \"Feel the AGI\"，情绪先到了",
+            "body": "Feel the agi https://t.co/Uvr0TCMKyg\n\nFeel the agi https://t.co/Uvr0TCMKyg",
+            "source_links": [
+              "https://x.com/thenanyu/status/2092013239643394076"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/tommoor/status/2092007061722660892",
+                "resolvedUrl": "https://x.com/tommoor/status/2092007061722660892",
+                "authorName": "Tom Moor",
+                "authorHandle": "tommoor",
+                "authorUrl": "https://x.com/tommoor",
+                "text": "Just upgraded @getoutline from mobx 4 -&gt; 6. My original estimate was that this would take 4.5 years, but Claude pulled it off in just 20mins\n\nhttps://github.com/outline/outline/pull/13554",
+                "displayDate": "Aug 24",
+                "provider": "X",
+                "media": [],
+                "textZh": "刚把 @getoutline 从 mobx 4 升级到 6。我原本估计这要花 4.5 年，但 Claude 只用了 20 分钟就搞定了 https://github.com/outline/outline/pull/13554"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Uvr0TCMKyg",
+                "resolvedUrl": "https://x.com/tommoor/status/2092007061722660892"
+              }
+            ]
+          },
+          {
+            "headline": "Gmail emoji reactions get called ugly and broken across other mail apps / **Gmail** 表情回应被吐槽，在别的邮件客户端里显示得又丑又乱",
+            "body": "“L7 promo: shipped emoji reactions to Gmail that show up as ugly random one character emails with metadata to anyone using another mail app including iPhone mail app the most common mail app on Earth”\n\nhttps://t.co/bQkjEBJIB4\n\n“L7 晋升成果：给 Gmail 上了表情回应功能，但在别的邮件客户端里，包括地球上最常见的 iPhone 邮件 app，看起来就是又丑又随机的单字符邮件，还带一堆元数据”\n\nhttps://t.co/bQkjEBJIB4",
+            "source_links": [
+              "https://x.com/thenanyu/status/2091993558018572434"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/lizwessel/status/2091975532670054710?s=20",
+                "resolvedUrl": "https://x.com/lizwessel/status/2091975532670054710",
+                "authorName": "Liz Wessel",
+                "authorHandle": "lizwessel",
+                "authorUrl": "https://x.com/lizwessel",
+                "text": "I dont understand why a Gmail PM decided to make emoji reactions show up as unread emails. It is the most annoying new feature on gmail.\n\nCan't they instead spend their time.. idk.. creating gmail agents so I dont have to give startups with bad ToS access to create automations?",
+                "displayDate": "Aug 24",
+                "provider": "X",
+                "media": [],
+                "textZh": "我不明白为什么 Gmail 的产品经理会决定把 emoji 反应显示成未读邮件。这是 gmail 最烦人的新功能。 他们就不能把时间花在……比如……做 gmail agents 上吗，这样我就不用把权限给那些 ToS 很糟糕的初创公司来做自动化了？"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/bQkjEBJIB4",
+                "resolvedUrl": "https://x.com/lizwessel/status/2091975532670054710"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI exec",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-08-25T01:15:49.000Z",
+        "sections": [
+          {
+            "headline": "Good evals must separate strong systems from merely decent ones / 好的评测得真能把强模型和一般模型区分开",
+            "body": "How to build great evals - part 8.\n\nThe discriminatory property of evals.\nA hill-climbing eval is useful when it can separate AI systems that are meaningfully different.\n\nImagine you run an eval on five AI systems:\n\nA: 94\nB: 93\nC: 95\nD: 94\nE: 92\n\nNow suppose you already know A and C are substantially better systems than D and E.\n\nThe eval is bad cos it doesn’t tell you that. It has low discriminatory power.\n\nIt’s like giving a fifth-grade math test to a group of PhDs - everyone aces it and  you’ve learned nothing about who is the smartest.\n\nThat doesn’t mean making evals arbitrarily hard. Then everyone fails and you’re not measuring what your systems are meant for.\n\nThe sweet spot for an eval is:\nRealistic + difficult + sensitive to differences in capability.\n\nOver time, your good evals will saturate as your harness and underlying models improve. What do you do then?\n\nDrop your guesses in the comments.\n\nShare this with your teammates.\n\n怎么做出好的评测，第 8 部分。\n\n评测的区分能力。\n一个适合爬坡的评测，得能把真正有差异的 AI 系统分出来。\n\n假设你拿五个 AI 系统跑同一个评测：\n\nA: 94\nB: 93\nC: 95\nD: 94\nE: 92\n\n再假设你已经知道 A 和 C 明显强于 D 和 E。\n\n那这个评测就不行，因为它没把这件事告诉你。它的区分能力太弱。\n\n这就像拿五年级数学题去考一群 PhD，人人高分，你根本看不出谁更聪明。\n\n这也不代表你该把评测故意搞得特别难。那样大家都会挂，而你测到的也不是系统真正要服务的能力。\n\n一个好评测的甜点区间是：\n真实 + 有难度 + 对能力差异敏感。\n\n随着你的 harness 和底层模型变强，原本好的评测迟早会被刷满。那之后怎么办？\n\n欢迎在评论里说说你的看法。\n\n也可以转给你的团队。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2092058332735693264"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-08-24T18:58:46.000Z",
+        "sections": [
+          {
+            "headline": "A rare milestone gets a quick flex / 一个少数人才到的里程碑，顺手秀一下",
+            "body": "Only a few have reached this milestone! https://t.co/FEmlDPmJfj\n\n只有很少一部分人达到了这个里程碑！https://t.co/FEmlDPmJfj",
+            "source_links": [
+              "https://x.com/amasad/status/2091963442186092639"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/brettcmeade/status/2091586075974398182",
+                "resolvedUrl": "https://x.com/brettcmeade/status/2091586075974398182",
+                "authorName": "Brett",
+                "authorHandle": "brettcmeade",
+                "authorUrl": "https://x.com/brettcmeade",
+                "text": "Finally did it! I’ve never gotten so much out of a subscription in my life",
+                "displayDate": "Aug 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQbOc2QasAEibAT.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/brettcmeade/status/2091586075974398182/photo/1"
+                  }
+                ],
+                "textZh": "终于搞定了！我这辈子从来没有从一个订阅里获得过这么多价值。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/FEmlDPmJfj",
+                "resolvedUrl": "https://x.com/brettcmeade/status/2091586075974398182"
+              }
+            ]
+          },
+          {
+            "headline": "**Replit Agent** beats **Claude CoWork** in Amjad's daily workflow / 在 Amjad 的日常里，**Replit Agent** 已经顶掉了 **Claude CoWork**",
+            "body": "True. Replit Agent completely replaced Claude CoWork in my day-to-day work. It's much more persistent and fastidious, and it uses code/software more effectively to complete tasks. https://t.co/QZ89DvogmZ\n\n确实。Replit Agent 已经在我的日常工作里完全取代了 Claude CoWork。它更有韧性，也更细，而且会更有效地调用代码 / 软件来把任务做完。https://t.co/QZ89DvogmZ",
+            "source_links": [
+              "https://x.com/amasad/status/2091962601907638352"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/NIftek/status/2091953150919901625",
+                "resolvedUrl": "https://x.com/NIftek/status/2091953150919901625",
+                "authorName": "Nadia I",
+                "authorHandle": "NIftek",
+                "authorUrl": "https://x.com/NIftek",
+                "text": "Founders, I highly recommend using @Replit Agent as your cheapest, fastest and most intelligent employee before you hire for admin tasks.\n\nFor $5.23, Agent just did 23 pages of paperwork for me, accurately, in 12 minutes (in Max mode). It asked me questions and caught things I",
+                "displayDate": "Aug 24",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQgaTtZXwAAcXXv.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/NIftek/status/2091953150919901625/photo/1"
+                  }
+                ],
+                "textZh": "创始人们，我强烈建议你们在为行政事务招人之前，先把 @Replit Agent 当作最便宜、最快、最聪明的员工来用。 只花了 $5.23，Agent 就在 12 分钟内（Max 模式）准确地帮我处理了 23 页文书。它会问我问题，还发现了一些我"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/QZ89DvogmZ",
+                "resolvedUrl": "https://x.com/niftek/status/2091953150919901625"
+              }
+            ]
+          },
+          {
+            "headline": "A simple \"Cool!\" with a link, builder-style / 很典型的 builder 式转发：一句 \"Cool!\" 加一个链接",
+            "body": "Cool! https://t.co/11uSkCUPrc\n\nCool! https://t.co/11uSkCUPrc",
+            "source_links": [
+              "https://x.com/amasad/status/2091937147473551474"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/danielkempe/status/2091935960292295071",
+                "resolvedUrl": "https://x.com/danielkempe/status/2091935960292295071",
+                "authorName": "Daniel",
+                "authorHandle": "danielkempe",
+                "authorUrl": "https://x.com/danielkempe",
+                "text": "It’s amazing what you can build on @Replit these days! @amasad built a monster!\n\nGo check out http://siliconcity.lol/",
+                "displayDate": "Aug 24",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQgMqYFW0AAMWCk.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/danielkempe/status/2091935960292295071/photo/1"
+                  },
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQgMqYyXgAAZAcs.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/danielkempe/status/2091935960292295071/photo/1"
+                  }
+                ],
+                "textZh": "现在在 @Replit 上能做出来的东西太惊人了！@amasad 做出了个怪物！ 去看看 http://siliconcity.lol/"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/11uSkCUPrc",
+                "resolvedUrl": "https://x.com/danielkempe/status/2091935960292295071"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-08-25T02:48:06.000Z",
+        "sections": [
+          {
+            "headline": "Rauch pitches software that gets faster, cheaper, and smaller instead of bloated / Rauch 在推一种反常识的软件路线：更快、更便宜、更强，还更小",
+            "body": "It's faster, cheaper, more capable, and… smaller.\n\nAs software evolves, it tends to get slower, more bloated, buggier, and bigger. \n\nhttps://t.co/3Z4NESzNKd is architected from the outset to prevent this. https://t.co/w00UuR0URa\n\n它更快、更便宜、能力更强，而且……更小。\n\n软件一路演化下去，通常会变得更慢、更臃肿、bug 更多、体积更大。\n\nhttps://t.co/3Z4NESzNKd 从一开始就是按避免这件事来设计的。https://t.co/w00UuR0URa",
+            "source_links": [
+              "https://x.com/rauchg/status/2092081554814320677"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/fazxes/status/2092075869107879973",
+                "resolvedUrl": "https://x.com/fazxes/status/2092075869107879973",
+                "authorName": "Pranit",
+                "authorHandle": "fazxes",
+                "authorUrl": "https://x.com/fazxes",
+                "text": "fx v0.0.6\n• Better Auto mode (cheaper &amp; faster)\n• Approval workflows up to 23% faster\n• Smaller macOS binary: 6.12mb (-0.26%)\n• Remote HTTP MCP support\n• More reliable Codex, Grok &amp; MCP sign-ins\n• Many bug fixes\n\nWe've also documented MCP integrations with",
+                "displayDate": "Aug 25",
+                "provider": "X",
+                "media": [],
+                "textZh": "fx v0.0.6 • 更好的 Auto 模式（更便宜、更快） • 审批工作流最高快 23% • 更小的 macOS 二进制文件：6.12mb（-0.26%） • 支持远程 HTTP MCP • Codex、Grok 和 MCP 登录更可靠 • 大量 bug 修复 我们还记录了 MCP 集成，包括"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/3Z4NESzNKd",
+                "resolvedUrl": "https://fx.sh/"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/w00UuR0URa",
+                "resolvedUrl": "https://x.com/fazxes/status/2092075869107879973"
+              }
+            ]
+          },
+          {
+            "headline": "A 1979 terminal sleep bug leads to a 1ms Zig reset tool / 1979 年留下的终端慢动作，最后被他用 **Zig** 改成了 1 毫秒",
+            "body": "If your terminal ever gets into a 'bad state', like garbled outputs, you run 𝚛𝚎𝚜𝚎𝚝. I noticed it was… oddly slow.\n\nTurns out in 1979 3BSD's 𝚝𝚜𝚎𝚝 had a 𝚜𝚕𝚎𝚎𝚙(𝟷) to let mechanical printer-and-ink terminals 'settle down' 😂\n\nI asked 𝚏𝚡 to write me a faster alternative in Zig. It takes 1ms instead of 1s. It was really cool to dive deeper into 𝚗𝚌𝚞𝚛𝚜𝚎𝚜, 𝚝𝚜𝚎𝚝, 𝚝𝚎𝚛𝚖𝚒𝚗𝚏𝚘, and the myriad ways in which your terminal can get… cursed.\n\nIt's legit fascinating how far back our technology stack goes, and how enduring good system design is, even with the occasional 'spider webs' you can find.\n\nCheck out https://t.co/7EH0lothku for a fun explainer (and some alternative solutions.)\n\nps: once you start using 𝚏𝚡, you'll notice slowness like this everywhere :D\n\n如果你的终端哪天进了 \"bad state\"，比如输出全糊了，你就会跑 𝚛𝚎𝚜𝚎𝚝。我发现它居然……慢得有点离谱。\n\n结果一查，1979 年 3BSD 的 𝚝𝚜𝚎𝚝 里有个 𝚜𝚕𝚎𝚎𝚙(𝟷)，是为了让机械打印终端和油墨终端有时间 \"缓一缓\" 😂\n\n我让 𝚏𝚡 用 Zig 给我写了个更快的替代品。它现在是 1 毫秒，不是 1 秒。顺着这事往下挖 𝚗𝚌𝚞𝚛𝚜𝚎𝚜、𝚝𝚜𝚎𝚝、𝚝𝚎𝚛𝚖𝚒𝚗𝚏𝚘，还有终端各种离谱出错方式，真的挺有意思。\n\n很神奇，你会发现我们的技术栈能一路追溯到那么久以前，而好的系统设计居然也真能撑这么久，哪怕中间会挂着点 \"蜘蛛网\"。\n\n想看解释和其他方案，可以去看 https://t.co/7EH0lothku\n\nps：一旦你开始用 𝚏𝚡，这种慢你以后到处都会看见 :D",
+            "source_links": [
+              "https://x.com/rauchg/status/2091957823945216474"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/5cCEEc5RLD",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2091957777313021952/img/Owg7lIZ6ws-DEe1z.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2091957823945216474/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/7EH0lothku",
+                "resolvedUrl": "https://github.com/rauchg/rst"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-08-25T03:12:26.000Z",
+        "sections": [
+          {
+            "headline": "Levie says AI agents make systems of record even more critical / Levie 认为 AI agent 越多，系统级记录平台反而越关键",
+            "body": "Systems of record have never been more important than in a world where you have AI agents that will do 100X more work on these platforms than people ever did. \n\nAgents will be querying the data in these systems, processing tasks, executing workflows, collaborating with human and agent users, and more. \n\nThus, the governance, reliability, security, access controls, and business logic remain critical more than ever — the OpenAI Hugging Face incident is just a small peek into what the future will look like with agents running around trying to execute on their goals.\n\nBut this only works for the systems of record that respond with the right product experiences, APIs, and business models to support agents on and off their platform executing in these systems.\n\nHuge moment of opportunity and disruption right now in all of software.\n\n在一个 AI agents 会在这些平台上做出比人类多 100 倍工作量的世界里，systems of record 从来没有现在这么重要。\n\nAgents 会去查询这些系统里的数据、处理任务、执行工作流、和人类及其他 agent 协作，等等。\n\n所以，治理、可靠性、安全、访问控制和业务逻辑比以前更关键了。OpenAI Hugging Face 那次事件，只算是提前给你看了一眼未来，等一堆 agent 到处跑着执行目标时，大概就会是这种画风。\n\n但这件事只会发生在那些肯拿出合适产品体验、API 和商业模式的 systems of record 身上，让平台内外的 agent 都能在这些系统里真正干活。\n\n现在整个软件行业都处在一个机会和扰动都很大的节点上。",
+            "source_links": [
+              "https://x.com/levie/status/2092087679240569126"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**ZDR** is framed as a core reason enterprise AI adoption moved fast / 他把 **ZDR** 说成企业 AI 扩散提速的关键条件",
+            "body": "It’s not fully appreciated that ZDR is responsible for a substantial amount of the growth of AI, because it dramatically simplified the compliance process most companies deal with in handling data with subprocessors. The alternative path would have been a far slower adoption rate.\n\nFor the applied AI tools that are primarily responsible for driving AI growth, they generally have agreements in place with their customers to only offer models with ZDR to ensure that customers don’t have to inspect each model they turn on. Anything else is an exception process that takes far longer.\n\nAnd then inside enterprises directly, most companies have internal governance requirements that say they can only use ZDR models because they have no way of explicitly separating PII and other sensitive or confidential data they put in the context window across their enterprise.\n\nNow, all of this could change if the entire industry went this direction, but with one off models hold outs it would take years for these policies to change. Without ZDR, AI diffusion grinds to a halt.\n\n很多人还没真正意识到，ZDR 其实给 AI 增长贡献了很大一块，因为它大幅简化了大多数公司在把数据交给 subprocessors 时要走的合规流程。换条路走，采用速度会慢很多。\n\n那些真正推动 AI 增长的应用层工具，一般都和客户约定，只提供带 ZDR 的模型。这样客户不用每开一个模型就重新审一次。否则就得走例外流程，慢得多。\n\n再看企业内部，很多公司的治理要求本来就写着只能用 ZDR 模型，因为他们没法在全公司范围内把放进 context window 的 PII 和其他敏感、保密数据明确拆开。\n\n当然，如果整个行业都往这个方向走，情况也许会变。但只要还有零星模型不跟，这些政策要改就是按年算。没有 ZDR，AI 的扩散速度会直接卡住。",
+            "source_links": [
+              "https://x.com/levie/status/2091909170308296950"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-08-25T01:33:39.000Z",
+        "sections": [
+          {
+            "headline": "Garry Tan makes the pro-datacenter jobs case / Garry Tan 继续打数据中心创造就业这张牌",
+            "body": "Datacenters create jobs and prosperity, actually\n\nhttps://t.co/l1ilGEu4Lh https://t.co/oFc8CNsOnj https://t.co/CaoduT9zRO\n\nDatacenters 其实会带来工作和繁荣。\n\nhttps://t.co/l1ilGEu4Lh https://t.co/oFc8CNsOnj https://t.co/CaoduT9zRO",
+            "source_links": [
+              "https://x.com/garrytan/status/2092062820229890209"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQh__HhakAAd9Gb.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2092062820229890209/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/BayAreaNewLibs/status/2092021080978587852",
+                "resolvedUrl": "https://x.com/BayAreaNewLibs/status/2092021080978587852",
+                "authorName": "Bay Area New Liberals 🌐",
+                "authorHandle": "BayAreaNewLibs",
+                "authorUrl": "https://x.com/BayAreaNewLibs",
+                "text": "Supporting a national data center moratorium, kneecapping the industry that's single-handedly put SF on the recovery track, seems like a pretty bad stance for someone running to represent SF's interests nationally. https://missionlocal.org/2026/08/sf-congress-candidates-ai-data-centers/",
+                "displayDate": "Aug 24",
+                "provider": "X",
+                "media": [],
+                "textZh": "支持全国性的数据中心暂停令，等于在削弱一个几乎单枪匹马让 SF 走上复苏轨道的行业。对于一个竞选在全国层面代表 SF 利益的人来说，这立场看起来相当糟糕。https://missionlocal.org/2026/08/sf-congress-candidates-ai-data-centers/"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/l1ilGEu4Lh",
+                "resolvedUrl": "https://garryslist.org/posts/data-center-nimbys-are-killing-1-trillion-in-ai-infrastructure"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/oFc8CNsOnj",
+                "resolvedUrl": "https://x.com/garrytan/status/2092062820229890209/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQh__HhakAAd9Gb.png"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/CaoduT9zRO",
+                "resolvedUrl": "https://x.com/bayareanewlibs/status/2092021080978587852"
+              }
+            ]
+          },
+          {
+            "headline": "**Conductor Cloud** gets a strong productivity endorsement / **Conductor Cloud** 被直接盖章：效率高，还不用老掀着电脑",
+            "body": "Conductor Cloud has made me so much more productive and I don't have to keep my Macbook Pro cracked open anymore\n\nConductor Cloud 让我高效了很多，而且我也不用再一直把 Macbook Pro 掀着开着了。",
+            "source_links": [
+              "https://x.com/garrytan/status/2092062231488061584"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A five-line startup method in one tweet / 五句话写完一套创业动作法",
+            "body": "Form a view.\nTurn it into an artifact or experiment.\nPut it in contact with reality.\nRead the result without self-deception.\nRevise and run again.\n\n先形成一个判断。\n把它做成一个作品，或者一个实验。\n拿去跟现实碰一碰。\n别自欺，看清结果。\n再改，再跑一轮。",
+            "source_links": [
+              "https://x.com/garrytan/status/2092059517446156640"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-08-25T02:39:30.000Z",
+        "sections": [
+          {
+            "headline": "Hackathons are called outdated, at least in their usual form / 黑客松被点名过时了，至少传统那一套已经有点老",
+            "body": "Unpopular opinion: hackathons are an outdated event format (at least the way they’re traditionally held)\n\n一个不太讨喜的看法：hackathons 这种活动形式已经过时了（至少传统办法是这样）。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2092079390301556883"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Sam Altman** sounds most relaxed in a **David Senra** interview, says Zara / Zara 觉得 **Sam Altman** 在 **David Senra** 这期采访里最放松",
+            "body": "I really appreciate how @davidsenra immediately cuts to the chase and gets his guests to be their most natural selves\n\nI've watched lots of Sam Altman interviews; I feel like he's his most comfortable self during this one https://t.co/x8DG8BGTeu\n\n我很喜欢 @davidsenra 这一点，他会立刻切进重点，也会让嘉宾更自然地进入状态。\n\n我看过很多 Sam Altman 的采访；我觉得他在这一期里是最放松、最像自己的。https://t.co/x8DG8BGTeu",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2092053829772881972"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/davidsenra/status/2091525869638434945",
+                "resolvedUrl": "https://x.com/davidsenra/status/2091525869638434945",
+                "authorName": "David Senra",
+                "authorHandle": "davidsenra",
+                "authorUrl": "https://x.com/davidsenra",
+                "text": "My conversation with Sam Altman (@sama), co-founder &amp; CEO of @OpenAI.\n\n0:00 Tobi Lütke, AI-Native Companies &amp; Why Adoption Moves Slowly\n5:45 Sam's Own Resistance to AI &amp; the Missing iPhone Moment\n10:00 Models, Compute, Power Laws &amp; Non-Consensus Talent\n18:37 From AI-Obsessed Kid",
+                "displayDate": "Aug 23",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/IOlRGD94T6",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2091323475848048640/img/YnOlbZVaoLUYDk-c.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/davidsenra/status/2091525869638434945/video/1"
+                  }
+                ],
+                "textZh": "我和 @OpenAI 联合创始人兼 CEO Sam Altman（@sama）的对话。 0:00 Tobi Lütke、AI-Native 公司，以及为什么采用进展缓慢 5:45 Sam 自己对 AI 的抵触，以及缺失的 iPhone 时刻 10:00 模型、算力、幂律与非共识人才 18:37 从痴迷 AI 的孩子"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/x8DG8BGTeu",
+                "resolvedUrl": "https://x.com/davidsenra/status/2091525869638434945"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-08-25T02:38:32.000Z",
+        "sections": [
+          {
+            "headline": "Venture deals survive on one real internal champion / 非典型融资能不能成，往往就看基金里有没有一个真 champion",
+            "body": "Every (unconventional) deal that’s officially wired dies a 100 times in venture..\n\nIt usually takes one champion sticking their neck out for the founder - and quietly steering it to the completion line. \n\nFounders it’s in your benefit to figure out who your real champion is to help steer the fund dynamics and arm them with whatever info you can to make your case. \n\nThis is where associates and non-voting partners are extraordinarily useful as they are incentivized to help you - and it’s a good test of how they’d partner with you as they come on your cap table!\n\n每一笔已经正式进入打款流程的（非典型）融资，在 VC 里都要死上 100 次。\n\n通常最后都得靠一个愿意替创始人站出来的人，悄悄把这笔 deal 一路拽到终点。\n\n对创始人来说，最好尽快搞清楚谁才是你真正的 champion，谁能帮你穿过基金内部的复杂动态。然后把所有能帮你立住 case 的信息都给到他。\n\n这也是 associates 和没有投票权的 partners 特别有用的时候，因为他们往往更有动力帮你。而且，这也能顺手看出他们以后进了你的 cap table，会怎么跟你一起干活。",
+            "source_links": [
+              "https://x.com/nikunj/status/2092079149028716877"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X",
+        "posted_at": "2026-08-24T16:20:11.000Z",
+        "sections": [
+          {
+            "headline": "Software should be prompt-editable, full stop / 软件最好能用一个 prompt 改掉，不然就该反思了",
+            "body": "We need to get away from software that we can’t change with a prompt. https://t.co/Fthfm8WYGH\n\n我们得离那种没法靠一个 prompt 改动的软件远一点。https://t.co/Fthfm8WYGH",
+            "source_links": [
+              "https://x.com/steipete/status/2091923535513928015"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/dhh/status/2091841106480627871",
+                "resolvedUrl": "https://x.com/dhh/status/2091841106480627871",
+                "authorName": "DHH",
+                "authorHandle": "dhh",
+                "authorUrl": "https://x.com/dhh",
+                "text": "Omacom Foundation funding has now hit TEN MILLION DOLLARS thanks to @drewhouston and @steipete joining as Founding Patrons with $1 million each for the mission. Couldn't be more thankful! I know just where to send some of the money... https://omarchy.org/news/2026/08/omacom-foundation-funding-hits-10m/",
+                "displayDate": "Aug 24",
+                "provider": "X",
+                "media": [],
+                "textZh": "Omacom Foundation 的资金现在已经达到一千万美元，这要感谢 @drewhouston 和 @steipete 各自以 100 万美元加入成为 Founding Patrons，支持这项使命。感激不尽！我很清楚其中一部分钱该投到哪里…… https://omarchy.org/news/2026/08/omacom-foundation-funding-hits-10m/"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Fthfm8WYGH",
+                "resolvedUrl": "https://x.com/dhh/status/2091841106480627871"
+              }
+            ]
+          },
+          {
+            "headline": "More blog posts, more theme songs / 博客不够，配套主题曲也得跟上",
+            "body": "More blog posts should come with theme songs.\n\n更多博客文章应该自带主题曲。",
+            "source_links": [
+              "https://x.com/steipete/status/2091779461650006514"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "\"Prompt kiddie\" enters the vocabulary / \"prompt kiddie\" 这个词进词库了",
+            "body": "TIL: prompt kiddie https://t.co/N92Q7aIzPq\n\n今天学到一个词：prompt kiddie https://t.co/N92Q7aIzPq",
+            "source_links": [
+              "https://x.com/steipete/status/2091778518531395927"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/N92Q7aIzPq",
+                "resolvedUrl": "https://ericpardee.github.io/fire-hd-ownership/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-08-24T23:42:07.000Z",
+        "sections": [
+          {
+            "headline": "Dan Shipper publicly asks **Google** and **YouTube** for help / Dan Shipper 公开喊 **Google** 和 **YouTube** 来帮忙",
+            "body": "@Google @YouTube @every @YouTubeCreators can you help?\n\n@Google @YouTube @every @YouTubeCreators 能帮个忙吗？",
+            "source_links": [
+              "https://x.com/danshipper/status/2092034751037096260"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Every** says its **YouTube** account was disabled with no warning / **Every** 称自己的 **YouTube** 账号被无预警封掉了",
+            "body": "so it looks @google disabled the @youtube account for @every with 0 notice and no reason given...\n\nanyone have any experience with this or know how to help us get it back? https://t.co/5yR7vQxHm1\n\n看起来 @google 把 @every 的 @youtube 账号给停掉了，事先 0 通知，也没给原因……\n\n有人遇到过这种事，或者知道怎么帮我们把账号拿回来吗？https://t.co/5yR7vQxHm1",
+            "source_links": [
+              "https://x.com/danshipper/status/2092026065644335446"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQhed_dXcAAYuyB.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2092026065644335446/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/5yR7vQxHm1",
+                "resolvedUrl": "https://x.com/danshipper/status/2092026065644335446/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQhed_dXcAAYuyB.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "SPC partner",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-08-24T18:37:27.000Z",
+        "sections": [
+          {
+            "headline": "**SPC** is hiring / **SPC** 在招人",
+            "body": "Apply to SPC if you'd like to join us https://t.co/xWaXyqC7Rj\n\n如果你想加入我们，欢迎申请 SPC https://t.co/xWaXyqC7Rj",
+            "source_links": [
+              "https://x.com/adityaag/status/2091958077591347630"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/xWaXyqC7Rj",
+                "resolvedUrl": "https://www.southparkcommons.com/apply"
+              }
+            ]
+          },
+          {
+            "headline": "**Hans Robertson** is dropping by **SPC** this week / **Hans Robertson** 这周会去 **SPC**",
+            "body": "Hans Robertson was early at @VMware, co-founded @meraki and sold it to Cisco for $1.2B, and co-founded Verkada in 2016. \n\nHe's still running it today. \n\nHe's coming by @spc this week. https://t.co/6D6dhVIEJ5\n\nHans Robertson 很早就在 @VMware，后来联合创办了 @meraki，并以 12 亿美元卖给 Cisco，2016 年又联合创办了 Verkada。\n\n他到现在还在亲自带这家公司。\n\n他这周会来 @spc。https://t.co/6D6dhVIEJ5",
+            "source_links": [
+              "https://x.com/adityaag/status/2091958074827313523"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQgabiXWgAANN99.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/adityaag/status/2091958074827313523/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/6D6dhVIEJ5",
+                "resolvedUrl": "https://x.com/adityaag/status/2091958074827313523/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQgabiXWgAANN99.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-25",
+    "updatedAt": "2026-08-25T12:05:07.896Z",
+    "commit": {
+      "sha": "d25dde37b04b4eebd5be01fa8c55f8e577d9c893",
+      "committedAt": "2026-08-25T06:28:07Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-25T12:00:13.967Z",
+    "feedGeneratedAt": "2026-08-25T06:28:05.928Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
