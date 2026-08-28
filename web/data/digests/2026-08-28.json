@@ -1,0 +1,839 @@
+{
+  "payload": {
+    "date": "2026-08-28",
+    "title": "AI Builders Daily · 2026-08-28",
+    "summary": "**Voice agents are getting very real**; **ChatGPT is pushing deeper into real-world tasks** while Google pitches Gemini as the year of voice; Anthropic swings from safety theory to product surface with containment architecture and live artifacts.\n\n**The mood split is sharp**; Sam Altman sounds a cyber-defense alarm, Aaron Levie argues software and agents rise together, and Ryan Greenblatt’s 2029 takeover timeline drags the alignment fight back into the center.\n\n**语音代理开始落地了**；**ChatGPT** 往买菜、打车、预约这些真任务里钻，**Google** 也把 **Gemini** 往“开口就干活”的路上猛推；**Anthropic** 一边摊开讲怎么关住 **Claude**，一边把可分享的 artifacts 端上桌。\n\n**今天的气氛很分裂**；**Sam Altman** 直接敲响 AI 网络防御警报，**Aaron Levie** 继续押注软件系统和 agents 绑在一起长，另一头 **Ryan Greenblatt** 把“2029 接管风险”又硬生生拽回台前。",
+    "items": [
+      {
+        "person_name": "The MAD Podcast with Matt Turck",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/watch?v=SK9ITBK5osA",
+        "source_label": "Podcast",
+        "posted_at": "2026-08-27T14:22:21.000Z",
+        "sections": [
+          {
+            "headline": "**Ryan Greenblatt** warns the superintelligence race could break bad by 2029; **Ryan Greenblatt** 警告超级智能竞赛最早可能在 2029 年失控",
+            "body": "Matt Turck’s latest **MAD Podcast** episode is a dark, direct conversation with **Redwood Research** chief scientist **Ryan Greenblatt** about AI takeover risk, the **AI 2040 Plan A**, and why he thinks major lab CEOs understand the danger but are still pushing ahead. Greenblatt frames superintelligence not as inherently bad but as dangerous, especially if misaligned systems automate R&D, concentrate power, or outrun society’s ability to govern the resulting capabilities.\n\n这期 **MAD Podcast** 找来 **Redwood Research** 首席科学家 **Ryan Greenblatt**，把话题直接拉到 AI 接管风险、**AI 2040 Plan A**，以及为什么他判断大模型公司 CEO 明知危险还在继续往前冲。Greenblatt 的核心说法不是“超级智能天然有害”，而是它很危险，尤其当错位系统开始自动化研发、把权力越收越紧，或者技术推进速度快到治理根本跟不上。",
+            "source_links": [
+              "https://www.youtube.com/watch?v=SK9ITBK5osA"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Anthropic Engineering",
+        "person_handle": null,
+        "person_identity": "AI Lab Engineering",
+        "profile_url": "https://www.anthropic.com/engineering/how-we-contain-claude",
+        "source_label": "Blog",
+        "posted_at": "2026-08-28",
+        "sections": [
+          {
+            "headline": "**Anthropic** lays out how it tries to keep **Claude** useful without blowing up the blast radius; **Anthropic** 摊开讲怎么让 **Claude** 能干活又别把风险放大",
+            "body": "In a detailed engineering post, **Anthropic** argues that the real deployment problem is no longer whether models can do meaningful work, but how to contain the damage if they fail. The piece breaks agent risk into user misuse, model misbehavior, and external attack, then focuses on the environmental controls that matter most in practice: sandboxes, VMs, filesystem boundaries, egress controls, and tightly scoped tool access.\n\n这篇工程长文的重点很明确：现在卡人的不只是模型能不能干活，而是出事时能把伤害圈多小。**Anthropic** 把 agent 风险拆成三类，分别是用户乱来、模型自己跑偏、外部攻击；真正下重手的防线则是运行环境本身，比如 sandbox、虚拟机、文件系统边界、出网限制，还有尽量抠细的工具权限。",
+            "source_links": [
+              "https://www.anthropic.com/engineering/how-we-contain-claude"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude Blog",
+        "person_handle": null,
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://claude.com/blog/artifacts-in-claude-code",
+        "source_label": "Blog",
+        "posted_at": "Jun 18, 2026",
+        "sections": [
+          {
+            "headline": "**Claude Code** turns sessions into live artifacts you can share and keep updating; **Claude Code** 把会话直接变成可分享、可持续更新的 artifacts",
+            "body": "**Claude Code** now supports artifacts: live visual pages generated from a working session that can become PR walkthroughs, incident timelines, dashboards, architecture explainers, or release checklists. The pitch is straightforward: instead of translating an agent session into status updates by hand, teams can publish a living page built from repo context, connectors, and the conversation itself, with version history and org-scoped access.\n\n**Claude Code** 现在能把会话产出直接做成 artifacts，也就是会自己更新的可视化页面，适合拿来做 PR walkthrough、事故时间线、dashboard、架构说明或者发布清单。思路不绕：别再靠人手把 agent 的过程翻译成进度汇报，直接把代码库上下文、连接器数据和会话推理揉成一个活页面，带版本历史，权限也收在组织范围内。",
+            "source_links": [
+              "https://claude.com/blog/artifacts-in-claude-code"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T20:32:52.000Z",
+        "sections": [
+          {
+            "headline": "**Gemini** gets a voice-agent push; **Gemini** 开始猛推语音代理",
+            "body": "Look what you can do:\n- Tell Gemini what you want done\n- Gemini gets to work\n\nThis is the Year of Voice https://t.co/XGkmnJm6Cb\n\n看看你现在能做什么：\n- 告诉 **Gemini** 你想让它做什么\n- **Gemini** 直接开始干活\n\n今年就是语音之年 https://t.co/XGkmnJm6Cb",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2093074288295481470"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/GeminiApp/status/2092661911120978024",
+                "resolvedUrl": "https://x.com/GeminiApp/status/2092661911120978024",
+                "authorName": "Google Gemini",
+                "authorHandle": "GeminiApp",
+                "authorUrl": "https://x.com/GeminiApp",
+                "text": "Gemini Live is moving beyond conversation to handle complex tasks on your behalf.\n\nWith new features in Live like Daily Brief, Gemini Spark, Personal Intelligence, and @Gmail inbox management, you can talk through your day and delegate your to-dos without missing a beat. 🧵",
+                "displayDate": "Aug 26",
+                "provider": "X",
+                "media": [],
+                "textZh": "Gemini Live 正在从对话走向替你处理复杂任务。 借助 Live 中的 Daily Brief、Gemini Spark、Personal Intelligence，以及 @Gmail 收件箱管理等新功能，你可以一边聊清楚一天的安排，一边把待办事项交给它处理，全程不掉链子。🧵"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/XGkmnJm6Cb",
+                "resolvedUrl": "https://x.com/geminiapp/status/2092661911120978024"
+              }
+            ]
+          },
+          {
+            "headline": "Try **Gemini** now; 现在就去试 **Gemini**",
+            "body": "Try it out\n\nhttps://t.co/hV4tY0BHxv\n\n去试试看\n\nhttps://t.co/hV4tY0BHxv",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2093070719093727265"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/hV4tY0BHxv",
+                "resolvedUrl": "https://notebook.google/expert-intelligence"
+              }
+            ]
+          },
+          {
+            "headline": "Books become a **Notebook**-powered brain trust; 书现在能变成 **Notebook** 里的私人智囊团",
+            "body": "Turn your favorite books into your personal brain trust! You can now buy a book, drop it in Notebook, and apply the author’s lessons to your project. \n\nFor authors and publishers, we co-created this program so you could reach new and more engaged readers. https://t.co/fiErAHaKlk\n\n把你最喜欢的书变成你的私人智囊团吧！现在你可以买一本到书，丢进 **Notebook**，再把作者的方法和经验直接用到你的项目里。\n\n对作者和出版商来说，我们一起做了这个项目，让你们能接触到更多、也更投入的读者。 https://t.co/fiErAHaKlk",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2093070717508296923"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/Gemini_Notebook/status/2093059543362306369",
+                "resolvedUrl": "https://x.com/Gemini_Notebook/status/2093059543362306369",
+                "authorName": "Gemini Notebook",
+                "authorHandle": "Gemini_Notebook",
+                "authorUrl": "https://x.com/Gemini_Notebook",
+                "text": "Introducing Expert Intelligence ✨\n\nA cross-@Google initiative that helps you engage with your trusted sources, starting with eligible @GooglePlay ebooks in Gemini Notebook. You can now combine expertise from your favorite authors with other sources and engage with your books in",
+                "displayDate": "Aug 27",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/ZdDEaPmho8",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2093059496046391296/img/P6WpLrOP-2KKxf3b.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/Gemini_Notebook/status/2093059543362306369/video/1"
+                  }
+                ],
+                "textZh": "推出 Expert Intelligence ✨ 这是一项跨 @Google 的计划，帮助你与可信来源互动，首先支持 Gemini Notebook 中符合条件的 @GooglePlay 电子书。现在，你可以把喜爱作者的专业知识与其他来源结合起来，并与你的书籍进行互动"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/fiErAHaKlk",
+                "resolvedUrl": "https://x.com/gemini_notebook/status/2093059543362306369"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-28T05:21:16.000Z",
+        "sections": [
+          {
+            "headline": "A space joke lands; 一个太空梗落地",
+            "body": "But flying close to Sol doesn't make it faster, sorry.\n\n不过贴着太阳飞并不会更快，抱歉。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2093207264194892263"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Codex** is spilling into planes and cafés; **Codex** 已经从极客角落跑到飞机和咖啡馆里了",
+            "body": "Starting to see more and more Codex users on airplanes and in cafés. Underdog energy gone mainstream.\n\n开始在飞机上和咖啡馆里越来越常看到 **Codex** 用户了。那种“地下黑马”的劲头，已经开始主流化了。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2093207246977318928"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**ChatGPT** pushes into groceries, rides, and bookings without exposing credentials; **ChatGPT** 往买菜、打车、预约这些真实任务里走，而且不暴露凭证",
+            "body": "ChatGPT can now do your groceries, book an Uber, get you that haircut appointment (hint hint), and much more. All without ever seeing your actual credentials and keeping it secure. https://t.co/iphUe2UAhX\n\n**ChatGPT** 现在可以帮你买菜、叫 **Uber**、约理发时间（懂的都懂），还有更多事。整个过程都不用它看到你真正的账号凭证，同时还保持安全。 https://t.co/iphUe2UAhX",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2093074717590921245"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ChatGPT/status/2092366554965107164",
+                "resolvedUrl": "https://x.com/ChatGPT/status/2092366554965107164",
+                "authorName": "ChatGPT",
+                "authorHandle": "ChatGPT",
+                "authorUrl": "https://x.com/ChatGPT",
+                "text": "ChatGPT Work can now use its computer and browser to sign in to websites on web and mobile, without ChatGPT ever seeing your username or password.\n\nThat means you can ask it to:\n• Set up utilities for a new apartment\n• Book a DMV or passport appointment\n• Check reimbursement",
+                "displayDate": "Aug 25",
+                "provider": "X",
+                "media": [],
+                "textZh": "ChatGPT Work 现在可以使用它的电脑和浏览器，在网页和移动端登录网站，而且 ChatGPT 永远看不到你的用户名或密码。 这意味着你可以让它： • 为新公寓开通水电等公共服务 • 预约 DMV 或护照办理 • 查询报销"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/iphUe2UAhX",
+                "resolvedUrl": "https://x.com/chatgpt/status/2092366554965107164"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Creator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-28T00:23:14.000Z",
+        "sections": [
+          {
+            "headline": "The **/no-ai-slop** skill goes backward for comedy; **/no-ai-slop** 反着用，直接玩成段子",
+            "body": "One great use of my /no-ai-slop skill (now at 6K GitHub stars) is to ask it to work in reverse.\n\nHere's an example of a wedding vow it created for a couple who were united by their shared passion for B2B SaaS. 😅\n\nGet my /no-ai-slop skill here: https://t.co/UyaaNQ6kLf https://t.co/frxaNtXTgD https://t.co/uRC38Tln17\n\n我那个 **/no-ai-slop** skill（现在已经有 6K GitHub stars）有个很好玩的用法，就是让它反过来工作。\n\n这是它给一对因为共同热爱 B2B SaaS 而走到一起的情侣写的婚礼誓词示例。😅\n\nskill 在这： https://t.co/UyaaNQ6kLf https://t.co/frxaNtXTgD https://t.co/uRC38Tln17",
+            "source_links": [
+              "https://x.com/petergyang/status/2093132262602920002"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQxMsysagAAzAap.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2093132262602920002/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/84490044/status/2079943830024188105",
+                "resolvedUrl": "https://x.com/petergyang/status/2079943830024188105",
+                "authorName": "Peter Yang",
+                "authorHandle": "petergyang",
+                "authorUrl": "https://x.com/petergyang",
+                "text": "I’m sick of reading AI slop, so today I’m open-sourcing my /no-ai-slop skill that removes 20+ slop patterns from any piece of writing.\n\n📌 Get the free skill here: https://github.com/petergyang/no-ai-slop\n\nIf you find it useful, please consider starring the repo so more people can find it.\n\nWhy I",
+                "displayDate": "Jul 22",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/FdjctCMWty",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2079943800764702720/img/WFKIH7jyxp11Psf3.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/petergyang/status/2079943830024188105/video/1"
+                  }
+                ],
+                "textZh": "我受够了读 AI 味废话，所以今天把我的 /no-ai-slop skill 开源了，它可以从任何文章中移除 20 多种 AI 废话模式。 📌 在这里免费获取这个 skill：https://github.com/petergyang/no-ai-slop 如果你觉得有用，欢迎给这个仓库点星，让更多人看到。 为什么我"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/UyaaNQ6kLf",
+                "resolvedUrl": "https://github.com/petergyang/no-ai-slop"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/frxaNtXTgD",
+                "resolvedUrl": "https://x.com/petergyang/status/2093132262602920002/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQxMsysagAAzAap.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/uRC38Tln17",
+                "resolvedUrl": "https://x.com/84490044/status/2079943830024188105"
+              }
+            ]
+          },
+          {
+            "headline": "New AI products may need to live inside top harnesses; 新 AI 产品想被采用，可能得先接进主流 harness",
+            "body": "I receive around 3-5 requests to test a new AI product daily. Almost all of them require creating a new account and logging into a separate website or app.\n\nMeanwhile, I basically only use ChatGPT, Grok, etc to do everything on my computer and browser.\n\nThese harnesses already have all my context and I don't want to start over from scratch with a new website or tool that only understands a small slice of my data. \n\nSo with a few exceptions, the new products that I'm mostly likely to adopt need to work in today's top AI harnesses.\n\nI realize only a small segment of users behave this way but I bet this segment will expand drastically soon.\n\n我每天大概会收到 3 到 5 个测试新 AI 产品的请求。几乎每一个都要我新建账号，再登录一个单独的网站或 app。\n\n但与此同时，我基本上只用 **ChatGPT**、**Grok** 之类的东西来处理我电脑和浏览器上的所有事。\n\n这些 harness 已经有我全部的上下文了，我不想为了一个只懂我少量数据的新网站或工具，再从零开始。\n\n所以除少数例外，我最可能采用的新产品，得能在当下这些主流 AI harness 里工作。\n\n我知道现在这么用的人还只是小部分，但我赌这个群体很快会明显变大。",
+            "source_links": [
+              "https://x.com/petergyang/status/2093126719888916616"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A call for a more shared **ChatGPT Health** experience; **ChatGPT Health** 被点名该考虑家属协作",
+            "body": "I've uploaded 160 pages of medical records to AI and it has been incredible. \n\nWho's on the team for @ChatGPT Health? It needs to be designed not just for the patient but also for the care giver & family. \n\nRight now it feels like it's a strictly single player experience? I understand medical records are sensitive but close family sharing should be allowed.\n\n我已经把 160 页病历上传给 AI，体验非常惊人。\n\n到底是谁在负责 **@ChatGPT Health**？它不该只为患者本人设计，也得把照护者和家人考虑进去。\n\n现在它感觉像个严格的单人模式。我知道病历很敏感，但至少应该允许近亲之间共享。",
+            "source_links": [
+              "https://x.com/petergyang/status/2093099238381240447"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "Product Enthusiast",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T19:09:55.000Z",
+        "sections": [
+          {
+            "headline": "A video gets framed as the future tech job market; 一个视频被点成未来科技就业市场的样子",
+            "body": "This video is the future of the tech job market (if we get this AI thing right) https://t.co/k2PUm4sCz3\n\n这个视频就是未来科技就业市场的样子（前提是我们把 AI 这件事做对）。 https://t.co/k2PUm4sCz3",
+            "source_links": [
+              "https://x.com/thenanyu/status/2093053415429677155"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/tunahorse21/status/2092951807911715276",
+                "resolvedUrl": "https://x.com/tunahorse21/status/2092951807911715276",
+                "authorName": "tuna🍣",
+                "authorHandle": "tunahorse21",
+                "authorUrl": "https://x.com/tunahorse21",
+                "text": "Crazy how this video crashed the tech job market",
+                "displayDate": "Aug 27",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/sxLhHCBkLa",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2092951699325386752/img/A_rtgpgzClr4wseR.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/tunahorse21/status/2092951807911715276/video/1"
+                  }
+                ],
+                "textZh": "太离谱了，这个视频居然把科技行业就业市场搞崩了"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/k2PUm4sCz3",
+                "resolvedUrl": "https://x.com/tunahorse21/status/2092951807911715276"
+              }
+            ]
+          },
+          {
+            "headline": "A non-default **CleanShot** toggle gets the spotlight; 一个你大概率没开的 **CleanShot** 设置被拎出来了",
+            "body": "the most important non-default setting you probably don't have toggled rn (@CleanShot) https://t.co/fo5hIOtJWE\n\n你现在大概率还没打开、但其实最重要的那个非默认设置（@**CleanShot**）。 https://t.co/fo5hIOtJWE",
+            "source_links": [
+              "https://x.com/thenanyu/status/2093010530403561964"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQvdy6xaAAAL3de.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/thenanyu/status/2093010530403561964/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/fo5hIOtJWE",
+                "resolvedUrl": "https://x.com/thenanyu/status/2093010530403561964/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQvdy6xaAAAL3de.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI Director",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-28T01:09:23.000Z",
+        "sections": [
+          {
+            "headline": "Enterprise AI leaders are told to stay model-agnostic; 企业 AI 负责人被建议把栈做成模型无关",
+            "body": "If you lead AI for an enterprise, the highest leverage thing you can do is to make your AI stack model agnostic. \n\nThere are two things I would invest in.\n\n1/ Today: build an eval suite that fully captures your use cases and business outcomes. Most companies I’ve seen do not do a good job of this.\n\n2/ Within the next year: build the capability to post-train open models. The talent gap here is even more acute, so start planning today.\n\nThis gives you the flexibility to switch models, customize them, compare them on your own workloads, and optimize for the best combination of quality, cost and latency.\n\nown the evals, own the models.\n\n如果你在企业里负责 AI，杠杆最高的一件事，就是把你的 AI 技术栈做成模型无关。\n\n有两件事我会投。\n\n1/ 现在就做：搭一套真正覆盖你业务场景和结果指标的 eval suite。就我看到的，大多数公司这块做得都不够。\n\n2/ 未来一年内：建立对开源模型做后训练的能力。这方面的人才缺口更大，所以今天就该开始准备。\n\n这样你就能灵活切模型、做定制、拿自家负载比较，还能把质量、成本和延迟一起优化。\n\n把 evals 握在自己手里，把模型能力也握在自己手里。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2093143877087879377"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Anthropic Builder",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-28T03:19:34.000Z",
+        "sections": [
+          {
+            "headline": "A surreal moment, posted with almost no context; 一个几乎没给上下文的荒诞瞬间",
+            "body": "life is stranger than fiction https://t.co/VRODSsk0q4\n\n生活比虚构还离谱。 https://t.co/VRODSsk0q4",
+            "source_links": [
+              "https://x.com/trq212/status/2093176635940016380"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQx1DoBbUAEoBx5.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/trq212/status/2093176635940016380/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/VRODSsk0q4",
+                "resolvedUrl": "https://x.com/trq212/status/2093176635940016380/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQx1DoBbUAEoBx5.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T23:35:01.000Z",
+        "sections": [
+          {
+            "headline": "A clean **Vercel** deployment pitch; 一句很直接的 **Vercel** 部署号召",
+            "body": "Deploy to Vercel https://t.co/hhz97HbwJI\n\n部署到 **Vercel**。 https://t.co/hhz97HbwJI",
+            "source_links": [
+              "https://x.com/rauchg/status/2093120128879907123"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/cursor_ai/status/2093077548649570777",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2093077548649570777",
+                "authorName": "Cursor",
+                "authorHandle": "cursor_ai",
+                "authorUrl": "https://x.com/cursor_ai",
+                "text": "You can now create new web apps with Cursor, store the code with Origin, and deploy to Vercel.",
+                "displayDate": "Aug 27",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/08AfRw2UMW",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2093077313680515072/img/B6glgi6wP3QskwB2.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/cursor_ai/status/2093077548649570777/video/1"
+                  }
+                ],
+                "textZh": "现在你可以用 Cursor 创建新的 Web 应用，用 Origin 存储代码，并部署到 Vercel。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hhz97HbwJI",
+                "resolvedUrl": "https://x.com/cursor_ai/status/2093077548649570777"
+              }
+            ]
+          },
+          {
+            "headline": "Shaders become another proof that everything is code; shaders 又被拿来证明一切终归是程序",
+            "body": "https://t.co/JWiUKesyXV and shaders are further proof that “everything is computer”.\n\n2D, 3D, geometry, light, materials, textures, shadows, reflections, particles, post-processing. Just programs evaluated massively in parallel over vertices and pixels. All computer.\n\nhttps://t.co/JWiUKesyXV 和 shaders 进一步证明了“万物皆计算机”。\n\n2D、3D、几何、光照、材质、纹理、阴影、反射、粒子、后处理。说到底，就是程序在顶点和像素上大规模并行求值。全都是计算。",
+            "source_links": [
+              "https://x.com/rauchg/status/2093119693846630842"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/JWiUKesyXV",
+                "resolvedUrl": "https://vgpu.sh/"
+              }
+            ]
+          },
+          {
+            "headline": "An internal **WebGPU** tool becomes an agent-native devtool; 内部 **WebGPU** 技术被做成面向 agent 的开发工具",
+            "body": "Our best products have been exports of internal technology we gain strong conviction in.\n\n@matinotfound and team have been shipping extraordinary WebGPU creative productions, and now https://t.co/0nyTRPKDEJ is here.\n\nIt’s a fully agent-native devtool: it was designed for agents, not humans alone. Much like 𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛, it’s part of a new exciting generation of tools to serve the new world.\n\n我们最好的产品，往往都是把内部已经建立强烈信心的技术往外做出来。\n\n@matinotfound 和团队一直在做很夸张的 **WebGPU** 创意产出，现在 https://t.co/0nyTRPKDEJ 来了。\n\n这是一个彻底为 agent 原生设计的 devtool：它不是只给人用的，而是从一开始就按 agent 来设计。像 𝚊𝚐𝚎𝚗𝚝-𝚋𝚛𝚘𝚠𝚜𝚎𝚛 一样，它属于服务这个新世界的一代新工具。",
+            "source_links": [
+              "https://x.com/rauchg/status/2093019310725951683"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/0nyTRPKDEJ",
+                "resolvedUrl": "https://vgpu.sh/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-28T04:23:23.000Z",
+        "sections": [
+          {
+            "headline": "**Software** and **agents** are framed as a joint expansion story; **软件** 和 **agents** 被说成是一条一起长大的曲线",
+            "body": "This week’s tech earnings calls were a critical reminder of how valuable the relationship is between software and AI.\n\nSoftware provides the guardrails for how data is managed, how business logic in workflows are maintained, how you manage and govern access to information, how you protect data, and more. You want these systems to work the same way every time, without fail. \n\nAgents, on the other hand, work inside these systems and with this data to execute on tasks just like people would have. But at a scale far greater than people ever did, which is especially why the deterministic controls matter more than ever.  \n\nAnd in fact many of the best ways to deploy agents will be directly within the software systems themselves, like from Salesforce, Box, Harvey, ServiceNow, and so on. These platforms can optimize agents for their workflows and domains, with evals and context that are unique to their vertical, as well as connect to other \n agents headlessly. \n\nThe net result is both software and AI adoption go up, hand in hand. Software and Agents are going to work together, and ultimately grow the size of the IT TAM dramatically as a result over time.\n\n这周科技公司财报电话会再次提醒人一件事：软件和 AI 之间的关系，非常值钱。\n\n**软件** 提供的是护栏，决定数据怎么管、工作流里的业务逻辑怎么维持、信息访问怎么治理、数据怎么保护，等等。这些系统必须每次都按同样的方式稳定运行。\n\n另一边，**agents** 则是在这些系统里、拿着这些数据去执行任务，就像人一样，只是规模远超以往。也正因为规模上来了，确定性的控制反而更重要。\n\n而且很多最好的 agent 落地方式，本来就会直接长在软件系统内部，比如 **Salesforce**、**Box**、**Harvey**、**ServiceNow** 这些平台。它们可以围绕自己的工作流和垂直场景去优化 agent，也能用本行业特有的 evals 和上下文，还能无头连接别的 agents。\n\n最后的结果会是：软件和 AI 的采用一起往上走。**Software** 和 **Agents** 会一起工作，也会把整个 IT TAM 越做越大。",
+            "source_links": [
+              "https://x.com/levie/status/2093192697331011846"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-28T05:11:40.000Z",
+        "sections": [
+          {
+            "headline": "A blunt YIMBY callout; 一条很不客气的 YIMBY 点名",
+            "body": "SF YIMBY Action has been a trash organization for years\n\nDon’t join them and don’t give them money. Support CA YIMBY and YIMBY Law https://t.co/AQE3vBknGR\n\nSF YIMBY Action 这些年一直都很烂。\n\n别加入他们，也别给他们钱。去支持 CA YIMBY 和 YIMBY Law。 https://t.co/AQE3vBknGR",
+            "source_links": [
+              "https://x.com/garrytan/status/2093204849588637954"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/daniel_w_owens/status/2093184427795079476",
+                "resolvedUrl": "https://x.com/daniel_w_owens/status/2093184427795079476",
+                "authorName": "Daniel Owens",
+                "authorHandle": "daniel_w_owens",
+                "authorUrl": "https://x.com/daniel_w_owens",
+                "text": "Who wants to try and explain the rationale here? Not the fake rationale. The real one.",
+                "displayDate": "Aug 28",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQx8JP_bkAA4ATC.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/daniel_w_owens/status/2093184427795079476/photo/1"
+                  }
+                ],
+                "textZh": "谁想来解释一下这里的理由？不是那个假的理由，是真正的理由。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/AQE3vBknGR",
+                "resolvedUrl": "https://x.com/daniel_w_owens/status/2093184427795079476"
+              }
+            ]
+          },
+          {
+            "headline": "Tampa Bay gets tagged as an AI influence cluster; Tampa Bay 被点成 AI 影响力人脉带",
+            "body": "The Tampa Bay Wave of influential people in AI https://t.co/iiIjzSiMGB\n\nTampa Bay 那波在 AI 圈里有影响力的人。 https://t.co/iiIjzSiMGB",
+            "source_links": [
+              "https://x.com/garrytan/status/2093129851633082594"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/venturetwins/status/2093015294398849522",
+                "resolvedUrl": "https://x.com/venturetwins/status/2093015294398849522",
+                "authorName": "Justine Moore",
+                "authorHandle": "venturetwins",
+                "authorUrl": "https://x.com/venturetwins",
+                "text": "Objectively insane to make a list of the most influential people in AI and include these two but not Jensen",
+                "displayDate": "Aug 27",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQviUWzacAM1RI6.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/venturetwins/status/2093015294398849522/photo/1"
+                  }
+                ],
+                "textZh": "把这些人列进 AI 领域最有影响力人物榜单，却包括这两位而不包括 Jensen，客观上太离谱了"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/iiIjzSiMGB",
+                "resolvedUrl": "https://x.com/venturetwins/status/2093015294398849522"
+              }
+            ]
+          },
+          {
+            "headline": "AI cash flow may outrun the economy’s ability to absorb capital; AI 造现金流的速度可能快过经济吸收资本的能力",
+            "body": "Seems likely that on a long enough time frame, AI will generate cash flows faster than the economy can find productive uses for new capital\n\n看长一点，AI 很可能会比整个经济体系更快地产生现金流，快到市场都来不及给新增资本找到足够高效的去处。",
+            "source_links": [
+              "https://x.com/garrytan/status/2093056910631293063"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "VC & Podcast Host",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T16:42:43.000Z",
+        "sections": [
+          {
+            "headline": "The **Ryan Greenblatt** episode spreads across platforms; 这期 **Ryan Greenblatt** 对谈开始全平台分发",
+            "body": "This important conversation with @RyanGreenblatt is also available on Spotify, Apple Podcasts and here on YouTube:\n\nhttps://t.co/sHNgwsk244\n\n这场和 @RyanGreenblatt 的重要对谈，现在也可以在 **Spotify**、**Apple Podcasts** 以及这里的 **YouTube** 上听到：\n\nhttps://t.co/sHNgwsk244",
+            "source_links": [
+              "https://x.com/mattturck/status/2093016371231649929"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/sHNgwsk244",
+                "resolvedUrl": "https://youtu.be/SK9ITBK5osA?si=ehqqlkiEyDnPF_sZ"
+              }
+            ]
+          },
+          {
+            "headline": "A full roadmap for the 2029 takeover argument; 一张围绕 2029 接管风险的完整话题地图",
+            "body": "AI Could Take Over in 2029. Is It Already Too Late? My conversation with @RyanGreenblatt of @redwood_ai about AI 2040, RSI, AI alignment, and how he believes the transition to superintelligence actually unfolds.\n\n01:24 The AI CEOs are aware of the risks, but \"proceeding anyway\"\n\n03:27 Astra paused, and the \"Pacing the Frontier\" letter\n\n05:45 \"Not bad. Dangerous.\" What superintelligence actually threatens\n\n09:55 Recursive self-improvement, and the intuition objection\n\n14:16 SSI rumors: does continual learning change the picture?\n\n17:27 His timeline: \"plan as though it happens in 2029\"\n\n19:11 Is it already too late?\n\n21:23 Ryan's path: COVID, podcasts, Redwood\n\n26:30 The alignment faking story, told by the person who ran it\n\n31:30 What AI 2040: Plan A actually is\n\n33:35 Plans D, C, and B: the doors nobody should pick\n\n36:51 The deal with China: \"mutually assured compute destruction\"\n\n39:55 What if compute stops mattering?\n\n43:00 What happens to OpenAI and Anthropic under Plan A\n\n45:31 How the pause ends, and who decides\n\n48:54 \"Plan A isn't likely to happen\": then why write it\n\n50:40 200x GDP growth in the 2030s, explained\n\n53:45 Grading the summer: the letter, Astra, the secret review\n\n59:01 The internal deployment gap\n\n1:01:38 Zuckerberg's manifesto\n\n1:04:56 The Hugging Face investigation\n\n1:05:44 What AI control looks like in practice today\n\n1:12:23 Ryan's sobering timeline: from today to takeover, year by year\n\nAI Could Take Over in 2029. Is It Already Too Late? 这是我和 @RyanGreenblatt（@redwood_ai）的一场对谈，聊 **AI 2040**、RSI、AI 对齐，以及他认为通往超级智能的过程到底会怎么展开。\n\n01:24 AI 公司 CEO 明知风险，却“还是继续往前走”\n\n03:27 **Astra** 暂停，以及 “Pacing the Frontier” 公开信\n\n05:45 “不是坏，而是危险。”超级智能真正威胁的是什么\n\n09:55 递归自我改进，以及“直觉反对”\n\n14:16 SSI 传闻：持续学习会不会改变判断？\n\n17:27 他的时间线：“按 2029 年会发生来做准备”\n\n19:11 现在是不是已经太晚了？\n\n21:23 Ryan 的路径：COVID、播客、**Redwood**\n\n26:30 对齐伪装实验，由亲手跑实验的人亲自讲\n\n31:30 **AI 2040: Plan A** 到底是什么\n\n33:35 D、C、B 三个方案：谁都不该选的门\n\n36:51 和中国的 deal：“mutually assured compute destruction”\n\n39:55 如果算力不再关键怎么办？\n\n43:00 **Plan A** 下 **OpenAI** 和 **Anthropic** 会怎样\n\n45:31 暂停要怎么结束，由谁来决定\n\n48:54 “Plan A 大概率不会发生”：那为什么还要写\n\n50:40 2030 年代 GDP 增长 200 倍，这个说法怎么来的\n\n53:45 给这个夏天打分：公开信、**Astra**、秘密审查\n\n59:01 内部部署落差\n\n1:01:38 **Zuckerberg** 的 manifesto\n\n1:04:56 **Hugging Face** 调查\n\n1:05:44 今天现实里 AI control 长什么样\n\n1:12:23 Ryan 那条让人发冷的时间线：从今天到 takeover，逐年展开",
+            "source_links": [
+              "https://x.com/mattturck/status/2093016366475276662"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/A6ZIgwDVyu",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2093012732891090944/img/ohis78Qpe4hRQuGn.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/mattturck/status/2093016366475276662/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-28T01:12:58.000Z",
+        "sections": [
+          {
+            "headline": "Gym bros and VCs get linked by the barbell joke; 健身哥和 VC 被一根杠铃梗连上了",
+            "body": "Gym bros 🤝 VCs\n\nexplaining their gains strategy\n\n\"barbell\"\n\n健身哥 🤝 VC\n\n解释自己怎么做收益策略的时候\n\n“杠铃”",
+            "source_links": [
+              "https://x.com/nikunj/status/2093144776577282365"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Signal’s disappearing messages meet screenshot reality; **Signal** 阅后即焚，还是挡不住截图现实",
+            "body": "The funniest thing about Silicon Valley group chats is that\n\na) everyone uses Signal with disappearing messages on \n\nbut \n\nb) everyone also screenshots and sends these messages around in (sometimes) non-ephemeral channels\n\nLike, what are we doing here friends? 😂\n\n硅谷群聊最好笑的一点是：\n\na）大家都用开着阅后即焚的 **Signal**\n\n但是\n\nb）大家又会把这些消息截图，转发到别的频道里（有时还不是阅后即焚）\n\n朋友们，我们这到底是在干嘛？ 😂",
+            "source_links": [
+              "https://x.com/nikunj/status/2093094684403134748"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "An essay lands harder than expected; 一篇文章的回响比预想更猛",
+            "body": "Truly floored by all the comments to the most recent essay.. thank you. My ethos has always been to say the quiet part aloud. Will continue to do so 🫡 https://t.co/nvtLtXVTNo\n\n最近那篇文章下面的评论量真的把我震到了，谢谢大家。我的做法一直都是把没人明说的那部分直接讲出来。以后也会继续这样。🫡 https://t.co/nvtLtXVTNo",
+            "source_links": [
+              "https://x.com/nikunj/status/2093046810051014813"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQv9HPiaMAAvAuB.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2093046810051014813/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQv9UhNakAA2Mbk.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2093046810051014813/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQv9XnaasAAXKny.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2093046810051014813/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQv9102bwAAoEV0.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2093046810051014813/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/nvtLtXVTNo",
+                "resolvedUrl": "https://x.com/nikunj/status/2093046810051014813/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQv9102bwAAoEV0.png"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Steinberger",
+        "person_handle": "steipete",
+        "person_identity": "OpenClaw Builder",
+        "profile_url": "https://x.com/steipete",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T16:30:10.000Z",
+        "sections": [
+          {
+            "headline": "A GitHub collaboration gets a grateful shout; 一次 GitHub 合作收到公开致谢",
+            "body": "This turned out so good! Thank you GitHub folks for making this happen! 🙏 https://t.co/K8Ornb1Lep\n\n这个结果真的太好了！感谢 **GitHub** 的朋友们把这件事做成！🙏 https://t.co/K8Ornb1Lep",
+            "source_links": [
+              "https://x.com/steipete/status/2093013213038469205"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "unresolved",
+                "shortUrl": "https://t.co/K8Ornb1Lep",
+                "resolvedUrl": "https://t.co/K8Ornb1Lep"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T17:19:23.000Z",
+        "sections": [
+          {
+            "headline": "A one-word **AGI** tease; 一个只有一个词的 **AGI** 试探",
+            "body": "agi? https://t.co/rLvyxMuBV6\n\nAGI？ https://t.co/rLvyxMuBV6",
+            "source_links": [
+              "https://x.com/danshipper/status/2093025595290452243"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/k_grajeda/status/2092984153880899786",
+                "resolvedUrl": "https://x.com/k_grajeda/status/2092984153880899786",
+                "authorName": "Kevin Grajeda",
+                "authorHandle": "k_grajeda",
+                "authorUrl": "https://x.com/k_grajeda",
+                "text": "Centering a div is now a solved problem\n\nDevelopers have been testing the fleX Alpha stealth model. today, we are announcing it as DIV-1 Flash\n\nDIV-1 Flash delivers frontier-level alignment at a fraction of the cost\n\nFull benchmarks bellow ↓",
+                "displayDate": "Aug 27",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/NVfV3RmPfP",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2092974877279969280/img/yghspegdqrqvmMqX.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/k_grajeda/status/2092984153880899786/video/1"
+                  }
+                ],
+                "textZh": "居中一个 div 现在已经是被解决的问题了 开发者们一直在测试 fleX Alpha 隐身模型。今天，我们正式将其发布为 DIV-1 Flash DIV-1 Flash 以极低成本实现了前沿级对齐能力 完整基准测试见下方 ↓"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/rLvyxMuBV6",
+                "resolvedUrl": "https://x.com/k_grajeda/status/2092984153880899786"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Sam Altman",
+        "person_handle": "sama",
+        "person_identity": "OpenAI CEO",
+        "profile_url": "https://x.com/sama",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T19:38:45.000Z",
+        "sections": [
+          {
+            "headline": "**Sam Altman** sounds an urgent AI cyber-defense alarm; **Sam Altman** 对 AI 网络防御发出紧急警报",
+            "body": "this is a critically important moment for cyber defense with AI; there is not much time to act.\n\nwe are happy if you want to work with us or any of our competitors or partners, but please take this moment seriously.\n\nonly an urgent and intense collective response will work.\n\n这是 AI 网络防御的一个极其关键时刻；已经没多少时间可以犹豫了。\n\n如果你想和我们合作，或者和我们的竞争对手、合作伙伴合作，我们都欢迎；但请务必认真对待这个时刻。\n\n只有紧急而高强度的集体响应，才会有效。",
+            "source_links": [
+              "https://x.com/sama/status/2093060670472241368"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-27T19:32:28.000Z",
+        "sections": [
+          {
+            "headline": "**Claude** opens a discounted science team plan for 10,000 researchers; **Claude** 面向 1 万名科研人员推出折扣团队计划",
+            "body": "Starting today, 10,000 scientists across every field, from math to chemistry to physics and more, can get Claude through our new Claude Team plan for scientists. Standard seats are free, and premium seats with 5x usage limits are $15 per month, an 80% discount, for one year.\n\nClaude is becoming increasingly capable of scientific work, with recent progress on problems from advanced physics calculations to protein design. Alongside that progress, we've been investing in the research community: Claude Science launched in June, and our AI for Science program funds high-impact projects with free credits. Today's expansion builds on both.\n\nPrincipal investigators (or equivalent) at academic and nonprofit research institutions can sign up, then add the researchers in their group. Over the coming months, we plan to extend the program well beyond the initial 10,000 seats.\n\nLearn more: https://t.co/RTG1JxWi4Q\n\n从今天开始，数学、化学、物理等各个领域的 10,000 名科学家，都可以通过我们新的面向科研人员的 **Claude Team** 计划使用 **Claude**。标准席位免费，高级席位每月 15 美元，使用额度是 5 倍，首年打 8 折。\n\n**Claude** 在科学工作上的能力还在持续变强，最近已经能处理从高级物理计算到蛋白质设计这类问题。与此同时，我们也一直在投研究社区：**Claude Science** 在 6 月上线，**AI for Science** 项目则用免费额度资助高影响力项目。今天这次扩展，正是接着这两条线往下走。\n\n高校和非营利研究机构的 PI（或同等角色）现在可以报名，再把自己组里的研究人员加进来。接下来几个月，我们计划把这个项目远远扩到最初的 10,000 个席位之外。\n\n了解更多： https://t.co/RTG1JxWi4Q",
+            "source_links": [
+              "https://x.com/claudeai/status/2093059087298601113"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/ORjInM8goB",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2093049007329116160/img/5X2ymmLb8kxUv3r9.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2093059087298601113/video/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/RTG1JxWi4Q",
+                "resolvedUrl": "https://claude.com/programs/team-plan-for-scientists"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-28",
+    "updatedAt": "2026-08-28T12:04:08.369Z",
+    "commit": {
+      "sha": "691ac102824e4f12c58db9796bd4b32192153b91",
+      "committedAt": "2026-08-28T09:27:09Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-28T12:00:06.709Z",
+    "feedGeneratedAt": "2026-08-28T09:26:33.054Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

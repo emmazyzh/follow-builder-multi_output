@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-25T12:05:07.905Z",
-  "latestDate": "2026-08-25",
+  "updatedAt": "2026-08-28T12:04:08.374Z",
+  "latestDate": "2026-08-28",
   "dates": [
+    {
+      "date": "2026-08-28",
+      "title": "AI Builders Daily · 2026-08-28",
+      "summary": "**Voice agents are getting very real**; **ChatGPT is pushing deeper into real-world tasks** while Google pitches Gemini as the year of voice; Anthropic swings from safety theory to product surface with containment architecture and live artifacts.\n\n**The mood split is sharp**; Sam Altman sounds a cyber-defense alarm, Aaron Levie argues software and agents rise together, and Ryan Greenblatt’s 2029 takeover timeline drags the alignment fight back into the center.\n\n**语音代理开始落地了**；**ChatGPT** 往买菜、打车、预约这些真任务里钻，**Google** 也把 **Gemini** 往“开口就干活”的路上猛推；**Anthropic** 一边摊开讲怎么关住 **Claude**，一边把可分享的 artifacts 端上桌。\n\n**今天的气氛很分裂**；**Sam Altman** 直接敲响 AI 网络防御警报，**Aaron Levie** 继续押注软件系统和 agents 绑在一起长，另一头 **Ryan Greenblatt** 把“2029 接管风险”又硬生生拽回台前。",
+      "itemCount": 18,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-28T12:04:08.372Z",
+      "commit": {
+        "sha": "691ac102824e4f12c58db9796bd4b32192153b91",
+        "committedAt": "2026-08-28T09:27:09Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-25",
       "title": "AI Builders Daily · 2026-08-25",
