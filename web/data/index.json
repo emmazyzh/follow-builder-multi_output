@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-28T12:04:08.374Z",
-  "latestDate": "2026-08-28",
+  "updatedAt": "2026-08-30T13:21:21.814Z",
+  "latestDate": "2026-08-30",
   "dates": [
+    {
+      "date": "2026-08-30",
+      "title": "AI Builders Daily · 2026-08-30",
+      "summary": "**Sight restoration is leaving the lab**: Max Hodak says Science’s Prima retinal implant now has Europe approval and first sales are weeks away; Brain-computer interfaces shift from moonshot talk to actual patients reading books and solving puzzles; On the AI builder side, the mood is split: product teams hint at launches, while founders warn of model-price wars, compute shortages, and a sea of lookalike apps.\n**看点不绕弯**：Max Hodak 那条线最硬，失明患者重获部分视觉，Prima 已拿下欧洲批准，离真正卖货只差临门一脚；AI 圈今天更像情绪大乱斗，一边在憋大招，一边开始担心算力涨价、额度收紧；另一股更真实的抱怨也冒出来了：新产品越来越多，但长得都像，权限越要越狠，真正新的东西反而不够多。",
+      "itemCount": 9,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-08-30T13:21:21.813Z",
+      "commit": {
+        "sha": "239227ddea46dfb9db6ed23e5864a5fabb9cee83",
+        "committedAt": "2026-08-30T06:36:39Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-28",
       "title": "AI Builders Daily · 2026-08-28",

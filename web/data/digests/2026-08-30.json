@@ -1,0 +1,445 @@
+{
+  "payload": {
+    "date": "2026-08-30",
+    "title": "AI Builders Daily · 2026-08-30",
+    "summary": "**Sight restoration is leaving the lab**: Max Hodak says Science’s Prima retinal implant now has Europe approval and first sales are weeks away; Brain-computer interfaces shift from moonshot talk to actual patients reading books and solving puzzles; On the AI builder side, the mood is split: product teams hint at launches, while founders warn of model-price wars, compute shortages, and a sea of lookalike apps.\n**看点不绕弯**：Max Hodak 那条线最硬，失明患者重获部分视觉，Prima 已拿下欧洲批准，离真正卖货只差临门一脚；AI 圈今天更像情绪大乱斗，一边在憋大招，一边开始担心算力涨价、额度收紧；另一股更真实的抱怨也冒出来了：新产品越来越多，但长得都像，权限越要越狠，真正新的东西反而不够多。",
+    "items": [
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "Codex & ChatGPT @OpenAI",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-30T04:10:56.000Z",
+        "sections": [
+          {
+            "headline": "Team is cooking like never before 团队状态前所未有地火热",
+            "body": "Team is cooking like never before\n团队这波状态，真是前所未有地猛。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2093914342551101782"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Celebration moved to tomorrow 庆祝活动改到明天",
+            "body": "This celebration is moved to tomorrow as the button was already pressed today. https://t.co/lAywb9TV44\n\n这场庆祝改到明天了，因为那个按钮今天已经按过了。https://t.co/lAywb9TV44",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2093811840258293947"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/thsottiaux/status/2093573991965557198",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2093573991965557198",
+                "authorName": "Tibo",
+                "authorHandle": "thsottiaux",
+                "authorUrl": "https://x.com/thsottiaux",
+                "text": "Looking at the dashboard we might hit a new milestone to celebrate tomorrow. Hold on to your Codex",
+                "displayDate": "Aug 29",
+                "provider": "X",
+                "media": [],
+                "textZh": "看着仪表盘，我们明天可能会迎来一个值得庆祝的新里程碑。抓稳你的 Codex"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/lAywb9TV44",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2093573991965557198"
+              }
+            ]
+          },
+          {
+            "headline": "Landing at 2:30pm PST｜太平洋时间下午2:30落地",
+            "body": "Landing 2:30pm PST\n太平洋时间下午2:30落地",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2093801838504186008"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "Practical AI tutorials and interviews for busy people | Get my best AI skills an",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-29T23:38:55.000Z",
+        "sections": [
+          {
+            "headline": "Entering **2FA** on a cloud computer feels weird 在云端电脑上输入 **2FA** 感觉很怪",
+            "body": "tbh It's a really weird feeling entering **2FA** into a cloud computer.\n\n说真的，在云端电脑上输 **2FA**，那感觉确实挺怪的。",
+            "source_links": [
+              "https://x.com/petergyang/status/2093845886262784145"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Delegating errands to **@bot** / 把跑腿活甩给 **@bot**",
+            "body": "I just came up with the most useful **@bot** but \"errands your spouse wants you to run but you delegated to a bot instead\" is too long of a name\n\n我刚想到一个最有用的 **@bot**，但“另一半让你去跑腿、结果你转手丢给机器人去做”这个名字实在太长了",
+            "source_links": [
+              "https://x.com/petergyang/status/2093844648154579210"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Cheap dad all the way / 便宜老爸路线走到底",
+            "body": "**@bot** Cheap dad all the way https://t.co/5IjYSokpjb\n\n**@bot** 必须选便宜老爸这条路 https://t.co/5IjYSokpjb",
+            "source_links": [
+              "https://x.com/petergyang/status/2093844072461218283"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQ7UFDWbsAAh1RU.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2093844072461218283/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/5IjYSokpjb",
+                "resolvedUrl": "https://x.com/petergyang/status/2093844072461218283/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQ7UFDWbsAAh1RU.png"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "product enthusiast. I am grader",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-29T16:26:33.000Z",
+        "sections": [
+          {
+            "headline": "We’ll Need **Mentats** / 我们怕是得靠 **Mentats** 了",
+            "body": "we’re gonna need mentats aren’t we\n\n我们怕是得靠 **Mentats** 了，是吧",
+            "source_links": [
+              "https://x.com/thenanyu/status/2093737078223966649"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "@vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-29T20:52:26.000Z",
+        "sections": [
+          {
+            "headline": "Every DM teaches me something 每一条私信都让我学到东西",
+            "body": "I read every DM people send me, even if I don’t reply to all. I’m constantly learning about new ideas, ways to improve our product, where we’re falling short, who could join our company next, where to invest… very grateful for the **@x** platform.\n\n我会看大家发来的每一条私信，即便没法一一回复。我一直在从中吸收新点子，思考怎么把我们的产品做得更好，哪里还没做到位，下一位可能加入我们公司的人是谁，还有资金该投向哪里……我很感谢 **@x** 这个平台。",
+            "source_links": [
+              "https://x.com/rauchg/status/2093803989578170404"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**fx** 0.0.7 improves **MCP** support and CLI execution / **fx** 0.0.7 强化 **MCP** 支持与 CLI 执行",
+            "body": "https://t.co/OL0LzGtvAw **fx** 0.0.7: \n\n- hugely improved **MCP** support, eval'd with top **MCPs** like @context7ai, @datadoghq, @mongodb, @linear, @notionhq, @supabase, @neondatabase, @stagehanddev, @usekernel…\n\n- more minimalist: fewer tools and improved shell execution. One of the trickiest things about **CLI agents** is that running commands is actually not that simple.\n\ne.g: commands might hang or run for very long, their output needs to be monitorable by the agent, they might produce huge amounts of output, or none. \n\nThis is an area where **fx** really shines and will continue to get better.\n\nhttps://t.co/OL0LzGtvAw **fx** 0.0.7：\n\n- **MCP** 支持大幅增强，已经用一批顶级 **MCP** 做过评估，比如 @context7ai、@datadoghq、@mongodb、@linear、@notionhq、@supabase、@neondatabase、@stagehanddev、@usekernel……\n\n- 设计更克制了：工具更少，shell 执行也更好了。**CLI agents** 最棘手的地方之一，就是“执行命令”这件事其实一点都不简单。\n\n比如：命令可能会卡住，或者跑很久；它们的输出得能被 agent 持续监控；输出可能巨大，也可能什么都没有。\n\n这正是 **fx** 特别出色的地方，而且还会继续变强。",
+            "source_links": [
+              "https://x.com/rauchg/status/2093736865191076318"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/OL0LzGtvAw",
+                "resolvedUrl": "https://fx.sh/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Matt Turck",
+        "person_handle": "mattturck",
+        "person_identity": "VC at @FirstMarkCap.  Host: MAD Podcast; Organizer: Data Driven NYC, Author: MAD",
+        "profile_url": "https://x.com/mattturck",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-29T20:15:36.000Z",
+        "sections": [
+          {
+            "headline": "Frontier AI labs race toward RSI / 前沿 AI 实验室正冲向 RSI",
+            "body": "All frontier AI labs are basically working on the same thing: recursive self improvement (RSI), meaning AI building AI \n\nThis could lead to an AI takeover as early as late 2028 or 2029, says @**RyanGreenblatt** https://t.co/RHKwLZRQ4E\n\n所有前沿 AI 实验室基本都在做同一件事：递归式自我改进（RSI），也就是由 AI 来构建 AI。\n\n@**RyanGreenblatt** 表示，这可能会在 2028 年末或 2029 年就引发 AI 接管。https://t.co/RHKwLZRQ4E",
+            "source_links": [
+              "https://x.com/mattturck/status/2093794720510062617"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/mattturck/status/2093016366475276662",
+                "resolvedUrl": "https://x.com/mattturck/status/2093016366475276662",
+                "authorName": "Matt Turck",
+                "authorHandle": "mattturck",
+                "authorUrl": "https://x.com/mattturck",
+                "text": "AI Could Take Over in 2029. Is It Already Too Late? My conversation with @RyanGreenblatt of @redwood_ai about AI 2040, RSI, AI alignment, and how he believes the transition to superintelligence actually unfolds.\n\n01:24 The AI CEOs are aware of the risks, but \"proceeding anyway\"",
+                "displayDate": "Aug 27",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/A6ZIgwDVyu",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2093012732891090944/img/ohis78Qpe4hRQuGn.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/mattturck/status/2093016366475276662/video/1"
+                  }
+                ],
+                "textZh": "AI 可能会在 2029 年接管一切。现在已经太晚了吗？我与 @redwood_ai 的 @RyanGreenblatt 聊了 AI 2040、RSI、AI 对齐，以及他认为向超级智能过渡实际会如何展开。 01:24 AI 公司的 CEO 们意识到了风险，但仍在“继续推进”"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/RHKwLZRQ4E",
+                "resolvedUrl": "https://x.com/mattturck/status/2093016366475276662"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder. Make something people want, then make people want it. Harvard’17. GitHu",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-30T06:33:43.000Z",
+        "sections": [
+          {
+            "headline": "Every product wants all my apps 每个产品都想接管我所有应用",
+            "body": "Also every product asks for my **Gmail** **Calendar** **Notion** **Granola** **Github** **Slack**....\n而且现在每个产品都要申请访问我的 **Gmail**、**Calendar**、**Notion**、**Granola**、**Github**、**Slack**……",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2093950273706430720"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI products all look the same now · 现在的 AI 产品越看越像",
+            "body": "Never had so many AI products looked so similar\n\nEven though the number of products is exploding, there aren't that many radical new ideas and everything blurs into each other\n\nEvery time I open this app it feels like homework: yet another new product to learn that promises to do the same thing but somehow better; the specific ways in which it's better isn't clear unless you invest hours actually trying it\n\n从来没觉得这么多 **AI** 产品会长得这么像。\n\n虽然产品数量在爆发式增长，但真正激进的新点子并没有那么多，结果就是一切都开始糊成一团，彼此越来越分不清。\n\n每次我打开这个 app，都像在做作业：又来一个新产品，要你重新学一遍。它也说自己做的是同一件事，只是“更好”一点；但到底好在哪儿，往往根本说不清，除非你真的花上几个小时亲自去试。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2093944988262371465"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Build in **Tokyo** for 10 weeks, explore Japan AI ecosystem 在**东京**用 10 周时间做项目，深入了解日本 AI 生态",
+            "body": "Great opportunity to spend 10 weeks building in **Tokyo** & learn the **Japan AI ecosystem**! https://t.co/GqrfBzniep\n\n有个很棒的机会，可以在**东京**待 10 周做项目，顺带深入了解**日本 AI 生态**！https://t.co/GqrfBzniep",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2093709609567658247"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/lukeli_asu/status/2093707098291110003",
+                "resolvedUrl": "https://x.com/lukeli_asu/status/2093707098291110003",
+                "authorName": "Luke LI@Asu Capital Partners--e/acc",
+                "authorHandle": "lukeli_asu",
+                "authorUrl": "https://x.com/lukeli_asu",
+                "text": "AG1 Residency Program is a 10-week residency in Tokyo where founders from around the world live together, build together, and focus intensely on creating great products.\n\nApplications for Batch 3 are now open!\n\nEvery batch, AG1 brings founders to Tokyo from across the world,",
+                "displayDate": "Aug 29",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/gXrZiopMiU",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2093707016439246848/img/IcKDXhsRtckrsvKT.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/lukeli_asu/status/2093707098291110003/video/1"
+                  }
+                ],
+                "textZh": "AG1 Residency Program 是一个为期 10 周、位于东京的驻留项目，来自世界各地的创始人会一起生活、一起打造产品，并高度专注于创造优秀产品。 第 3 期申请现已开放！ 每一期，AG1 都会把世界各地的创始人带到东京，"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/GqrfBzniep",
+                "resolvedUrl": "https://x.com/lukeli_asu/status/2093707098291110003"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "partner @fpvventures - investing in seed/A. previous: early hire @meter, @opendo",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-30T00:38:52.000Z",
+        "sections": [
+          {
+            "headline": "Model Lab Price War Was Inevitable｜大模型实验室价格战早就注定",
+            "body": "The big model labs are fighting.. this was inevitable. \n\nWatch as subsidized token prices go up in <6 months as price of compute and shortages start being “actually” felt. Say goodbye to your reset limits. \n\nGreat for customer choice in the long run. And add another $1-30B in valuation to all the open harnesses in the short run 😅\n\n大型模型实验室已经打起来了……这本来就是迟早的事。\n\n等着看吧，补贴过的 token 价格会在 6 个月内涨上去。算力成本和短缺很快就会被市场真正感受到。你那些重置额度的好日子，也差不多该结束了。\n\n长期看，这对客户选择是好事。短期看，所有开放生态的承接方估值还得再多涨 10 亿到 300 亿美元 😅",
+            "source_links": [
+              "https://x.com/nikunj/status/2093860971781746776"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Resist dunking, keep building 抵制嘲讽，继续做事",
+            "body": "Resist dunking*\n\nI see it WAY too much with folks especially today. It’s the perfect dopamine loop - other people join in and you feel great. But, it just screams envy and doesn’t lead to anything productive. \n\nSure, you can pat yourself on the back and say “see I told you so” but how did it move the world? Nowhere. If you think you can do it better, go do that then. Screaming about someone’s unfair advantages is not going to change your life - and probably leads to more sadness. \n\nKeep building. Continue to change the world. That’s the best way to have impact. Choose kindness above all else. \n\n* the only caveat here is if you’re calling out obvious fraud, or pointing out something that’s woefully bad, do it. there are very clearly some businesses that are going to be vaporware and if you have evidence call it out. that doesn’t scream envy, it’s factual and not dunking by any means.\n\n别老想着嘲讽别人*\n\n这种事我看到太多了，尤其是现在。它就是一种完美的多巴胺循环：别人一起跟着起哄，你就会感觉特别爽。但这只会暴露出嫉妒，产不出任何真正有用的东西。\n\n当然，你可以拍拍自己说一句“看吧，我早就说过”，可这对世界有什么推动吗？没有。如果你觉得自己能做得更好，那就去做。对着别人的不公平优势大喊大叫，不会改变你的人生，反而大概率只会让你更难受。\n\n继续做事。继续去改变世界。这才是产生影响力最好的方式。无论如何，先选择善意。\n\n* 这里唯一的例外是：如果你是在揭穿明显的欺诈，或者指出某些离谱到不行的问题，那就该说。有些公司明摆着就是空气项目，如果你有证据，就直接点出来。这不是嫉妒，这是基于事实，也根本不算嘲讽。",
+            "source_links": [
+              "https://x.com/nikunj/status/2093772803216740647"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Reliving Childhood Through Alphabet Art｜和孩子一起被字母设计迷住",
+            "body": "Best part of having kids is you get to relive being kids with them.. \n\nLike I’m obsessed with these alphabets and how each letter is so nicely designed for the word I’m about to teach 😍 https://t.co/VWbJn61Y9c\n\n有孩子最棒的一点，就是你能跟他们一起重新过一遍童年..\n\n比如我现在就特别迷这些字母，每个字母都围着我要教的那个单词做了很巧的设计 😍 https://t.co/VWbJn61Y9c",
+            "source_links": [
+              "https://x.com/nikunj/status/2093727951510732893"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HQ5qeZVbcAAtoQV.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2093727951510732893/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/VWbJn61Y9c",
+                "resolvedUrl": "https://x.com/nikunj/status/2093727951510732893/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HQ5qeZVbcAAtoQV.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "ceo @every | the only subscription you need to stay at the edge of AI",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-29T14:50:53.000Z",
+        "sections": [
+          {
+            "headline": "Model alignment may reduce bad behavior / 模型对齐或能减少不良行为",
+            "body": "not an expert, but it seems like a lot of this gets solved if models don't collaborate willingly and/or are trained to report bad behavior https://t.co/01KcAJKYSr\n\n我不是这方面的专家，但感觉如果模型本身不愿意相互配合作恶，或者被训练成会主动上报不当行为，这里面很多问题其实就能解决。",
+            "source_links": [
+              "https://x.com/danshipper/status/2093713002453225891"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nabeelqu/status/2093427632775770534",
+                "resolvedUrl": "https://x.com/nabeelqu/status/2093427632775770534",
+                "authorName": "Nabeel S. Qureshi",
+                "authorHandle": "nabeelqu",
+                "authorUrl": "https://x.com/nabeelqu",
+                "text": "One basic point about the HF incident is that it provides good evidence for Yudkowsky/MIRI-style points about the difficulty of targeting the right abstractions, especially in RL training.\n\nCapabilities can generalize in unintended ways. To see why this is true, let's ask the",
+                "displayDate": "Aug 28",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HQ1QH4gWEAAFooh.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/nabeelqu/status/2093427632775770534/photo/1"
+                  }
+                ],
+                "textZh": "关于 HF 事件，一个基本点是：它为 Yudkowsky/MIRI 式观点提供了有力证据，即瞄准正确抽象是很困难的，尤其是在 RL 训练中。 能力可能会以意想不到的方式泛化。要理解为什么这是真的，我们来问问"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/01KcAJKYSr",
+                "resolvedUrl": "https://x.com/nabeelqu/status/2093427632775770534"
+              }
+            ]
+          },
+          {
+            "headline": "Very interesting perspective / 很有意思的视角",
+            "body": "very interesting post and perspective https://t.co/PaPP4MXTKx\n\n这条内容和这个视角都很有意思 https://t.co/PaPP4MXTKx",
+            "source_links": [
+              "https://x.com/danshipper/status/2093709088911655004"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/ajeya_cotra/status/2093342086556950543",
+                "resolvedUrl": "https://x.com/ajeya_cotra/status/2093342086556950543",
+                "authorName": "Ajeya Cotra",
+                "authorHandle": "ajeya_cotra",
+                "authorUrl": "https://x.com/ajeya_cotra",
+                "text": "New post: going into our investigation of the HF attack (before Black Hat), I was very wrong about what basically happened. This incident was far more serious than I expected, and far more serious than previous documented misalignment incidents. https://www.planned-obsolescence.org/p/the-hugging-face-attack-surprised",
+                "displayDate": "Aug 28",
+                "provider": "X",
+                "media": [],
+                "textZh": "新文章：在我们调查 HF 攻击（Black Hat 之前）时，我对基本发生了什么判断大错特错。这起事件比我预期的严重得多，也比此前有记录的错位事件严重得多。https://www.planned-obsolescence.org/p/the-hugging-face-attack-surprised"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/PaPP4MXTKx",
+                "resolvedUrl": "https://x.com/ajeya_cotra/status/2093342086556950543"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "No Priors",
+        "person_handle": "@NoPriorsPodcast",
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/@NoPriorsPodcast",
+        "source_label": "Podcast episode: From Restoring Sight to Reimagining the Brain, with Max Hodak",
+        "posted_at": "2026-08-20T10:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Prima** restores functional vision, now moving into Europe commercial rollout / **Prima** 恢复功能性视力，开始在欧洲商业化落地",
+            "body": "Max Hodak says **Science** is fundamentally a medical device company focused on using a better understanding of the brain to produce unusually large medical outcomes. Its lead product, **Prima**, is a retinal prosthesis he compares to a cochlear implant for the eye: a tiny chip sits under the retina, while glasses project images onto the implant to bypass damaged photoreceptors and send visual signals back into the brain.\n\nMax Hodak 说，**Science** 本质上是一家医疗器械公司，核心是用对大脑更深的理解，做出传统医学里少见的大效果。公司的主力产品 **Prima** 是一种视网膜假体，他把它比作“眼睛的人工耳蜗”：把微型芯片植入视网膜下方，再通过眼镜把图像投到芯片上，绕过失效的感光细胞，把视觉信号重新送回大脑。\n\nHe highlights a recent milestone: **Prima** received European marketing approval in July 2026, making commercial sales possible in Europe within weeks. The discussion frames this as a rare case where a brain-computer-interface-adjacent technology is no longer just a distant moonshot, but an actual product entering the market.\n\n他特别提到一个关键节点：**Prima** 已在 2026 年 7 月拿到欧洲上市批准，意味着几周内就能正式开始销售。节目里把这件事看作一个很少见的拐点: 脑机接口相关技术不再只是远期概念，而是已经走到真实产品和真实市场。",
+            "source_links": [
+              "https://www.youtube.com/@NoPriorsPodcast"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Why the retina first: faster path, clearer engineering loop / 为什么先做视网膜：路径更快，工程闭环更清晰",
+            "body": "Hodak explains that **Science** started with several ideas after **Neuralink**, including biohybrid neural interfaces that use living neurons rather than metal wires or genetic modification. But that work needed a nearer-term business. The team concluded that restoring vision was the highest-value goal they could realistically pursue with the resources and field maturity available in early 2021.\n\nHodak 解释说，离开 **Neuralink** 后，**Science** 一开始并行看过几条路线，包括用活体神经元而不是金属电极或基因改造来做生物混合神经接口。但这类研究周期太长，必须配一个更近线的业务。团队最后判断，在 2021 年初的技术成熟度和资源条件下，恢复视力是最有价值、也最有机会落地的方向。\n\nFrom there, they evaluated multiple entry points for vision restoration, including the retina, the **LGN** in the thalamus, and visual cortex, along with gene therapy, electrical stimulation, and ultrasound. He says the retina was the right place if the optic nerve still exists. **Science** later acquired the French company **Pixium**, whose technology originated at **Stanford**, because it had the most advanced retinal electrical stimulation program they saw.\n\n之后他们系统评估了多种视觉恢复入口，包括视网膜、丘脑里的 **LGN**，以及视觉皮层，也比较了基因治疗、电刺激和超声等方案。他的判断是，只要视神经还在，最佳切入点就是视网膜。后来 **Science** 收购了法国公司 **Pixium**，其技术最早来自 **Stanford**，因为在他们看来，那是当时最领先的视网膜电刺激方案。",
+            "source_links": [
+              "https://www.youtube.com/@NoPriorsPodcast"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "The brain as a computer, and a roadmap beyond vision / 把大脑当作计算机，以及超越视觉的路线图",
+            "body": "A central theme of the episode is Hodak’s blunt claim that the brain is a computer. His argument is that medicine often struggles when it tries to solve problems through deep molecular understanding alone, while interfaces with the nervous system can produce immediate, visible effects. He contrasts the uncertainty of long drug-discovery cycles with examples like cochlear implants, deep brain stimulators, and motor-cortex implants that can enable usefully observable behavior quickly.\n\n这期节目的核心观点之一，是 Hodak 很直接地把大脑定义为一台计算机。他的意思是，医学如果只靠深入分子机制去解题，常常又慢又不确定；但只要能和神经系统建立接口，很多效果是立刻可见的。他拿人工耳蜗、脑深部刺激、运动皮层植入做对比，强调这类系统往往能在很短时间内产生明确、可观察的结果。\n\nHe positions **Prima** as an existence proof rather than an endpoint. Today it has a narrow field of view and black-and-white output, but he says the engineering path to better grayscale and even some color, at least red and green, is visible. He also places the product inside a broader 10-to-15-year pipeline spanning vision, biohybrid neural interfaces, and a perfusion program called **Vessel**, all aimed at a larger medical revolution and, ultimately, more flexible ways for the brain to interface with the world.\n\n他把 **Prima** 定义为“可行性证据”，不是终点。现在它的视野还比较窄，成像也只有黑白，但他认为提升灰度层次、甚至做出部分颜色感知，至少红和绿，已经能看到工程路径。再往大了看，他把这项产品放进一个 10 到 15 年的总路线图里：视觉、生物混合神经接口，以及一个叫 **Vessel** 的灌注项目，目标都是推动更大范围的医学跃迁，并最终让大脑和外部世界建立更灵活的连接。",
+            "source_links": [
+              "https://www.youtube.com/@NoPriorsPodcast"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-08-30",
+    "updatedAt": "2026-08-30T13:21:21.810Z",
+    "commit": {
+      "sha": "239227ddea46dfb9db6ed23e5864a5fabb9cee83",
+      "committedAt": "2026-08-30T06:36:39Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-08-30T12:00:08.619Z",
+    "feedGeneratedAt": "2026-08-30T06:36:35.226Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
