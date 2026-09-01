@@ -1,0 +1,516 @@
+{
+  "payload": {
+    "date": "2026-09-01",
+    "title": "AI Builders Daily · 2026-09-01",
+    "summary": "**Codex** keeps pulling product talent into orbit as **Nan Yu** joins **OpenAI** and **Thibault Sottiaux** openly asks what still blocks adoption; **Guillermo Rauch** pushes two sharp claims at once, turning Markdown into a design-system weapon and token budgets into infra governance; **Aaron Levie** calls a new phase for enterprise AI, where companies with serious data can train their own models while open models race closer in cyber; **Rich Sutton** throws cold water on synthetic-data optimism and drags the conversation back to continual learning in a world that never stops changing.\n\n**Codex** 这边还在加速招人，**Nan Yu** 转去 **OpenAI** 做 **Codex** 和 **ChatGPT**，**Thibault Sottiaux** 则直接追问大家到底还在卡什么；**Guillermo Rauch** 连发两枪，一边说 Markdown 可以管住设计品味，一边把 token 预算说成基础设施治理问题；**Aaron Levie** 盯上企业自训模型这条线，觉得有数据的公司终于能自己下场，另一边开源模型在安全场景里也追得很凶；**Rich Sutton** 还是那个路数，直接泼冷水，不太买合成数据那套，话题又被他拽回“持续学习”这个老问题上。",
+    "items": [
+      {
+        "person_name": "Training Data",
+        "person_handle": "",
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8",
+        "source_label": "Podcast",
+        "posted_at": "2026-08-18T09:00:00.000Z",
+        "sections": [
+          {
+            "headline": "**Rich Sutton** says learning never stopped being continual / **Rich Sutton** 直说：学习本来就该是持续的",
+            "body": "In **Training Data**, **Rich Sutton** and **Khurram Javed** argue that the field drifted into a strange habit of treating “continual learning” as a niche, when real learning never turns off. Sutton restates the **Bitter Lesson** in blunt terms: stop stuffing systems with human priors and build methods that scale with computation. He sees **LLMs** as both proof and warning, powerful because they scaled on internet data, but boxed in once that finite corpus runs dry. On synthetic data, he is even sharper: from the **big world hypothesis** view, fabricated examples do not solve the fact that the world still contains far more to learn.\n\n在 **Training Data** 这期里，**Rich Sutton** 和 **Khurram Javed** 的意思很直白：把“持续学习”当成一个特殊分支，本身就有点跑偏，学习哪有暂停键。Sutton 又把 **Bitter Lesson** 讲了一遍，不过这次更不客气了：别老想着往系统里硬塞人的经验，去做那些真能跟着算力放大的方法。按他的说法，**LLM** 既是正例也是反例，靠吃下互联网语料确实冲得很猛，但互联网终归是有限的，吃完就会撞墙。至于合成数据，他更不留情，从 **big world hypothesis** 的角度看，伪造更多样本不等于解决问题，世界里还有一大堆没学到的东西。",
+            "source_links": [
+              "https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-09-01T00:49:05.000Z",
+        "sections": [
+          {
+            "headline": "**Codex** adoption check: what is still holding people back? / **Codex** 在追问：到底还有什么拦着大家上手？",
+            "body": "If you still haven't tried Codex but have considered it in the past, what's the one thing holding you back?\n\n如果你之前考虑过 **Codex**，但到现在还没试过，拦着你的那一个主要原因到底是什么？",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2094588317245509959"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-09-01T04:46:15.000Z",
+        "sections": [
+          {
+            "headline": "Shoutout to great AI teaching / 给优秀的 AI 教学内容点名",
+            "body": "Btw @drhoeflinger I just watched your videos and wow they’re so good. Keep going and thanks for sharing your knowledge\n\n顺便说一句，@drhoeflinger 我刚看了你的视频，真的太棒了。继续做下去，也谢谢你愿意把这些知识分享出来。",
+            "source_links": [
+              "https://x.com/petergyang/status/2094648002656993704"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Personal agents will live or die on trust / 个人 Agent 能不能跑起来，关键看信任",
+            "body": "Trust is going to be the biggest barrier (and driver) of personal agent adoption.\n\n信任会成为个人 Agent 普及最大的阻力，同时也会是最大的推动力。",
+            "source_links": [
+              "https://x.com/petergyang/status/2094639655258091792"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "A quick nod to advice worth reading / 这条建议值得看一眼",
+            "body": "Great advice https://t.co/0jwmg8sFEC\n\n很好的建议 https://t.co/0jwmg8sFEC",
+            "source_links": [
+              "https://x.com/petergyang/status/2094529713524117596"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/drhoeflinger/status/2094426230804173134",
+                "resolvedUrl": "https://x.com/drhoeflinger/status/2094426230804173134",
+                "authorName": "Dr. Brian Hoeflinger, MD",
+                "authorHandle": "drhoeflinger",
+                "authorUrl": "https://x.com/drhoeflinger",
+                "text": "I’m a retired brain surgeon and I wanna tell you why you feel like life is passing by. I just need one minute to explain this to you so hang in there.\n\nRepetitive daily routines stop the brain from recording clear detailed memories. When every day looks the same, your brain does",
+                "displayDate": "Aug 31",
+                "provider": "X",
+                "media": [],
+                "textZh": "我是一名退休脑外科医生，想告诉你为什么你会觉得人生正在飞快流逝。给我一分钟解释一下，坚持听完。 重复的日常会让大脑不再记录清晰、细节丰富的记忆。当每天看起来都一样时，你的大脑就会"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/0jwmg8sFEC",
+                "resolvedUrl": "https://x.com/drhoeflinger/status/2094426230804173134"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nan Yu",
+        "person_handle": "thenanyu",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thenanyu",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-09-01T05:33:51.000Z",
+        "sections": [
+          {
+            "headline": "A terse alarm bell / 一句短短的警报",
+            "body": "Concerning\n\nhttps://t.co/EzMoXoilgR\n\n让人担心\n\nhttps://t.co/EzMoXoilgR",
+            "source_links": [
+              "https://x.com/thenanyu/status/2094659984428867901"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://x.com/mattyglesias/status/2094200503898910914?s=20",
+                "resolvedUrl": "https://x.com/mattyglesias/status/2094200503898910914",
+                "authorName": "Matthew Yglesias",
+                "authorHandle": "mattyglesias",
+                "authorUrl": "https://x.com/mattyglesias",
+                "text": "We need butlerian jihad",
+                "displayDate": "Aug 30",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们需要一场巴特勒圣战"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/EzMoXoilgR",
+                "resolvedUrl": "https://x.com/mattyglesias/status/2094200503898910914"
+              }
+            ]
+          },
+          {
+            "headline": "Fingers crossed on what is next / 对接下来的事先攒个好运",
+            "body": "🤞🏻 https://t.co/pG71r0YZxw\n\n🤞🏻 https://t.co/pG71r0YZxw",
+            "source_links": [
+              "https://x.com/thenanyu/status/2094442960209539371"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/thenanyu/status/2032270160359260414",
+                "resolvedUrl": "https://x.com/thenanyu/status/2032270160359260414",
+                "authorName": "Nan Yu",
+                "authorHandle": "thenanyu",
+                "authorUrl": "https://x.com/thenanyu",
+                "text": "The Codex guys seem like they’re having more fun",
+                "displayDate": "Mar 13",
+                "provider": "X",
+                "media": [],
+                "textZh": "Codex 那帮人看起来玩得更开心"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/pG71r0YZxw",
+                "resolvedUrl": "https://x.com/thenanyu/status/2032270160359260414"
+              }
+            ]
+          },
+          {
+            "headline": "**Nan Yu** joins **OpenAI** to work on **Codex** and **ChatGPT** / **Nan Yu** 加入 **OpenAI**，投入 **Codex** 和 **ChatGPT**",
+            "body": "Some personal news—I’m joining OpenAI to work on Codex and ChatGPT. \n\nI’m grateful to the Linear team for an incredible 4 years and proud of what we've built together. I look forward to bringing everything I've learned there about the craft of software into this next chapter.\n\n有点个人消息想说下：我将加入 **OpenAI**，参与 **Codex** 和 **ChatGPT**。\n\n我很感谢 **Linear** 团队这 4 年的经历，也很为我们一起做出来的东西骄傲。接下来这一段，我也想把自己在那边学到的、关于软件打磨这门手艺的东西，带到新的工作里。",
+            "source_links": [
+              "https://x.com/thenanyu/status/2094427243565269107"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-09-01T01:01:44.000Z",
+        "sections": [
+          {
+            "headline": "PMs need frontier-model judgment, not just roadmap polish / 现在的 PM 得真懂模型边界，不只是会排路线图",
+            "body": "If you’re a PM, there is immense alpha in understanding the model frontier for your specific product and use cases.\n\nYou should be able to answer the following better than most frontier lab researchers and PMs for your use cases:\n\n1/ What can models in each size category do well today?\n\n2/ Where does each model fail?\n\n3/ What workarounds can you use to overcome these failures ?\n\n4/ Given the trajectory, what will these models likely be able to do 2–3 months from now? How should your roadmap look given this?\n\nThis is a core part of the PM job now.\n\n如果你是 PM，真正理解适用于你产品和场景的模型前沿，里面有很大的 alpha。\n\n对于你自己的场景，下面这些问题你应该比大多数前沿实验室研究员和 PM 回答得更清楚：\n\n1/ 现在各个体量的模型分别擅长什么？\n\n2/ 每个模型会栽在哪些地方？\n\n3/ 你能用什么 workaround 去绕开这些问题？\n\n4/ 按现在这条线往前看，2 到 3 个月后这些模型大概率会多出哪些能力？基于这个，你的路线图该怎么排？\n\n这已经是 PM 工作里很核心的一部分了。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2094591503981281503"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-09-01T04:24:21.000Z",
+        "sections": [
+          {
+            "headline": "A quick pass-along on better iOS interactions / 转发一组更好的 iOS 交互技巧",
+            "body": "Good iOS interaction tips! https://t.co/Xs9awfK7WP\n\n不错的 iOS 交互技巧！ https://t.co/Xs9awfK7WP",
+            "source_links": [
+              "https://x.com/amasad/status/2094642492125950394"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/nobita2040/status/2094605491867705549",
+                "resolvedUrl": "https://x.com/nobita2040/status/2094605491867705549",
+                "authorName": "Ryo Sato @ Replit",
+                "authorHandle": "nobita2040",
+                "authorUrl": "https://x.com/nobita2040",
+                "text": "ReplitのiOSアプリは、スマホの小さい画面を効率よく使えるように様々な工夫が施されています。\n- 上にスワイプしてプロジェクト一覧確認\n- 右にスワイプしてツール呼び出し\n- さらに右にスワイプてカンバンボード",
+                "displayDate": "Sep 1",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/kuk6QcjZSy",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2094604493711343616/img/evf2f111cFO-Gum8.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/nobita2040/status/2094605491867705549/video/1"
+                  }
+                ]
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/Xs9awfK7WP",
+                "resolvedUrl": "https://x.com/nobita2040/status/2094605491867705549"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-31T21:42:17.000Z",
+        "sections": [
+          {
+            "headline": "**Markdown** as the next design system / 把 **Markdown** 变成下一代设计系统",
+            "body": "Your next design system is… Markdown.\n\nWe wrote about how 𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍 is helping solve the hardest problem in AI today: slop.\n\nAnd how you can truly, finally scale design taste within a large organization. https://t.co/1boTl2fWyM https://t.co/yrHwa9fYUH\n\n你的下一个设计系统是……**Markdown**。\n\n我们写了篇东西，讲 **𝙳𝙴𝚂𝙸𝙶𝙽.𝚖𝚍** 怎么在处理当下 AI 最难受的问题之一：slop。\n\n也讲了它怎么让你第一次真正有机会，在一个大组织里把设计品味扩出去。 https://t.co/1boTl2fWyM https://t.co/yrHwa9fYUH",
+            "source_links": [
+              "https://x.com/rauchg/status/2094541309579235680"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRFNvmoaIAAVrtZ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/rauchg/status/2094541309579235680/photo/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/vercel/status/2094539714984550471",
+                "resolvedUrl": "https://x.com/vercel/status/2094539714984550471",
+                "authorName": "Vercel",
+                "authorHandle": "vercel",
+                "authorUrl": "https://x.com/vercel",
+                "text": "Our agents use 𝚟𝚎𝚛𝚌𝚎𝚕​.𝚌𝚘𝚖/𝚍𝚎𝚜𝚒𝚐𝚗​.𝚖𝚍 to build on-brand pages.\n\n▪︎ One file encodes decisions and guidance\n▪︎ Output is shaped through our eval harness\n▪︎ Production feedback is fed back into the loop\nhttps://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md",
+                "displayDate": "Aug 31",
+                "provider": "X",
+                "media": [],
+                "textZh": "我们的 agents 使用 𝚟𝚎𝚛𝚌𝚎𝚕​.𝚌𝚘𝚖/𝚍𝚎𝚜𝚒𝚐𝚗​.𝚖𝚍 来构建符合品牌调性的页面。 ▪︎ 一个文件编码决策和指南 ▪︎ 输出通过我们的评测框架塑形 ▪︎ 生产环境反馈会回流到循环中 https://vercel.com/blog/how-our-agents-build-on-brand-pages-with-design-md"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/1boTl2fWyM",
+                "resolvedUrl": "https://x.com/rauchg/status/2094541309579235680/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRFNvmoaIAAVrtZ.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/yrHwa9fYUH",
+                "resolvedUrl": "https://x.com/vercel/status/2094539714984550471"
+              }
+            ]
+          },
+          {
+            "headline": "Token budgets are infrastructure governance / token 预算本质上就是基础设施治理",
+            "body": "Coding tokens are basically infrastructure. Yet, the way companies have approached them amounts to:\n\n\"Hey all, here's an AWS key. It can spin up anything from a 𝚝𝟹.𝚗𝚊𝚗𝚘 (＄𝟹.𝟾𝟶/𝚖𝚘) to an 𝚙𝟻.𝟺𝟾𝚡𝚕𝚊𝚛𝚐𝚎 (＄𝟺𝟶𝚔/𝚖𝚘). Go wild\"\n\nAnd obviously the reason companies don't do this for their core infra is that you need to govern, optimize, and observe usage and costs.\n\nThe intern might decide to host a static website in that 192 vCPU machine, and you won't be very happy about the bill.\n\nAI Gateway fixes this for all your tokens, with per-key, and now per-user budgets.\n\n写代码用的 token，本质上就是基础设施。可很多公司现在的做法，差不多等于：\n\n“各位，这是一个 **AWS** key。它能随便拉机器，从 𝚝𝟹.𝚗𝚊𝚗𝚘（＄𝟹.𝟾𝟶/𝚖𝚘）到 𝚙𝟻.𝟺𝟾𝚡𝚕𝚊𝚛𝚐𝚎（＄𝟺𝟶𝚔/𝚖𝚘），想怎么开就怎么开。”\n\n公司显然不会这么管核心基础设施，因为你得治理、优化，还得盯住使用情况和成本。\n\n不然实习生哪天心血来潮，把一个静态网站丢到那台 192 vCPU 机器上，月底账单出来你肯定笑不出来。\n\n**AI Gateway** 现在就在补这个坑，给所有 token 加上按 key、现在还支持按用户的预算控制。",
+            "source_links": [
+              "https://x.com/rauchg/status/2094523399280435630"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-09-01T04:58:08.000Z",
+        "sections": [
+          {
+            "headline": "More companies may train their own models now / 手里有数据的公司，自己训模型这件事开始像真选项了",
+            "body": "Now that the base open weights AI models are getting far better, and post training infra is becoming more mature and commercialized, there are going to be all new plays for companies that have large amounts of data to have their own models.\n\nLicensing data for external model training was previously the only play if you had a large corpus of information, but you can now reasonably go and train your own models as well without incurring the cost and complexity of competing with the labs on research.\n\nThe general purpose frontier models will still have a leg up in broad areas due to the ability to handle the widest set of tasks, but you can absolutely see a future where we have far more models than today across every vertical and domain.\n\n现在基础开源权重模型强了很多，后训练基础设施也越来越成熟、越来越商业化，所以对那些手里握着大量数据的公司来说，围绕“自有模型”会冒出一批全新的打法。\n\n以前如果你有一大坨高价值语料，基本只有一条路，就是把数据授权给外部做模型训练；但现在你也完全可以认真考虑自己训练模型，而且不需要承担和那些实验室拼研究的成本与复杂度。\n\n通用型前沿模型在很多宽场景上还是会领先，毕竟它们能覆盖最广的一组任务；但你完全能想见一个未来，到时候各个垂直领域、各个行业里的模型数量都会比今天多得多。",
+            "source_links": [
+              "https://x.com/levie/status/2094650992818274514"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "AI security is heating up, and cyber agents matter more / AI 安全事件在变多，网络安全 Agent 的分量也在上升",
+            "body": "As AI security events pick up, it’s going to be critical that we have the most sophisticated AI agents for being able to detect and prevent security issues. Frontier models are clearly still ahead in cyber, but open models are catching up quickly. Wild times. https://t.co/F0eEZLe6tt\n\n随着 AI 安全事件越来越多，能发现并阻止安全问题的高级 AI Agent 会变得非常关键。前沿模型在网络安全这块显然还领先，但开源模型追得也很快。真是个很野的阶段。 https://t.co/F0eEZLe6tt",
+            "source_links": [
+              "https://x.com/levie/status/2094545525102235844"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/enclaveai/status/2094461289745551474",
+                "resolvedUrl": "https://x.com/EnclaveAI/status/2094461289745551474",
+                "authorName": "Enclave",
+                "authorHandle": "EnclaveAI",
+                "authorUrl": "https://x.com/EnclaveAI",
+                "text": "We raced 7 frontier models to RCE. We gave them source code, a sandbox, and a target.\n\nThe goal: find a vulnerability in a large codebase, exploit it, and execute a command.\n\nWhat we learned looking at different models detailed in the full methodology ➡️ https://enclave.ai/hackingrace",
+                "displayDate": "Aug 31",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HREFaZCXMAALZOP.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/EnclaveAI/status/2094461289745551474/photo/1"
+                  }
+                ],
+                "textZh": "我们让 7 个前沿模型比赛谁先做到 RCE。我们给了它们源代码、沙盒和目标。 目标：在一个大型代码库中找到漏洞，利用它，并执行一条命令。 我们在完整方法论中详细记录了观察不同模型后的发现 ➡️ https://enclave.ai/hackingrace"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/F0eEZLe6tt",
+                "resolvedUrl": "https://x.com/enclaveai/status/2094461289745551474"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "Y Combinator CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-31T16:41:04.000Z",
+        "sections": [
+          {
+            "headline": "A blunt winner call in AI meeting notes / 对 AI 会议记录工具的直接胜负判断",
+            "body": "Circleback is so much better than Granola, it's not even close\n\nGranola still doesn't even support multiple person disambiguation https://t.co/bus8bFOfec\n\n**Circleback** 比 **Granola** 好太多了，根本不是一个级别。\n\n**Granola** 到现在连多人的身份消歧都还不支持 https://t.co/bus8bFOfec",
+            "source_links": [
+              "https://x.com/garrytan/status/2094465505142960443"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/iAligator/status/2094464356692193749",
+                "resolvedUrl": "https://x.com/iAligator/status/2094464356692193749",
+                "authorName": "Ali Haghani",
+                "authorHandle": "iAligator",
+                "authorUrl": "https://x.com/iAligator",
+                "text": "3 big Circleback updates this month:\n\n• a free plan with unlimited meetings\n• import your past meetings from other apps\n• an API for all your Circleback data\n\nhere's what's new from our team retreat on a ranch",
+                "displayDate": "Aug 31",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/9rkyimTde4",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2094460089281449984/img/Lwjpm6RmSkeeJmp8.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/iAligator/status/2094464356692193749/video/1"
+                  }
+                ],
+                "textZh": "Circleback 本月 3 个重大更新： • 免费方案，会议数量不限 • 从其他应用导入你过去的会议 • 可访问你所有 Circleback 数据的 API 这是我们团队在牧场 retreat 后带来的新内容"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/bus8bFOfec",
+                "resolvedUrl": "https://x.com/ialigator/status/2094464356692193749"
+              }
+            ]
+          },
+          {
+            "headline": "New **GBrain** evals push a memory-layer claim / 新的 **GBrain** 评测在给记忆层能力背书",
+            "body": "I just made some new GBrain evals that help prove that my retrieval-for-AI-agent open source layer is SOTA for reading memory back without LLM-in-loop\n\nAnd I've also added evals for memory-save from agent transcript, which is the best way to enrich your brain\n\nReceipts at https://t.co/iRLJR9Vxto\n\n我刚做了几组新的 **GBrain** eval，想证明我这个给 AI Agent 用的开源检索层，在不让 **LLM** 介入的情况下做记忆读取，已经是 SOTA。\n\n我还补了从 agent transcript 里保存记忆的评测，这也是给你的 brain 增强内容最好的办法。\n\n证据在这： https://t.co/iRLJR9Vxto",
+            "source_links": [
+              "https://x.com/garrytan/status/2094462971598754010"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HREGwPna8AUzeJw.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garrytan/status/2094462971598754010/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/iRLJR9Vxto",
+                "resolvedUrl": "https://github.com/garrytan/gbrain-evals"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-08-31T22:43:02.000Z",
+        "sections": [
+          {
+            "headline": "Link-only share, no extra framing / 只丢链接，没有多余铺垫",
+            "body": "https://t.co/gl6YBgEgAn\n\nhttps://t.co/gl6YBgEgAn",
+            "source_links": [
+              "https://x.com/nikunj/status/2094556598492631281"
+            ],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/gl6YBgEgAn",
+                "resolvedUrl": "https://x.com/i/article/2094496251287138304"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X / Twitter",
+        "posted_at": "2026-09-01T00:33:07.000Z",
+        "sections": [
+          {
+            "headline": "A twisty post that started strong / 前半段很抓人",
+            "body": "had me in the first half https://t.co/GRl9kFEWCN\n\n前半段确实把我抓住了 https://t.co/GRl9kFEWCN",
+            "source_links": [
+              "https://x.com/danshipper/status/2094584301966782794"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/rileybrown/status/2094402802919346302",
+                "resolvedUrl": "https://x.com/rileybrown/status/2094402802919346302",
+                "authorName": "Riley Brown",
+                "authorHandle": "rileybrown",
+                "authorUrl": "https://x.com/rileybrown",
+                "text": "Hate to admit it… we’ve hit a wall… I’ve seen no noticeable improvements to the models in the last 6-9 hours.",
+                "displayDate": "Aug 31",
+                "provider": "X",
+                "media": [],
+                "textZh": "不想承认……但我们撞墙了……过去 6-9 小时里，我没看到模型有什么明显改进。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/GRl9kFEWCN",
+                "resolvedUrl": "https://x.com/rileybrown/status/2094402802919346302"
+              }
+            ]
+          },
+          {
+            "headline": "Anthropomorphism helps until it turns into panic theater / 拟人化有用，但别拿它来煽动恐慌",
+            "body": "Anthropomorphization of AI is good when it serves to help us use (understand, predict, etc) AI better. \n\nIt’s bad when it serves to sow panic, fear, and unrealistic / unwarranted comparisons to human beings. \n\nMost opponents of anthropomorphism are rightly reacting to its misuse to sow panic or alter the moral status of agents by claiming consciousness etc. \n\nIt’s possible to use anthropomorphism without doing that though\n\n当 AI 的拟人化能帮我们更好地使用它、理解它、预测它的时候，这件事是有好处的。\n\n但如果它只是用来制造恐慌、放大恐惧，或者硬把 AI 跟人做不现实、也站不住脚的类比，那就坏了。\n\n很多反对拟人化的人，其实主要是在反感它被滥用，比如拿“意识”这种说法来煽动恐慌，或者硬抬高 agent 的道德地位。\n\n不过，拟人化并不是只能这么用。",
+            "source_links": [
+              "https://x.com/danshipper/status/2094406185109647580"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "Pragmatists still have the edge in AI / 在 AI 时代，务实派还在赢",
+            "body": "Pragmatists stay winning in the age of AI\n\n在 AI 时代，务实派还在继续赢。",
+            "source_links": [
+              "https://x.com/danshipper/status/2094397684186481057"
+            ],
+            "previews": []
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-09-01",
+    "updatedAt": "2026-09-01T12:04:57.533Z",
+    "commit": {
+      "sha": "5595a0a56d165833ff2e9488a9a6e00ba8826646",
+      "committedAt": "2026-09-01T06:42:25Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-09-01T12:00:11.396Z",
+    "feedGeneratedAt": "2026-09-01T06:42:22.120Z",
+    "timezone": "Asia/Shanghai"
+  }
+}

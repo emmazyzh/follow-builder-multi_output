@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-08-30T13:21:21.814Z",
-  "latestDate": "2026-08-30",
+  "updatedAt": "2026-09-01T12:04:57.536Z",
+  "latestDate": "2026-09-01",
   "dates": [
+    {
+      "date": "2026-09-01",
+      "title": "AI Builders Daily · 2026-09-01",
+      "summary": "**Codex** keeps pulling product talent into orbit as **Nan Yu** joins **OpenAI** and **Thibault Sottiaux** openly asks what still blocks adoption; **Guillermo Rauch** pushes two sharp claims at once, turning Markdown into a design-system weapon and token budgets into infra governance; **Aaron Levie** calls a new phase for enterprise AI, where companies with serious data can train their own models while open models race closer in cyber; **Rich Sutton** throws cold water on synthetic-data optimism and drags the conversation back to continual learning in a world that never stops changing.\n\n**Codex** 这边还在加速招人，**Nan Yu** 转去 **OpenAI** 做 **Codex** 和 **ChatGPT**，**Thibault Sottiaux** 则直接追问大家到底还在卡什么；**Guillermo Rauch** 连发两枪，一边说 Markdown 可以管住设计品味，一边把 token 预算说成基础设施治理问题；**Aaron Levie** 盯上企业自训模型这条线，觉得有数据的公司终于能自己下场，另一边开源模型在安全场景里也追得很凶；**Rich Sutton** 还是那个路数，直接泼冷水，不太买合成数据那套，话题又被他拽回“持续学习”这个老问题上。",
+      "itemCount": 11,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-09-01T12:04:57.535Z",
+      "commit": {
+        "sha": "5595a0a56d165833ff2e9488a9a6e00ba8826646",
+        "committedAt": "2026-09-01T06:42:25Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-08-30",
       "title": "AI Builders Daily · 2026-08-30",
