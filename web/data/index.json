@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-09-01T12:04:57.536Z",
-  "latestDate": "2026-09-01",
+  "updatedAt": "2026-09-03T12:03:13.355Z",
+  "latestDate": "2026-09-03",
   "dates": [
+    {
+      "date": "2026-09-03",
+      "title": "AI Builders Daily · 2026-09-03",
+      "summary": "**Claude pushes background computer use into the desktop**; **Google rolls out Gemini 3.8 Flash** on price-performance bragging rights; builders are arguing over privacy, open weights, and whether model choice should disappear entirely; meanwhile the vibe shifts from meeting notes for humans to transcripts for agents.\n\n**Claude 把后台电脑操作推上桌面端**；**Google 开始推 Gemini 3.8 Flash**，主打质量和价格一起打；圈内人一边吵隐私和开源权重，一边讨论产品里到底还该不该让用户自己选模型；还有个很扎眼的变化，会议记录已经不是写给人看了，开始直接喂给 agent。",
+      "itemCount": 16,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-09-03T12:03:13.353Z",
+      "commit": {
+        "sha": "6df06d7b5a4cc4dfe9a8d3b7fe9fb9aecb4b68f8",
+        "committedAt": "2026-09-03T06:42:04Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-09-01",
       "title": "AI Builders Daily · 2026-09-01",

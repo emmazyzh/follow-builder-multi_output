@@ -1,0 +1,786 @@
+{
+  "payload": {
+    "date": "2026-09-03",
+    "title": "AI Builders Daily · 2026-09-03",
+    "summary": "**Claude pushes background computer use into the desktop**; **Google rolls out Gemini 3.8 Flash** on price-performance bragging rights; builders are arguing over privacy, open weights, and whether model choice should disappear entirely; meanwhile the vibe shifts from meeting notes for humans to transcripts for agents.\n\n**Claude 把后台电脑操作推上桌面端**；**Google 开始推 Gemini 3.8 Flash**，主打质量和价格一起打；圈内人一边吵隐私和开源权重，一边讨论产品里到底还该不该让用户自己选模型；还有个很扎眼的变化，会议记录已经不是写给人看了，开始直接喂给 agent。",
+    "items": [
+      {
+        "person_name": "AI & I by Every",
+        "person_handle": null,
+        "person_identity": "AI Podcast",
+        "profile_url": "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL",
+        "source_label": "Podcast",
+        "posted_at": "2026-09-02T15:01:40.000Z",
+        "sections": [
+          {
+            "headline": "**How a professional writer works with AI, from career coach to content engine** / **一个职业写作者怎么把 AI 用成工作搭子，从职业教练到内容引擎**",
+            "body": "In this episode of **AI & I by Every**, **Katie Parrott** explains how **ChatGPT** first helped her think through a layoff and career pivot, then became a practical writing tool she used to scale freelance output. Her core point is simple: AI did not hand her clarity, but it helped her externalize thinking, pressure test decisions, and keep moving.\n\nThe conversation then turns into process. Parrott describes building context packs with brand messaging, audience pain points, product details, and style guidance so the model could produce usable drafts at volume. Before projects existed, she manually pasted that context into chats; later product features made the workflow less painful. The useful takeaway is not magic prompting, but disciplined context setup.\n\n在这期 **AI & I by Every** 里，**Katie Parrott** 讲得很实在：她最早把 **ChatGPT** 当成职业教练，用来梳理被裁员后的想法和下一步选择；后来又把它变成写作工具，帮自己顶住高强度的自由职业内容交付。她反复强调的一点是，清晰判断不是 AI 送上门的，活还是得自己干，但 AI 的确能把脑子里的东西拽出来，让人更快往前走。\n\n后半段基本是在拆她的工作流。她会先把品牌信息、受众痛点、产品细节、风格要求这些东西整理好，喂给模型当上下文，这样量产内容才不至于跑偏。项目功能还没出来时，她甚至得手动复制粘贴整套材料；后来工具补上，这套方法才顺起来。重点不是玄学 prompt，而是前期上下文搭得够不够扎实。",
+            "source_links": [
+              "https://www.youtube.com/playlist?list=PLuMcoKK9mKgHtW_o9h5sGO2vXrffKHwJL"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Josh Woodward",
+        "person_handle": "joshwoodward",
+        "person_identity": "Google VP",
+        "profile_url": "https://x.com/joshwoodward",
+        "source_label": "X",
+        "posted_at": "2026-09-02T15:56:07.000Z",
+        "sections": [
+          {
+            "headline": "**Gemini 3.8 Flash pitches quality at a lower price / Gemini 3.8 Flash 主打高性价比**",
+            "body": "3.8 Flash = great quality @ great price https://t.co/teErwoGZon\n\n3.8 Flash = 质量不错，价格也很能打 https://t.co/teErwoGZon",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2095178970912461279"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRORdlKaYAEPATK.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/joshwoodward/status/2095178970912461279/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/teErwoGZon",
+                "resolvedUrl": "https://x.com/joshwoodward/status/2095178970912461279/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRORdlKaYAEPATK.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Gemini 3.8 Flash starts rolling out in the app / Gemini 3.8 Flash 开始推送到应用端**",
+            "body": "3.8 Flash rolling out to @GeminiApp https://t.co/FItHefpEdv\n\n3.8 Flash 正在推送到 @GeminiApp https://t.co/FItHefpEdv",
+            "source_links": [
+              "https://x.com/joshwoodward/status/2095177483129917849"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HROQo0iacAA7dkz.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/joshwoodward/status/2095177483129917849/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/FItHefpEdv",
+                "resolvedUrl": "https://x.com/joshwoodward/status/2095177483129917849/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HROQo0iacAA7dkz.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Boris Cherny",
+        "person_handle": "bcherny",
+        "person_identity": "Anthropic Engineer",
+        "profile_url": "https://x.com/bcherny",
+        "source_label": "X",
+        "posted_at": "2026-09-03T05:10:32.000Z",
+        "sections": [
+          {
+            "headline": "**Background computer use gets a blunt endorsement / 后台电脑操作被直接点名夸了**",
+            "body": "Background computer use is underrated https://t.co/jGOvHMj8sM\n\n后台电脑操作这件事，被低估了 https://t.co/jGOvHMj8sM",
+            "source_links": [
+              "https://x.com/bcherny/status/2095378890370019683"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/claudeai/status/2095226833293685100",
+                "resolvedUrl": "https://x.com/claudeai/status/2095226833293685100",
+                "authorName": "Claude",
+                "authorHandle": "claudeai",
+                "authorUrl": "https://x.com/claudeai",
+                "text": "Claude can now use your computer in the background in Claude Cowork and Claude Code.\n\nGive it something to do on your desktop and Claude clicks, types, and opens apps just like you would, while you work on something else.",
+                "displayDate": "Sep 2",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HRO9mchaQAANgRA.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/claudeai/status/2095226833293685100/photo/1"
+                  }
+                ],
+                "textZh": "Claude 现在可以在 Claude Cowork 和 Claude Code 中在后台使用你的电脑。 给它安排一件桌面上的任务，Claude 会像你一样点击、输入并打开应用，而你可以去做别的事。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/jGOvHMj8sM",
+                "resolvedUrl": "https://x.com/claudeai/status/2095226833293685100"
+              }
+            ]
+          },
+          {
+            "headline": "**Fable 5.1 makes Claude Tag look sharper in Slack / Fable 5.1 让 Slack 里的 Claude Tag 更能打**",
+            "body": "Fable 5.1 makes Claude Tag even more useful. Here it builds a last-minute leadership deck from a metrics spreadsheet and other data across Slack, spots a vendor report that disagrees with the numbers, and flags it before moving on.\n\nClaude Tag is available in Slack on Team and Enterprise plans.\n\nFable 5.1 让 Claude Tag 变得更有用了。这里它会根据指标表格和 Slack 里的其他数据，临时做出一份给管理层看的 deck；还会发现一份供应商报告和数字对不上，并在继续之前先把问题标出来。\n\nClaude Tag 现已在 Slack 的 Team 和 Enterprise 套餐中提供。",
+            "source_links": [
+              "https://x.com/bcherny/status/2095276133214491086"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/8hLxiOQ8q2",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2095275805660319744/img/Sh4F68VgVznJYwNq.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/bcherny/status/2095276133214491086/video/1"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thibault Sottiaux",
+        "person_handle": "thsottiaux",
+        "person_identity": "OpenAI Product",
+        "profile_url": "https://x.com/thsottiaux",
+        "source_label": "X",
+        "posted_at": "2026-09-03T04:34:49.000Z",
+        "sections": [
+          {
+            "headline": "**OpenAI described from inside as a 'mega startup' / OpenAI 内部氛围被形容成“超级创业公司”**",
+            "body": "I think the best way to describe OpenAI's culture is as a mega startup. It's hard to believe unless you see it from the inside. Extreme ownership, care and pace.\n\n我觉得形容 OpenAI 文化最贴切的话，就是它像一家超级创业公司。没在里面待过，很难真信。极强的主人翁意识，也很在乎细节，节奏还特别快。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2095369901137654271"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**ChatGPT desktop becomes the main browser for one OpenAI builder / 有 OpenAI 员工直接把 ChatGPT 桌面端当主浏览器用了**",
+            "body": "The ChatGPT desktop app is now my main browser and my productivity has never been higher\n\nChatGPT 桌面应用现在已经成了我的主浏览器，我的效率从来没这么高过。",
+            "source_links": [
+              "https://x.com/thsottiaux/status/2095288416292487289"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Peter Yang",
+        "person_handle": "petergyang",
+        "person_identity": "AI Educator",
+        "profile_url": "https://x.com/petergyang",
+        "source_label": "X",
+        "posted_at": "2026-09-02T23:01:48.000Z",
+        "sections": [
+          {
+            "headline": "**A terse win reaction lands with 'GG' / 一句“GG”，胜负感直接拉满**",
+            "body": "GG https://t.co/F1wjmFI5uO\n\nGG https://t.co/F1wjmFI5uO",
+            "source_links": [
+              "https://x.com/petergyang/status/2095286096481665322"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRPzgSba8AEs5SY.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/petergyang/status/2095286096481665322/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/F1wjmFI5uO",
+                "resolvedUrl": "https://x.com/petergyang/status/2095286096481665322/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRPzgSba8AEs5SY.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Fable limits are already getting squeezed / Fable 限额已经开始不够用了**",
+            "body": "Damn I'm running out of Fable limit already, anyone in the same boat?\n\n靠，我的 Fable 限额已经快用完了，还有谁也这样？",
+            "source_links": [
+              "https://x.com/petergyang/status/2095275295511281918"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**AI may flatten titles, but not erase specializations / AI 也许会压平头衔，但没把分工抹掉**",
+            "body": "Product manager = Member of product staff\nDesigner = Member of design staff\nEngineer = Member of technical staff\n\nIs this AI making job functions more verbose? 😅\n\nIf this flattens levels and titles, I'm all for it though.\n\nIt also shows that maybe the single AI builder title that combines all functions isn't really happening, even at the best labs. People still have specialties based on what they're good at.\n\nProduct manager = Member of product staff\nDesigner = Member of design staff\nEngineer = Member of technical staff\n\n这是 AI 把岗位名称越写越啰嗦了吗？😅\n\n不过如果这能把层级和头衔压平，我倒是支持。\n\n这也说明，那个把所有职能都揉成一个“AI builder”头衔的想法，可能并没有真的发生，哪怕是在最强的实验室里也是这样。人还是会按自己擅长的事继续分工。",
+            "source_links": [
+              "https://x.com/petergyang/status/2095255545594941910"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Madhu Guru",
+        "person_handle": "realmadhuguru",
+        "person_identity": "Meta AI Director",
+        "profile_url": "https://x.com/realmadhuguru",
+        "source_label": "X",
+        "posted_at": "2026-09-02T15:38:13.000Z",
+        "sections": [
+          {
+            "headline": "**Model choice should disappear from the product surface / 产品前台最好别再让用户自己选模型**",
+            "body": "Every AI product should be working towards abstracting model choice away from users. \n\nIn any product, the intelligence is the underlying engine - all the user cares about is that the job gets done. \n\nModel picking is too much cognitive load for the user.\n\nThere have been multiple attempts to abstract model choice away from users. I think we’re finally at the point where this can work well.\n\nIt takes three things:\n\n1/ Deep understanding of the model frontier across different weight classes for your particular use cases.\n\n2/ Great evals for your workflows, so you know which models work best where.\n\n3/ A team with the talent and AI-native operating model to continuously adapt as the frontier moves.\n\nHaving worked with the Lovable team, I can say they have all three.\n\n每个 AI 产品都该朝着一件事努力：把模型选择这件事从用户面前藏起来。\n\n在任何产品里，智能只是底层引擎，用户真正在乎的只有事情能不能办成。\n\n让用户自己挑模型，认知负担太重了。\n\n已经有过不少想把模型选择抽象掉的尝试。我觉得现在终于到了这件事能真正做好用的时候。\n\n这需要三样东西：\n\n1/ 你得非常清楚，不同参数量级的前沿模型，在你的具体场景里各自擅长什么。\n\n2/ 你得有过硬的工作流评测，这样才知道该把哪个模型放到哪个位置。\n\n3/ 你得有一支真懂行、而且按 AI 原生方式运转的团队，能跟着前沿变化不断调整。\n\n我和 Lovable 团队合作过，我可以说，他们这三样都有。",
+            "source_links": [
+              "https://x.com/realmadhuguru/status/2095174463696589223"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Thariq",
+        "person_handle": "trq212",
+        "person_identity": "Anthropic Engineer",
+        "profile_url": "https://x.com/trq212",
+        "source_label": "X",
+        "posted_at": "2026-09-03T04:25:36.000Z",
+        "sections": [
+          {
+            "headline": "**Prompt cache fix is live on API, not yet in Claude Code / prompt cache 修复已上 API，Claude Code 还差一步**",
+            "body": "Ah apologies, effort levels not breaking the prompt cache is live on API but not yet on Claude Code. Should be live within a day or so, will QT when it’s ready. \n\nWas OOO and did not realize this didn’t go out with the model launch.\n\n抱歉， effort levels 不再破坏 prompt cache 这个修复已经在 API 上线了，但还没进 Claude Code。大概一天内会上，我准备好后会转推说明。\n\n我当时人在休假，不知道它没跟着模型发布一起出去。",
+            "source_links": [
+              "https://x.com/trq212/status/2095367584489038044"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Amjad Masad",
+        "person_handle": "amasad",
+        "person_identity": "Replit CEO",
+        "profile_url": "https://x.com/amasad",
+        "source_label": "X",
+        "posted_at": "2026-09-02T23:24:55.000Z",
+        "sections": [
+          {
+            "headline": "**Replit opens London with OpenAI and a Paul Graham event / Replit 落地伦敦，还要和 OpenAI 办一场 Paul Graham 对谈**",
+            "body": "Replit is coming to London 🇬🇧\n\nTo celebrate Replit’s first international office in London, together with our friends @OpenAI, we're hosting a night of drinks, music, and a fireside chat with Paul Graham (@paulg).\n\nThursday, September 10th, RSVP: https://t.co/KvsS1OScca https://t.co/LQb7aSrvdj\n\nReplit 要来伦敦了 🇬🇧\n\n为了庆祝 Replit 在伦敦开出首个国际办公室，我们会和朋友 @OpenAI 一起办一晚活动，有酒、有音乐，还有一场和 Paul Graham (@paulg) 的炉边对谈。\n\n时间是 9 月 10 日，周四，报名： https://t.co/KvsS1OScca https://t.co/LQb7aSrvdj",
+            "source_links": [
+              "https://x.com/amasad/status/2095291912706220410"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRP3dAJbUAAyoPx.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/amasad/status/2095291912706220410/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/KvsS1OScca",
+                "resolvedUrl": "https://london-launch.replit.app/"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/LQb7aSrvdj",
+                "resolvedUrl": "https://x.com/amasad/status/2095291912706220410/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRP3dAJbUAAyoPx.jpg"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Guillermo Rauch",
+        "person_handle": "rauchg",
+        "person_identity": "Vercel CEO",
+        "profile_url": "https://x.com/rauchg",
+        "source_label": "X",
+        "posted_at": "2026-09-02T21:21:34.000Z",
+        "sections": [
+          {
+            "headline": "**A launch teased as costly in blood, sweat, and tokens / 一句“血汗加 tokens”，像是在给发布预热**",
+            "body": "It took blood, sweat, and tokens\n\n这玩意儿真是拿血、汗和 tokens 堆出来的。",
+            "source_links": [
+              "https://x.com/rauchg/status/2095260872537227585"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Rauch tells people to follow Eve / Rauch 直接让大家去关注 Eve**",
+            "body": "Follow @eve\n\n关注 @eve",
+            "source_links": [
+              "https://x.com/rauchg/status/2095235886611050985"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**'Everything is code' becomes the whole thesis in four words / “一切皆代码”，四个词把观点说满了**",
+            "body": "Everything is code https://t.co/TJwbjGA2RL\n\n一切皆代码 https://t.co/TJwbjGA2RL",
+            "source_links": [
+              "https://x.com/rauchg/status/2095234831013814611"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/damian_kofman/status/2095231331349176593",
+                "resolvedUrl": "https://x.com/damian_kofman/status/2095231331349176593",
+                "authorName": "Damian Kofman",
+                "authorHandle": "damian_kofman",
+                "authorUrl": "https://x.com/damian_kofman",
+                "text": "I never imagined spending 80% of my time in front of a CLI to build an outbound sales process. But as @rauchg says, everything is code now… even sales.",
+                "displayDate": "Sep 2",
+                "provider": "X",
+                "media": [],
+                "textZh": "我从没想过，为了搭建一套对外销售流程，我会把 80% 的时间花在 CLI 前。但正如 @rauchg 所说，现在一切都是代码……连销售也是。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/TJwbjGA2RL",
+                "resolvedUrl": "https://x.com/damian_kofman/status/2095231331349176593"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Aaron Levie",
+        "person_handle": "levie",
+        "person_identity": "Box CEO",
+        "profile_url": "https://x.com/levie",
+        "source_label": "X",
+        "posted_at": "2026-09-02T19:35:48.000Z",
+        "sections": [
+          {
+            "headline": "**Levie says the release week is nuts, and Muse could reshape open weights / Levie 说这周发布密度离谱，Muse 可能改写开源权重格局**",
+            "body": "This week is absolutely nuts for AI releases, and now a major new model update from Muse. We appear to be reaching escape velocity in capability progress. \n\nIf this thing gets released as open weights it completely changes the dynamic of US open weights competitiveness. https://t.co/hOG17UMECG\n\n这周 AI 发布真是密得离谱，现在 Muse 又来了个重大的新模型更新。能力进步看起来像是快到逃逸速度了。\n\n如果这东西最后是按 open weights 放出来，那美国 open weights 的竞争格局会被彻底改写。 https://t.co/hOG17UMECG",
+            "source_links": [
+              "https://x.com/levie/status/2095234253613359200"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/finkd/status/2095232032896946311",
+                "resolvedUrl": "https://x.com/finkd/status/2095232032896946311",
+                "authorName": "Mark Zuckerberg",
+                "authorHandle": "finkd",
+                "authorUrl": "https://x.com/finkd",
+                "text": "Muse Spark 1.3 is rolling out today with frontier performance almost too cheap to meter. This is the biggest jump we've made so far on coding and agentic work. Try it in Muse Code and our API.\n\nNext up 🍉 and Muse Spark open weights releases coming soon.",
+                "displayDate": "Sep 2",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HRPCS3waoAAuBR_.png",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/finkd/status/2095232032896946311/photo/1"
+                  }
+                ],
+                "textZh": "Muse Spark 1.3 今天开始推出，前沿性能便宜到几乎可以忽略成本。这是我们迄今在编程和智能体工作上取得的最大跃升。可以在 Muse Code 和我们的 API 中试用。 接下来 🍉 和 Muse Spark 开放权重版本也很快会发布。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/hOG17UMECG",
+                "resolvedUrl": "https://x.com/finkd/status/2095232032896946311"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Garry Tan",
+        "person_handle": "garrytan",
+        "person_identity": "YC CEO",
+        "profile_url": "https://x.com/garrytan",
+        "source_label": "X",
+        "posted_at": "2026-09-02T23:26:46.000Z",
+        "sections": [
+          {
+            "headline": "**Housing supply gets pushed as a voting priority / 住房供给被直接抬到投票优先级**",
+            "body": "Building housing supply needs to be a top issue for how you vote this November https://t.co/n4Su98uJYf\n\n到了今年 11 月投票时，住房供给这件事应该排进最重要的议题里。 https://t.co/n4Su98uJYf",
+            "source_links": [
+              "https://x.com/garrytan/status/2095292377749733697"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/rohindhar/status/2095171324746641639",
+                "resolvedUrl": "https://x.com/rohindhar/status/2095171324746641639",
+                "authorName": "Rohin Dhar",
+                "authorHandle": "rohindhar",
+                "authorUrl": "https://x.com/rohindhar",
+                "text": "San Francisco is close to surpassing New York as the most expensive place to rent a one bedroom apartment in the country",
+                "displayDate": "Sep 2",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": null,
+                    "url": "https://pbs.twimg.com/media/HROLN1-aMAAhpsz.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/rohindhar/status/2095171324746641639/photo/1"
+                  }
+                ],
+                "textZh": "旧金山的单卧公寓租金快要超过纽约，成为全美最贵的地方了。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/n4Su98uJYf",
+                "resolvedUrl": "https://x.com/rohindhar/status/2095171324746641639"
+              }
+            ]
+          },
+          {
+            "headline": "**California Dream, posed as an open question / “你的加州梦是什么”，直接把问题抛了出来**",
+            "body": "What's your California Dream?\n\nhttps://t.co/cBmqMDDHLn https://t.co/9H6eflyDT2\n\n你的 California Dream 是什么？\n\nhttps://t.co/cBmqMDDHLn https://t.co/9H6eflyDT2",
+            "source_links": [
+              "https://x.com/garrytan/status/2095202701646995965"
+            ],
+            "media": [
+              {
+                "shortUrl": "https://t.co/cBmqMDDHLn",
+                "url": "https://pbs.twimg.com/amplify_video_thumb/2094909991631069184/img/1lBPQN3Ex-BM2GN5.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/garryslist/status/2094914114678034899/video/1"
+              }
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/garryslist/status/2094914114678034899",
+                "resolvedUrl": "https://x.com/garryslist/status/2094914114678034899",
+                "authorName": "Garry's List",
+                "authorHandle": "garryslist",
+                "authorUrl": "https://x.com/garryslist",
+                "text": "This month we're launching the Garry's List California Dream campaign.\n\nWe want to hear your story: what brought you to California, the life you've built here, and why you believe it's a place worth fighting for.\n\nWant to share your California Dream? DM us or send us an email at",
+                "displayDate": "Sep 1",
+                "provider": "X",
+                "media": [
+                  {
+                    "shortUrl": "https://t.co/3VhCnovVdN",
+                    "url": "https://pbs.twimg.com/amplify_video_thumb/2094909991631069184/img/1lBPQN3Ex-BM2GN5.jpg",
+                    "alt": "",
+                    "expandedUrl": "https://x.com/garryslist/status/2094914114678034899/video/1"
+                  }
+                ],
+                "textZh": "本月我们将启动 Garry's List California Dream 活动。 我们想听听你的故事：是什么把你带到加州，你在这里建立了怎样的生活，以及为什么你相信这里值得为之奋斗。 想分享你的 California Dream？私信我们，或发邮件给我们："
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/cBmqMDDHLn",
+                "resolvedUrl": "https://x.com/garryslist/status/2094914114678034899/video/1",
+                "mediaUrl": "https://pbs.twimg.com/amplify_video_thumb/2094909991631069184/img/1lBPQN3Ex-BM2GN5.jpg"
+              },
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/9H6eflyDT2",
+                "resolvedUrl": "https://x.com/garryslist/status/2094914114678034899"
+              }
+            ]
+          },
+          {
+            "headline": "**Tan slams the idea of a public bank in San Francisco / Tan 猛批旧金山搞公共银行的想法**",
+            "body": "It's ridiculous man\n\nOpening a public bank in SF is just asking for mass fraud, especially by Jackie Fielder's incompetent DSA friends and cronies https://t.co/r1xphmRSss\n\n太离谱了。\n\n在旧金山开公共银行，简直就是在招大规模欺诈，尤其是 Jackie Fielder 那帮无能的 DSA 朋友和自己人。 https://t.co/r1xphmRSss",
+            "source_links": [
+              "https://x.com/garrytan/status/2095177204712017920"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/TheVOSF/status/2094944957979115554",
+                "resolvedUrl": "https://x.com/TheVOSF/status/2094944957979115554",
+                "authorName": "The Voice of San Francisco",
+                "authorHandle": "TheVOSF",
+                "authorUrl": "https://x.com/TheVOSF",
+                "text": "Voicing his opposition, Wong explained that a public bank would put San Francisco in an entirely new and specialized business, not just requiring significant public capital, but exposing the city to the serious financial and operational risks involved in running a bank.",
+                "displayDate": "Sep 2",
+                "provider": "X",
+                "media": [],
+                "textZh": "Wong 在表达反对意见时解释说，公共银行会让旧金山进入一个全新且专业化的业务领域，不仅需要大量公共资本，还会让这座城市暴露在经营银行所涉及的严重财务和运营风险之下。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/r1xphmRSss",
+                "resolvedUrl": "https://x.com/thevosf/status/2094944957979115554"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "person_name": "Zara Zhang",
+        "person_handle": "zarazhangrui",
+        "person_identity": "Builder",
+        "profile_url": "https://x.com/zarazhangrui",
+        "source_label": "X",
+        "posted_at": "2026-09-03T04:55:22.000Z",
+        "sections": [
+          {
+            "headline": "**Meeting transcripts are now for agents, not people / 会议转录现在主要不是给人看，是给 agent 吃**",
+            "body": "We are not recording meetings for humans anymore. Nobody reads the AI summary notes or listens back. We are capturing transcripts to feed agents.\n\n我们现在录会议，已经不是给人看的了。没人会去读那些 AI 摘要，也没人会回听。我们留转录稿，是为了喂 agent。",
+            "source_links": [
+              "https://x.com/zarazhangrui/status/2095375073381318656"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Nikunj Kothari",
+        "person_handle": "nikunj",
+        "person_identity": "FPV Ventures Partner",
+        "profile_url": "https://x.com/nikunj",
+        "source_label": "X",
+        "posted_at": "2026-09-02T14:33:39.000Z",
+        "sections": [
+          {
+            "headline": "**A parenting reflex survives long after the baby stage / 当爸妈留下的条件反射，孩子大了也还在**",
+            "body": "PSA: that irrational fear of opening the microwave one second before it beeps loudly so that your infant doesn’t wake up.. doesn’t leave you even when your kids grow up 😅 https://t.co/VUILoORIUC\n\n友情提醒：那种怕微波炉在响之前一秒打开，生怕把婴儿吵醒的非理性恐惧……等孩子长大了也不会消失 😅 https://t.co/VUILoORIUC",
+            "source_links": [
+              "https://x.com/nikunj/status/2095158216409911381"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRN_SxVbMAAoafc.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/nikunj/status/2095158216409911381/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/VUILoORIUC",
+                "resolvedUrl": "https://x.com/nikunj/status/2095158216409911381/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRN_SxVbMAAoafc.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Dan Shipper",
+        "person_handle": "danshipper",
+        "person_identity": "Every CEO",
+        "profile_url": "https://x.com/danshipper",
+        "source_label": "X",
+        "posted_at": "2026-09-03T01:44:28.000Z",
+        "sections": [
+          {
+            "headline": "**A self-referential post lands with 'it me' / 一句“it me”，就是典型本人对号入座**",
+            "body": "it me https://t.co/0NgNFmgV37\n\n是我没错 https://t.co/0NgNFmgV37",
+            "source_links": [
+              "https://x.com/danshipper/status/2095327032141889675"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRQY1GXXYAAYH0a.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2095327032141889675/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/0NgNFmgV37",
+                "resolvedUrl": "https://x.com/danshipper/status/2095327032141889675/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRQY1GXXYAAYH0a.png"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**'Many such cases' signals a familiar pattern / 一句“many such cases”，意思是这事太常见了**",
+            "body": "many such cases https://t.co/dEwsrGSnPH\n\n这种情况可太多了 https://t.co/dEwsrGSnPH",
+            "source_links": [
+              "https://x.com/danshipper/status/2095320346261848169"
+            ],
+            "previews": [
+              {
+                "type": "tweet",
+                "url": "https://twitter.com/thsottiaux/status/2095288416292487289",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2095288416292487289",
+                "authorName": "Tibo",
+                "authorHandle": "thsottiaux",
+                "authorUrl": "https://x.com/thsottiaux",
+                "text": "The ChatGPT desktop app is now my main browser and my productivity has never been higher",
+                "displayDate": "Sep 2",
+                "provider": "X",
+                "media": [],
+                "textZh": "ChatGPT 桌面应用现在成了我的主浏览器，我的生产力从没这么高过。"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "quote",
+                "shortUrl": "https://t.co/dEwsrGSnPH",
+                "resolvedUrl": "https://x.com/thsottiaux/status/2095288416292487289"
+              }
+            ]
+          },
+          {
+            "headline": "**Superintelligence gets reassigned to chocolate logistics / 超级智能被拿去规划巧克力补货了**",
+            "body": "pro tip: \n\nuse your alien superintelligence to plan your next order of chocolate bars https://t.co/DvcNrTpGEc\n\n小建议：\n\n拿你的外星级超级智能去规划下一次巧克力棒补货吧 https://t.co/DvcNrTpGEc",
+            "source_links": [
+              "https://x.com/danshipper/status/2095269303029244364"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRPkUQrXEAM-o3g.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2095269303029244364/photo/1"
+              },
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRPkUQfWoAEtNtQ.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/danshipper/status/2095269303029244364/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/DvcNrTpGEc",
+                "resolvedUrl": "https://x.com/danshipper/status/2095269303029244364/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRPkUQfWoAEtNtQ.jpg"
+              }
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Aditya Agarwal",
+        "person_handle": "adityaag",
+        "person_identity": "SPC General Partner",
+        "profile_url": "https://x.com/adityaag",
+        "source_label": "X",
+        "posted_at": "2026-09-02T19:08:18.000Z",
+        "sections": [
+          {
+            "headline": "**Privacy distrust fuels the case for OSS models / 对前沿实验室的不信任，又把 OSS 模型推到台前**",
+            "body": "It's actually really hard to trust these frontier labs when they say \"don't worry, we won't use your data for training\".\n\nThis is a huge reason to use OSS models.\n\nWhat a weird world. Use the 🇨🇳 models to make sure your stuff is private. \n\nAlso why it is critical to have 🇺🇸 OSS.\n\n这些前沿实验室说“别担心，我们不会拿你的数据训练”时，真的很难让人信。\n\n这也是为什么该用 OSS 模型的一个很大理由。\n\n这世界也真够怪的。为了保证你的东西是私密的，反而要去用 🇨🇳 模型。\n\n所以有 🇺🇸 OSS 也就变得特别关键。",
+            "source_links": [
+              "https://x.com/adityaag/status/2095227334534041714"
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Startups are warned not to build only for today's models / 有人提醒创业公司，别只盯着今天的模型能力做事**",
+            "body": "Too many startups are focused on solving model issues (or leveraging model capabilities) as they exist today.\n\nMuch more interesting to hav a strong POV on capabilities/issues as they will exist 1 year from today (understandably hard).\n\n太多创业公司盯着眼前这代模型的问题在解，或者只想利用它们当前已经有的能力。\n\n更值得做的是，对一年后的能力边界和问题形态先有明确判断，当然这事本来就很难。",
+            "source_links": [
+              "https://x.com/adityaag/status/2095192873973301601"
+            ],
+            "previews": []
+          }
+        ]
+      },
+      {
+        "person_name": "Claude",
+        "person_handle": "claudeai",
+        "person_identity": "Anthropic Product",
+        "profile_url": "https://x.com/claudeai",
+        "source_label": "X",
+        "posted_at": "2026-09-02T19:06:19.000Z",
+        "sections": [
+          {
+            "headline": "**Desktop computer use enters beta on Claude plans / Claude 桌面端电脑操作进入测试**",
+            "body": "Available in beta on Pro and Max plans, in the desktop app on macOS.\n\nIf you're new to computer use, turn it on in Settings → General → Computer use.\n\nHow it works, and how to use it safely: https://t.co/WTNqd5F0BG\n\n现已在 macOS 桌面应用中，以 beta 形式提供给 Pro 和 Max 套餐。\n\n如果你第一次用 computer use，可以去 Settings → General → Computer use 打开。\n\n它怎么工作、怎么更安全地使用： https://t.co/WTNqd5F0BG",
+            "source_links": [
+              "https://x.com/claudeai/status/2095226835743158320"
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/WTNqd5F0BG",
+                "resolvedUrl": "https://support.claude.com/en/articles/14128542-let-claude-use-your-computer-in-cowork"
+              }
+            ]
+          },
+          {
+            "headline": "**Claude can now use your computer in the background / Claude 现在可以在后台替你动电脑了**",
+            "body": "Claude can now use your computer in the background in Claude Cowork and Claude Code.\n\nGive it something to do on your desktop and Claude clicks, types, and opens apps just like you would, while you work on something else. https://t.co/AOiup03pQK\n\nClaude 现在可以在 Claude Cowork 和 Claude Code 里后台使用你的电脑。\n\n把桌面上的任务交给它，Claude 会像你一样去点击、输入、打开应用，而你可以同时去做别的事。 https://t.co/AOiup03pQK",
+            "source_links": [
+              "https://x.com/claudeai/status/2095226833293685100"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HRO9mchaQAANgRA.jpg",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2095226833293685100/photo/1"
+              }
+            ],
+            "linkExpansions": [
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/AOiup03pQK",
+                "resolvedUrl": "https://x.com/claudeai/status/2095226833293685100/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HRO9mchaQAANgRA.jpg"
+              }
+            ],
+            "previews": []
+          },
+          {
+            "headline": "**Claude opens campus ambassador applications again / Claude 校园大使项目开始招人了**",
+            "body": "Applications are open for the Claude Campus Ambassadors program. This year, we’re expanding opportunities to more students, with three tracks for undergrads, graduate students, and PhDs/postdocs. \n\nApply here: https://t.co/h8X1D0TZv7 https://t.co/bPa8giOBXP\n\nClaude Campus Ambassadors 项目现在开始接受申请。今年会把机会放给更多学生，分成三个方向：本科生、研究生，以及 PhD/博士后。\n\n申请入口： https://t.co/h8X1D0TZv7 https://t.co/bPa8giOBXP",
+            "source_links": [
+              "https://x.com/claudeai/status/2095168559873773970"
+            ],
+            "media": [
+              {
+                "shortUrl": null,
+                "url": "https://pbs.twimg.com/media/HROIEmmWsAQGTSP.png",
+                "alt": "",
+                "expandedUrl": "https://x.com/claudeai/status/2095168559873773970/photo/1"
+              }
+            ],
+            "previews": [],
+            "linkExpansions": [
+              {
+                "kind": "external",
+                "shortUrl": "https://t.co/h8X1D0TZv7",
+                "resolvedUrl": "https://anthropic.com/campus"
+              },
+              {
+                "kind": "media",
+                "shortUrl": "https://t.co/bPa8giOBXP",
+                "resolvedUrl": "https://x.com/claudeai/status/2095168559873773970/photo/1",
+                "mediaUrl": "https://pbs.twimg.com/media/HROIEmmWsAQGTSP.png"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "date": "2026-09-03",
+    "updatedAt": "2026-09-03T12:03:13.346Z",
+    "commit": {
+      "sha": "6df06d7b5a4cc4dfe9a8d3b7fe9fb9aecb4b68f8",
+      "committedAt": "2026-09-03T06:42:04Z",
+      "subject": "chore: update feeds [skip ci]",
+      "file": "feed-blogs.json"
+    },
+    "generatedAt": "2026-09-03T12:00:10.079Z",
+    "feedGeneratedAt": "2026-09-03T06:41:29.179Z",
+    "timezone": "Asia/Shanghai"
+  }
+}
