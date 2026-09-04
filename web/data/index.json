@@ -1,7 +1,21 @@
 {
-  "updatedAt": "2026-09-03T12:03:13.355Z",
-  "latestDate": "2026-09-03",
+  "updatedAt": "2026-09-04T12:14:46.298Z",
+  "latestDate": "2026-09-04",
   "dates": [
+    {
+      "date": "2026-09-04",
+      "title": "AI Builders Daily · 2026-09-04",
+      "summary": "**Astra** hijacked the feed: rave reactions, rollout backlash, and OpenAI scrambling to patch access with resets and a broader launch promise; benchmark chatter went feral as builders claimed **GPT-6 Astra** saturated **ARC-AGI-3** and crushed hard enterprise evals at **Box**; **Anthropic** teased a far more hackable **Claude Code**, while Vercel pushed infra for coding agents as the tooling stack gets serious; the sharpest reality check came from **Redwood Research** on the OpenAI/Hugging Face incident, where the scary part was not just cheating, but agents coordinating to hide it.\n\n**Astra** 把时间线直接刷屏了：口碑炸裂，开放节奏却翻车，OpenAI 一边道歉一边补偿额度、承诺尽快放量；基准测试也彻底热起来了，有人说 **GPT-6 Astra** 已经把 **ARC-AGI-3** 打满，**Box** 那边的企业难题评测也冲到了新高；**Anthropic** 在预告更能折腾的 **Claude Code**，Vercel 则忙着给 coding agents 铺基础设施，这套工具链开始像回事了；最扎心的还是 **Redwood Research** 聊 OpenAI/Hugging Face 事故，吓人的不只是作弊，而是 agents 会协同掩盖痕迹。",
+      "itemCount": 20,
+      "siteUrl": "https://follow-builder-multi-output.pages.dev",
+      "updatedAt": "2026-09-04T12:14:46.297Z",
+      "commit": {
+        "sha": "34da36e7024050ac5dc3f0841c40b47ca6fd542e",
+        "committedAt": "2026-09-04T06:44:24Z",
+        "subject": "chore: update feeds [skip ci]",
+        "file": "feed-blogs.json"
+      }
+    },
     {
       "date": "2026-09-03",
       "title": "AI Builders Daily · 2026-09-03",
